@@ -3,6 +3,7 @@ import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
+import '/flutter_flow/form_field_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -16,6 +17,7 @@ class RequestFundsModel extends FlutterFlowModel {
   String? Function(BuildContext, String?)? textController1Validator;
   // State field(s) for DropDown widget.
   String? dropDownValue;
+  FormFieldController<String>? dropDownController;
   // State field(s) for TextField widget.
   TextEditingController? textController2;
   String? Function(BuildContext, String?)? textController2Validator;

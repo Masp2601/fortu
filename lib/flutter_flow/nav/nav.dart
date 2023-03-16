@@ -265,6 +265,7 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               requireAuth: true,
               builder: (context, params) => TableWidget(
                 users: params.getParam('users', ParamType.String),
+                saldo: params.getParam('saldo', ParamType.String),
               ),
             ),
             FFRoute(
@@ -380,6 +381,7 @@ extension GoRouterExtensions on GoRouter {
           : appState.updateNotifyOnAuthChange(false);
   bool shouldRedirect(bool ignoreRedirect) =>
       !ignoreRedirect && appState.hasRedirect();
+  void clearRedirectLocation() => appState.clearRedirectLocation();
   void setRedirectLocationIfUnset(String location) =>
       (routerDelegate.refreshListenable as AppStateNotifier)
           .updateNotifyOnAuthChange(false);

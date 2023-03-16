@@ -121,28 +121,73 @@ class _ChoosevalueWidgetState extends State<ChoosevalueWidget> {
                               alignment: AlignmentDirectional(0.0, -0.5),
                               child: Padding(
                                 padding: EdgeInsetsDirectional.fromSTEB(
-                                    250.0, 140.0, 0.0, 0.0),
+                                    220.0, 80.0, 0.0, 0.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
-                                    Image.network(
-                                      'https://picsum.photos/seed/335/600',
-                                      width: 100.0,
-                                      height: 100.0,
-                                      fit: BoxFit.cover,
-                                    ),
-                                    Image.network(
-                                      'https://picsum.photos/seed/605/600',
-                                      width: 100.0,
-                                      height: 100.0,
-                                      fit: BoxFit.cover,
-                                    ),
-                                    Image.network(
-                                      'https://picsum.photos/seed/156/600',
-                                      width: 100.0,
-                                      height: 100.0,
-                                      fit: BoxFit.cover,
+                                    if (responsiveVisibility(
+                                      context: context,
+                                      tablet: false,
+                                      desktop: false,
+                                    ))
+                                      Padding(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                            0.0, 0.0, 25.0, 0.0),
+                                        child: InkWell(
+                                          onTap: () async {
+                                            logFirebaseEvent(
+                                                'CHOOSEVALUE_PAGE_Image_0ahkx9yq_ON_TAP');
+                                            logFirebaseEvent(
+                                                'Image_navigate_to');
+
+                                            context.pushNamed('table');
+                                          },
+                                          child: Image.asset(
+                                            'assets/images/Group_1885_3.png',
+                                            width: 100.0,
+                                            height: 100.0,
+                                            fit: BoxFit.cover,
+                                          ),
+                                        ),
+                                      ),
+                                    if (responsiveVisibility(
+                                      context: context,
+                                      desktop: false,
+                                    ))
+                                      Padding(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                            0.0, 0.0, 25.0, 0.0),
+                                        child: InkWell(
+                                          onTap: () async {
+                                            logFirebaseEvent(
+                                                'CHOOSEVALUE_PAGE_Image_xxohcpli_ON_TAP');
+                                            logFirebaseEvent(
+                                                'Image_navigate_to');
+
+                                            context.pushNamed('goldtable');
+                                          },
+                                          child: Image.asset(
+                                            'assets/images/Layer_3.png',
+                                            width: 100.0,
+                                            fit: BoxFit.cover,
+                                          ),
+                                        ),
+                                      ),
+                                    InkWell(
+                                      onTap: () async {
+                                        logFirebaseEvent(
+                                            'CHOOSEVALUE_PAGE_Image_dizh3auq_ON_TAP');
+                                        logFirebaseEvent('Image_navigate_to');
+
+                                        context.pushNamed('cashtable');
+                                      },
+                                      child: Image.asset(
+                                        'assets/images/Group_33957.png',
+                                        width: 100.0,
+                                        height: 100.0,
+                                        fit: BoxFit.cover,
+                                      ),
                                     ),
                                   ],
                                 ),
@@ -152,7 +197,7 @@ class _ChoosevalueWidgetState extends State<ChoosevalueWidget> {
                             alignment: AlignmentDirectional(0.0, 0.4),
                             child: Padding(
                               padding: EdgeInsetsDirectional.fromSTEB(
-                                  320.0, 0.0, 0.0, 150.0),
+                                  320.0, 0.0, 0.0, 220.0),
                               child: Image.asset(
                                 'assets/images/Elige_el_valor.png',
                                 fit: BoxFit.cover,
@@ -163,7 +208,7 @@ class _ChoosevalueWidgetState extends State<ChoosevalueWidget> {
                             alignment: AlignmentDirectional(0.03, 0.67),
                             child: Padding(
                               padding: EdgeInsetsDirectional.fromSTEB(
-                                  325.0, 0.0, 0.0, 0.0),
+                                  325.0, 0.0, 0.0, 50.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
                                 children: [],

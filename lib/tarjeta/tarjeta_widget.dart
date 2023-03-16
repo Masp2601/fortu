@@ -262,12 +262,6 @@ class _TarjetaWidgetState extends State<TarjetaWidget> {
                                 ),
                               ),
                             ),
-                          Image.network(
-                            'https://picsum.photos/seed/851/600',
-                            width: 100.0,
-                            height: 100.0,
-                            fit: BoxFit.cover,
-                          ),
                           Padding(
                             padding: EdgeInsetsDirectional.fromSTEB(
                                 24.0, 24.0, 0.0, 20.0),

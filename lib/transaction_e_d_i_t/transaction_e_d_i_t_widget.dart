@@ -6,6 +6,7 @@ import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
+import '/flutter_flow/form_field_controller.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
@@ -435,6 +436,8 @@ class _TransactionEDITWidgetState extends State<TransactionEDITWidget>
                                         ? budgetBudgetListRecordList.first
                                         : null;
                                 return FlutterFlowDropDown<String>(
+                                  controller: _model.budgetController ??=
+                                      FormFieldController<String>(null),
                                   options: budgetBudgetListRecord!.budget!
                                       .toList()
                                       .toList(),

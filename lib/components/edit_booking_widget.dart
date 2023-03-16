@@ -5,6 +5,7 @@ import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
+import '/flutter_flow/form_field_controller.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
@@ -183,8 +184,11 @@ class _EditBookingWidgetState extends State<EditBookingWidget> {
               Padding(
                 padding: EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
                 child: FlutterFlowDropDown<String>(
-                  initialOption: _model.dropDownValue ??=
-                      widget.userAppointment!.appointmentType,
+                  controller: _model.dropDownController ??=
+                      FormFieldController<String>(
+                    _model.dropDownValue ??=
+                        widget.userAppointment!.appointmentType,
+                  ),
                   options: [
                     FFLocalizations.of(context).getText(
                       'shqcgjqe' /* Type of Appointment */,

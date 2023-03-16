@@ -3,6 +3,7 @@ import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
+import '/flutter_flow/form_field_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -184,6 +185,8 @@ class _RequestFundsWidgetState extends State<RequestFundsWidget> {
                       padding:
                           EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
                       child: FlutterFlowDropDown<String>(
+                        controller: _model.dropDownController ??=
+                            FormFieldController<String>(null),
                         options: [
                           FFLocalizations.of(context).getText(
                             'wwjahvpl' /* Office Budget */,

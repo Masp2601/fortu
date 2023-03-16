@@ -1,3 +1,4 @@
+import '/auth/auth_util.dart';
 import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_expanded_image_view.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
@@ -18,9 +19,11 @@ class TableWidget extends StatefulWidget {
   const TableWidget({
     Key? key,
     this.users,
+    this.saldo,
   }) : super(key: key);
 
   final String? users;
+  final String? saldo;
 
   @override
   _TableWidgetState createState() => _TableWidgetState();
@@ -545,7 +548,7 @@ class _TableWidgetState extends State<TableWidget>
                                                   Align(
                                                     alignment:
                                                         AlignmentDirectional(
-                                                            0.0, 0.5),
+                                                            0.0, -1.0),
                                                     child: Padding(
                                                       padding:
                                                           EdgeInsetsDirectional
@@ -589,8 +592,8 @@ class _TableWidgetState extends State<TableWidget>
                                                               true,
                                                           child: Image.asset(
                                                             'assets/images/Vector_(1).png',
-                                                            width: 186.3,
-                                                            height: 50.4,
+                                                            width: 186.0,
+                                                            height: 50.0,
                                                             fit: BoxFit.cover,
                                                           ),
                                                         ),
@@ -605,7 +608,7 @@ class _TableWidgetState extends State<TableWidget>
                                                   Align(
                                                     alignment:
                                                         AlignmentDirectional(
-                                                            0.0, 0.0),
+                                                            0.0, -1.1),
                                                     child: Padding(
                                                       padding:
                                                           EdgeInsetsDirectional
@@ -637,7 +640,7 @@ class _TableWidgetState extends State<TableWidget>
                                                   Align(
                                                     alignment:
                                                         AlignmentDirectional(
-                                                            0.0, 0.01),
+                                                            0.0, -1.1),
                                                     child: Padding(
                                                       padding:
                                                           EdgeInsetsDirectional
@@ -663,7 +666,7 @@ class _TableWidgetState extends State<TableWidget>
                                                   Align(
                                                     alignment:
                                                         AlignmentDirectional(
-                                                            0.96, 0.4),
+                                                            0.96, -0.85),
                                                     child: Padding(
                                                       padding:
                                                           EdgeInsetsDirectional
@@ -682,6 +685,145 @@ class _TableWidgetState extends State<TableWidget>
                                                       ),
                                                     ),
                                                   ),
+                                                Align(
+                                                  alignment:
+                                                      AlignmentDirectional(
+                                                          0.4, 0.0),
+                                                  child: Padding(
+                                                    padding:
+                                                        EdgeInsetsDirectional
+                                                            .fromSTEB(12.0,
+                                                                65.0, 5.0, 0.0),
+                                                    child: Image.asset(
+                                                      'assets/images/Group_(2).png',
+                                                      width: 185.1,
+                                                      height: 121.8,
+                                                      fit: BoxFit.cover,
+                                                    ),
+                                                  ),
+                                                ),
+                                                Align(
+                                                  alignment:
+                                                      AlignmentDirectional(
+                                                          0.0, 0.0),
+                                                  child: Padding(
+                                                    padding:
+                                                        EdgeInsetsDirectional
+                                                            .fromSTEB(65.0,
+                                                                25.0, 0.0, 0.0),
+                                                    child: Text(
+                                                      currentUserUid,
+                                                      style:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .bodyText1,
+                                                    ),
+                                                  ),
+                                                ),
+                                                Align(
+                                                  alignment:
+                                                      AlignmentDirectional(
+                                                          0.0, 0.0),
+                                                  child: Padding(
+                                                    padding:
+                                                        EdgeInsetsDirectional
+                                                            .fromSTEB(60.0,
+                                                                92.0, 0.0, 0.0),
+                                                    child: Text(
+                                                      FFLocalizations.of(
+                                                              context)
+                                                          .getText(
+                                                        '3k4njebv' /* balance: */,
+                                                      ),
+                                                      style:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .bodyText1,
+                                                    ),
+                                                  ),
+                                                ),
+                                                Align(
+                                                  alignment:
+                                                      AlignmentDirectional(
+                                                          0.0, 0.0),
+                                                  child: Padding(
+                                                    padding:
+                                                        EdgeInsetsDirectional
+                                                            .fromSTEB(
+                                                                100.0,
+                                                                92.0,
+                                                                10.0,
+                                                                0.0),
+                                                    child: Text(
+                                                      widget.saldo!,
+                                                      style:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .bodyText1,
+                                                    ),
+                                                  ),
+                                                ),
+                                                Align(
+                                                  alignment:
+                                                      AlignmentDirectional(
+                                                          0.0, 0.0),
+                                                  child: Container(
+                                                    width: 200.0,
+                                                    decoration: BoxDecoration(),
+                                                  ),
+                                                ),
+                                                Align(
+                                                  alignment:
+                                                      AlignmentDirectional(
+                                                          0.0, 0.0),
+                                                  child: Container(
+                                                    width: 200.0,
+                                                    decoration: BoxDecoration(),
+                                                  ),
+                                                ),
+                                                Align(
+                                                  alignment:
+                                                      AlignmentDirectional(
+                                                          0.35, 0.0),
+                                                  child: Padding(
+                                                    padding:
+                                                        EdgeInsetsDirectional
+                                                            .fromSTEB(55.0,
+                                                                60.0, 0.0, 0.0),
+                                                    child: Row(
+                                                      mainAxisSize:
+                                                          MainAxisSize.max,
+                                                      mainAxisAlignment:
+                                                          MainAxisAlignment
+                                                              .center,
+                                                      children: [
+                                                        Image.asset(
+                                                          'assets/images/Vector_44.png',
+                                                          width: 100.0,
+                                                          height: 4.0,
+                                                          fit: BoxFit.cover,
+                                                        ),
+                                                      ],
+                                                    ),
+                                                  ),
+                                                ),
+                                                Align(
+                                                  alignment:
+                                                      AlignmentDirectional(
+                                                          -0.41, 0.15),
+                                                  child: Padding(
+                                                    padding:
+                                                        EdgeInsetsDirectional
+                                                            .fromSTEB(55.0,
+                                                                55.0, 0.0, 0.0),
+                                                    child: Image.asset(
+                                                      'assets/images/Vector_44.png',
+                                                      width: 100.0,
+                                                      height: 4.0,
+                                                      fit: BoxFit.cover,
+                                                    ),
+                                                  ),
+                                                ),
                                               ],
                                             ),
                                           ),
@@ -689,86 +831,6 @@ class _TableWidgetState extends State<TableWidget>
                                     ),
                                   ),
                                 ),
-                              ),
-                            if (responsiveVisibility(
-                              context: context,
-                              tablet: false,
-                              desktop: false,
-                            ))
-                              FlipCard(
-                                fill: Fill.fillBack,
-                                direction: FlipDirection.HORIZONTAL,
-                                speed: 400,
-                                front: Visibility(
-                                  visible: responsiveVisibility(
-                                    context: context,
-                                    tablet: false,
-                                    desktop: false,
-                                  ),
-                                  child: Container(
-                                    width: 100.0,
-                                    height: 100.0,
-                                    decoration: BoxDecoration(
-                                      color: FlutterFlowTheme.of(context)
-                                          .tertiaryColor,
-                                      borderRadius: BorderRadius.circular(12.0),
-                                    ),
-                                    child: Visibility(
-                                      visible: responsiveVisibility(
-                                        context: context,
-                                        tablet: false,
-                                        desktop: false,
-                                      ),
-                                      child: Container(
-                                        width: 100.0,
-                                        height: 100.0,
-                                        decoration: BoxDecoration(
-                                          color: FlutterFlowTheme.of(context)
-                                              .tertiaryColor,
-                                          borderRadius:
-                                              BorderRadius.circular(12.0),
-                                        ),
-                                        child: Visibility(
-                                          visible: responsiveVisibility(
-                                            context: context,
-                                            tablet: false,
-                                            desktop: false,
-                                          ),
-                                          child: Align(
-                                            alignment:
-                                                AlignmentDirectional(0.0, 0.0),
-                                            child: Text(
-                                              FFLocalizations.of(context)
-                                                  .getText(
-                                                '7u8xevjp' /* Back */,
-                                              ),
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyText1
-                                                      .override(
-                                                        fontFamily:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .bodyText1Family,
-                                                        color:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .primaryText,
-                                                        useGoogleFonts: GoogleFonts
-                                                                .asMap()
-                                                            .containsKey(
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .bodyText1Family),
-                                                      ),
-                                            ),
-                                          ),
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                                back: Container(),
                               ),
                           ],
                         ),

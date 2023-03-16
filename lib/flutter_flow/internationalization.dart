@@ -1530,17 +1530,13 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   },
   // game
   {
-    '2b7lms2r': {
-      'en': '',
-      'es': '\$100.000 cop',
-    },
-    'cec82gsu': {
+    '68vn95yr': {
       'en': 'Hello World',
-      'es': '\$200.00 cop',
+      'es': 'Pesos colombianos',
     },
-    'y52ei7s4': {
+    '9jfa6nhu': {
       'en': '',
-      'es': '\$300.000 cop',
+      'es': 'dolares',
     },
   },
   // aceptopolicy
@@ -1604,9 +1600,9 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': 'VIEWER:',
       'es': 'ESPECTADOR:',
     },
-    '7u8xevjp': {
-      'en': 'Back',
-      'es': '',
+    '3k4njebv': {
+      'en': 'balance:',
+      'es': 'saldo:',
     },
     'z60xaif0': {
       'en': 'Hello World',
@@ -1837,48 +1833,32 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': 'Hello World',
       'es': 'JUGADORES',
     },
-    'ht679ii1': {
+    'xyjmuh5i': {
+      'en': 'audience',
+      'es': 'Espectador:',
+    },
+    'tbhk356n': {
       'en': '',
-      'es': 'SUTANO',
+      'es': '580',
     },
-    'bkmgclog': {
-      'en': 'colombia',
-      'es': 'Colombia',
+    '9sxg7i09': {
+      'en': 'Hello World',
+      'es': '',
     },
-    'p8o6kzvf': {
+    'k1wsrbus': {
+      'en': 'Hello World',
+      'es': '',
+    },
+    '8gfipbps': {
       'en': '',
-      'es': 'SUTANO',
-    },
-    'blw99g2t': {
-      'en': '',
-      'es': 'Colombia',
-    },
-    'd5rjmskx': {
-      'en': '',
-      'es': 'SUTANO',
-    },
-    'xr5abq76': {
-      'en': 'colombia',
-      'es': 'Colombia',
-    },
-    'ypr8fvp1': {
-      'en': 'colombia',
-      'es': 'Colombia',
-    },
-    'cpujx3hi': {
-      'en': '',
-      'es': 'SUTANO',
-    },
-    'z24lxuqa': {
-      'en': 'VIEWER:',
-      'es': 'ESPECTADOR:',
+      'es': 'saldo:',
     },
     'oh8ab2mn': {
       'en': 'Hello World',
       'es': 'en linea',
     },
     'lm8z6s2r': {
-      'en': ':(',
+      'en': '',
       'es': ':(',
     },
     'u4t41w86': {

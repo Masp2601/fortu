@@ -1,15 +1,14 @@
+import '/auth/auth_util.dart';
 import '/flutter_flow/flutter_flow_animations.dart';
-import '/flutter_flow/flutter_flow_expanded_image_view.dart';
+import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flip_card/flip_card.dart';
-import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:page_transition/page_transition.dart';
 import 'package:provider/provider.dart';
 import 'cashtable_model.dart';
 export 'cashtable_model.dart';
@@ -190,9 +189,7 @@ class _CashtableWidgetState extends State<CashtableWidget>
                                         padding: EdgeInsetsDirectional.fromSTEB(
                                             42.0, 30.0, 0.0, 0.0),
                                         child: Text(
-                                          FFLocalizations.of(context).getText(
-                                            'ht679ii1' /*  */,
-                                          ),
+                                          widget.users!,
                                           textAlign: TextAlign.start,
                                           style: FlutterFlowTheme.of(context)
                                               .bodyText1
@@ -221,24 +218,26 @@ class _CashtableWidgetState extends State<CashtableWidget>
                                       child: Padding(
                                         padding: EdgeInsetsDirectional.fromSTEB(
                                             42.0, 44.0, 0.0, 0.0),
-                                        child: Text(
-                                          FFLocalizations.of(context).getText(
-                                            'bkmgclog' /* colombia */,
+                                        child: AuthUserStreamWidget(
+                                          builder: (context) => Text(
+                                            currentUserDocument!.location!
+                                                .toString(),
+                                            style: FlutterFlowTheme.of(context)
+                                                .bodyText1
+                                                .override(
+                                                  fontFamily:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .bodyText1Family,
+                                                  fontSize: 10.0,
+                                                  useGoogleFonts: GoogleFonts
+                                                          .asMap()
+                                                      .containsKey(
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .bodyText1Family),
+                                                ),
                                           ),
-                                          style: FlutterFlowTheme.of(context)
-                                              .bodyText1
-                                              .override(
-                                                fontFamily:
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyText1Family,
-                                                fontSize: 10.0,
-                                                useGoogleFonts: GoogleFonts
-                                                        .asMap()
-                                                    .containsKey(
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .bodyText1Family),
-                                              ),
                                         ),
                                       ),
                                     ),
@@ -273,9 +272,7 @@ class _CashtableWidgetState extends State<CashtableWidget>
                                         padding: EdgeInsetsDirectional.fromSTEB(
                                             42.0, 70.0, 0.0, 0.0),
                                         child: Text(
-                                          FFLocalizations.of(context).getText(
-                                            'p8o6kzvf' /*  */,
-                                          ),
+                                          widget.users!,
                                           textAlign: TextAlign.start,
                                           style: FlutterFlowTheme.of(context)
                                               .bodyText1
@@ -304,25 +301,27 @@ class _CashtableWidgetState extends State<CashtableWidget>
                                       child: Padding(
                                         padding: EdgeInsetsDirectional.fromSTEB(
                                             42.0, 85.0, 0.0, 0.0),
-                                        child: Text(
-                                          FFLocalizations.of(context).getText(
-                                            'blw99g2t' /*  */,
+                                        child: AuthUserStreamWidget(
+                                          builder: (context) => Text(
+                                            currentUserDocument!.location!
+                                                .toString(),
+                                            textAlign: TextAlign.start,
+                                            style: FlutterFlowTheme.of(context)
+                                                .bodyText1
+                                                .override(
+                                                  fontFamily:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .bodyText1Family,
+                                                  fontSize: 10.0,
+                                                  useGoogleFonts: GoogleFonts
+                                                          .asMap()
+                                                      .containsKey(
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .bodyText1Family),
+                                                ),
                                           ),
-                                          textAlign: TextAlign.start,
-                                          style: FlutterFlowTheme.of(context)
-                                              .bodyText1
-                                              .override(
-                                                fontFamily:
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyText1Family,
-                                                fontSize: 10.0,
-                                                useGoogleFonts: GoogleFonts
-                                                        .asMap()
-                                                    .containsKey(
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .bodyText1Family),
-                                              ),
                                         ),
                                       ),
                                     ),
@@ -377,9 +376,7 @@ class _CashtableWidgetState extends State<CashtableWidget>
                                         padding: EdgeInsetsDirectional.fromSTEB(
                                             42.0, 105.0, 0.0, 0.0),
                                         child: Text(
-                                          FFLocalizations.of(context).getText(
-                                            'd5rjmskx' /*  */,
-                                          ),
+                                          widget.users!,
                                           style: FlutterFlowTheme.of(context)
                                               .bodyText1
                                               .override(
@@ -407,24 +404,26 @@ class _CashtableWidgetState extends State<CashtableWidget>
                                       child: Padding(
                                         padding: EdgeInsetsDirectional.fromSTEB(
                                             42.0, 120.0, 0.0, 0.0),
-                                        child: Text(
-                                          FFLocalizations.of(context).getText(
-                                            'xr5abq76' /* colombia */,
+                                        child: AuthUserStreamWidget(
+                                          builder: (context) => Text(
+                                            currentUserDocument!.location!
+                                                .toString(),
+                                            style: FlutterFlowTheme.of(context)
+                                                .bodyText1
+                                                .override(
+                                                  fontFamily:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .bodyText1Family,
+                                                  fontSize: 10.0,
+                                                  useGoogleFonts: GoogleFonts
+                                                          .asMap()
+                                                      .containsKey(
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .bodyText1Family),
+                                                ),
                                           ),
-                                          style: FlutterFlowTheme.of(context)
-                                              .bodyText1
-                                              .override(
-                                                fontFamily:
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyText1Family,
-                                                fontSize: 10.0,
-                                                useGoogleFonts: GoogleFonts
-                                                        .asMap()
-                                                    .containsKey(
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .bodyText1Family),
-                                              ),
                                         ),
                                       ),
                                     ),
@@ -458,24 +457,26 @@ class _CashtableWidgetState extends State<CashtableWidget>
                                       child: Padding(
                                         padding: EdgeInsetsDirectional.fromSTEB(
                                             42.0, 155.0, 0.0, 0.0),
-                                        child: Text(
-                                          FFLocalizations.of(context).getText(
-                                            'ypr8fvp1' /* colombia */,
+                                        child: AuthUserStreamWidget(
+                                          builder: (context) => Text(
+                                            currentUserDocument!.location!
+                                                .toString(),
+                                            style: FlutterFlowTheme.of(context)
+                                                .bodyText1
+                                                .override(
+                                                  fontFamily:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .bodyText1Family,
+                                                  fontSize: 10.0,
+                                                  useGoogleFonts: GoogleFonts
+                                                          .asMap()
+                                                      .containsKey(
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .bodyText1Family),
+                                                ),
                                           ),
-                                          style: FlutterFlowTheme.of(context)
-                                              .bodyText1
-                                              .override(
-                                                fontFamily:
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyText1Family,
-                                                fontSize: 10.0,
-                                                useGoogleFonts: GoogleFonts
-                                                        .asMap()
-                                                    .containsKey(
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .bodyText1Family),
-                                              ),
                                         ),
                                       ),
                                     ),
@@ -490,9 +491,7 @@ class _CashtableWidgetState extends State<CashtableWidget>
                                         padding: EdgeInsetsDirectional.fromSTEB(
                                             42.0, 140.0, 0.0, 0.0),
                                         child: Text(
-                                          FFLocalizations.of(context).getText(
-                                            'cpujx3hi' /*  */,
-                                          ),
+                                          widget.users!,
                                           style: FlutterFlowTheme.of(context)
                                               .bodyText1
                                               .override(
@@ -512,195 +511,277 @@ class _CashtableWidgetState extends State<CashtableWidget>
                                     ),
                                 ],
                               ),
-                            if (responsiveVisibility(
-                              context: context,
-                              tablet: false,
-                              desktop: false,
-                            ))
-                              Expanded(
-                                child: Align(
-                                  alignment: AlignmentDirectional(0.0, -0.7),
-                                  child: Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
-                                        10.0, 0.0, 0.0, 0.0),
-                                    child: Row(
-                                      mainAxisSize: MainAxisSize.max,
+                            Expanded(
+                              child: Padding(
+                                padding: EdgeInsetsDirectional.fromSTEB(
+                                    30.0, 0.0, 0.0, 0.0),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  children: [
+                                    Stack(
                                       children: [
+                                        Align(
+                                          alignment:
+                                              AlignmentDirectional(0.0, 0.0),
+                                          child: Image.asset(
+                                            'assets/images/Vector_(1).png',
+                                            width: 190.0,
+                                            height: 290.0,
+                                            fit: BoxFit.cover,
+                                          ),
+                                        ),
+                                        Align(
+                                          alignment:
+                                              AlignmentDirectional(0.0, 0.0),
+                                          child: Padding(
+                                            padding:
+                                                EdgeInsetsDirectional.fromSTEB(
+                                                    10.0, 0.0, 0.0, 0.0),
+                                            child: Text(
+                                              FFLocalizations.of(context)
+                                                  .getText(
+                                                'xyjmuh5i' /* audience */,
+                                              ),
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyText1,
+                                            ),
+                                          ),
+                                        ),
                                         if (responsiveVisibility(
                                           context: context,
+                                          phone: false,
                                           tablet: false,
                                           desktop: false,
                                         ))
-                                          Padding(
-                                            padding:
-                                                EdgeInsetsDirectional.fromSTEB(
-                                                    0.0, 0.0, 0.0, 10.0),
-                                            child: Stack(
-                                              children: [
-                                                if (responsiveVisibility(
-                                                  context: context,
-                                                  tablet: false,
-                                                  desktop: false,
-                                                ))
-                                                  Align(
-                                                    alignment:
-                                                        AlignmentDirectional(
-                                                            0.0, 0.5),
-                                                    child: Padding(
-                                                      padding:
-                                                          EdgeInsetsDirectional
-                                                              .fromSTEB(
-                                                                  15.0,
-                                                                  0.0,
-                                                                  0.0,
-                                                                  0.0),
-                                                      child: InkWell(
-                                                        onTap: () async {
-                                                          logFirebaseEvent(
-                                                              'CASHTABLE_PAGE_Image_p3yyyv7h_ON_TAP');
-                                                          logFirebaseEvent(
-                                                              'Image_expand_image');
-                                                          await Navigator.push(
-                                                            context,
-                                                            PageTransition(
-                                                              type:
-                                                                  PageTransitionType
-                                                                      .fade,
-                                                              child:
-                                                                  FlutterFlowExpandedImageView(
-                                                                image:
-                                                                    Image.asset(
-                                                                  'assets/images/Vector_(1).png',
-                                                                  fit: BoxFit
-                                                                      .contain,
-                                                                ),
-                                                                allowRotation:
-                                                                    false,
-                                                                tag: 'hello',
-                                                                useHeroAnimation:
-                                                                    true,
-                                                              ),
-                                                            ),
-                                                          );
-                                                        },
-                                                        child: Hero(
-                                                          tag: 'hello',
-                                                          transitionOnUserGestures:
-                                                              true,
-                                                          child: Image.asset(
-                                                            'assets/images/Vector_(1).png',
-                                                            width: 186.3,
-                                                            height: 50.4,
-                                                            fit: BoxFit.cover,
-                                                          ),
-                                                        ),
-                                                      ),
-                                                    ),
-                                                  ),
-                                                if (responsiveVisibility(
-                                                  context: context,
-                                                  tablet: false,
-                                                  desktop: false,
-                                                ))
-                                                  Align(
-                                                    alignment:
-                                                        AlignmentDirectional(
-                                                            0.0, 0.0),
-                                                    child: Padding(
-                                                      padding:
-                                                          EdgeInsetsDirectional
-                                                              .fromSTEB(
-                                                                  20.0,
-                                                                  20.0,
-                                                                  0.0,
-                                                                  0.0),
-                                                      child: AutoSizeText(
-                                                        FFLocalizations.of(
-                                                                context)
-                                                            .getText(
-                                                          'z24lxuqa' /* VIEWER: */,
-                                                        ),
-                                                        textAlign:
-                                                            TextAlign.start,
-                                                        style:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .bodyText1,
-                                                      ),
-                                                    ),
-                                                  ),
-                                                if (responsiveVisibility(
-                                                  context: context,
-                                                  tablet: false,
-                                                  desktop: false,
-                                                ))
-                                                  Align(
-                                                    alignment:
-                                                        AlignmentDirectional(
-                                                            0.0, 0.01),
-                                                    child: Padding(
-                                                      padding:
-                                                          EdgeInsetsDirectional
-                                                              .fromSTEB(
-                                                                  118.0,
-                                                                  20.0,
-                                                                  0.0,
-                                                                  0.0),
-                                                      child: Text(
-                                                        widget.users!,
-                                                        style:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .bodyText1,
-                                                      ),
-                                                    ),
-                                                  ),
-                                                if (responsiveVisibility(
-                                                  context: context,
-                                                  tablet: false,
-                                                  desktop: false,
-                                                ))
-                                                  Align(
-                                                    alignment:
-                                                        AlignmentDirectional(
-                                                            0.96, 0.4),
-                                                    child: Padding(
-                                                      padding:
-                                                          EdgeInsetsDirectional
-                                                              .fromSTEB(
-                                                                  170.0,
-                                                                  0.0,
-                                                                  0.0,
-                                                                  0.0),
-                                                      child: Icon(
-                                                        Icons.remove_red_eye,
-                                                        color:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .textColor,
-                                                        size: 24.0,
-                                                      ),
-                                                    ),
-                                                  ),
-                                              ],
+                                          Align(
+                                            alignment:
+                                                AlignmentDirectional(0.0, 0.0),
+                                            child: Padding(
+                                              padding: EdgeInsetsDirectional
+                                                  .fromSTEB(
+                                                      95.0, 0.0, 0.0, 0.0),
+                                              child: Text(
+                                                FFLocalizations.of(context)
+                                                    .getText(
+                                                  'tbhk356n' /*  */,
+                                                ),
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyText1,
+                                              ),
+                                            ),
+                                          ),
+                                        if (responsiveVisibility(
+                                          context: context,
+                                          desktop: false,
+                                        ))
+                                          Align(
+                                            alignment:
+                                                AlignmentDirectional(0.0, 0.0),
+                                            child: Padding(
+                                              padding: EdgeInsetsDirectional
+                                                  .fromSTEB(
+                                                      150.0, 0.0, 0.0, 0.0),
+                                              child: FlutterFlowIconButton(
+                                                borderColor: Colors.transparent,
+                                                borderRadius: 20.0,
+                                                borderWidth: 1.0,
+                                                buttonSize: 40.0,
+                                                icon: Icon(
+                                                  Icons.remove_red_eye,
+                                                  color: FlutterFlowTheme.of(
+                                                          context)
+                                                      .primaryText,
+                                                  size: 15.0,
+                                                ),
+                                                onPressed: () {
+                                                  print(
+                                                      'IconButton pressed ...');
+                                                },
+                                              ),
                                             ),
                                           ),
                                       ],
                                     ),
-                                  ),
+                                  ],
                                 ),
                               ),
-                            if (responsiveVisibility(
-                              context: context,
-                              tablet: false,
-                              desktop: false,
-                            ))
-                              Image.asset(
-                                'assets/images/Group_(1).png',
-                                width: 176.5,
-                                height: 100.0,
-                                fit: BoxFit.cover,
+                            ),
+                            Expanded(
+                              child: Align(
+                                alignment: AlignmentDirectional(0.0, -250.0),
+                                child: Text(
+                                  FFLocalizations.of(context).getText(
+                                    '9sxg7i09' /* Hello World */,
+                                  ),
+                                  style: FlutterFlowTheme.of(context).bodyText1,
+                                ),
                               ),
+                            ),
+                            Padding(
+                              padding: EdgeInsetsDirectional.fromSTEB(
+                                  20.0, 0.0, 0.0, 0.0),
+                              child: Row(
+                                mainAxisSize: MainAxisSize.max,
+                                children: [
+                                  Stack(
+                                    children: [
+                                      if (responsiveVisibility(
+                                        context: context,
+                                        tablet: false,
+                                        desktop: false,
+                                      ))
+                                        Align(
+                                          alignment:
+                                              AlignmentDirectional(0.32, -0.04),
+                                          child: Image.asset(
+                                            'assets/images/Group_(2).png',
+                                            width: 195.0,
+                                            height: 100.0,
+                                            fit: BoxFit.cover,
+                                          ),
+                                        ),
+                                      Align(
+                                        alignment:
+                                            AlignmentDirectional(0.0, 0.0),
+                                        child: Padding(
+                                          padding:
+                                              EdgeInsetsDirectional.fromSTEB(
+                                                  70.0, 20.0, 0.0, 0.0),
+                                          child: Text(
+                                            valueOrDefault<String>(
+                                              widget.users,
+                                              'name',
+                                            ),
+                                            style: FlutterFlowTheme.of(context)
+                                                .bodyText1,
+                                          ),
+                                        ),
+                                      ),
+                                      Align(
+                                        alignment:
+                                            AlignmentDirectional(0.0, 0.0),
+                                        child: Padding(
+                                          padding:
+                                              EdgeInsetsDirectional.fromSTEB(
+                                                  50.0, 60.0, 0.0, 0.0),
+                                          child: Text(
+                                            FFLocalizations.of(context).getText(
+                                              'k1wsrbus' /* Hello World */,
+                                            ),
+                                            style: FlutterFlowTheme.of(context)
+                                                .bodyText1,
+                                          ),
+                                        ),
+                                      ),
+                                      Align(
+                                        alignment:
+                                            AlignmentDirectional(0.0, 0.0),
+                                        child: Padding(
+                                          padding:
+                                              EdgeInsetsDirectional.fromSTEB(
+                                                  50.0, 40.0, 0.0, 0.0),
+                                          child: Image.asset(
+                                            'assets/images/Vector_44.png',
+                                            width: 100.0,
+                                            height: 5.0,
+                                            fit: BoxFit.cover,
+                                          ),
+                                        ),
+                                      ),
+                                      Align(
+                                        alignment:
+                                            AlignmentDirectional(0.0, 0.0),
+                                        child: Padding(
+                                          padding:
+                                              EdgeInsetsDirectional.fromSTEB(
+                                                  50.0, 45.0, 0.0, 0.0),
+                                          child: Image.asset(
+                                            'assets/images/Vector_44.png',
+                                            width: 100.0,
+                                            height: 5.0,
+                                            fit: BoxFit.cover,
+                                          ),
+                                        ),
+                                      ),
+                                      if (responsiveVisibility(
+                                        context: context,
+                                        tablet: false,
+                                        desktop: false,
+                                      ))
+                                        Align(
+                                          alignment:
+                                              AlignmentDirectional(0.0, 0.0),
+                                          child: Padding(
+                                            padding:
+                                                EdgeInsetsDirectional.fromSTEB(
+                                                    40.0, 50.0, 0.0, 0.0),
+                                            child: Text(
+                                              FFLocalizations.of(context)
+                                                  .getText(
+                                                '8gfipbps' /*  */,
+                                              ),
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyText1
+                                                      .override(
+                                                        fontFamily:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyText1Family,
+                                                        color:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .textColor,
+                                                        useGoogleFonts: GoogleFonts
+                                                                .asMap()
+                                                            .containsKey(
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyText1Family),
+                                                      ),
+                                            ),
+                                          ),
+                                        ),
+                                      if (responsiveVisibility(
+                                        context: context,
+                                        desktop: false,
+                                      ))
+                                        Align(
+                                          alignment:
+                                              AlignmentDirectional(0.0, 0.0),
+                                          child: Padding(
+                                            padding:
+                                                EdgeInsetsDirectional.fromSTEB(
+                                                    80.0, 50.0, 0.0, 0.0),
+                                            child: Text(
+                                              '',
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyText1
+                                                      .override(
+                                                        fontFamily:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyText1Family,
+                                                        color:
+                                                            Color(0xDA5DFF0F),
+                                                        useGoogleFonts: GoogleFonts
+                                                                .asMap()
+                                                            .containsKey(
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyText1Family),
+                                                      ),
+                                            ),
+                                          ),
+                                        ),
+                                    ],
+                                  ),
+                                ],
+                              ),
+                            ),
                           ],
                         ),
                       ),
@@ -864,7 +945,7 @@ class _CashtableWidgetState extends State<CashtableWidget>
                                                   child: Text(
                                                     FFLocalizations.of(context)
                                                         .getText(
-                                                      'lm8z6s2r' /* :( */,
+                                                      'lm8z6s2r' /*  */,
                                                     ),
                                                     textAlign: TextAlign.center,
                                                     style: FlutterFlowTheme.of(
@@ -1426,7 +1507,6 @@ class _CashtableWidgetState extends State<CashtableWidget>
                                         back: Visibility(
                                           visible: responsiveVisibility(
                                             context: context,
-                                            phone: false,
                                             tablet: false,
                                             desktop: false,
                                           ),
@@ -1468,9 +1548,7 @@ class _CashtableWidgetState extends State<CashtableWidget>
                                                               FlutterFlowTheme.of(
                                                                       context)
                                                                   .bodyText1Family,
-                                                          color: FlutterFlowTheme
-                                                                  .of(context)
-                                                              .black600,
+                                                          color: Colors.black,
                                                           useGoogleFonts: GoogleFonts
                                                                   .asMap()
                                                               .containsKey(
@@ -1582,9 +1660,7 @@ class _CashtableWidgetState extends State<CashtableWidget>
                                                               FlutterFlowTheme.of(
                                                                       context)
                                                                   .bodyText1Family,
-                                                          color: FlutterFlowTheme
-                                                                  .of(context)
-                                                              .black600,
+                                                          color: Colors.black,
                                                           useGoogleFonts: GoogleFonts
                                                                   .asMap()
                                                               .containsKey(

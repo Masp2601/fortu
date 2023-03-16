@@ -4,6 +4,7 @@ import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
+import '/flutter_flow/form_field_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
@@ -477,6 +478,8 @@ class _TransferFundsWidgetState extends State<TransferFundsWidget>
                       padding:
                           EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
                       child: FlutterFlowDropDown<String>(
+                        controller: _model.dropDownController1 ??=
+                            FormFieldController<String>(null),
                         options: [
                           FFLocalizations.of(context).getText(
                             'w4smsh2i' /* Internal Transfer */,
@@ -517,6 +520,8 @@ class _TransferFundsWidgetState extends State<TransferFundsWidget>
                       padding:
                           EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
                       child: FlutterFlowDropDown<String>(
+                        controller: _model.dropDownController2 ??=
+                            FormFieldController<String>(null),
                         options: [
                           FFLocalizations.of(context).getText(
                             'fddma8xl' /* Select Account */,

@@ -106,11 +106,20 @@ class _GameWidgetState extends State<GameWidget> {
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           children: [
-                            Image.asset(
-                              'assets/images/Asset_1-8.png',
-                              width: 335.1,
-                              height: 173.8,
-                              fit: BoxFit.cover,
+                            InkWell(
+                              onTap: () async {
+                                logFirebaseEvent(
+                                    'GAME_PAGE_Image_9l6p4dby_ON_TAP');
+                                logFirebaseEvent('Image_navigate_to');
+
+                                context.pushNamed('choosevalue');
+                              },
+                              child: Image.asset(
+                                'assets/images/Asset_1-8.png',
+                                width: 335.1,
+                                height: 173.8,
+                                fit: BoxFit.cover,
+                              ),
                             ),
                             if (responsiveVisibility(
                               context: context,
@@ -139,182 +148,317 @@ class _GameWidgetState extends State<GameWidget> {
                           alignment: AlignmentDirectional(-0.6, -1.5),
                           child: Padding(
                             padding: EdgeInsetsDirectional.fromSTEB(
-                                10.0, 0.0, 10.0, 0.0),
+                                10.0, 20.0, 10.0, 10.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
-                                Image.asset(
-                                  'assets/images/y20dh_',
-                                  height: 108.1,
-                                  fit: BoxFit.cover,
-                                ),
-                                Image.network(
-                                  '',
-                                  fit: BoxFit.cover,
-                                ),
-                                Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
-                                      50.0, 0.0, 50.0, 0.0),
-                                  child: Image.asset(
-                                    'assets/images/PESOS_COLOMBIANOS.png',
-                                    fit: BoxFit.cover,
+                                Text(
+                                  FFLocalizations.of(context).getText(
+                                    '68vn95yr' /* Hello World */,
                                   ),
+                                  style: FlutterFlowTheme.of(context).bodyText1,
                                 ),
                               ],
                             ),
                           ),
                         ),
-                      Align(
-                        alignment: AlignmentDirectional(0.0, 1.0),
+                      Expanded(
                         child: Padding(
                           padding: EdgeInsetsDirectional.fromSTEB(
                               10.0, 0.0, 10.0, 0.0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
+                            mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              if (responsiveVisibility(
-                                context: context,
-                                tabletLandscape: false,
-                                desktop: false,
-                              ))
-                                Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
-                                      0.0, 0.0, 10.0, 0.0),
-                                  child: InkWell(
-                                    onTap: () async {
-                                      logFirebaseEvent(
-                                          'GAME_PAGE_Image_g0pgq9a1_ON_TAP');
-                                      logFirebaseEvent('Image_navigate_to');
+                              Expanded(
+                                child: Stack(
+                                  children: [
+                                    if (responsiveVisibility(
+                                      context: context,
+                                      tabletLandscape: false,
+                                      desktop: false,
+                                    ))
+                                      Align(
+                                        alignment:
+                                            AlignmentDirectional(-1.0, 0.04),
+                                        child: InkWell(
+                                          onTap: () async {
+                                            logFirebaseEvent(
+                                                'GAME_PAGE_Image_g0pgq9a1_ON_TAP');
+                                            logFirebaseEvent(
+                                                'Image_navigate_to');
 
-                                      context.pushNamed('cashtable');
-                                    },
-                                    child: Image.asset(
-                                      'assets/images/1-8.png',
-                                      fit: BoxFit.cover,
-                                    ),
-                                  ),
-                                ),
-                              if (responsiveVisibility(
-                                context: context,
-                                tabletLandscape: false,
-                                desktop: false,
-                              ))
-                                Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
-                                      5.0, 0.0, 10.0, 0.0),
-                                  child: InkWell(
-                                    onTap: () async {
-                                      logFirebaseEvent(
-                                          'GAME_PAGE_Image_v56vpzjv_ON_TAP');
-                                      logFirebaseEvent('Image_navigate_to');
+                                            context.pushNamed('cashtable');
+                                          },
+                                          child: Image.asset(
+                                            'assets/images/1-8.png',
+                                            width: 120.0,
+                                            height: 120.0,
+                                            fit: BoxFit.contain,
+                                          ),
+                                        ),
+                                      ),
+                                    if (responsiveVisibility(
+                                      context: context,
+                                      tabletLandscape: false,
+                                      desktop: false,
+                                    ))
+                                      Align(
+                                        alignment:
+                                            AlignmentDirectional(-0.05, -0.03),
+                                        child: InkWell(
+                                          onTap: () async {
+                                            logFirebaseEvent(
+                                                'GAME_PAGE_Image_v56vpzjv_ON_TAP');
+                                            logFirebaseEvent(
+                                                'Image_navigate_to');
 
-                                      context.pushNamed('goldtable');
-                                    },
-                                    child: Image.asset(
-                                      'assets/images/gold_1-8.png',
-                                      fit: BoxFit.cover,
-                                    ),
-                                  ),
-                                ),
-                              Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
-                                    10.0, 0.0, 0.0, 0.0),
-                                child: InkWell(
-                                  onTap: () async {
-                                    logFirebaseEvent(
-                                        'GAME_PAGE_Image_fejsz47e_ON_TAP');
-                                    logFirebaseEvent('Image_navigate_to');
+                                            context.pushNamed('goldtable');
+                                          },
+                                          child: Image.asset(
+                                            'assets/images/gold_1-8.png',
+                                            width: 200.0,
+                                            height: 200.0,
+                                            fit: BoxFit.contain,
+                                          ),
+                                        ),
+                                      ),
+                                    if (responsiveVisibility(
+                                      context: context,
+                                      tabletLandscape: false,
+                                      desktop: false,
+                                    ))
+                                      Align(
+                                        alignment:
+                                            AlignmentDirectional(1.5, -0.03),
+                                        child: InkWell(
+                                          onTap: () async {
+                                            logFirebaseEvent(
+                                                'GAME_PAGE_Image_fejsz47e_ON_TAP');
+                                            logFirebaseEvent(
+                                                'Image_navigate_to');
 
-                                    context.pushNamed('table');
-                                  },
-                                  child: Image.asset(
-                                    'assets/images/red-8.png',
-                                    fit: BoxFit.cover,
-                                  ),
+                                            context.pushNamed('table');
+                                          },
+                                          child: Image.asset(
+                                            'assets/images/red-8.png',
+                                            width: 200.0,
+                                            height: 200.0,
+                                            fit: BoxFit.contain,
+                                          ),
+                                        ),
+                                      ),
+                                  ],
                                 ),
                               ),
                             ],
                           ),
                         ),
                       ),
+                      Padding(
+                        padding: EdgeInsetsDirectional.fromSTEB(
+                            10.0, 10.0, 10.0, 0.0),
+                        child: Row(
+                          mainAxisSize: MainAxisSize.max,
+                          children: [
+                            Expanded(
+                              child: Stack(
+                                children: [
+                                  if (responsiveVisibility(
+                                    context: context,
+                                    tabletLandscape: false,
+                                    desktop: false,
+                                  ))
+                                    Align(
+                                      alignment:
+                                          AlignmentDirectional(-1.0, 0.04),
+                                      child: Padding(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                            10.0, 0.0, 20.0, 0.0),
+                                        child: InkWell(
+                                          onTap: () async {
+                                            logFirebaseEvent(
+                                                'GAME_PAGE_Image_e1a2ewpp_ON_TAP');
+                                            logFirebaseEvent(
+                                                'Image_navigate_to');
+
+                                            context.pushNamed('cashtable');
+                                          },
+                                          child: Image.asset(
+                                            'assets/images/Vector_(16).png',
+                                            fit: BoxFit.cover,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  if (responsiveVisibility(
+                                    context: context,
+                                    tabletLandscape: false,
+                                    desktop: false,
+                                  ))
+                                    Align(
+                                      alignment:
+                                          AlignmentDirectional(-0.05, -0.03),
+                                      child: Padding(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                            25.0, 0.0, 10.0, 0.0),
+                                        child: InkWell(
+                                          onTap: () async {
+                                            logFirebaseEvent(
+                                                'GAME_PAGE_Image_wdqbelev_ON_TAP');
+                                            logFirebaseEvent(
+                                                'Image_navigate_to');
+
+                                            context.pushNamed('goldtable');
+                                          },
+                                          child: Image.asset(
+                                            'assets/images/Vector_(17).png',
+                                            fit: BoxFit.cover,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  if (responsiveVisibility(
+                                    context: context,
+                                    tabletLandscape: false,
+                                    desktop: false,
+                                  ))
+                                    Align(
+                                      alignment:
+                                          AlignmentDirectional(0.9, -0.03),
+                                      child: InkWell(
+                                        onTap: () async {
+                                          logFirebaseEvent(
+                                              'GAME_PAGE_Image_spj6s5ps_ON_TAP');
+                                          logFirebaseEvent('Image_navigate_to');
+
+                                          context.pushNamed('table');
+                                        },
+                                        child: Image.asset(
+                                          'assets/images/Vector_(18).png',
+                                          fit: BoxFit.cover,
+                                        ),
+                                      ),
+                                    ),
+                                ],
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: EdgeInsetsDirectional.fromSTEB(
+                            10.0, 10.0, 10.0, 0.0),
+                        child: Row(
+                          mainAxisSize: MainAxisSize.max,
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Text(
+                              FFLocalizations.of(context).getText(
+                                '9jfa6nhu' /*  */,
+                              ),
+                              textAlign: TextAlign.center,
+                              style: FlutterFlowTheme.of(context).bodyText1,
+                            ),
+                          ],
+                        ),
+                      ),
                       Expanded(
                         child: Align(
-                          alignment: AlignmentDirectional(0.0, -2.5),
+                          alignment: AlignmentDirectional(0.0, 0.05),
                           child: Padding(
                             padding: EdgeInsetsDirectional.fromSTEB(
-                                10.0, 0.0, 10.0, 9.5),
+                                10.0, 10.0, 10.0, 0.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
                               children: [
-                                Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
-                                      10.0, 0.0, 0.0, 0.0),
-                                  child: Text(
-                                    FFLocalizations.of(context).getText(
-                                      '2b7lms2r' /*  */,
-                                    ),
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily:
-                                              FlutterFlowTheme.of(context)
-                                                  .bodyText1Family,
-                                          fontSize: 12.0,
-                                          useGoogleFonts: GoogleFonts.asMap()
-                                              .containsKey(
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyText1Family),
-                                        ),
-                                  ),
-                                ),
-                                Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
-                                      45.0, 0.0, 0.0, 0.0),
-                                  child: Text(
-                                    FFLocalizations.of(context).getText(
-                                      'cec82gsu' /* Hello World */,
-                                    ),
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily:
-                                              FlutterFlowTheme.of(context)
-                                                  .bodyText1Family,
-                                          fontSize: 12.0,
-                                          useGoogleFonts: GoogleFonts.asMap()
-                                              .containsKey(
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyText1Family),
-                                        ),
-                                  ),
-                                ),
-                                if (responsiveVisibility(
-                                  context: context,
-                                  tabletLandscape: false,
-                                  desktop: false,
-                                ))
-                                  Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
-                                        50.0, 2.0, 0.0, 0.0),
-                                    child: Text(
-                                      FFLocalizations.of(context).getText(
-                                        'y52ei7s4' /*  */,
-                                      ),
-                                      style: FlutterFlowTheme.of(context)
-                                          .bodyText1
-                                          .override(
-                                            fontFamily:
-                                                FlutterFlowTheme.of(context)
-                                                    .bodyText1Family,
-                                            fontSize: 12.0,
-                                            useGoogleFonts: GoogleFonts.asMap()
-                                                .containsKey(
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyText1Family),
+                                Expanded(
+                                  child: Stack(
+                                    children: [
+                                      if (responsiveVisibility(
+                                        context: context,
+                                        tabletLandscape: false,
+                                        desktop: false,
+                                      ))
+                                        Align(
+                                          alignment:
+                                              AlignmentDirectional(-1.0, -0.05),
+                                          child: Padding(
+                                            padding:
+                                                EdgeInsetsDirectional.fromSTEB(
+                                                    10.0, 0.0, 20.0, 0.0),
+                                            child: InkWell(
+                                              onTap: () async {
+                                                logFirebaseEvent(
+                                                    'GAME_PAGE_Image_fub5mkvj_ON_TAP');
+                                                logFirebaseEvent(
+                                                    'Image_navigate_to');
+
+                                                context.pushNamed('cashtable');
+                                              },
+                                              child: Image.asset(
+                                                'assets/images/1-8.png',
+                                                width: 90.0,
+                                                height: 90.0,
+                                                fit: BoxFit.contain,
+                                              ),
+                                            ),
                                           ),
-                                    ),
+                                        ),
+                                      if (responsiveVisibility(
+                                        context: context,
+                                        tabletLandscape: false,
+                                        desktop: false,
+                                      ))
+                                        Align(
+                                          alignment: AlignmentDirectional(
+                                              -0.05, -0.03),
+                                          child: InkWell(
+                                            onTap: () async {
+                                              logFirebaseEvent(
+                                                  'GAME_PAGE_Image_vdee6b7g_ON_TAP');
+                                              logFirebaseEvent(
+                                                  'Image_navigate_to');
+
+                                              context.pushNamed('goldtable');
+                                            },
+                                            child: Image.asset(
+                                              'assets/images/gold_1-8.png',
+                                              width: 200.0,
+                                              height: 200.0,
+                                              fit: BoxFit.contain,
+                                            ),
+                                          ),
+                                        ),
+                                      if (responsiveVisibility(
+                                        context: context,
+                                        tabletLandscape: false,
+                                        desktop: false,
+                                      ))
+                                        Align(
+                                          alignment:
+                                              AlignmentDirectional(1.5, -0.03),
+                                          child: InkWell(
+                                            onTap: () async {
+                                              logFirebaseEvent(
+                                                  'GAME_PAGE_Image_nvukq2q1_ON_TAP');
+                                              logFirebaseEvent(
+                                                  'Image_navigate_to');
+
+                                              context.pushNamed('table');
+                                            },
+                                            child: Image.asset(
+                                              'assets/images/red-8.png',
+                                              width: 200.0,
+                                              height: 200.0,
+                                              fit: BoxFit.contain,
+                                            ),
+                                          ),
+                                        ),
+                                    ],
                                   ),
+                                ),
                               ],
                             ),
                           ),
@@ -322,23 +466,116 @@ class _GameWidgetState extends State<GameWidget> {
                       ),
                       Expanded(
                         child: Align(
-                          alignment: AlignmentDirectional(0.0, -25.0),
+                          alignment: AlignmentDirectional(0.0, -15.0),
                           child: Padding(
                             padding: EdgeInsetsDirectional.fromSTEB(
-                                10.0, 24.0, 10.0, 0.0),
+                                10.0, 0.0, 10.0, 0.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
-                              children: [],
+                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                              children: [
+                                Expanded(
+                                  child: Stack(
+                                    children: [
+                                      if (responsiveVisibility(
+                                        context: context,
+                                        tabletLandscape: false,
+                                        desktop: false,
+                                      ))
+                                        Align(
+                                          alignment:
+                                              AlignmentDirectional(-1.0, 0.04),
+                                          child: Padding(
+                                            padding:
+                                                EdgeInsetsDirectional.fromSTEB(
+                                                    10.0, 0.0, 20.0, 0.0),
+                                            child: InkWell(
+                                              onTap: () async {
+                                                logFirebaseEvent(
+                                                    'GAME_PAGE_Image_4d2wn6hf_ON_TAP');
+                                                logFirebaseEvent(
+                                                    'Image_navigate_to');
+
+                                                context.pushNamed('cashtable');
+                                              },
+                                              child: Image.asset(
+                                                'assets/images/Vector_(16).png',
+                                                fit: BoxFit.cover,
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                      if (responsiveVisibility(
+                                        context: context,
+                                        tabletLandscape: false,
+                                        desktop: false,
+                                      ))
+                                        Align(
+                                          alignment: AlignmentDirectional(
+                                              -0.05, -0.03),
+                                          child: Padding(
+                                            padding:
+                                                EdgeInsetsDirectional.fromSTEB(
+                                                    25.0, 0.0, 10.0, 0.0),
+                                            child: InkWell(
+                                              onTap: () async {
+                                                logFirebaseEvent(
+                                                    'GAME_PAGE_Image_l3xgu6ui_ON_TAP');
+                                                logFirebaseEvent(
+                                                    'Image_navigate_to');
+
+                                                context.pushNamed('goldtable');
+                                              },
+                                              child: Image.asset(
+                                                'assets/images/Vector_(17).png',
+                                                fit: BoxFit.cover,
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                      if (responsiveVisibility(
+                                        context: context,
+                                        tabletLandscape: false,
+                                        desktop: false,
+                                      ))
+                                        Align(
+                                          alignment:
+                                              AlignmentDirectional(0.9, -0.03),
+                                          child: InkWell(
+                                            onTap: () async {
+                                              logFirebaseEvent(
+                                                  'GAME_PAGE_Image_we1l5unu_ON_TAP');
+                                              logFirebaseEvent(
+                                                  'Image_navigate_to');
+
+                                              context.pushNamed('table');
+                                            },
+                                            child: Image.asset(
+                                              'assets/images/Vector_(18).png',
+                                              fit: BoxFit.cover,
+                                            ),
+                                          ),
+                                        ),
+                                    ],
+                                  ),
+                                ),
+                              ],
                             ),
                           ),
                         ),
                       ),
-                      Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
-                            10.0, 25.0, 10.0, 25.0),
-                        child: Row(
-                          mainAxisSize: MainAxisSize.max,
-                          children: [],
+                      Expanded(
+                        child: Align(
+                          alignment: AlignmentDirectional(0.0, 10.0),
+                          child: Padding(
+                            padding: EdgeInsetsDirectional.fromSTEB(
+                                10.0, 0.0, 10.0, 0.0),
+                            child: Row(
+                              mainAxisSize: MainAxisSize.max,
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [],
+                            ),
+                          ),
                         ),
                       ),
                       Padding(
