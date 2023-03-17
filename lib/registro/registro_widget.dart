@@ -1,5 +1,4 @@
 import '/auth/auth_util.dart';
-import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_autocomplete_options_list.dart';
 import '/flutter_flow/flutter_flow_expanded_image_view.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
@@ -591,7 +590,7 @@ class _RegistroWidgetState extends State<RegistroWidget> {
                                                 }
 
                                                 context.goNamedAuth(
-                                                    'MY_Card', mounted);
+                                                    'editProfile', mounted);
                                               },
                                               autofocus: true,
                                               obscureText: false,
@@ -770,6 +769,8 @@ class _RegistroWidgetState extends State<RegistroWidget> {
                                   ),
                                 ),
                               ),
+
+                            // actualizacion
                             if (responsiveVisibility(
                               context: context,
                               tabletLandscape: false,
@@ -798,16 +799,8 @@ class _RegistroWidgetState extends State<RegistroWidget> {
                                           return;
                                         }
 
-                                        final usersCreateData =
-                                            createUsersRecordData(
-                                          displayName: 'text',
-                                          password: '',
-                                        );
-                                        await UsersRecord.collection
-                                            .doc(user.uid)
-                                            .update(usersCreateData);
-
-                                        context.goNamedAuth('MY_Card', mounted);
+                                        context.goNamedAuth(
+                                            'editProfile', mounted);
                                       },
                                       text: FFLocalizations.of(context).getText(
                                         '3ugmx2zp' /*  */,
@@ -891,7 +884,7 @@ class _RegistroWidgetState extends State<RegistroWidget> {
                                             }
 
                                             context.goNamedAuth(
-                                                'MY_Card', mounted);
+                                                'editProfile', mounted);
                                           },
                                           child: FaIcon(
                                             FontAwesomeIcons.google,
@@ -953,7 +946,7 @@ class _RegistroWidgetState extends State<RegistroWidget> {
                                             }
 
                                             context.goNamedAuth(
-                                                'MY_Card', mounted);
+                                                'editProfile', mounted);
                                           },
                                           child: FaIcon(
                                             FontAwesomeIcons.facebookF,

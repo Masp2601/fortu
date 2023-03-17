@@ -70,13 +70,14 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
       errorBuilder: (context, _) =>
-          appStateNotifier.loggedIn ? NavBarPage() : LoginWidget(),
+          appStateNotifier.loggedIn ? EditProfileWidget() : RegistroWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
-          builder: (context, _) =>
-              appStateNotifier.loggedIn ? NavBarPage() : LoginWidget(),
+          builder: (context, _) => appStateNotifier.loggedIn
+              ? EditProfileWidget()
+              : RegistroWidget(),
           routes: [
             FFRoute(
               name: 'registro',
@@ -106,16 +107,12 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
             FFRoute(
               name: 'MY_Card',
               path: 'mYCard',
-              builder: (context, params) => params.isEmpty
-                  ? NavBarPage(initialPage: 'MY_Card')
-                  : MYCardWidget(),
+              builder: (context, params) => MYCardWidget(),
             ),
             FFRoute(
               name: 'MY_Budgets',
               path: 'mYBudgets',
-              builder: (context, params) => params.isEmpty
-                  ? NavBarPage(initialPage: 'MY_Budgets')
-                  : MYBudgetsWidget(),
+              builder: (context, params) => MYBudgetsWidget(),
             ),
             FFRoute(
               name: 'paymentDetails',
@@ -130,12 +127,10 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
             FFRoute(
               name: 'MY_profilePage',
               path: 'mYProfilePage',
-              builder: (context, params) => params.isEmpty
-                  ? NavBarPage(initialPage: 'MY_profilePage')
-                  : MYProfilePageWidget(
-                      userProfile: params.getParam('userProfile',
-                          ParamType.DocumentReference, false, ['users']),
-                    ),
+              builder: (context, params) => MYProfilePageWidget(
+                userProfile: params.getParam('userProfile',
+                    ParamType.DocumentReference, false, ['users']),
+              ),
             ),
             FFRoute(
               name: 'budgetDetails',
@@ -481,7 +476,7 @@ class FFRoute {
 
           if (requireAuth && !appStateNotifier.loggedIn) {
             appStateNotifier.setRedirectLocationIfUnset(state.location);
-            return '/login';
+            return '/registro';
           }
           return null;
         },

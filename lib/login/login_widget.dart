@@ -1,5 +1,4 @@
 import '/auth/auth_util.dart';
-import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_autocomplete_options_list.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -359,7 +358,8 @@ class _LoginWidgetState extends State<LoginWidget> {
                                         return;
                                       }
 
-                                      context.goNamedAuth('MY_Card', mounted);
+                                      context.goNamedAuth(
+                                          'editProfile', mounted);
                                     },
                                     autofocus: true,
                                     autofillHints: [AutofillHints.password],
@@ -474,7 +474,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                       logFirebaseEvent('Button_auth');
                                       GoRouter.of(context).prepareAuthEvent();
 
-                                      final user = await createAccountWithEmail(
+                                      final user = await signInWithEmail(
                                         context,
                                         _model.nombreController.text,
                                         _model.passwordloginController.text,
@@ -483,17 +483,8 @@ class _LoginWidgetState extends State<LoginWidget> {
                                         return;
                                       }
 
-                                      final usersCreateData =
-                                          createUsersRecordData(
-                                        displayName: 'text',
-                                        password: '',
-                                      );
-                                      await UsersRecord.collection
-                                          .doc(user.uid)
-                                          .update(usersCreateData);
-
                                       _navigate = () => context.goNamedAuth(
-                                          'MY_Card', mounted);
+                                          'editProfile', mounted);
                                       if (_model.nombreController.text ==
                                               null ||
                                           _model.nombreController.text == '') {
@@ -649,7 +640,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                           }
 
                                           context.goNamedAuth(
-                                              'MY_Card', mounted);
+                                              'editProfile', mounted);
                                         },
                                         child: FaIcon(
                                           FontAwesomeIcons.google,
@@ -686,7 +677,8 @@ class _LoginWidgetState extends State<LoginWidget> {
                                           return;
                                         }
 
-                                        context.goNamedAuth('MY_Card', mounted);
+                                        context.goNamedAuth(
+                                            'editProfile', mounted);
                                       },
                                       child: FaIcon(
                                         FontAwesomeIcons.apple,
@@ -722,7 +714,8 @@ class _LoginWidgetState extends State<LoginWidget> {
                                           return;
                                         }
 
-                                        context.goNamedAuth('MY_Card', mounted);
+                                        context.goNamedAuth(
+                                            'editProfile', mounted);
                                       },
                                       child: FaIcon(
                                         FontAwesomeIcons.facebookF,
@@ -800,6 +793,53 @@ class _LoginWidgetState extends State<LoginWidget> {
                           ),
                         ),
                       ),
+                      if (responsiveVisibility(
+                        context: context,
+                        desktop: false,
+                      ))
+                        Expanded(
+                          child: Align(
+                            alignment: AlignmentDirectional(0.0, -1.0),
+                            child: FFButtonWidget(
+                              onPressed: () async {
+                                logFirebaseEvent(
+                                    'LOGIN_PAGE_BUTTON_BTN_ON_TAP');
+                                logFirebaseEvent('Button_navigate_to');
+
+                                context.pushNamed('game');
+                              },
+                              text: FFLocalizations.of(context).getText(
+                                'g12ecww6' /* Button */,
+                              ),
+                              options: FFButtonOptions(
+                                width: 130.0,
+                                height: 40.0,
+                                padding: EdgeInsetsDirectional.fromSTEB(
+                                    0.0, 0.0, 0.0, 0.0),
+                                iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                    0.0, 0.0, 0.0, 0.0),
+                                color:
+                                    FlutterFlowTheme.of(context).primaryColor,
+                                textStyle: FlutterFlowTheme.of(context)
+                                    .subtitle2
+                                    .override(
+                                      fontFamily: FlutterFlowTheme.of(context)
+                                          .subtitle2Family,
+                                      color: Colors.white,
+                                      useGoogleFonts: GoogleFonts.asMap()
+                                          .containsKey(
+                                              FlutterFlowTheme.of(context)
+                                                  .subtitle2Family),
+                                    ),
+                                borderSide: BorderSide(
+                                  color: Colors.transparent,
+                                  width: 1.0,
+                                ),
+                                borderRadius: BorderRadius.circular(8.0),
+                              ),
+                            ),
+                          ),
+                        ),
                     ],
                   ),
                 ),

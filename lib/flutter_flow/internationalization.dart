@@ -849,46 +849,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   },
   // editProfile
   {
-    '4rzqov3y': {
-      'en': 'Edit Profile',
-      'es': 'Editar perfil',
-    },
-    'zoxan2gi': {
-      'en': 'Change Photo',
-      'es': 'Cambiar foto',
-    },
-    '3p9y21e2': {
-      'en': 'Your Name',
-      'es': 'Su nombre',
-    },
-    'dw9gmjdc': {
-      'en': 'Please enter a valid number...',
-      'es': 'Por favor ingrese un número valido...',
-    },
-    'z4fstn5l': {
-      'en': 'Email Address',
-      'es': 'Dirección de correo electrónico',
-    },
-    'jozgvwyg': {
-      'en': 'Your email',
-      'es': 'Tu correo electrónico',
-    },
-    '8h1cjk5a': {
-      'en': 'Your Age',
-      'es': 'Su edad',
-    },
-    '5v21r6gb': {
-      'en': 'i.e. 34',
-      'es': 'es decir, 34',
-    },
-    'zvymbfia': {
-      'en': 'Your Title',
-      'es': 'Tu título',
-    },
-    'i6edcl52': {
-      'en': 'Save Changes',
-      'es': 'Guardar cambios',
-    },
     '59naq8ur': {
       'en': 'Home',
       'es': 'Hogar',
@@ -1504,6 +1464,10 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     'f2bt9z1q': {
       'en': '',
       'es': 'si ya tienes una cuenta',
+    },
+    'g12ecww6': {
+      'en': 'Button',
+      'es': '',
     },
   },
   // welcome
