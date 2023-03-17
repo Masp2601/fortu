@@ -47,3 +47,5 @@ export '/paysave/paysave_widget.dart' show PaysaveWidget;
 export '/goldtable/goldtable_widget.dart' show GoldtableWidget;
 export '/cashtable/cashtable_widget.dart' show CashtableWidget;
 export '/choosevalue/choosevalue_widget.dart' show ChoosevalueWidget;
+export '/know/know_widget.dart' show KnowWidget;
+export '/plays/plays_widget.dart' show PlaysWidget;

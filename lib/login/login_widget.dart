@@ -809,7 +809,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                 context.pushNamed('game');
                               },
                               text: FFLocalizations.of(context).getText(
-                                'g12ecww6' /* Button */,
+                                'lx9wa34e' /* Button */,
                               ),
                               options: FFButtonOptions(
                                 width: 130.0,

@@ -151,6 +151,10 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': '',
       'es': '',
     },
+    'kasq9vmy': {
+      'en': 'terms and conditions',
+      'es': 'Términos y condiciones',
+    },
     '3ugmx2zp': {
       'en': '',
       'es': 'CONTINUAR',
@@ -1465,9 +1469,9 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': '',
       'es': 'si ya tienes una cuenta',
     },
-    'g12ecww6': {
+    'lx9wa34e': {
       'en': 'Button',
-      'es': '',
+      'es': 'Botón',
     },
   },
   // welcome
@@ -1856,6 +1860,89 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     '5n3cm1lv': {
       'en': '\$350.000',
       'es': '\$350.000',
+    },
+  },
+  // know
+  {
+    '0as0puql': {
+      'en': 'Category Name',
+      'es': '',
+    },
+    'dco8h3gy': {
+      'en': 'Category Name',
+      'es': '',
+    },
+    '4o2j5wft': {
+      'en': 'Category Name',
+      'es': '',
+    },
+    '0v26m66i': {
+      'en': 'Category Name',
+      'es': '',
+    },
+    '3yd8s33x': {
+      'en': 'Category Name',
+      'es': '',
+    },
+    '989fwr4n': {
+      'en': 'Category Name',
+      'es': '',
+    },
+    's67cz2ai': {
+      'en': 'Category Name',
+      'es': '',
+    },
+    '5fm87m16': {
+      'en': 'Category Name',
+      'es': '',
+    },
+    '5smt792j': {
+      'en': 'Category Name',
+      'es': '',
+    },
+    'd64l1f1d': {
+      'en': 'Category Name',
+      'es': '',
+    },
+    '596fk1qm': {
+      'en': 'Category Name',
+      'es': '',
+    },
+    '1old2uk0': {
+      'en': 'Category Name',
+      'es': '',
+    },
+    '5aad6a9w': {
+      'en': 'Hello, Emily',
+      'es': '',
+    },
+    'zkl9ykyq': {
+      'en': 'Home',
+      'es': '',
+    },
+  },
+  // plays
+  {
+    '4y1f6qqq': {
+      'en': 'Purchase Books',
+      'es': '',
+    },
+    '1zikhcro': {
+      'en': 'Buy and view all your favorite books you find in this library.',
+      'es': '',
+    },
+    'q5davb7u': {
+      'en': 'Review Purchases',
+      'es': '',
+    },
+    'b6heelhy': {
+      'en':
+          'Keep track of all your purchases that you have made, want to trade books in? Go ahead and list them for exchange.',
+      'es': '',
+    },
+    'xikt8yfc': {
+      'en': 'Continue',
+      'es': '',
     },
   },
   // bookAppointment

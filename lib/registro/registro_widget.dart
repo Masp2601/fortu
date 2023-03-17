@@ -1,4 +1,5 @@
 import '/auth/auth_util.dart';
+import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_autocomplete_options_list.dart';
 import '/flutter_flow/flutter_flow_expanded_image_view.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
@@ -352,6 +353,8 @@ class _RegistroWidgetState extends State<RegistroWidget> {
                                                     FlutterFlowTheme.of(context)
                                                         .bodyText1,
                                                 textAlign: TextAlign.start,
+                                                keyboardType:
+                                                    TextInputType.name,
                                                 validator: _model
                                                     .nombrenewuserControllerValidator
                                                     .asValidator(context),
@@ -764,6 +767,72 @@ class _RegistroWidgetState extends State<RegistroWidget> {
                                                   .asValidator(context),
                                             ),
                                           ),
+                                        Padding(
+                                          padding:
+                                              EdgeInsetsDirectional.fromSTEB(
+                                                  25.0, 15.0, 25.0, 0.0),
+                                          child: Row(
+                                            mainAxisSize: MainAxisSize.max,
+                                            children: [
+                                              Align(
+                                                alignment: AlignmentDirectional(
+                                                    -0.8, -0.25),
+                                                child: Theme(
+                                                  data: ThemeData(
+                                                    checkboxTheme:
+                                                        CheckboxThemeData(
+                                                      shape:
+                                                          RoundedRectangleBorder(
+                                                        borderRadius:
+                                                            BorderRadius
+                                                                .circular(0.0),
+                                                      ),
+                                                    ),
+                                                    unselectedWidgetColor:
+                                                        Color(0xFFF5F5F5),
+                                                  ),
+                                                  child: Checkbox(
+                                                    value: _model
+                                                        .checkboxValue ??= true,
+                                                    onChanged:
+                                                        (newValue) async {
+                                                      setState(() =>
+                                                          _model.checkboxValue =
+                                                              newValue!);
+                                                    },
+                                                    activeColor:
+                                                        Color(0xFF1A1F24),
+                                                  ),
+                                                ),
+                                              ),
+                                              Align(
+                                                alignment: AlignmentDirectional(
+                                                    -0.5, -0.25),
+                                                child: InkWell(
+                                                  onTap: () async {
+                                                    logFirebaseEvent(
+                                                        'REGISTRO_PAGE_Text_91rw9l9u_ON_TAP');
+                                                    logFirebaseEvent(
+                                                        'Text_navigate_to');
+
+                                                    context
+                                                        .pushNamed('politicas');
+                                                  },
+                                                  child: Text(
+                                                    FFLocalizations.of(context)
+                                                        .getText(
+                                                      'kasq9vmy' /* terms and conditions */,
+                                                    ),
+                                                    textAlign: TextAlign.start,
+                                                    style: FlutterFlowTheme.of(
+                                                            context)
+                                                        .bodyText1,
+                                                  ),
+                                                ),
+                                              ),
+                                            ],
+                                          ),
+                                        ),
                                       ],
                                     ),
                                   ),
@@ -778,7 +847,7 @@ class _RegistroWidgetState extends State<RegistroWidget> {
                             ))
                               Expanded(
                                 child: Align(
-                                  alignment: AlignmentDirectional(0.05, -5.0),
+                                  alignment: AlignmentDirectional(0.05, -2.0),
                                   child: Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
                                         0.0, 8.0, 0.0, 8.0),
@@ -798,6 +867,14 @@ class _RegistroWidgetState extends State<RegistroWidget> {
                                         if (user == null) {
                                           return;
                                         }
+
+                                        final usersCreateData =
+                                            createUsersRecordData(
+                                          displayName: '',
+                                        );
+                                        await UsersRecord.collection
+                                            .doc(user.uid)
+                                            .update(usersCreateData);
 
                                         context.goNamedAuth(
                                             'editProfile', mounted);
@@ -845,7 +922,7 @@ class _RegistroWidgetState extends State<RegistroWidget> {
                               ),
                             Expanded(
                               child: Align(
-                                alignment: AlignmentDirectional(0.05, -0.1),
+                                alignment: AlignmentDirectional(0.05, 5.0),
                                 child: Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       50.0, 4.0, 50.0, 5.0),
@@ -962,7 +1039,7 @@ class _RegistroWidgetState extends State<RegistroWidget> {
                             ),
                             Expanded(
                               child: Align(
-                                alignment: AlignmentDirectional(0.0, -0.1),
+                                alignment: AlignmentDirectional(0.0, 1.0),
                                 child: InkWell(
                                   onTap: () async {
                                     logFirebaseEvent(

@@ -306,6 +306,16 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               builder: (context, params) => ChoosevalueWidget(
                 users: params.getParam('users', ParamType.String),
               ),
+            ),
+            FFRoute(
+              name: 'know',
+              path: 'know',
+              builder: (context, params) => KnowWidget(),
+            ),
+            FFRoute(
+              name: 'plays',
+              path: 'plays',
+              builder: (context, params) => PlaysWidget(),
             )
           ].map((r) => r.toRoute(appStateNotifier)).toList(),
         ),
