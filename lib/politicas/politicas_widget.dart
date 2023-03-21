@@ -188,7 +188,11 @@ class _PoliticasWidgetState extends State<PoliticasWidget> {
                                                       .getText(
                                                     'kpbp64hc' /* The fortunators app is owned b... */,
                                                   ),
-                                                  style: TextStyle(),
+                                                  style: TextStyle(
+                                                    color: FlutterFlowTheme.of(
+                                                            context)
+                                                        .textColor,
+                                                  ),
                                                 )
                                               ],
                                               style:
