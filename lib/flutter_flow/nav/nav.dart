@@ -235,11 +235,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               builder: (context, params) => LoginWidget(),
             ),
             FFRoute(
-              name: 'welcome',
-              path: 'welcome',
-              builder: (context, params) => WelcomeWidget(),
-            ),
-            FFRoute(
               name: 'conection',
               path: 'conection',
               builder: (context, params) => ConectionWidget(),
@@ -502,7 +497,7 @@ class FFRoute {
               ? Container(
                   color: Colors.transparent,
                   child: Image.asset(
-                    'assets/images/welcome_-_Copy.png',
+                    'assets/images/welcome.png',
                     fit: BoxFit.cover,
                   ),
                 )

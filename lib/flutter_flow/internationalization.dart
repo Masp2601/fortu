@@ -1474,17 +1474,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'Botón',
     },
   },
-  // welcome
-  {
-    'el4uo6b0': {
-      'en': '',
-      'es': 'BIENVENIDOS',
-    },
-    '9mnqnzk3': {
-      'en': 'Home',
-      'es': 'Hogar',
-    },
-  },
   // conection
   {
     '1ank8eo7': {

@@ -35,7 +35,6 @@ export '/budget_d_e_l_e_t_e/budget_d_e_l_e_t_e_widget.dart'
     show BudgetDELETEWidget;
 export '/profilepage/profilepage_widget.dart' show ProfilepageWidget;
 export '/login/login_widget.dart' show LoginWidget;
-export '/welcome/welcome_widget.dart' show WelcomeWidget;
 export '/conection/conection_widget.dart' show ConectionWidget;
 export '/game/game_widget.dart' show GameWidget;
 export '/aceptopolicy/aceptopolicy_widget.dart' show AceptopolicyWidget;
