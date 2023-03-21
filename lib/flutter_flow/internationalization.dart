@@ -1923,23 +1923,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   },
   // plays
   {
-    '4y1f6qqq': {
-      'en': 'Purchase Books',
-      'es': '',
-    },
-    '1zikhcro': {
-      'en': 'Buy and view all your favorite books you find in this library.',
-      'es': '',
-    },
-    'q5davb7u': {
-      'en': 'Review Purchases',
-      'es': '',
-    },
-    'b6heelhy': {
-      'en':
-          'Keep track of all your purchases that you have made, want to trade books in? Go ahead and list them for exchange.',
-      'es': '',
-    },
     'xikt8yfc': {
       'en': 'Continue',
       'es': '',

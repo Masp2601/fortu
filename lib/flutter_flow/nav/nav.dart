@@ -501,12 +501,9 @@ class FFRoute {
           final child = appStateNotifier.loading
               ? Container(
                   color: Colors.transparent,
-                  child: Center(
-                    child: Image.asset(
-                      'assets/images/Medical_ScheduleApp_0.0.png',
-                      width: MediaQuery.of(context).size.width * 1.0,
-                      fit: BoxFit.fitWidth,
-                    ),
+                  child: Image.asset(
+                    'assets/images/welcome_-_Copy.png',
+                    fit: BoxFit.cover,
                   ),
                 )
               : page;

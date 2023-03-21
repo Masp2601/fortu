@@ -10,7 +10,8 @@ Future initFirebase() async {
             projectId: "fortunators-e600b",
             storageBucket: "fortunators-e600b.appspot.com",
             messagingSenderId: "788826933540",
-            appId: "1:788826933540:web:95299dcd170d096b840bb1"));
+            appId: "1:788826933540:web:95299dcd170d096b840bb1",
+            measurementId: "G-FGKHS1ZSD2"));
   } else {
     await Firebase.initializeApp();
   }

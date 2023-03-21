@@ -3,9 +3,11 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>788826933540-4nldfhncfp6i412p4vht61a3tos2agha.apps.googleusercontent.com</string>
+	<string>788826933540-np8ak9hajn381sv57t2t9mceebidnt2p.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.788826933540-4nldfhncfp6i412p4vht61a3tos2agha</string>
+	<string>com.googleusercontent.apps.788826933540-np8ak9hajn381sv57t2t9mceebidnt2p</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>788826933540-01dc2umas2i2flj6j5qj6234aktbenmj.apps.googleusercontent.com</string>
 	<key>API_KEY</key>
 	<string>AIzaSyAryoyo--UJnol2xwdGogjxvSbRpdPC3BE</string>
 	<key>GCM_SENDER_ID</key>
@@ -13,7 +15,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.flutterflow.finwallet</string>
+	<string>com.flutterflow.fortunators</string>
 	<key>PROJECT_ID</key>
 	<string>fortunators-e600b</string>
 	<key>STORAGE_BUCKET</key>
@@ -29,6 +31,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:788826933540:ios:59dd372eb61e502a840bb1</string>
+	<string>1:788826933540:ios:0e07188b50f771b6840bb1</string>
 </dict>
 </plist>

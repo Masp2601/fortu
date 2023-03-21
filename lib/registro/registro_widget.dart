@@ -781,12 +781,7 @@ class _RegistroWidgetState extends State<RegistroWidget> {
                                                   data: ThemeData(
                                                     checkboxTheme:
                                                         CheckboxThemeData(
-                                                      shape:
-                                                          RoundedRectangleBorder(
-                                                        borderRadius:
-                                                            BorderRadius
-                                                                .circular(0.0),
-                                                      ),
+                                                      shape: CircleBorder(),
                                                     ),
                                                     unselectedWidgetColor:
                                                         Color(0xFFF5F5F5),

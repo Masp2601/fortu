@@ -10,7 +10,7 @@ import Flutter
     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
   ) -> Bool {
     GeneratedPluginRegistrant.register(with: self)
-    BTAppContextSwitcher.setReturnURLScheme("com.flutterflow.finwallet.braintree")
+    BTAppContextSwitcher.setReturnURLScheme("com.flutterflow.fortunators.braintree")
     return super.application(application, didFinishLaunchingWithOptions: launchOptions)
   }
 }

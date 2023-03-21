@@ -33,7 +33,7 @@
             <string>Editor</string>
             <key>CFBundleURLSchemes</key>
             <array>
-                <string>com.googleusercontent.apps.788826933540-4nldfhncfp6i412p4vht61a3tos2agha</string>
+                <string>com.googleusercontent.apps.788826933540-np8ak9hajn381sv57t2t9mceebidnt2p</string>
                 <string>fb740374794262606</string>
             </array>
         </dict>
@@ -43,10 +43,10 @@
             <key>CFBundleTypeRole</key>
             <string>Editor</string>
             <key>CFBundleURLName</key>
-            <string>com.flutterflow.finwallet.braintree</string>
+            <string>com.flutterflow.fortunators.braintree</string>
             <key>CFBundleURLSchemes</key>
             <array>
-                <string>com.flutterflow.finwallet.braintree</string>
+                <string>com.flutterflow.fortunators.braintree</string>
             </array>
         </dict>
 
