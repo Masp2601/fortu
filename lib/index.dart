@@ -22,7 +22,6 @@ export '/transaction_a_d_d/transaction_a_d_d_widget.dart'
 export '/transaction_e_d_i_t/transaction_e_d_i_t_widget.dart'
     show TransactionEDITWidget;
 export '/edit_profile/edit_profile_widget.dart' show EditProfileWidget;
-export '/change_password/change_password_widget.dart' show ChangePasswordWidget;
 export '/notifications_settings/notifications_settings_widget.dart'
     show NotificationsSettingsWidget;
 export '/privacy_policy/privacy_policy_widget.dart' show PrivacyPolicyWidget;

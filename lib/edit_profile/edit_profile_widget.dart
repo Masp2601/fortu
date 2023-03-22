@@ -55,8 +55,8 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
             child: SizedBox(
               width: 40.0,
               height: 40.0,
-              child: SpinKitPumpingHeart(
-                color: FlutterFlowTheme.of(context).primaryColor,
+              child: SpinKitFadingCircle(
+                color: Color(0xFFFF0000),
                 size: 40.0,
               ),
             ),

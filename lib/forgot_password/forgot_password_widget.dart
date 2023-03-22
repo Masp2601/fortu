@@ -134,7 +134,15 @@ class _ForgotPasswordWidgetState extends State<ForgotPasswordWidget> {
                       labelText: FFLocalizations.of(context).getText(
                         'u4nuk910' /*  */,
                       ),
-                      labelStyle: FlutterFlowTheme.of(context).bodyText2,
+                      labelStyle: FlutterFlowTheme.of(context)
+                          .bodyText2
+                          .override(
+                            fontFamily:
+                                FlutterFlowTheme.of(context).bodyText2Family,
+                            color: FlutterFlowTheme.of(context).primaryBtnText,
+                            useGoogleFonts: GoogleFonts.asMap().containsKey(
+                                FlutterFlowTheme.of(context).bodyText2Family),
+                          ),
                       hintText: FFLocalizations.of(context).getText(
                         '37kotxi0' /* Enter your email... */,
                       ),
@@ -175,61 +183,75 @@ class _ForgotPasswordWidgetState extends State<ForgotPasswordWidget> {
                         Icons.outgoing_mail,
                       ),
                     ),
-                    style: FlutterFlowTheme.of(context).bodyText1,
+                    style: FlutterFlowTheme.of(context).bodyText1.override(
+                          fontFamily:
+                              FlutterFlowTheme.of(context).bodyText1Family,
+                          color: FlutterFlowTheme.of(context).grayIcon,
+                          useGoogleFonts: GoogleFonts.asMap().containsKey(
+                              FlutterFlowTheme.of(context).bodyText1Family),
+                        ),
                     textAlign: TextAlign.start,
                     keyboardType: TextInputType.emailAddress,
                     validator: _model.emailAddressControllerValidator
                         .asValidator(context),
                   ),
                 ),
-              Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 24.0, 0.0, 0.0),
-                child: FFButtonWidget(
-                  onPressed: () async {
-                    logFirebaseEvent(
-                        'FORGOT_PASSWORD_PAGE_Button-Login_ON_TAP');
-                    logFirebaseEvent('Button-Login_auth');
-                    if (_model.emailAddressController.text.isEmpty) {
-                      ScaffoldMessenger.of(context).showSnackBar(
-                        SnackBar(
-                          content: Text(
-                            'Email required!',
+              if (responsiveVisibility(
+                context: context,
+                tabletLandscape: false,
+                desktop: false,
+              ))
+                Padding(
+                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 24.0, 0.0, 0.0),
+                  child: FFButtonWidget(
+                    onPressed: () async {
+                      logFirebaseEvent(
+                          'FORGOT_PASSWORD_PAGE_Button-Login_ON_TAP');
+                      logFirebaseEvent('Button-Login_auth');
+                      if (_model.emailAddressController.text.isEmpty) {
+                        ScaffoldMessenger.of(context).showSnackBar(
+                          SnackBar(
+                            content: Text(
+                              'Email required!',
+                            ),
                           ),
-                        ),
+                        );
+                        return;
+                      }
+                      await resetPassword(
+                        email: _model.emailAddressController.text,
+                        context: context,
                       );
-                      return;
-                    }
-                    await resetPassword(
-                      email: _model.emailAddressController.text,
-                      context: context,
-                    );
-                  },
-                  text: FFLocalizations.of(context).getText(
-                    'hiwpaze1' /* Send Reset Link */,
-                  ),
-                  options: FFButtonOptions(
-                    width: 190.0,
-                    height: 50.0,
-                    padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                    iconPadding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                    color: FlutterFlowTheme.of(context).black600,
-                    textStyle: FlutterFlowTheme.of(context).subtitle2.override(
-                          fontFamily:
-                              FlutterFlowTheme.of(context).subtitle2Family,
-                          color: FlutterFlowTheme.of(context).textColor,
-                          useGoogleFonts: GoogleFonts.asMap().containsKey(
-                              FlutterFlowTheme.of(context).subtitle2Family),
-                        ),
-                    elevation: 3.0,
-                    borderSide: BorderSide(
-                      color: Color(0xDAFF0F13),
-                      width: 1.0,
+                    },
+                    text: FFLocalizations.of(context).getText(
+                      'hiwpaze1' /* recover password */,
                     ),
-                    borderRadius: BorderRadius.circular(30.0),
+                    options: FFButtonOptions(
+                      width: 190.0,
+                      height: 50.0,
+                      padding:
+                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                      iconPadding:
+                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                      color: FlutterFlowTheme.of(context).black600,
+                      textStyle: FlutterFlowTheme.of(context)
+                          .subtitle2
+                          .override(
+                            fontFamily:
+                                FlutterFlowTheme.of(context).subtitle2Family,
+                            color: FlutterFlowTheme.of(context).textColor,
+                            useGoogleFonts: GoogleFonts.asMap().containsKey(
+                                FlutterFlowTheme.of(context).subtitle2Family),
+                          ),
+                      elevation: 3.0,
+                      borderSide: BorderSide(
+                        color: Color(0xDAFF0F13),
+                        width: 1.0,
+                      ),
+                      borderRadius: BorderRadius.circular(30.0),
+                    ),
                   ),
                 ),
-              ),
             ],
           ),
         ),

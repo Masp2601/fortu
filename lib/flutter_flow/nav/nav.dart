@@ -181,11 +181,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               ),
             ),
             FFRoute(
-              name: 'changePassword',
-              path: 'changePassword',
-              builder: (context, params) => ChangePasswordWidget(),
-            ),
-            FFRoute(
               name: 'notificationsSettings',
               path: 'notificationsSettings',
               builder: (context, params) => NotificationsSettingsWidget(),
@@ -540,5 +535,9 @@ class TransitionInfo {
   final Duration duration;
   final Alignment? alignment;
 
-  static TransitionInfo appDefault() => TransitionInfo(hasTransition: false);
+  static TransitionInfo appDefault() => TransitionInfo(
+        hasTransition: true,
+        transitionType: PageTransitionType.fade,
+        duration: Duration(milliseconds: 300),
+      );
 }

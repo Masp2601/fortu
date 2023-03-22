@@ -1,6 +1,8 @@
+import '/backend/braintree/payment_manager.dart';
 import '/flutter_flow/flutter_flow_credit_card_form.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
+import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:easy_debounce/easy_debounce.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -388,7 +390,154 @@ class _PaysaveWidgetState extends State<PaysaveWidget> {
                                   10.0, 0.0, 10.0, 0.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
-                                children: [],
+                                children: [
+                                  // actualizacion
+                                  if (responsiveVisibility(
+                                    context: context,
+                                    tabletLandscape: false,
+                                    desktop: false,
+                                  ))
+                                    Expanded(
+                                      child: Align(
+                                        alignment:
+                                            AlignmentDirectional(0.05, -2.0),
+                                        child: Padding(
+                                          padding:
+                                              EdgeInsetsDirectional.fromSTEB(
+                                                  0.0, 8.0, 0.0, 8.0),
+                                          child: InkWell(
+                                            onLongPress: () async {
+                                              logFirebaseEvent(
+                                                  'PAYSAVE_PAGE_create_ON_LONG_PRESS');
+                                              logFirebaseEvent(
+                                                  'create_navigate_to');
+
+                                              context.pushNamed('thankspay');
+                                            },
+                                            child: FFButtonWidget(
+                                              onPressed: () async {
+                                                logFirebaseEvent(
+                                                    'PAYSAVE_PAGE_create_ON_TAP');
+                                                logFirebaseEvent(
+                                                    'create_braintree_payment');
+                                                final transacAmount =
+                                                    computeTotal(
+                                                  100.000,
+                                                  taxRate: 1.5,
+                                                  shippingCost: 100.0,
+                                                );
+                                                if (!(_model.creditCardFormKey
+                                                        .currentState
+                                                        ?.validate() ??
+                                                    false)) {
+                                                  return;
+                                                }
+                                                if (kIsWeb) {
+                                                  showSnackbar(context,
+                                                      'Payments not yet supported on web.');
+                                                  return;
+                                                }
+
+                                                final cardRequest =
+                                                    BraintreeCreditCardRequest(
+                                                  cardNumber: _model
+                                                      .creditCardInfo
+                                                      .cardNumber,
+                                                  expirationMonth: _model
+                                                      .creditCardInfo.expiryDate
+                                                      .split('/')
+                                                      .first,
+                                                  expirationYear: _model
+                                                      .creditCardInfo.expiryDate
+                                                      .split('/')
+                                                      .last,
+                                                  cvv: _model
+                                                      .creditCardInfo.cvvCode,
+                                                );
+                                                final cardResult =
+                                                    await Braintree
+                                                        .tokenizeCreditCard(
+                                                  braintreeClientToken(),
+                                                  cardRequest,
+                                                );
+                                                if (cardResult == null) {
+                                                  return;
+                                                }
+                                                showSnackbar(
+                                                  context,
+                                                  'Processing payment...',
+                                                  duration: 10,
+                                                  loading: true,
+                                                );
+                                                final paymentResponse =
+                                                    await processBraintreePayment(
+                                                  transacAmount,
+                                                  cardResult.nonce,
+                                                );
+                                                if (paymentResponse
+                                                        .errorMessage !=
+                                                    null) {
+                                                  showSnackbar(context,
+                                                      'Error: ${paymentResponse.errorMessage}');
+                                                  return;
+                                                }
+                                                showSnackbar(
+                                                    context, 'Success!');
+                                                _model.transactionId =
+                                                    paymentResponse
+                                                        .transactionId!;
+
+                                                setState(() {});
+                                              },
+                                              text: FFLocalizations.of(context)
+                                                  .getText(
+                                                '8zsl7bt7' /* guardar */,
+                                              ),
+                                              options: FFButtonOptions(
+                                                width: 137.1,
+                                                height: 50.0,
+                                                padding: EdgeInsetsDirectional
+                                                    .fromSTEB(
+                                                        0.0, 0.0, 0.0, 0.0),
+                                                iconPadding:
+                                                    EdgeInsetsDirectional
+                                                        .fromSTEB(
+                                                            0.0, 0.0, 0.0, 0.0),
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .background,
+                                                textStyle:
+                                                    FlutterFlowTheme.of(context)
+                                                        .subtitle2
+                                                        .override(
+                                                          fontFamily:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .subtitle2Family,
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .textColor,
+                                                          useGoogleFonts: GoogleFonts
+                                                                  .asMap()
+                                                              .containsKey(
+                                                                  FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .subtitle2Family),
+                                                        ),
+                                                elevation: 3.0,
+                                                borderSide: BorderSide(
+                                                  color: Color(0xDAFF0F13),
+                                                  width: 1.0,
+                                                ),
+                                                borderRadius:
+                                                    BorderRadius.circular(30.0),
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                ],
                               ),
                             ),
                             Padding(

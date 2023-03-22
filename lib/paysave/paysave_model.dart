@@ -1,6 +1,8 @@
+import '/backend/braintree/payment_manager.dart';
 import '/flutter_flow/flutter_flow_credit_card_form.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
+import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:easy_debounce/easy_debounce.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -20,6 +22,8 @@ class PaysaveModel extends FlutterFlowModel {
   // State field(s) for CreditCardForm widget.
   final creditCardFormKey = GlobalKey<FormState>();
   CreditCardModel creditCardInfo = emptyCreditCard();
+  // Stores action output result for [Braintree Payment] action in create widget.
+  String? transactionId;
   // State field(s) for CheckboxListTile widget.
   bool? checkboxListTileValue2;
   // State field(s) for CheckboxListTile widget.

@@ -58,8 +58,8 @@ class _MYProfilePageWidgetState extends State<MYProfilePageWidget> {
             child: SizedBox(
               width: 40.0,
               height: 40.0,
-              child: SpinKitPumpingHeart(
-                color: FlutterFlowTheme.of(context).primaryColor,
+              child: SpinKitFadingCircle(
+                color: Color(0xFFFF0000),
                 size: 40.0,
               ),
             ),
@@ -360,7 +360,7 @@ class _MYProfilePageWidgetState extends State<MYProfilePageWidget> {
                               'M_Y_PROFILE_Container_yqfzr8ca_ON_TAP');
                           logFirebaseEvent('Container_navigate_to');
 
-                          context.pushNamed('changePassword');
+                          context.pushNamed('forgotPassword');
                         },
                         child: Material(
                           color: Colors.transparent,

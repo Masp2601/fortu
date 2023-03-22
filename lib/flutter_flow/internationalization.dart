@@ -240,8 +240,8 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': '',
     },
     'hiwpaze1': {
-      'en': 'Send Reset Link',
-      'es': 'Enviar enlace de reinicio',
+      'en': 'recover password',
+      'es': 'recuperar contraseña',
     },
     '598b8d3m': {
       'en': 'Home',
@@ -856,35 +856,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   // editProfile
   {
     '59naq8ur': {
-      'en': 'Home',
-      'es': 'Hogar',
-    },
-  },
-  // changePassword
-  {
-    'l5iggwaz': {
-      'en': 'Change Password',
-      'es': 'Cambiar la contraseña',
-    },
-    '2b97u8y5': {
-      'en':
-          'Enter the email associated with your account and we will send you link to reset your password.',
-      'es':
-          'Ingrese el correo electrónico asociado con su cuenta y le enviaremos un enlace para restablecer su contraseña.',
-    },
-    'ajy1c3r9': {
-      'en': 'Email Address',
-      'es': 'Dirección de correo electrónico',
-    },
-    'hsqfoxya': {
-      'en': 'Enter your email...',
-      'es': 'Introduce tu correo electrónico...',
-    },
-    'if4pz6lm': {
-      'en': 'Send Reset Link',
-      'es': 'Enviar enlace de reinicio',
-    },
-    '5tvk9lv0': {
       'en': 'Home',
       'es': 'Hogar',
     },
@@ -1686,6 +1657,10 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': 'Your name',
       'es': 'Su nombre',
     },
+    '8zsl7bt7': {
+      'en': 'guardar',
+      'es': 'guardar guardar',
+    },
     'chsqvpkm': {
       'en': 'Paypal',
       'es': '',
@@ -1921,10 +1896,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   },
   // registro2
   {
-    'kupavl30': {
-      'en': '',
-      'es': 'Registro',
-    },
     '5ra4935z': {
       'en': '',
       'es': 'Telèfono',
