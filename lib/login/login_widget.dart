@@ -358,8 +358,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                         return;
                                       }
 
-                                      context.goNamedAuth(
-                                          'editProfile', mounted);
+                                      context.goNamedAuth('registro2', mounted);
                                     },
                                     autofocus: true,
                                     autofillHints: [AutofillHints.password],
@@ -484,7 +483,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                       }
 
                                       _navigate = () => context.goNamedAuth(
-                                          'editProfile', mounted);
+                                          'registro2', mounted);
                                       if (_model.nombreController.text ==
                                               null ||
                                           _model.nombreController.text == '') {
@@ -565,7 +564,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                       'LOGIN_PAGE_Text_x5l55ulg_ON_TAP');
                                   logFirebaseEvent('Text_navigate_to');
 
-                                  context.pushNamed('changePassword');
+                                  context.pushNamed('forgotPassword');
                                 },
                                 child: Text(
                                   FFLocalizations.of(context).getText(
@@ -640,7 +639,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                           }
 
                                           context.goNamedAuth(
-                                              'editProfile', mounted);
+                                              'registro2', mounted);
                                         },
                                         child: FaIcon(
                                           FontAwesomeIcons.google,
@@ -678,7 +677,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                         }
 
                                         context.goNamedAuth(
-                                            'editProfile', mounted);
+                                            'registro2', mounted);
                                       },
                                       child: FaIcon(
                                         FontAwesomeIcons.apple,
@@ -715,7 +714,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                         }
 
                                         context.goNamedAuth(
-                                            'editProfile', mounted);
+                                            'registro2', mounted);
                                       },
                                       child: FaIcon(
                                         FontAwesomeIcons.facebookF,

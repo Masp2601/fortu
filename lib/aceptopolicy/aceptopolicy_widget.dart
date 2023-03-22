@@ -1,3 +1,4 @@
+import '/auth/auth_util.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
@@ -143,83 +144,88 @@ class _AceptopolicyWidgetState extends State<AceptopolicyWidget> {
                             ),
                           Align(
                             alignment: AlignmentDirectional(0.6, 0.0),
-                            child: Row(
-                              mainAxisSize: MainAxisSize.max,
-                              children: [
-                                if (responsiveVisibility(
-                                  context: context,
-                                  tabletLandscape: false,
-                                  desktop: false,
-                                ))
-                                  Expanded(
-                                    child: Align(
-                                      alignment:
-                                          AlignmentDirectional(0.05, 0.0),
-                                      child: Theme(
-                                        data: ThemeData(
-                                          checkboxTheme: CheckboxThemeData(
-                                            shape: RoundedRectangleBorder(
-                                              borderRadius:
-                                                  BorderRadius.circular(0.0),
-                                            ),
-                                          ),
-                                          unselectedWidgetColor:
-                                              Color(0xFFF5F5F5),
-                                        ),
-                                        child: Checkbox(
-                                          value: _model.checkboxValue ??= true,
-                                          onChanged: (newValue) async {
-                                            setState(() => _model
-                                                .checkboxValue = newValue!);
-                                          },
-                                          activeColor:
-                                              FlutterFlowTheme.of(context)
-                                                  .primaryColor,
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                if (responsiveVisibility(
-                                  context: context,
-                                  tabletLandscape: false,
-                                  desktop: false,
-                                ))
-                                  Expanded(
-                                    child: Align(
-                                      alignment:
-                                          AlignmentDirectional(-5.0, 0.0),
-                                      child: InkWell(
-                                        onTap: () async {
-                                          logFirebaseEvent(
-                                              'ACEPTOPOLICY_PAGE_Text_vmavz385_ON_TAP');
-                                          logFirebaseEvent('Text_navigate_to');
-
-                                          context.pushNamed(
-                                            'politicas',
-                                            extra: <String, dynamic>{
-                                              kTransitionInfoKey:
-                                                  TransitionInfo(
-                                                hasTransition: true,
-                                                transitionType:
-                                                    PageTransitionType.fade,
-                                                duration:
-                                                    Duration(milliseconds: 0),
+                            child: Padding(
+                              padding: EdgeInsetsDirectional.fromSTEB(
+                                  4.0, 0.0, 25.0, 0.0),
+                              child: Row(
+                                mainAxisSize: MainAxisSize.max,
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  if (responsiveVisibility(
+                                    context: context,
+                                    tabletLandscape: false,
+                                    desktop: false,
+                                  ))
+                                    Expanded(
+                                      child: Align(
+                                        alignment:
+                                            AlignmentDirectional(0.05, 0.0),
+                                        child: Theme(
+                                          data: ThemeData(
+                                            checkboxTheme: CheckboxThemeData(
+                                              shape: RoundedRectangleBorder(
+                                                borderRadius:
+                                                    BorderRadius.circular(0.0),
                                               ),
-                                            },
-                                          );
-                                        },
-                                        child: Text(
-                                          FFLocalizations.of(context).getText(
-                                            'vm4alppi' /* Privacy policy */,
+                                            ),
+                                            unselectedWidgetColor:
+                                                Color(0xFFF5F5F5),
                                           ),
-                                          textAlign: TextAlign.start,
-                                          style: FlutterFlowTheme.of(context)
-                                              .bodyText1,
+                                          child: Checkbox(
+                                            value: _model.checkboxValue ??=
+                                                false,
+                                            onChanged: (newValue) async {
+                                              setState(() => _model
+                                                  .checkboxValue = newValue!);
+                                            },
+                                            activeColor: Color(0xFFFF0000),
+                                          ),
                                         ),
                                       ),
                                     ),
-                                  ),
-                              ],
+                                  if (responsiveVisibility(
+                                    context: context,
+                                    tabletLandscape: false,
+                                    desktop: false,
+                                  ))
+                                    Expanded(
+                                      child: Align(
+                                        alignment:
+                                            AlignmentDirectional(-5.0, 0.0),
+                                        child: InkWell(
+                                          onTap: () async {
+                                            logFirebaseEvent(
+                                                'ACEPTOPOLICY_PAGE_Text_vmavz385_ON_TAP');
+                                            logFirebaseEvent(
+                                                'Text_navigate_to');
+
+                                            context.pushNamed(
+                                              'politicas',
+                                              extra: <String, dynamic>{
+                                                kTransitionInfoKey:
+                                                    TransitionInfo(
+                                                  hasTransition: true,
+                                                  transitionType:
+                                                      PageTransitionType.fade,
+                                                  duration:
+                                                      Duration(milliseconds: 0),
+                                                ),
+                                              },
+                                            );
+                                          },
+                                          child: Text(
+                                            FFLocalizations.of(context).getText(
+                                              'vm4alppi' /* Privacy policy */,
+                                            ),
+                                            textAlign: TextAlign.start,
+                                            style: FlutterFlowTheme.of(context)
+                                                .bodyText1,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                ],
+                              ),
                             ),
                           ),
                           if (responsiveVisibility(
@@ -234,8 +240,34 @@ class _AceptopolicyWidgetState extends State<AceptopolicyWidget> {
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       0.0, 8.0, 0.0, 8.0),
                                   child: FFButtonWidget(
-                                    onPressed: () {
-                                      print('Button-Login pressed ...');
+                                    onPressed: () async {
+                                      logFirebaseEvent(
+                                          'ACEPTOPOLICY_PAGE_Button-Login_ON_TAP');
+                                      logFirebaseEvent('Button-Login_auth');
+                                      GoRouter.of(context).prepareAuthEvent();
+                                      if (_model.checkboxValue!.toString() !=
+                                          _model.checkboxValue!.toString()) {
+                                        ScaffoldMessenger.of(context)
+                                            .showSnackBar(
+                                          SnackBar(
+                                            content: Text(
+                                              'Passwords don\'t match!',
+                                            ),
+                                          ),
+                                        );
+                                        return;
+                                      }
+
+                                      final user = await createAccountWithEmail(
+                                        context,
+                                        _model.checkboxValue!.toString(),
+                                        _model.checkboxValue!.toString(),
+                                      );
+                                      if (user == null) {
+                                        return;
+                                      }
+
+                                      context.goNamedAuth('registro2', mounted);
                                     },
                                     text: FFLocalizations.of(context).getText(
                                       'hvkz9jjh' /*  */,

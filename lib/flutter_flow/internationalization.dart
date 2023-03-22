@@ -111,11 +111,11 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': '',
       'es': 'Registro',
     },
-    'y5awfw1m': {
+    'ut6d3pky': {
       'en': '',
       'es': 'nombre',
     },
-    'b0a9ug4f': {
+    'd0m4501y': {
       'en': 'Option 1',
       'es': 'Opción 1',
     },
@@ -126,18 +126,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     'iam0xgwx': {
       'en': 'Email.',
       'es': 'correo electrónico.',
-    },
-    'bgay97ij': {
-      'en': '',
-      'es': 'Telèfono',
-    },
-    'mquwnyzj': {
-      'en': '',
-      'es': 'Edad',
-    },
-    '7ey85cwu': {
-      'en': '',
-      'es': 'Sexo',
     },
     'rzpiwq9p': {
       'en': '',
@@ -151,9 +139,17 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': '',
       'es': '',
     },
-    'kasq9vmy': {
-      'en': 'terms and conditions',
-      'es': 'Términos y condiciones',
+    'flq9lsgd': {
+      'en': '',
+      'es': ' repetir contraseña',
+    },
+    'bq8w50t7': {
+      'en': 'pasword',
+      'es': 'contraseña',
+    },
+    'h10jf4r1': {
+      'en': '',
+      'es': '',
     },
     '3ugmx2zp': {
       'en': '',
@@ -1915,6 +1911,77 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     'xikt8yfc': {
       'en': 'Continue',
       'es': '',
+    },
+  },
+  // registro2
+  {
+    'kupavl30': {
+      'en': '',
+      'es': 'Registro',
+    },
+    '5ra4935z': {
+      'en': '',
+      'es': 'Telèfono',
+    },
+    '20vyltad': {
+      'en': '18',
+      'es': '18',
+    },
+    'sq3g7vnr': {
+      'en': '19',
+      'es': '19',
+    },
+    'vxdypl70': {
+      'en': '20',
+      'es': '20',
+    },
+    'oq80lu08': {
+      'en': '21',
+      'es': '21',
+    },
+    '3in84nk8': {
+      'en': '22',
+      'es': '22',
+    },
+    '9wvzo0ug': {
+      'en': '23',
+      'es': '23',
+    },
+    'twq809sc': {
+      'en': '24',
+      'es': '24',
+    },
+    'w6j304z8': {
+      'en': '25',
+      'es': '25',
+    },
+    'jyxm169v': {
+      'en': '26',
+      'es': '26',
+    },
+    'rdj7zkvp': {
+      'en': ' select years',
+      'es': 'seleccionar años',
+    },
+    '88lh2nph': {
+      'en': '',
+      'es': 'Sexo',
+    },
+    'cyfk1tr1': {
+      'en': 'Term and Condicion',
+      'es': 'Término y condición',
+    },
+    'n0n3ifs5': {
+      'en': '',
+      'es': 'CONTINUAR',
+    },
+    '7s6fpc0v': {
+      'en': '',
+      'es': 'Si ya tienes una cuenta',
+    },
+    '36xptjbh': {
+      'en': 'Home',
+      'es': 'Hogar',
     },
   },
   // bookAppointment

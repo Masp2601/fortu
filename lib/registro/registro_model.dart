@@ -1,5 +1,4 @@
 import '/auth/auth_util.dart';
-import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_autocomplete_options_list.dart';
 import '/flutter_flow/flutter_flow_expanded_image_view.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
@@ -20,37 +19,29 @@ class RegistroModel extends FlutterFlowModel {
   TextEditingController? nombrenewuserController;
   String? nombrenewuserSelectedOption;
   String? Function(BuildContext, String?)? nombrenewuserControllerValidator;
-  // State field(s) for emailAdress widget.
-  TextEditingController? emailAdressController;
-  String? Function(BuildContext, String?)? emailAdressControllerValidator;
-  // State field(s) for Telefono widget.
-  TextEditingController? telefonoController;
-  String? Function(BuildContext, String?)? telefonoControllerValidator;
-  // State field(s) for Edad widget.
-  TextEditingController? edadController;
-  String? Function(BuildContext, String?)? edadControllerValidator;
-  // State field(s) for sexo widget.
-  TextEditingController? sexoController;
-  String? Function(BuildContext, String?)? sexoControllerValidator;
+  // State field(s) for emailregistro widget.
+  TextEditingController? emailregistroController;
+  String? Function(BuildContext, String?)? emailregistroControllerValidator;
   // State field(s) for password widget.
   TextEditingController? passwordController;
   late bool passwordVisibility;
   String? Function(BuildContext, String?)? passwordControllerValidator;
-  // State field(s) for Checkbox widget.
-  bool? checkboxValue;
+  // State field(s) for passwordrepeat widget.
+  TextEditingController? passwordrepeatController;
+  late bool passwordrepeatVisibility;
+  String? Function(BuildContext, String?)? passwordrepeatControllerValidator;
 
   /// Initialization and disposal methods.
 
   void initState(BuildContext context) {
     passwordVisibility = false;
+    passwordrepeatVisibility = false;
   }
 
   void dispose() {
-    emailAdressController?.dispose();
-    telefonoController?.dispose();
-    edadController?.dispose();
-    sexoController?.dispose();
+    emailregistroController?.dispose();
     passwordController?.dispose();
+    passwordrepeatController?.dispose();
   }
 
   /// Additional helper methods are added here.

@@ -70,14 +70,13 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
       errorBuilder: (context, _) =>
-          appStateNotifier.loggedIn ? EditProfileWidget() : RegistroWidget(),
+          appStateNotifier.loggedIn ? Registro2Widget() : RegistroWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
-          builder: (context, _) => appStateNotifier.loggedIn
-              ? EditProfileWidget()
-              : RegistroWidget(),
+          builder: (context, _) =>
+              appStateNotifier.loggedIn ? Registro2Widget() : RegistroWidget(),
           routes: [
             FFRoute(
               name: 'registro',
@@ -311,6 +310,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               name: 'plays',
               path: 'plays',
               builder: (context, params) => PlaysWidget(),
+            ),
+            FFRoute(
+              name: 'registro2',
+              path: 'registro2',
+              builder: (context, params) => Registro2Widget(),
             )
           ].map((r) => r.toRoute(appStateNotifier)).toList(),
         ),
