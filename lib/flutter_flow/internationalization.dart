@@ -221,6 +221,12 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   },
   // forgotPassword
   {
+    'nymdan1x': {
+      'en':
+          'Enter the email associated with your account and we will send you link to reset your password.',
+      'es':
+          'Ingrese el correo electrónico asociado con su cuenta y le enviaremos un enlace para restablecer su contraseña.',
+    },
     'u4nuk910': {
       'en': '',
       'es': 'direccion email',

@@ -90,58 +90,98 @@ class _ForgotPasswordWidgetState extends State<ForgotPasswordWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(20.0, 20.0, 20.0, 0.0),
-                child: TextFormField(
-                  controller: _model.emailAddressController,
-                  obscureText: false,
-                  decoration: InputDecoration(
-                    labelText: FFLocalizations.of(context).getText(
-                      'u4nuk910' /*  */,
-                    ),
-                    labelStyle: FlutterFlowTheme.of(context).bodyText2,
-                    hintText: FFLocalizations.of(context).getText(
-                      '37kotxi0' /* Enter your email... */,
-                    ),
-                    hintStyle: FlutterFlowTheme.of(context).bodyText2,
-                    enabledBorder: OutlineInputBorder(
-                      borderSide: BorderSide(
-                        color: Color(0x00000000),
-                        width: 1.0,
+                padding: EdgeInsetsDirectional.fromSTEB(25.0, 0.0, 25.0, 0.0),
+                child: Row(
+                  mainAxisSize: MainAxisSize.max,
+                  children: [
+                    Expanded(
+                      child: Padding(
+                        padding:
+                            EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
+                        child: Text(
+                          FFLocalizations.of(context).getText(
+                            'nymdan1x' /* Enter the email associated wit... */,
+                          ),
+                          style: FlutterFlowTheme.of(context)
+                              .bodyText2
+                              .override(
+                                fontFamily: FlutterFlowTheme.of(context)
+                                    .bodyText2Family,
+                                color:
+                                    FlutterFlowTheme.of(context).primaryBtnText,
+                                useGoogleFonts: GoogleFonts.asMap().containsKey(
+                                    FlutterFlowTheme.of(context)
+                                        .bodyText2Family),
+                              ),
+                        ),
                       ),
-                      borderRadius: BorderRadius.circular(8.0),
                     ),
-                    focusedBorder: OutlineInputBorder(
-                      borderSide: BorderSide(
-                        color: Color(0x00000000),
-                        width: 1.0,
-                      ),
-                      borderRadius: BorderRadius.circular(8.0),
-                    ),
-                    errorBorder: OutlineInputBorder(
-                      borderSide: BorderSide(
-                        color: Color(0x00000000),
-                        width: 1.0,
-                      ),
-                      borderRadius: BorderRadius.circular(8.0),
-                    ),
-                    focusedErrorBorder: OutlineInputBorder(
-                      borderSide: BorderSide(
-                        color: Color(0x00000000),
-                        width: 1.0,
-                      ),
-                      borderRadius: BorderRadius.circular(8.0),
-                    ),
-                    filled: true,
-                    fillColor: FlutterFlowTheme.of(context).secondaryBackground,
-                    contentPadding:
-                        EdgeInsetsDirectional.fromSTEB(20.0, 24.0, 20.0, 24.0),
-                  ),
-                  style: FlutterFlowTheme.of(context).bodyText1,
-                  textAlign: TextAlign.start,
-                  validator: _model.emailAddressControllerValidator
-                      .asValidator(context),
+                  ],
                 ),
               ),
+              if (responsiveVisibility(
+                context: context,
+                tabletLandscape: false,
+                desktop: false,
+              ))
+                Padding(
+                  padding:
+                      EdgeInsetsDirectional.fromSTEB(20.0, 20.0, 20.0, 0.0),
+                  child: TextFormField(
+                    controller: _model.emailAddressController,
+                    obscureText: false,
+                    decoration: InputDecoration(
+                      labelText: FFLocalizations.of(context).getText(
+                        'u4nuk910' /*  */,
+                      ),
+                      labelStyle: FlutterFlowTheme.of(context).bodyText2,
+                      hintText: FFLocalizations.of(context).getText(
+                        '37kotxi0' /* Enter your email... */,
+                      ),
+                      hintStyle: FlutterFlowTheme.of(context).bodyText2,
+                      enabledBorder: OutlineInputBorder(
+                        borderSide: BorderSide(
+                          color: Color(0xDAFF0F13),
+                          width: 2.0,
+                        ),
+                        borderRadius: BorderRadius.circular(20.0),
+                      ),
+                      focusedBorder: OutlineInputBorder(
+                        borderSide: BorderSide(
+                          color: Color(0x00000000),
+                          width: 2.0,
+                        ),
+                        borderRadius: BorderRadius.circular(20.0),
+                      ),
+                      errorBorder: OutlineInputBorder(
+                        borderSide: BorderSide(
+                          color: Color(0x00000000),
+                          width: 2.0,
+                        ),
+                        borderRadius: BorderRadius.circular(20.0),
+                      ),
+                      focusedErrorBorder: OutlineInputBorder(
+                        borderSide: BorderSide(
+                          color: Color(0x00000000),
+                          width: 2.0,
+                        ),
+                        borderRadius: BorderRadius.circular(20.0),
+                      ),
+                      filled: true,
+                      fillColor: Color(0xFF090F13),
+                      contentPadding: EdgeInsetsDirectional.fromSTEB(
+                          20.0, 24.0, 20.0, 24.0),
+                      prefixIcon: Icon(
+                        Icons.outgoing_mail,
+                      ),
+                    ),
+                    style: FlutterFlowTheme.of(context).bodyText1,
+                    textAlign: TextAlign.start,
+                    keyboardType: TextInputType.emailAddress,
+                    validator: _model.emailAddressControllerValidator
+                        .asValidator(context),
+                  ),
+                ),
               Padding(
                 padding: EdgeInsetsDirectional.fromSTEB(0.0, 24.0, 0.0, 0.0),
                 child: FFButtonWidget(
