@@ -81,10 +81,10 @@ class _$UsersRecordSerializer implements StructuredSerializer<UsersRecord> {
         ..add(serializers.serialize(value,
             specifiedType: const FullType(String)));
     }
-    value = object.photoPath;
+    value = object.photoUrl;
     if (value != null) {
       result
-        ..add('photo_path')
+        ..add('photo_url')
         ..add(serializers.serialize(value,
             specifiedType: const FullType(String)));
     }
@@ -146,8 +146,8 @@ class _$UsersRecordSerializer implements StructuredSerializer<UsersRecord> {
           result.userTitle = serializers.deserialize(value,
               specifiedType: const FullType(String)) as String?;
           break;
-        case 'photo_path':
-          result.photoPath = serializers.deserialize(value,
+        case 'photo_url':
+          result.photoUrl = serializers.deserialize(value,
               specifiedType: const FullType(String)) as String?;
           break;
         case 'Document__Reference__Field':
@@ -183,7 +183,7 @@ class _$UsersRecord extends UsersRecord {
   @override
   final String? userTitle;
   @override
-  final String? photoPath;
+  final String? photoUrl;
   @override
   final DocumentReference<Object?>? ffRef;
 
@@ -200,7 +200,7 @@ class _$UsersRecord extends UsersRecord {
       this.phoneNumber,
       this.createdTime,
       this.userTitle,
-      this.photoPath,
+      this.photoUrl,
       this.ffRef})
       : super._();
 
@@ -224,7 +224,7 @@ class _$UsersRecord extends UsersRecord {
         phoneNumber == other.phoneNumber &&
         createdTime == other.createdTime &&
         userTitle == other.userTitle &&
-        photoPath == other.photoPath &&
+        photoUrl == other.photoUrl &&
         ffRef == other.ffRef;
   }
 
@@ -240,7 +240,7 @@ class _$UsersRecord extends UsersRecord {
     _$hash = $jc(_$hash, phoneNumber.hashCode);
     _$hash = $jc(_$hash, createdTime.hashCode);
     _$hash = $jc(_$hash, userTitle.hashCode);
-    _$hash = $jc(_$hash, photoPath.hashCode);
+    _$hash = $jc(_$hash, photoUrl.hashCode);
     _$hash = $jc(_$hash, ffRef.hashCode);
     _$hash = $jf(_$hash);
     return _$hash;
@@ -258,7 +258,7 @@ class _$UsersRecord extends UsersRecord {
           ..add('phoneNumber', phoneNumber)
           ..add('createdTime', createdTime)
           ..add('userTitle', userTitle)
-          ..add('photoPath', photoPath)
+          ..add('photoUrl', photoUrl)
           ..add('ffRef', ffRef))
         .toString();
   }
@@ -303,9 +303,9 @@ class UsersRecordBuilder implements Builder<UsersRecord, UsersRecordBuilder> {
   String? get userTitle => _$this._userTitle;
   set userTitle(String? userTitle) => _$this._userTitle = userTitle;
 
-  String? _photoPath;
-  String? get photoPath => _$this._photoPath;
-  set photoPath(String? photoPath) => _$this._photoPath = photoPath;
+  String? _photoUrl;
+  String? get photoUrl => _$this._photoUrl;
+  set photoUrl(String? photoUrl) => _$this._photoUrl = photoUrl;
 
   DocumentReference<Object?>? _ffRef;
   DocumentReference<Object?>? get ffRef => _$this._ffRef;
@@ -327,7 +327,7 @@ class UsersRecordBuilder implements Builder<UsersRecord, UsersRecordBuilder> {
       _phoneNumber = $v.phoneNumber;
       _createdTime = $v.createdTime;
       _userTitle = $v.userTitle;
-      _photoPath = $v.photoPath;
+      _photoUrl = $v.photoUrl;
       _ffRef = $v.ffRef;
       _$v = null;
     }
@@ -360,7 +360,7 @@ class UsersRecordBuilder implements Builder<UsersRecord, UsersRecordBuilder> {
             phoneNumber: phoneNumber,
             createdTime: createdTime,
             userTitle: userTitle,
-            photoPath: photoPath,
+            photoUrl: photoUrl,
             ffRef: ffRef);
     replace(_$result);
     return _$result;

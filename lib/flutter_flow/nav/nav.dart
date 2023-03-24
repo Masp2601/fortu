@@ -312,9 +312,9 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               builder: (context, params) => Registro2Widget(),
             ),
             FFRoute(
-              name: 'verr',
-              path: 'verr',
-              builder: (context, params) => VerrWidget(),
+              name: 'avatars',
+              path: 'avatars',
+              builder: (context, params) => AvatarsWidget(),
             )
           ].map((r) => r.toRoute(appStateNotifier)).toList(),
         ),

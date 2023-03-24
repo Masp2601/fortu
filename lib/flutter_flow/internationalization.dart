@@ -1962,7 +1962,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'Hogar',
     },
   },
-  // verr
+  // avatars
   {
     'nq6fzbha': {
       'en': 'Avatar',

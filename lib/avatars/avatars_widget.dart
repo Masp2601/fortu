@@ -5,18 +5,18 @@ import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
-import 'verr_model.dart';
-export 'verr_model.dart';
+import 'avatars_model.dart';
+export 'avatars_model.dart';
 
-class VerrWidget extends StatefulWidget {
-  const VerrWidget({Key? key}) : super(key: key);
+class AvatarsWidget extends StatefulWidget {
+  const AvatarsWidget({Key? key}) : super(key: key);
 
   @override
-  _VerrWidgetState createState() => _VerrWidgetState();
+  _AvatarsWidgetState createState() => _AvatarsWidgetState();
 }
 
-class _VerrWidgetState extends State<VerrWidget> {
-  late VerrModel _model;
+class _AvatarsWidgetState extends State<AvatarsWidget> {
+  late AvatarsModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
   final _unfocusNode = FocusNode();
@@ -24,9 +24,9 @@ class _VerrWidgetState extends State<VerrWidget> {
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => VerrModel());
+    _model = createModel(context, () => AvatarsModel());
 
-    logFirebaseEvent('screen_view', parameters: {'screen_name': 'verr'});
+    logFirebaseEvent('screen_view', parameters: {'screen_name': 'avatars'});
   }
 
   @override
