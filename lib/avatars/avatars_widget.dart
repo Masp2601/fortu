@@ -735,7 +735,7 @@ class _AvatarsWidgetState extends State<AvatarsWidget> {
                                             borderRadius:
                                                 BorderRadius.circular(8.0),
                                             child: Image.asset(
-                                              'assets/images/Group_(19).png',
+                                              'assets/images/cuchillo.png',
                                               fit: BoxFit.cover,
                                             ),
                                           ),
@@ -758,7 +758,7 @@ class _AvatarsWidgetState extends State<AvatarsWidget> {
                                           borderRadius:
                                               BorderRadius.circular(8.0),
                                           child: Image.asset(
-                                            'assets/images/Group_(20).png',
+                                            'assets/images/sheet.png',
                                             fit: BoxFit.cover,
                                           ),
                                         ),
