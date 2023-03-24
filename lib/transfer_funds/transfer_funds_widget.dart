@@ -513,6 +513,7 @@ class _TransferFundsWidgetState extends State<TransferFundsWidget>
                         margin: EdgeInsetsDirectional.fromSTEB(
                             20.0, 20.0, 12.0, 20.0),
                         hidesUnderline: true,
+                        isSearchable: false,
                       ).animateOnPageLoad(
                           animationsMap['dropDownOnPageLoadAnimation1']!),
                     ),
@@ -558,6 +559,7 @@ class _TransferFundsWidgetState extends State<TransferFundsWidget>
                         margin: EdgeInsetsDirectional.fromSTEB(
                             20.0, 20.0, 12.0, 20.0),
                         hidesUnderline: true,
+                        isSearchable: false,
                       ).animateOnPageLoad(
                           animationsMap['dropDownOnPageLoadAnimation2']!),
                     ),

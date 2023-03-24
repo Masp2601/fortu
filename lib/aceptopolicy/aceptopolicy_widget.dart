@@ -267,7 +267,7 @@ class _AceptopolicyWidgetState extends State<AceptopolicyWidget> {
                                         return;
                                       }
 
-                                      context.goNamedAuth('registro2', mounted);
+                                      context.goNamedAuth('plays', mounted);
                                     },
                                     text: FFLocalizations.of(context).getText(
                                       'hvkz9jjh' /*  */,

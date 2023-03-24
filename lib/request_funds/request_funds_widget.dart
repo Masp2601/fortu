@@ -220,6 +220,7 @@ class _RequestFundsWidgetState extends State<RequestFundsWidget> {
                         margin: EdgeInsetsDirectional.fromSTEB(
                             20.0, 20.0, 12.0, 20.0),
                         hidesUnderline: true,
+                        isSearchable: false,
                       ),
                     ),
                     Padding(

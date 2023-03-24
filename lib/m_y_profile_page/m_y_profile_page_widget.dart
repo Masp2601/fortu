@@ -167,7 +167,7 @@ class _MYProfilePageWidgetState extends State<MYProfilePageWidget> {
                                                 .clearRedirectLocation();
 
                                             context.goNamedAuth(
-                                                'registro', mounted);
+                                                'registro2', mounted);
                                           },
                                         ),
                                       ),

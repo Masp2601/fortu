@@ -70,13 +70,13 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
       errorBuilder: (context, _) =>
-          appStateNotifier.loggedIn ? Registro2Widget() : RegistroWidget(),
+          appStateNotifier.loggedIn ? PlaysWidget() : Registro2Widget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
           builder: (context, _) =>
-              appStateNotifier.loggedIn ? Registro2Widget() : RegistroWidget(),
+              appStateNotifier.loggedIn ? PlaysWidget() : Registro2Widget(),
           routes: [
             FFRoute(
               name: 'registro',
@@ -310,6 +310,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               name: 'registro2',
               path: 'registro2',
               builder: (context, params) => Registro2Widget(),
+            ),
+            FFRoute(
+              name: 'verr',
+              path: 'verr',
+              builder: (context, params) => VerrWidget(),
             )
           ].map((r) => r.toRoute(appStateNotifier)).toList(),
         ),
@@ -480,7 +485,7 @@ class FFRoute {
 
           if (requireAuth && !appStateNotifier.loggedIn) {
             appStateNotifier.setRedirectLocationIfUnset(state.location);
-            return '/registro';
+            return '/registro2';
           }
           return null;
         },

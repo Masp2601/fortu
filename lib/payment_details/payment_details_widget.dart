@@ -406,10 +406,8 @@ class _PaymentDetailsWidgetState extends State<PaymentDetailsWidget> {
                                             shape: BoxShape.circle,
                                           ),
                                           child: CachedNetworkImage(
-                                            imageUrl: valueOrDefault<String>(
-                                              containerUsersRecord.photoUrl,
-                                              'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/sample-app-e-comm-3oxq8y/assets/hszmaloprc7a/Mia%20Deaven.jpg',
-                                            ),
+                                            imageUrl:
+                                                containerUsersRecord.photoUrl!,
                                             fit: BoxFit.fitWidth,
                                           ),
                                         ),

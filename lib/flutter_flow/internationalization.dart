@@ -125,7 +125,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     'iam0xgwx': {
       'en': 'Email.',
-      'es': 'correo electrónico.',
+      'es': 'Correo electrónico.',
     },
     'rzpiwq9p': {
       'en': '',
@@ -662,7 +662,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     'xaw2jdst': {
       'en': 'Send Transfer',
-      'es': 'Enviar transferencia',
+      'es': 'Enviar Transferencia',
     },
     'xku4zxbe': {
       'en': 'Tap above to complete transfer',
@@ -1451,18 +1451,18 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   {
     '1ank8eo7': {
       'en': 'to register',
-      'es': 'REGISTRAR',
+      'es': 'registrarse',
     },
     '6ogcxgtm': {
       'en': 'Log In',
-      'es': 'INGRESAR',
+      'es': 'Acceso',
     },
   },
   // game
   {
     '68vn95yr': {
       'en': 'Hello World',
-      'es': 'Pesos colombianos',
+      'es': 'Hola Mundo',
     },
     '9jfa6nhu': {
       'en': '',
@@ -1492,7 +1492,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   {
     'dv5rd5yj': {
       'en': 'Hello World',
-      'es': 'JUGADORES',
+      'es': 'Hola Mundo',
     },
     'j5bpofya': {
       'en': '',
@@ -1532,11 +1532,11 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     '3k4njebv': {
       'en': 'balance:',
-      'es': 'saldo:',
+      'es': 'balance:',
     },
     'z60xaif0': {
       'en': 'Hello World',
-      'es': 'en linea',
+      'es': 'Hola Mundo',
     },
     'qe1m12fq': {
       'en': ':(',
@@ -1544,11 +1544,11 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     's22gd02p': {
       'en': '\$200.00',
-      'es': '\$200.000',
+      'es': '\$200.00',
     },
     'wy0hgvsf': {
       'en': '\$50.000',
-      'es': '\$50.000 ',
+      'es': '\$50.000',
     },
     'zmhy5h8a': {
       'en': '',
@@ -1560,11 +1560,11 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     'c53p7cn3': {
       'en': 'Front',
-      'es': '',
+      'es': 'Frente',
     },
     'lez6dm27': {
       'en': 'Back',
-      'es': '\$100.000',
+      'es': 'Atrás',
     },
     'htkigowh': {
       'en': '\$400.000',
@@ -1579,7 +1579,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   {
     'vl97660r': {
       'en': 'Hello World',
-      'es': 'Tipo de Tarjeta',
+      'es': 'Hola Mundo',
     },
     '3ct23b6x': {
       'en': 'credit or debit',
@@ -1615,39 +1615,40 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   {
     'gwjp5nhh': {
       'en': 'Payment Confirmed!',
-      'es': '',
+      'es': '¡Pago confirmado!',
     },
     'f2h83q7b': {
       'en': '\$425.24',
-      'es': '',
+      'es': '\$425.24',
     },
     'yfybkt3d': {
       'en':
           'Your payment has been confirmed, it may take 1-2 hours in order for your payment to go through and show up in your transation list.',
-      'es': '',
+      'es':
+          'Su pago ha sido confirmado, puede tomar de 1 a 2 horas para que su pago se realice y aparezca en su lista de transacciones.',
     },
     'zry15h75': {
       'en': 'Mastercard Ending in 4021',
-      'es': '',
+      'es': 'Mastercard terminando en 4021',
     },
     'xjgiwqpb': {
       'en': '\$425.24',
-      'es': '',
+      'es': '\$425.24',
     },
     'tijh3cb5': {
       'en': 'Go Home',
-      'es': '',
+      'es': 'Vete a casa',
     },
   },
   // paysave
   {
     'whrcjhfl': {
       'en': 'new credit card',
-      'es': 'Tarjeta de crédito o débito',
+      'es': 'nueva tarjeta de crédito',
     },
     'g0ikv3hq': {
       'en': 'Credit Card',
-      'es': '',
+      'es': 'Tarjeta de crédito',
     },
     '5mqvyqho': {
       'en': 'Your Name',
@@ -1663,11 +1664,11 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     'chsqvpkm': {
       'en': 'Paypal',
-      'es': '',
+      'es': 'PayPal',
     },
     'z1ktfa1y': {
       'en': 'Apple Pay',
-      'es': '',
+      'es': 'pago de manzana',
     },
     'osi1idri': {
       'en': 'Home',
@@ -1678,7 +1679,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   {
     'hb7irzgg': {
       'en': 'Hello World',
-      'es': 'JUGADORES',
+      'es': 'Hola Mundo',
     },
     'pfyd2vzp': {
       'en': '',
@@ -1718,11 +1719,11 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     'nli1t6tb': {
       'en': 'Back',
-      'es': '',
+      'es': 'Atrás',
     },
     'xio3f2j8': {
       'en': 'Hello World',
-      'es': 'en linea',
+      'es': 'Hola Mundo',
     },
     'cjz8u4pm': {
       'en': ':(',
@@ -1730,11 +1731,11 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     'x2ldo69c': {
       'en': '\$200.00',
-      'es': '\$200.000',
+      'es': '\$200.00',
     },
     'qo5brd8h': {
       'en': '\$50.000',
-      'es': '\$50.000 ',
+      'es': '\$50.000',
     },
     '5mgputhz': {
       'en': '',
@@ -1746,11 +1747,11 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     's6ivnvmv': {
       'en': 'Front',
-      'es': '',
+      'es': 'Frente',
     },
     'b5ygnocs': {
       'en': 'Back',
-      'es': '\$100.000',
+      'es': 'Atrás',
     },
     '9lrb097r': {
       'en': '\$400.000',
@@ -1765,11 +1766,11 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   {
     '0mg72mu0': {
       'en': 'Hello World',
-      'es': 'JUGADORES',
+      'es': 'Hola Mundo',
     },
     'xyjmuh5i': {
       'en': 'audience',
-      'es': 'Espectador:',
+      'es': 'audiencia',
     },
     'tbhk356n': {
       'en': '',
@@ -1777,11 +1778,11 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     '9sxg7i09': {
       'en': 'Hello World',
-      'es': '',
+      'es': 'Hola Mundo',
     },
     'k1wsrbus': {
       'en': 'Hello World',
-      'es': '',
+      'es': 'Hola Mundo',
     },
     '8gfipbps': {
       'en': '',
@@ -1789,7 +1790,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     'oh8ab2mn': {
       'en': 'Hello World',
-      'es': 'en linea',
+      'es': 'Hola Mundo',
     },
     'lm8z6s2r': {
       'en': '',
@@ -1797,11 +1798,11 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     'u4t41w86': {
       'en': '\$200.00',
-      'es': '\$200.000',
+      'es': '\$200.00',
     },
     '2tnlm0ml': {
       'en': '\$50.000',
-      'es': '\$50.000 ',
+      'es': '\$50.000',
     },
     'bnhsy2go': {
       'en': '',
@@ -1813,11 +1814,11 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     'bxcsba3o': {
       'en': 'Front',
-      'es': '',
+      'es': 'Frente',
     },
     'qdf7rwjq': {
       'en': 'Back',
-      'es': '\$100.000',
+      'es': 'Atrás',
     },
     'kyae5jvy': {
       'en': '\$400.000',
@@ -1832,66 +1833,66 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   {
     '0as0puql': {
       'en': 'Category Name',
-      'es': '',
+      'es': 'nombre de la categoría',
     },
     'dco8h3gy': {
       'en': 'Category Name',
-      'es': '',
+      'es': 'nombre de la categoría',
     },
     '4o2j5wft': {
       'en': 'Category Name',
-      'es': '',
+      'es': 'nombre de la categoría',
     },
     '0v26m66i': {
       'en': 'Category Name',
-      'es': '',
+      'es': 'nombre de la categoría',
     },
     '3yd8s33x': {
       'en': 'Category Name',
-      'es': '',
+      'es': 'nombre de la categoría',
     },
     '989fwr4n': {
       'en': 'Category Name',
-      'es': '',
+      'es': 'nombre de la categoría',
     },
     's67cz2ai': {
       'en': 'Category Name',
-      'es': '',
+      'es': 'nombre de la categoría',
     },
     '5fm87m16': {
       'en': 'Category Name',
-      'es': '',
+      'es': 'nombre de la categoría',
     },
     '5smt792j': {
       'en': 'Category Name',
-      'es': '',
+      'es': 'nombre de la categoría',
     },
     'd64l1f1d': {
       'en': 'Category Name',
-      'es': '',
+      'es': 'nombre de la categoría',
     },
     '596fk1qm': {
       'en': 'Category Name',
-      'es': '',
+      'es': 'nombre de la categoría',
     },
     '1old2uk0': {
       'en': 'Category Name',
-      'es': '',
+      'es': 'nombre de la categoría',
     },
     '5aad6a9w': {
       'en': 'Hello, Emily',
-      'es': '',
+      'es': 'Hola Emily',
     },
     'zkl9ykyq': {
       'en': 'Home',
-      'es': '',
+      'es': 'Hogar',
     },
   },
   // plays
   {
     'xikt8yfc': {
       'en': 'Continue',
-      'es': '',
+      'es': 'Continuar',
     },
   },
   // registro2
@@ -1961,6 +1962,57 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'Hogar',
     },
   },
+  // verr
+  {
+    'nq6fzbha': {
+      'en': 'Avatar',
+      'es': 'Avatar',
+    },
+    'ysdx1516': {
+      'en': 'Categories',
+      'es': '',
+    },
+    'psieli6r': {
+      'en': 'Outerwear',
+      'es': '',
+    },
+    '7aobuso7': {
+      'en': 'Pants',
+      'es': '',
+    },
+    'nlbq302b': {
+      'en': 'Shorts Sporty',
+      'es': '',
+    },
+    'lp49i4sb': {
+      'en': 'Shorts Sporty',
+      'es': '',
+    },
+    'gsvbttps': {
+      'en': 'Shorts Sporty',
+      'es': '',
+    },
+    '0cs9gor1': {
+      'en': 'Shorts Sporty',
+      'es': '',
+    },
+    'p7lvbktu': {
+      'en': 'Shorts Sporty',
+      'es': '',
+    },
+    'tq546c7o': {
+      'en': 'Shorts Sporty',
+      'es': '',
+    },
+    'mv7r7z2a': {
+      'en': 'Categories',
+      'es': '',
+    },
+    'zr9xstnj': {
+      'en': 'Shop',
+      'es': '',
+    },
+  },
   // bookAppointment
   {
     'sfzj3riz': {
@@ -2003,7 +2055,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     'xukiv2ku': {
       'en': 'Choose Date',
-      'es': 'Elija fecha',
+      'es': 'Elija Fecha',
     },
     'lpc88cht': {
       'en': 'Cancel',
@@ -2150,12 +2202,14 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     '4t1rlfvx': {
       'en':
           'Por favor permitenos saber tu ubicacion en tiempo real para puedas apostar libremente y jugar con usuarios de tu misma region.',
-      'es': '',
+      'es':
+          'Por favor, permitenos saber tu ubicacion en tiempo real para poder apostar libremente y jugar con usuarios de tu misma region.',
     },
     'yukvgxdp': {
       'en':
           'Permitenos notificarte para tu juego sea agradable y no sea complicado jugar y apostar online junto con usuarios de tu misma region.',
-      'es': '',
+      'es':
+          'Permitenos notificarte para tu juego sea agradable y no seas complicado jugar y apostar online junto con usuarios de tu misma region.',
     },
     'efvtwj7k': {
       'en': '',

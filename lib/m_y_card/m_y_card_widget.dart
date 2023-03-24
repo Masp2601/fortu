@@ -653,6 +653,8 @@ class _MYCardWidgetState extends State<MYCardWidget>
                                 logFirebaseEvent('Column_bottom_sheet');
                                 await showModalBottomSheet(
                                   isScrollControlled: true,
+                                  backgroundColor: Color(0x00000000),
+                                  barrierColor: Color(0x00000000),
                                   context: context,
                                   builder: (context) {
                                     return Padding(

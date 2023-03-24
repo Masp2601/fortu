@@ -48,3 +48,4 @@ export '/choosevalue/choosevalue_widget.dart' show ChoosevalueWidget;
 export '/know/know_widget.dart' show KnowWidget;
 export '/plays/plays_widget.dart' show PlaysWidget;
 export '/registro2/registro2_widget.dart' show Registro2Widget;
+export '/verr/verr_widget.dart' show VerrWidget;

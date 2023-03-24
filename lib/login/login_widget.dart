@@ -358,7 +358,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                         return;
                                       }
 
-                                      context.goNamedAuth('registro2', mounted);
+                                      context.goNamedAuth('plays', mounted);
                                     },
                                     autofocus: true,
                                     autofillHints: [AutofillHints.password],
@@ -482,8 +482,8 @@ class _LoginWidgetState extends State<LoginWidget> {
                                         return;
                                       }
 
-                                      _navigate = () => context.goNamedAuth(
-                                          'registro2', mounted);
+                                      _navigate = () =>
+                                          context.goNamedAuth('plays', mounted);
                                       if (_model.nombreController.text ==
                                               null ||
                                           _model.nombreController.text == '') {
@@ -638,8 +638,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                             return;
                                           }
 
-                                          context.goNamedAuth(
-                                              'registro2', mounted);
+                                          context.goNamedAuth('plays', mounted);
                                         },
                                         child: FaIcon(
                                           FontAwesomeIcons.google,
@@ -676,8 +675,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                           return;
                                         }
 
-                                        context.goNamedAuth(
-                                            'registro2', mounted);
+                                        context.goNamedAuth('plays', mounted);
                                       },
                                       child: FaIcon(
                                         FontAwesomeIcons.apple,
@@ -713,8 +711,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                           return;
                                         }
 
-                                        context.goNamedAuth(
-                                            'registro2', mounted);
+                                        context.goNamedAuth('plays', mounted);
                                       },
                                       child: FaIcon(
                                         FontAwesomeIcons.facebookF,

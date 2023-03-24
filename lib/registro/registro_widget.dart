@@ -865,7 +865,7 @@ class _RegistroWidgetState extends State<RegistroWidget> {
                                             }
 
                                             context.goNamedAuth(
-                                                'registro2', mounted);
+                                                'plays', mounted);
                                           },
                                           child: FaIcon(
                                             FontAwesomeIcons.google,
@@ -927,7 +927,7 @@ class _RegistroWidgetState extends State<RegistroWidget> {
                                             }
 
                                             context.goNamedAuth(
-                                                'registro2', mounted);
+                                                'plays', mounted);
                                           },
                                           child: FaIcon(
                                             FontAwesomeIcons.facebookF,

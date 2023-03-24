@@ -9,6 +9,7 @@ import 'budgets_record.dart';
 import 'user_list_record.dart';
 import 'budget_list_record.dart';
 import 'basededatos_record.dart';
+import 'avatars_record.dart';
 
 import 'index.dart';
 
@@ -27,6 +28,7 @@ const kDocumentReferenceField = 'Document__Reference__Field';
   UserListRecord,
   BudgetListRecord,
   BasededatosRecord,
+  AvatarsRecord,
   MemoStruct,
 ])
 final Serializers serializers = (_$serializers.toBuilder()

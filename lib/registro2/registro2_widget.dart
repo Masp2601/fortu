@@ -322,6 +322,7 @@ class _Registro2WidgetState extends State<Registro2Widget> {
                                                   .fromSTEB(
                                                       12.0, 4.0, 12.0, 4.0),
                                               hidesUnderline: true,
+                                              isSearchable: false,
                                             ),
                                           ),
                                         Align(
@@ -347,7 +348,7 @@ class _Registro2WidgetState extends State<Registro2Widget> {
                                                 }
 
                                                 context.goNamedAuth(
-                                                    'registro2', mounted);
+                                                    'plays', mounted);
                                               },
                                               autofocus: true,
                                               obscureText: false,
