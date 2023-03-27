@@ -86,6 +86,7 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
             FFRoute(
               name: 'completeProfile',
               path: 'completeProfile',
+              requireAuth: true,
               builder: (context, params) => CompleteProfileWidget(),
             ),
             FFRoute(

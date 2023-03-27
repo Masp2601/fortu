@@ -278,389 +278,408 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
         child: Form(
           key: _model.formKey,
           autovalidateMode: AutovalidateMode.disabled,
-          child: SingleChildScrollView(
-            child: Column(
-              mainAxisSize: MainAxisSize.max,
-              children: [
-                Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 12.0),
-                  child: InkWell(
-                    onTap: () async {
-                      logFirebaseEvent(
-                          'COMPLETE_PROFILE_PAGE_userAvatar_ON_TAP');
-                      logFirebaseEvent('userAvatar_upload_media_to_firebase');
-                      final selectedMedia = await selectMedia(
-                        mediaSource: MediaSource.photoGallery,
-                        multiImage: false,
-                      );
-                      if (selectedMedia != null &&
-                          selectedMedia.every((m) =>
-                              validateFileFormat(m.storagePath, context))) {
-                        setState(() => _model.isDataUploading = true);
-                        var selectedUploadedFiles = <FFUploadedFile>[];
-                        var downloadUrls = <String>[];
-                        try {
-                          showUploadMessage(
-                            context,
-                            'Uploading file...',
-                            showLoading: true,
-                          );
-                          selectedUploadedFiles = selectedMedia
-                              .map((m) => FFUploadedFile(
-                                    name: m.storagePath.split('/').last,
-                                    bytes: m.bytes,
-                                    height: m.dimensions?.height,
-                                    width: m.dimensions?.width,
-                                  ))
-                              .toList();
-
-                          downloadUrls = (await Future.wait(
-                            selectedMedia.map(
-                              (m) async =>
-                                  await uploadData(m.storagePath, m.bytes),
-                            ),
-                          ))
-                              .where((u) => u != null)
-                              .map((u) => u!)
-                              .toList();
-                        } finally {
-                          ScaffoldMessenger.of(context).hideCurrentSnackBar();
-                          _model.isDataUploading = false;
-                        }
-                        if (selectedUploadedFiles.length ==
-                                selectedMedia.length &&
-                            downloadUrls.length == selectedMedia.length) {
-                          setState(() {
-                            _model.uploadedLocalFile =
-                                selectedUploadedFiles.first;
-                            _model.uploadedFileUrl = downloadUrls.first;
-                          });
-                          showUploadMessage(context, 'Success!');
-                        } else {
-                          setState(() {});
-                          showUploadMessage(context, 'Failed to upload data');
-                          return;
-                        }
-                      }
-                    },
-                    child: Container(
-                      width: 100.0,
-                      height: 100.0,
-                      clipBehavior: Clip.antiAlias,
-                      decoration: BoxDecoration(
-                        shape: BoxShape.circle,
-                      ),
-                      child: Image.network(
-                        valueOrDefault<String>(
-                          _model.uploadedFileUrl,
-                          'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/finance-app-sample-kugwu4/assets/ijvuhvqbvns6/uiAvatar@2x.png',
-                        ),
-                      ),
-                    ),
-                  ).animateOnPageLoad(
-                      animationsMap['circleImageOnPageLoadAnimation']!),
-                ),
-                Text(
-                  FFLocalizations.of(context).getText(
-                    'r6npjsue' /* Upload a photo for us to easil... */,
-                  ),
-                  style: FlutterFlowTheme.of(context).bodyText1,
-                ).animateOnPageLoad(animationsMap['textOnPageLoadAnimation']!),
-                Padding(
-                  padding:
-                      EdgeInsetsDirectional.fromSTEB(20.0, 20.0, 20.0, 0.0),
-                  child: TextFormField(
-                    controller: _model.yourNameController,
-                    obscureText: false,
-                    decoration: InputDecoration(
-                      labelText: FFLocalizations.of(context).getText(
-                        'sdptn7dd' /* Your Name */,
-                      ),
-                      labelStyle: FlutterFlowTheme.of(context).bodyText2,
-                      hintStyle: FlutterFlowTheme.of(context).bodyText2,
-                      enabledBorder: OutlineInputBorder(
-                        borderSide: BorderSide(
-                          color: Color(0x00000000),
-                          width: 1.0,
-                        ),
-                        borderRadius: BorderRadius.circular(8.0),
-                      ),
-                      focusedBorder: OutlineInputBorder(
-                        borderSide: BorderSide(
-                          color: Color(0x00000000),
-                          width: 1.0,
-                        ),
-                        borderRadius: BorderRadius.circular(8.0),
-                      ),
-                      errorBorder: OutlineInputBorder(
-                        borderSide: BorderSide(
-                          color: Color(0x00000000),
-                          width: 1.0,
-                        ),
-                        borderRadius: BorderRadius.circular(8.0),
-                      ),
-                      focusedErrorBorder: OutlineInputBorder(
-                        borderSide: BorderSide(
-                          color: Color(0x00000000),
-                          width: 1.0,
-                        ),
-                        borderRadius: BorderRadius.circular(8.0),
-                      ),
-                      filled: true,
-                      fillColor:
-                          FlutterFlowTheme.of(context).secondaryBackground,
-                      contentPadding: EdgeInsetsDirectional.fromSTEB(
-                          20.0, 24.0, 20.0, 24.0),
-                    ),
-                    style: FlutterFlowTheme.of(context).bodyText1,
-                    validator:
-                        _model.yourNameControllerValidator.asValidator(context),
-                  ).animateOnPageLoad(
-                      animationsMap['textFieldOnPageLoadAnimation1']!),
-                ),
-                Padding(
-                  padding:
-                      EdgeInsetsDirectional.fromSTEB(20.0, 20.0, 20.0, 0.0),
-                  child: TextFormField(
-                    controller: _model.yourAgeController,
-                    obscureText: false,
-                    decoration: InputDecoration(
-                      labelText: FFLocalizations.of(context).getText(
-                        'n636qnrx' /* Your Age */,
-                      ),
-                      labelStyle: FlutterFlowTheme.of(context).bodyText2,
-                      hintText: FFLocalizations.of(context).getText(
-                        's7yvjzbs' /* i.e. 34 */,
-                      ),
-                      hintStyle: FlutterFlowTheme.of(context).bodyText2,
-                      enabledBorder: OutlineInputBorder(
-                        borderSide: BorderSide(
-                          color: Color(0x00000000),
-                          width: 1.0,
-                        ),
-                        borderRadius: BorderRadius.circular(8.0),
-                      ),
-                      focusedBorder: OutlineInputBorder(
-                        borderSide: BorderSide(
-                          color: Color(0x00000000),
-                          width: 1.0,
-                        ),
-                        borderRadius: BorderRadius.circular(8.0),
-                      ),
-                      errorBorder: OutlineInputBorder(
-                        borderSide: BorderSide(
-                          color: Color(0x00000000),
-                          width: 1.0,
-                        ),
-                        borderRadius: BorderRadius.circular(8.0),
-                      ),
-                      focusedErrorBorder: OutlineInputBorder(
-                        borderSide: BorderSide(
-                          color: Color(0x00000000),
-                          width: 1.0,
-                        ),
-                        borderRadius: BorderRadius.circular(8.0),
-                      ),
-                      filled: true,
-                      fillColor:
-                          FlutterFlowTheme.of(context).secondaryBackground,
-                      contentPadding: EdgeInsetsDirectional.fromSTEB(
-                          20.0, 24.0, 20.0, 24.0),
-                    ),
-                    style: FlutterFlowTheme.of(context).bodyText1,
-                    keyboardType: TextInputType.number,
-                    validator:
-                        _model.yourAgeControllerValidator.asValidator(context),
-                  ).animateOnPageLoad(
-                      animationsMap['textFieldOnPageLoadAnimation2']!),
-                ),
-                Padding(
-                  padding:
-                      EdgeInsetsDirectional.fromSTEB(20.0, 20.0, 20.0, 0.0),
-                  child: TextFormField(
-                    controller: _model.yourTitleController,
-                    obscureText: false,
-                    decoration: InputDecoration(
-                      labelText: FFLocalizations.of(context).getText(
-                        '72ii0waq' /* Your Title */,
-                      ),
-                      labelStyle: FlutterFlowTheme.of(context).bodyText2,
-                      hintText: FFLocalizations.of(context).getText(
-                        'pf8glhkg' /* What is your position? */,
-                      ),
-                      hintStyle: FlutterFlowTheme.of(context).bodyText2,
-                      enabledBorder: OutlineInputBorder(
-                        borderSide: BorderSide(
-                          color: Color(0x00000000),
-                          width: 1.0,
-                        ),
-                        borderRadius: BorderRadius.circular(8.0),
-                      ),
-                      focusedBorder: OutlineInputBorder(
-                        borderSide: BorderSide(
-                          color: Color(0x00000000),
-                          width: 1.0,
-                        ),
-                        borderRadius: BorderRadius.circular(8.0),
-                      ),
-                      errorBorder: OutlineInputBorder(
-                        borderSide: BorderSide(
-                          color: Color(0x00000000),
-                          width: 1.0,
-                        ),
-                        borderRadius: BorderRadius.circular(8.0),
-                      ),
-                      focusedErrorBorder: OutlineInputBorder(
-                        borderSide: BorderSide(
-                          color: Color(0x00000000),
-                          width: 1.0,
-                        ),
-                        borderRadius: BorderRadius.circular(8.0),
-                      ),
-                      filled: true,
-                      fillColor:
-                          FlutterFlowTheme.of(context).secondaryBackground,
-                      contentPadding: EdgeInsetsDirectional.fromSTEB(
-                          20.0, 24.0, 20.0, 24.0),
-                    ),
-                    style: FlutterFlowTheme.of(context).bodyText1,
-                    validator: _model.yourTitleControllerValidator
-                        .asValidator(context),
-                  ).animateOnPageLoad(
-                      animationsMap['textFieldOnPageLoadAnimation3']!),
-                ),
-                Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
-                  child: StreamBuilder<UsersRecord>(
-                    stream: UsersRecord.getDocument(currentUserReference!),
-                    builder: (context, snapshot) {
-                      // Customize what your widget looks like when it's loading.
-                      if (!snapshot.hasData) {
-                        return Center(
-                          child: SizedBox(
-                            width: 40.0,
-                            height: 40.0,
-                            child: SpinKitFadingCircle(
-                              color: Color(0xFFFF0000),
-                              size: 40.0,
-                            ),
-                          ),
-                        );
-                      }
-                      final buttonLoginUsersRecord = snapshot.data!;
-                      return FFButtonWidget(
-                        onPressed: () async {
+          child: Visibility(
+            visible: responsiveVisibility(
+              context: context,
+              tabletLandscape: false,
+              desktop: false,
+            ),
+            child: SingleChildScrollView(
+              child: Column(
+                mainAxisSize: MainAxisSize.max,
+                children: [
+                  if (responsiveVisibility(
+                    context: context,
+                    tabletLandscape: false,
+                    desktop: false,
+                  ))
+                    Padding(
+                      padding:
+                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 12.0),
+                      child: InkWell(
+                        onTap: () async {
                           logFirebaseEvent(
-                              'COMPLETE_PROFILE_Button-Login_ON_TAP');
-                          logFirebaseEvent('Button-Login_backend_call');
-
-                          final usersUpdateData = createUsersRecordData(
-                            displayName: _model.yourNameController.text,
-                            age: int.tryParse(_model.yourAgeController.text),
-                            userTitle: _model.yourTitleController.text,
-                            photoUrl: _model.uploadedFileUrl,
+                              'COMPLETE_PROFILE_PAGE_userAvatar_ON_TAP');
+                          logFirebaseEvent(
+                              'userAvatar_upload_media_to_firebase');
+                          final selectedMedia = await selectMedia(
+                            multiImage: false,
                           );
-                          await buttonLoginUsersRecord.reference
-                              .update(usersUpdateData);
-                          logFirebaseEvent('Button-Login_navigate_to');
+                          if (selectedMedia != null &&
+                              selectedMedia.every((m) =>
+                                  validateFileFormat(m.storagePath, context))) {
+                            setState(() => _model.isDataUploading = true);
+                            var selectedUploadedFiles = <FFUploadedFile>[];
+                            var downloadUrls = <String>[];
+                            try {
+                              showUploadMessage(
+                                context,
+                                'Uploading file...',
+                                showLoading: true,
+                              );
+                              selectedUploadedFiles = selectedMedia
+                                  .map((m) => FFUploadedFile(
+                                        name: m.storagePath.split('/').last,
+                                        bytes: m.bytes,
+                                        height: m.dimensions?.height,
+                                        width: m.dimensions?.width,
+                                      ))
+                                  .toList();
 
-                          context.pushNamed('onboarding');
+                              downloadUrls = (await Future.wait(
+                                selectedMedia.map(
+                                  (m) async =>
+                                      await uploadData(m.storagePath, m.bytes),
+                                ),
+                              ))
+                                  .where((u) => u != null)
+                                  .map((u) => u!)
+                                  .toList();
+                            } finally {
+                              ScaffoldMessenger.of(context)
+                                  .hideCurrentSnackBar();
+                              _model.isDataUploading = false;
+                            }
+                            if (selectedUploadedFiles.length ==
+                                    selectedMedia.length &&
+                                downloadUrls.length == selectedMedia.length) {
+                              setState(() {
+                                _model.uploadedLocalFile =
+                                    selectedUploadedFiles.first;
+                                _model.uploadedFileUrl = downloadUrls.first;
+                              });
+                              showUploadMessage(context, 'Success!');
+                            } else {
+                              setState(() {});
+                              showUploadMessage(
+                                  context, 'Failed to upload data');
+                              return;
+                            }
+                          }
                         },
-                        text: FFLocalizations.of(context).getText(
-                          'hbhd3bdt' /* Complete Profile */,
-                        ),
-                        options: FFButtonOptions(
-                          width: 230.0,
-                          height: 50.0,
-                          padding: EdgeInsetsDirectional.fromSTEB(
-                              0.0, 0.0, 0.0, 0.0),
-                          iconPadding: EdgeInsetsDirectional.fromSTEB(
-                              0.0, 0.0, 0.0, 0.0),
-                          color: FlutterFlowTheme.of(context).primaryColor,
-                          textStyle: FlutterFlowTheme.of(context)
-                              .subtitle2
-                              .override(
-                                fontFamily: FlutterFlowTheme.of(context)
-                                    .subtitle2Family,
-                                color: FlutterFlowTheme.of(context).textColor,
-                                useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                    FlutterFlowTheme.of(context)
-                                        .subtitle2Family),
-                              ),
-                          elevation: 3.0,
-                          borderSide: BorderSide(
-                            color: Colors.transparent,
-                            width: 1.0,
+                        child: Container(
+                          width: 100.0,
+                          height: 100.0,
+                          clipBehavior: Clip.antiAlias,
+                          decoration: BoxDecoration(
+                            shape: BoxShape.circle,
                           ),
-                          borderRadius: BorderRadius.circular(30.0),
+                          child: Image.network(
+                            valueOrDefault<String>(
+                              _model.uploadedFileUrl,
+                              'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/finance-app-sample-kugwu4/assets/ijvuhvqbvns6/uiAvatar@2x.png',
+                            ),
+                          ),
                         ),
                       ).animateOnPageLoad(
-                          animationsMap['buttonOnPageLoadAnimation1']!);
-                    },
-                  ),
-                ),
-                Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
-                  child: StreamBuilder<UsersRecord>(
-                    stream: UsersRecord.getDocument(currentUserReference!),
-                    builder: (context, snapshot) {
-                      // Customize what your widget looks like when it's loading.
-                      if (!snapshot.hasData) {
-                        return Center(
-                          child: SizedBox(
-                            width: 40.0,
-                            height: 40.0,
-                            child: SpinKitFadingCircle(
-                              color: Color(0xFFFF0000),
-                              size: 40.0,
-                            ),
-                          ),
-                        );
-                      }
-                      final buttonLoginUsersRecord = snapshot.data!;
-                      return FFButtonWidget(
-                        onPressed: () async {
-                          logFirebaseEvent(
-                              'COMPLETE_PROFILE_Button-Login_ON_TAP');
-                          logFirebaseEvent('Button-Login_navigate_to');
-
-                          context.pushNamed('onboarding');
-                        },
-                        text: FFLocalizations.of(context).getText(
-                          'w75dikic' /* Skip for Now */,
+                          animationsMap['circleImageOnPageLoadAnimation']!),
+                    ),
+                  Text(
+                    FFLocalizations.of(context).getText(
+                      'r6npjsue' /* Upload a photo for us to easil... */,
+                    ),
+                    style: FlutterFlowTheme.of(context).bodyText1,
+                  ).animateOnPageLoad(
+                      animationsMap['textOnPageLoadAnimation']!),
+                  Padding(
+                    padding:
+                        EdgeInsetsDirectional.fromSTEB(20.0, 20.0, 20.0, 0.0),
+                    child: TextFormField(
+                      controller: _model.yourNameController,
+                      obscureText: false,
+                      decoration: InputDecoration(
+                        labelText: FFLocalizations.of(context).getText(
+                          'sdptn7dd' /* Your Name */,
                         ),
-                        options: FFButtonOptions(
-                          width: 140.0,
-                          height: 50.0,
-                          padding: EdgeInsetsDirectional.fromSTEB(
-                              0.0, 0.0, 0.0, 0.0),
-                          iconPadding: EdgeInsetsDirectional.fromSTEB(
-                              0.0, 0.0, 0.0, 0.0),
-                          color:
-                              FlutterFlowTheme.of(context).secondaryBackground,
-                          textStyle: FlutterFlowTheme.of(context)
-                              .subtitle2
-                              .override(
-                                fontFamily: FlutterFlowTheme.of(context)
-                                    .subtitle2Family,
-                                color: FlutterFlowTheme.of(context).primaryText,
-                                useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                    FlutterFlowTheme.of(context)
-                                        .subtitle2Family),
-                              ),
-                          elevation: 0.0,
+                        labelStyle: FlutterFlowTheme.of(context).bodyText2,
+                        hintStyle: FlutterFlowTheme.of(context).bodyText2,
+                        enabledBorder: OutlineInputBorder(
                           borderSide: BorderSide(
-                            color: Colors.transparent,
+                            color: Color(0x00000000),
                             width: 1.0,
                           ),
-                          borderRadius: BorderRadius.circular(30.0),
+                          borderRadius: BorderRadius.circular(8.0),
                         ),
-                      ).animateOnPageLoad(
-                          animationsMap['buttonOnPageLoadAnimation2']!);
-                    },
+                        focusedBorder: OutlineInputBorder(
+                          borderSide: BorderSide(
+                            color: Color(0x00000000),
+                            width: 1.0,
+                          ),
+                          borderRadius: BorderRadius.circular(8.0),
+                        ),
+                        errorBorder: OutlineInputBorder(
+                          borderSide: BorderSide(
+                            color: Color(0x00000000),
+                            width: 1.0,
+                          ),
+                          borderRadius: BorderRadius.circular(8.0),
+                        ),
+                        focusedErrorBorder: OutlineInputBorder(
+                          borderSide: BorderSide(
+                            color: Color(0x00000000),
+                            width: 1.0,
+                          ),
+                          borderRadius: BorderRadius.circular(8.0),
+                        ),
+                        filled: true,
+                        fillColor:
+                            FlutterFlowTheme.of(context).secondaryBackground,
+                        contentPadding: EdgeInsetsDirectional.fromSTEB(
+                            20.0, 24.0, 20.0, 24.0),
+                      ),
+                      style: FlutterFlowTheme.of(context).bodyText1,
+                      validator: _model.yourNameControllerValidator
+                          .asValidator(context),
+                    ).animateOnPageLoad(
+                        animationsMap['textFieldOnPageLoadAnimation1']!),
                   ),
-                ),
-              ],
+                  Padding(
+                    padding:
+                        EdgeInsetsDirectional.fromSTEB(20.0, 20.0, 20.0, 0.0),
+                    child: TextFormField(
+                      controller: _model.yourAgeController,
+                      obscureText: false,
+                      decoration: InputDecoration(
+                        labelText: FFLocalizations.of(context).getText(
+                          'n636qnrx' /* Your Age */,
+                        ),
+                        labelStyle: FlutterFlowTheme.of(context).bodyText2,
+                        hintText: FFLocalizations.of(context).getText(
+                          's7yvjzbs' /* i.e. 34 */,
+                        ),
+                        hintStyle: FlutterFlowTheme.of(context).bodyText2,
+                        enabledBorder: OutlineInputBorder(
+                          borderSide: BorderSide(
+                            color: Color(0x00000000),
+                            width: 1.0,
+                          ),
+                          borderRadius: BorderRadius.circular(8.0),
+                        ),
+                        focusedBorder: OutlineInputBorder(
+                          borderSide: BorderSide(
+                            color: Color(0x00000000),
+                            width: 1.0,
+                          ),
+                          borderRadius: BorderRadius.circular(8.0),
+                        ),
+                        errorBorder: OutlineInputBorder(
+                          borderSide: BorderSide(
+                            color: Color(0x00000000),
+                            width: 1.0,
+                          ),
+                          borderRadius: BorderRadius.circular(8.0),
+                        ),
+                        focusedErrorBorder: OutlineInputBorder(
+                          borderSide: BorderSide(
+                            color: Color(0x00000000),
+                            width: 1.0,
+                          ),
+                          borderRadius: BorderRadius.circular(8.0),
+                        ),
+                        filled: true,
+                        fillColor:
+                            FlutterFlowTheme.of(context).secondaryBackground,
+                        contentPadding: EdgeInsetsDirectional.fromSTEB(
+                            20.0, 24.0, 20.0, 24.0),
+                      ),
+                      style: FlutterFlowTheme.of(context).bodyText1,
+                      keyboardType: TextInputType.number,
+                      validator: _model.yourAgeControllerValidator
+                          .asValidator(context),
+                    ).animateOnPageLoad(
+                        animationsMap['textFieldOnPageLoadAnimation2']!),
+                  ),
+                  Padding(
+                    padding:
+                        EdgeInsetsDirectional.fromSTEB(20.0, 20.0, 20.0, 0.0),
+                    child: TextFormField(
+                      controller: _model.yourTitleController,
+                      obscureText: false,
+                      decoration: InputDecoration(
+                        labelText: FFLocalizations.of(context).getText(
+                          '72ii0waq' /* Your Title */,
+                        ),
+                        labelStyle: FlutterFlowTheme.of(context).bodyText2,
+                        hintText: FFLocalizations.of(context).getText(
+                          'pf8glhkg' /* What is your position? */,
+                        ),
+                        hintStyle: FlutterFlowTheme.of(context).bodyText2,
+                        enabledBorder: OutlineInputBorder(
+                          borderSide: BorderSide(
+                            color: Color(0x00000000),
+                            width: 1.0,
+                          ),
+                          borderRadius: BorderRadius.circular(8.0),
+                        ),
+                        focusedBorder: OutlineInputBorder(
+                          borderSide: BorderSide(
+                            color: Color(0x00000000),
+                            width: 1.0,
+                          ),
+                          borderRadius: BorderRadius.circular(8.0),
+                        ),
+                        errorBorder: OutlineInputBorder(
+                          borderSide: BorderSide(
+                            color: Color(0x00000000),
+                            width: 1.0,
+                          ),
+                          borderRadius: BorderRadius.circular(8.0),
+                        ),
+                        focusedErrorBorder: OutlineInputBorder(
+                          borderSide: BorderSide(
+                            color: Color(0x00000000),
+                            width: 1.0,
+                          ),
+                          borderRadius: BorderRadius.circular(8.0),
+                        ),
+                        filled: true,
+                        fillColor:
+                            FlutterFlowTheme.of(context).secondaryBackground,
+                        contentPadding: EdgeInsetsDirectional.fromSTEB(
+                            20.0, 24.0, 20.0, 24.0),
+                      ),
+                      style: FlutterFlowTheme.of(context).bodyText1,
+                      validator: _model.yourTitleControllerValidator
+                          .asValidator(context),
+                    ).animateOnPageLoad(
+                        animationsMap['textFieldOnPageLoadAnimation3']!),
+                  ),
+                  Padding(
+                    padding:
+                        EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
+                    child: StreamBuilder<UsersRecord>(
+                      stream: UsersRecord.getDocument(currentUserReference!),
+                      builder: (context, snapshot) {
+                        // Customize what your widget looks like when it's loading.
+                        if (!snapshot.hasData) {
+                          return Center(
+                            child: SizedBox(
+                              width: 40.0,
+                              height: 40.0,
+                              child: SpinKitFadingCircle(
+                                color: Color(0xFFFF0000),
+                                size: 40.0,
+                              ),
+                            ),
+                          );
+                        }
+                        final buttonLoginUsersRecord = snapshot.data!;
+                        return FFButtonWidget(
+                          onPressed: () async {
+                            logFirebaseEvent(
+                                'COMPLETE_PROFILE_Button-Login_ON_TAP');
+                            logFirebaseEvent('Button-Login_backend_call');
+
+                            final usersUpdateData = createUsersRecordData(
+                              displayName: _model.yourNameController.text,
+                              age: int.tryParse(_model.yourAgeController.text),
+                              userTitle: _model.yourTitleController.text,
+                              photoUrl: _model.uploadedFileUrl,
+                            );
+                            await buttonLoginUsersRecord.reference
+                                .update(usersUpdateData);
+                            logFirebaseEvent('Button-Login_navigate_to');
+
+                            context.pushNamed('onboarding');
+                          },
+                          text: FFLocalizations.of(context).getText(
+                            'hbhd3bdt' /* Complete Profile */,
+                          ),
+                          options: FFButtonOptions(
+                            width: 230.0,
+                            height: 50.0,
+                            padding: EdgeInsetsDirectional.fromSTEB(
+                                0.0, 0.0, 0.0, 0.0),
+                            iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                0.0, 0.0, 0.0, 0.0),
+                            color: FlutterFlowTheme.of(context).primaryColor,
+                            textStyle: FlutterFlowTheme.of(context)
+                                .subtitle2
+                                .override(
+                                  fontFamily: FlutterFlowTheme.of(context)
+                                      .subtitle2Family,
+                                  color: FlutterFlowTheme.of(context).textColor,
+                                  useGoogleFonts: GoogleFonts.asMap()
+                                      .containsKey(FlutterFlowTheme.of(context)
+                                          .subtitle2Family),
+                                ),
+                            elevation: 3.0,
+                            borderSide: BorderSide(
+                              color: Colors.transparent,
+                              width: 1.0,
+                            ),
+                            borderRadius: BorderRadius.circular(30.0),
+                          ),
+                        ).animateOnPageLoad(
+                            animationsMap['buttonOnPageLoadAnimation1']!);
+                      },
+                    ),
+                  ),
+                  Padding(
+                    padding:
+                        EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
+                    child: StreamBuilder<UsersRecord>(
+                      stream: UsersRecord.getDocument(currentUserReference!),
+                      builder: (context, snapshot) {
+                        // Customize what your widget looks like when it's loading.
+                        if (!snapshot.hasData) {
+                          return Center(
+                            child: SizedBox(
+                              width: 40.0,
+                              height: 40.0,
+                              child: SpinKitFadingCircle(
+                                color: Color(0xFFFF0000),
+                                size: 40.0,
+                              ),
+                            ),
+                          );
+                        }
+                        final buttonLoginUsersRecord = snapshot.data!;
+                        return FFButtonWidget(
+                          onPressed: () async {
+                            logFirebaseEvent(
+                                'COMPLETE_PROFILE_Button-Login_ON_TAP');
+                            logFirebaseEvent('Button-Login_navigate_to');
+
+                            context.pushNamed('onboarding');
+                          },
+                          text: FFLocalizations.of(context).getText(
+                            'w75dikic' /* Skip for Now */,
+                          ),
+                          options: FFButtonOptions(
+                            width: 140.0,
+                            height: 50.0,
+                            padding: EdgeInsetsDirectional.fromSTEB(
+                                0.0, 0.0, 0.0, 0.0),
+                            iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                0.0, 0.0, 0.0, 0.0),
+                            color: FlutterFlowTheme.of(context)
+                                .secondaryBackground,
+                            textStyle: FlutterFlowTheme.of(context)
+                                .subtitle2
+                                .override(
+                                  fontFamily: FlutterFlowTheme.of(context)
+                                      .subtitle2Family,
+                                  color:
+                                      FlutterFlowTheme.of(context).primaryText,
+                                  useGoogleFonts: GoogleFonts.asMap()
+                                      .containsKey(FlutterFlowTheme.of(context)
+                                          .subtitle2Family),
+                                ),
+                            elevation: 0.0,
+                            borderSide: BorderSide(
+                              color: Colors.transparent,
+                              width: 1.0,
+                            ),
+                            borderRadius: BorderRadius.circular(30.0),
+                          ),
+                        ).animateOnPageLoad(
+                            animationsMap['buttonOnPageLoadAnimation2']!);
+                      },
+                    ),
+                  ),
+                ],
+              ),
             ),
           ),
         ),

@@ -661,7 +661,7 @@ class _CashtableWidgetState extends State<CashtableWidget>
                                       ),
                                       Align(
                                         alignment:
-                                            AlignmentDirectional(0.0, 0.0),
+                                            AlignmentDirectional(-0.93, -0.37),
                                         child: Padding(
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(

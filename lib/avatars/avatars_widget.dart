@@ -92,7 +92,7 @@ class _AvatarsWidgetState extends State<AvatarsWidget> {
                       unselectedLabelColor:
                           FlutterFlowTheme.of(context).secondaryText,
                       labelStyle: FlutterFlowTheme.of(context).subtitle1,
-                      indicatorColor: FlutterFlowTheme.of(context).primaryColor,
+                      indicatorColor: Color(0xFFFF0026),
                       tabs: [
                         Tab(
                           text: FFLocalizations.of(context).getText(
@@ -117,11 +117,15 @@ class _AvatarsWidgetState extends State<AvatarsWidget> {
                                     crossAxisAlignment:
                                         CrossAxisAlignment.center,
                                     children: [
-                                      Image.asset(
-                                        'assets/images/corona.png',
-                                        width: 92.3,
-                                        height: 91.1,
-                                        fit: BoxFit.cover,
+                                      Padding(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                            0.0, 0.0, 20.0, 0.0),
+                                        child: Image.asset(
+                                          'assets/images/corona.png',
+                                          width: 80.1,
+                                          height: 91.1,
+                                          fit: BoxFit.cover,
+                                        ),
                                       ),
                                       Padding(
                                         padding: EdgeInsetsDirectional.fromSTEB(

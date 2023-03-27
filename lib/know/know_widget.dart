@@ -148,8 +148,8 @@ class _KnowWidgetState extends State<KnowWidget> {
                                       child: ClipRRect(
                                         borderRadius:
                                             BorderRadius.circular(0.0),
-                                        child: Image.asset(
-                                          'assets/images/Group_33980.png',
+                                        child: Image.network(
+                                          '',
                                           fit: BoxFit.cover,
                                         ),
                                       ),

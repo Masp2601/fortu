@@ -80,8 +80,8 @@ class _PlaysWidgetState extends State<PlaysWidget> {
                   Expanded(
                     child: Align(
                       alignment: AlignmentDirectional(-1.0, -2.5),
-                      child: Image.asset(
-                        'assets/images/Group_33980.png',
+                      child: Image.network(
+                        '',
                         width: 100.0,
                         height: 100.0,
                         fit: BoxFit.cover,
