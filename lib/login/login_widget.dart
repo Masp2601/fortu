@@ -358,7 +358,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                         return;
                                       }
 
-                                      context.goNamedAuth('plays', mounted);
+                                      context.goNamedAuth('home', mounted);
                                     },
                                     autofocus: true,
                                     autofillHints: [AutofillHints.password],
@@ -483,7 +483,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                       }
 
                                       _navigate = () =>
-                                          context.goNamedAuth('plays', mounted);
+                                          context.goNamedAuth('home', mounted);
                                       if (_model.nombreController.text ==
                                               null ||
                                           _model.nombreController.text == '') {
@@ -638,7 +638,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                             return;
                                           }
 
-                                          context.goNamedAuth('plays', mounted);
+                                          context.goNamedAuth('home', mounted);
                                         },
                                         child: FaIcon(
                                           FontAwesomeIcons.google,
@@ -675,7 +675,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                           return;
                                         }
 
-                                        context.goNamedAuth('plays', mounted);
+                                        context.goNamedAuth('home', mounted);
                                       },
                                       child: FaIcon(
                                         FontAwesomeIcons.apple,
@@ -711,7 +711,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                           return;
                                         }
 
-                                        context.goNamedAuth('plays', mounted);
+                                        context.goNamedAuth('home', mounted);
                                       },
                                       child: FaIcon(
                                         FontAwesomeIcons.facebookF,
@@ -789,53 +789,6 @@ class _LoginWidgetState extends State<LoginWidget> {
                           ),
                         ),
                       ),
-                      if (responsiveVisibility(
-                        context: context,
-                        desktop: false,
-                      ))
-                        Expanded(
-                          child: Align(
-                            alignment: AlignmentDirectional(0.0, -1.0),
-                            child: FFButtonWidget(
-                              onPressed: () async {
-                                logFirebaseEvent(
-                                    'LOGIN_PAGE_BUTTON_BTN_ON_TAP');
-                                logFirebaseEvent('Button_navigate_to');
-
-                                context.pushNamed('game');
-                              },
-                              text: FFLocalizations.of(context).getText(
-                                'lx9wa34e' /* Button */,
-                              ),
-                              options: FFButtonOptions(
-                                width: 130.0,
-                                height: 40.0,
-                                padding: EdgeInsetsDirectional.fromSTEB(
-                                    0.0, 0.0, 0.0, 0.0),
-                                iconPadding: EdgeInsetsDirectional.fromSTEB(
-                                    0.0, 0.0, 0.0, 0.0),
-                                color:
-                                    FlutterFlowTheme.of(context).primaryColor,
-                                textStyle: FlutterFlowTheme.of(context)
-                                    .subtitle2
-                                    .override(
-                                      fontFamily: FlutterFlowTheme.of(context)
-                                          .subtitle2Family,
-                                      color: Colors.white,
-                                      useGoogleFonts: GoogleFonts.asMap()
-                                          .containsKey(
-                                              FlutterFlowTheme.of(context)
-                                                  .subtitle2Family),
-                                    ),
-                                borderSide: BorderSide(
-                                  color: Colors.transparent,
-                                  width: 1.0,
-                                ),
-                                borderRadius: BorderRadius.circular(8.0),
-                              ),
-                            ),
-                          ),
-                        ),
                     ],
                   ),
                 ),

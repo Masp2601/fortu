@@ -116,23 +116,12 @@ class _PaysaveWidgetState extends State<PaysaveWidget> {
                                             child: Row(
                                               mainAxisSize: MainAxisSize.max,
                                               children: [
-                                                InkWell(
-                                                  onTap: () async {
-                                                    logFirebaseEvent(
-                                                        'PAYSAVE_PAGE_Icon_e5pdkfad_ON_TAP');
-                                                    logFirebaseEvent(
-                                                        'Icon_navigate_to');
-
-                                                    context.pushNamed(
-                                                        'aceptopolicy');
-                                                  },
-                                                  child: FaIcon(
-                                                    FontAwesomeIcons.angleLeft,
-                                                    color: FlutterFlowTheme.of(
-                                                            context)
-                                                        .textColor,
-                                                    size: 24.0,
-                                                  ),
+                                                FaIcon(
+                                                  FontAwesomeIcons.angleLeft,
+                                                  color: FlutterFlowTheme.of(
+                                                          context)
+                                                      .textColor,
+                                                  size: 24.0,
                                                 ),
                                                 Expanded(
                                                   child: Text(

@@ -767,11 +767,6 @@ class _AvatarsWidgetState extends State<AvatarsWidget> {
                                           ),
                                         ),
                                       ),
-                                      Image.asset(
-                                        'assets/images/juo14_600',
-                                        height: 100.0,
-                                        fit: BoxFit.cover,
-                                      ),
                                       Expanded(
                                         child: Padding(
                                           padding:

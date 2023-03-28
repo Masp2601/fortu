@@ -70,17 +70,18 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
       errorBuilder: (context, _) =>
-          appStateNotifier.loggedIn ? PlaysWidget() : Registro2Widget(),
+          appStateNotifier.loggedIn ? HomeWidget() : LoginWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
           builder: (context, _) =>
-              appStateNotifier.loggedIn ? PlaysWidget() : Registro2Widget(),
+              appStateNotifier.loggedIn ? HomeWidget() : LoginWidget(),
           routes: [
             FFRoute(
               name: 'registro',
               path: 'registro',
+              requireAuth: true,
               builder: (context, params) => RegistroWidget(),
             ),
             FFRoute(
@@ -92,31 +93,37 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
             FFRoute(
               name: 'forgotPassword',
               path: 'forgotPassword',
+              requireAuth: true,
               builder: (context, params) => ForgotPasswordWidget(),
             ),
             FFRoute(
               name: 'onboarding',
               path: 'onboarding',
+              requireAuth: true,
               builder: (context, params) => OnboardingWidget(),
             ),
             FFRoute(
               name: 'createBudgetBegin',
               path: 'createBudgetBegin',
+              requireAuth: true,
               builder: (context, params) => CreateBudgetBeginWidget(),
             ),
             FFRoute(
               name: 'MY_Card',
               path: 'mYCard',
+              requireAuth: true,
               builder: (context, params) => MYCardWidget(),
             ),
             FFRoute(
               name: 'MY_Budgets',
               path: 'mYBudgets',
+              requireAuth: true,
               builder: (context, params) => MYBudgetsWidget(),
             ),
             FFRoute(
               name: 'paymentDetails',
               path: 'paymentDetails',
+              requireAuth: true,
               builder: (context, params) => PaymentDetailsWidget(
                 transactionDetails: params.getParam('transactionDetails',
                     ParamType.DocumentReference, false, ['transactions']),
@@ -127,6 +134,7 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
             FFRoute(
               name: 'MY_profilePage',
               path: 'mYProfilePage',
+              requireAuth: true,
               builder: (context, params) => MYProfilePageWidget(
                 userProfile: params.getParam('userProfile',
                     ParamType.DocumentReference, false, ['users']),
@@ -135,6 +143,7 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
             FFRoute(
               name: 'budgetDetails',
               path: 'budgetDetails',
+              requireAuth: true,
               builder: (context, params) => BudgetDetailsWidget(
                 budgetDetails: params.getParam('budgetDetails',
                     ParamType.DocumentReference, false, ['budgets']),
@@ -143,31 +152,37 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
             FFRoute(
               name: 'transferComplete',
               path: 'transferComplete',
+              requireAuth: true,
               builder: (context, params) => TransferCompleteWidget(),
             ),
             FFRoute(
               name: 'transferFunds',
               path: 'transferFunds',
+              requireAuth: true,
               builder: (context, params) => TransferFundsWidget(),
             ),
             FFRoute(
               name: 'requestFunds',
               path: 'requestFunds',
+              requireAuth: true,
               builder: (context, params) => RequestFundsWidget(),
             ),
             FFRoute(
               name: 'createBudget',
               path: 'createBudget',
+              requireAuth: true,
               builder: (context, params) => CreateBudgetWidget(),
             ),
             FFRoute(
               name: 'transaction_ADD',
               path: 'transactionADD',
+              requireAuth: true,
               builder: (context, params) => TransactionADDWidget(),
             ),
             FFRoute(
               name: 'transaction_EDIT',
               path: 'transactionEDIT',
+              requireAuth: true,
               builder: (context, params) => TransactionEDITWidget(
                 transactionDetails: params.getParam('transactionDetails',
                     ParamType.DocumentReference, false, ['transactions']),
@@ -176,6 +191,7 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
             FFRoute(
               name: 'editProfile',
               path: 'editProfile',
+              requireAuth: true,
               builder: (context, params) => EditProfileWidget(
                 userProfile: params.getParam('userProfile',
                     ParamType.DocumentReference, false, ['users']),
@@ -184,36 +200,37 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
             FFRoute(
               name: 'notificationsSettings',
               path: 'notificationsSettings',
+              requireAuth: true,
               builder: (context, params) => NotificationsSettingsWidget(),
             ),
             FFRoute(
               name: 'privacyPolicy',
               path: 'privacyPolicy',
+              requireAuth: true,
               builder: (context, params) => PrivacyPolicyWidget(),
-            ),
-            FFRoute(
-              name: 'tutorial_PROFILE',
-              path: 'tutorialPROFILE',
-              builder: (context, params) => TutorialPROFILEWidget(),
             ),
             FFRoute(
               name: 'homePage',
               path: 'homePage',
+              requireAuth: true,
               builder: (context, params) => HomePageWidget(),
             ),
             FFRoute(
               name: 'homePage_alt',
               path: 'homePageAlt',
+              requireAuth: true,
               builder: (context, params) => HomePageAltWidget(),
             ),
             FFRoute(
               name: 'homePage_alt_1',
               path: 'homePageAlt1',
+              requireAuth: true,
               builder: (context, params) => HomePageAlt1Widget(),
             ),
             FFRoute(
               name: 'budget_DELETE',
               path: 'budgetDELETE',
+              requireAuth: true,
               builder: (context, params) => BudgetDELETEWidget(
                 budgetList: params.getParam('budgetList',
                     ParamType.DocumentReference, false, ['budgets']),
@@ -222,6 +239,7 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
             FFRoute(
               name: 'profilepage',
               path: 'profilepage',
+              requireAuth: true,
               builder: (context, params) => ProfilepageWidget(),
             ),
             FFRoute(
@@ -232,23 +250,20 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
             FFRoute(
               name: 'conection',
               path: 'conection',
+              requireAuth: true,
               builder: (context, params) => ConectionWidget(),
             ),
             FFRoute(
               name: 'game',
               path: 'game',
+              requireAuth: true,
               builder: (context, params) => GameWidget(),
             ),
             FFRoute(
-              name: 'aceptopolicy',
-              path: 'aceptopolicy',
-              builder: (context, params) => AceptopolicyWidget(),
-            ),
-            FFRoute(
-              name: 'table',
-              path: 'table',
+              name: 'fortunatable',
+              path: 'fortunatable',
               requireAuth: true,
-              builder: (context, params) => TableWidget(
+              builder: (context, params) => FortunatableWidget(
                 users: params.getParam('users', ParamType.String),
                 saldo: params.getParam('saldo', ParamType.String),
               ),
@@ -256,21 +271,25 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
             FFRoute(
               name: 'tarjeta',
               path: 'tarjeta',
+              requireAuth: true,
               builder: (context, params) => TarjetaWidget(),
             ),
             FFRoute(
               name: 'politicas',
               path: 'politicas',
+              requireAuth: true,
               builder: (context, params) => PoliticasWidget(),
             ),
             FFRoute(
               name: 'thankspay',
               path: 'thankspay',
+              requireAuth: true,
               builder: (context, params) => ThankspayWidget(),
             ),
             FFRoute(
               name: 'paysave',
               path: 'paysave',
+              requireAuth: true,
               builder: (context, params) => PaysaveWidget(),
             ),
             FFRoute(
@@ -290,32 +309,42 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               ),
             ),
             FFRoute(
-              name: 'choosevalue',
-              path: 'choosevalue',
+              name: 'ndqueperder',
+              path: 'ndqueperder',
               requireAuth: true,
-              builder: (context, params) => ChoosevalueWidget(
+              builder: (context, params) => NdqueperderWidget(
                 users: params.getParam('users', ParamType.String),
               ),
             ),
             FFRoute(
-              name: 'know',
-              path: 'know',
-              builder: (context, params) => KnowWidget(),
-            ),
-            FFRoute(
-              name: 'plays',
-              path: 'plays',
-              builder: (context, params) => PlaysWidget(),
-            ),
-            FFRoute(
-              name: 'registro2',
-              path: 'registro2',
-              builder: (context, params) => Registro2Widget(),
+              name: 'home',
+              path: 'home',
+              requireAuth: true,
+              builder: (context, params) => HomeWidget(),
             ),
             FFRoute(
               name: 'avatars',
               path: 'avatars',
+              requireAuth: true,
               builder: (context, params) => AvatarsWidget(),
+            ),
+            FFRoute(
+              name: 'rules',
+              path: 'rules',
+              requireAuth: true,
+              builder: (context, params) => RulesWidget(),
+            ),
+            FFRoute(
+              name: 'disfrutaygana',
+              path: 'disfrutaygana',
+              requireAuth: true,
+              builder: (context, params) => DisfrutayganaWidget(),
+            ),
+            FFRoute(
+              name: 'homeCopy',
+              path: 'homeCopy',
+              requireAuth: true,
+              builder: (context, params) => HomeCopyWidget(),
             )
           ].map((r) => r.toRoute(appStateNotifier)).toList(),
         ),
@@ -486,7 +515,7 @@ class FFRoute {
 
           if (requireAuth && !appStateNotifier.loggedIn) {
             appStateNotifier.setRedirectLocationIfUnset(state.location);
-            return '/registro2';
+            return '/login';
           }
           return null;
         },

@@ -111,10 +111,8 @@ class _PoliticasWidgetState extends State<PoliticasWidget> {
                                                     logFirebaseEvent(
                                                         'POLITICAS_PAGE_Icon_mjgyjmm2_ON_TAP');
                                                     logFirebaseEvent(
-                                                        'Icon_navigate_to');
-
-                                                    context.pushNamed(
-                                                        'aceptopolicy');
+                                                        'Icon_navigate_back');
+                                                    context.safePop();
                                                   },
                                                   child: FaIcon(
                                                     FontAwesomeIcons.angleLeft,

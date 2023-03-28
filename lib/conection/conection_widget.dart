@@ -1,4 +1,3 @@
-import '/flutter_flow/flutter_flow_expanded_image_view.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
@@ -6,7 +5,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_html/flutter_html.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:page_transition/page_transition.dart';
 import 'package:provider/provider.dart';
 import 'conection_model.dart';
 export 'conection_model.dart';
@@ -184,7 +182,7 @@ class _ConectionWidgetState extends State<ConectionWidget> {
                                     context.pushNamed('login');
                                   },
                                   text: FFLocalizations.of(context).getText(
-                                    '6ogcxgtm' /* Log In */,
+                                    '6ogcxgtm' /* Log in */,
                                   ),
                                   options: FFButtonOptions(
                                     width: 130.0,
@@ -251,7 +249,7 @@ class _ConectionWidgetState extends State<ConectionWidget> {
                       ))
                         Padding(
                           padding: EdgeInsetsDirectional.fromSTEB(
-                              15.0, 0.0, 15.0, 0.0),
+                              15.0, 0.0, 0.0, 0.0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
                             children: [
@@ -265,32 +263,11 @@ class _ConectionWidgetState extends State<ConectionWidget> {
                                   child: Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
                                         15.0, 10.0, 0.0, 10.0),
-                                    child: InkWell(
-                                      onTap: () async {
-                                        logFirebaseEvent(
-                                            'CONECTION_PAGE_Image_x93p6vzl_ON_TAP');
-                                        logFirebaseEvent('Image_expand_image');
-                                        await Navigator.push(
-                                          context,
-                                          PageTransition(
-                                            type: PageTransitionType.fade,
-                                            child: FlutterFlowExpandedImageView(
-                                              image: Image.asset(
-                                                'assets/images/Rectangle_1.png',
-                                                fit: BoxFit.contain,
-                                              ),
-                                              allowRotation: true,
-                                              useHeroAnimation: false,
-                                            ),
-                                          ),
-                                        );
-                                      },
-                                      child: Image.asset(
-                                        'assets/images/Rectangle_1.png',
-                                        width: 360.0,
-                                        height: 360.0,
-                                        fit: BoxFit.cover,
-                                      ),
+                                    child: Image.asset(
+                                      'assets/images/Rectangle_1.png',
+                                      width: 360.0,
+                                      height: 360.0,
+                                      fit: BoxFit.cover,
                                     ),
                                   ),
                                 ),

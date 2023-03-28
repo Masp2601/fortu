@@ -4,11 +4,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
-import 'choosevalue_model.dart';
-export 'choosevalue_model.dart';
+import 'ndqueperder_model.dart';
+export 'ndqueperder_model.dart';
 
-class ChoosevalueWidget extends StatefulWidget {
-  const ChoosevalueWidget({
+class NdqueperderWidget extends StatefulWidget {
+  const NdqueperderWidget({
     Key? key,
     this.users,
   }) : super(key: key);
@@ -16,11 +16,11 @@ class ChoosevalueWidget extends StatefulWidget {
   final String? users;
 
   @override
-  _ChoosevalueWidgetState createState() => _ChoosevalueWidgetState();
+  _NdqueperderWidgetState createState() => _NdqueperderWidgetState();
 }
 
-class _ChoosevalueWidgetState extends State<ChoosevalueWidget> {
-  late ChoosevalueModel _model;
+class _NdqueperderWidgetState extends State<NdqueperderWidget> {
+  late NdqueperderModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
   final _unfocusNode = FocusNode();
@@ -28,9 +28,9 @@ class _ChoosevalueWidgetState extends State<ChoosevalueWidget> {
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => ChoosevalueModel());
+    _model = createModel(context, () => NdqueperderModel());
 
-    logFirebaseEvent('screen_view', parameters: {'screen_name': 'choosevalue'});
+    logFirebaseEvent('screen_view', parameters: {'screen_name': 'ndqueperder'});
   }
 
   @override
@@ -95,9 +95,8 @@ class _ChoosevalueWidgetState extends State<ChoosevalueWidget> {
                               alignment: AlignmentDirectional(0.08, 0.03),
                               child: Image.asset(
                                 'assets/images/Vector_(15).png',
-                                width: 748.3,
-                                height: 321.7,
-                                fit: BoxFit.cover,
+                                width: 700.0,
+                                fit: BoxFit.fill,
                               ),
                             ),
                           if (responsiveVisibility(
@@ -137,11 +136,11 @@ class _ChoosevalueWidgetState extends State<ChoosevalueWidget> {
                                         child: InkWell(
                                           onTap: () async {
                                             logFirebaseEvent(
-                                                'CHOOSEVALUE_PAGE_Image_0ahkx9yq_ON_TAP');
+                                                'NDQUEPERDER_PAGE_Image_0ahkx9yq_ON_TAP');
                                             logFirebaseEvent(
                                                 'Image_navigate_to');
 
-                                            context.pushNamed('table');
+                                            context.pushNamed('fortunatable');
                                           },
                                           child: Image.asset(
                                             'assets/images/Group_1885_3.png',
@@ -161,7 +160,7 @@ class _ChoosevalueWidgetState extends State<ChoosevalueWidget> {
                                         child: InkWell(
                                           onTap: () async {
                                             logFirebaseEvent(
-                                                'CHOOSEVALUE_PAGE_Image_xxohcpli_ON_TAP');
+                                                'NDQUEPERDER_PAGE_Image_xxohcpli_ON_TAP');
                                             logFirebaseEvent(
                                                 'Image_navigate_to');
 
@@ -177,7 +176,7 @@ class _ChoosevalueWidgetState extends State<ChoosevalueWidget> {
                                     InkWell(
                                       onTap: () async {
                                         logFirebaseEvent(
-                                            'CHOOSEVALUE_PAGE_Image_dizh3auq_ON_TAP');
+                                            'NDQUEPERDER_PAGE_Image_dizh3auq_ON_TAP');
                                         logFirebaseEvent('Image_navigate_to');
 
                                         context.pushNamed('cashtable');

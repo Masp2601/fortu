@@ -167,7 +167,7 @@ class _MYProfilePageWidgetState extends State<MYProfilePageWidget> {
                                                 .clearRedirectLocation();
 
                                             context.goNamedAuth(
-                                                'registro2', mounted);
+                                                'login', mounted);
                                           },
                                         ),
                                       ),
@@ -492,62 +492,51 @@ class _MYProfilePageWidgetState extends State<MYProfilePageWidget> {
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      InkWell(
-                        onTap: () async {
-                          logFirebaseEvent(
-                              'M_Y_PROFILE_Container_s2it9of2_ON_TAP');
-                          logFirebaseEvent('Container_navigate_to');
-
-                          context.pushNamed('tutorial_PROFILE');
-                        },
-                        child: Material(
-                          color: Colors.transparent,
-                          elevation: 0.0,
-                          shape: RoundedRectangleBorder(
+                      Material(
+                        color: Colors.transparent,
+                        elevation: 0.0,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(8.0),
+                        ),
+                        child: Container(
+                          width: MediaQuery.of(context).size.width * 0.9,
+                          height: 60.0,
+                          decoration: BoxDecoration(
+                            color:
+                                FlutterFlowTheme.of(context).primaryBackground,
                             borderRadius: BorderRadius.circular(8.0),
-                          ),
-                          child: Container(
-                            width: MediaQuery.of(context).size.width * 0.9,
-                            height: 60.0,
-                            decoration: BoxDecoration(
-                              color: FlutterFlowTheme.of(context)
-                                  .primaryBackground,
-                              borderRadius: BorderRadius.circular(8.0),
-                              border: Border.all(
-                                color: FlutterFlowTheme.of(context).alternate,
-                                width: 2.0,
-                              ),
+                            border: Border.all(
+                              color: FlutterFlowTheme.of(context).alternate,
+                              width: 2.0,
                             ),
-                            child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
-                                  16.0, 0.0, 4.0, 0.0),
-                              child: Row(
-                                mainAxisSize: MainAxisSize.max,
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
-                                children: [
-                                  Text(
-                                    FFLocalizations.of(context).getText(
-                                      '9aogde79' /* Tutorial */,
-                                    ),
-                                    style:
-                                        FlutterFlowTheme.of(context).bodyText1,
+                          ),
+                          child: Padding(
+                            padding: EdgeInsetsDirectional.fromSTEB(
+                                16.0, 0.0, 4.0, 0.0),
+                            child: Row(
+                              mainAxisSize: MainAxisSize.max,
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Text(
+                                  FFLocalizations.of(context).getText(
+                                    '9aogde79' /* Tutorial */,
                                   ),
-                                  FlutterFlowIconButton(
-                                    borderColor: Colors.transparent,
-                                    borderRadius: 30.0,
-                                    buttonSize: 46.0,
-                                    icon: Icon(
-                                      Icons.chevron_right_rounded,
-                                      color: Color(0xFF95A1AC),
-                                      size: 20.0,
-                                    ),
-                                    onPressed: () {
-                                      print('IconButton pressed ...');
-                                    },
+                                  style: FlutterFlowTheme.of(context).bodyText1,
+                                ),
+                                FlutterFlowIconButton(
+                                  borderColor: Colors.transparent,
+                                  borderRadius: 30.0,
+                                  buttonSize: 46.0,
+                                  icon: Icon(
+                                    Icons.chevron_right_rounded,
+                                    color: Color(0xFF95A1AC),
+                                    size: 20.0,
                                   ),
-                                ],
-                              ),
+                                  onPressed: () {
+                                    print('IconButton pressed ...');
+                                  },
+                                ),
+                              ],
                             ),
                           ),
                         ),

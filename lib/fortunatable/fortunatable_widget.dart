@@ -12,11 +12,11 @@ import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:page_transition/page_transition.dart';
 import 'package:provider/provider.dart';
-import 'table_model.dart';
-export 'table_model.dart';
+import 'fortunatable_model.dart';
+export 'fortunatable_model.dart';
 
-class TableWidget extends StatefulWidget {
-  const TableWidget({
+class FortunatableWidget extends StatefulWidget {
+  const FortunatableWidget({
     Key? key,
     this.users,
     this.saldo,
@@ -26,12 +26,12 @@ class TableWidget extends StatefulWidget {
   final String? saldo;
 
   @override
-  _TableWidgetState createState() => _TableWidgetState();
+  _FortunatableWidgetState createState() => _FortunatableWidgetState();
 }
 
-class _TableWidgetState extends State<TableWidget>
+class _FortunatableWidgetState extends State<FortunatableWidget>
     with TickerProviderStateMixin {
-  late TableModel _model;
+  late FortunatableModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
   final _unfocusNode = FocusNode();
@@ -67,9 +67,10 @@ class _TableWidgetState extends State<TableWidget>
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => TableModel());
+    _model = createModel(context, () => FortunatableModel());
 
-    logFirebaseEvent('screen_view', parameters: {'screen_name': 'table'});
+    logFirebaseEvent('screen_view',
+        parameters: {'screen_name': 'fortunatable'});
     setupAnimations(
       animationsMap.values.where((anim) =>
           anim.trigger == AnimationTrigger.onActionTrigger ||
@@ -560,7 +561,7 @@ class _TableWidgetState extends State<TableWidget>
                                                       child: InkWell(
                                                         onTap: () async {
                                                           logFirebaseEvent(
-                                                              'TABLE_PAGE_Image_faqmjm7j_ON_TAP');
+                                                              'FORTUNATABLE_PAGE_Image_faqmjm7j_ON_TAP');
                                                           logFirebaseEvent(
                                                               'Image_expand_image');
                                                           await Navigator.push(

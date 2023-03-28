@@ -127,29 +127,41 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': 'Email.',
       'es': 'Correo electrónico.',
     },
+    'h5se1v5u': {
+      'en': '',
+      'es': '',
+    },
+    'l92pnshd': {
+      'en': 'telephone',
+      'es': 'teléfono',
+    },
+    'f0168xw8': {
+      'en': '',
+      'es': '',
+    },
+    'x4ly0xvm': {
+      'en': 'age',
+      'es': 'edad',
+    },
+    'wg6xicsv': {
+      'en': 'sex',
+      'es': 'sexo',
+    },
     'rzpiwq9p': {
       'en': '',
       'es': 'contraseña',
     },
     'eyfkffka': {
-      'en': '',
+      'en': 'password',
       'es': 'contraseña',
     },
     '2bsu5z7s': {
       'en': '',
       'es': '',
     },
-    'flq9lsgd': {
-      'en': '',
-      'es': ' repetir contraseña',
-    },
-    'bq8w50t7': {
-      'en': 'pasword',
-      'es': 'contraseña',
-    },
-    'h10jf4r1': {
-      'en': '',
-      'es': '',
+    'jhwb6t7b': {
+      'en': 'Term and Condicion',
+      'es': 'Término y condiciónes',
     },
     '3ugmx2zp': {
       'en': '',
@@ -932,45 +944,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'Hogar',
     },
   },
-  // tutorial_PROFILE
-  {
-    '38wb3rix': {
-      'en': 'Tutorial',
-      'es': 'Tutorial',
-    },
-    'o6prpb1q': {
-      'en': 'Create Budgets',
-      'es': 'Crear presupuestos',
-    },
-    '292pbdw7': {
-      'en':
-          'Create budgets that you can tie transactions too in order for easy tracking.',
-      'es':
-          'Cree presupuestos en los que también pueda vincular transacciones para facilitar el seguimiento.',
-    },
-    'b10xvuf9': {
-      'en': 'Keep Track of Spending',
-      'es': 'Mantenga un registro de los gastos',
-    },
-    't6k1smsm': {
-      'en':
-          'Easily add transactions and associate them with budgets that have been created.',
-      'es':
-          'Agregue fácilmente transacciones y asócielas con los presupuestos que se han creado.',
-    },
-    'u8xxj427': {
-      'en': 'Budget Analysis',
-      'es': 'Análisis de presupuesto',
-    },
-    'iqi0pkmb': {
-      'en': 'Know where your budgets are and how they can be adjusted.',
-      'es': 'Sepa dónde están sus presupuestos y cómo se pueden ajustar.',
-    },
-    'uydm0fnm': {
-      'en': 'Home',
-      'es': 'Hogar',
-    },
-  },
   // homePage
   {
     'ucqlrrlk': {
@@ -1442,10 +1415,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': '',
       'es': 'si ya tienes una cuenta',
     },
-    'lx9wa34e': {
-      'en': 'Button',
-      'es': 'Botón',
-    },
   },
   // conection
   {
@@ -1454,41 +1423,58 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'registrarse',
     },
     '6ogcxgtm': {
-      'en': 'Log In',
-      'es': 'Acceso',
+      'en': 'Log in',
+      'es': 'iniciar seccion',
     },
   },
   // game
   {
     '68vn95yr': {
+      'en': 'PESOS COLOMBIANOS',
+      'es': 'PESOS COLOMBIANOS',
+    },
+    '1u2sbzcx': {
       'en': 'Hello World',
-      'es': 'Hola Mundo',
+      'es': '',
+    },
+    'bnom62z7': {
+      'en': 'PLAY',
+      'es': 'JUGAR',
+    },
+    '2r200ik8': {
+      'en': 'Hello World',
+      'es': '',
+    },
+    'lb858kc6': {
+      'en': 'Hello World',
+      'es': '',
+    },
+    'g5ck6tig': {
+      'en': 'PLAY',
+      'es': 'JUGAR',
+    },
+    '7ctyfhxa': {
+      'en': 'PLAY',
+      'es': 'JUGAR',
     },
     '9jfa6nhu': {
       'en': '',
-      'es': 'dolares',
+      'es': 'DOLAR AMERICANO',
+    },
+    '16lg4my2': {
+      'en': 'PlAY',
+      'es': 'JUGAR',
+    },
+    'j1vxo4n6': {
+      'en': 'PLAY',
+      'es': 'JUGAR',
+    },
+    '3b3dt1t7': {
+      'en': 'PLAY',
+      'es': 'JUGAR',
     },
   },
-  // aceptopolicy
-  {
-    'vvxy2p1b': {
-      'en': '',
-      'es': 'Registro',
-    },
-    'vm4alppi': {
-      'en': 'Privacy policy',
-      'es': 'Política de privacidad',
-    },
-    'hvkz9jjh': {
-      'en': '',
-      'es': 'CONTINUAR',
-    },
-    'te4zxbsh': {
-      'en': 'Home',
-      'es': 'Hogar',
-    },
-  },
-  // table
+  // fortunatable
   {
     'dv5rd5yj': {
       'en': 'Hello World',
@@ -1829,137 +1815,51 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': '\$350.000',
     },
   },
-  // know
+  // home
   {
-    '0as0puql': {
-      'en': 'Category Name',
-      'es': 'nombre de la categoría',
+    'qubx0dxj': {
+      'en': 'unknown\n printer took a galley of type and scrambled ',
+      'es': 'desconocido\n impresora tomó una galera de tipos y codificada',
     },
-    'dco8h3gy': {
-      'en': 'Category Name',
-      'es': 'nombre de la categoría',
+    'bnjc4lcd': {
+      'en': 'I want to bet on:',
+      'es': 'Quiero apostar por:',
     },
-    '4o2j5wft': {
-      'en': 'Category Name',
-      'es': 'nombre de la categoría',
+    'czhwmirp': {
+      'en': '\$100.000 cop',
+      'es': '\$100.000 cop',
     },
-    '0v26m66i': {
-      'en': 'Category Name',
-      'es': 'nombre de la categoría',
+    '2avbb0nv': {
+      'en': '\$200.000 cop',
+      'es': '\$200.000 cop',
     },
-    '3yd8s33x': {
-      'en': 'Category Name',
-      'es': 'nombre de la categoría',
+    '00kd6wuk': {
+      'en': '\$300.000 cop',
+      'es': '\$300.000 cop',
     },
-    '989fwr4n': {
-      'en': 'Category Name',
-      'es': 'nombre de la categoría',
+    'r9j57nhv': {
+      'en': '\$400.000 cop',
+      'es': '\$400.000 cop',
     },
-    's67cz2ai': {
-      'en': 'Category Name',
-      'es': 'nombre de la categoría',
+    '41xtfaf0': {
+      'en': 'I want to bet on:',
+      'es': 'Quiero apostar por:',
     },
-    '5fm87m16': {
-      'en': 'Category Name',
-      'es': 'nombre de la categoría',
+    '2elzfyq2': {
+      'en': 'Search for an item...',
+      'es': 'Quiero apostar por:',
     },
-    '5smt792j': {
-      'en': 'Category Name',
-      'es': 'nombre de la categoría',
+    'vrn7x940': {
+      'en': 'watch game',
+      'es': 'ver juego',
     },
-    'd64l1f1d': {
-      'en': 'Category Name',
-      'es': 'nombre de la categoría',
+    'm5u9p8tw': {
+      'en': 'play',
+      'es': 'jugar',
     },
-    '596fk1qm': {
-      'en': 'Category Name',
-      'es': 'nombre de la categoría',
-    },
-    '1old2uk0': {
-      'en': 'Category Name',
-      'es': 'nombre de la categoría',
-    },
-    '5aad6a9w': {
-      'en': 'Hello, Emily',
-      'es': 'Hola Emily',
-    },
-    'zkl9ykyq': {
-      'en': 'Home',
-      'es': 'Hogar',
-    },
-  },
-  // plays
-  {
-    'xikt8yfc': {
-      'en': 'Continue',
-      'es': 'Continuar',
-    },
-  },
-  // registro2
-  {
-    '5ra4935z': {
-      'en': '',
-      'es': 'Telèfono',
-    },
-    '20vyltad': {
-      'en': '18',
-      'es': '18',
-    },
-    'sq3g7vnr': {
-      'en': '19',
-      'es': '19',
-    },
-    'vxdypl70': {
-      'en': '20',
-      'es': '20',
-    },
-    'oq80lu08': {
-      'en': '21',
-      'es': '21',
-    },
-    '3in84nk8': {
-      'en': '22',
-      'es': '22',
-    },
-    '9wvzo0ug': {
-      'en': '23',
-      'es': '23',
-    },
-    'twq809sc': {
-      'en': '24',
-      'es': '24',
-    },
-    'w6j304z8': {
-      'en': '25',
-      'es': '25',
-    },
-    'jyxm169v': {
-      'en': '26',
-      'es': '26',
-    },
-    'rdj7zkvp': {
-      'en': ' select years',
-      'es': 'seleccionar años',
-    },
-    '88lh2nph': {
-      'en': '',
-      'es': 'Sexo',
-    },
-    'cyfk1tr1': {
-      'en': 'Term and Condicion',
-      'es': 'Término y condición',
-    },
-    'n0n3ifs5': {
-      'en': '',
-      'es': 'CONTINUAR',
-    },
-    '7s6fpc0v': {
-      'en': '',
-      'es': 'Si ya tienes una cuenta',
-    },
-    '36xptjbh': {
-      'en': 'Home',
-      'es': 'Hogar',
+    'nyqsxeqs': {
+      'en': 'Read Game Rules',
+      'es': 'Leer las reglas del juego',
     },
   },
   // avatars
@@ -2011,6 +1911,67 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     'zr9xstnj': {
       'en': 'Shop',
       'es': '',
+    },
+  },
+  // rules
+  {
+    '97fc613i': {
+      'en': 'play',
+      'es': 'Jugar',
+    },
+    'b6ox51n5': {
+      'en': 'Home',
+      'es': 'Home',
+    },
+    'vdiaf1zq': {
+      'en': 'Home',
+      'es': 'Hogar',
+    },
+  },
+  // disfrutaygana
+  {
+    'u04yat52': {
+      'en': 'Home',
+      'es': 'Hogar',
+    },
+  },
+  // homeCopy
+  {
+    '5lebwbuc': {
+      'en': 'I want to bet on:',
+      'es': 'Quiero apostar por:',
+    },
+    'hpw21fcu': {
+      'en': '\$100.000 cop',
+      'es': '\$100.000 cop',
+    },
+    'cedju3tr': {
+      'en': '\$200.000 cop',
+      'es': '\$200.000 cop',
+    },
+    'jgbanvkk': {
+      'en': '\$300.000 cop',
+      'es': '\$300.000 cop',
+    },
+    'gz2968j1': {
+      'en': '\$400.000 cop',
+      'es': '\$400.000 cop',
+    },
+    'yk3i0nqp': {
+      'en': 'I want to bet on:',
+      'es': 'Quiero apostar por:',
+    },
+    '0ahiajvn': {
+      'en': 'Search for an item...',
+      'es': 'Quiero apostar por:',
+    },
+    'w9k2ung3': {
+      'en': 'play',
+      'es': 'jugar',
+    },
+    'vfzvz63d': {
+      'en': 'Read Game Rules',
+      'es': 'Leer las reglas del juego',
     },
   },
   // bookAppointment
