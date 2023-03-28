@@ -1930,13 +1930,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   },
   // disfrutaygana
   {
-    'u04yat52': {
-      'en': 'Home',
-      'es': 'Hogar',
-    },
-  },
-  // homeCopy
-  {
     'w9k2ung3': {
       'en': 'next',
       'es': 'siguiente',
@@ -1944,6 +1937,53 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     'vfzvz63d': {
       'en': 'enjoy and win',
       'es': 'DISFRUTA Y GANA',
+    },
+  },
+  // ver
+  {
+    '6xchui9a': {
+      'en': 'PESOS COLOMBIANOS',
+      'es': 'PESOS COLOMBIANOS',
+    },
+    '0e19z3cd': {
+      'en': 'Hello World',
+      'es': '',
+    },
+    'pbfipvxk': {
+      'en': 'see the game',
+      'es': 'ver el juego',
+    },
+    'cd4qqpav': {
+      'en': 'Hello World',
+      'es': '',
+    },
+    '9qlb378l': {
+      'en': 'Hello World',
+      'es': '',
+    },
+    '4jisut42': {
+      'en': 'see the game',
+      'es': 'ver el juego',
+    },
+    'sfgelok4': {
+      'en': 'see the game',
+      'es': 'ver el juego',
+    },
+    '13jix10g': {
+      'en': '',
+      'es': 'DOLAR AMERICANO',
+    },
+    '4140ipnz': {
+      'en': 'see the game',
+      'es': 'ver el juego',
+    },
+    'bgklmz5n': {
+      'en': 'see the game',
+      'es': 'ver el juego',
+    },
+    'a9961fi3': {
+      'en': 'see the game',
+      'es': 'ver el juego',
     },
   },
   // bookAppointment

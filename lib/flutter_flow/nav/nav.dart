@@ -341,10 +341,10 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               builder: (context, params) => DisfrutayganaWidget(),
             ),
             FFRoute(
-              name: 'homeCopy',
-              path: 'homeCopy',
+              name: 'ver',
+              path: 'ver',
               requireAuth: true,
-              builder: (context, params) => HomeCopyWidget(),
+              builder: (context, params) => VerWidget(),
             )
           ].map((r) => r.toRoute(appStateNotifier)).toList(),
         ),

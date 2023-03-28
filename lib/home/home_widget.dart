@@ -215,9 +215,14 @@ class _HomeWidgetState extends State<HomeWidget> {
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
                               children: [
+                                // aqui solamente la persona que le de click puede ver unicamente no jugar puese ser espectador.
                                 FFButtonWidget(
-                                  onPressed: () {
-                                    print('Button pressed ...');
+                                  onPressed: () async {
+                                    logFirebaseEvent(
+                                        'HOME_PAGE_WATCH_GAME_BTN_ON_TAP');
+                                    logFirebaseEvent('Button_navigate_to');
+
+                                    context.pushNamed('ver');
                                   },
                                   text: FFLocalizations.of(context).getText(
                                     'vrn7x940' /* watch game */,
@@ -253,8 +258,12 @@ class _HomeWidgetState extends State<HomeWidget> {
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       90.0, 0.0, 0.0, 0.0),
                                   child: FFButtonWidget(
-                                    onPressed: () {
-                                      print('Button pressed ...');
+                                    onPressed: () async {
+                                      logFirebaseEvent(
+                                          'HOME_PAGE_PLAY_BTN_ON_TAP');
+                                      logFirebaseEvent('Button_navigate_to');
+
+                                      context.pushNamed('game');
                                     },
                                     text: FFLocalizations.of(context).getText(
                                       'm5u9p8tw' /* play */,

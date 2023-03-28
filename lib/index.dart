@@ -46,4 +46,4 @@ export '/home/home_widget.dart' show HomeWidget;
 export '/avatars/avatars_widget.dart' show AvatarsWidget;
 export '/rules/rules_widget.dart' show RulesWidget;
 export '/disfrutaygana/disfrutaygana_widget.dart' show DisfrutayganaWidget;
-export '/home_copy/home_copy_widget.dart' show HomeCopyWidget;
+export '/ver/ver_widget.dart' show VerWidget;
