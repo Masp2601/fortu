@@ -865,13 +865,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'Hogar',
     },
   },
-  // editProfile
-  {
-    '59naq8ur': {
-      'en': 'Home',
-      'es': 'Hogar',
-    },
-  },
   // notificationsSettings
   {
     'sc4ff4ce': {
@@ -1986,6 +1979,35 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'ver el juego',
     },
   },
+  // changePassword
+  {
+    'dhr24bcn': {
+      'en':
+          'Enter the email associated with your account and we will send you link to reset your password.',
+      'es':
+          'Ingrese el correo electrónico asociado con su cuenta y le enviaremos un enlace para restablecer su contraseña.',
+    },
+    'w950ekck': {
+      'en': '',
+      'es': 'direccion email',
+    },
+    'bbod09b6': {
+      'en': 'Enter your email...',
+      'es': 'Introduce tu correo electrónico...',
+    },
+    '9o3etdhc': {
+      'en': '',
+      'es': '',
+    },
+    'pia8zond': {
+      'en': 'recover password',
+      'es': 'recuperar contraseña',
+    },
+    'd7bbngag': {
+      'en': 'Home',
+      'es': 'Hogar',
+    },
+  },
   // bookAppointment
   {
     'sfzj3riz': {
@@ -2160,6 +2182,21 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     'hw07mkb9': {
       'en': 'Yes, Pause',
       'es': 'Sí, pausa',
+    },
+  },
+  // modalacount
+  {
+    'q48e4ek2': {
+      'en': 'profile',
+      'es': 'perfil',
+    },
+    'rw5razni': {
+      'en': 'balance',
+      'es': 'balance',
+    },
+    'g4hycetj': {
+      'en': 'List Item',
+      'es': '',
     },
   },
   // Miscellaneous

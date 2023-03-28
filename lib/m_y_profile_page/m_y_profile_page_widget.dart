@@ -286,15 +286,7 @@ class _MYProfilePageWidgetState extends State<MYProfilePageWidget> {
                             'M_Y_PROFILE_Container_u9ewaamn_ON_TAP');
                         logFirebaseEvent('Container_navigate_to');
 
-                        context.pushNamed(
-                          'editProfile',
-                          queryParams: {
-                            'userProfile': serializeParam(
-                              mYProfilePageUsersRecord.reference,
-                              ParamType.DocumentReference,
-                            ),
-                          }.withoutNulls,
-                        );
+                        context.pushNamed('completeProfile');
                       },
                       child: Material(
                         color: Colors.transparent,
@@ -354,13 +346,14 @@ class _MYProfilePageWidgetState extends State<MYProfilePageWidget> {
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
+                      // algunos cambios actualizados
                       InkWell(
                         onTap: () async {
                           logFirebaseEvent(
                               'M_Y_PROFILE_Container_yqfzr8ca_ON_TAP');
                           logFirebaseEvent('Container_navigate_to');
 
-                          context.pushNamed('forgotPassword');
+                          context.pushNamed('changePassword');
                         },
                         child: Material(
                           color: Colors.transparent,

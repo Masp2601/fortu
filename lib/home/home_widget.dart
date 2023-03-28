@@ -1,3 +1,4 @@
+import '/components/modalacount_widget.dart';
 import '/flutter_flow/flutter_flow_drop_down.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -76,10 +77,34 @@ class _HomeWidgetState extends State<HomeWidget> {
                               mainAxisSize: MainAxisSize.max,
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
-                                Image.asset(
-                                  'assets/images/Group_33940_(1).png',
-                                  fit: BoxFit.cover,
-                                ),
+                                if (responsiveVisibility(
+                                  context: context,
+                                  tabletLandscape: false,
+                                  desktop: false,
+                                ))
+                                  InkWell(
+                                    onTap: () async {
+                                      logFirebaseEvent(
+                                          'HOME_PAGE_Image_vgggu8xn_ON_TAP');
+                                      logFirebaseEvent('Image_bottom_sheet');
+                                      await showModalBottomSheet(
+                                        isScrollControlled: true,
+                                        enableDrag: false,
+                                        context: context,
+                                        builder: (context) {
+                                          return Padding(
+                                            padding: MediaQuery.of(context)
+                                                .viewInsets,
+                                            child: ModalacountWidget(),
+                                          );
+                                        },
+                                      ).then((value) => setState(() {}));
+                                    },
+                                    child: Image.asset(
+                                      'assets/images/Group_33940_(1).png',
+                                      fit: BoxFit.cover,
+                                    ),
+                                  ),
                               ],
                             ),
                           ),
@@ -337,6 +362,19 @@ class _HomeWidgetState extends State<HomeWidget> {
                                 ),
                               ],
                             ),
+                          ),
+                        ),
+                        Align(
+                          alignment: AlignmentDirectional(0.0, 0.0),
+                          child: Container(
+                            width: 200.0,
+                          ),
+                        ),
+                        Align(
+                          alignment: AlignmentDirectional(0.0, 0.0),
+                          child: Container(
+                            width: 200.0,
+                            decoration: BoxDecoration(),
                           ),
                         ),
                       ],

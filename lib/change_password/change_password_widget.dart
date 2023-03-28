@@ -6,28 +6,28 @@ import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
-import 'forgot_password_model.dart';
-export 'forgot_password_model.dart';
+import 'change_password_model.dart';
+export 'change_password_model.dart';
 
-class ForgotPasswordWidget extends StatefulWidget {
-  const ForgotPasswordWidget({Key? key}) : super(key: key);
+class ChangePasswordWidget extends StatefulWidget {
+  const ChangePasswordWidget({Key? key}) : super(key: key);
 
   @override
-  _ForgotPasswordWidgetState createState() => _ForgotPasswordWidgetState();
+  _ChangePasswordWidgetState createState() => _ChangePasswordWidgetState();
 }
 
-class _ForgotPasswordWidgetState extends State<ForgotPasswordWidget> {
-  late ForgotPasswordModel _model;
+class _ChangePasswordWidgetState extends State<ChangePasswordWidget> {
+  late ChangePasswordModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => ForgotPasswordModel());
+    _model = createModel(context, () => ChangePasswordModel());
 
     logFirebaseEvent('screen_view',
-        parameters: {'screen_name': 'forgotPassword'});
+        parameters: {'screen_name': 'changePassword'});
     _model.emailAddressController ??= TextEditingController();
   }
 
@@ -75,7 +75,7 @@ class _ForgotPasswordWidgetState extends State<ForgotPasswordWidget> {
                           EdgeInsetsDirectional.fromSTEB(0.0, 25.0, 0.0, 0.0),
                       child: InkWell(
                         onTap: () async {
-                          logFirebaseEvent('FORGOT_PASSWORD_PAGE_atras_ON_TAP');
+                          logFirebaseEvent('CHANGE_PASSWORD_PAGE_atras_ON_TAP');
                           logFirebaseEvent('atras_navigate_back');
                           context.pop();
                         },
@@ -105,7 +105,7 @@ class _ForgotPasswordWidgetState extends State<ForgotPasswordWidget> {
                               0.0, 20.0, 0.0, 0.0),
                           child: Text(
                             FFLocalizations.of(context).getText(
-                              'nymdan1x' /* Enter the email associated wit... */,
+                              'dhr24bcn' /* Enter the email associated wit... */,
                             ),
                             style: FlutterFlowTheme.of(context)
                                 .bodyText2
@@ -137,7 +137,7 @@ class _ForgotPasswordWidgetState extends State<ForgotPasswordWidget> {
                     obscureText: false,
                     decoration: InputDecoration(
                       labelText: FFLocalizations.of(context).getText(
-                        'u4nuk910' /*  */,
+                        'w950ekck' /*  */,
                       ),
                       labelStyle: FlutterFlowTheme.of(context)
                           .bodyText2
@@ -149,7 +149,7 @@ class _ForgotPasswordWidgetState extends State<ForgotPasswordWidget> {
                                 FlutterFlowTheme.of(context).bodyText2Family),
                           ),
                       hintText: FFLocalizations.of(context).getText(
-                        '37kotxi0' /* Enter your email... */,
+                        'bbod09b6' /* Enter your email... */,
                       ),
                       hintStyle: FlutterFlowTheme.of(context).bodyText2,
                       enabledBorder: OutlineInputBorder(
@@ -211,7 +211,7 @@ class _ForgotPasswordWidgetState extends State<ForgotPasswordWidget> {
                   child: FFButtonWidget(
                     onPressed: () async {
                       logFirebaseEvent(
-                          'FORGOT_PASSWORD_PAGE_Button-Login_ON_TAP');
+                          'CHANGE_PASSWORD_PAGE_Button-Login_ON_TAP');
                       logFirebaseEvent('Button-Login_auth');
                       if (_model.emailAddressController.text.isEmpty) {
                         ScaffoldMessenger.of(context).showSnackBar(
@@ -229,7 +229,7 @@ class _ForgotPasswordWidgetState extends State<ForgotPasswordWidget> {
                       );
                     },
                     text: FFLocalizations.of(context).getText(
-                      'hiwpaze1' /* recover password */,
+                      'pia8zond' /* recover password */,
                     ),
                     options: FFButtonOptions(
                       width: 190.0,

@@ -189,15 +189,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               ),
             ),
             FFRoute(
-              name: 'editProfile',
-              path: 'editProfile',
-              requireAuth: true,
-              builder: (context, params) => EditProfileWidget(
-                userProfile: params.getParam('userProfile',
-                    ParamType.DocumentReference, false, ['users']),
-              ),
-            ),
-            FFRoute(
               name: 'notificationsSettings',
               path: 'notificationsSettings',
               requireAuth: true,
@@ -345,6 +336,12 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               path: 'ver',
               requireAuth: true,
               builder: (context, params) => VerWidget(),
+            ),
+            FFRoute(
+              name: 'changePassword',
+              path: 'changePassword',
+              requireAuth: true,
+              builder: (context, params) => ChangePasswordWidget(),
             )
           ].map((r) => r.toRoute(appStateNotifier)).toList(),
         ),
