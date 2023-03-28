@@ -1937,41 +1937,13 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   },
   // homeCopy
   {
-    '5lebwbuc': {
-      'en': 'I want to bet on:',
-      'es': 'Quiero apostar por:',
-    },
-    'hpw21fcu': {
-      'en': '\$100.000 cop',
-      'es': '\$100.000 cop',
-    },
-    'cedju3tr': {
-      'en': '\$200.000 cop',
-      'es': '\$200.000 cop',
-    },
-    'jgbanvkk': {
-      'en': '\$300.000 cop',
-      'es': '\$300.000 cop',
-    },
-    'gz2968j1': {
-      'en': '\$400.000 cop',
-      'es': '\$400.000 cop',
-    },
-    'yk3i0nqp': {
-      'en': 'I want to bet on:',
-      'es': 'Quiero apostar por:',
-    },
-    '0ahiajvn': {
-      'en': 'Search for an item...',
-      'es': 'Quiero apostar por:',
-    },
     'w9k2ung3': {
-      'en': 'play',
-      'es': 'jugar',
+      'en': 'next',
+      'es': 'siguiente',
     },
     'vfzvz63d': {
-      'en': 'Read Game Rules',
-      'es': 'Leer las reglas del juego',
+      'en': 'enjoy and win',
+      'es': 'DISFRUTA Y GANA',
     },
   },
   // bookAppointment

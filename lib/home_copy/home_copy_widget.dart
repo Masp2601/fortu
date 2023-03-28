@@ -1,8 +1,6 @@
-import '/flutter_flow/flutter_flow_drop_down.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import '/flutter_flow/form_field_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -128,86 +126,24 @@ class _HomeCopyWidgetState extends State<HomeCopyWidget> {
                             ),
                           ),
                           Align(
-                            alignment: AlignmentDirectional(0.0, 0.6),
+                            alignment: AlignmentDirectional(0.0, 0.84),
                             child: Padding(
                               padding: EdgeInsetsDirectional.fromSTEB(
-                                  15.0, 60.0, 0.0, 0.0),
+                                  110.0, 60.0, 0.0, 0.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
+                                  // opacidad
                                   if (responsiveVisibility(
                                     context: context,
                                     tabletLandscape: false,
                                     desktop: false,
                                   ))
-                                    FlutterFlowDropDown<String>(
-                                      controller: _model.dropDownController ??=
-                                          FormFieldController<String>(
-                                        _model.dropDownValue ??= '',
-                                      ),
-                                      options: ['Option 1', '1', '2', '3'],
-                                      optionLabels: [
-                                        FFLocalizations.of(context).getText(
-                                          'hpw21fcu' /* $100.000 cop */,
-                                        ),
-                                        FFLocalizations.of(context).getText(
-                                          'cedju3tr' /* $200.000 cop */,
-                                        ),
-                                        FFLocalizations.of(context).getText(
-                                          'jgbanvkk' /* $300.000 cop */,
-                                        ),
-                                        FFLocalizations.of(context).getText(
-                                          'gz2968j1' /* $400.000 cop */,
-                                        )
-                                      ],
-                                      onChanged: (val) => setState(
-                                          () => _model.dropDownValue = val),
-                                      width: 350.0,
-                                      height: 50.0,
-                                      searchHintTextStyle: FlutterFlowTheme.of(
-                                              context)
-                                          .bodyText1
-                                          .override(
-                                            fontFamily:
-                                                FlutterFlowTheme.of(context)
-                                                    .bodyText1Family,
-                                            color: FlutterFlowTheme.of(context)
-                                                .textColor,
-                                            useGoogleFonts: GoogleFonts.asMap()
-                                                .containsKey(
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyText1Family),
-                                          ),
-                                      textStyle: FlutterFlowTheme.of(context)
-                                          .bodyText1
-                                          .override(
-                                            fontFamily:
-                                                FlutterFlowTheme.of(context)
-                                                    .bodyText1Family,
-                                            color: FlutterFlowTheme.of(context)
-                                                .textColor,
-                                            useGoogleFonts: GoogleFonts.asMap()
-                                                .containsKey(
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyText1Family),
-                                          ),
-                                      hintText:
-                                          FFLocalizations.of(context).getText(
-                                        'yk3i0nqp' /* I want to bet on: */,
-                                      ),
-                                      searchHintText:
-                                          FFLocalizations.of(context).getText(
-                                        '0ahiajvn' /* Search for an item... */,
-                                      ),
-                                      fillColor: Color(0xFF2A0206),
-                                      elevation: 4.0,
-                                      borderColor: Color(0xFFFF0000),
-                                      borderWidth: 0.0,
-                                      borderRadius: 40.0,
-                                      margin: EdgeInsetsDirectional.fromSTEB(
-                                          12.0, 4.0, 12.0, 4.0),
-                                      hidesUnderline: true,
-                                      isSearchable: true,
+                                    Image.asset(
+                                      'assets/images/Rectangle_277.png',
+                                      width: 271.0,
+                                      height: 78.6,
+                                      fit: BoxFit.cover,
                                     ),
                                 ],
                               ),
@@ -223,13 +159,13 @@ class _HomeCopyWidgetState extends State<HomeCopyWidget> {
                                 children: [
                                   Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
-                                        90.0, 0.0, 0.0, 0.0),
+                                        150.0, 0.0, 0.0, 0.0),
                                     child: FFButtonWidget(
                                       onPressed: () {
                                         print('Button pressed ...');
                                       },
                                       text: FFLocalizations.of(context).getText(
-                                        'w9k2ung3' /* play */,
+                                        'w9k2ung3' /* next */,
                                       ),
                                       options: FFButtonOptions(
                                         width: 130.0,
@@ -239,7 +175,7 @@ class _HomeCopyWidgetState extends State<HomeCopyWidget> {
                                         iconPadding:
                                             EdgeInsetsDirectional.fromSTEB(
                                                 0.0, 0.0, 0.0, 0.0),
-                                        color: Color(0xFF471212),
+                                        color: Color(0xFFFF0026),
                                         textStyle: FlutterFlowTheme.of(context)
                                             .subtitle2
                                             .override(
@@ -255,7 +191,8 @@ class _HomeCopyWidgetState extends State<HomeCopyWidget> {
                                                               .subtitle2Family),
                                             ),
                                         borderSide: BorderSide(
-                                          color: Color(0xFFFF0026),
+                                          color: FlutterFlowTheme.of(context)
+                                              .textColor,
                                           width: 1.0,
                                         ),
                                         borderRadius:
@@ -271,7 +208,7 @@ class _HomeCopyWidgetState extends State<HomeCopyWidget> {
                             alignment: AlignmentDirectional(0.0, 0.78),
                             child: Padding(
                               padding: EdgeInsetsDirectional.fromSTEB(
-                                  115.0, 0.0, 0.0, 0.0),
+                                  125.0, 0.0, 0.0, 0.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
@@ -285,19 +222,21 @@ class _HomeCopyWidgetState extends State<HomeCopyWidget> {
                                     },
                                     child: Text(
                                       FFLocalizations.of(context).getText(
-                                        'vfzvz63d' /* Read Game Rules */,
+                                        'vfzvz63d' /* enjoy and win */,
                                       ),
                                       style: FlutterFlowTheme.of(context)
-                                          .bodyText1
+                                          .title2
                                           .override(
                                             fontFamily:
                                                 FlutterFlowTheme.of(context)
-                                                    .bodyText1Family,
-                                            color: Color(0xFF38F205),
+                                                    .title2Family,
+                                            color: FlutterFlowTheme.of(context)
+                                                .textColor,
+                                            fontSize: 25.0,
                                             useGoogleFonts: GoogleFonts.asMap()
                                                 .containsKey(
                                                     FlutterFlowTheme.of(context)
-                                                        .bodyText1Family),
+                                                        .title2Family),
                                           ),
                                     ),
                                   ),
