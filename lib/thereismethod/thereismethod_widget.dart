@@ -5,27 +5,28 @@ import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
-import 'tarjeta_model.dart';
-export 'tarjeta_model.dart';
+import 'thereismethod_model.dart';
+export 'thereismethod_model.dart';
 
-class TarjetaWidget extends StatefulWidget {
-  const TarjetaWidget({Key? key}) : super(key: key);
+class ThereismethodWidget extends StatefulWidget {
+  const ThereismethodWidget({Key? key}) : super(key: key);
 
   @override
-  _TarjetaWidgetState createState() => _TarjetaWidgetState();
+  _ThereismethodWidgetState createState() => _ThereismethodWidgetState();
 }
 
-class _TarjetaWidgetState extends State<TarjetaWidget> {
-  late TarjetaModel _model;
+class _ThereismethodWidgetState extends State<ThereismethodWidget> {
+  late ThereismethodModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => TarjetaModel());
+    _model = createModel(context, () => ThereismethodModel());
 
-    logFirebaseEvent('screen_view', parameters: {'screen_name': 'tarjeta'});
+    logFirebaseEvent('screen_view',
+        parameters: {'screen_name': 'thereismethod'});
   }
 
   @override
@@ -87,15 +88,56 @@ class _TarjetaWidgetState extends State<TarjetaWidget> {
                                   child: InkWell(
                                     onTap: () async {
                                       logFirebaseEvent(
-                                          'TARJETA_PAGE_Icon_shbpggz7_ON_TAP');
-                                      logFirebaseEvent('Icon_navigate_back');
-                                      context.safePop();
+                                          'THEREISMETHOD_PAGE_Icon_71hwy5b2_ON_TAP');
+                                      logFirebaseEvent('Icon_navigate_to');
+
+                                      context.pushNamed('conection');
                                     },
                                     child: Icon(
                                       Icons.chevron_left_sharp,
                                       color: FlutterFlowTheme.of(context)
                                           .textColor,
                                       size: 24.0,
+                                    ),
+                                  ),
+                                ),
+                                Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      250.0, 0.0, 0.0, 0.0),
+                                  child: InkWell(
+                                    onTap: () async {
+                                      logFirebaseEvent(
+                                          'THEREISMETHOD_PAGE_Text_hdpfiu29_ON_TAP');
+                                      logFirebaseEvent('Text_navigate_to');
+
+                                      context.pushNamed(
+                                        'tarjeta',
+                                        extra: <String, dynamic>{
+                                          kTransitionInfoKey: TransitionInfo(
+                                            hasTransition: true,
+                                            transitionType:
+                                                PageTransitionType.fade,
+                                            duration: Duration(milliseconds: 0),
+                                          ),
+                                        },
+                                      );
+                                    },
+                                    child: Text(
+                                      FFLocalizations.of(context).getText(
+                                        '14rgm5u8' /* Add */,
+                                      ),
+                                      style: FlutterFlowTheme.of(context)
+                                          .bodyText1
+                                          .override(
+                                            fontFamily:
+                                                FlutterFlowTheme.of(context)
+                                                    .bodyText1Family,
+                                            color: Color(0xFF4772FA),
+                                            useGoogleFonts: GoogleFonts.asMap()
+                                                .containsKey(
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyText1Family),
+                                          ),
                                     ),
                                   ),
                                 ),
@@ -107,7 +149,7 @@ class _TarjetaWidgetState extends State<TarjetaWidget> {
                               desktop: false,
                             ))
                               Align(
-                                alignment: AlignmentDirectional(0.0, -0.1),
+                                alignment: AlignmentDirectional(0.0, 0.35),
                                 child: Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       24.0, 0.0, 24.0, 0.0),
@@ -121,7 +163,7 @@ class _TarjetaWidgetState extends State<TarjetaWidget> {
                                       children: [
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(0.0, 0.05),
+                                              AlignmentDirectional(0.0, 0.8),
                                           child: Padding(
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
@@ -133,66 +175,6 @@ class _TarjetaWidgetState extends State<TarjetaWidget> {
                                                   'assets/images/credit-card_(1)_1.png',
                                                   fit: BoxFit.cover,
                                                 ),
-                                                Padding(
-                                                  padding: EdgeInsetsDirectional
-                                                      .fromSTEB(
-                                                          10.0, 0.0, 0.0, 0.0),
-                                                  child: InkWell(
-                                                    onTap: () async {
-                                                      logFirebaseEvent(
-                                                          'TARJETA_PAGE_Text_r1imk68j_ON_TAP');
-                                                      logFirebaseEvent(
-                                                          'Text_navigate_to');
-
-                                                      context.pushNamed(
-                                                        'paysave',
-                                                        extra: <String,
-                                                            dynamic>{
-                                                          kTransitionInfoKey:
-                                                              TransitionInfo(
-                                                            hasTransition: true,
-                                                            transitionType:
-                                                                PageTransitionType
-                                                                    .fade,
-                                                            duration: Duration(
-                                                                milliseconds:
-                                                                    0),
-                                                          ),
-                                                        },
-                                                      );
-                                                    },
-                                                    child: Text(
-                                                      FFLocalizations.of(
-                                                              context)
-                                                          .getText(
-                                                        '3ct23b6x' /* credit or debit */,
-                                                      ),
-                                                      style:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .bodyText1,
-                                                    ),
-                                                  ),
-                                                ),
-                                                Image.asset(
-                                                  'assets/images/y20dh_',
-                                                  width: 100.0,
-                                                  fit: BoxFit.cover,
-                                                ),
-                                              ],
-                                            ),
-                                          ),
-                                        ),
-                                        Align(
-                                          alignment:
-                                              AlignmentDirectional(0.0, 0.05),
-                                          child: Padding(
-                                            padding:
-                                                EdgeInsetsDirectional.fromSTEB(
-                                                    0.0, 12.0, 0.0, 0.0),
-                                            child: Row(
-                                              mainAxisSize: MainAxisSize.max,
-                                              children: [
                                                 Image.asset(
                                                   'assets/images/y20dh_',
                                                   width: 100.0,
@@ -223,7 +205,7 @@ class _TarjetaWidgetState extends State<TarjetaWidget> {
                                         print('Button-Login pressed ...');
                                       },
                                       text: FFLocalizations.of(context).getText(
-                                        '7ddkig00' /*  */,
+                                        'aqlefi4q' /*  */,
                                       ),
                                       options: FFButtonOptions(
                                         width: 137.1,

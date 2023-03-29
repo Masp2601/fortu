@@ -42,7 +42,7 @@ class _TransferCompleteWidgetState extends State<TransferCompleteWidget> {
 
     return Scaffold(
       key: scaffoldKey,
-      backgroundColor: FlutterFlowTheme.of(context).tertiaryColor,
+      backgroundColor: Colors.black,
       body: SafeArea(
         child: Column(
           mainAxisSize: MainAxisSize.max,

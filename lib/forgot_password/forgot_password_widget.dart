@@ -62,221 +62,229 @@ class _ForgotPasswordWidgetState extends State<ForgotPasswordWidget> {
             tabletLandscape: false,
             desktop: false,
           ),
-          child: Column(
-            mainAxisSize: MainAxisSize.max,
-            children: [
-              Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 280.0, 0.0),
-                child: Row(
-                  mainAxisSize: MainAxisSize.max,
-                  children: [
-                    Padding(
-                      padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 25.0, 0.0, 0.0),
-                      child: InkWell(
-                        onTap: () async {
-                          logFirebaseEvent('FORGOT_PASSWORD_PAGE_atras_ON_TAP');
-                          logFirebaseEvent('atras_navigate_back');
-                          context.pop();
-                        },
-                        child: Icon(
-                          Icons.chevron_left_rounded,
-                          color: FlutterFlowTheme.of(context).textColor,
-                          size: 32.0,
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(25.0, 0.0, 25.0, 0.0),
-                child: Row(
-                  mainAxisSize: MainAxisSize.max,
-                  children: [
-                    if (responsiveVisibility(
-                      context: context,
-                      tabletLandscape: false,
-                      desktop: false,
-                    ))
-                      Expanded(
-                        child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
-                              0.0, 20.0, 0.0, 0.0),
-                          child: Text(
-                            FFLocalizations.of(context).getText(
-                              'nymdan1x' /* Enter the email associated wit... */,
-                            ),
-                            style: FlutterFlowTheme.of(context)
-                                .bodyText2
-                                .override(
-                                  fontFamily: FlutterFlowTheme.of(context)
-                                      .bodyText2Family,
-                                  color: FlutterFlowTheme.of(context)
-                                      .primaryBtnText,
-                                  useGoogleFonts: GoogleFonts.asMap()
-                                      .containsKey(FlutterFlowTheme.of(context)
-                                          .bodyText2Family),
-                                ),
-                          ),
-                        ),
-                      ),
-                  ],
-                ),
-              ),
-              if (responsiveVisibility(
-                context: context,
-                tabletLandscape: false,
-                desktop: false,
-              ))
+          child: Padding(
+            padding: EdgeInsetsDirectional.fromSTEB(0.0, 35.0, 0.0, 0.0),
+            child: Column(
+              mainAxisSize: MainAxisSize.max,
+              children: [
                 Padding(
                   padding:
-                      EdgeInsetsDirectional.fromSTEB(20.0, 20.0, 20.0, 0.0),
-                  child: TextFormField(
-                    controller: _model.emailAddressController,
-                    onFieldSubmitted: (_) async {
-                      logFirebaseEvent(
-                          'FORGOT_PASSWORD_emailAddress_ON_TEXTFIEL');
-                      logFirebaseEvent('emailAddress_auth');
-                      if (_model.emailAddressController.text.isEmpty) {
-                        ScaffoldMessenger.of(context).showSnackBar(
-                          SnackBar(
-                            content: Text(
-                              'Email required!',
+                      EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 280.0, 0.0),
+                  child: Row(
+                    mainAxisSize: MainAxisSize.max,
+                    children: [
+                      Padding(
+                        padding:
+                            EdgeInsetsDirectional.fromSTEB(0.0, 25.0, 0.0, 0.0),
+                        child: InkWell(
+                          onTap: () async {
+                            logFirebaseEvent(
+                                'FORGOT_PASSWORD_PAGE_atras_ON_TAP');
+                            logFirebaseEvent('atras_navigate_back');
+                            context.pop();
+                          },
+                          child: Icon(
+                            Icons.chevron_left_rounded,
+                            color: FlutterFlowTheme.of(context).textColor,
+                            size: 32.0,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsetsDirectional.fromSTEB(25.0, 0.0, 25.0, 0.0),
+                  child: Row(
+                    mainAxisSize: MainAxisSize.max,
+                    children: [
+                      if (responsiveVisibility(
+                        context: context,
+                        tabletLandscape: false,
+                        desktop: false,
+                      ))
+                        Expanded(
+                          child: Padding(
+                            padding: EdgeInsetsDirectional.fromSTEB(
+                                0.0, 20.0, 0.0, 0.0),
+                            child: Text(
+                              FFLocalizations.of(context).getText(
+                                'nymdan1x' /* Enter the email associated wit... */,
+                              ),
+                              style: FlutterFlowTheme.of(context)
+                                  .bodyText2
+                                  .override(
+                                    fontFamily: FlutterFlowTheme.of(context)
+                                        .bodyText2Family,
+                                    color: FlutterFlowTheme.of(context)
+                                        .primaryBtnText,
+                                    useGoogleFonts: GoogleFonts.asMap()
+                                        .containsKey(
+                                            FlutterFlowTheme.of(context)
+                                                .bodyText2Family),
+                                  ),
                             ),
                           ),
+                        ),
+                    ],
+                  ),
+                ),
+                if (responsiveVisibility(
+                  context: context,
+                  tabletLandscape: false,
+                  desktop: false,
+                ))
+                  Padding(
+                    padding:
+                        EdgeInsetsDirectional.fromSTEB(20.0, 20.0, 20.0, 0.0),
+                    child: TextFormField(
+                      controller: _model.emailAddressController,
+                      onFieldSubmitted: (_) async {
+                        logFirebaseEvent(
+                            'FORGOT_PASSWORD_emailAddress_ON_TEXTFIEL');
+                        logFirebaseEvent('emailAddress_auth');
+                        if (_model.emailAddressController.text.isEmpty) {
+                          ScaffoldMessenger.of(context).showSnackBar(
+                            SnackBar(
+                              content: Text(
+                                'Email required!',
+                              ),
+                            ),
+                          );
+                          return;
+                        }
+                        await resetPassword(
+                          email: _model.emailAddressController.text,
+                          context: context,
                         );
-                        return;
-                      }
-                      await resetPassword(
-                        email: _model.emailAddressController.text,
-                        context: context,
-                      );
-                    },
-                    obscureText: false,
-                    decoration: InputDecoration(
-                      labelText: FFLocalizations.of(context).getText(
-                        'u4nuk910' /*  */,
-                      ),
-                      labelStyle: FlutterFlowTheme.of(context)
-                          .bodyText2
-                          .override(
-                            fontFamily:
-                                FlutterFlowTheme.of(context).bodyText2Family,
-                            color: FlutterFlowTheme.of(context).primaryBtnText,
-                            useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                FlutterFlowTheme.of(context).bodyText2Family),
+                      },
+                      obscureText: false,
+                      decoration: InputDecoration(
+                        labelText: FFLocalizations.of(context).getText(
+                          'u4nuk910' /*  */,
+                        ),
+                        labelStyle: FlutterFlowTheme.of(context)
+                            .bodyText2
+                            .override(
+                              fontFamily:
+                                  FlutterFlowTheme.of(context).bodyText2Family,
+                              color:
+                                  FlutterFlowTheme.of(context).primaryBtnText,
+                              useGoogleFonts: GoogleFonts.asMap().containsKey(
+                                  FlutterFlowTheme.of(context).bodyText2Family),
+                            ),
+                        hintText: FFLocalizations.of(context).getText(
+                          '37kotxi0' /* Enter your email... */,
+                        ),
+                        hintStyle: FlutterFlowTheme.of(context).bodyText2,
+                        enabledBorder: OutlineInputBorder(
+                          borderSide: BorderSide(
+                            color: Color(0xDAFF0F13),
+                            width: 2.0,
                           ),
-                      hintText: FFLocalizations.of(context).getText(
-                        '37kotxi0' /* Enter your email... */,
+                          borderRadius: BorderRadius.circular(20.0),
+                        ),
+                        focusedBorder: OutlineInputBorder(
+                          borderSide: BorderSide(
+                            color: Color(0x00000000),
+                            width: 2.0,
+                          ),
+                          borderRadius: BorderRadius.circular(20.0),
+                        ),
+                        errorBorder: OutlineInputBorder(
+                          borderSide: BorderSide(
+                            color: Color(0x00000000),
+                            width: 2.0,
+                          ),
+                          borderRadius: BorderRadius.circular(20.0),
+                        ),
+                        focusedErrorBorder: OutlineInputBorder(
+                          borderSide: BorderSide(
+                            color: Color(0x00000000),
+                            width: 2.0,
+                          ),
+                          borderRadius: BorderRadius.circular(20.0),
+                        ),
+                        filled: true,
+                        fillColor: Color(0xFF090F13),
+                        contentPadding: EdgeInsetsDirectional.fromSTEB(
+                            20.0, 24.0, 20.0, 24.0),
+                        prefixIcon: Icon(
+                          Icons.outgoing_mail,
+                        ),
                       ),
-                      hintStyle: FlutterFlowTheme.of(context).bodyText2,
-                      enabledBorder: OutlineInputBorder(
+                      style: FlutterFlowTheme.of(context).bodyText1.override(
+                            fontFamily:
+                                FlutterFlowTheme.of(context).bodyText1Family,
+                            color: FlutterFlowTheme.of(context).grayIcon,
+                            useGoogleFonts: GoogleFonts.asMap().containsKey(
+                                FlutterFlowTheme.of(context).bodyText1Family),
+                          ),
+                      textAlign: TextAlign.start,
+                      keyboardType: TextInputType.emailAddress,
+                      validator: _model.emailAddressControllerValidator
+                          .asValidator(context),
+                    ),
+                  ),
+                if (responsiveVisibility(
+                  context: context,
+                  tabletLandscape: false,
+                  desktop: false,
+                ))
+                  Padding(
+                    padding:
+                        EdgeInsetsDirectional.fromSTEB(0.0, 24.0, 0.0, 0.0),
+                    child: FFButtonWidget(
+                      onPressed: () async {
+                        logFirebaseEvent(
+                            'FORGOT_PASSWORD_PAGE_Button-Login_ON_TAP');
+                        logFirebaseEvent('Button-Login_auth');
+                        if (_model.emailAddressController.text.isEmpty) {
+                          ScaffoldMessenger.of(context).showSnackBar(
+                            SnackBar(
+                              content: Text(
+                                'Email required!',
+                              ),
+                            ),
+                          );
+                          return;
+                        }
+                        await resetPassword(
+                          email: _model.emailAddressController.text,
+                          context: context,
+                        );
+                      },
+                      text: FFLocalizations.of(context).getText(
+                        'hiwpaze1' /* recover password */,
+                      ),
+                      options: FFButtonOptions(
+                        width: 190.0,
+                        height: 50.0,
+                        padding:
+                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                        iconPadding:
+                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                        color: FlutterFlowTheme.of(context).black600,
+                        textStyle: FlutterFlowTheme.of(context)
+                            .subtitle2
+                            .override(
+                              fontFamily:
+                                  FlutterFlowTheme.of(context).subtitle2Family,
+                              color: FlutterFlowTheme.of(context).textColor,
+                              useGoogleFonts: GoogleFonts.asMap().containsKey(
+                                  FlutterFlowTheme.of(context).subtitle2Family),
+                            ),
+                        elevation: 3.0,
                         borderSide: BorderSide(
                           color: Color(0xDAFF0F13),
-                          width: 2.0,
+                          width: 1.0,
                         ),
-                        borderRadius: BorderRadius.circular(20.0),
+                        borderRadius: BorderRadius.circular(30.0),
                       ),
-                      focusedBorder: OutlineInputBorder(
-                        borderSide: BorderSide(
-                          color: Color(0x00000000),
-                          width: 2.0,
-                        ),
-                        borderRadius: BorderRadius.circular(20.0),
-                      ),
-                      errorBorder: OutlineInputBorder(
-                        borderSide: BorderSide(
-                          color: Color(0x00000000),
-                          width: 2.0,
-                        ),
-                        borderRadius: BorderRadius.circular(20.0),
-                      ),
-                      focusedErrorBorder: OutlineInputBorder(
-                        borderSide: BorderSide(
-                          color: Color(0x00000000),
-                          width: 2.0,
-                        ),
-                        borderRadius: BorderRadius.circular(20.0),
-                      ),
-                      filled: true,
-                      fillColor: Color(0xFF090F13),
-                      contentPadding: EdgeInsetsDirectional.fromSTEB(
-                          20.0, 24.0, 20.0, 24.0),
-                      prefixIcon: Icon(
-                        Icons.outgoing_mail,
-                      ),
-                    ),
-                    style: FlutterFlowTheme.of(context).bodyText1.override(
-                          fontFamily:
-                              FlutterFlowTheme.of(context).bodyText1Family,
-                          color: FlutterFlowTheme.of(context).grayIcon,
-                          useGoogleFonts: GoogleFonts.asMap().containsKey(
-                              FlutterFlowTheme.of(context).bodyText1Family),
-                        ),
-                    textAlign: TextAlign.start,
-                    keyboardType: TextInputType.emailAddress,
-                    validator: _model.emailAddressControllerValidator
-                        .asValidator(context),
-                  ),
-                ),
-              if (responsiveVisibility(
-                context: context,
-                tabletLandscape: false,
-                desktop: false,
-              ))
-                Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 24.0, 0.0, 0.0),
-                  child: FFButtonWidget(
-                    onPressed: () async {
-                      logFirebaseEvent(
-                          'FORGOT_PASSWORD_PAGE_Button-Login_ON_TAP');
-                      logFirebaseEvent('Button-Login_auth');
-                      if (_model.emailAddressController.text.isEmpty) {
-                        ScaffoldMessenger.of(context).showSnackBar(
-                          SnackBar(
-                            content: Text(
-                              'Email required!',
-                            ),
-                          ),
-                        );
-                        return;
-                      }
-                      await resetPassword(
-                        email: _model.emailAddressController.text,
-                        context: context,
-                      );
-                    },
-                    text: FFLocalizations.of(context).getText(
-                      'hiwpaze1' /* recover password */,
-                    ),
-                    options: FFButtonOptions(
-                      width: 190.0,
-                      height: 50.0,
-                      padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                      iconPadding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                      color: FlutterFlowTheme.of(context).black600,
-                      textStyle: FlutterFlowTheme.of(context)
-                          .subtitle2
-                          .override(
-                            fontFamily:
-                                FlutterFlowTheme.of(context).subtitle2Family,
-                            color: FlutterFlowTheme.of(context).textColor,
-                            useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                FlutterFlowTheme.of(context).subtitle2Family),
-                          ),
-                      elevation: 3.0,
-                      borderSide: BorderSide(
-                        color: Color(0xDAFF0F13),
-                        width: 1.0,
-                      ),
-                      borderRadius: BorderRadius.circular(30.0),
                     ),
                   ),
-                ),
-            ],
+              ],
+            ),
           ),
         ),
       ),

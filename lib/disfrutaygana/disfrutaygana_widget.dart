@@ -63,11 +63,15 @@ class _DisfrutayganaWidgetState extends State<DisfrutayganaWidget> {
                         children: [
                           Align(
                             alignment: AlignmentDirectional(0.0, 0.0),
-                            child: Image.asset(
-                              'assets/images/INICIO_DE_SESION.png',
-                              width: 380.9,
-                              height: 2200.0,
-                              fit: BoxFit.cover,
+                            child: Padding(
+                              padding: EdgeInsetsDirectional.fromSTEB(
+                                  0.0, 15.0, 0.0, 0.0),
+                              child: Image.asset(
+                                'assets/images/INICIO_DE_SESION.png',
+                                width: 380.9,
+                                height: 2200.0,
+                                fit: BoxFit.cover,
+                              ),
                             ),
                           ),
                           Align(

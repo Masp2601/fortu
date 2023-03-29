@@ -73,200 +73,203 @@ class _MYProfilePageWidgetState extends State<MYProfilePageWidget> {
             child: Column(
               mainAxisSize: MainAxisSize.max,
               children: [
-                Container(
-                  width: MediaQuery.of(context).size.width * 1.0,
-                  height: 200.0,
-                  decoration: BoxDecoration(
-                    boxShadow: [
-                      BoxShadow(
-                        blurRadius: 6.0,
-                        color: Color(0x4B1A1F24),
-                        offset: Offset(0.0, 2.0),
-                      )
-                    ],
-                    gradient: LinearGradient(
-                      colors: [Color(0xFF00968A), Color(0xFFF2A384)],
-                      stops: [0.0, 1.0],
-                      begin: AlignmentDirectional(0.94, -1.0),
-                      end: AlignmentDirectional(-0.94, 1.0),
+                Padding(
+                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 40.0, 0.0, 0.0),
+                  child: Container(
+                    width: MediaQuery.of(context).size.width * 1.0,
+                    height: 200.0,
+                    decoration: BoxDecoration(
+                      boxShadow: [
+                        BoxShadow(
+                          blurRadius: 6.0,
+                          color: Color(0x4B1A1F24),
+                          offset: Offset(0.0, 2.0),
+                        )
+                      ],
+                      gradient: LinearGradient(
+                        colors: [Color(0xFF00968A), Color(0xFFF2A384)],
+                        stops: [0.0, 1.0],
+                        begin: AlignmentDirectional(0.94, -1.0),
+                        end: AlignmentDirectional(-0.94, 1.0),
+                      ),
+                      borderRadius: BorderRadius.circular(0.0),
                     ),
-                    borderRadius: BorderRadius.circular(0.0),
-                  ),
-                  child: Padding(
-                    padding:
-                        EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 0.0, 0.0),
-                    child: Column(
-                      mainAxisSize: MainAxisSize.max,
-                      children: [
-                        Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
-                              0.0, 50.0, 0.0, 0.0),
-                          child: Row(
-                            mainAxisSize: MainAxisSize.max,
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              Card(
-                                clipBehavior: Clip.antiAliasWithSaveLayer,
-                                color:
-                                    FlutterFlowTheme.of(context).primaryColor,
-                                elevation: 2.0,
-                                shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(40.0),
-                                ),
-                                child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
-                                      2.0, 2.0, 2.0, 2.0),
-                                  child: Container(
-                                    width: 60.0,
-                                    height: 60.0,
-                                    clipBehavior: Clip.antiAlias,
-                                    decoration: BoxDecoration(
-                                      shape: BoxShape.circle,
-                                    ),
-                                    child: Image.asset(
-                                      'assets/images/avatar.png',
+                    child: Padding(
+                      padding:
+                          EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 0.0, 0.0),
+                      child: Column(
+                        mainAxisSize: MainAxisSize.max,
+                        children: [
+                          Padding(
+                            padding: EdgeInsetsDirectional.fromSTEB(
+                                0.0, 50.0, 0.0, 0.0),
+                            child: Row(
+                              mainAxisSize: MainAxisSize.max,
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Card(
+                                  clipBehavior: Clip.antiAliasWithSaveLayer,
+                                  color:
+                                      FlutterFlowTheme.of(context).primaryColor,
+                                  elevation: 2.0,
+                                  shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(40.0),
+                                  ),
+                                  child: Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        2.0, 2.0, 2.0, 2.0),
+                                    child: Container(
+                                      width: 60.0,
+                                      height: 60.0,
+                                      clipBehavior: Clip.antiAlias,
+                                      decoration: BoxDecoration(
+                                        shape: BoxShape.circle,
+                                      ),
+                                      child: Image.asset(
+                                        'assets/images/avatar.png',
+                                      ),
                                     ),
                                   ),
+                                ),
+                                Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      0.0, 0.0, 16.0, 0.0),
+                                  child: Row(
+                                    mainAxisSize: MainAxisSize.max,
+                                    children: [
+                                      Padding(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                            12.0, 0.0, 0.0, 0.0),
+                                        child: Container(
+                                          width: 44.0,
+                                          height: 44.0,
+                                          decoration: BoxDecoration(
+                                            color: Color(0x40000000),
+                                            borderRadius:
+                                                BorderRadius.circular(8.0),
+                                          ),
+                                          child: Visibility(
+                                            visible: responsiveVisibility(
+                                              context: context,
+                                              tabletLandscape: false,
+                                              desktop: false,
+                                            ),
+                                            child: FlutterFlowIconButton(
+                                              borderColor:
+                                                  FlutterFlowTheme.of(context)
+                                                      .black600,
+                                              borderRadius: 30.0,
+                                              buttonSize: 46.0,
+                                              fillColor:
+                                                  FlutterFlowTheme.of(context)
+                                                      .black600,
+                                              icon: Icon(
+                                                Icons.login_rounded,
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .textColor,
+                                                size: 24.0,
+                                              ),
+                                              onPressed: () async {
+                                                logFirebaseEvent(
+                                                    'M_Y_PROFILE_login_rounded_ICN_ON_TAP');
+                                                logFirebaseEvent(
+                                                    'IconButton_auth');
+                                                GoRouter.of(context)
+                                                    .prepareAuthEvent();
+                                                await signOut();
+                                                GoRouter.of(context)
+                                                    .clearRedirectLocation();
+
+                                                context.goNamedAuth(
+                                                    'login', mounted);
+                                              },
+                                            ),
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                          Padding(
+                            padding: EdgeInsetsDirectional.fromSTEB(
+                                0.0, 8.0, 0.0, 0.0),
+                            child: Row(
+                              mainAxisSize: MainAxisSize.max,
+                              children: [
+                                Text(
+                                  valueOrDefault<String>(
+                                    mYProfilePageUsersRecord.displayName,
+                                    'Random user',
+                                  ),
+                                  style: FlutterFlowTheme.of(context)
+                                      .title3
+                                      .override(
+                                        fontFamily: FlutterFlowTheme.of(context)
+                                            .title3Family,
+                                        color: FlutterFlowTheme.of(context)
+                                            .textColor,
+                                        useGoogleFonts: GoogleFonts.asMap()
+                                            .containsKey(
+                                                FlutterFlowTheme.of(context)
+                                                    .title3Family),
+                                      ),
+                                ),
+                              ],
+                            ),
+                          ),
+                          Row(
+                            mainAxisSize: MainAxisSize.max,
+                            children: [
+                              Padding(
+                                padding: EdgeInsetsDirectional.fromSTEB(
+                                    0.0, 8.0, 0.0, 0.0),
+                                child: Text(
+                                  valueOrDefault<String>(
+                                    mYProfilePageUsersRecord.userTitle,
+                                    'Badass Busybody',
+                                  ),
+                                  style: FlutterFlowTheme.of(context)
+                                      .bodyText1
+                                      .override(
+                                        fontFamily: FlutterFlowTheme.of(context)
+                                            .bodyText1Family,
+                                        color: Color(0xB3FFFFFF),
+                                        fontWeight: FontWeight.w500,
+                                        useGoogleFonts: GoogleFonts.asMap()
+                                            .containsKey(
+                                                FlutterFlowTheme.of(context)
+                                                    .bodyText1Family),
+                                      ),
                                 ),
                               ),
                               Padding(
                                 padding: EdgeInsetsDirectional.fromSTEB(
-                                    0.0, 0.0, 16.0, 0.0),
-                                child: Row(
-                                  mainAxisSize: MainAxisSize.max,
-                                  children: [
-                                    Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                          12.0, 0.0, 0.0, 0.0),
-                                      child: Container(
-                                        width: 44.0,
-                                        height: 44.0,
-                                        decoration: BoxDecoration(
-                                          color: Color(0x40000000),
-                                          borderRadius:
-                                              BorderRadius.circular(8.0),
-                                        ),
-                                        child: Visibility(
-                                          visible: responsiveVisibility(
-                                            context: context,
-                                            tabletLandscape: false,
-                                            desktop: false,
-                                          ),
-                                          child: FlutterFlowIconButton(
-                                            borderColor:
+                                    4.0, 8.0, 0.0, 0.0),
+                                child: Text(
+                                  mYProfilePageUsersRecord.email!,
+                                  style: FlutterFlowTheme.of(context)
+                                      .bodyText1
+                                      .override(
+                                        fontFamily: FlutterFlowTheme.of(context)
+                                            .bodyText1Family,
+                                        color: FlutterFlowTheme.of(context)
+                                            .textColor,
+                                        fontWeight: FontWeight.w500,
+                                        useGoogleFonts: GoogleFonts.asMap()
+                                            .containsKey(
                                                 FlutterFlowTheme.of(context)
-                                                    .black600,
-                                            borderRadius: 30.0,
-                                            buttonSize: 46.0,
-                                            fillColor:
-                                                FlutterFlowTheme.of(context)
-                                                    .black600,
-                                            icon: Icon(
-                                              Icons.login_rounded,
-                                              color:
-                                                  FlutterFlowTheme.of(context)
-                                                      .textColor,
-                                              size: 24.0,
-                                            ),
-                                            onPressed: () async {
-                                              logFirebaseEvent(
-                                                  'M_Y_PROFILE_login_rounded_ICN_ON_TAP');
-                                              logFirebaseEvent(
-                                                  'IconButton_auth');
-                                              GoRouter.of(context)
-                                                  .prepareAuthEvent();
-                                              await signOut();
-                                              GoRouter.of(context)
-                                                  .clearRedirectLocation();
-
-                                              context.goNamedAuth(
-                                                  'login', mounted);
-                                            },
-                                          ),
-                                        ),
+                                                    .bodyText1Family),
                                       ),
-                                    ),
-                                  ],
                                 ),
                               ),
                             ],
                           ),
-                        ),
-                        Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
-                              0.0, 8.0, 0.0, 0.0),
-                          child: Row(
-                            mainAxisSize: MainAxisSize.max,
-                            children: [
-                              Text(
-                                valueOrDefault<String>(
-                                  mYProfilePageUsersRecord.displayName,
-                                  'Random user',
-                                ),
-                                style: FlutterFlowTheme.of(context)
-                                    .title3
-                                    .override(
-                                      fontFamily: FlutterFlowTheme.of(context)
-                                          .title3Family,
-                                      color: FlutterFlowTheme.of(context)
-                                          .textColor,
-                                      useGoogleFonts: GoogleFonts.asMap()
-                                          .containsKey(
-                                              FlutterFlowTheme.of(context)
-                                                  .title3Family),
-                                    ),
-                              ),
-                            ],
-                          ),
-                        ),
-                        Row(
-                          mainAxisSize: MainAxisSize.max,
-                          children: [
-                            Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
-                                  0.0, 8.0, 0.0, 0.0),
-                              child: Text(
-                                valueOrDefault<String>(
-                                  mYProfilePageUsersRecord.userTitle,
-                                  'Badass Busybody',
-                                ),
-                                style: FlutterFlowTheme.of(context)
-                                    .bodyText1
-                                    .override(
-                                      fontFamily: FlutterFlowTheme.of(context)
-                                          .bodyText1Family,
-                                      color: Color(0xB3FFFFFF),
-                                      fontWeight: FontWeight.w500,
-                                      useGoogleFonts: GoogleFonts.asMap()
-                                          .containsKey(
-                                              FlutterFlowTheme.of(context)
-                                                  .bodyText1Family),
-                                    ),
-                              ),
-                            ),
-                            Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
-                                  4.0, 8.0, 0.0, 0.0),
-                              child: Text(
-                                mYProfilePageUsersRecord.email!,
-                                style: FlutterFlowTheme.of(context)
-                                    .bodyText1
-                                    .override(
-                                      fontFamily: FlutterFlowTheme.of(context)
-                                          .bodyText1Family,
-                                      color: FlutterFlowTheme.of(context)
-                                          .textColor,
-                                      fontWeight: FontWeight.w500,
-                                      useGoogleFonts: GoogleFonts.asMap()
-                                          .containsKey(
-                                              FlutterFlowTheme.of(context)
-                                                  .bodyText1Family),
-                                    ),
-                              ),
-                            ),
-                          ],
-                        ),
-                      ],
+                        ],
+                      ),
                     ),
                   ),
                 ),

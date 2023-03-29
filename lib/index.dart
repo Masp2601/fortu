@@ -16,9 +16,9 @@ export '/transfer_complete/transfer_complete_widget.dart'
     show TransferCompleteWidget;
 export '/transfer_funds/transfer_funds_widget.dart' show TransferFundsWidget;
 export '/request_funds/request_funds_widget.dart' show RequestFundsWidget;
-export '/create_budget/create_budget_widget.dart' show CreateBudgetWidget;
 export '/transaction_a_d_d/transaction_a_d_d_widget.dart'
     show TransactionADDWidget;
+export '/create_budget/create_budget_widget.dart' show CreateBudgetWidget;
 export '/transaction_e_d_i_t/transaction_e_d_i_t_widget.dart'
     show TransactionEDITWidget;
 export '/notifications_settings/notifications_settings_widget.dart'
@@ -48,3 +48,4 @@ export '/change_password/change_password_widget.dart' show ChangePasswordWidget;
 export '/corona/corona_widget.dart' show CoronaWidget;
 export '/espejo/espejo_widget.dart' show EspejoWidget;
 export '/mundomagico/mundomagico_widget.dart' show MundomagicoWidget;
+export '/thereismethod/thereismethod_widget.dart' show ThereismethodWidget;

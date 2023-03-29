@@ -190,18 +190,21 @@ class _MYCardWidgetState extends State<MYCardWidget>
         context: context,
         desktop: false,
       )
-          ? AppBar(
-              backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
-              automaticallyImplyLeading: false,
-              title: Text(
-                FFLocalizations.of(context).getText(
-                  'xn2so8km' /* My Card */,
+          ? PreferredSize(
+              preferredSize: Size.fromHeight(60.0),
+              child: AppBar(
+                backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+                automaticallyImplyLeading: false,
+                title: Text(
+                  FFLocalizations.of(context).getText(
+                    'xn2so8km' /* My Card */,
+                  ),
+                  style: FlutterFlowTheme.of(context).title1,
                 ),
-                style: FlutterFlowTheme.of(context).title1,
+                actions: [],
+                centerTitle: false,
+                elevation: 0.0,
               ),
-              actions: [],
-              centerTitle: false,
-              elevation: 0.0,
             )
           : null,
       body: SafeArea(

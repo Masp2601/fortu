@@ -736,41 +736,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'Hogar',
     },
   },
-  // createBudget
-  {
-    'smbfunwu': {
-      'en': 'Create Budget',
-      'es': 'Cuanto quiere apostar',
-    },
-    'fcgw57wj': {
-      'en': 'Amount',
-      'es': 'Cantidad',
-    },
-    'onjddqdc': {
-      'en': 'Budget Name',
-      'es': 'Nombre del presupuesto',
-    },
-    'g83gfmaf': {
-      'en': 'Description',
-      'es': 'Descripción',
-    },
-    '0iex13x2': {
-      'en': 'Create Budget',
-      'es': 'Crear presupuesto',
-    },
-    'jy5q09h1': {
-      'en': 'Tap above to complete request',
-      'es': 'Toque arriba para completar la solicitud',
-    },
-    '8hzaiw1r': {
-      'en': 'Please enter an amount',
-      'es': 'Por favor ingrese una cantidad',
-    },
-    'mos068mm': {
-      'en': 'Home',
-      'es': 'Hogar',
-    },
-  },
   // transaction_ADD
   {
     'qywon4k1': {
@@ -818,6 +783,41 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'Por favor ingrese una cantidad',
     },
     '7trcsuiu': {
+      'en': 'Home',
+      'es': 'Hogar',
+    },
+  },
+  // createBudget
+  {
+    'smbfunwu': {
+      'en': 'Create Budget',
+      'es': 'Cuanto quiere apostar',
+    },
+    'fcgw57wj': {
+      'en': 'Amount',
+      'es': 'Cantidad',
+    },
+    'onjddqdc': {
+      'en': 'Budget Name',
+      'es': 'Nombre del presupuesto',
+    },
+    'g83gfmaf': {
+      'en': 'Description',
+      'es': 'Descripción',
+    },
+    '0iex13x2': {
+      'en': 'Create Budget',
+      'es': 'Crear presupuesto',
+    },
+    'jy5q09h1': {
+      'en': 'Tap above to complete request',
+      'es': 'Toque arriba para completar la solicitud',
+    },
+    '8hzaiw1r': {
+      'en': 'Please enter an amount',
+      'es': 'Por favor ingrese una cantidad',
+    },
+    'mos068mm': {
       'en': 'Home',
       'es': 'Hogar',
     },
@@ -1798,20 +1798,12 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'Quiero apostar por:',
     },
     'czhwmirp': {
-      'en': '\$100.000 cop',
+      'en': 'cop',
       'es': '\$100.000 cop',
     },
     '2avbb0nv': {
-      'en': '\$200.000 cop',
-      'es': '\$200.000 cop',
-    },
-    '00kd6wuk': {
-      'en': '\$300.000 cop',
-      'es': '\$300.000 cop',
-    },
-    'r9j57nhv': {
-      'en': '\$400.000 cop',
-      'es': '\$400.000 cop',
+      'en': '\$Dolar',
+      'es': '\$dólar',
     },
     '41xtfaf0': {
       'en': 'I want to bet on:',
@@ -2004,6 +1996,21 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     'flrll7m1': {
       'en': 'Home',
       'es': '',
+    },
+  },
+  // thereismethod
+  {
+    '14rgm5u8': {
+      'en': 'Add',
+      'es': 'Agregar',
+    },
+    'aqlefi4q': {
+      'en': '',
+      'es': 'CONTINUAR',
+    },
+    'w1w93746': {
+      'en': 'Home',
+      'es': 'Hogar',
     },
   },
   // bookAppointment

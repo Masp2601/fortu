@@ -167,16 +167,16 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               builder: (context, params) => RequestFundsWidget(),
             ),
             FFRoute(
-              name: 'createBudget',
-              path: 'createBudget',
-              requireAuth: true,
-              builder: (context, params) => CreateBudgetWidget(),
-            ),
-            FFRoute(
               name: 'transaction_ADD',
               path: 'transactionADD',
               requireAuth: true,
               builder: (context, params) => TransactionADDWidget(),
+            ),
+            FFRoute(
+              name: 'createBudget',
+              path: 'createBudget',
+              requireAuth: true,
+              builder: (context, params) => CreateBudgetWidget(),
             ),
             FFRoute(
               name: 'transaction_EDIT',
@@ -349,6 +349,12 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               path: 'mundomagico',
               requireAuth: true,
               builder: (context, params) => MundomagicoWidget(),
+            ),
+            FFRoute(
+              name: 'thereismethod',
+              path: 'thereismethod',
+              requireAuth: true,
+              builder: (context, params) => ThereismethodWidget(),
             )
           ].map((r) => r.toRoute(appStateNotifier)).toList(),
         ),

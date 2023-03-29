@@ -61,11 +61,15 @@ class _HomeWidgetState extends State<HomeWidget> {
                       children: [
                         Align(
                           alignment: AlignmentDirectional(0.0, 0.0),
-                          child: Image.asset(
-                            'assets/images/inicia.png',
-                            width: 380.9,
-                            height: 2200.0,
-                            fit: BoxFit.fill,
+                          child: Padding(
+                            padding: EdgeInsetsDirectional.fromSTEB(
+                                0.0, 18.0, 0.0, 0.0),
+                            child: Image.asset(
+                              'assets/images/inicia.png',
+                              width: 380.9,
+                              height: 2200.0,
+                              fit: BoxFit.fill,
+                            ),
                           ),
                         ),
                         Align(
@@ -82,27 +86,31 @@ class _HomeWidgetState extends State<HomeWidget> {
                                   tabletLandscape: false,
                                   desktop: false,
                                 ))
-                                  InkWell(
-                                    onTap: () async {
-                                      logFirebaseEvent(
-                                          'HOME_PAGE_Image_vgggu8xn_ON_TAP');
-                                      logFirebaseEvent('Image_bottom_sheet');
-                                      await showModalBottomSheet(
-                                        isScrollControlled: true,
-                                        enableDrag: false,
-                                        context: context,
-                                        builder: (context) {
-                                          return Padding(
-                                            padding: MediaQuery.of(context)
-                                                .viewInsets,
-                                            child: ModalacountWidget(),
-                                          );
-                                        },
-                                      ).then((value) => setState(() {}));
-                                    },
-                                    child: Image.asset(
-                                      'assets/images/nav.png',
-                                      fit: BoxFit.cover,
+                                  Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        0.0, 10.0, 0.0, 0.0),
+                                    child: InkWell(
+                                      onTap: () async {
+                                        logFirebaseEvent(
+                                            'HOME_PAGE_Image_vgggu8xn_ON_TAP');
+                                        logFirebaseEvent('Image_bottom_sheet');
+                                        await showModalBottomSheet(
+                                          isScrollControlled: true,
+                                          enableDrag: false,
+                                          context: context,
+                                          builder: (context) {
+                                            return Padding(
+                                              padding: MediaQuery.of(context)
+                                                  .viewInsets,
+                                              child: ModalacountWidget(),
+                                            );
+                                          },
+                                        ).then((value) => setState(() {}));
+                                      },
+                                      child: Image.asset(
+                                        'assets/images/nav.png',
+                                        fit: BoxFit.cover,
+                                      ),
                                     ),
                                   ),
                               ],
@@ -118,7 +126,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                               mainAxisSize: MainAxisSize.max,
                               children: [
                                 Image.asset(
-                                  'assets/images/SIEMPRE_JUGANDO_NO_IMPORTA_CUANDO.png',
+                                  'assets/images/siemprejugando.png',
                                   fit: BoxFit.cover,
                                 ),
                               ],
@@ -164,19 +172,13 @@ class _HomeWidgetState extends State<HomeWidget> {
                                         FormFieldController<String>(
                                       _model.dropDownValue ??= '',
                                     ),
-                                    options: ['Option 1', '1', '2', '3'],
+                                    options: ['Option 1', '1'],
                                     optionLabels: [
                                       FFLocalizations.of(context).getText(
-                                        'czhwmirp' /* $100.000 cop */,
+                                        'czhwmirp' /* cop */,
                                       ),
                                       FFLocalizations.of(context).getText(
-                                        '2avbb0nv' /* $200.000 cop */,
-                                      ),
-                                      FFLocalizations.of(context).getText(
-                                        '00kd6wuk' /* $300.000 cop */,
-                                      ),
-                                      FFLocalizations.of(context).getText(
-                                        'r9j57nhv' /* $400.000 cop */,
+                                        '2avbb0nv' /* $Dolar */,
                                       )
                                     ],
                                     onChanged: (val) => setState(
