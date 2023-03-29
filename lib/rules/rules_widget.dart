@@ -178,7 +178,7 @@ class _RulesWidgetState extends State<RulesWidget>
                                               child:
                                                   FlutterFlowExpandedImageView(
                                                 image: Image.asset(
-                                                  'assets/images/Usabilidad_del_juego_1._Ingresa_tus_datos_a._Nombre_b._Edad_c._Sexo_d._Pais_y_ciudad_de_residencia_e._Correo_electrnico_2._Ingresa_a_la_pasarela_de_pago_y_deposita_el_dinero_con_el_cual_vas_a_participar_(_esta_ser.png',
+                                                  'assets/images/usabilidad.png',
                                                   fit: BoxFit.contain,
                                                 ),
                                                 allowRotation: false,
@@ -192,7 +192,7 @@ class _RulesWidgetState extends State<RulesWidget>
                                           tag: 'imageTag2',
                                           transitionOnUserGestures: true,
                                           child: Image.asset(
-                                            'assets/images/Usabilidad_del_juego_1._Ingresa_tus_datos_a._Nombre_b._Edad_c._Sexo_d._Pais_y_ciudad_de_residencia_e._Correo_electrnico_2._Ingresa_a_la_pasarela_de_pago_y_deposita_el_dinero_con_el_cual_vas_a_participar_(_esta_ser.png',
+                                            'assets/images/usabilidad.png',
                                             width: 100.0,
                                             height: 409.3,
                                             fit: BoxFit.fitWidth,
