@@ -216,7 +216,7 @@ class _RulesWidgetState extends State<RulesWidget>
                                               child:
                                                   FlutterFlowExpandedImageView(
                                                 image: Image.asset(
-                                                  'assets/images/(podrs_ingresar_como_visitante_para_ver_la_dinmica_del_juego_o_ingresa_como_participante_y_preprate_a_ganar)_5._En_la_mesa_encontrars_10_cartas_distribuidas_de_la_siguiente_forma__a._cartas_sern_ganadoras._b._.png',
+                                                  'assets/images/cincoregla.png',
                                                   fit: BoxFit.contain,
                                                 ),
                                                 allowRotation: false,
@@ -230,7 +230,7 @@ class _RulesWidgetState extends State<RulesWidget>
                                           tag: 'imageTag3',
                                           transitionOnUserGestures: true,
                                           child: Image.asset(
-                                            'assets/images/(podrs_ingresar_como_visitante_para_ver_la_dinmica_del_juego_o_ingresa_como_participante_y_preprate_a_ganar)_5._En_la_mesa_encontrars_10_cartas_distribuidas_de_la_siguiente_forma__a._cartas_sern_ganadoras._b._.png',
+                                            'assets/images/cincoregla.png',
                                             width: 100.0,
                                             height: 100.0,
                                             fit: BoxFit.fitWidth,
