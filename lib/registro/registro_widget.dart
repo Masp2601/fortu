@@ -1,6 +1,5 @@
 import '/auth/auth_util.dart';
 import '/flutter_flow/flutter_flow_autocomplete_options_list.dart';
-import '/flutter_flow/flutter_flow_expanded_image_view.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
@@ -8,7 +7,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:page_transition/page_transition.dart';
 import 'package:provider/provider.dart';
 import 'registro_model.dart';
 export 'registro_model.dart';
@@ -123,37 +121,11 @@ class _RegistroWidgetState extends State<RegistroWidget> {
                                   child: Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
                                         120.0, 10.0, 140.0, 10.0),
-                                    child: InkWell(
-                                      onTap: () async {
-                                        logFirebaseEvent(
-                                            'REGISTRO_PAGE_Image_s3nmc3mp_ON_TAP');
-                                        logFirebaseEvent('Image_expand_image');
-                                        await Navigator.push(
-                                          context,
-                                          PageTransition(
-                                            type: PageTransitionType.fade,
-                                            child: FlutterFlowExpandedImageView(
-                                              image: Image.asset(
-                                                'assets/images/Group_1885_3.png',
-                                                fit: BoxFit.contain,
-                                              ),
-                                              allowRotation: false,
-                                              tag: 'imageTag',
-                                              useHeroAnimation: true,
-                                            ),
-                                          ),
-                                        );
-                                      },
-                                      child: Hero(
-                                        tag: 'imageTag',
-                                        transitionOnUserGestures: true,
-                                        child: Image.asset(
-                                          'assets/images/Group_1885_3.png',
-                                          width: 90.0,
-                                          height: 90.0,
-                                          fit: BoxFit.cover,
-                                        ),
-                                      ),
+                                    child: Image.asset(
+                                      'assets/images/Group_1885_3.png',
+                                      width: 90.0,
+                                      height: 90.0,
+                                      fit: BoxFit.cover,
                                     ),
                                   ),
                                 ),
@@ -955,26 +927,10 @@ class _RegistroWidgetState extends State<RegistroWidget> {
                                         shape: BoxShape.circle,
                                       ),
                                       alignment: AlignmentDirectional(0.0, 0.0),
-                                      child: InkWell(
-                                        onTap: () async {
-                                          logFirebaseEvent(
-                                              'REGISTRO_PAGE_Icon_aburfqce_ON_TAP');
-                                          logFirebaseEvent('Icon_auth');
-                                          GoRouter.of(context)
-                                              .prepareAuthEvent();
-                                          final user =
-                                              await signInWithApple(context);
-                                          if (user == null) {
-                                            return;
-                                          }
-
-                                          context.goNamedAuth('home', mounted);
-                                        },
-                                        child: FaIcon(
-                                          FontAwesomeIcons.apple,
-                                          color: Colors.white,
-                                          size: 24.0,
-                                        ),
+                                      child: FaIcon(
+                                        FontAwesomeIcons.apple,
+                                        color: Colors.white,
+                                        size: 24.0,
                                       ),
                                     ),
                                     Container(

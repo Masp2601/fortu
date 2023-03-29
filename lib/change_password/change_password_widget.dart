@@ -28,7 +28,7 @@ class _ChangePasswordWidgetState extends State<ChangePasswordWidget> {
 
     logFirebaseEvent('screen_view',
         parameters: {'screen_name': 'changePassword'});
-    _model.emailAddressController ??= TextEditingController();
+    _model.emailchangeController ??= TextEditingController();
   }
 
   @override
@@ -105,7 +105,7 @@ class _ChangePasswordWidgetState extends State<ChangePasswordWidget> {
                               0.0, 20.0, 0.0, 0.0),
                           child: Text(
                             FFLocalizations.of(context).getText(
-                              'dhr24bcn' /* Enter the email associated wit... */,
+                              'dhr24bcn' /* change Password. */,
                             ),
                             style: FlutterFlowTheme.of(context)
                                 .bodyText2
@@ -133,7 +133,26 @@ class _ChangePasswordWidgetState extends State<ChangePasswordWidget> {
                   padding:
                       EdgeInsetsDirectional.fromSTEB(20.0, 20.0, 20.0, 0.0),
                   child: TextFormField(
-                    controller: _model.emailAddressController,
+                    controller: _model.emailchangeController,
+                    onFieldSubmitted: (_) async {
+                      logFirebaseEvent(
+                          'CHANGE_PASSWORD_emailchange_ON_TEXTFIELD');
+                      logFirebaseEvent('emailchange_auth');
+                      if (_model.emailchangeController.text.isEmpty) {
+                        ScaffoldMessenger.of(context).showSnackBar(
+                          SnackBar(
+                            content: Text(
+                              'Email required!',
+                            ),
+                          ),
+                        );
+                        return;
+                      }
+                      await resetPassword(
+                        email: _model.emailchangeController.text,
+                        context: context,
+                      );
+                    },
                     obscureText: false,
                     decoration: InputDecoration(
                       labelText: FFLocalizations.of(context).getText(
@@ -185,7 +204,7 @@ class _ChangePasswordWidgetState extends State<ChangePasswordWidget> {
                       contentPadding: EdgeInsetsDirectional.fromSTEB(
                           20.0, 24.0, 20.0, 24.0),
                       prefixIcon: Icon(
-                        Icons.outgoing_mail,
+                        Icons.account_tree_rounded,
                       ),
                     ),
                     style: FlutterFlowTheme.of(context).bodyText1.override(
@@ -197,7 +216,7 @@ class _ChangePasswordWidgetState extends State<ChangePasswordWidget> {
                         ),
                     textAlign: TextAlign.start,
                     keyboardType: TextInputType.emailAddress,
-                    validator: _model.emailAddressControllerValidator
+                    validator: _model.emailchangeControllerValidator
                         .asValidator(context),
                   ),
                 ),
@@ -213,7 +232,7 @@ class _ChangePasswordWidgetState extends State<ChangePasswordWidget> {
                       logFirebaseEvent(
                           'CHANGE_PASSWORD_PAGE_Button-Login_ON_TAP');
                       logFirebaseEvent('Button-Login_auth');
-                      if (_model.emailAddressController.text.isEmpty) {
+                      if (_model.emailchangeController.text.isEmpty) {
                         ScaffoldMessenger.of(context).showSnackBar(
                           SnackBar(
                             content: Text(
@@ -224,7 +243,7 @@ class _ChangePasswordWidgetState extends State<ChangePasswordWidget> {
                         return;
                       }
                       await resetPassword(
-                        email: _model.emailAddressController.text,
+                        email: _model.emailchangeController.text,
                         context: context,
                       );
                     },

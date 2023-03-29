@@ -98,16 +98,6 @@ class _TarjetaWidgetState extends State<TarjetaWidget> {
                                   ),
                                 ),
                               ),
-                              Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
-                                    80.0, 0.0, 0.0, 0.0),
-                                child: Text(
-                                  FFLocalizations.of(context).getText(
-                                    'vl97660r' /* Hello World */,
-                                  ),
-                                  style: FlutterFlowTheme.of(context).bodyText1,
-                                ),
-                              ),
                             ],
                           ),
                           if (responsiveVisibility(

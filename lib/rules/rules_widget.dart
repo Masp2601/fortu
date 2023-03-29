@@ -128,7 +128,7 @@ class _RulesWidgetState extends State<RulesWidget>
                                               child:
                                                   FlutterFlowExpandedImageView(
                                                 image: Image.asset(
-                                                  'assets/images/Group_1885_3.png',
+                                                  'assets/images/Group_33940_(1).png',
                                                   fit: BoxFit.contain,
                                                 ),
                                                 allowRotation: false,
@@ -142,9 +142,7 @@ class _RulesWidgetState extends State<RulesWidget>
                                           tag: 'imageTag1',
                                           transitionOnUserGestures: true,
                                           child: Image.asset(
-                                            'assets/images/Group_1885_3.png',
-                                            width: 90.0,
-                                            height: 90.0,
+                                            'assets/images/Group_33940_(1).png',
                                             fit: BoxFit.cover,
                                           ),
                                         ),

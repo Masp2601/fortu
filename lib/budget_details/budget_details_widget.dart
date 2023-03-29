@@ -1,6 +1,4 @@
 import '/backend/backend.dart';
-import '/flutter_flow/flutter_flow_charts.dart';
-import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -73,7 +71,7 @@ class _BudgetDetailsWidgetState extends State<BudgetDetailsWidget> {
             desktop: false,
           )
               ? AppBar(
-                  backgroundColor: FlutterFlowTheme.of(context).primaryColor,
+                  backgroundColor: Colors.black,
                   automaticallyImplyLeading: false,
                   leading: InkWell(
                     onTap: () async {
@@ -88,44 +86,7 @@ class _BudgetDetailsWidgetState extends State<BudgetDetailsWidget> {
                       size: 32.0,
                     ),
                   ),
-                  actions: [
-                    Padding(
-                      padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 16.0, 0.0),
-                      child: FlutterFlowIconButton(
-                        borderColor: Colors.transparent,
-                        borderRadius: 30.0,
-                        buttonSize: 48.0,
-                        icon: Icon(
-                          Icons.delete_outline_rounded,
-                          color: FlutterFlowTheme.of(context).textColor,
-                          size: 30.0,
-                        ),
-                        onPressed: () async {
-                          logFirebaseEvent(
-                              'BUDGET_DETAILS_delete_outline_rounded_IC');
-                          logFirebaseEvent('IconButton_navigate_to');
-
-                          context.pushNamed(
-                            'budget_DELETE',
-                            queryParams: {
-                              'budgetList': serializeParam(
-                                budgetDetailsBudgetsRecord.reference,
-                                ParamType.DocumentReference,
-                              ),
-                            }.withoutNulls,
-                            extra: <String, dynamic>{
-                              kTransitionInfoKey: TransitionInfo(
-                                hasTransition: true,
-                                transitionType: PageTransitionType.bottomToTop,
-                                duration: Duration(milliseconds: 220),
-                              ),
-                            },
-                          );
-                        },
-                      ),
-                    ),
-                  ],
+                  actions: [],
                   centerTitle: false,
                   elevation: 0.0,
                 )
@@ -137,7 +98,7 @@ class _BudgetDetailsWidgetState extends State<BudgetDetailsWidget> {
                 Container(
                   width: MediaQuery.of(context).size.width * 1.0,
                   decoration: BoxDecoration(
-                    color: FlutterFlowTheme.of(context).primaryColor,
+                    color: Colors.black,
                     boxShadow: [
                       BoxShadow(
                         blurRadius: 4.0,
@@ -320,82 +281,6 @@ class _BudgetDetailsWidgetState extends State<BudgetDetailsWidget> {
                   decoration: BoxDecoration(
                     color: FlutterFlowTheme.of(context).primaryColor,
                   ),
-                  child: StreamBuilder<List<TransactionsRecord>>(
-                    stream: queryTransactionsRecord(
-                      queryBuilder: (transactionsRecord) =>
-                          transactionsRecord.where('budgetAssociated',
-                              isEqualTo: budgetDetailsBudgetsRecord.reference),
-                    ),
-                    builder: (context, snapshot) {
-                      // Customize what your widget looks like when it's loading.
-                      if (!snapshot.hasData) {
-                        return Center(
-                          child: SizedBox(
-                            width: 40.0,
-                            height: 40.0,
-                            child: SpinKitFadingCircle(
-                              color: Color(0xFFFF0000),
-                              size: 40.0,
-                            ),
-                          ),
-                        );
-                      }
-                      List<TransactionsRecord> chartTransactionsRecordList =
-                          snapshot.data!;
-                      return Container(
-                        width: double.infinity,
-                        height: 250.0,
-                        child: FlutterFlowLineChart(
-                          data: [
-                            FFLineChartData(
-                              xData: chartTransactionsRecordList,
-                              yData: chartTransactionsRecordList,
-                              settings: LineChartBarData(
-                                color: Color(0xFF39D2C0),
-                                barWidth: 2.0,
-                                isCurved: true,
-                                preventCurveOverShooting: true,
-                                dotData: FlDotData(show: false),
-                                belowBarData: BarAreaData(
-                                  show: true,
-                                  color: Color(0x6639D2C0),
-                                ),
-                              ),
-                            )
-                          ],
-                          chartStylingInfo: ChartStylingInfo(
-                            enableTooltip: true,
-                            tooltipBackgroundColor:
-                                FlutterFlowTheme.of(context).alternate,
-                            backgroundColor:
-                                FlutterFlowTheme.of(context).primaryColor,
-                            showBorder: false,
-                          ),
-                          axisBounds: AxisBounds(),
-                          xAxisLabelInfo: AxisLabelInfo(
-                            showLabels: true,
-                            labelTextStyle: FlutterFlowTheme.of(context)
-                                .bodyText1
-                                .override(
-                                  fontFamily: FlutterFlowTheme.of(context)
-                                      .bodyText1Family,
-                                  fontSize: 12.0,
-                                  useGoogleFonts: GoogleFonts.asMap()
-                                      .containsKey(FlutterFlowTheme.of(context)
-                                          .bodyText1Family),
-                                ),
-                            labelInterval: 10.0,
-                          ),
-                          yAxisLabelInfo: AxisLabelInfo(
-                            showLabels: true,
-                            labelTextStyle:
-                                FlutterFlowTheme.of(context).bodyText1,
-                            labelInterval: 10.0,
-                          ),
-                        ),
-                      );
-                    },
-                  ),
                 ),
                 Column(
                   mainAxisSize: MainAxisSize.max,
@@ -519,20 +404,27 @@ class _BudgetDetailsWidgetState extends State<BudgetDetailsWidget> {
                                           child: Card(
                                             clipBehavior:
                                                 Clip.antiAliasWithSaveLayer,
-                                            color: Color(0x6639D2C0),
+                                            color: FlutterFlowTheme.of(context)
+                                                .gray200,
                                             shape: RoundedRectangleBorder(
                                               borderRadius:
                                                   BorderRadius.circular(40.0),
                                             ),
-                                            child: Padding(
-                                              padding: EdgeInsetsDirectional
-                                                  .fromSTEB(8.0, 8.0, 8.0, 8.0),
-                                              child: Icon(
-                                                Icons.monetization_on_rounded,
-                                                color:
-                                                    FlutterFlowTheme.of(context)
-                                                        .tertiaryColor,
-                                                size: 24.0,
+                                            child: Visibility(
+                                              visible: responsiveVisibility(
+                                                context: context,
+                                                tabletLandscape: false,
+                                                desktop: false,
+                                              ),
+                                              child: Padding(
+                                                padding: EdgeInsetsDirectional
+                                                    .fromSTEB(
+                                                        8.0, 8.0, 8.0, 8.0),
+                                                child: Icon(
+                                                  Icons.monetization_on_rounded,
+                                                  color: Colors.black,
+                                                  size: 24.0,
+                                                ),
                                               ),
                                             ),
                                           ),
@@ -599,9 +491,8 @@ class _BudgetDetailsWidgetState extends State<BudgetDetailsWidget> {
                                                               FlutterFlowTheme.of(
                                                                       context)
                                                                   .subtitle2Family,
-                                                          color: FlutterFlowTheme
-                                                                  .of(context)
-                                                              .tertiaryColor,
+                                                          color:
+                                                              Color(0xFFFF0026),
                                                           useGoogleFonts: GoogleFonts
                                                                   .asMap()
                                                               .containsKey(

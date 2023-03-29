@@ -27,8 +27,6 @@ export '/privacy_policy/privacy_policy_widget.dart' show PrivacyPolicyWidget;
 export '/home_page/home_page_widget.dart' show HomePageWidget;
 export '/home_page_alt/home_page_alt_widget.dart' show HomePageAltWidget;
 export '/home_page_alt_1/home_page_alt1_widget.dart' show HomePageAlt1Widget;
-export '/budget_d_e_l_e_t_e/budget_d_e_l_e_t_e_widget.dart'
-    show BudgetDELETEWidget;
 export '/profilepage/profilepage_widget.dart' show ProfilepageWidget;
 export '/login/login_widget.dart' show LoginWidget;
 export '/conection/conection_widget.dart' show ConectionWidget;
@@ -47,3 +45,6 @@ export '/rules/rules_widget.dart' show RulesWidget;
 export '/disfrutaygana/disfrutaygana_widget.dart' show DisfrutayganaWidget;
 export '/ver/ver_widget.dart' show VerWidget;
 export '/change_password/change_password_widget.dart' show ChangePasswordWidget;
+export '/corona/corona_widget.dart' show CoronaWidget;
+export '/espejo/espejo_widget.dart' show EspejoWidget;
+export '/mundomagico/mundomagico_widget.dart' show MundomagicoWidget;

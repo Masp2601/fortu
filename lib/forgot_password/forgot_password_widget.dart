@@ -134,6 +134,25 @@ class _ForgotPasswordWidgetState extends State<ForgotPasswordWidget> {
                       EdgeInsetsDirectional.fromSTEB(20.0, 20.0, 20.0, 0.0),
                   child: TextFormField(
                     controller: _model.emailAddressController,
+                    onFieldSubmitted: (_) async {
+                      logFirebaseEvent(
+                          'FORGOT_PASSWORD_emailAddress_ON_TEXTFIEL');
+                      logFirebaseEvent('emailAddress_auth');
+                      if (_model.emailAddressController.text.isEmpty) {
+                        ScaffoldMessenger.of(context).showSnackBar(
+                          SnackBar(
+                            content: Text(
+                              'Email required!',
+                            ),
+                          ),
+                        );
+                        return;
+                      }
+                      await resetPassword(
+                        email: _model.emailAddressController.text,
+                        context: context,
+                      );
+                    },
                     obscureText: false,
                     decoration: InputDecoration(
                       labelText: FFLocalizations.of(context).getText(

@@ -132,7 +132,14 @@ class _CreateBudgetWidgetState extends State<CreateBudgetWidget>
                             FFLocalizations.of(context).getText(
                               'smbfunwu' /* Create Budget */,
                             ),
-                            style: FlutterFlowTheme.of(context).title1,
+                            style: FlutterFlowTheme.of(context).title1.override(
+                                  fontFamily:
+                                      FlutterFlowTheme.of(context).title1Family,
+                                  fontSize: 25.0,
+                                  useGoogleFonts: GoogleFonts.asMap()
+                                      .containsKey(FlutterFlowTheme.of(context)
+                                          .title1Family),
+                                ),
                           ),
                           Card(
                             clipBehavior: Clip.antiAliasWithSaveLayer,

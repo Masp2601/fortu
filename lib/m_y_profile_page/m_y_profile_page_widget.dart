@@ -146,29 +146,43 @@ class _MYProfilePageWidgetState extends State<MYProfilePageWidget> {
                                           borderRadius:
                                               BorderRadius.circular(8.0),
                                         ),
-                                        child: FlutterFlowIconButton(
-                                          borderColor: Colors.transparent,
-                                          borderRadius: 30.0,
-                                          buttonSize: 46.0,
-                                          icon: Icon(
-                                            Icons.login_rounded,
-                                            color: FlutterFlowTheme.of(context)
-                                                .textColor,
-                                            size: 24.0,
+                                        child: Visibility(
+                                          visible: responsiveVisibility(
+                                            context: context,
+                                            tabletLandscape: false,
+                                            desktop: false,
                                           ),
-                                          onPressed: () async {
-                                            logFirebaseEvent(
-                                                'M_Y_PROFILE_login_rounded_ICN_ON_TAP');
-                                            logFirebaseEvent('IconButton_auth');
-                                            GoRouter.of(context)
-                                                .prepareAuthEvent();
-                                            await signOut();
-                                            GoRouter.of(context)
-                                                .clearRedirectLocation();
+                                          child: FlutterFlowIconButton(
+                                            borderColor:
+                                                FlutterFlowTheme.of(context)
+                                                    .black600,
+                                            borderRadius: 30.0,
+                                            buttonSize: 46.0,
+                                            fillColor:
+                                                FlutterFlowTheme.of(context)
+                                                    .black600,
+                                            icon: Icon(
+                                              Icons.login_rounded,
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .textColor,
+                                              size: 24.0,
+                                            ),
+                                            onPressed: () async {
+                                              logFirebaseEvent(
+                                                  'M_Y_PROFILE_login_rounded_ICN_ON_TAP');
+                                              logFirebaseEvent(
+                                                  'IconButton_auth');
+                                              GoRouter.of(context)
+                                                  .prepareAuthEvent();
+                                              await signOut();
+                                              GoRouter.of(context)
+                                                  .clearRedirectLocation();
 
-                                            context.goNamedAuth(
-                                                'login', mounted);
-                                          },
+                                              context.goNamedAuth(
+                                                  'login', mounted);
+                                            },
+                                          ),
                                         ),
                                       ),
                                     ),
@@ -270,6 +284,78 @@ class _MYProfilePageWidgetState extends State<MYProfilePageWidget> {
                               'f1bvbey3' /* My Account */,
                             ),
                             style: FlutterFlowTheme.of(context).bodyText1,
+                          ),
+                        ],
+                      ),
+                    ),
+                    Padding(
+                      padding:
+                          EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 10.0),
+                      child: Row(
+                        mainAxisSize: MainAxisSize.max,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          // directo a la parte principal de la app al Home
+                          InkWell(
+                            onTap: () async {
+                              logFirebaseEvent(
+                                  'M_Y_PROFILE_Container_s2it9of2_ON_TAP');
+                              logFirebaseEvent('Container_navigate_to');
+
+                              context.pushNamed('home');
+                            },
+                            child: Material(
+                              color: Colors.transparent,
+                              elevation: 0.0,
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(8.0),
+                              ),
+                              child: Container(
+                                width: MediaQuery.of(context).size.width * 0.9,
+                                height: 60.0,
+                                decoration: BoxDecoration(
+                                  color: FlutterFlowTheme.of(context)
+                                      .primaryBackground,
+                                  borderRadius: BorderRadius.circular(8.0),
+                                  border: Border.all(
+                                    color:
+                                        FlutterFlowTheme.of(context).alternate,
+                                    width: 2.0,
+                                  ),
+                                ),
+                                child: Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      16.0, 0.0, 4.0, 0.0),
+                                  child: Row(
+                                    mainAxisSize: MainAxisSize.max,
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      Text(
+                                        FFLocalizations.of(context).getText(
+                                          '9aogde79' /* Home */,
+                                        ),
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyText1,
+                                      ),
+                                      FlutterFlowIconButton(
+                                        borderColor: Colors.transparent,
+                                        borderRadius: 30.0,
+                                        buttonSize: 46.0,
+                                        icon: Icon(
+                                          Icons.chevron_right_rounded,
+                                          color: Color(0xFF95A1AC),
+                                          size: 20.0,
+                                        ),
+                                        onPressed: () {
+                                          print('IconButton pressed ...');
+                                        },
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ),
+                            ),
                           ),
                         ],
                       ),
@@ -411,6 +497,76 @@ class _MYProfilePageWidgetState extends State<MYProfilePageWidget> {
                   ),
                 ),
                 Padding(
+                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 10.0),
+                  child: Row(
+                    mainAxisSize: MainAxisSize.max,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      // directo a la parte principal de la app al Home
+                      InkWell(
+                        onTap: () async {
+                          logFirebaseEvent(
+                              'M_Y_PROFILE_Container_ur9rwnx7_ON_TAP');
+                          logFirebaseEvent('Container_navigate_to');
+
+                          context.pushNamed('tarjeta');
+                        },
+                        child: Material(
+                          color: Colors.transparent,
+                          elevation: 0.0,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(8.0),
+                          ),
+                          child: Container(
+                            width: MediaQuery.of(context).size.width * 0.9,
+                            height: 60.0,
+                            decoration: BoxDecoration(
+                              color: FlutterFlowTheme.of(context)
+                                  .primaryBackground,
+                              borderRadius: BorderRadius.circular(8.0),
+                              border: Border.all(
+                                color: FlutterFlowTheme.of(context).alternate,
+                                width: 2.0,
+                              ),
+                            ),
+                            child: Padding(
+                              padding: EdgeInsetsDirectional.fromSTEB(
+                                  16.0, 0.0, 4.0, 0.0),
+                              child: Row(
+                                mainAxisSize: MainAxisSize.max,
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Text(
+                                    FFLocalizations.of(context).getText(
+                                      'th57qqr0' /* Add bank account */,
+                                    ),
+                                    style:
+                                        FlutterFlowTheme.of(context).bodyText1,
+                                  ),
+                                  FlutterFlowIconButton(
+                                    borderColor: Colors.transparent,
+                                    borderRadius: 30.0,
+                                    buttonSize: 46.0,
+                                    icon: Icon(
+                                      Icons.chevron_right_rounded,
+                                      color: Color(0xFF95A1AC),
+                                      size: 20.0,
+                                    ),
+                                    onPressed: () {
+                                      print('IconButton pressed ...');
+                                    },
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                Padding(
                   padding: EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 0.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
@@ -472,64 +628,6 @@ class _MYProfilePageWidgetState extends State<MYProfilePageWidget> {
                                   ),
                                 ],
                               ),
-                            ),
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 0.0),
-                  child: Row(
-                    mainAxisSize: MainAxisSize.max,
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Material(
-                        color: Colors.transparent,
-                        elevation: 0.0,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(8.0),
-                        ),
-                        child: Container(
-                          width: MediaQuery.of(context).size.width * 0.9,
-                          height: 60.0,
-                          decoration: BoxDecoration(
-                            color:
-                                FlutterFlowTheme.of(context).primaryBackground,
-                            borderRadius: BorderRadius.circular(8.0),
-                            border: Border.all(
-                              color: FlutterFlowTheme.of(context).alternate,
-                              width: 2.0,
-                            ),
-                          ),
-                          child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
-                                16.0, 0.0, 4.0, 0.0),
-                            child: Row(
-                              mainAxisSize: MainAxisSize.max,
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Text(
-                                  FFLocalizations.of(context).getText(
-                                    '9aogde79' /* Tutorial */,
-                                  ),
-                                  style: FlutterFlowTheme.of(context).bodyText1,
-                                ),
-                                FlutterFlowIconButton(
-                                  borderColor: Colors.transparent,
-                                  borderRadius: 30.0,
-                                  buttonSize: 46.0,
-                                  icon: Icon(
-                                    Icons.chevron_right_rounded,
-                                    color: Color(0xFF95A1AC),
-                                    size: 20.0,
-                                  ),
-                                  onPressed: () {
-                                    print('IconButton pressed ...');
-                                  },
-                                ),
-                              ],
                             ),
                           ),
                         ),
@@ -606,6 +704,65 @@ class _MYProfilePageWidgetState extends State<MYProfilePageWidget> {
                     ],
                   ),
                 ),
+                Padding(
+                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                  child: InkWell(
+                    onTap: () async {
+                      logFirebaseEvent('M_Y_PROFILE_Container_qyq8aalg_ON_TAP');
+                      logFirebaseEvent('Container_navigate_to');
+
+                      context.pushNamed('privacyPolicy');
+                    },
+                    child: Material(
+                      color: Colors.transparent,
+                      elevation: 0.0,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(8.0),
+                      ),
+                      child: Container(
+                        width: MediaQuery.of(context).size.width * 0.9,
+                        height: 60.0,
+                        decoration: BoxDecoration(
+                          color: FlutterFlowTheme.of(context).primaryBackground,
+                          borderRadius: BorderRadius.circular(8.0),
+                          border: Border.all(
+                            color: FlutterFlowTheme.of(context).alternate,
+                            width: 2.0,
+                          ),
+                        ),
+                        child: Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(
+                              16.0, 0.0, 4.0, 0.0),
+                          child: Row(
+                            mainAxisSize: MainAxisSize.max,
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text(
+                                FFLocalizations.of(context).getText(
+                                  '6qbn3m1s' /* Privacy Policy */,
+                                ),
+                                style: FlutterFlowTheme.of(context).bodyText1,
+                              ),
+                              FlutterFlowIconButton(
+                                borderColor: Colors.transparent,
+                                borderRadius: 30.0,
+                                buttonSize: 46.0,
+                                icon: Icon(
+                                  Icons.chevron_right_rounded,
+                                  color: Color(0xFF95A1AC),
+                                  size: 20.0,
+                                ),
+                                onPressed: () {
+                                  print('IconButton pressed ...');
+                                },
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
                 if (!(Theme.of(context).brightness == Brightness.dark))
                   Padding(
                     padding:
@@ -666,13 +823,13 @@ class _MYProfilePageWidgetState extends State<MYProfilePageWidget> {
                             EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                         iconPadding:
                             EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                        color: FlutterFlowTheme.of(context).secondaryColor,
+                        color: Colors.black,
                         textStyle: FlutterFlowTheme.of(context)
                             .subtitle2
                             .override(
                               fontFamily:
                                   FlutterFlowTheme.of(context).subtitle2Family,
-                              color: Colors.white,
+                              color: FlutterFlowTheme.of(context).textColor,
                               useGoogleFonts: GoogleFonts.asMap().containsKey(
                                   FlutterFlowTheme.of(context).subtitle2Family),
                             ),

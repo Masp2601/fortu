@@ -81,7 +81,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
             FFRoute(
               name: 'registro',
               path: 'registro',
-              requireAuth: true,
               builder: (context, params) => RegistroWidget(),
             ),
             FFRoute(
@@ -219,15 +218,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               builder: (context, params) => HomePageAlt1Widget(),
             ),
             FFRoute(
-              name: 'budget_DELETE',
-              path: 'budgetDELETE',
-              requireAuth: true,
-              builder: (context, params) => BudgetDELETEWidget(
-                budgetList: params.getParam('budgetList',
-                    ParamType.DocumentReference, false, ['budgets']),
-              ),
-            ),
-            FFRoute(
               name: 'profilepage',
               path: 'profilepage',
               requireAuth: true,
@@ -241,7 +231,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
             FFRoute(
               name: 'conection',
               path: 'conection',
-              requireAuth: true,
               builder: (context, params) => ConectionWidget(),
             ),
             FFRoute(
@@ -342,6 +331,24 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               path: 'changePassword',
               requireAuth: true,
               builder: (context, params) => ChangePasswordWidget(),
+            ),
+            FFRoute(
+              name: 'corona',
+              path: 'corona',
+              requireAuth: true,
+              builder: (context, params) => CoronaWidget(),
+            ),
+            FFRoute(
+              name: 'espejo',
+              path: 'espejo',
+              requireAuth: true,
+              builder: (context, params) => EspejoWidget(),
+            ),
+            FFRoute(
+              name: 'mundomagico',
+              path: 'mundomagico',
+              requireAuth: true,
+              builder: (context, params) => MundomagicoWidget(),
             )
           ].map((r) => r.toRoute(appStateNotifier)).toList(),
         ),

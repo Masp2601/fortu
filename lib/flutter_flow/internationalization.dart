@@ -521,6 +521,10 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': 'My Account',
       'es': 'Mi cuenta',
     },
+    '9aogde79': {
+      'en': 'Home',
+      'es': 'Home',
+    },
     'i61y9ibx': {
       'en': 'Edit Profile',
       'es': 'Editar perfil',
@@ -529,15 +533,19 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': 'Change Password',
       'es': 'Cambiar la contraseña',
     },
+    'th57qqr0': {
+      'en': 'Add bank account',
+      'es': 'Agregar cuenta bancaria',
+    },
     '6w6wv95p': {
       'en': 'Notification Settings',
       'es': 'Configuración de las notificaciones',
     },
-    '9aogde79': {
-      'en': 'Tutorial',
-      'es': 'Tutorial',
-    },
     'eojlfs66': {
+      'en': 'Privacy Policy',
+      'es': 'política de privacidad',
+    },
+    '6qbn3m1s': {
       'en': 'Privacy Policy',
       'es': 'política de privacidad',
     },
@@ -732,7 +740,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   {
     'smbfunwu': {
       'en': 'Create Budget',
-      'es': 'Crear presupuesto',
+      'es': 'Cuanto quiere apostar',
     },
     'fcgw57wj': {
       'en': 'Amount',
@@ -928,9 +936,9 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     'nbiyrnzl': {
       'en':
-          'Privacy policy masamia website is owned by masamia, which is a data controller of your personal data. we have adopted this privacy policy, which determines how we process information collected by comparing you, which also provides the reasons why we should collect certain personal data about you. Therefore, you should read this privacy policy before using the masamia website. we take care of your personal data and we are committed to ensuring its confidentiality and security. Personal information we collect: When you visit by comparing, we automatically collect certain information about your device, including information about your web browser, ip address, time zone and some of the cookies installed on your device. moreover, to',
+          'Privacy Policy Fortunators App is owned by Fortunators, which is a data controller of your personal data. We have adopted this privacy policy, which determines how we process the information collected by comparing you, which also provides the reasons why we must collect certain personal data about you. Therefore, you should read this privacy policy before using the fortunators app. We take care of your personal data and we are committed to guaranteeing its confidentiality and security. Personal Information We Collect: When you visit Comparando, we automatically collect certain information about your device, including information about your web browser, IP address, time zone, and some of the cookies installed on your device.',
       'es':
-          'Política de privacidad El sitio web de masamia es propiedad de masamia, que es un controlador de datos de sus datos personales. hemos adoptado esta política de privacidad, que determina cómo procesamos la información recopilada al compararlo, que también proporciona las razones por las que debemos recopilar ciertos datos personales sobre usted. Por lo tanto, debe leer esta política de privacidad antes de utilizar el sitio web de masamia. cuidamos sus datos personales y nos comprometemos a garantizar su confidencialidad y seguridad. Información personal que recopilamos: cuando visita comparando, recopilamos automáticamente cierta información sobre su dispositivo, incluida información sobre su navegador web, dirección IP, zona horaria y algunas de las cookies instaladas en su dispositivo. además, a',
+          'Política de privacidad La aplicación Fortunators es propiedad de Fortunators, que es un controlador de datos de sus datos personales. Hemos adoptado esta política de privacidad, que determina cómo procesamos la información recopilada al compararlo, que también proporciona las razones por las que debemos recopilar ciertos datos personales sobre usted. Por lo tanto, debe leer esta política de privacidad antes de usar la aplicación fortunators. Cuidamos sus datos personales y nos comprometemos a garantizar su confidencialidad y seguridad. Información personal que recopilamos: cuando visita Comparando, recopilamos automáticamente cierta información sobre su dispositivo, incluida información sobre su navegador web, dirección IP, zona horaria y algunas de las cookies instaladas en su dispositivo.',
     },
     'oks4x95o': {
       'en': 'Home',
@@ -1266,31 +1274,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'Hogar',
     },
   },
-  // budget_DELETE
-  {
-    'pozov0xz': {
-      'en': 'Delete Budget',
-      'es': 'Eliminar presupuesto',
-    },
-    'aptjmof0': {
-      'en':
-          'If you delete this budget, your transactions will no longer be associated with it.',
-      'es':
-          'Si elimina este presupuesto, sus transacciones ya no estarán asociadas a él.',
-    },
-    '9l7pbjcj': {
-      'en': 'Delete Budget',
-      'es': 'Eliminar presupuesto',
-    },
-    'u0kr38at': {
-      'en': 'Tap above to remove this bude',
-      'es': 'Toque arriba para eliminar este bude',
-    },
-    'b1xp801p': {
-      'en': 'Home',
-      'es': 'Hogar',
-    },
-  },
   // profilepage
   {
     'hhb6veym': {
@@ -1556,10 +1539,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   },
   // tarjeta
   {
-    'vl97660r': {
-      'en': 'Hello World',
-      'es': 'Hola Mundo',
-    },
     '3ct23b6x': {
       'en': 'credit or debit',
       'es': 'crédito o débito',
@@ -1615,8 +1594,8 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': '\$425.24',
     },
     'tijh3cb5': {
-      'en': 'Go Home',
-      'es': 'Vete a casa',
+      'en': 'Home',
+      'es': 'Hogar',
     },
   },
   // paysave
@@ -1647,7 +1626,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     'z1ktfa1y': {
       'en': 'Apple Pay',
-      'es': 'pago de manzana',
+      'es': 'Aple pay',
     },
     'osi1idri': {
       'en': 'Home',
@@ -1858,8 +1837,8 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   // avatars
   {
     'nq6fzbha': {
-      'en': 'Avatar',
-      'es': 'Avatar',
+      'en': '',
+      'es': '',
     },
     'ysdx1516': {
       'en': 'Categories',
@@ -1982,10 +1961,8 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   // changePassword
   {
     'dhr24bcn': {
-      'en':
-          'Enter the email associated with your account and we will send you link to reset your password.',
-      'es':
-          'Ingrese el correo electrónico asociado con su cuenta y le enviaremos un enlace para restablecer su contraseña.',
+      'en': 'change Password.',
+      'es': 'cambiar la contraseña.',
     },
     'w950ekck': {
       'en': '',
@@ -2006,6 +1983,27 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     'd7bbngag': {
       'en': 'Home',
       'es': 'Hogar',
+    },
+  },
+  // corona
+  {
+    'o0qqo8w4': {
+      'en': 'Home',
+      'es': '',
+    },
+  },
+  // espejo
+  {
+    'psgwu7m4': {
+      'en': 'Home',
+      'es': '',
+    },
+  },
+  // mundomagico
+  {
+    'flrll7m1': {
+      'en': 'Home',
+      'es': '',
     },
   },
   // bookAppointment

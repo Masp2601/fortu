@@ -43,13 +43,13 @@ class _AvatarsWidgetState extends State<AvatarsWidget> {
 
     return Scaffold(
       key: scaffoldKey,
-      backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
+      backgroundColor: Colors.black,
       appBar: responsiveVisibility(
         context: context,
         desktop: false,
       )
           ? AppBar(
-              backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
+              backgroundColor: Colors.black,
               automaticallyImplyLeading: false,
               leading: FlutterFlowIconButton(
                 borderColor: Colors.transparent,
@@ -89,14 +89,13 @@ class _AvatarsWidgetState extends State<AvatarsWidget> {
                   children: [
                     TabBar(
                       labelColor: FlutterFlowTheme.of(context).primaryColor,
-                      unselectedLabelColor:
-                          FlutterFlowTheme.of(context).secondaryText,
+                      unselectedLabelColor: Colors.black,
                       labelStyle: FlutterFlowTheme.of(context).subtitle1,
                       indicatorColor: Color(0xFFFF0026),
                       tabs: [
                         Tab(
                           text: FFLocalizations.of(context).getText(
-                            'nq6fzbha' /* Avatar */,
+                            'nq6fzbha' /*  */,
                           ),
                         ),
                       ],
@@ -120,23 +119,59 @@ class _AvatarsWidgetState extends State<AvatarsWidget> {
                                       Padding(
                                         padding: EdgeInsetsDirectional.fromSTEB(
                                             0.0, 0.0, 20.0, 0.0),
+                                        child: InkWell(
+                                          onTap: () async {
+                                            logFirebaseEvent(
+                                                'AVATARS_PAGE_Image_cg0oolxw_ON_TAP');
+                                            logFirebaseEvent(
+                                                'Image_navigate_to');
+
+                                            context.pushNamed('corona');
+                                          },
+                                          child: Image.asset(
+                                            'assets/images/corona.png',
+                                            width: 80.1,
+                                            height: 91.1,
+                                            fit: BoxFit.cover,
+                                          ),
+                                        ),
+                                      ),
+                                      Expanded(
                                         child: Image.asset(
-                                          'assets/images/corona.png',
-                                          width: 80.1,
-                                          height: 91.1,
+                                          'assets/images/Vector_58.png',
+                                          width: 1.0,
+                                          height: 100.0,
                                           fit: BoxFit.cover,
                                         ),
                                       ),
                                       Padding(
                                         padding: EdgeInsetsDirectional.fromSTEB(
-                                            40.0, 0.0, 90.0, 0.0),
-                                        child: ClipRRect(
-                                          borderRadius:
-                                              BorderRadius.circular(8.0),
-                                          child: Image.asset(
-                                            'assets/images/espejo.png',
-                                            fit: BoxFit.cover,
+                                            45.0, 0.0, 90.0, 0.0),
+                                        child: InkWell(
+                                          onTap: () async {
+                                            logFirebaseEvent(
+                                                'AVATARS_PAGE_Image_xm0h8xbd_ON_TAP');
+                                            logFirebaseEvent(
+                                                'Image_navigate_to');
+
+                                            context.pushNamed('espejo');
+                                          },
+                                          child: ClipRRect(
+                                            borderRadius:
+                                                BorderRadius.circular(8.0),
+                                            child: Image.asset(
+                                              'assets/images/espejo.png',
+                                              fit: BoxFit.cover,
+                                            ),
                                           ),
+                                        ),
+                                      ),
+                                      Expanded(
+                                        child: Image.asset(
+                                          'assets/images/Vector_58.png',
+                                          width: 1.0,
+                                          height: 100.0,
+                                          fit: BoxFit.cover,
                                         ),
                                       ),
                                       Align(
@@ -145,13 +180,23 @@ class _AvatarsWidgetState extends State<AvatarsWidget> {
                                         child: Padding(
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
-                                                  25.0, 0.0, 0.0, 0.0),
-                                          child: ClipRRect(
-                                            borderRadius:
-                                                BorderRadius.circular(8.0),
-                                            child: Image.asset(
-                                              'assets/images/mundocristal.png',
-                                              fit: BoxFit.cover,
+                                                  20.0, 0.0, 0.0, 0.0),
+                                          child: InkWell(
+                                            onTap: () async {
+                                              logFirebaseEvent(
+                                                  'AVATARS_PAGE_Image_6y488xm2_ON_TAP');
+                                              logFirebaseEvent(
+                                                  'Image_navigate_to');
+
+                                              context.pushNamed('mundomagico');
+                                            },
+                                            child: ClipRRect(
+                                              borderRadius:
+                                                  BorderRadius.circular(8.0),
+                                              child: Image.asset(
+                                                'assets/images/mundocristal.png',
+                                                fit: BoxFit.cover,
+                                              ),
                                             ),
                                           ),
                                         ),

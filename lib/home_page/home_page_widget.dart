@@ -211,8 +211,11 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                     Container(
                       width: MediaQuery.of(context).size.width * 0.44,
                       decoration: BoxDecoration(
-                        color: FlutterFlowTheme.of(context).tertiaryColor,
+                        color: Colors.black,
                         borderRadius: BorderRadius.circular(8.0),
+                        border: Border.all(
+                          color: Color(0xFFFF0026),
+                        ),
                       ),
                       child: Padding(
                         padding: EdgeInsetsDirectional.fromSTEB(
@@ -279,8 +282,11 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                     Container(
                       width: MediaQuery.of(context).size.width * 0.44,
                       decoration: BoxDecoration(
-                        color: FlutterFlowTheme.of(context).primaryColor,
+                        color: Colors.black,
                         borderRadius: BorderRadius.circular(8.0),
+                        border: Border.all(
+                          color: Color(0xFFFF0026),
+                        ),
                       ),
                       child: Padding(
                         padding: EdgeInsetsDirectional.fromSTEB(

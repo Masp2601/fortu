@@ -117,14 +117,29 @@ class _PrivacyPolicyWidgetState extends State<PrivacyPolicyWidget> {
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     children: [
-                      Expanded(
-                        child: Text(
-                          FFLocalizations.of(context).getText(
-                            'nbiyrnzl' /* Privacy policy masamia website... */,
+                      if (responsiveVisibility(
+                        context: context,
+                        tabletLandscape: false,
+                        desktop: false,
+                      ))
+                        Expanded(
+                          child: Text(
+                            FFLocalizations.of(context).getText(
+                              'nbiyrnzl' /* Privacy Policy Fortunators App... */,
+                            ),
+                            style: FlutterFlowTheme.of(context)
+                                .bodyText2
+                                .override(
+                                  fontFamily: FlutterFlowTheme.of(context)
+                                      .bodyText2Family,
+                                  color: FlutterFlowTheme.of(context)
+                                      .primaryBtnText,
+                                  useGoogleFonts: GoogleFonts.asMap()
+                                      .containsKey(FlutterFlowTheme.of(context)
+                                          .bodyText2Family),
+                                ),
                           ),
-                          style: FlutterFlowTheme.of(context).bodyText2,
                         ),
-                      ),
                     ],
                   ),
                 ),

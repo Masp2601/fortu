@@ -211,38 +211,47 @@ class _ThankspayWidgetState extends State<ThankspayWidget> {
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
-                    FFButtonWidget(
-                      onPressed: () {
-                        print('Button pressed ...');
-                      },
-                      text: FFLocalizations.of(context).getText(
-                        'tijh3cb5' /* Go Home */,
-                      ),
-                      options: FFButtonOptions(
-                        width: 230.0,
-                        height: 50.0,
-                        padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                        iconPadding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                        color: FlutterFlowTheme.of(context).primaryBackground,
-                        textStyle: FlutterFlowTheme.of(context)
-                            .subtitle2
-                            .override(
-                              fontFamily: 'Lexend Deca',
-                              color: FlutterFlowTheme.of(context).primaryText,
-                              fontSize: 16.0,
-                              fontWeight: FontWeight.w500,
-                              useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                  FlutterFlowTheme.of(context).subtitle2Family),
-                            ),
-                        elevation: 0.0,
-                        borderSide: BorderSide(
-                          color: Colors.transparent,
-                          width: 1.0,
+                    if (responsiveVisibility(
+                      context: context,
+                      tabletLandscape: false,
+                      desktop: false,
+                    ))
+                      FFButtonWidget(
+                        onPressed: () async {
+                          logFirebaseEvent('THANKSPAY_PAGE_HOME_BTN_ON_TAP');
+                          logFirebaseEvent('Button_navigate_to');
+
+                          context.pushNamed('home');
+                        },
+                        text: FFLocalizations.of(context).getText(
+                          'tijh3cb5' /* Home */,
+                        ),
+                        options: FFButtonOptions(
+                          width: 230.0,
+                          height: 50.0,
+                          padding: EdgeInsetsDirectional.fromSTEB(
+                              0.0, 0.0, 0.0, 0.0),
+                          iconPadding: EdgeInsetsDirectional.fromSTEB(
+                              0.0, 0.0, 0.0, 0.0),
+                          color: FlutterFlowTheme.of(context).primaryBackground,
+                          textStyle: FlutterFlowTheme.of(context)
+                              .subtitle2
+                              .override(
+                                fontFamily: 'Lexend Deca',
+                                color: FlutterFlowTheme.of(context).primaryText,
+                                fontSize: 16.0,
+                                fontWeight: FontWeight.w500,
+                                useGoogleFonts: GoogleFonts.asMap().containsKey(
+                                    FlutterFlowTheme.of(context)
+                                        .subtitle2Family),
+                              ),
+                          elevation: 0.0,
+                          borderSide: BorderSide(
+                            color: Colors.transparent,
+                            width: 1.0,
+                          ),
                         ),
                       ),
-                    ),
                   ],
                 ),
               ),
