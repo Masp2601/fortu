@@ -254,7 +254,7 @@ class _RulesWidgetState extends State<RulesWidget>
                                               child:
                                                   FlutterFlowExpandedImageView(
                                                 image: Image.asset(
-                                                  'assets/images/6._Preprate_y_espera_que_el_cronmetro_regresivo_d_la_partida_7._Podras_escoger_una_o_varias_cartas_segn_sea_tu_forma_de_juego_8._En_tu_bolsa_de_dinero_veras_reflejado_el_resultado_que_obtuviste_en_el_juego_9._P.png',
+                                                  'assets/images/preparate.png',
                                                   fit: BoxFit.contain,
                                                 ),
                                                 allowRotation: false,
@@ -268,7 +268,7 @@ class _RulesWidgetState extends State<RulesWidget>
                                           tag: 'imageTag4',
                                           transitionOnUserGestures: true,
                                           child: Image.asset(
-                                            'assets/images/6._Preprate_y_espera_que_el_cronmetro_regresivo_d_la_partida_7._Podras_escoger_una_o_varias_cartas_segn_sea_tu_forma_de_juego_8._En_tu_bolsa_de_dinero_veras_reflejado_el_resultado_que_obtuviste_en_el_juego_9._P.png',
+                                            'assets/images/preparate.png',
                                             width: 100.0,
                                             height: 100.0,
                                             fit: BoxFit.fitWidth,
