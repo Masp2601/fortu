@@ -80,7 +80,7 @@ class _DisfrutayganaWidgetState extends State<DisfrutayganaWidget> {
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   Image.asset(
-                                    'assets/images/Group_33940_(1).png',
+                                    'assets/images/navbar.png',
                                     fit: BoxFit.cover,
                                   ),
                                 ],

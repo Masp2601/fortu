@@ -101,7 +101,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                       ).then((value) => setState(() {}));
                                     },
                                     child: Image.asset(
-                                      'assets/images/Group_33940_(1).png',
+                                      'assets/images/nav.png',
                                       fit: BoxFit.cover,
                                     ),
                                   ),

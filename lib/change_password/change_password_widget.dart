@@ -248,7 +248,7 @@ class _ChangePasswordWidgetState extends State<ChangePasswordWidget> {
                       );
                     },
                     text: FFLocalizations.of(context).getText(
-                      'pia8zond' /* recover password */,
+                      'pia8zond' /* chager password */,
                     ),
                     options: FFButtonOptions(
                       width: 190.0,

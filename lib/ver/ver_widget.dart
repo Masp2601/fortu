@@ -96,7 +96,7 @@ class _VerWidgetState extends State<VerWidget> {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Image.asset(
-                              'assets/images/Group_33940.png',
+                              'assets/images/barra.png',
                               fit: BoxFit.cover,
                             ),
                           ],
@@ -117,7 +117,7 @@ class _VerWidgetState extends State<VerWidget> {
                                 context.pushNamed('ndqueperder');
                               },
                               child: Image.asset(
-                                'assets/images/Asset_1-8.png',
+                                'assets/images/nada.png',
                                 width: 335.1,
                                 height: 173.8,
                                 fit: BoxFit.cover,
@@ -288,7 +288,7 @@ class _VerWidgetState extends State<VerWidget> {
                                             context.pushNamed('cashtable');
                                           },
                                           child: Image.asset(
-                                            'assets/images/Vector_(16).png',
+                                            'assets/images/green.png',
                                             fit: BoxFit.cover,
                                           ),
                                         ),
@@ -338,7 +338,7 @@ class _VerWidgetState extends State<VerWidget> {
                                           context.pushNamed('fortunatable');
                                         },
                                         child: Image.asset(
-                                          'assets/images/Vector_(18).png',
+                                          'assets/images/gradient.png',
                                           fit: BoxFit.cover,
                                         ),
                                       ),
@@ -642,7 +642,7 @@ class _VerWidgetState extends State<VerWidget> {
                                                 context.pushNamed('cashtable');
                                               },
                                               child: Image.asset(
-                                                'assets/images/Vector_(16).png',
+                                                'assets/images/verde.png',
                                                 fit: BoxFit.cover,
                                               ),
                                             ),
@@ -670,7 +670,7 @@ class _VerWidgetState extends State<VerWidget> {
                                                 context.pushNamed('goldtable');
                                               },
                                               child: Image.asset(
-                                                'assets/images/Vector_(17).png',
+                                                'assets/images/dorado.png',
                                                 fit: BoxFit.cover,
                                               ),
                                             ),
@@ -694,7 +694,7 @@ class _VerWidgetState extends State<VerWidget> {
                                               context.pushNamed('fortunatable');
                                             },
                                             child: Image.asset(
-                                              'assets/images/Vector_(18).png',
+                                              'assets/images/gradiente.png',
                                               fit: BoxFit.cover,
                                             ),
                                           ),
@@ -797,7 +797,7 @@ class _VerWidgetState extends State<VerWidget> {
                           mainAxisSize: MainAxisSize.max,
                           children: [
                             Image.asset(
-                              'assets/images/Group_34042.png',
+                              'assets/images/siempre.png',
                               width: 338.0,
                               height: 101.3,
                               fit: BoxFit.cover,

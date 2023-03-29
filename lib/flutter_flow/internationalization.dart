@@ -1977,8 +1977,8 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': '',
     },
     'pia8zond': {
-      'en': 'recover password',
-      'es': 'recuperar contraseña',
+      'en': 'chager password',
+      'es': 'contraseña del cargador',
     },
     'd7bbngag': {
       'en': 'Home',
