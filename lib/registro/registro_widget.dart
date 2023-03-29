@@ -122,7 +122,7 @@ class _RegistroWidgetState extends State<RegistroWidget> {
                                     padding: EdgeInsetsDirectional.fromSTEB(
                                         120.0, 10.0, 140.0, 10.0),
                                     child: Image.asset(
-                                      'assets/images/Group_1885_3.png',
+                                      'assets/images/logo.png',
                                       width: 90.0,
                                       height: 90.0,
                                       fit: BoxFit.cover,

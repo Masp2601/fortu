@@ -131,7 +131,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                             Align(
                               alignment: AlignmentDirectional(-0.4, 0.0),
                               child: Image.asset(
-                                'assets/images/Group_1885_3.png',
+                                'assets/images/login.png',
                                 width: 110.0,
                                 height: 110.0,
                                 fit: BoxFit.cover,
