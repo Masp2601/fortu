@@ -253,7 +253,7 @@ class _TransferFundsWidgetState extends State<TransferFundsWidget>
 
     return Scaffold(
       key: scaffoldKey,
-      backgroundColor: FlutterFlowTheme.of(context).tertiaryColor,
+      backgroundColor: FlutterFlowTheme.of(context).tertiary,
       body: Column(
         mainAxisSize: MainAxisSize.max,
         children: [
@@ -299,7 +299,7 @@ class _TransferFundsWidgetState extends State<TransferFundsWidget>
                             FFLocalizations.of(context).getText(
                               'pe3o18oh' /* Transfer Funds */,
                             ),
-                            style: FlutterFlowTheme.of(context).title1,
+                            style: FlutterFlowTheme.of(context).displaySmall,
                           ),
                           Card(
                             clipBehavior: Clip.antiAliasWithSaveLayer,
@@ -363,17 +363,17 @@ class _TransferFundsWidgetState extends State<TransferFundsWidget>
                                         'kyzwrfh4' /* Balance */,
                                       ),
                                       style: FlutterFlowTheme.of(context)
-                                          .bodyText1
+                                          .bodyMedium
                                           .override(
                                             fontFamily:
                                                 FlutterFlowTheme.of(context)
-                                                    .bodyText1Family,
+                                                    .bodyMediumFamily,
                                             color: FlutterFlowTheme.of(context)
                                                 .textColor,
                                             useGoogleFonts: GoogleFonts.asMap()
                                                 .containsKey(
                                                     FlutterFlowTheme.of(context)
-                                                        .bodyText1Family),
+                                                        .bodyMediumFamily),
                                           ),
                                     ),
                                   ],
@@ -390,18 +390,18 @@ class _TransferFundsWidgetState extends State<TransferFundsWidget>
                                         'zq4ozx20' /* $7,630 */,
                                       ),
                                       style: FlutterFlowTheme.of(context)
-                                          .title1
+                                          .displaySmall
                                           .override(
                                             fontFamily:
                                                 FlutterFlowTheme.of(context)
-                                                    .title1Family,
+                                                    .displaySmallFamily,
                                             color: FlutterFlowTheme.of(context)
                                                 .textColor,
                                             fontSize: 32.0,
                                             useGoogleFonts: GoogleFonts.asMap()
                                                 .containsKey(
                                                     FlutterFlowTheme.of(context)
-                                                        .title1Family),
+                                                        .displaySmallFamily),
                                           ),
                                     ),
                                   ],
@@ -420,7 +420,7 @@ class _TransferFundsWidgetState extends State<TransferFundsWidget>
                                         'qukh7yo1' /* **** 0149 */,
                                       ),
                                       style: FlutterFlowTheme.of(context)
-                                          .bodyText1
+                                          .bodyMedium
                                           .override(
                                             fontFamily: 'Roboto Mono',
                                             color: FlutterFlowTheme.of(context)
@@ -428,7 +428,7 @@ class _TransferFundsWidgetState extends State<TransferFundsWidget>
                                             useGoogleFonts: GoogleFonts.asMap()
                                                 .containsKey(
                                                     FlutterFlowTheme.of(context)
-                                                        .bodyText1Family),
+                                                        .bodyMediumFamily),
                                           ),
                                     ),
                                     Text(
@@ -436,7 +436,7 @@ class _TransferFundsWidgetState extends State<TransferFundsWidget>
                                         'n87hkr7d' /* 05/25 */,
                                       ),
                                       style: FlutterFlowTheme.of(context)
-                                          .bodyText1
+                                          .bodyMedium
                                           .override(
                                             fontFamily: 'Roboto Mono',
                                             color: FlutterFlowTheme.of(context)
@@ -444,7 +444,7 @@ class _TransferFundsWidgetState extends State<TransferFundsWidget>
                                             useGoogleFonts: GoogleFonts.asMap()
                                                 .containsKey(
                                                     FlutterFlowTheme.of(context)
-                                                        .bodyText1Family),
+                                                        .bodyMediumFamily),
                                           ),
                                     ),
                                   ],
@@ -470,7 +470,8 @@ class _TransferFundsWidgetState extends State<TransferFundsWidget>
                           iconPadding: EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 0.0, 0.0),
                           color: FlutterFlowTheme.of(context).primaryBackground,
-                          textStyle: FlutterFlowTheme.of(context).bodyText2,
+                          textStyle: FlutterFlowTheme.of(context).bodySmall,
+                          elevation: 2.0,
                           borderSide: BorderSide(
                             color: Colors.transparent,
                             width: 1.0,
@@ -500,7 +501,7 @@ class _TransferFundsWidgetState extends State<TransferFundsWidget>
                               setState(() => _model.dropDownValue1 = val),
                           width: MediaQuery.of(context).size.width * 0.9,
                           height: 60.0,
-                          textStyle: FlutterFlowTheme.of(context).bodyText1,
+                          textStyle: FlutterFlowTheme.of(context).bodyMedium,
                           hintText: FFLocalizations.of(context).getText(
                             'uxo87fjc' /* Transfer Type */,
                           ),
@@ -546,7 +547,7 @@ class _TransferFundsWidgetState extends State<TransferFundsWidget>
                               setState(() => _model.dropDownValue2 = val),
                           width: MediaQuery.of(context).size.width * 0.9,
                           height: 60.0,
-                          textStyle: FlutterFlowTheme.of(context).bodyText1,
+                          textStyle: FlutterFlowTheme.of(context).bodyMedium,
                           hintText: FFLocalizations.of(context).getText(
                             'ok5xluvk' /* Choose an Account */,
                           ),
@@ -579,15 +580,15 @@ class _TransferFundsWidgetState extends State<TransferFundsWidget>
                               'ynie0pc5' /* $ Amount */,
                             ),
                             labelStyle: FlutterFlowTheme.of(context)
-                                .title1
+                                .displaySmall
                                 .override(
-                                  fontFamily:
-                                      FlutterFlowTheme.of(context).title1Family,
+                                  fontFamily: FlutterFlowTheme.of(context)
+                                      .displaySmallFamily,
                                   color: FlutterFlowTheme.of(context).grayLight,
                                   fontWeight: FontWeight.w300,
                                   useGoogleFonts: GoogleFonts.asMap()
                                       .containsKey(FlutterFlowTheme.of(context)
-                                          .title1Family),
+                                          .displaySmallFamily),
                                 ),
                             enabledBorder: OutlineInputBorder(
                               borderSide: BorderSide(
@@ -620,7 +621,7 @@ class _TransferFundsWidgetState extends State<TransferFundsWidget>
                             contentPadding: EdgeInsetsDirectional.fromSTEB(
                                 20.0, 24.0, 24.0, 24.0),
                           ),
-                          style: FlutterFlowTheme.of(context).title1,
+                          style: FlutterFlowTheme.of(context).displaySmall,
                           validator: _model.textControllerValidator
                               .asValidator(context),
                         ).animateOnPageLoad(
@@ -637,14 +638,14 @@ class _TransferFundsWidgetState extends State<TransferFundsWidget>
                               FFLocalizations.of(context).getText(
                                 'wngoi0v4' /* Your new account balance is: */,
                               ),
-                              style: FlutterFlowTheme.of(context).bodyText2,
+                              style: FlutterFlowTheme.of(context).bodySmall,
                             ),
                             Text(
                               FFLocalizations.of(context).getText(
                                 'g6bfec2g' /* $7,630 */,
                               ),
                               textAlign: TextAlign.end,
-                              style: FlutterFlowTheme.of(context).title3,
+                              style: FlutterFlowTheme.of(context).headlineSmall,
                             ),
                           ],
                         ).animateOnPageLoad(
@@ -692,14 +693,16 @@ class _TransferFundsWidgetState extends State<TransferFundsWidget>
                             EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                         iconPadding:
                             EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                        color: FlutterFlowTheme.of(context).tertiaryColor,
-                        textStyle: FlutterFlowTheme.of(context).title1.override(
-                              fontFamily:
-                                  FlutterFlowTheme.of(context).title1Family,
-                              color: FlutterFlowTheme.of(context).textColor,
-                              useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                  FlutterFlowTheme.of(context).title1Family),
-                            ),
+                        color: FlutterFlowTheme.of(context).tertiary,
+                        textStyle:
+                            FlutterFlowTheme.of(context).displaySmall.override(
+                                  fontFamily: FlutterFlowTheme.of(context)
+                                      .displaySmallFamily,
+                                  color: FlutterFlowTheme.of(context).textColor,
+                                  useGoogleFonts: GoogleFonts.asMap()
+                                      .containsKey(FlutterFlowTheme.of(context)
+                                          .displaySmallFamily),
+                                ),
                         elevation: 0.0,
                         borderSide: BorderSide(
                           color: Colors.transparent,
@@ -717,11 +720,11 @@ class _TransferFundsWidgetState extends State<TransferFundsWidget>
             FFLocalizations.of(context).getText(
               'xku4zxbe' /* Tap above to complete transfer */,
             ),
-            style: FlutterFlowTheme.of(context).bodyText1.override(
-                  fontFamily: FlutterFlowTheme.of(context).bodyText1Family,
+            style: FlutterFlowTheme.of(context).bodyMedium.override(
+                  fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
                   color: Color(0x43000000),
                   useGoogleFonts: GoogleFonts.asMap().containsKey(
-                      FlutterFlowTheme.of(context).bodyText1Family),
+                      FlutterFlowTheme.of(context).bodyMediumFamily),
                 ),
           ).animateOnPageLoad(animationsMap['textOnPageLoadAnimation']!),
         ],

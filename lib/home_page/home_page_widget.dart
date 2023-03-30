@@ -93,8 +93,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                             children: [
                               Card(
                                 clipBehavior: Clip.antiAliasWithSaveLayer,
-                                color:
-                                    FlutterFlowTheme.of(context).primaryColor,
+                                color: FlutterFlowTheme.of(context).primary,
                                 shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(40.0),
                                 ),
@@ -129,7 +128,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                             'ucqlrrlk' /* Welcome, */,
                                           ),
                                           style: FlutterFlowTheme.of(context)
-                                              .title3,
+                                              .headlineSmall,
                                         ),
                                         Padding(
                                           padding:
@@ -138,21 +137,20 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                           child: Text(
                                             homePageUsersRecord!.displayName!,
                                             style: FlutterFlowTheme.of(context)
-                                                .title3
+                                                .headlineSmall
                                                 .override(
                                                   fontFamily:
                                                       FlutterFlowTheme.of(
                                                               context)
-                                                          .title3Family,
+                                                          .headlineSmallFamily,
                                                   color: FlutterFlowTheme.of(
                                                           context)
-                                                      .primaryColor,
+                                                      .primary,
                                                   useGoogleFonts: GoogleFonts
                                                           .asMap()
-                                                      .containsKey(
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .title3Family),
+                                                      .containsKey(FlutterFlowTheme
+                                                              .of(context)
+                                                          .headlineSmallFamily),
                                                 ),
                                           ),
                                         ),
@@ -163,7 +161,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                         'c10wb3ot' /* Your account Details are below... */,
                                       ),
                                       style: FlutterFlowTheme.of(context)
-                                          .bodyText1,
+                                          .bodyMedium,
                                     ),
                                   ],
                                 ),
@@ -181,7 +179,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                 FFLocalizations.of(context).getText(
                                   '6z1sm34j' /* Total Balance */,
                                 ),
-                                style: FlutterFlowTheme.of(context).bodyText1,
+                                style: FlutterFlowTheme.of(context).bodyMedium,
                               ),
                             ],
                           ),
@@ -197,15 +195,15 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                   'c0dls4u5' /* $25,202 */,
                                 ),
                                 style: FlutterFlowTheme.of(context)
-                                    .title1
+                                    .displaySmall
                                     .override(
                                       fontFamily: FlutterFlowTheme.of(context)
-                                          .title1Family,
+                                          .displaySmallFamily,
                                       fontSize: 32.0,
                                       useGoogleFonts: GoogleFonts.asMap()
                                           .containsKey(
                                               FlutterFlowTheme.of(context)
-                                                  .title1Family),
+                                                  .displaySmallFamily),
                                     ),
                               ),
                             ],
@@ -243,13 +241,13 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                               FFLocalizations.of(context).getText(
                                 '30yef7fj' /* Payroll Due */,
                               ),
-                              style: FlutterFlowTheme.of(context).bodyText2,
+                              style: FlutterFlowTheme.of(context).bodySmall,
                             ),
                             Text(
                               FFLocalizations.of(context).getText(
                                 'zrx9e6tv' /* $12,245 */,
                               ),
-                              style: FlutterFlowTheme.of(context).title1,
+                              style: FlutterFlowTheme.of(context).displaySmall,
                             ),
                             Padding(
                               padding: EdgeInsetsDirectional.fromSTEB(
@@ -272,7 +270,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                 FFLocalizations.of(context).getText(
                                   '726vrs60' /* Aug 31, 2021 */,
                                 ),
-                                style: FlutterFlowTheme.of(context).title3,
+                                style:
+                                    FlutterFlowTheme.of(context).headlineSmall,
                               ),
                             ),
                             Padding(
@@ -314,13 +313,13 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                               FFLocalizations.of(context).getText(
                                 'n87v5tth' /* Marketing Budget */,
                               ),
-                              style: FlutterFlowTheme.of(context).bodyText2,
+                              style: FlutterFlowTheme.of(context).bodySmall,
                             ),
                             Text(
                               FFLocalizations.of(context).getText(
                                 'l5pw5c8c' /* $4,000 */,
                               ),
-                              style: FlutterFlowTheme.of(context).title1,
+                              style: FlutterFlowTheme.of(context).displaySmall,
                             ),
                             Padding(
                               padding: EdgeInsetsDirectional.fromSTEB(
@@ -343,7 +342,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                 FFLocalizations.of(context).getText(
                                   '9a2ya1la' /* $3,402 */,
                                 ),
-                                style: FlutterFlowTheme.of(context).title3,
+                                style:
+                                    FlutterFlowTheme.of(context).headlineSmall,
                               ),
                             ),
                             Padding(
@@ -397,7 +397,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                 FFLocalizations.of(context).getText(
                                   'lmo3ko2i' /* Quick Services */,
                                 ),
-                                style: FlutterFlowTheme.of(context).bodyText1,
+                                style: FlutterFlowTheme.of(context).bodyMedium,
                               ),
                             ],
                           ),
@@ -600,7 +600,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                     Container(
                       width: MediaQuery.of(context).size.width * 0.92,
                       decoration: BoxDecoration(
-                        color: FlutterFlowTheme.of(context).secondaryColor,
+                        color: FlutterFlowTheme.of(context).secondary,
                         borderRadius: BorderRadius.circular(8.0),
                       ),
                       child: Padding(
@@ -633,7 +633,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                         'nb29ps2o' /* 1 New Alert */,
                                       ),
                                       style: FlutterFlowTheme.of(context)
-                                          .bodyText2,
+                                          .bodySmall,
                                     ),
                                   ),
                                   Text(
@@ -641,17 +641,17 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                       'vgt9s153' /* View Now */,
                                     ),
                                     style: FlutterFlowTheme.of(context)
-                                        .bodyText2
+                                        .bodySmall
                                         .override(
                                           fontFamily:
                                               FlutterFlowTheme.of(context)
-                                                  .bodyText2Family,
+                                                  .bodySmallFamily,
                                           color: FlutterFlowTheme.of(context)
                                               .background,
                                           useGoogleFonts: GoogleFonts.asMap()
                                               .containsKey(
                                                   FlutterFlowTheme.of(context)
-                                                      .bodyText2Family),
+                                                      .bodySmallFamily),
                                         ),
                                   ),
                                 ],

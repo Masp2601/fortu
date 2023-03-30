@@ -76,7 +76,7 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget> {
                         children: [
                           Card(
                             clipBehavior: Clip.antiAliasWithSaveLayer,
-                            color: FlutterFlowTheme.of(context).tertiaryColor,
+                            color: FlutterFlowTheme.of(context).tertiary,
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(40.0),
                             ),
@@ -113,7 +113,8 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget> {
                                   FFLocalizations.of(context).getText(
                                     'xdh0z8qh' /* Welcome, */,
                                   ),
-                                  style: FlutterFlowTheme.of(context).title3,
+                                  style: FlutterFlowTheme.of(context)
+                                      .headlineSmall,
                                 ),
                                 Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
@@ -123,17 +124,17 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget> {
                                       'v74pa882' /* Andrew */,
                                     ),
                                     style: FlutterFlowTheme.of(context)
-                                        .title3
+                                        .headlineSmall
                                         .override(
                                           fontFamily:
                                               FlutterFlowTheme.of(context)
-                                                  .title3Family,
+                                                  .headlineSmallFamily,
                                           color: FlutterFlowTheme.of(context)
-                                              .tertiaryColor,
+                                              .tertiary,
                                           useGoogleFonts: GoogleFonts.asMap()
                                               .containsKey(
                                                   FlutterFlowTheme.of(context)
-                                                      .title3Family),
+                                                      .headlineSmallFamily),
                                         ),
                                   ),
                                 ),
@@ -146,7 +147,7 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget> {
                                 FFLocalizations.of(context).getText(
                                   'rzpg3cvh' /* Your latest updates are below. */,
                                 ),
-                                style: FlutterFlowTheme.of(context).bodyText1,
+                                style: FlutterFlowTheme.of(context).bodyMedium,
                               ),
                             ),
                           ],
@@ -192,17 +193,17 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget> {
                                         'flto6ti8' /* Total Balance */,
                                       ),
                                       style: FlutterFlowTheme.of(context)
-                                          .bodyText2
+                                          .bodySmall
                                           .override(
                                             fontFamily:
                                                 FlutterFlowTheme.of(context)
-                                                    .bodyText2Family,
+                                                    .bodySmallFamily,
                                             color: Color(0x98FFFFFF),
                                             fontSize: 12.0,
                                             useGoogleFonts: GoogleFonts.asMap()
                                                 .containsKey(
                                                     FlutterFlowTheme.of(context)
-                                                        .bodyText2Family),
+                                                        .bodySmallFamily),
                                           ),
                                     ),
                                   ),
@@ -214,16 +215,16 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget> {
                                         'g07h0azf' /* $25,281 */,
                                       ),
                                       style: FlutterFlowTheme.of(context)
-                                          .title1
+                                          .displaySmall
                                           .override(
                                             fontFamily:
                                                 FlutterFlowTheme.of(context)
-                                                    .title1Family,
+                                                    .displaySmallFamily,
                                             fontSize: 32.0,
                                             useGoogleFonts: GoogleFonts.asMap()
                                                 .containsKey(
                                                     FlutterFlowTheme.of(context)
-                                                        .title1Family),
+                                                        .displaySmallFamily),
                                           ),
                                     ),
                                   ),
@@ -235,17 +236,17 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget> {
                                         'v9ghmn0y' /* Total Balance */,
                                       ),
                                       style: FlutterFlowTheme.of(context)
-                                          .bodyText2
+                                          .bodySmall
                                           .override(
                                             fontFamily:
                                                 FlutterFlowTheme.of(context)
-                                                    .bodyText2Family,
+                                                    .bodySmallFamily,
                                             color: Color(0x98FFFFFF),
                                             fontSize: 12.0,
                                             useGoogleFonts: GoogleFonts.asMap()
                                                 .containsKey(
                                                     FlutterFlowTheme.of(context)
-                                                        .bodyText2Family),
+                                                        .bodySmallFamily),
                                           ),
                                     ),
                                   ),
@@ -257,17 +258,17 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget> {
                                         '7vf40ybo' /* $25,281 */,
                                       ),
                                       style: FlutterFlowTheme.of(context)
-                                          .title1
+                                          .displaySmall
                                           .override(
                                             fontFamily:
                                                 FlutterFlowTheme.of(context)
-                                                    .title1Family,
+                                                    .displaySmallFamily,
                                             color: FlutterFlowTheme.of(context)
-                                                .tertiaryColor,
+                                                .tertiary,
                                             useGoogleFonts: GoogleFonts.asMap()
                                                 .containsKey(
                                                     FlutterFlowTheme.of(context)
-                                                        .title1Family),
+                                                        .displaySmallFamily),
                                           ),
                                     ),
                                   ),
@@ -279,17 +280,17 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget> {
                                         'k4scs2cu' /* Total Balance */,
                                       ),
                                       style: FlutterFlowTheme.of(context)
-                                          .bodyText2
+                                          .bodySmall
                                           .override(
                                             fontFamily:
                                                 FlutterFlowTheme.of(context)
-                                                    .bodyText2Family,
+                                                    .bodySmallFamily,
                                             color: Color(0x98FFFFFF),
                                             fontSize: 12.0,
                                             useGoogleFonts: GoogleFonts.asMap()
                                                 .containsKey(
                                                     FlutterFlowTheme.of(context)
-                                                        .bodyText2Family),
+                                                        .bodySmallFamily),
                                           ),
                                     ),
                                   ),
@@ -301,17 +302,17 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget> {
                                         'cvrbfozm' /* $25,281 */,
                                       ),
                                       style: FlutterFlowTheme.of(context)
-                                          .title1
+                                          .displaySmall
                                           .override(
                                             fontFamily:
                                                 FlutterFlowTheme.of(context)
-                                                    .title1Family,
+                                                    .displaySmallFamily,
                                             color: FlutterFlowTheme.of(context)
                                                 .errorRed,
                                             useGoogleFonts: GoogleFonts.asMap()
                                                 .containsKey(
                                                     FlutterFlowTheme.of(context)
-                                                        .title1Family),
+                                                        .displaySmallFamily),
                                           ),
                                     ),
                                   ),
@@ -332,8 +333,7 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget> {
                                 width: MediaQuery.of(context).size.width * 0.44,
                                 height: 180.0,
                                 decoration: BoxDecoration(
-                                  color: FlutterFlowTheme.of(context)
-                                      .secondaryColor,
+                                  color: FlutterFlowTheme.of(context).secondary,
                                   borderRadius: BorderRadius.circular(8.0),
                                 ),
                                 child: Column(
@@ -349,11 +349,11 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget> {
                                           'a33ldz0h' /* Next Payroll */,
                                         ),
                                         style: FlutterFlowTheme.of(context)
-                                            .bodyText2
+                                            .bodySmall
                                             .override(
                                               fontFamily:
                                                   FlutterFlowTheme.of(context)
-                                                      .bodyText2Family,
+                                                      .bodySmallFamily,
                                               color: Color(0x98FFFFFF),
                                               fontSize: 12.0,
                                               useGoogleFonts:
@@ -361,7 +361,7 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget> {
                                                       .containsKey(
                                                           FlutterFlowTheme.of(
                                                                   context)
-                                                              .bodyText2Family),
+                                                              .bodySmallFamily),
                                             ),
                                       ),
                                     ),
@@ -373,18 +373,18 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget> {
                                           '3dgzzz79' /* $25,281 */,
                                         ),
                                         style: FlutterFlowTheme.of(context)
-                                            .title1
+                                            .displaySmall
                                             .override(
                                               fontFamily:
                                                   FlutterFlowTheme.of(context)
-                                                      .title1Family,
+                                                      .displaySmallFamily,
                                               fontSize: 32.0,
-                                              useGoogleFonts:
-                                                  GoogleFonts.asMap()
-                                                      .containsKey(
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .title1Family),
+                                              useGoogleFonts: GoogleFonts
+                                                      .asMap()
+                                                  .containsKey(
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .displaySmallFamily),
                                             ),
                                       ),
                                     ),
@@ -396,11 +396,11 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget> {
                                           'hp28r17l' /* Debit Date */,
                                         ),
                                         style: FlutterFlowTheme.of(context)
-                                            .bodyText2
+                                            .bodySmall
                                             .override(
                                               fontFamily:
                                                   FlutterFlowTheme.of(context)
-                                                      .bodyText2Family,
+                                                      .bodySmallFamily,
                                               color: Color(0x98FFFFFF),
                                               fontSize: 12.0,
                                               useGoogleFonts:
@@ -408,7 +408,7 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget> {
                                                       .containsKey(
                                                           FlutterFlowTheme.of(
                                                                   context)
-                                                              .bodyText2Family),
+                                                              .bodySmallFamily),
                                             ),
                                       ),
                                     ),
@@ -420,20 +420,20 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget> {
                                           'k04gl6sz' /* Aug 31, 2021 */,
                                         ),
                                         style: FlutterFlowTheme.of(context)
-                                            .title3
+                                            .headlineSmall
                                             .override(
                                               fontFamily:
                                                   FlutterFlowTheme.of(context)
-                                                      .title3Family,
+                                                      .headlineSmallFamily,
                                               color:
                                                   FlutterFlowTheme.of(context)
                                                       .darkBackground,
-                                              useGoogleFonts:
-                                                  GoogleFonts.asMap()
-                                                      .containsKey(
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .title3Family),
+                                              useGoogleFonts: GoogleFonts
+                                                      .asMap()
+                                                  .containsKey(
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .headlineSmallFamily),
                                             ),
                                       ),
                                     ),
@@ -445,7 +445,7 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget> {
                                           'd5tcdo3w' /* 4 days left */,
                                         ),
                                         style: FlutterFlowTheme.of(context)
-                                            .bodyText2,
+                                            .bodySmall,
                                       ),
                                     ),
                                   ],
@@ -516,12 +516,12 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget> {
                                                 ),
                                                 style:
                                                     FlutterFlowTheme.of(context)
-                                                        .subtitle2
+                                                        .titleSmall
                                                         .override(
                                                           fontFamily:
                                                               FlutterFlowTheme.of(
                                                                       context)
-                                                                  .subtitle2Family,
+                                                                  .titleSmallFamily,
                                                           color: FlutterFlowTheme
                                                                   .of(context)
                                                               .textColor,
@@ -530,7 +530,7 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget> {
                                                               .containsKey(
                                                                   FlutterFlowTheme.of(
                                                                           context)
-                                                                      .subtitle2Family),
+                                                                      .titleSmallFamily),
                                                         ),
                                               ),
                                             ],
@@ -551,7 +551,7 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget> {
                                                 Icons.circle_notifications,
                                                 color:
                                                     FlutterFlowTheme.of(context)
-                                                        .tertiaryColor,
+                                                        .tertiary,
                                                 size: 24.0,
                                               ),
                                             ),
@@ -566,7 +566,7 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget> {
                                                 ),
                                                 style:
                                                     FlutterFlowTheme.of(context)
-                                                        .bodyText2,
+                                                        .bodySmall,
                                               ),
                                             ),
                                           ],
@@ -587,12 +587,12 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget> {
                                                 ),
                                                 style:
                                                     FlutterFlowTheme.of(context)
-                                                        .bodyText2
+                                                        .bodySmall
                                                         .override(
                                                           fontFamily:
                                                               FlutterFlowTheme.of(
                                                                       context)
-                                                                  .bodyText2Family,
+                                                                  .bodySmallFamily,
                                                           color:
                                                               Color(0x98FFFFFF),
                                                           fontSize: 12.0,
@@ -601,7 +601,7 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget> {
                                                               .containsKey(
                                                                   FlutterFlowTheme.of(
                                                                           context)
-                                                                      .bodyText2Family),
+                                                                      .bodySmallFamily),
                                                         ),
                                               ),
                                             ),
@@ -625,21 +625,21 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget> {
                                                 ),
                                                 style:
                                                     FlutterFlowTheme.of(context)
-                                                        .bodyText2
+                                                        .bodySmall
                                                         .override(
                                                           fontFamily:
                                                               FlutterFlowTheme.of(
                                                                       context)
-                                                                  .bodyText2Family,
+                                                                  .bodySmallFamily,
                                                           color: FlutterFlowTheme
                                                                   .of(context)
-                                                              .tertiaryColor,
+                                                              .tertiary,
                                                           useGoogleFonts: GoogleFonts
                                                                   .asMap()
                                                               .containsKey(
                                                                   FlutterFlowTheme.of(
                                                                           context)
-                                                                      .bodyText2Family),
+                                                                      .bodySmallFamily),
                                                         ),
                                               ),
                                             ),
@@ -661,8 +661,7 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget> {
                                 width: MediaQuery.of(context).size.width * 0.44,
                                 height: 180.0,
                                 decoration: BoxDecoration(
-                                  color:
-                                      FlutterFlowTheme.of(context).primaryColor,
+                                  color: FlutterFlowTheme.of(context).primary,
                                   borderRadius: BorderRadius.circular(8.0),
                                 ),
                                 child: Column(
@@ -678,11 +677,11 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget> {
                                           'a86mwddx' /* Marketing Budget */,
                                         ),
                                         style: FlutterFlowTheme.of(context)
-                                            .bodyText2
+                                            .bodySmall
                                             .override(
                                               fontFamily:
                                                   FlutterFlowTheme.of(context)
-                                                      .bodyText2Family,
+                                                      .bodySmallFamily,
                                               color: Color(0x98FFFFFF),
                                               fontSize: 12.0,
                                               useGoogleFonts:
@@ -690,7 +689,7 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget> {
                                                       .containsKey(
                                                           FlutterFlowTheme.of(
                                                                   context)
-                                                              .bodyText2Family),
+                                                              .bodySmallFamily),
                                             ),
                                       ),
                                     ),
@@ -702,18 +701,18 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget> {
                                           '6c2o39hz' /* $3,000 */,
                                         ),
                                         style: FlutterFlowTheme.of(context)
-                                            .title1
+                                            .displaySmall
                                             .override(
                                               fontFamily:
                                                   FlutterFlowTheme.of(context)
-                                                      .title1Family,
+                                                      .displaySmallFamily,
                                               fontSize: 32.0,
-                                              useGoogleFonts:
-                                                  GoogleFonts.asMap()
-                                                      .containsKey(
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .title1Family),
+                                              useGoogleFonts: GoogleFonts
+                                                      .asMap()
+                                                  .containsKey(
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .displaySmallFamily),
                                             ),
                                       ),
                                     ),
@@ -725,11 +724,11 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget> {
                                           '5subrra4' /* Total Spent */,
                                         ),
                                         style: FlutterFlowTheme.of(context)
-                                            .bodyText2
+                                            .bodySmall
                                             .override(
                                               fontFamily:
                                                   FlutterFlowTheme.of(context)
-                                                      .bodyText2Family,
+                                                      .bodySmallFamily,
                                               color: Color(0x98FFFFFF),
                                               fontSize: 12.0,
                                               useGoogleFonts:
@@ -737,7 +736,7 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget> {
                                                       .containsKey(
                                                           FlutterFlowTheme.of(
                                                                   context)
-                                                              .bodyText2Family),
+                                                              .bodySmallFamily),
                                             ),
                                       ),
                                     ),
@@ -749,20 +748,20 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget> {
                                           '0wtm2m51' /* $2,502 */,
                                         ),
                                         style: FlutterFlowTheme.of(context)
-                                            .title1
+                                            .displaySmall
                                             .override(
                                               fontFamily:
                                                   FlutterFlowTheme.of(context)
-                                                      .title1Family,
+                                                      .displaySmallFamily,
                                               color:
                                                   FlutterFlowTheme.of(context)
                                                       .errorRed,
-                                              useGoogleFonts:
-                                                  GoogleFonts.asMap()
-                                                      .containsKey(
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .title1Family),
+                                              useGoogleFonts: GoogleFonts
+                                                      .asMap()
+                                                  .containsKey(
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .displaySmallFamily),
                                             ),
                                       ),
                                     ),
@@ -774,7 +773,7 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget> {
                                           'bp9d56pc' /* 4 days left */,
                                         ),
                                         style: FlutterFlowTheme.of(context)
-                                            .bodyText2,
+                                            .bodySmall,
                                       ),
                                     ),
                                   ],
@@ -851,7 +850,7 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget> {
                                             'b8oj0pck' /* Team Name */,
                                           ),
                                           style: FlutterFlowTheme.of(context)
-                                              .subtitle1
+                                              .titleMedium
                                               .override(
                                                 fontFamily: 'Lexend Deca',
                                                 color:
@@ -864,7 +863,7 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget> {
                                                     .containsKey(
                                                         FlutterFlowTheme.of(
                                                                 context)
-                                                            .subtitle1Family),
+                                                            .titleMediumFamily),
                                               ),
                                         ),
                                         Expanded(
@@ -879,22 +878,22 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget> {
                                               textAlign: TextAlign.end,
                                               style:
                                                   FlutterFlowTheme.of(context)
-                                                      .subtitle2
+                                                      .titleSmall
                                                       .override(
                                                         fontFamily:
                                                             FlutterFlowTheme.of(
                                                                     context)
-                                                                .subtitle2Family,
+                                                                .titleSmallFamily,
                                                         color:
                                                             FlutterFlowTheme.of(
                                                                     context)
-                                                                .tertiaryColor,
+                                                                .tertiary,
                                                         useGoogleFonts: GoogleFonts
                                                                 .asMap()
                                                             .containsKey(
                                                                 FlutterFlowTheme.of(
                                                                         context)
-                                                                    .subtitle2Family),
+                                                                    .titleSmallFamily),
                                                       ),
                                             ),
                                           ),
@@ -916,7 +915,7 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget> {
                                             ),
                                             textAlign: TextAlign.start,
                                             style: FlutterFlowTheme.of(context)
-                                                .bodyText2
+                                                .bodySmall
                                                 .override(
                                                   fontFamily: 'Lexend Deca',
                                                   color: Color(0xFF8B97A2),
@@ -927,7 +926,7 @@ class _HomePageAltWidgetState extends State<HomePageAltWidget> {
                                                       .containsKey(
                                                           FlutterFlowTheme.of(
                                                                   context)
-                                                              .bodyText2Family),
+                                                              .bodySmallFamily),
                                                 ),
                                           ),
                                         ),

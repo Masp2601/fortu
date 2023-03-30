@@ -123,7 +123,7 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                       children: [
                         Card(
                           clipBehavior: Clip.antiAliasWithSaveLayer,
-                          color: FlutterFlowTheme.of(context).tertiaryColor,
+                          color: FlutterFlowTheme.of(context).tertiary,
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(40.0),
                           ),
@@ -160,7 +160,8 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                                 FFLocalizations.of(context).getText(
                                   '51kawpgz' /* Welcome, */,
                                 ),
-                                style: FlutterFlowTheme.of(context).title3,
+                                style:
+                                    FlutterFlowTheme.of(context).headlineSmall,
                               ),
                               Padding(
                                 padding: EdgeInsetsDirectional.fromSTEB(
@@ -170,16 +171,16 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                                     'izgc0c6r' /* Andrew */,
                                   ),
                                   style: FlutterFlowTheme.of(context)
-                                      .title3
+                                      .headlineSmall
                                       .override(
                                         fontFamily: FlutterFlowTheme.of(context)
-                                            .title3Family,
+                                            .headlineSmallFamily,
                                         color: FlutterFlowTheme.of(context)
-                                            .tertiaryColor,
+                                            .tertiary,
                                         useGoogleFonts: GoogleFonts.asMap()
                                             .containsKey(
                                                 FlutterFlowTheme.of(context)
-                                                    .title3Family),
+                                                    .headlineSmallFamily),
                                       ),
                                 ),
                               ),
@@ -192,7 +193,7 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                               FFLocalizations.of(context).getText(
                                 '30kx6e5v' /* Your latest updates are below. */,
                               ),
-                              style: FlutterFlowTheme.of(context).bodyText2,
+                              style: FlutterFlowTheme.of(context).bodySmall,
                             ),
                           ),
                         ],
@@ -255,16 +256,16 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                                     'wknu2tm4' /* Balance */,
                                   ),
                                   style: FlutterFlowTheme.of(context)
-                                      .bodyText1
+                                      .bodyMedium
                                       .override(
                                         fontFamily: FlutterFlowTheme.of(context)
-                                            .bodyText1Family,
+                                            .bodyMediumFamily,
                                         color: FlutterFlowTheme.of(context)
                                             .textColor,
                                         useGoogleFonts: GoogleFonts.asMap()
                                             .containsKey(
                                                 FlutterFlowTheme.of(context)
-                                                    .bodyText1Family),
+                                                    .bodyMediumFamily),
                                       ),
                                 ),
                               ],
@@ -281,17 +282,17 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                                     'syy689nt' /* $7,630 */,
                                   ),
                                   style: FlutterFlowTheme.of(context)
-                                      .title1
+                                      .displaySmall
                                       .override(
                                         fontFamily: FlutterFlowTheme.of(context)
-                                            .title1Family,
+                                            .displaySmallFamily,
                                         color: FlutterFlowTheme.of(context)
                                             .textColor,
                                         fontSize: 32.0,
                                         useGoogleFonts: GoogleFonts.asMap()
                                             .containsKey(
                                                 FlutterFlowTheme.of(context)
-                                                    .title1Family),
+                                                    .displaySmallFamily),
                                       ),
                                 ),
                               ],
@@ -309,7 +310,7 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                                     'hhyb9x4x' /* **** 0149 */,
                                   ),
                                   style: FlutterFlowTheme.of(context)
-                                      .bodyText1
+                                      .bodyMedium
                                       .override(
                                         fontFamily: 'Roboto Mono',
                                         color: FlutterFlowTheme.of(context)
@@ -317,7 +318,7 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                                         useGoogleFonts: GoogleFonts.asMap()
                                             .containsKey(
                                                 FlutterFlowTheme.of(context)
-                                                    .bodyText1Family),
+                                                    .bodyMediumFamily),
                                       ),
                                 ),
                                 Text(
@@ -325,7 +326,7 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                                     'kg2tmby7' /* 05/25 */,
                                   ),
                                   style: FlutterFlowTheme.of(context)
-                                      .bodyText1
+                                      .bodyMedium
                                       .override(
                                         fontFamily: 'Roboto Mono',
                                         color: FlutterFlowTheme.of(context)
@@ -333,7 +334,7 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                                         useGoogleFonts: GoogleFonts.asMap()
                                             .containsKey(
                                                 FlutterFlowTheme.of(context)
-                                                    .bodyText1Family),
+                                                    .bodyMediumFamily),
                                       ),
                                 ),
                               ],
@@ -378,7 +379,7 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                               FFLocalizations.of(context).getText(
                                 'y7zomzzp' /* Quick Service */,
                               ),
-                              style: FlutterFlowTheme.of(context).bodyText2,
+                              style: FlutterFlowTheme.of(context).bodySmall,
                             ),
                           ],
                         ),
@@ -416,7 +417,7 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                                         'rfozud9v' /* Transfer */,
                                       ),
                                       style: FlutterFlowTheme.of(context)
-                                          .bodyText1,
+                                          .bodyMedium,
                                     ),
                                   ),
                                 ],
@@ -448,7 +449,7 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                                         'pcrarg0a' /* Activity */,
                                       ),
                                       style: FlutterFlowTheme.of(context)
-                                          .bodyText1,
+                                          .bodyMedium,
                                     ),
                                   ),
                                 ],
@@ -480,7 +481,7 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                                         'zmjsfzgg' /* My Bank */,
                                       ),
                                       style: FlutterFlowTheme.of(context)
-                                          .bodyText1,
+                                          .bodyMedium,
                                     ),
                                   ),
                                 ],
@@ -499,7 +500,7 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                               FFLocalizations.of(context).getText(
                                 'dfjtbkbo' /* Transaction */,
                               ),
-                              style: FlutterFlowTheme.of(context).bodyText2,
+                              style: FlutterFlowTheme.of(context).bodySmall,
                             ),
                           ],
                         ),
@@ -532,8 +533,8 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                                         8.0, 8.0, 8.0, 8.0),
                                     child: Icon(
                                       Icons.monetization_on_rounded,
-                                      color: FlutterFlowTheme.of(context)
-                                          .tertiaryColor,
+                                      color:
+                                          FlutterFlowTheme.of(context).tertiary,
                                       size: 24.0,
                                     ),
                                   ),
@@ -553,8 +554,8 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                                         FFLocalizations.of(context).getText(
                                           'g7t9krj7' /* Go Far Rewards */,
                                         ),
-                                        style:
-                                            FlutterFlowTheme.of(context).title3,
+                                        style: FlutterFlowTheme.of(context)
+                                            .headlineSmall,
                                       ),
                                       Padding(
                                         padding: EdgeInsetsDirectional.fromSTEB(
@@ -564,7 +565,7 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                                             'vupu5y5p' /* Income */,
                                           ),
                                           style: FlutterFlowTheme.of(context)
-                                              .bodyText1,
+                                              .bodyMedium,
                                         ),
                                       ),
                                     ],
@@ -585,17 +586,17 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                                       ),
                                       textAlign: TextAlign.end,
                                       style: FlutterFlowTheme.of(context)
-                                          .subtitle2
+                                          .titleSmall
                                           .override(
                                             fontFamily:
                                                 FlutterFlowTheme.of(context)
-                                                    .subtitle2Family,
+                                                    .titleSmallFamily,
                                             color: FlutterFlowTheme.of(context)
-                                                .tertiaryColor,
+                                                .tertiary,
                                             useGoogleFonts: GoogleFonts.asMap()
                                                 .containsKey(
                                                     FlutterFlowTheme.of(context)
-                                                        .subtitle2Family),
+                                                        .titleSmallFamily),
                                           ),
                                     ),
                                     Padding(
@@ -607,18 +608,18 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                                         ),
                                         textAlign: TextAlign.end,
                                         style: FlutterFlowTheme.of(context)
-                                            .bodyText1
+                                            .bodyMedium
                                             .override(
                                               fontFamily:
                                                   FlutterFlowTheme.of(context)
-                                                      .bodyText1Family,
+                                                      .bodyMediumFamily,
                                               fontSize: 12.0,
-                                              useGoogleFonts:
-                                                  GoogleFonts.asMap()
-                                                      .containsKey(
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .bodyText1Family),
+                                              useGoogleFonts: GoogleFonts
+                                                      .asMap()
+                                                  .containsKey(
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .bodyMediumFamily),
                                             ),
                                       ),
                                     ),
@@ -657,8 +658,8 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                                         8.0, 8.0, 8.0, 8.0),
                                     child: Icon(
                                       Icons.monetization_on_rounded,
-                                      color: FlutterFlowTheme.of(context)
-                                          .tertiaryColor,
+                                      color:
+                                          FlutterFlowTheme.of(context).tertiary,
                                       size: 24.0,
                                     ),
                                   ),
@@ -678,8 +679,8 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                                         FFLocalizations.of(context).getText(
                                           '2thn73jc' /* Go Far Rewards */,
                                         ),
-                                        style:
-                                            FlutterFlowTheme.of(context).title3,
+                                        style: FlutterFlowTheme.of(context)
+                                            .headlineSmall,
                                       ),
                                       Padding(
                                         padding: EdgeInsetsDirectional.fromSTEB(
@@ -689,7 +690,7 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                                             '1fjdiibo' /* Income */,
                                           ),
                                           style: FlutterFlowTheme.of(context)
-                                              .bodyText1,
+                                              .bodyMedium,
                                         ),
                                       ),
                                     ],
@@ -710,17 +711,17 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                                       ),
                                       textAlign: TextAlign.end,
                                       style: FlutterFlowTheme.of(context)
-                                          .subtitle2
+                                          .titleSmall
                                           .override(
                                             fontFamily:
                                                 FlutterFlowTheme.of(context)
-                                                    .subtitle2Family,
+                                                    .titleSmallFamily,
                                             color: FlutterFlowTheme.of(context)
-                                                .tertiaryColor,
+                                                .tertiary,
                                             useGoogleFonts: GoogleFonts.asMap()
                                                 .containsKey(
                                                     FlutterFlowTheme.of(context)
-                                                        .subtitle2Family),
+                                                        .titleSmallFamily),
                                           ),
                                     ),
                                     Padding(
@@ -732,18 +733,18 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                                         ),
                                         textAlign: TextAlign.end,
                                         style: FlutterFlowTheme.of(context)
-                                            .bodyText1
+                                            .bodyMedium
                                             .override(
                                               fontFamily:
                                                   FlutterFlowTheme.of(context)
-                                                      .bodyText1Family,
+                                                      .bodyMediumFamily,
                                               fontSize: 12.0,
-                                              useGoogleFonts:
-                                                  GoogleFonts.asMap()
-                                                      .containsKey(
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .bodyText1Family),
+                                              useGoogleFonts: GoogleFonts
+                                                      .asMap()
+                                                  .containsKey(
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .bodyMediumFamily),
                                             ),
                                       ),
                                     ),
@@ -782,8 +783,8 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                                         8.0, 8.0, 8.0, 8.0),
                                     child: Icon(
                                       Icons.monetization_on_rounded,
-                                      color: FlutterFlowTheme.of(context)
-                                          .tertiaryColor,
+                                      color:
+                                          FlutterFlowTheme.of(context).tertiary,
                                       size: 24.0,
                                     ),
                                   ),
@@ -803,8 +804,8 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                                         FFLocalizations.of(context).getText(
                                           '8t6ddwco' /* Go Far Rewards */,
                                         ),
-                                        style:
-                                            FlutterFlowTheme.of(context).title3,
+                                        style: FlutterFlowTheme.of(context)
+                                            .headlineSmall,
                                       ),
                                       Padding(
                                         padding: EdgeInsetsDirectional.fromSTEB(
@@ -814,7 +815,7 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                                             'td15kjsa' /* Income */,
                                           ),
                                           style: FlutterFlowTheme.of(context)
-                                              .bodyText1,
+                                              .bodyMedium,
                                         ),
                                       ),
                                     ],
@@ -835,17 +836,17 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                                       ),
                                       textAlign: TextAlign.end,
                                       style: FlutterFlowTheme.of(context)
-                                          .subtitle2
+                                          .titleSmall
                                           .override(
                                             fontFamily:
                                                 FlutterFlowTheme.of(context)
-                                                    .subtitle2Family,
+                                                    .titleSmallFamily,
                                             color: FlutterFlowTheme.of(context)
-                                                .tertiaryColor,
+                                                .tertiary,
                                             useGoogleFonts: GoogleFonts.asMap()
                                                 .containsKey(
                                                     FlutterFlowTheme.of(context)
-                                                        .subtitle2Family),
+                                                        .titleSmallFamily),
                                           ),
                                     ),
                                     Padding(
@@ -857,18 +858,18 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                                         ),
                                         textAlign: TextAlign.end,
                                         style: FlutterFlowTheme.of(context)
-                                            .bodyText1
+                                            .bodyMedium
                                             .override(
                                               fontFamily:
                                                   FlutterFlowTheme.of(context)
-                                                      .bodyText1Family,
+                                                      .bodyMediumFamily,
                                               fontSize: 12.0,
-                                              useGoogleFonts:
-                                                  GoogleFonts.asMap()
-                                                      .containsKey(
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .bodyText1Family),
+                                              useGoogleFonts: GoogleFonts
+                                                      .asMap()
+                                                  .containsKey(
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .bodyMediumFamily),
                                             ),
                                       ),
                                     ),
@@ -907,8 +908,8 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                                         8.0, 8.0, 8.0, 8.0),
                                     child: Icon(
                                       Icons.monetization_on_rounded,
-                                      color: FlutterFlowTheme.of(context)
-                                          .tertiaryColor,
+                                      color:
+                                          FlutterFlowTheme.of(context).tertiary,
                                       size: 24.0,
                                     ),
                                   ),
@@ -928,8 +929,8 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                                         FFLocalizations.of(context).getText(
                                           '8pdmehj2' /* Go Far Rewards */,
                                         ),
-                                        style:
-                                            FlutterFlowTheme.of(context).title3,
+                                        style: FlutterFlowTheme.of(context)
+                                            .headlineSmall,
                                       ),
                                       Padding(
                                         padding: EdgeInsetsDirectional.fromSTEB(
@@ -939,7 +940,7 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                                             'krrhjgc4' /* Income */,
                                           ),
                                           style: FlutterFlowTheme.of(context)
-                                              .bodyText1,
+                                              .bodyMedium,
                                         ),
                                       ),
                                     ],
@@ -960,17 +961,17 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                                       ),
                                       textAlign: TextAlign.end,
                                       style: FlutterFlowTheme.of(context)
-                                          .subtitle2
+                                          .titleSmall
                                           .override(
                                             fontFamily:
                                                 FlutterFlowTheme.of(context)
-                                                    .subtitle2Family,
+                                                    .titleSmallFamily,
                                             color: FlutterFlowTheme.of(context)
-                                                .tertiaryColor,
+                                                .tertiary,
                                             useGoogleFonts: GoogleFonts.asMap()
                                                 .containsKey(
                                                     FlutterFlowTheme.of(context)
-                                                        .subtitle2Family),
+                                                        .titleSmallFamily),
                                           ),
                                     ),
                                     Padding(
@@ -982,18 +983,18 @@ class _HomePageAlt1WidgetState extends State<HomePageAlt1Widget>
                                         ),
                                         textAlign: TextAlign.end,
                                         style: FlutterFlowTheme.of(context)
-                                            .bodyText1
+                                            .bodyMedium
                                             .override(
                                               fontFamily:
                                                   FlutterFlowTheme.of(context)
-                                                      .bodyText1Family,
+                                                      .bodyMediumFamily,
                                               fontSize: 12.0,
-                                              useGoogleFonts:
-                                                  GoogleFonts.asMap()
-                                                      .containsKey(
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .bodyText1Family),
+                                              useGoogleFonts: GoogleFonts
+                                                      .asMap()
+                                                  .containsKey(
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .bodyMediumFamily),
                                             ),
                                       ),
                                     ),

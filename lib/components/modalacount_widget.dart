@@ -87,7 +87,7 @@ class _ModalacountWidgetState extends State<ModalacountWidget> {
                             FFLocalizations.of(context).getText(
                               'q48e4ek2' /* profile */,
                             ),
-                            style: FlutterFlowTheme.of(context).bodyText1,
+                            style: FlutterFlowTheme.of(context).bodyMedium,
                           ),
                         ),
                       ),
@@ -137,7 +137,7 @@ class _ModalacountWidgetState extends State<ModalacountWidget> {
                             FFLocalizations.of(context).getText(
                               'rw5razni' /* balance */,
                             ),
-                            style: FlutterFlowTheme.of(context).bodyText1,
+                            style: FlutterFlowTheme.of(context).bodyMedium,
                           ),
                         ),
                       ),
@@ -172,7 +172,7 @@ class _ModalacountWidgetState extends State<ModalacountWidget> {
                         FFLocalizations.of(context).getText(
                           'g4hycetj' /* List Item */,
                         ),
-                        style: FlutterFlowTheme.of(context).bodyText1,
+                        style: FlutterFlowTheme.of(context).bodyMedium,
                       ),
                     ),
                   ],

@@ -89,7 +89,7 @@ class _CreateBudgetBeginWidgetState extends State<CreateBudgetBeginWidget>
 
     return Scaffold(
       key: scaffoldKey,
-      backgroundColor: FlutterFlowTheme.of(context).tertiaryColor,
+      backgroundColor: FlutterFlowTheme.of(context).tertiary,
       body: Form(
         key: _model.formKey,
         autovalidateMode: AutovalidateMode.disabled,
@@ -133,7 +133,7 @@ class _CreateBudgetBeginWidgetState extends State<CreateBudgetBeginWidget>
                             FFLocalizations.of(context).getText(
                               'xod9iwab' /* Create Budget */,
                             ),
-                            style: FlutterFlowTheme.of(context).title1,
+                            style: FlutterFlowTheme.of(context).displaySmall,
                           ),
                           Card(
                             clipBehavior: Clip.antiAliasWithSaveLayer,
@@ -177,33 +177,33 @@ class _CreateBudgetBeginWidgetState extends State<CreateBudgetBeginWidget>
                             obscureText: false,
                             decoration: InputDecoration(
                               labelStyle: FlutterFlowTheme.of(context)
-                                  .title1
+                                  .displaySmall
                                   .override(
                                     fontFamily: FlutterFlowTheme.of(context)
-                                        .title1Family,
+                                        .displaySmallFamily,
                                     color:
                                         FlutterFlowTheme.of(context).grayLight,
                                     fontWeight: FontWeight.w300,
                                     useGoogleFonts: GoogleFonts.asMap()
                                         .containsKey(
                                             FlutterFlowTheme.of(context)
-                                                .title1Family),
+                                                .displaySmallFamily),
                                   ),
                               hintText: FFLocalizations.of(context).getText(
                                 'wih71x51' /* Amount */,
                               ),
                               hintStyle: FlutterFlowTheme.of(context)
-                                  .title1
+                                  .displaySmall
                                   .override(
                                     fontFamily: FlutterFlowTheme.of(context)
-                                        .title1Family,
+                                        .displaySmallFamily,
                                     color:
                                         FlutterFlowTheme.of(context).grayLight,
                                     fontWeight: FontWeight.w300,
                                     useGoogleFonts: GoogleFonts.asMap()
                                         .containsKey(
                                             FlutterFlowTheme.of(context)
-                                                .title1Family),
+                                                .displaySmallFamily),
                                   ),
                               enabledBorder: UnderlineInputBorder(
                                 borderSide: BorderSide(
@@ -241,7 +241,7 @@ class _CreateBudgetBeginWidgetState extends State<CreateBudgetBeginWidget>
                                 size: 32.0,
                               ),
                             ),
-                            style: FlutterFlowTheme.of(context).title1,
+                            style: FlutterFlowTheme.of(context).displaySmall,
                             textAlign: TextAlign.center,
                             keyboardType: TextInputType.number,
                             validator: _model.textController1Validator
@@ -260,8 +260,9 @@ class _CreateBudgetBeginWidgetState extends State<CreateBudgetBeginWidget>
                             labelText: FFLocalizations.of(context).getText(
                               'qk15nsmc' /* Budget Name */,
                             ),
-                            labelStyle: FlutterFlowTheme.of(context).subtitle1,
-                            hintStyle: FlutterFlowTheme.of(context).bodyText1,
+                            labelStyle:
+                                FlutterFlowTheme.of(context).titleMedium,
+                            hintStyle: FlutterFlowTheme.of(context).bodyMedium,
                             enabledBorder: OutlineInputBorder(
                               borderSide: BorderSide(
                                 color: FlutterFlowTheme.of(context).alternate,
@@ -293,7 +294,7 @@ class _CreateBudgetBeginWidgetState extends State<CreateBudgetBeginWidget>
                             contentPadding: EdgeInsetsDirectional.fromSTEB(
                                 20.0, 32.0, 24.0, 32.0),
                           ),
-                          style: FlutterFlowTheme.of(context).title3,
+                          style: FlutterFlowTheme.of(context).headlineSmall,
                           textAlign: TextAlign.start,
                           validator: _model.budgetNameControllerValidator
                               .asValidator(context),
@@ -306,11 +307,11 @@ class _CreateBudgetBeginWidgetState extends State<CreateBudgetBeginWidget>
                           controller: _model.textController3,
                           obscureText: false,
                           decoration: InputDecoration(
-                            labelStyle: FlutterFlowTheme.of(context).bodyText1,
+                            labelStyle: FlutterFlowTheme.of(context).bodyMedium,
                             hintText: FFLocalizations.of(context).getText(
                               'iphvcuwc' /* Description */,
                             ),
-                            hintStyle: FlutterFlowTheme.of(context).bodyText1,
+                            hintStyle: FlutterFlowTheme.of(context).bodyMedium,
                             enabledBorder: OutlineInputBorder(
                               borderSide: BorderSide(
                                 color: FlutterFlowTheme.of(context).alternate,
@@ -343,14 +344,14 @@ class _CreateBudgetBeginWidgetState extends State<CreateBudgetBeginWidget>
                                 20.0, 40.0, 24.0, 0.0),
                           ),
                           style: FlutterFlowTheme.of(context)
-                              .bodyText1
+                              .bodyMedium
                               .override(
                                 fontFamily: FlutterFlowTheme.of(context)
-                                    .bodyText1Family,
+                                    .bodyMediumFamily,
                                 color: FlutterFlowTheme.of(context).textColor,
                                 useGoogleFonts: GoogleFonts.asMap().containsKey(
                                     FlutterFlowTheme.of(context)
-                                        .bodyText1Family),
+                                        .bodyMediumFamily),
                               ),
                           textAlign: TextAlign.start,
                           maxLines: 4,
@@ -444,18 +445,18 @@ class _CreateBudgetBeginWidgetState extends State<CreateBudgetBeginWidget>
                                   0.0, 0.0, 0.0, 0.0),
                               iconPadding: EdgeInsetsDirectional.fromSTEB(
                                   0.0, 0.0, 0.0, 0.0),
-                              color: FlutterFlowTheme.of(context).tertiaryColor,
+                              color: FlutterFlowTheme.of(context).tertiary,
                               textStyle: FlutterFlowTheme.of(context)
-                                  .title1
+                                  .displaySmall
                                   .override(
                                     fontFamily: FlutterFlowTheme.of(context)
-                                        .title1Family,
+                                        .displaySmallFamily,
                                     color:
                                         FlutterFlowTheme.of(context).textColor,
                                     useGoogleFonts: GoogleFonts.asMap()
                                         .containsKey(
                                             FlutterFlowTheme.of(context)
-                                                .title1Family),
+                                                .displaySmallFamily),
                                   ),
                               elevation: 0.0,
                               borderSide: BorderSide(
@@ -476,11 +477,11 @@ class _CreateBudgetBeginWidgetState extends State<CreateBudgetBeginWidget>
               FFLocalizations.of(context).getText(
                 'knu0nxbp' /* Tap above to complete request */,
               ),
-              style: FlutterFlowTheme.of(context).bodyText1.override(
-                    fontFamily: FlutterFlowTheme.of(context).bodyText1Family,
+              style: FlutterFlowTheme.of(context).bodyMedium.override(
+                    fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
                     color: Color(0x43000000),
                     useGoogleFonts: GoogleFonts.asMap().containsKey(
-                        FlutterFlowTheme.of(context).bodyText1Family),
+                        FlutterFlowTheme.of(context).bodyMediumFamily),
                   ),
             ),
           ],

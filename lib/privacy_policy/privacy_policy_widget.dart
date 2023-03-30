@@ -67,7 +67,7 @@ class _PrivacyPolicyWidgetState extends State<PrivacyPolicyWidget> {
                 FFLocalizations.of(context).getText(
                   'alczfiiy' /* Privacy Policy */,
                 ),
-                style: FlutterFlowTheme.of(context).title3,
+                style: FlutterFlowTheme.of(context).headlineSmall,
               ),
               actions: [],
               centerTitle: false,
@@ -105,7 +105,7 @@ class _PrivacyPolicyWidgetState extends State<PrivacyPolicyWidget> {
                           FFLocalizations.of(context).getText(
                             'fvsfg5on' /* How we use your data */,
                           ),
-                          style: FlutterFlowTheme.of(context).title1,
+                          style: FlutterFlowTheme.of(context).displaySmall,
                         ),
                       ),
                     ],
@@ -128,15 +128,15 @@ class _PrivacyPolicyWidgetState extends State<PrivacyPolicyWidget> {
                               'nbiyrnzl' /* Privacy Policy Fortunators App... */,
                             ),
                             style: FlutterFlowTheme.of(context)
-                                .bodyText2
+                                .bodySmall
                                 .override(
                                   fontFamily: FlutterFlowTheme.of(context)
-                                      .bodyText2Family,
+                                      .bodySmallFamily,
                                   color: FlutterFlowTheme.of(context)
                                       .primaryBtnText,
                                   useGoogleFonts: GoogleFonts.asMap()
                                       .containsKey(FlutterFlowTheme.of(context)
-                                          .bodyText2Family),
+                                          .bodySmallFamily),
                                 ),
                           ),
                         ),

@@ -75,7 +75,7 @@ class _PaymentDetailsWidgetState extends State<PaymentDetailsWidget> {
             desktop: false,
           )
               ? AppBar(
-                  backgroundColor: FlutterFlowTheme.of(context).primaryColor,
+                  backgroundColor: FlutterFlowTheme.of(context).primary,
                   automaticallyImplyLeading: false,
                   leading: InkWell(
                     onTap: () async {
@@ -93,7 +93,7 @@ class _PaymentDetailsWidgetState extends State<PaymentDetailsWidget> {
                     FFLocalizations.of(context).getText(
                       'j0yzgf4n' /* Details */,
                     ),
-                    style: FlutterFlowTheme.of(context).subtitle2,
+                    style: FlutterFlowTheme.of(context).titleSmall,
                   ),
                   actions: [
                     Padding(
@@ -137,7 +137,7 @@ class _PaymentDetailsWidgetState extends State<PaymentDetailsWidget> {
                 Container(
                   width: double.infinity,
                   decoration: BoxDecoration(
-                    color: FlutterFlowTheme.of(context).primaryColor,
+                    color: FlutterFlowTheme.of(context).primary,
                   ),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
@@ -154,16 +154,16 @@ class _PaymentDetailsWidgetState extends State<PaymentDetailsWidget> {
                                   'zv72ekdw' /* Amount */,
                                 ),
                                 style: FlutterFlowTheme.of(context)
-                                    .bodyText1
+                                    .bodyMedium
                                     .override(
                                       fontFamily: FlutterFlowTheme.of(context)
-                                          .bodyText1Family,
+                                          .bodyMediumFamily,
                                       color: FlutterFlowTheme.of(context)
                                           .textColor,
                                       useGoogleFonts: GoogleFonts.asMap()
                                           .containsKey(
                                               FlutterFlowTheme.of(context)
-                                                  .bodyText1Family),
+                                                  .bodyMediumFamily),
                                     ),
                               ),
                             ),
@@ -180,17 +180,17 @@ class _PaymentDetailsWidgetState extends State<PaymentDetailsWidget> {
                               child: Text(
                                 '\$${paymentDetailsTransactionsRecord.transactionAmount}',
                                 style: FlutterFlowTheme.of(context)
-                                    .title2
+                                    .headlineMedium
                                     .override(
                                       fontFamily: FlutterFlowTheme.of(context)
-                                          .title2Family,
+                                          .headlineMediumFamily,
                                       color: FlutterFlowTheme.of(context)
                                           .textColor,
                                       fontSize: 36.0,
                                       useGoogleFonts: GoogleFonts.asMap()
                                           .containsKey(
                                               FlutterFlowTheme.of(context)
-                                                  .title2Family),
+                                                  .headlineMediumFamily),
                                     ),
                               ),
                             ),
@@ -211,7 +211,7 @@ class _PaymentDetailsWidgetState extends State<PaymentDetailsWidget> {
                           FFLocalizations.of(context).getText(
                             '0rjyjwed' /* Vendor */,
                           ),
-                          style: FlutterFlowTheme.of(context).bodyText1,
+                          style: FlutterFlowTheme.of(context).bodyMedium,
                         ),
                       ),
                     ],
@@ -225,12 +225,15 @@ class _PaymentDetailsWidgetState extends State<PaymentDetailsWidget> {
                       Expanded(
                         child: Text(
                           paymentDetailsTransactionsRecord.transactionName!,
-                          style: FlutterFlowTheme.of(context).title3.override(
-                                fontFamily:
-                                    FlutterFlowTheme.of(context).title3Family,
+                          style: FlutterFlowTheme.of(context)
+                              .headlineSmall
+                              .override(
+                                fontFamily: FlutterFlowTheme.of(context)
+                                    .headlineSmallFamily,
                                 fontWeight: FontWeight.w500,
                                 useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                    FlutterFlowTheme.of(context).title3Family),
+                                    FlutterFlowTheme.of(context)
+                                        .headlineSmallFamily),
                               ),
                         ),
                       ),
@@ -248,7 +251,7 @@ class _PaymentDetailsWidgetState extends State<PaymentDetailsWidget> {
                           FFLocalizations.of(context).getText(
                             'eeyn6dk2' /* When */,
                           ),
-                          style: FlutterFlowTheme.of(context).bodyText1,
+                          style: FlutterFlowTheme.of(context).bodyMedium,
                         ),
                       ),
                     ],
@@ -265,7 +268,7 @@ class _PaymentDetailsWidgetState extends State<PaymentDetailsWidget> {
                           paymentDetailsTransactionsRecord.transactionTime!,
                           locale: FFLocalizations.of(context).languageCode,
                         ),
-                        style: FlutterFlowTheme.of(context).bodyText2,
+                        style: FlutterFlowTheme.of(context).bodySmall,
                       ),
                       Padding(
                         padding:
@@ -277,15 +280,14 @@ class _PaymentDetailsWidgetState extends State<PaymentDetailsWidget> {
                             locale: FFLocalizations.of(context).languageCode,
                           ),
                           style: FlutterFlowTheme.of(context)
-                              .bodyText2
+                              .bodySmall
                               .override(
                                 fontFamily: FlutterFlowTheme.of(context)
-                                    .bodyText2Family,
-                                color:
-                                    FlutterFlowTheme.of(context).tertiaryColor,
+                                    .bodySmallFamily,
+                                color: FlutterFlowTheme.of(context).tertiary,
                                 useGoogleFonts: GoogleFonts.asMap().containsKey(
                                     FlutterFlowTheme.of(context)
-                                        .bodyText2Family),
+                                        .bodySmallFamily),
                               ),
                         ),
                       ),
@@ -305,7 +307,7 @@ class _PaymentDetailsWidgetState extends State<PaymentDetailsWidget> {
                             FFLocalizations.of(context).getText(
                               'lccxx6eu' /* Reason */,
                             ),
-                            style: FlutterFlowTheme.of(context).bodyText1,
+                            style: FlutterFlowTheme.of(context).bodyMedium,
                           ),
                         ),
                       ),
@@ -320,7 +322,7 @@ class _PaymentDetailsWidgetState extends State<PaymentDetailsWidget> {
                       Expanded(
                         child: Text(
                           paymentDetailsTransactionsRecord.transactionReason!,
-                          style: FlutterFlowTheme.of(context).bodyText2,
+                          style: FlutterFlowTheme.of(context).bodySmall,
                         ),
                       ),
                     ],
@@ -337,7 +339,7 @@ class _PaymentDetailsWidgetState extends State<PaymentDetailsWidget> {
                           FFLocalizations.of(context).getText(
                             'jzyax4hn' /* Spent by */,
                           ),
-                          style: FlutterFlowTheme.of(context).bodyText1,
+                          style: FlutterFlowTheme.of(context).bodyMedium,
                         ),
                       ),
                     ],
@@ -388,8 +390,8 @@ class _PaymentDetailsWidgetState extends State<PaymentDetailsWidget> {
                                   children: [
                                     Card(
                                       clipBehavior: Clip.antiAliasWithSaveLayer,
-                                      color: FlutterFlowTheme.of(context)
-                                          .primaryColor,
+                                      color:
+                                          FlutterFlowTheme.of(context).primary,
                                       elevation: 2.0,
                                       shape: RoundedRectangleBorder(
                                         borderRadius:
@@ -431,28 +433,28 @@ class _PaymentDetailsWidgetState extends State<PaymentDetailsWidget> {
                                                     .displayName!,
                                                 style:
                                                     FlutterFlowTheme.of(context)
-                                                        .title3,
+                                                        .headlineSmall,
                                               ),
                                             ],
                                           ),
                                           Text(
                                             containerUsersRecord.email!,
                                             style: FlutterFlowTheme.of(context)
-                                                .bodyText1
+                                                .bodyMedium
                                                 .override(
                                                   fontFamily:
                                                       FlutterFlowTheme.of(
                                                               context)
-                                                          .bodyText1Family,
+                                                          .bodyMediumFamily,
                                                   color: FlutterFlowTheme.of(
                                                           context)
-                                                      .primaryColor,
+                                                      .primary,
                                                   useGoogleFonts: GoogleFonts
                                                           .asMap()
                                                       .containsKey(
                                                           FlutterFlowTheme.of(
                                                                   context)
-                                                              .bodyText1Family),
+                                                              .bodyMediumFamily),
                                                 ),
                                           ),
                                         ],

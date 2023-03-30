@@ -178,7 +178,7 @@ class _FortunatableWidgetState extends State<FortunatableWidget>
                                             'dv5rd5yj' /* Hello World */,
                                           ),
                                           style: FlutterFlowTheme.of(context)
-                                              .bodyText1,
+                                              .bodyMedium,
                                         ),
                                       ),
                                     ),
@@ -199,18 +199,18 @@ class _FortunatableWidgetState extends State<FortunatableWidget>
                                           ),
                                           textAlign: TextAlign.start,
                                           style: FlutterFlowTheme.of(context)
-                                              .bodyText1
+                                              .bodyMedium
                                               .override(
                                                 fontFamily:
                                                     FlutterFlowTheme.of(context)
-                                                        .bodyText1Family,
+                                                        .bodyMediumFamily,
                                                 fontSize: 10.0,
                                                 useGoogleFonts: GoogleFonts
                                                         .asMap()
                                                     .containsKey(
                                                         FlutterFlowTheme.of(
                                                                 context)
-                                                            .bodyText1Family),
+                                                            .bodyMediumFamily),
                                               ),
                                         ),
                                       ),
@@ -230,18 +230,18 @@ class _FortunatableWidgetState extends State<FortunatableWidget>
                                             'w1k7gl91' /* colombia */,
                                           ),
                                           style: FlutterFlowTheme.of(context)
-                                              .bodyText1
+                                              .bodyMedium
                                               .override(
                                                 fontFamily:
                                                     FlutterFlowTheme.of(context)
-                                                        .bodyText1Family,
+                                                        .bodyMediumFamily,
                                                 fontSize: 10.0,
                                                 useGoogleFonts: GoogleFonts
                                                         .asMap()
                                                     .containsKey(
                                                         FlutterFlowTheme.of(
                                                                 context)
-                                                            .bodyText1Family),
+                                                            .bodyMediumFamily),
                                               ),
                                         ),
                                       ),
@@ -282,18 +282,18 @@ class _FortunatableWidgetState extends State<FortunatableWidget>
                                           ),
                                           textAlign: TextAlign.start,
                                           style: FlutterFlowTheme.of(context)
-                                              .bodyText1
+                                              .bodyMedium
                                               .override(
                                                 fontFamily:
                                                     FlutterFlowTheme.of(context)
-                                                        .bodyText1Family,
+                                                        .bodyMediumFamily,
                                                 fontSize: 10.0,
                                                 useGoogleFonts: GoogleFonts
                                                         .asMap()
                                                     .containsKey(
                                                         FlutterFlowTheme.of(
                                                                 context)
-                                                            .bodyText1Family),
+                                                            .bodyMediumFamily),
                                               ),
                                         ),
                                       ),
@@ -314,18 +314,18 @@ class _FortunatableWidgetState extends State<FortunatableWidget>
                                           ),
                                           textAlign: TextAlign.start,
                                           style: FlutterFlowTheme.of(context)
-                                              .bodyText1
+                                              .bodyMedium
                                               .override(
                                                 fontFamily:
                                                     FlutterFlowTheme.of(context)
-                                                        .bodyText1Family,
+                                                        .bodyMediumFamily,
                                                 fontSize: 10.0,
                                                 useGoogleFonts: GoogleFonts
                                                         .asMap()
                                                     .containsKey(
                                                         FlutterFlowTheme.of(
                                                                 context)
-                                                            .bodyText1Family),
+                                                            .bodyMediumFamily),
                                               ),
                                         ),
                                       ),
@@ -385,18 +385,18 @@ class _FortunatableWidgetState extends State<FortunatableWidget>
                                             's3j4ov79' /*  */,
                                           ),
                                           style: FlutterFlowTheme.of(context)
-                                              .bodyText1
+                                              .bodyMedium
                                               .override(
                                                 fontFamily:
                                                     FlutterFlowTheme.of(context)
-                                                        .bodyText1Family,
+                                                        .bodyMediumFamily,
                                                 fontSize: 10.0,
                                                 useGoogleFonts: GoogleFonts
                                                         .asMap()
                                                     .containsKey(
                                                         FlutterFlowTheme.of(
                                                                 context)
-                                                            .bodyText1Family),
+                                                            .bodyMediumFamily),
                                               ),
                                         ),
                                       ),
@@ -416,18 +416,18 @@ class _FortunatableWidgetState extends State<FortunatableWidget>
                                             'ib0zckt1' /* colombia */,
                                           ),
                                           style: FlutterFlowTheme.of(context)
-                                              .bodyText1
+                                              .bodyMedium
                                               .override(
                                                 fontFamily:
                                                     FlutterFlowTheme.of(context)
-                                                        .bodyText1Family,
+                                                        .bodyMediumFamily,
                                                 fontSize: 10.0,
                                                 useGoogleFonts: GoogleFonts
                                                         .asMap()
                                                     .containsKey(
                                                         FlutterFlowTheme.of(
                                                                 context)
-                                                            .bodyText1Family),
+                                                            .bodyMediumFamily),
                                               ),
                                         ),
                                       ),
@@ -467,18 +467,18 @@ class _FortunatableWidgetState extends State<FortunatableWidget>
                                             '628uycfx' /* colombia */,
                                           ),
                                           style: FlutterFlowTheme.of(context)
-                                              .bodyText1
+                                              .bodyMedium
                                               .override(
                                                 fontFamily:
                                                     FlutterFlowTheme.of(context)
-                                                        .bodyText1Family,
+                                                        .bodyMediumFamily,
                                                 fontSize: 10.0,
                                                 useGoogleFonts: GoogleFonts
                                                         .asMap()
                                                     .containsKey(
                                                         FlutterFlowTheme.of(
                                                                 context)
-                                                            .bodyText1Family),
+                                                            .bodyMediumFamily),
                                               ),
                                         ),
                                       ),
@@ -498,18 +498,18 @@ class _FortunatableWidgetState extends State<FortunatableWidget>
                                             'rxilo493' /*  */,
                                           ),
                                           style: FlutterFlowTheme.of(context)
-                                              .bodyText1
+                                              .bodyMedium
                                               .override(
                                                 fontFamily:
                                                     FlutterFlowTheme.of(context)
-                                                        .bodyText1Family,
+                                                        .bodyMediumFamily,
                                                 fontSize: 10.0,
                                                 useGoogleFonts: GoogleFonts
                                                         .asMap()
                                                     .containsKey(
                                                         FlutterFlowTheme.of(
                                                                 context)
-                                                            .bodyText1Family),
+                                                            .bodyMediumFamily),
                                               ),
                                         ),
                                       ),
@@ -629,7 +629,7 @@ class _FortunatableWidgetState extends State<FortunatableWidget>
                                                         style:
                                                             FlutterFlowTheme.of(
                                                                     context)
-                                                                .bodyText1,
+                                                                .bodyMedium,
                                                       ),
                                                     ),
                                                   ),
@@ -655,7 +655,7 @@ class _FortunatableWidgetState extends State<FortunatableWidget>
                                                         style:
                                                             FlutterFlowTheme.of(
                                                                     context)
-                                                                .bodyText1,
+                                                                .bodyMedium,
                                                       ),
                                                     ),
                                                   ),
@@ -717,7 +717,7 @@ class _FortunatableWidgetState extends State<FortunatableWidget>
                                                       style:
                                                           FlutterFlowTheme.of(
                                                                   context)
-                                                              .bodyText1,
+                                                              .bodyMedium,
                                                     ),
                                                   ),
                                                 ),
@@ -739,7 +739,7 @@ class _FortunatableWidgetState extends State<FortunatableWidget>
                                                       style:
                                                           FlutterFlowTheme.of(
                                                                   context)
-                                                              .bodyText1,
+                                                              .bodyMedium,
                                                     ),
                                                   ),
                                                 ),
@@ -760,7 +760,7 @@ class _FortunatableWidgetState extends State<FortunatableWidget>
                                                       style:
                                                           FlutterFlowTheme.of(
                                                                   context)
-                                                              .bodyText1,
+                                                              .bodyMedium,
                                                     ),
                                                   ),
                                                 ),
@@ -877,16 +877,16 @@ class _FortunatableWidgetState extends State<FortunatableWidget>
                                   ),
                                   textAlign: TextAlign.center,
                                   style: FlutterFlowTheme.of(context)
-                                      .bodyText1
+                                      .bodyMedium
                                       .override(
                                         fontFamily: FlutterFlowTheme.of(context)
-                                            .bodyText1Family,
+                                            .bodyMediumFamily,
                                         color: FlutterFlowTheme.of(context)
                                             .textColor,
                                         useGoogleFonts: GoogleFonts.asMap()
                                             .containsKey(
                                                 FlutterFlowTheme.of(context)
-                                                    .bodyText1Family),
+                                                    .bodyMediumFamily),
                                       ),
                                 ),
                               ),
@@ -1001,12 +1001,12 @@ class _FortunatableWidgetState extends State<FortunatableWidget>
                                                     textAlign: TextAlign.center,
                                                     style: FlutterFlowTheme.of(
                                                             context)
-                                                        .bodyText1
+                                                        .bodyMedium
                                                         .override(
                                                           fontFamily:
                                                               FlutterFlowTheme.of(
                                                                       context)
-                                                                  .bodyText1Family,
+                                                                  .bodyMediumFamily,
                                                           color: FlutterFlowTheme
                                                                   .of(context)
                                                               .black600,
@@ -1016,7 +1016,7 @@ class _FortunatableWidgetState extends State<FortunatableWidget>
                                                               .containsKey(
                                                                   FlutterFlowTheme.of(
                                                                           context)
-                                                                      .bodyText1Family),
+                                                                      .bodyMediumFamily),
                                                         ),
                                                   ),
                                                 ),
@@ -1113,12 +1113,12 @@ class _FortunatableWidgetState extends State<FortunatableWidget>
                                                     ),
                                                     style: FlutterFlowTheme.of(
                                                             context)
-                                                        .bodyText1
+                                                        .bodyMedium
                                                         .override(
                                                           fontFamily:
                                                               FlutterFlowTheme.of(
                                                                       context)
-                                                                  .bodyText1Family,
+                                                                  .bodyMediumFamily,
                                                           color: FlutterFlowTheme
                                                                   .of(context)
                                                               .black600,
@@ -1127,7 +1127,7 @@ class _FortunatableWidgetState extends State<FortunatableWidget>
                                                               .containsKey(
                                                                   FlutterFlowTheme.of(
                                                                           context)
-                                                                      .bodyText1Family),
+                                                                      .bodyMediumFamily),
                                                         ),
                                                   ),
                                                 ),
@@ -1218,12 +1218,12 @@ class _FortunatableWidgetState extends State<FortunatableWidget>
                                                     textAlign: TextAlign.center,
                                                     style: FlutterFlowTheme.of(
                                                             context)
-                                                        .bodyText1
+                                                        .bodyMedium
                                                         .override(
                                                           fontFamily:
                                                               FlutterFlowTheme.of(
                                                                       context)
-                                                                  .bodyText1Family,
+                                                                  .bodyMediumFamily,
                                                           color: FlutterFlowTheme
                                                                   .of(context)
                                                               .black600,
@@ -1233,7 +1233,7 @@ class _FortunatableWidgetState extends State<FortunatableWidget>
                                                               .containsKey(
                                                                   FlutterFlowTheme.of(
                                                                           context)
-                                                                      .bodyText1Family),
+                                                                      .bodyMediumFamily),
                                                         ),
                                                   ),
                                                 ),
@@ -1324,12 +1324,12 @@ class _FortunatableWidgetState extends State<FortunatableWidget>
                                                     ),
                                                     style: FlutterFlowTheme.of(
                                                             context)
-                                                        .bodyText1
+                                                        .bodyMedium
                                                         .override(
                                                           fontFamily:
                                                               FlutterFlowTheme.of(
                                                                       context)
-                                                                  .bodyText1Family,
+                                                                  .bodyMediumFamily,
                                                           color: FlutterFlowTheme
                                                                   .of(context)
                                                               .black600,
@@ -1339,7 +1339,7 @@ class _FortunatableWidgetState extends State<FortunatableWidget>
                                                               .containsKey(
                                                                   FlutterFlowTheme.of(
                                                                           context)
-                                                                      .bodyText1Family),
+                                                                      .bodyMediumFamily),
                                                         ),
                                                   ),
                                                 ),
@@ -1440,12 +1440,12 @@ class _FortunatableWidgetState extends State<FortunatableWidget>
                                                     textAlign: TextAlign.center,
                                                     style: FlutterFlowTheme.of(
                                                             context)
-                                                        .bodyText1
+                                                        .bodyMedium
                                                         .override(
                                                           fontFamily:
                                                               FlutterFlowTheme.of(
                                                                       context)
-                                                                  .bodyText1Family,
+                                                                  .bodyMediumFamily,
                                                           color: FlutterFlowTheme
                                                                   .of(context)
                                                               .black600,
@@ -1455,7 +1455,7 @@ class _FortunatableWidgetState extends State<FortunatableWidget>
                                                               .containsKey(
                                                                   FlutterFlowTheme.of(
                                                                           context)
-                                                                      .bodyText1Family),
+                                                                      .bodyMediumFamily),
                                                         ),
                                                   ),
                                                 ),
@@ -1533,12 +1533,12 @@ class _FortunatableWidgetState extends State<FortunatableWidget>
                                                     ),
                                                     style: FlutterFlowTheme.of(
                                                             context)
-                                                        .bodyText1
+                                                        .bodyMedium
                                                         .override(
                                                           fontFamily:
                                                               FlutterFlowTheme.of(
                                                                       context)
-                                                                  .bodyText1Family,
+                                                                  .bodyMediumFamily,
                                                           color: FlutterFlowTheme
                                                                   .of(context)
                                                               .primaryText,
@@ -1547,7 +1547,7 @@ class _FortunatableWidgetState extends State<FortunatableWidget>
                                                               .containsKey(
                                                                   FlutterFlowTheme.of(
                                                                           context)
-                                                                      .bodyText1Family),
+                                                                      .bodyMediumFamily),
                                                         ),
                                                   ),
                                                 ),
@@ -1594,12 +1594,12 @@ class _FortunatableWidgetState extends State<FortunatableWidget>
                                                     textAlign: TextAlign.center,
                                                     style: FlutterFlowTheme.of(
                                                             context)
-                                                        .bodyText1
+                                                        .bodyMedium
                                                         .override(
                                                           fontFamily:
                                                               FlutterFlowTheme.of(
                                                                       context)
-                                                                  .bodyText1Family,
+                                                                  .bodyMediumFamily,
                                                           color: FlutterFlowTheme
                                                                   .of(context)
                                                               .black600,
@@ -1608,7 +1608,7 @@ class _FortunatableWidgetState extends State<FortunatableWidget>
                                                               .containsKey(
                                                                   FlutterFlowTheme.of(
                                                                           context)
-                                                                      .bodyText1Family),
+                                                                      .bodyMediumFamily),
                                                         ),
                                                   ),
                                                 ),
@@ -1708,12 +1708,12 @@ class _FortunatableWidgetState extends State<FortunatableWidget>
                                                     ),
                                                     style: FlutterFlowTheme.of(
                                                             context)
-                                                        .bodyText1
+                                                        .bodyMedium
                                                         .override(
                                                           fontFamily:
                                                               FlutterFlowTheme.of(
                                                                       context)
-                                                                  .bodyText1Family,
+                                                                  .bodyMediumFamily,
                                                           color: FlutterFlowTheme
                                                                   .of(context)
                                                               .black600,
@@ -1722,7 +1722,7 @@ class _FortunatableWidgetState extends State<FortunatableWidget>
                                                               .containsKey(
                                                                   FlutterFlowTheme.of(
                                                                           context)
-                                                                      .bodyText1Family),
+                                                                      .bodyMediumFamily),
                                                         ),
                                                   ),
                                                 ),
@@ -1815,12 +1815,12 @@ class _FortunatableWidgetState extends State<FortunatableWidget>
                                                   textAlign: TextAlign.center,
                                                   style: FlutterFlowTheme.of(
                                                           context)
-                                                      .bodyText1
+                                                      .bodyMedium
                                                       .override(
                                                         fontFamily:
                                                             FlutterFlowTheme.of(
                                                                     context)
-                                                                .bodyText1Family,
+                                                                .bodyMediumFamily,
                                                         color:
                                                             FlutterFlowTheme.of(
                                                                     context)
@@ -1830,7 +1830,7 @@ class _FortunatableWidgetState extends State<FortunatableWidget>
                                                             .containsKey(
                                                                 FlutterFlowTheme.of(
                                                                         context)
-                                                                    .bodyText1Family),
+                                                                    .bodyMediumFamily),
                                                       ),
                                                 ),
                                               ),

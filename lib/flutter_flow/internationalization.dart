@@ -1600,13 +1600,9 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   },
   // paysave
   {
-    'whrcjhfl': {
-      'en': 'new credit card',
-      'es': 'nueva tarjeta de crédito',
-    },
     'g0ikv3hq': {
-      'en': 'Credit Card',
-      'es': 'Tarjeta de crédito',
+      'en': 'Credit or debit card',
+      'es': 'Tarjeta de crédito o débito',
     },
     '5mqvyqho': {
       'en': 'Your Name',
@@ -1625,6 +1621,10 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'PayPal',
     },
     'z1ktfa1y': {
+      'en': 'Mercado pago',
+      'es': 'mercado pago',
+    },
+    '1j01nnem': {
       'en': 'Apple Pay',
       'es': 'Aple pay',
     },
@@ -2003,10 +2003,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     '14rgm5u8': {
       'en': 'Add',
       'es': 'Agregar',
-    },
-    'aqlefi4q': {
-      'en': '',
-      'es': 'CONTINUAR',
     },
     'w1w93746': {
       'en': 'Home',

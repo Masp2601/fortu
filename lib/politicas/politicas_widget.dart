@@ -63,7 +63,7 @@ class _PoliticasWidgetState extends State<PoliticasWidget> {
                       image: DecorationImage(
                         fit: BoxFit.fitWidth,
                         image: Image.asset(
-                          'assets/images/INICIO_DE_SESION.png',
+                          'assets/images/policy.png',
                         ).image,
                       ),
                     ),
@@ -149,11 +149,11 @@ class _PoliticasWidgetState extends State<PoliticasWidget> {
                                                               TextAlign.center,
                                                           style: FlutterFlowTheme
                                                                   .of(context)
-                                                              .title3
+                                                              .headlineSmall
                                                               .override(
                                                                 fontFamily: FlutterFlowTheme.of(
                                                                         context)
-                                                                    .title3Family,
+                                                                    .headlineSmallFamily,
                                                                 color: FlutterFlowTheme.of(
                                                                         context)
                                                                     .primaryBtnText,
@@ -161,7 +161,7 @@ class _PoliticasWidgetState extends State<PoliticasWidget> {
                                                                         .asMap()
                                                                     .containsKey(
                                                                         FlutterFlowTheme.of(context)
-                                                                            .title3Family),
+                                                                            .headlineSmallFamily),
                                                               ),
                                                         ),
                                                       ),
@@ -212,7 +212,7 @@ class _PoliticasWidgetState extends State<PoliticasWidget> {
                                                 ],
                                                 style:
                                                     FlutterFlowTheme.of(context)
-                                                        .bodyText1,
+                                                        .bodyMedium,
                                               ),
                                               textAlign: TextAlign.start,
                                             ),

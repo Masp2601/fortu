@@ -178,7 +178,7 @@ class _MYCardWidgetState extends State<MYCardWidget>
             },
           );
         },
-        backgroundColor: FlutterFlowTheme.of(context).tertiaryColor,
+        backgroundColor: FlutterFlowTheme.of(context).tertiary,
         elevation: 8.0,
         child: Icon(
           Icons.add_rounded,
@@ -199,7 +199,7 @@ class _MYCardWidgetState extends State<MYCardWidget>
                   FFLocalizations.of(context).getText(
                     'xn2so8km' /* My Card */,
                   ),
-                  style: FlutterFlowTheme.of(context).title1,
+                  style: FlutterFlowTheme.of(context).displaySmall,
                 ),
                 actions: [],
                 centerTitle: false,
@@ -265,16 +265,16 @@ class _MYCardWidgetState extends State<MYCardWidget>
                                     '6t7n9ugd' /* Balance */,
                                   ),
                                   style: FlutterFlowTheme.of(context)
-                                      .bodyText1
+                                      .bodyMedium
                                       .override(
                                         fontFamily: FlutterFlowTheme.of(context)
-                                            .bodyText1Family,
+                                            .bodyMediumFamily,
                                         color: FlutterFlowTheme.of(context)
                                             .textColor,
                                         useGoogleFonts: GoogleFonts.asMap()
                                             .containsKey(
                                                 FlutterFlowTheme.of(context)
-                                                    .bodyText1Family),
+                                                    .bodyMediumFamily),
                                       ),
                                 ),
                               ],
@@ -291,17 +291,17 @@ class _MYCardWidgetState extends State<MYCardWidget>
                                     'h3086ma4' /* $7,630 */,
                                   ),
                                   style: FlutterFlowTheme.of(context)
-                                      .title1
+                                      .displaySmall
                                       .override(
                                         fontFamily: FlutterFlowTheme.of(context)
-                                            .title1Family,
+                                            .displaySmallFamily,
                                         color: FlutterFlowTheme.of(context)
                                             .textColor,
                                         fontSize: 32.0,
                                         useGoogleFonts: GoogleFonts.asMap()
                                             .containsKey(
                                                 FlutterFlowTheme.of(context)
-                                                    .title1Family),
+                                                    .displaySmallFamily),
                                       ),
                                 ),
                               ],
@@ -319,7 +319,7 @@ class _MYCardWidgetState extends State<MYCardWidget>
                                     'lr97k2rc' /* **** 0149 */,
                                   ),
                                   style: FlutterFlowTheme.of(context)
-                                      .bodyText1
+                                      .bodyMedium
                                       .override(
                                         fontFamily: 'Roboto Mono',
                                         color: FlutterFlowTheme.of(context)
@@ -327,7 +327,7 @@ class _MYCardWidgetState extends State<MYCardWidget>
                                         useGoogleFonts: GoogleFonts.asMap()
                                             .containsKey(
                                                 FlutterFlowTheme.of(context)
-                                                    .bodyText1Family),
+                                                    .bodyMediumFamily),
                                       ),
                                 ),
                                 Text(
@@ -335,7 +335,7 @@ class _MYCardWidgetState extends State<MYCardWidget>
                                     'l9racj60' /* 05/25 */,
                                   ),
                                   style: FlutterFlowTheme.of(context)
-                                      .bodyText1
+                                      .bodyMedium
                                       .override(
                                         fontFamily: 'Roboto Mono',
                                         color: FlutterFlowTheme.of(context)
@@ -343,7 +343,7 @@ class _MYCardWidgetState extends State<MYCardWidget>
                                         useGoogleFonts: GoogleFonts.asMap()
                                             .containsKey(
                                                 FlutterFlowTheme.of(context)
-                                                    .bodyText1Family),
+                                                    .bodyMediumFamily),
                                       ),
                                 ),
                               ],
@@ -387,7 +387,7 @@ class _MYCardWidgetState extends State<MYCardWidget>
                                 '9b0j67se' /* Income */,
                               ),
                               textAlign: TextAlign.start,
-                              style: FlutterFlowTheme.of(context).bodyText2,
+                              style: FlutterFlowTheme.of(context).bodySmall,
                             ),
                             Padding(
                               padding: EdgeInsetsDirectional.fromSTEB(
@@ -398,17 +398,17 @@ class _MYCardWidgetState extends State<MYCardWidget>
                                 ),
                                 textAlign: TextAlign.start,
                                 style: FlutterFlowTheme.of(context)
-                                    .title1
+                                    .displaySmall
                                     .override(
                                       fontFamily: FlutterFlowTheme.of(context)
-                                          .title1Family,
-                                      color: FlutterFlowTheme.of(context)
-                                          .tertiaryColor,
+                                          .displaySmallFamily,
+                                      color:
+                                          FlutterFlowTheme.of(context).tertiary,
                                       fontSize: 32.0,
                                       useGoogleFonts: GoogleFonts.asMap()
                                           .containsKey(
                                               FlutterFlowTheme.of(context)
-                                                  .title1Family),
+                                                  .displaySmallFamily),
                                     ),
                               ),
                             ),
@@ -429,23 +429,23 @@ class _MYCardWidgetState extends State<MYCardWidget>
                                     ),
                                     textAlign: TextAlign.start,
                                     style: FlutterFlowTheme.of(context)
-                                        .bodyText1
+                                        .bodyMedium
                                         .override(
                                           fontFamily:
                                               FlutterFlowTheme.of(context)
-                                                  .bodyText1Family,
+                                                  .bodyMediumFamily,
                                           color: FlutterFlowTheme.of(context)
-                                              .tertiaryColor,
+                                              .tertiary,
                                           useGoogleFonts: GoogleFonts.asMap()
                                               .containsKey(
                                                   FlutterFlowTheme.of(context)
-                                                      .bodyText1Family),
+                                                      .bodyMediumFamily),
                                         ),
                                   ),
                                   Icon(
                                     Icons.trending_up_rounded,
-                                    color: FlutterFlowTheme.of(context)
-                                        .tertiaryColor,
+                                    color:
+                                        FlutterFlowTheme.of(context).tertiary,
                                     size: 24.0,
                                   ),
                                 ],
@@ -482,7 +482,7 @@ class _MYCardWidgetState extends State<MYCardWidget>
                                 'mggh8wu7' /* Spending */,
                               ),
                               textAlign: TextAlign.start,
-                              style: FlutterFlowTheme.of(context).bodyText2,
+                              style: FlutterFlowTheme.of(context).bodySmall,
                             ),
                             Padding(
                               padding: EdgeInsetsDirectional.fromSTEB(
@@ -493,17 +493,17 @@ class _MYCardWidgetState extends State<MYCardWidget>
                                 ),
                                 textAlign: TextAlign.start,
                                 style: FlutterFlowTheme.of(context)
-                                    .title1
+                                    .displaySmall
                                     .override(
                                       fontFamily: FlutterFlowTheme.of(context)
-                                          .title1Family,
+                                          .displaySmallFamily,
                                       color:
                                           FlutterFlowTheme.of(context).errorRed,
                                       fontSize: 32.0,
                                       useGoogleFonts: GoogleFonts.asMap()
                                           .containsKey(
                                               FlutterFlowTheme.of(context)
-                                                  .title1Family),
+                                                  .displaySmallFamily),
                                     ),
                               ),
                             ),
@@ -524,17 +524,17 @@ class _MYCardWidgetState extends State<MYCardWidget>
                                     ),
                                     textAlign: TextAlign.start,
                                     style: FlutterFlowTheme.of(context)
-                                        .bodyText1
+                                        .bodyMedium
                                         .override(
                                           fontFamily:
                                               FlutterFlowTheme.of(context)
-                                                  .bodyText1Family,
+                                                  .bodyMediumFamily,
                                           color: FlutterFlowTheme.of(context)
                                               .errorRed,
                                           useGoogleFonts: GoogleFonts.asMap()
                                               .containsKey(
                                                   FlutterFlowTheme.of(context)
-                                                      .bodyText1Family),
+                                                      .bodyMediumFamily),
                                         ),
                                   ),
                                   Icon(
@@ -578,7 +578,7 @@ class _MYCardWidgetState extends State<MYCardWidget>
                             FFLocalizations.of(context).getText(
                               'yet7zk5d' /* Quick Service */,
                             ),
-                            style: FlutterFlowTheme.of(context).bodyText2,
+                            style: FlutterFlowTheme.of(context).bodySmall,
                           ),
                         ],
                       ),
@@ -634,7 +634,7 @@ class _MYCardWidgetState extends State<MYCardWidget>
                                         '8bnd6lco' /* Transfer */,
                                       ),
                                       style: FlutterFlowTheme.of(context)
-                                          .bodyText1,
+                                          .bodyMedium,
                                     ),
                                   ),
                                 ],
@@ -689,7 +689,7 @@ class _MYCardWidgetState extends State<MYCardWidget>
                                         'roobc02h' /* Pause Card */,
                                       ),
                                       style: FlutterFlowTheme.of(context)
-                                          .bodyText1,
+                                          .bodyMedium,
                                     ),
                                   ),
                                 ],
@@ -709,7 +709,7 @@ class _MYCardWidgetState extends State<MYCardWidget>
                             FFLocalizations.of(context).getText(
                               '27pb7ji4' /* Transaction */,
                             ),
-                            style: FlutterFlowTheme.of(context).bodyText2,
+                            style: FlutterFlowTheme.of(context).bodySmall,
                           ),
                         ],
                       ),
@@ -816,7 +816,7 @@ class _MYCardWidgetState extends State<MYCardWidget>
                                                 Icons.monetization_on_rounded,
                                                 color:
                                                     FlutterFlowTheme.of(context)
-                                                        .tertiaryColor,
+                                                        .tertiary,
                                                 size: 24.0,
                                               ),
                                             ),
@@ -839,12 +839,12 @@ class _MYCardWidgetState extends State<MYCardWidget>
                                                       .transactionName!,
                                                   style: FlutterFlowTheme.of(
                                                           context)
-                                                      .subtitle1
+                                                      .titleMedium
                                                       .override(
                                                         fontFamily:
                                                             FlutterFlowTheme.of(
                                                                     context)
-                                                                .subtitle1Family,
+                                                                .titleMediumFamily,
                                                         color:
                                                             FlutterFlowTheme.of(
                                                                     context)
@@ -854,7 +854,7 @@ class _MYCardWidgetState extends State<MYCardWidget>
                                                             .containsKey(
                                                                 FlutterFlowTheme.of(
                                                                         context)
-                                                                    .subtitle1Family),
+                                                                    .titleMediumFamily),
                                                       ),
                                                 ),
                                                 Padding(
@@ -868,7 +868,7 @@ class _MYCardWidgetState extends State<MYCardWidget>
                                                     ),
                                                     style: FlutterFlowTheme.of(
                                                             context)
-                                                        .bodyText1,
+                                                        .bodyMedium,
                                                   ),
                                                 ),
                                               ],
@@ -892,21 +892,21 @@ class _MYCardWidgetState extends State<MYCardWidget>
                                                 textAlign: TextAlign.end,
                                                 style:
                                                     FlutterFlowTheme.of(context)
-                                                        .subtitle2
+                                                        .titleSmall
                                                         .override(
                                                           fontFamily:
                                                               FlutterFlowTheme.of(
                                                                       context)
-                                                                  .subtitle2Family,
+                                                                  .titleSmallFamily,
                                                           color: FlutterFlowTheme
                                                                   .of(context)
-                                                              .tertiaryColor,
+                                                              .tertiary,
                                                           useGoogleFonts: GoogleFonts
                                                                   .asMap()
                                                               .containsKey(
                                                                   FlutterFlowTheme.of(
                                                                           context)
-                                                                      .subtitle2Family),
+                                                                      .titleSmallFamily),
                                                         ),
                                               ),
                                               Padding(
@@ -925,7 +925,7 @@ class _MYCardWidgetState extends State<MYCardWidget>
                                                   textAlign: TextAlign.end,
                                                   style: FlutterFlowTheme.of(
                                                           context)
-                                                      .bodyText1,
+                                                      .bodyMedium,
                                                 ),
                                               ),
                                             ],

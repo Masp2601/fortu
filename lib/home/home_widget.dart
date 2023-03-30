@@ -96,6 +96,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                         logFirebaseEvent('Image_bottom_sheet');
                                         await showModalBottomSheet(
                                           isScrollControlled: true,
+                                          backgroundColor: Color(0xFFFF0026),
                                           enableDrag: false,
                                           context: context,
                                           builder: (context) {
@@ -148,7 +149,8 @@ class _HomeWidgetState extends State<HomeWidget> {
                                     ,
                                   ),
                                   textAlign: TextAlign.center,
-                                  style: FlutterFlowTheme.of(context).bodyText1,
+                                  style:
+                                      FlutterFlowTheme.of(context).bodyMedium,
                                 ),
                               ],
                             ),
@@ -187,30 +189,30 @@ class _HomeWidgetState extends State<HomeWidget> {
                                     height: 50.0,
                                     searchHintTextStyle: FlutterFlowTheme.of(
                                             context)
-                                        .bodyText1
+                                        .bodyMedium
                                         .override(
                                           fontFamily:
                                               FlutterFlowTheme.of(context)
-                                                  .bodyText1Family,
+                                                  .bodyMediumFamily,
                                           color: FlutterFlowTheme.of(context)
                                               .textColor,
                                           useGoogleFonts: GoogleFonts.asMap()
                                               .containsKey(
                                                   FlutterFlowTheme.of(context)
-                                                      .bodyText1Family),
+                                                      .bodyMediumFamily),
                                         ),
                                     textStyle: FlutterFlowTheme.of(context)
-                                        .bodyText1
+                                        .bodyMedium
                                         .override(
                                           fontFamily:
                                               FlutterFlowTheme.of(context)
-                                                  .bodyText1Family,
+                                                  .bodyMediumFamily,
                                           color: FlutterFlowTheme.of(context)
                                               .textColor,
                                           useGoogleFonts: GoogleFonts.asMap()
                                               .containsKey(
                                                   FlutterFlowTheme.of(context)
-                                                      .bodyText1Family),
+                                                      .bodyMediumFamily),
                                         ),
                                     hintText:
                                         FFLocalizations.of(context).getText(
@@ -263,17 +265,18 @@ class _HomeWidgetState extends State<HomeWidget> {
                                         0.0, 0.0, 0.0, 0.0),
                                     color: Color(0xFF471212),
                                     textStyle: FlutterFlowTheme.of(context)
-                                        .subtitle2
+                                        .titleSmall
                                         .override(
                                           fontFamily:
                                               FlutterFlowTheme.of(context)
-                                                  .subtitle2Family,
+                                                  .titleSmallFamily,
                                           color: Colors.white,
                                           useGoogleFonts: GoogleFonts.asMap()
                                               .containsKey(
                                                   FlutterFlowTheme.of(context)
-                                                      .subtitle2Family),
+                                                      .titleSmallFamily),
                                         ),
+                                    elevation: 2.0,
                                     borderSide: BorderSide(
                                       color: Color(0xFFFF0026),
                                       width: 1.0,
@@ -305,17 +308,18 @@ class _HomeWidgetState extends State<HomeWidget> {
                                               0.0, 0.0, 0.0, 0.0),
                                       color: Color(0xFF471212),
                                       textStyle: FlutterFlowTheme.of(context)
-                                          .subtitle2
+                                          .titleSmall
                                           .override(
                                             fontFamily:
                                                 FlutterFlowTheme.of(context)
-                                                    .subtitle2Family,
+                                                    .titleSmallFamily,
                                             color: Colors.white,
                                             useGoogleFonts: GoogleFonts.asMap()
                                                 .containsKey(
                                                     FlutterFlowTheme.of(context)
-                                                        .subtitle2Family),
+                                                        .titleSmallFamily),
                                           ),
+                                      elevation: 2.0,
                                       borderSide: BorderSide(
                                         color: Color(0xFFFF0026),
                                         width: 1.0,
@@ -349,16 +353,16 @@ class _HomeWidgetState extends State<HomeWidget> {
                                       'nyqsxeqs' /* Read Game Rules */,
                                     ),
                                     style: FlutterFlowTheme.of(context)
-                                        .bodyText1
+                                        .bodyMedium
                                         .override(
                                           fontFamily:
                                               FlutterFlowTheme.of(context)
-                                                  .bodyText1Family,
+                                                  .bodyMediumFamily,
                                           color: Color(0xFF38F205),
                                           useGoogleFonts: GoogleFonts.asMap()
                                               .containsKey(
                                                   FlutterFlowTheme.of(context)
-                                                      .bodyText1Family),
+                                                      .bodyMediumFamily),
                                         ),
                                   ),
                                 ),

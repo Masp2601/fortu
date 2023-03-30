@@ -1,6 +1,5 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -127,16 +126,16 @@ class _ThereismethodWidgetState extends State<ThereismethodWidget> {
                                         '14rgm5u8' /* Add */,
                                       ),
                                       style: FlutterFlowTheme.of(context)
-                                          .bodyText1
+                                          .bodyMedium
                                           .override(
                                             fontFamily:
                                                 FlutterFlowTheme.of(context)
-                                                    .bodyText1Family,
+                                                    .bodyMediumFamily,
                                             color: Color(0xFF4772FA),
                                             useGoogleFonts: GoogleFonts.asMap()
                                                 .containsKey(
                                                     FlutterFlowTheme.of(context)
-                                                        .bodyText1Family),
+                                                        .bodyMediumFamily),
                                           ),
                                     ),
                                   ),
@@ -167,13 +166,20 @@ class _ThereismethodWidgetState extends State<ThereismethodWidget> {
                                           child: Padding(
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
-                                                    0.0, 12.0, 0.0, 0.0),
+                                                    95.0, 290.0, 0.0, 0.0),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.max,
                                               children: [
-                                                Image.asset(
-                                                  'assets/images/credit-card_(1)_1.png',
-                                                  fit: BoxFit.cover,
+                                                Expanded(
+                                                  child: Align(
+                                                    alignment:
+                                                        AlignmentDirectional(
+                                                            0.0, -0.3),
+                                                    child: Image.asset(
+                                                      'assets/images/icon.png',
+                                                      fit: BoxFit.cover,
+                                                    ),
+                                                  ),
                                                 ),
                                                 Image.asset(
                                                   'assets/images/y20dh_',
@@ -189,62 +195,30 @@ class _ThereismethodWidgetState extends State<ThereismethodWidget> {
                                   ),
                                 ),
                               ),
-                            if (responsiveVisibility(
-                              context: context,
-                              tabletLandscape: false,
-                              desktop: false,
-                            ))
-                              Expanded(
-                                child: Align(
-                                  alignment: AlignmentDirectional(0.05, -5.0),
-                                  child: Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
-                                        0.0, 8.0, 0.0, 8.0),
-                                    child: FFButtonWidget(
-                                      onPressed: () {
-                                        print('Button-Login pressed ...');
-                                      },
-                                      text: FFLocalizations.of(context).getText(
-                                        'aqlefi4q' /*  */,
-                                      ),
-                                      options: FFButtonOptions(
-                                        width: 137.1,
-                                        height: 50.0,
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            0.0, 0.0, 0.0, 0.0),
-                                        iconPadding:
-                                            EdgeInsetsDirectional.fromSTEB(
-                                                0.0, 0.0, 0.0, 0.0),
-                                        color: FlutterFlowTheme.of(context)
-                                            .background,
-                                        textStyle: FlutterFlowTheme.of(context)
-                                            .subtitle2
-                                            .override(
-                                              fontFamily:
-                                                  FlutterFlowTheme.of(context)
-                                                      .subtitle2Family,
-                                              color:
-                                                  FlutterFlowTheme.of(context)
-                                                      .textColor,
-                                              useGoogleFonts:
-                                                  GoogleFonts.asMap()
-                                                      .containsKey(
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .subtitle2Family),
-                                            ),
-                                        elevation: 3.0,
-                                        borderSide: BorderSide(
-                                          color: Color(0xDAFF0F13),
-                                          width: 1.0,
-                                        ),
-                                        borderRadius:
-                                            BorderRadius.circular(30.0),
-                                      ),
-                                    ),
+                            Expanded(
+                              child: Align(
+                                alignment: AlignmentDirectional(0.0, -1.0),
+                                child: Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      15.0, 0.0, 15.0, 0.0),
+                                  child: Row(
+                                    mainAxisSize: MainAxisSize.max,
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [],
                                   ),
                                 ),
                               ),
+                            ),
+                            Expanded(
+                              child: Align(
+                                alignment: AlignmentDirectional(0.0, -2.9),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [],
+                                ),
+                              ),
+                            ),
                             Padding(
                               padding: EdgeInsetsDirectional.fromSTEB(
                                   24.0, 24.0, 0.0, 20.0),

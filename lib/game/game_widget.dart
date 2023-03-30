@@ -55,7 +55,7 @@ class _GameWidgetState extends State<GameWidget> {
               image: DecorationImage(
                 fit: BoxFit.cover,
                 image: Image.asset(
-                  'assets/images/INICIO_DE_SESION.png',
+                  'assets/images/game.png',
                 ).image,
               ),
             ),
@@ -70,15 +70,7 @@ class _GameWidgetState extends State<GameWidget> {
                 child: Container(
                   width: 100.0,
                   height: 100.0,
-                  decoration: BoxDecoration(
-                    color: Color(0x990F1113),
-                    image: DecorationImage(
-                      fit: BoxFit.cover,
-                      image: Image.asset(
-                        'assets/images/INICIO_DE_SESION.png',
-                      ).image,
-                    ),
-                  ),
+                  decoration: BoxDecoration(),
                   child: Visibility(
                     visible: responsiveVisibility(
                       context: context,
@@ -171,7 +163,7 @@ class _GameWidgetState extends State<GameWidget> {
                                         '68vn95yr' /* PESOS COLOMBIANOS */,
                                       ),
                                       style: FlutterFlowTheme.of(context)
-                                          .bodyText1,
+                                          .bodyMedium,
                                     ),
                                   ],
                                 ),
@@ -367,7 +359,7 @@ class _GameWidgetState extends State<GameWidget> {
                                             '1u2sbzcx' /* Hello World */,
                                           ),
                                           style: FlutterFlowTheme.of(context)
-                                              .bodyText1,
+                                              .bodyMedium,
                                         ),
                                       ),
                                       Align(
@@ -382,19 +374,19 @@ class _GameWidgetState extends State<GameWidget> {
                                               'bnom62z7' /* PLAY */,
                                             ),
                                             style: FlutterFlowTheme.of(context)
-                                                .bodyText1
+                                                .bodyMedium
                                                 .override(
                                                   fontFamily:
                                                       FlutterFlowTheme.of(
                                                               context)
-                                                          .bodyText1Family,
+                                                          .bodyMediumFamily,
                                                   color: Colors.black,
                                                   useGoogleFonts: GoogleFonts
                                                           .asMap()
                                                       .containsKey(
                                                           FlutterFlowTheme.of(
                                                                   context)
-                                                              .bodyText1Family),
+                                                              .bodyMediumFamily),
                                                 ),
                                           ),
                                         ),
@@ -411,19 +403,19 @@ class _GameWidgetState extends State<GameWidget> {
                                               '2r200ik8' /* Hello World */,
                                             ),
                                             style: FlutterFlowTheme.of(context)
-                                                .bodyText1
+                                                .bodyMedium
                                                 .override(
                                                   fontFamily:
                                                       FlutterFlowTheme.of(
                                                               context)
-                                                          .bodyText1Family,
+                                                          .bodyMediumFamily,
                                                   color: Colors.black,
                                                   useGoogleFonts: GoogleFonts
                                                           .asMap()
                                                       .containsKey(
                                                           FlutterFlowTheme.of(
                                                                   context)
-                                                              .bodyText1Family),
+                                                              .bodyMediumFamily),
                                                 ),
                                           ),
                                         ),
@@ -440,19 +432,19 @@ class _GameWidgetState extends State<GameWidget> {
                                               'lb858kc6' /* Hello World */,
                                             ),
                                             style: FlutterFlowTheme.of(context)
-                                                .bodyText1
+                                                .bodyMedium
                                                 .override(
                                                   fontFamily:
                                                       FlutterFlowTheme.of(
                                                               context)
-                                                          .bodyText1Family,
+                                                          .bodyMediumFamily,
                                                   color: Colors.black,
                                                   useGoogleFonts: GoogleFonts
                                                           .asMap()
                                                       .containsKey(
                                                           FlutterFlowTheme.of(
                                                                   context)
-                                                              .bodyText1Family),
+                                                              .bodyMediumFamily),
                                                 ),
                                           ),
                                         ),
@@ -469,19 +461,19 @@ class _GameWidgetState extends State<GameWidget> {
                                               'g5ck6tig' /* PLAY */,
                                             ),
                                             style: FlutterFlowTheme.of(context)
-                                                .bodyText1
+                                                .bodyMedium
                                                 .override(
                                                   fontFamily:
                                                       FlutterFlowTheme.of(
                                                               context)
-                                                          .bodyText1Family,
+                                                          .bodyMediumFamily,
                                                   color: Colors.black,
                                                   useGoogleFonts: GoogleFonts
                                                           .asMap()
                                                       .containsKey(
                                                           FlutterFlowTheme.of(
                                                                   context)
-                                                              .bodyText1Family),
+                                                              .bodyMediumFamily),
                                                 ),
                                           ),
                                         ),
@@ -498,19 +490,19 @@ class _GameWidgetState extends State<GameWidget> {
                                               '7ctyfhxa' /* PLAY */,
                                             ),
                                             style: FlutterFlowTheme.of(context)
-                                                .bodyText1
+                                                .bodyMedium
                                                 .override(
                                                   fontFamily:
                                                       FlutterFlowTheme.of(
                                                               context)
-                                                          .bodyText1Family,
+                                                          .bodyMediumFamily,
                                                   color: Colors.black,
                                                   useGoogleFonts: GoogleFonts
                                                           .asMap()
                                                       .containsKey(
                                                           FlutterFlowTheme.of(
                                                                   context)
-                                                              .bodyText1Family),
+                                                              .bodyMediumFamily),
                                                 ),
                                           ),
                                         ),
@@ -533,7 +525,8 @@ class _GameWidgetState extends State<GameWidget> {
                                     '9jfa6nhu' /*  */,
                                   ),
                                   textAlign: TextAlign.center,
-                                  style: FlutterFlowTheme.of(context).bodyText1,
+                                  style:
+                                      FlutterFlowTheme.of(context).bodyMedium,
                                 ),
                               ],
                             ),
@@ -747,19 +740,19 @@ class _GameWidgetState extends State<GameWidget> {
                                               ),
                                               style:
                                                   FlutterFlowTheme.of(context)
-                                                      .bodyText1
+                                                      .bodyMedium
                                                       .override(
                                                         fontFamily:
                                                             FlutterFlowTheme.of(
                                                                     context)
-                                                                .bodyText1Family,
+                                                                .bodyMediumFamily,
                                                         color: Colors.black,
                                                         useGoogleFonts: GoogleFonts
                                                                 .asMap()
                                                             .containsKey(
                                                                 FlutterFlowTheme.of(
                                                                         context)
-                                                                    .bodyText1Family),
+                                                                    .bodyMediumFamily),
                                                       ),
                                             ),
                                           ),
@@ -773,19 +766,19 @@ class _GameWidgetState extends State<GameWidget> {
                                               ),
                                               style:
                                                   FlutterFlowTheme.of(context)
-                                                      .bodyText1
+                                                      .bodyMedium
                                                       .override(
                                                         fontFamily:
                                                             FlutterFlowTheme.of(
                                                                     context)
-                                                                .bodyText1Family,
+                                                                .bodyMediumFamily,
                                                         color: Colors.black,
                                                         useGoogleFonts: GoogleFonts
                                                                 .asMap()
                                                             .containsKey(
                                                                 FlutterFlowTheme.of(
                                                                         context)
-                                                                    .bodyText1Family),
+                                                                    .bodyMediumFamily),
                                                       ),
                                             ),
                                           ),
@@ -799,19 +792,19 @@ class _GameWidgetState extends State<GameWidget> {
                                               ),
                                               style:
                                                   FlutterFlowTheme.of(context)
-                                                      .bodyText1
+                                                      .bodyMedium
                                                       .override(
                                                         fontFamily:
                                                             FlutterFlowTheme.of(
                                                                     context)
-                                                                .bodyText1Family,
+                                                                .bodyMediumFamily,
                                                         color: Colors.black,
                                                         useGoogleFonts: GoogleFonts
                                                                 .asMap()
                                                             .containsKey(
                                                                 FlutterFlowTheme.of(
                                                                         context)
-                                                                    .bodyText1Family),
+                                                                    .bodyMediumFamily),
                                                       ),
                                             ),
                                           ),

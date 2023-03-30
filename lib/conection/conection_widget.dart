@@ -57,7 +57,7 @@ class _ConectionWidgetState extends State<ConectionWidget> {
               image: DecorationImage(
                 fit: BoxFit.cover,
                 image: Image.asset(
-                  'assets/images/INICIO_DE_SESION.png',
+                  'assets/images/conect.png',
                 ).image,
               ),
             ),
@@ -72,15 +72,7 @@ class _ConectionWidgetState extends State<ConectionWidget> {
                 child: Container(
                   width: 100.0,
                   height: 100.0,
-                  decoration: BoxDecoration(
-                    color: Color(0x990F1113),
-                    image: DecorationImage(
-                      fit: BoxFit.cover,
-                      image: Image.asset(
-                        'assets/images/INICIO_DE_SESION.png',
-                      ).image,
-                    ),
-                  ),
+                  decoration: BoxDecoration(),
                   child: Visibility(
                     visible: responsiveVisibility(
                       context: context,
@@ -160,19 +152,20 @@ class _ConectionWidgetState extends State<ConectionWidget> {
                                                 0.0, 0.0, 0.0, 0.0),
                                         color: Color(0xFF1D1D1D),
                                         textStyle: FlutterFlowTheme.of(context)
-                                            .subtitle2
+                                            .titleSmall
                                             .override(
                                               fontFamily:
                                                   FlutterFlowTheme.of(context)
-                                                      .subtitle2Family,
+                                                      .titleSmallFamily,
                                               color: Colors.white,
-                                              useGoogleFonts:
-                                                  GoogleFonts.asMap()
-                                                      .containsKey(
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .subtitle2Family),
+                                              useGoogleFonts: GoogleFonts
+                                                      .asMap()
+                                                  .containsKey(
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .titleSmallFamily),
                                             ),
+                                        elevation: 2.0,
                                         borderSide: BorderSide(
                                           color: Color(0xFFFF0000),
                                           width: 1.0,
@@ -211,19 +204,20 @@ class _ConectionWidgetState extends State<ConectionWidget> {
                                                 0.0, 0.0, 0.0, 0.0),
                                         color: Color(0xFF1D1D1D),
                                         textStyle: FlutterFlowTheme.of(context)
-                                            .subtitle2
+                                            .titleSmall
                                             .override(
                                               fontFamily:
                                                   FlutterFlowTheme.of(context)
-                                                      .subtitle2Family,
+                                                      .titleSmallFamily,
                                               color: Colors.white,
-                                              useGoogleFonts:
-                                                  GoogleFonts.asMap()
-                                                      .containsKey(
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .subtitle2Family),
+                                              useGoogleFonts: GoogleFonts
+                                                      .asMap()
+                                                  .containsKey(
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .titleSmallFamily),
                                             ),
+                                        elevation: 2.0,
                                         borderSide: BorderSide(
                                           color: Color(0xFFFF0000),
                                           width: 1.0,

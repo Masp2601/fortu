@@ -168,7 +168,7 @@ class _TransactionADDWidgetState extends State<TransactionADDWidget>
 
     return Scaffold(
       key: scaffoldKey,
-      backgroundColor: FlutterFlowTheme.of(context).tertiaryColor,
+      backgroundColor: FlutterFlowTheme.of(context).tertiary,
       body: Form(
         key: _model.formKey,
         autovalidateMode: AutovalidateMode.disabled,
@@ -214,7 +214,7 @@ class _TransactionADDWidgetState extends State<TransactionADDWidget>
                               FFLocalizations.of(context).getText(
                                 'qywon4k1' /* Add Transaction */,
                               ),
-                              style: FlutterFlowTheme.of(context).title1,
+                              style: FlutterFlowTheme.of(context).displaySmall,
                             ),
                             Card(
                               clipBehavior: Clip.antiAliasWithSaveLayer,
@@ -258,33 +258,33 @@ class _TransactionADDWidgetState extends State<TransactionADDWidget>
                               obscureText: false,
                               decoration: InputDecoration(
                                 labelStyle: FlutterFlowTheme.of(context)
-                                    .title1
+                                    .displaySmall
                                     .override(
                                       fontFamily: FlutterFlowTheme.of(context)
-                                          .title1Family,
+                                          .displaySmallFamily,
                                       color: FlutterFlowTheme.of(context)
                                           .grayLight,
                                       fontWeight: FontWeight.w300,
                                       useGoogleFonts: GoogleFonts.asMap()
                                           .containsKey(
                                               FlutterFlowTheme.of(context)
-                                                  .title1Family),
+                                                  .displaySmallFamily),
                                     ),
                                 hintText: FFLocalizations.of(context).getText(
                                   'bh9tad8e' /* Amount */,
                                 ),
                                 hintStyle: FlutterFlowTheme.of(context)
-                                    .title1
+                                    .displaySmall
                                     .override(
                                       fontFamily: FlutterFlowTheme.of(context)
-                                          .title1Family,
+                                          .displaySmallFamily,
                                       color: FlutterFlowTheme.of(context)
                                           .grayLight,
                                       fontWeight: FontWeight.w300,
                                       useGoogleFonts: GoogleFonts.asMap()
                                           .containsKey(
                                               FlutterFlowTheme.of(context)
-                                                  .title1Family),
+                                                  .displaySmallFamily),
                                     ),
                                 enabledBorder: UnderlineInputBorder(
                                   borderSide: BorderSide(
@@ -324,7 +324,7 @@ class _TransactionADDWidgetState extends State<TransactionADDWidget>
                                   size: 32.0,
                                 ),
                               ),
-                              style: FlutterFlowTheme.of(context).title1,
+                              style: FlutterFlowTheme.of(context).displaySmall,
                               textAlign: TextAlign.center,
                               keyboardType: TextInputType.number,
                               validator: _model.textController1Validator
@@ -344,7 +344,7 @@ class _TransactionADDWidgetState extends State<TransactionADDWidget>
                                 'ohewrgsv' /* Spent At */,
                               ),
                               labelStyle:
-                                  FlutterFlowTheme.of(context).bodyText2,
+                                  FlutterFlowTheme.of(context).bodySmall,
                               enabledBorder: OutlineInputBorder(
                                 borderSide: BorderSide(
                                   color: FlutterFlowTheme.of(context).alternate,
@@ -376,7 +376,7 @@ class _TransactionADDWidgetState extends State<TransactionADDWidget>
                               contentPadding: EdgeInsetsDirectional.fromSTEB(
                                   20.0, 24.0, 24.0, 24.0),
                             ),
-                            style: FlutterFlowTheme.of(context).bodyText2,
+                            style: FlutterFlowTheme.of(context).bodySmall,
                             validator: _model.spentAtControllerValidator
                                 .asValidator(context),
                           ).animateOnPageLoad(
@@ -427,7 +427,7 @@ class _TransactionADDWidgetState extends State<TransactionADDWidget>
                                 width: MediaQuery.of(context).size.width * 0.9,
                                 height: 60.0,
                                 textStyle:
-                                    FlutterFlowTheme.of(context).bodyText1,
+                                    FlutterFlowTheme.of(context).bodyMedium,
                                 hintText: FFLocalizations.of(context).getText(
                                   '861el4k4' /* Select Budget */,
                                 ),
@@ -460,11 +460,11 @@ class _TransactionADDWidgetState extends State<TransactionADDWidget>
                             obscureText: false,
                             decoration: InputDecoration(
                               labelStyle:
-                                  FlutterFlowTheme.of(context).bodyText1,
+                                  FlutterFlowTheme.of(context).bodyMedium,
                               hintText: FFLocalizations.of(context).getText(
                                 'swxms7ln' /* Reason */,
                               ),
-                              hintStyle: FlutterFlowTheme.of(context).bodyText2,
+                              hintStyle: FlutterFlowTheme.of(context).bodySmall,
                               enabledBorder: OutlineInputBorder(
                                 borderSide: BorderSide(
                                   color: FlutterFlowTheme.of(context).alternate,
@@ -496,7 +496,7 @@ class _TransactionADDWidgetState extends State<TransactionADDWidget>
                               contentPadding: EdgeInsetsDirectional.fromSTEB(
                                   20.0, 40.0, 24.0, 0.0),
                             ),
-                            style: FlutterFlowTheme.of(context).bodyText1,
+                            style: FlutterFlowTheme.of(context).bodyMedium,
                             textAlign: TextAlign.start,
                             maxLines: 4,
                             validator: _model.reasonControllerValidator
@@ -587,18 +587,18 @@ class _TransactionADDWidgetState extends State<TransactionADDWidget>
                                   0.0, 0.0, 0.0, 0.0),
                               iconPadding: EdgeInsetsDirectional.fromSTEB(
                                   0.0, 0.0, 0.0, 0.0),
-                              color: FlutterFlowTheme.of(context).tertiaryColor,
+                              color: FlutterFlowTheme.of(context).tertiary,
                               textStyle: FlutterFlowTheme.of(context)
-                                  .title1
+                                  .displaySmall
                                   .override(
                                     fontFamily: FlutterFlowTheme.of(context)
-                                        .title1Family,
+                                        .displaySmallFamily,
                                     color:
                                         FlutterFlowTheme.of(context).textColor,
                                     useGoogleFonts: GoogleFonts.asMap()
                                         .containsKey(
                                             FlutterFlowTheme.of(context)
-                                                .title1Family),
+                                                .displaySmallFamily),
                                   ),
                               elevation: 0.0,
                               borderSide: BorderSide(
@@ -619,11 +619,11 @@ class _TransactionADDWidgetState extends State<TransactionADDWidget>
               FFLocalizations.of(context).getText(
                 '9stmpsf0' /* Tap above to complete request */,
               ),
-              style: FlutterFlowTheme.of(context).bodyText1.override(
-                    fontFamily: FlutterFlowTheme.of(context).bodyText1Family,
+              style: FlutterFlowTheme.of(context).bodyMedium.override(
+                    fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
                     color: Color(0x43000000),
                     useGoogleFonts: GoogleFonts.asMap().containsKey(
-                        FlutterFlowTheme.of(context).bodyText1Family),
+                        FlutterFlowTheme.of(context).bodyMediumFamily),
                   ),
             ),
           ],

@@ -73,7 +73,7 @@ class _PaysaveWidgetState extends State<PaysaveWidget> {
                       image: DecorationImage(
                         fit: BoxFit.fitWidth,
                         image: Image.asset(
-                          'assets/images/INICIO_DE_SESION.png',
+                          'assets/images/banckimage.png',
                         ).image,
                       ),
                     ),
@@ -136,21 +136,6 @@ class _PaysaveWidgetState extends State<PaysaveWidget> {
                                                       size: 24.0,
                                                     ),
                                                   ),
-                                                  Expanded(
-                                                    child: Text(
-                                                      FFLocalizations.of(
-                                                              context)
-                                                          .getText(
-                                                        'whrcjhfl' /* new credit card */,
-                                                      ),
-                                                      textAlign:
-                                                          TextAlign.center,
-                                                      style:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .bodyText1,
-                                                    ),
-                                                  ),
                                                 ],
                                               ),
                                             ),
@@ -202,56 +187,63 @@ class _PaysaveWidgetState extends State<PaysaveWidget> {
                                               size: 24.0,
                                             ),
                                           ),
-                                          Expanded(
-                                            child: Padding(
-                                              padding: EdgeInsetsDirectional
-                                                  .fromSTEB(
-                                                      12.0, 0.0, 0.0, 0.0),
-                                              child: Theme(
-                                                data: ThemeData(
-                                                  checkboxTheme:
-                                                      CheckboxThemeData(
-                                                    shape:
-                                                        RoundedRectangleBorder(
-                                                      borderRadius:
-                                                          BorderRadius.circular(
-                                                              25),
+                                          if (responsiveVisibility(
+                                            context: context,
+                                            tabletLandscape: false,
+                                            desktop: false,
+                                          ))
+                                            Expanded(
+                                              child: Padding(
+                                                padding: EdgeInsetsDirectional
+                                                    .fromSTEB(
+                                                        12.0, 0.0, 0.0, 0.0),
+                                                child: Theme(
+                                                  data: ThemeData(
+                                                    checkboxTheme:
+                                                        CheckboxThemeData(
+                                                      shape:
+                                                          RoundedRectangleBorder(
+                                                        borderRadius:
+                                                            BorderRadius
+                                                                .circular(25),
+                                                      ),
                                                     ),
+                                                    unselectedWidgetColor:
+                                                        Color(0xFF95A1AC),
                                                   ),
-                                                  unselectedWidgetColor:
-                                                      Color(0xFF95A1AC),
-                                                ),
-                                                child: CheckboxListTile(
-                                                  value: _model
-                                                          .checkboxListTileValue1 ??=
-                                                      true,
-                                                  onChanged: (newValue) async {
-                                                    setState(() => _model
-                                                            .checkboxListTileValue1 =
-                                                        newValue!);
-                                                  },
-                                                  title: Text(
-                                                    FFLocalizations.of(context)
-                                                        .getText(
-                                                      'g0ikv3hq' /* Credit Card */,
-                                                    ),
-                                                    style: FlutterFlowTheme.of(
-                                                            context)
-                                                        .bodyText1,
-                                                  ),
-                                                  tileColor: Color(0xFFF5F5F5),
-                                                  activeColor:
-                                                      FlutterFlowTheme.of(
+                                                  child: CheckboxListTile(
+                                                    value: _model
+                                                            .checkboxListTileValue1 ??=
+                                                        true,
+                                                    onChanged:
+                                                        (newValue) async {
+                                                      setState(() => _model
+                                                              .checkboxListTileValue1 =
+                                                          newValue!);
+                                                    },
+                                                    title: Text(
+                                                      FFLocalizations.of(
                                                               context)
-                                                          .primaryColor,
-                                                  dense: true,
-                                                  controlAffinity:
-                                                      ListTileControlAffinity
-                                                          .trailing,
+                                                          .getText(
+                                                        'g0ikv3hq' /* Credit or debit card */,
+                                                      ),
+                                                      style:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .bodyMedium,
+                                                    ),
+                                                    tileColor:
+                                                        Color(0xFFF5F5F5),
+                                                    activeColor:
+                                                        Color(0xFFFF0026),
+                                                    dense: true,
+                                                    controlAffinity:
+                                                        ListTileControlAffinity
+                                                            .trailing,
+                                                  ),
                                                 ),
                                               ),
                                             ),
-                                          ),
                                         ],
                                       ),
                                     ),
@@ -283,7 +275,7 @@ class _PaysaveWidgetState extends State<PaysaveWidget> {
                                             ),
                                             hintStyle:
                                                 FlutterFlowTheme.of(context)
-                                                    .bodyText1,
+                                                    .bodyMedium,
                                             enabledBorder: OutlineInputBorder(
                                               borderSide: BorderSide(
                                                 color: Color(0xFFFF0026),
@@ -341,7 +333,7 @@ class _PaysaveWidgetState extends State<PaysaveWidget> {
                                                 : null,
                                           ),
                                           style: FlutterFlowTheme.of(context)
-                                              .bodyText1,
+                                              .bodyMedium,
                                           minLines: 1,
                                           keyboardType: TextInputType.name,
                                           validator: _model
@@ -370,7 +362,7 @@ class _PaysaveWidgetState extends State<PaysaveWidget> {
                                           spacing: 10.0,
                                           textStyle:
                                               FlutterFlowTheme.of(context)
-                                                  .bodyText1,
+                                                  .bodyMedium,
                                           inputDecoration: InputDecoration(
                                             contentPadding:
                                                 EdgeInsetsDirectional.fromSTEB(
@@ -525,12 +517,12 @@ class _PaysaveWidgetState extends State<PaysaveWidget> {
                                                       .background,
                                                   textStyle: FlutterFlowTheme
                                                           .of(context)
-                                                      .subtitle2
+                                                      .titleSmall
                                                       .override(
                                                         fontFamily:
                                                             FlutterFlowTheme.of(
                                                                     context)
-                                                                .subtitle2Family,
+                                                                .titleSmallFamily,
                                                         color:
                                                             FlutterFlowTheme.of(
                                                                     context)
@@ -540,7 +532,7 @@ class _PaysaveWidgetState extends State<PaysaveWidget> {
                                                             .containsKey(
                                                                 FlutterFlowTheme.of(
                                                                         context)
-                                                                    .subtitle2Family),
+                                                                    .titleSmallFamily),
                                                       ),
                                                   elevation: 3.0,
                                                   borderSide: BorderSide(
@@ -676,7 +668,7 @@ class _PaysaveWidgetState extends State<PaysaveWidget> {
                                                               ),
                                                               style: FlutterFlowTheme
                                                                       .of(context)
-                                                                  .bodyText1,
+                                                                  .bodyMedium,
                                                             ),
                                                             tileColor: Color(
                                                                 0xFFF5F5F5),
@@ -800,11 +792,139 @@ class _PaysaveWidgetState extends State<PaysaveWidget> {
                                                                 FFLocalizations.of(
                                                                         context)
                                                                     .getText(
-                                                                  'z1ktfa1y' /* Apple Pay */,
+                                                                  'z1ktfa1y' /* Mercado pago */,
                                                                 ),
                                                                 style: FlutterFlowTheme.of(
                                                                         context)
-                                                                    .bodyText1,
+                                                                    .bodyMedium,
+                                                              ),
+                                                              tileColor: Color(
+                                                                  0xFFF5F5F5),
+                                                              activeColor: Color(
+                                                                  0xFFFF0026),
+                                                              dense: true,
+                                                              controlAffinity:
+                                                                  ListTileControlAffinity
+                                                                      .trailing,
+                                                            ),
+                                                          ),
+                                                        ),
+                                                      ),
+                                                  ],
+                                                ),
+                                              ),
+                                            ],
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              Row(
+                                mainAxisSize: MainAxisSize.max,
+                                children: [
+                                  Expanded(
+                                    child: Padding(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          16.0, 12.0, 16.0, 0.0),
+                                      child: Container(
+                                        width: double.infinity,
+                                        decoration: BoxDecoration(
+                                          color: Color(0xFF131313),
+                                          boxShadow: [
+                                            BoxShadow(
+                                              blurRadius: 5.0,
+                                              color: Color(0x44111417),
+                                              offset: Offset(0.0, 2.0),
+                                            )
+                                          ],
+                                          borderRadius:
+                                              BorderRadius.circular(8.0),
+                                        ),
+                                        child: Padding(
+                                          padding:
+                                              EdgeInsetsDirectional.fromSTEB(
+                                                  4.0, 4.0, 4.0, 4.0),
+                                          child: Column(
+                                            mainAxisSize: MainAxisSize.max,
+                                            children: [
+                                              Padding(
+                                                padding: EdgeInsetsDirectional
+                                                    .fromSTEB(
+                                                        8.0, 4.0, 8.0, 4.0),
+                                                child: Row(
+                                                  mainAxisSize:
+                                                      MainAxisSize.max,
+                                                  children: [
+                                                    Padding(
+                                                      padding:
+                                                          EdgeInsetsDirectional
+                                                              .fromSTEB(
+                                                                  0.0,
+                                                                  2.0,
+                                                                  0.0,
+                                                                  0.0),
+                                                      child: FaIcon(
+                                                        FontAwesomeIcons
+                                                            .ccApplePay,
+                                                        color:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .primaryText,
+                                                        size: 24.0,
+                                                      ),
+                                                    ),
+                                                    if (responsiveVisibility(
+                                                      context: context,
+                                                      tabletLandscape: false,
+                                                      desktop: false,
+                                                    ))
+                                                      Expanded(
+                                                        child: Padding(
+                                                          padding:
+                                                              EdgeInsetsDirectional
+                                                                  .fromSTEB(
+                                                                      12.0,
+                                                                      0.0,
+                                                                      0.0,
+                                                                      0.0),
+                                                          child: Theme(
+                                                            data: ThemeData(
+                                                              checkboxTheme:
+                                                                  CheckboxThemeData(
+                                                                shape:
+                                                                    RoundedRectangleBorder(
+                                                                  borderRadius:
+                                                                      BorderRadius
+                                                                          .circular(
+                                                                              25),
+                                                                ),
+                                                              ),
+                                                              unselectedWidgetColor:
+                                                                  Color(
+                                                                      0xFF95A1AC),
+                                                            ),
+                                                            child:
+                                                                CheckboxListTile(
+                                                              value: _model
+                                                                      .checkboxListTileValue4 ??=
+                                                                  false,
+                                                              onChanged:
+                                                                  (newValue) async {
+                                                                setState(() =>
+                                                                    _model.checkboxListTileValue4 =
+                                                                        newValue!);
+                                                              },
+                                                              title: Text(
+                                                                FFLocalizations.of(
+                                                                        context)
+                                                                    .getText(
+                                                                  '1j01nnem' /* Apple Pay */,
+                                                                ),
+                                                                style: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMedium,
                                                               ),
                                                               tileColor: Color(
                                                                   0xFFF5F5F5),

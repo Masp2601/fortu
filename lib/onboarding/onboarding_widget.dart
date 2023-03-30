@@ -133,7 +133,7 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                                               textAlign: TextAlign.center,
                                               style:
                                                   FlutterFlowTheme.of(context)
-                                                      .title1,
+                                                      .displaySmall,
                                             ),
                                           ),
                                         ],
@@ -154,7 +154,7 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                                               textAlign: TextAlign.center,
                                               style:
                                                   FlutterFlowTheme.of(context)
-                                                      .bodyText2,
+                                                      .bodySmall,
                                             ),
                                           ),
                                         ],
@@ -204,7 +204,7 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                                               textAlign: TextAlign.center,
                                               style:
                                                   FlutterFlowTheme.of(context)
-                                                      .title1,
+                                                      .displaySmall,
                                             ),
                                           ),
                                         ],
@@ -225,7 +225,7 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                                               textAlign: TextAlign.center,
                                               style:
                                                   FlutterFlowTheme.of(context)
-                                                      .bodyText2,
+                                                      .bodySmall,
                                             ),
                                           ),
                                         ],
@@ -275,7 +275,7 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                                               textAlign: TextAlign.center,
                                               style:
                                                   FlutterFlowTheme.of(context)
-                                                      .title1,
+                                                      .displaySmall,
                                             ),
                                           ),
                                         ],
@@ -296,7 +296,7 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                                               textAlign: TextAlign.center,
                                               style:
                                                   FlutterFlowTheme.of(context)
-                                                      .bodyText2,
+                                                      .bodySmall,
                                             ),
                                           ),
                                         ],
@@ -383,13 +383,14 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                             EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                         color: FlutterFlowTheme.of(context).secondaryBackground,
                         textStyle: FlutterFlowTheme.of(context)
-                            .subtitle2
+                            .titleSmall
                             .override(
                               fontFamily:
-                                  FlutterFlowTheme.of(context).subtitle2Family,
-                              color: FlutterFlowTheme.of(context).primaryColor,
+                                  FlutterFlowTheme.of(context).titleSmallFamily,
+                              color: FlutterFlowTheme.of(context).primary,
                               useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                  FlutterFlowTheme.of(context).subtitle2Family),
+                                  FlutterFlowTheme.of(context)
+                                      .titleSmallFamily),
                             ),
                         elevation: 2.0,
                         borderSide: BorderSide(

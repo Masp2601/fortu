@@ -67,7 +67,7 @@ class _DisfrutayganaWidgetState extends State<DisfrutayganaWidget> {
                               padding: EdgeInsetsDirectional.fromSTEB(
                                   0.0, 15.0, 0.0, 0.0),
                               child: Image.asset(
-                                'assets/images/INICIO_DE_SESION.png',
+                                'assets/images/disfrutaimage.png',
                                 width: 380.9,
                                 height: 2200.0,
                                 fit: BoxFit.cover,
@@ -186,19 +186,20 @@ class _DisfrutayganaWidgetState extends State<DisfrutayganaWidget> {
                                                 0.0, 0.0, 0.0, 0.0),
                                         color: Color(0xFFFF0026),
                                         textStyle: FlutterFlowTheme.of(context)
-                                            .subtitle2
+                                            .titleSmall
                                             .override(
                                               fontFamily:
                                                   FlutterFlowTheme.of(context)
-                                                      .subtitle2Family,
+                                                      .titleSmallFamily,
                                               color: Colors.white,
-                                              useGoogleFonts:
-                                                  GoogleFonts.asMap()
-                                                      .containsKey(
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .subtitle2Family),
+                                              useGoogleFonts: GoogleFonts
+                                                      .asMap()
+                                                  .containsKey(
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .titleSmallFamily),
                                             ),
+                                        elevation: 2.0,
                                         borderSide: BorderSide(
                                           color: FlutterFlowTheme.of(context)
                                               .textColor,
@@ -234,18 +235,18 @@ class _DisfrutayganaWidgetState extends State<DisfrutayganaWidget> {
                                         'vfzvz63d' /* enjoy and win */,
                                       ),
                                       style: FlutterFlowTheme.of(context)
-                                          .title2
+                                          .headlineMedium
                                           .override(
                                             fontFamily:
                                                 FlutterFlowTheme.of(context)
-                                                    .title2Family,
+                                                    .headlineMediumFamily,
                                             color: FlutterFlowTheme.of(context)
                                                 .textColor,
                                             fontSize: 25.0,
                                             useGoogleFonts: GoogleFonts.asMap()
                                                 .containsKey(
                                                     FlutterFlowTheme.of(context)
-                                                        .title2Family),
+                                                        .headlineMediumFamily),
                                           ),
                                     ),
                                   ),

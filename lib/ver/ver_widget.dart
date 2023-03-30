@@ -55,7 +55,7 @@ class _VerWidgetState extends State<VerWidget> {
               image: DecorationImage(
                 fit: BoxFit.cover,
                 image: Image.asset(
-                  'assets/images/INICIO_DE_SESION.png',
+                  'assets/images/viwerimage.png',
                 ).image,
               ),
             ),
@@ -70,15 +70,7 @@ class _VerWidgetState extends State<VerWidget> {
                 child: Container(
                   width: 100.0,
                   height: 100.0,
-                  decoration: BoxDecoration(
-                    color: Color(0x990F1113),
-                    image: DecorationImage(
-                      fit: BoxFit.cover,
-                      image: Image.asset(
-                        'assets/images/INICIO_DE_SESION.png',
-                      ).image,
-                    ),
-                  ),
+                  decoration: BoxDecoration(),
                   child:
                       // unicamente espectadores
                       Visibility(
@@ -165,7 +157,7 @@ class _VerWidgetState extends State<VerWidget> {
                                         '6xchui9a' /* PESOS COLOMBIANOS */,
                                       ),
                                       style: FlutterFlowTheme.of(context)
-                                          .bodyText1,
+                                          .bodyMedium,
                                     ),
                                   ],
                                 ),
@@ -361,7 +353,7 @@ class _VerWidgetState extends State<VerWidget> {
                                             '0e19z3cd' /* Hello World */,
                                           ),
                                           style: FlutterFlowTheme.of(context)
-                                              .bodyText1,
+                                              .bodyMedium,
                                         ),
                                       ),
                                       Align(
@@ -376,19 +368,19 @@ class _VerWidgetState extends State<VerWidget> {
                                               'pbfipvxk' /* see the game */,
                                             ),
                                             style: FlutterFlowTheme.of(context)
-                                                .bodyText1
+                                                .bodyMedium
                                                 .override(
                                                   fontFamily:
                                                       FlutterFlowTheme.of(
                                                               context)
-                                                          .bodyText1Family,
+                                                          .bodyMediumFamily,
                                                   color: Colors.black,
                                                   useGoogleFonts: GoogleFonts
                                                           .asMap()
                                                       .containsKey(
                                                           FlutterFlowTheme.of(
                                                                   context)
-                                                              .bodyText1Family),
+                                                              .bodyMediumFamily),
                                                 ),
                                           ),
                                         ),
@@ -405,19 +397,19 @@ class _VerWidgetState extends State<VerWidget> {
                                               'cd4qqpav' /* Hello World */,
                                             ),
                                             style: FlutterFlowTheme.of(context)
-                                                .bodyText1
+                                                .bodyMedium
                                                 .override(
                                                   fontFamily:
                                                       FlutterFlowTheme.of(
                                                               context)
-                                                          .bodyText1Family,
+                                                          .bodyMediumFamily,
                                                   color: Colors.black,
                                                   useGoogleFonts: GoogleFonts
                                                           .asMap()
                                                       .containsKey(
                                                           FlutterFlowTheme.of(
                                                                   context)
-                                                              .bodyText1Family),
+                                                              .bodyMediumFamily),
                                                 ),
                                           ),
                                         ),
@@ -434,19 +426,19 @@ class _VerWidgetState extends State<VerWidget> {
                                               '9qlb378l' /* Hello World */,
                                             ),
                                             style: FlutterFlowTheme.of(context)
-                                                .bodyText1
+                                                .bodyMedium
                                                 .override(
                                                   fontFamily:
                                                       FlutterFlowTheme.of(
                                                               context)
-                                                          .bodyText1Family,
+                                                          .bodyMediumFamily,
                                                   color: Colors.black,
                                                   useGoogleFonts: GoogleFonts
                                                           .asMap()
                                                       .containsKey(
                                                           FlutterFlowTheme.of(
                                                                   context)
-                                                              .bodyText1Family),
+                                                              .bodyMediumFamily),
                                                 ),
                                           ),
                                         ),
@@ -463,19 +455,19 @@ class _VerWidgetState extends State<VerWidget> {
                                               '4jisut42' /* see the game */,
                                             ),
                                             style: FlutterFlowTheme.of(context)
-                                                .bodyText1
+                                                .bodyMedium
                                                 .override(
                                                   fontFamily:
                                                       FlutterFlowTheme.of(
                                                               context)
-                                                          .bodyText1Family,
+                                                          .bodyMediumFamily,
                                                   color: Colors.black,
                                                   useGoogleFonts: GoogleFonts
                                                           .asMap()
                                                       .containsKey(
                                                           FlutterFlowTheme.of(
                                                                   context)
-                                                              .bodyText1Family),
+                                                              .bodyMediumFamily),
                                                 ),
                                           ),
                                         ),
@@ -492,19 +484,19 @@ class _VerWidgetState extends State<VerWidget> {
                                               'sfgelok4' /* see the game */,
                                             ),
                                             style: FlutterFlowTheme.of(context)
-                                                .bodyText1
+                                                .bodyMedium
                                                 .override(
                                                   fontFamily:
                                                       FlutterFlowTheme.of(
                                                               context)
-                                                          .bodyText1Family,
+                                                          .bodyMediumFamily,
                                                   color: Colors.black,
                                                   useGoogleFonts: GoogleFonts
                                                           .asMap()
                                                       .containsKey(
                                                           FlutterFlowTheme.of(
                                                                   context)
-                                                              .bodyText1Family),
+                                                              .bodyMediumFamily),
                                                 ),
                                           ),
                                         ),
@@ -527,7 +519,8 @@ class _VerWidgetState extends State<VerWidget> {
                                     '13jix10g' /*  */,
                                   ),
                                   textAlign: TextAlign.center,
-                                  style: FlutterFlowTheme.of(context).bodyText1,
+                                  style:
+                                      FlutterFlowTheme.of(context).bodyMedium,
                                 ),
                               ],
                             ),
@@ -741,19 +734,19 @@ class _VerWidgetState extends State<VerWidget> {
                                               ),
                                               style:
                                                   FlutterFlowTheme.of(context)
-                                                      .bodyText1
+                                                      .bodyMedium
                                                       .override(
                                                         fontFamily:
                                                             FlutterFlowTheme.of(
                                                                     context)
-                                                                .bodyText1Family,
+                                                                .bodyMediumFamily,
                                                         color: Colors.black,
                                                         useGoogleFonts: GoogleFonts
                                                                 .asMap()
                                                             .containsKey(
                                                                 FlutterFlowTheme.of(
                                                                         context)
-                                                                    .bodyText1Family),
+                                                                    .bodyMediumFamily),
                                                       ),
                                             ),
                                           ),
@@ -767,19 +760,19 @@ class _VerWidgetState extends State<VerWidget> {
                                               ),
                                               style:
                                                   FlutterFlowTheme.of(context)
-                                                      .bodyText1
+                                                      .bodyMedium
                                                       .override(
                                                         fontFamily:
                                                             FlutterFlowTheme.of(
                                                                     context)
-                                                                .bodyText1Family,
+                                                                .bodyMediumFamily,
                                                         color: Colors.black,
                                                         useGoogleFonts: GoogleFonts
                                                                 .asMap()
                                                             .containsKey(
                                                                 FlutterFlowTheme.of(
                                                                         context)
-                                                                    .bodyText1Family),
+                                                                    .bodyMediumFamily),
                                                       ),
                                             ),
                                           ),
@@ -793,19 +786,19 @@ class _VerWidgetState extends State<VerWidget> {
                                               ),
                                               style:
                                                   FlutterFlowTheme.of(context)
-                                                      .bodyText1
+                                                      .bodyMedium
                                                       .override(
                                                         fontFamily:
                                                             FlutterFlowTheme.of(
                                                                     context)
-                                                                .bodyText1Family,
+                                                                .bodyMediumFamily,
                                                         color: Colors.black,
                                                         useGoogleFonts: GoogleFonts
                                                                 .asMap()
                                                             .containsKey(
                                                                 FlutterFlowTheme.of(
                                                                         context)
-                                                                    .bodyText1Family),
+                                                                    .bodyMediumFamily),
                                                       ),
                                             ),
                                           ),

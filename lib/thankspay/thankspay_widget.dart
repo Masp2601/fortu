@@ -99,13 +99,13 @@ class _ThankspayWidgetState extends State<ThankspayWidget> {
                 FFLocalizations.of(context).getText(
                   'gwjp5nhh' /* Payment Confirmed! */,
                 ),
-                style: FlutterFlowTheme.of(context).title1.override(
+                style: FlutterFlowTheme.of(context).displaySmall.override(
                       fontFamily: 'Lexend Deca',
                       color: Color(0xFF4B39EF),
                       fontSize: 24.0,
                       fontWeight: FontWeight.bold,
                       useGoogleFonts: GoogleFonts.asMap().containsKey(
-                          FlutterFlowTheme.of(context).title1Family),
+                          FlutterFlowTheme.of(context).displaySmallFamily),
                     ),
               ),
             ),
@@ -130,7 +130,7 @@ class _ThankspayWidgetState extends State<ThankspayWidget> {
                   'yfybkt3d' /* Your payment has been confirme... */,
                 ),
                 textAlign: TextAlign.center,
-                style: FlutterFlowTheme.of(context).bodyText2,
+                style: FlutterFlowTheme.of(context).bodySmall,
               ),
             ),
             Padding(
@@ -174,7 +174,7 @@ class _ThankspayWidgetState extends State<ThankspayWidget> {
                                 'zry15h75' /* Mastercard Ending in 4021 */,
                               ),
                               style: FlutterFlowTheme.of(context)
-                                  .bodyText2
+                                  .bodySmall
                                   .override(
                                     fontFamily: 'Lexend Deca',
                                     color: Color(0xFF8B97A2),
@@ -183,7 +183,7 @@ class _ThankspayWidgetState extends State<ThankspayWidget> {
                                     useGoogleFonts: GoogleFonts.asMap()
                                         .containsKey(
                                             FlutterFlowTheme.of(context)
-                                                .bodyText2Family),
+                                                .bodySmallFamily),
                                   ),
                             ),
                           ),
@@ -194,7 +194,7 @@ class _ThankspayWidgetState extends State<ThankspayWidget> {
                               FFLocalizations.of(context).getText(
                                 'xjgiwqpb' /* $425.24 */,
                               ),
-                              style: FlutterFlowTheme.of(context).subtitle2,
+                              style: FlutterFlowTheme.of(context).titleSmall,
                             ),
                           ),
                         ],
@@ -235,7 +235,7 @@ class _ThankspayWidgetState extends State<ThankspayWidget> {
                               0.0, 0.0, 0.0, 0.0),
                           color: FlutterFlowTheme.of(context).primaryBackground,
                           textStyle: FlutterFlowTheme.of(context)
-                              .subtitle2
+                              .titleSmall
                               .override(
                                 fontFamily: 'Lexend Deca',
                                 color: FlutterFlowTheme.of(context).primaryText,
@@ -243,7 +243,7 @@ class _ThankspayWidgetState extends State<ThankspayWidget> {
                                 fontWeight: FontWeight.w500,
                                 useGoogleFonts: GoogleFonts.asMap().containsKey(
                                     FlutterFlowTheme.of(context)
-                                        .subtitle2Family),
+                                        .titleSmallFamily),
                               ),
                           elevation: 0.0,
                           borderSide: BorderSide(

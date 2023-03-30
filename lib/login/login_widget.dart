@@ -63,7 +63,7 @@ class _LoginWidgetState extends State<LoginWidget> {
               image: DecorationImage(
                 fit: BoxFit.cover,
                 image: Image.asset(
-                  'assets/images/INICIO_DE_SESION.png',
+                  'assets/images/logiin.png',
                 ).image,
               ),
             ),
@@ -78,15 +78,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                 child: Container(
                   width: 100.0,
                   height: 100.0,
-                  decoration: BoxDecoration(
-                    color: Color(0x990F1113),
-                    image: DecorationImage(
-                      fit: BoxFit.cover,
-                      image: Image.asset(
-                        'assets/images/INICIO_DE_SESION.png',
-                      ).image,
-                    ),
-                  ),
+                  decoration: BoxDecoration(),
                   child: Visibility(
                     visible: responsiveVisibility(
                       context: context,
@@ -172,7 +164,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                   options: options.toList(),
                                   onSelected: onSelected,
                                   textStyle:
-                                      FlutterFlowTheme.of(context).bodyText1,
+                                      FlutterFlowTheme.of(context).bodyMedium,
                                   textHighlightStyle: TextStyle(),
                                   elevation: 4.0,
                                   optionBackgroundColor:
@@ -214,17 +206,17 @@ class _LoginWidgetState extends State<LoginWidget> {
                                       '5wh9zxn0' /*  */,
                                     ),
                                     hintStyle: FlutterFlowTheme.of(context)
-                                        .bodyText2
+                                        .bodySmall
                                         .override(
                                           fontFamily:
                                               FlutterFlowTheme.of(context)
-                                                  .bodyText2Family,
+                                                  .bodySmallFamily,
                                           color: FlutterFlowTheme.of(context)
                                               .textColor,
                                           useGoogleFonts: GoogleFonts.asMap()
                                               .containsKey(
                                                   FlutterFlowTheme.of(context)
-                                                      .bodyText2Family),
+                                                      .bodySmallFamily),
                                         ),
                                     enabledBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
@@ -273,7 +265,8 @@ class _LoginWidgetState extends State<LoginWidget> {
                                           )
                                         : null,
                                   ),
-                                  style: FlutterFlowTheme.of(context).bodyText1,
+                                  style:
+                                      FlutterFlowTheme.of(context).bodyMedium,
                                   textAlign: TextAlign.center,
                                   validator: _model.nombreControllerValidator
                                       .asValidator(context),
@@ -319,7 +312,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                         options: options.toList(),
                                         onSelected: onSelected,
                                         textStyle: FlutterFlowTheme.of(context)
-                                            .bodyText1,
+                                            .bodyMedium,
                                         textHighlightStyle: TextStyle(),
                                         elevation: 4.0,
                                         optionBackgroundColor:
@@ -385,11 +378,11 @@ class _LoginWidgetState extends State<LoginWidget> {
                                           ),
                                           hintStyle: FlutterFlowTheme.of(
                                                   context)
-                                              .bodyText2
+                                              .bodySmall
                                               .override(
                                                 fontFamily:
                                                     FlutterFlowTheme.of(context)
-                                                        .bodyText2Family,
+                                                        .bodySmallFamily,
                                                 color:
                                                     FlutterFlowTheme.of(context)
                                                         .textColor,
@@ -398,7 +391,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                                     .containsKey(
                                                         FlutterFlowTheme.of(
                                                                 context)
-                                                            .bodyText2Family),
+                                                            .bodySmallFamily),
                                               ),
                                           enabledBorder: OutlineInputBorder(
                                             borderSide: BorderSide(
@@ -457,18 +450,18 @@ class _LoginWidgetState extends State<LoginWidget> {
                                           ),
                                         ),
                                         style: FlutterFlowTheme.of(context)
-                                            .bodyText1
+                                            .bodyMedium
                                             .override(
                                               fontFamily:
                                                   FlutterFlowTheme.of(context)
-                                                      .bodyText1Family,
+                                                      .bodyMediumFamily,
                                               color: Colors.white,
-                                              useGoogleFonts:
-                                                  GoogleFonts.asMap()
-                                                      .containsKey(
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .bodyText1Family),
+                                              useGoogleFonts: GoogleFonts
+                                                      .asMap()
+                                                  .containsKey(
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .bodyMediumFamily),
                                             ),
                                         textAlign: TextAlign.center,
                                         keyboardType:
@@ -561,17 +554,18 @@ class _LoginWidgetState extends State<LoginWidget> {
                                     color:
                                         FlutterFlowTheme.of(context).black600,
                                     textStyle: FlutterFlowTheme.of(context)
-                                        .subtitle2
+                                        .titleSmall
                                         .override(
                                           fontFamily:
                                               FlutterFlowTheme.of(context)
-                                                  .subtitle2Family,
+                                                  .titleSmallFamily,
                                           color: Colors.white,
                                           useGoogleFonts: GoogleFonts.asMap()
                                               .containsKey(
                                                   FlutterFlowTheme.of(context)
-                                                      .subtitle2Family),
+                                                      .titleSmallFamily),
                                         ),
+                                    elevation: 2.0,
                                     borderSide: BorderSide(
                                       color: Color(0xDAFF0F13),
                                       width: 1.0,
@@ -603,17 +597,17 @@ class _LoginWidgetState extends State<LoginWidget> {
                                         'flgq72qa' /* Forgot Password */,
                                       ),
                                       style: FlutterFlowTheme.of(context)
-                                          .bodyText1
+                                          .bodyMedium
                                           .override(
                                             fontFamily:
                                                 FlutterFlowTheme.of(context)
-                                                    .bodyText1Family,
+                                                    .bodyMediumFamily,
                                             color: FlutterFlowTheme.of(context)
                                                 .platinum,
                                             useGoogleFonts: GoogleFonts.asMap()
                                                 .containsKey(
                                                     FlutterFlowTheme.of(context)
-                                                        .bodyText1Family),
+                                                        .bodyMediumFamily),
                                           ),
                                     ),
                                   ),
@@ -785,16 +779,16 @@ class _LoginWidgetState extends State<LoginWidget> {
                                     ),
                                     textAlign: TextAlign.center,
                                     style: FlutterFlowTheme.of(context)
-                                        .bodyText1
+                                        .bodyMedium
                                         .override(
                                           fontFamily:
                                               FlutterFlowTheme.of(context)
-                                                  .bodyText1Family,
+                                                  .bodyMediumFamily,
                                           color: Color(0xDA5DFF0F),
                                           useGoogleFonts: GoogleFonts.asMap()
                                               .containsKey(
                                                   FlutterFlowTheme.of(context)
-                                                      .bodyText1Family),
+                                                      .bodyMediumFamily),
                                         ),
                                   ),
                                 ),
@@ -812,20 +806,20 @@ class _LoginWidgetState extends State<LoginWidget> {
                                   ),
                                   textAlign: TextAlign.center,
                                   style: FlutterFlowTheme.of(context)
-                                      .bodyText1
+                                      .bodyMedium
                                       .override(
                                         fontFamily: FlutterFlowTheme.of(context)
-                                            .bodyText1Family,
+                                            .bodyMediumFamily,
                                         color: FlutterFlowTheme.of(context)
                                             .grayIcon,
                                         fontSize: 20.0,
                                         useGoogleFonts: GoogleFonts.asMap()
                                             .containsKey(
                                                 FlutterFlowTheme.of(context)
-                                                    .bodyText1Family),
+                                                    .bodyMediumFamily),
                                       ),
                                   colors: [
-                                    FlutterFlowTheme.of(context).secondaryColor
+                                    FlutterFlowTheme.of(context).secondary
                                   ],
                                   gradientDirection: GradientDirection.ltr,
                                   gradientType: GradientType.linear,

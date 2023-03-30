@@ -67,11 +67,12 @@ class _TransferCompleteWidgetState extends State<TransferCompleteWidget> {
                 FFLocalizations.of(context).getText(
                   'xf8d4sm8' /* Transfer Complete */,
                 ),
-                style: FlutterFlowTheme.of(context).title1.override(
-                      fontFamily: FlutterFlowTheme.of(context).title1Family,
+                style: FlutterFlowTheme.of(context).displaySmall.override(
+                      fontFamily:
+                          FlutterFlowTheme.of(context).displaySmallFamily,
                       color: FlutterFlowTheme.of(context).textColor,
                       useGoogleFonts: GoogleFonts.asMap().containsKey(
-                          FlutterFlowTheme.of(context).title1Family),
+                          FlutterFlowTheme.of(context).displaySmallFamily),
                     ),
               ),
             ),
@@ -87,12 +88,12 @@ class _TransferCompleteWidgetState extends State<TransferCompleteWidget> {
                         'iq9jjji8' /* Great work, you successfully t... */,
                       ),
                       textAlign: TextAlign.center,
-                      style: FlutterFlowTheme.of(context).bodyText2.override(
+                      style: FlutterFlowTheme.of(context).bodySmall.override(
                             fontFamily:
-                                FlutterFlowTheme.of(context).bodyText2Family,
+                                FlutterFlowTheme.of(context).bodySmallFamily,
                             color: Color(0xB3FFFFFF),
                             useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                FlutterFlowTheme.of(context).bodyText2Family),
+                                FlutterFlowTheme.of(context).bodySmallFamily),
                           ),
                     ),
                   ),
@@ -126,14 +127,15 @@ class _TransferCompleteWidgetState extends State<TransferCompleteWidget> {
                   padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                   iconPadding:
                       EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                  color: FlutterFlowTheme.of(context).primaryColor,
-                  textStyle: FlutterFlowTheme.of(context).subtitle2.override(
+                  color: FlutterFlowTheme.of(context).primary,
+                  textStyle: FlutterFlowTheme.of(context).titleSmall.override(
                         fontFamily:
-                            FlutterFlowTheme.of(context).subtitle2Family,
+                            FlutterFlowTheme.of(context).titleSmallFamily,
                         color: Colors.white,
                         useGoogleFonts: GoogleFonts.asMap().containsKey(
-                            FlutterFlowTheme.of(context).subtitle2Family),
+                            FlutterFlowTheme.of(context).titleSmallFamily),
                       ),
+                  elevation: 2.0,
                   borderSide: BorderSide(
                     color: Colors.transparent,
                     width: 1.0,

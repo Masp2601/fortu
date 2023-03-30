@@ -28,6 +28,8 @@ class PaysaveModel extends FlutterFlowModel {
   bool? checkboxListTileValue2;
   // State field(s) for CheckboxListTile widget.
   bool? checkboxListTileValue3;
+  // State field(s) for CheckboxListTile widget.
+  bool? checkboxListTileValue4;
 
   /// Initialization and disposal methods.
 

@@ -69,7 +69,7 @@ class _AvatarsWidgetState extends State<AvatarsWidget> {
                 FFLocalizations.of(context).getText(
                   'mv7r7z2a' /* Categories */,
                 ),
-                style: FlutterFlowTheme.of(context).subtitle1,
+                style: FlutterFlowTheme.of(context).titleMedium,
               ),
               actions: [],
               centerTitle: false,
@@ -88,9 +88,9 @@ class _AvatarsWidgetState extends State<AvatarsWidget> {
                 child: Column(
                   children: [
                     TabBar(
-                      labelColor: FlutterFlowTheme.of(context).primaryColor,
+                      labelColor: FlutterFlowTheme.of(context).primary,
                       unselectedLabelColor: Colors.black,
-                      labelStyle: FlutterFlowTheme.of(context).subtitle1,
+                      labelStyle: FlutterFlowTheme.of(context).titleMedium,
                       indicatorColor: Color(0xFFFF0026),
                       tabs: [
                         Tab(
@@ -222,7 +222,8 @@ class _AvatarsWidgetState extends State<AvatarsWidget> {
                                     FFLocalizations.of(context).getText(
                                       'ysdx1516' /* Categories */,
                                     ),
-                                    style: FlutterFlowTheme.of(context).title3,
+                                    style: FlutterFlowTheme.of(context)
+                                        .headlineSmall,
                                   ),
                                 ),
                                 Padding(
@@ -249,7 +250,7 @@ class _AvatarsWidgetState extends State<AvatarsWidget> {
                                             'psieli6r' /* Outerwear */,
                                           ),
                                           style: FlutterFlowTheme.of(context)
-                                              .subtitle1,
+                                              .titleMedium,
                                         ),
                                       ),
                                       Padding(
@@ -322,7 +323,7 @@ class _AvatarsWidgetState extends State<AvatarsWidget> {
                                             '7aobuso7' /* Pants */,
                                           ),
                                           style: FlutterFlowTheme.of(context)
-                                              .subtitle1,
+                                              .titleMedium,
                                         ),
                                       ),
                                       Padding(
@@ -402,7 +403,7 @@ class _AvatarsWidgetState extends State<AvatarsWidget> {
                                             'nlbq302b' /* Shorts Sporty */,
                                           ),
                                           style: FlutterFlowTheme.of(context)
-                                              .subtitle1,
+                                              .titleMedium,
                                         ),
                                       ),
                                       Padding(
@@ -472,7 +473,7 @@ class _AvatarsWidgetState extends State<AvatarsWidget> {
                                             'lp49i4sb' /* Shorts Sporty */,
                                           ),
                                           style: FlutterFlowTheme.of(context)
-                                              .subtitle1,
+                                              .titleMedium,
                                         ),
                                       ),
                                       Padding(
@@ -556,7 +557,7 @@ class _AvatarsWidgetState extends State<AvatarsWidget> {
                                             'gsvbttps' /* Shorts Sporty */,
                                           ),
                                           style: FlutterFlowTheme.of(context)
-                                              .subtitle1,
+                                              .titleMedium,
                                         ),
                                       ),
                                       Padding(
@@ -635,7 +636,7 @@ class _AvatarsWidgetState extends State<AvatarsWidget> {
                                             '0cs9gor1' /* Shorts Sporty */,
                                           ),
                                           style: FlutterFlowTheme.of(context)
-                                              .subtitle1,
+                                              .titleMedium,
                                         ),
                                       ),
                                       Padding(
@@ -718,7 +719,7 @@ class _AvatarsWidgetState extends State<AvatarsWidget> {
                                             'p7lvbktu' /* Shorts Sporty */,
                                           ),
                                           style: FlutterFlowTheme.of(context)
-                                              .subtitle1,
+                                              .titleMedium,
                                         ),
                                       ),
                                       Padding(
@@ -797,7 +798,7 @@ class _AvatarsWidgetState extends State<AvatarsWidget> {
                                             'tq546c7o' /* Shorts Sporty */,
                                           ),
                                           style: FlutterFlowTheme.of(context)
-                                              .subtitle1,
+                                              .titleMedium,
                                         ),
                                       ),
                                       Padding(

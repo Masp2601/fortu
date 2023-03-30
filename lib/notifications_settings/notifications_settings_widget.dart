@@ -70,7 +70,7 @@ class _NotificationsSettingsWidgetState
                 FFLocalizations.of(context).getText(
                   'sc4ff4ce' /* Notifications */,
                 ),
-                style: FlutterFlowTheme.of(context).title3,
+                style: FlutterFlowTheme.of(context).headlineSmall,
               ),
               actions: [],
               centerTitle: false,
@@ -118,7 +118,7 @@ class _NotificationsSettingsWidgetState
                           FFLocalizations.of(context).getText(
                             'r72zvrv5' /* Choose what notifcations you w... */,
                           ),
-                          style: FlutterFlowTheme.of(context).bodyText2,
+                          style: FlutterFlowTheme.of(context).bodySmall,
                         ),
                       ),
                     ],
@@ -135,17 +135,17 @@ class _NotificationsSettingsWidgetState
                       FFLocalizations.of(context).getText(
                         'gjygkr0n' /* Push Notifications */,
                       ),
-                      style: FlutterFlowTheme.of(context).title3,
+                      style: FlutterFlowTheme.of(context).headlineSmall,
                     ),
                     subtitle: Text(
                       FFLocalizations.of(context).getText(
                         '3y3yhxbk' /* Receive Push notifications fro... */,
                       ),
-                      style: FlutterFlowTheme.of(context).bodyText2,
+                      style: FlutterFlowTheme.of(context).bodySmall,
                     ),
                     tileColor: FlutterFlowTheme.of(context).secondaryBackground,
-                    activeColor: FlutterFlowTheme.of(context).tertiaryColor,
-                    activeTrackColor: FlutterFlowTheme.of(context).primaryColor,
+                    activeColor: FlutterFlowTheme.of(context).tertiary,
+                    activeTrackColor: FlutterFlowTheme.of(context).primary,
                     dense: false,
                     controlAffinity: ListTileControlAffinity.trailing,
                     contentPadding:
@@ -161,17 +161,17 @@ class _NotificationsSettingsWidgetState
                     FFLocalizations.of(context).getText(
                       '1ytebj35' /* Email Notifications */,
                     ),
-                    style: FlutterFlowTheme.of(context).title3,
+                    style: FlutterFlowTheme.of(context).headlineSmall,
                   ),
                   subtitle: Text(
                     FFLocalizations.of(context).getText(
                       '9lvh5nst' /* Receive email notifications fr... */,
                     ),
-                    style: FlutterFlowTheme.of(context).bodyText2,
+                    style: FlutterFlowTheme.of(context).bodySmall,
                   ),
                   tileColor: FlutterFlowTheme.of(context).secondaryBackground,
-                  activeColor: FlutterFlowTheme.of(context).tertiaryColor,
-                  activeTrackColor: FlutterFlowTheme.of(context).primaryColor,
+                  activeColor: FlutterFlowTheme.of(context).tertiary,
+                  activeTrackColor: FlutterFlowTheme.of(context).primary,
                   dense: false,
                   controlAffinity: ListTileControlAffinity.trailing,
                   contentPadding:
@@ -186,17 +186,17 @@ class _NotificationsSettingsWidgetState
                     FFLocalizations.of(context).getText(
                       '69d2j74u' /* Location Services */,
                     ),
-                    style: FlutterFlowTheme.of(context).title3,
+                    style: FlutterFlowTheme.of(context).headlineSmall,
                   ),
                   subtitle: Text(
                     FFLocalizations.of(context).getText(
                       '3k8cuv0d' /* Allow us to track your locatio... */,
                     ),
-                    style: FlutterFlowTheme.of(context).bodyText2,
+                    style: FlutterFlowTheme.of(context).bodySmall,
                   ),
                   tileColor: FlutterFlowTheme.of(context).secondaryBackground,
-                  activeColor: FlutterFlowTheme.of(context).tertiaryColor,
-                  activeTrackColor: FlutterFlowTheme.of(context).primaryColor,
+                  activeColor: FlutterFlowTheme.of(context).tertiary,
+                  activeTrackColor: FlutterFlowTheme.of(context).primary,
                   dense: false,
                   controlAffinity: ListTileControlAffinity.trailing,
                   contentPadding:
@@ -221,15 +221,15 @@ class _NotificationsSettingsWidgetState
                           EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                       iconPadding:
                           EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                      color: FlutterFlowTheme.of(context).primaryColor,
+                      color: FlutterFlowTheme.of(context).primary,
                       textStyle: FlutterFlowTheme.of(context)
-                          .subtitle2
+                          .titleSmall
                           .override(
                             fontFamily:
-                                FlutterFlowTheme.of(context).subtitle2Family,
+                                FlutterFlowTheme.of(context).titleSmallFamily,
                             color: FlutterFlowTheme.of(context).textColor,
                             useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                FlutterFlowTheme.of(context).subtitle2Family),
+                                FlutterFlowTheme.of(context).titleSmallFamily),
                           ),
                       elevation: 3.0,
                       borderSide: BorderSide(

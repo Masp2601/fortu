@@ -257,7 +257,7 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
                 FFLocalizations.of(context).getText(
                   'yhcaf7r2' /* Complete Profile */,
                 ),
-                style: FlutterFlowTheme.of(context).title3,
+                style: FlutterFlowTheme.of(context).headlineSmall,
               ),
               actions: [],
               centerTitle: false,
@@ -378,7 +378,7 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
                     FFLocalizations.of(context).getText(
                       'r6npjsue' /* Upload a photo for us to easil... */,
                     ),
-                    style: FlutterFlowTheme.of(context).bodyText1,
+                    style: FlutterFlowTheme.of(context).bodyMedium,
                   ).animateOnPageLoad(
                       animationsMap['textOnPageLoadAnimation']!),
                   Padding(
@@ -391,8 +391,8 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
                         labelText: FFLocalizations.of(context).getText(
                           'sdptn7dd' /* Your Name */,
                         ),
-                        labelStyle: FlutterFlowTheme.of(context).bodyText2,
-                        hintStyle: FlutterFlowTheme.of(context).bodyText2,
+                        labelStyle: FlutterFlowTheme.of(context).bodySmall,
+                        hintStyle: FlutterFlowTheme.of(context).bodySmall,
                         enabledBorder: OutlineInputBorder(
                           borderSide: BorderSide(
                             color: Color(0x00000000),
@@ -427,7 +427,7 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
                         contentPadding: EdgeInsetsDirectional.fromSTEB(
                             20.0, 24.0, 20.0, 24.0),
                       ),
-                      style: FlutterFlowTheme.of(context).bodyText1,
+                      style: FlutterFlowTheme.of(context).bodyMedium,
                       validator: _model.yourNameControllerValidator
                           .asValidator(context),
                     ).animateOnPageLoad(
@@ -443,11 +443,11 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
                         labelText: FFLocalizations.of(context).getText(
                           'n636qnrx' /* Your Age */,
                         ),
-                        labelStyle: FlutterFlowTheme.of(context).bodyText2,
+                        labelStyle: FlutterFlowTheme.of(context).bodySmall,
                         hintText: FFLocalizations.of(context).getText(
                           's7yvjzbs' /* i.e. 34 */,
                         ),
-                        hintStyle: FlutterFlowTheme.of(context).bodyText2,
+                        hintStyle: FlutterFlowTheme.of(context).bodySmall,
                         enabledBorder: OutlineInputBorder(
                           borderSide: BorderSide(
                             color: Color(0x00000000),
@@ -482,7 +482,7 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
                         contentPadding: EdgeInsetsDirectional.fromSTEB(
                             20.0, 24.0, 20.0, 24.0),
                       ),
-                      style: FlutterFlowTheme.of(context).bodyText1,
+                      style: FlutterFlowTheme.of(context).bodyMedium,
                       keyboardType: TextInputType.number,
                       validator: _model.yourAgeControllerValidator
                           .asValidator(context),
@@ -499,11 +499,11 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
                         labelText: FFLocalizations.of(context).getText(
                           '72ii0waq' /* Your Title */,
                         ),
-                        labelStyle: FlutterFlowTheme.of(context).bodyText2,
+                        labelStyle: FlutterFlowTheme.of(context).bodySmall,
                         hintText: FFLocalizations.of(context).getText(
                           'pf8glhkg' /* What is your position? */,
                         ),
-                        hintStyle: FlutterFlowTheme.of(context).bodyText2,
+                        hintStyle: FlutterFlowTheme.of(context).bodySmall,
                         enabledBorder: OutlineInputBorder(
                           borderSide: BorderSide(
                             color: Color(0x00000000),
@@ -538,7 +538,7 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
                         contentPadding: EdgeInsetsDirectional.fromSTEB(
                             20.0, 24.0, 20.0, 24.0),
                       ),
-                      style: FlutterFlowTheme.of(context).bodyText1,
+                      style: FlutterFlowTheme.of(context).bodyMedium,
                       validator: _model.yourTitleControllerValidator
                           .asValidator(context),
                     ).animateOnPageLoad(
@@ -594,14 +594,14 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
                                 0.0, 0.0, 0.0, 0.0),
                             color: Colors.black,
                             textStyle: FlutterFlowTheme.of(context)
-                                .subtitle2
+                                .titleSmall
                                 .override(
                                   fontFamily: FlutterFlowTheme.of(context)
-                                      .subtitle2Family,
+                                      .titleSmallFamily,
                                   color: FlutterFlowTheme.of(context).textColor,
                                   useGoogleFonts: GoogleFonts.asMap()
                                       .containsKey(FlutterFlowTheme.of(context)
-                                          .subtitle2Family),
+                                          .titleSmallFamily),
                                 ),
                             elevation: 3.0,
                             borderSide: BorderSide(
@@ -656,15 +656,15 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget>
                             color: FlutterFlowTheme.of(context)
                                 .secondaryBackground,
                             textStyle: FlutterFlowTheme.of(context)
-                                .subtitle2
+                                .titleSmall
                                 .override(
                                   fontFamily: FlutterFlowTheme.of(context)
-                                      .subtitle2Family,
+                                      .titleSmallFamily,
                                   color:
                                       FlutterFlowTheme.of(context).primaryText,
                                   useGoogleFonts: GoogleFonts.asMap()
                                       .containsKey(FlutterFlowTheme.of(context)
-                                          .subtitle2Family),
+                                          .titleSmallFamily),
                                 ),
                             elevation: 0.0,
                             borderSide: BorderSide(

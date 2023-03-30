@@ -109,8 +109,7 @@ class _MYProfilePageWidgetState extends State<MYProfilePageWidget> {
                               children: [
                                 Card(
                                   clipBehavior: Clip.antiAliasWithSaveLayer,
-                                  color:
-                                      FlutterFlowTheme.of(context).primaryColor,
+                                  color: FlutterFlowTheme.of(context).primary,
                                   elevation: 2.0,
                                   shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(40.0),
@@ -206,16 +205,16 @@ class _MYProfilePageWidgetState extends State<MYProfilePageWidget> {
                                     'Random user',
                                   ),
                                   style: FlutterFlowTheme.of(context)
-                                      .title3
+                                      .headlineSmall
                                       .override(
                                         fontFamily: FlutterFlowTheme.of(context)
-                                            .title3Family,
+                                            .headlineSmallFamily,
                                         color: FlutterFlowTheme.of(context)
                                             .textColor,
                                         useGoogleFonts: GoogleFonts.asMap()
                                             .containsKey(
                                                 FlutterFlowTheme.of(context)
-                                                    .title3Family),
+                                                    .headlineSmallFamily),
                                       ),
                                 ),
                               ],
@@ -233,16 +232,16 @@ class _MYProfilePageWidgetState extends State<MYProfilePageWidget> {
                                     'Badass Busybody',
                                   ),
                                   style: FlutterFlowTheme.of(context)
-                                      .bodyText1
+                                      .bodyMedium
                                       .override(
                                         fontFamily: FlutterFlowTheme.of(context)
-                                            .bodyText1Family,
+                                            .bodyMediumFamily,
                                         color: Color(0xB3FFFFFF),
                                         fontWeight: FontWeight.w500,
                                         useGoogleFonts: GoogleFonts.asMap()
                                             .containsKey(
                                                 FlutterFlowTheme.of(context)
-                                                    .bodyText1Family),
+                                                    .bodyMediumFamily),
                                       ),
                                 ),
                               ),
@@ -252,17 +251,17 @@ class _MYProfilePageWidgetState extends State<MYProfilePageWidget> {
                                 child: Text(
                                   mYProfilePageUsersRecord.email!,
                                   style: FlutterFlowTheme.of(context)
-                                      .bodyText1
+                                      .bodyMedium
                                       .override(
                                         fontFamily: FlutterFlowTheme.of(context)
-                                            .bodyText1Family,
+                                            .bodyMediumFamily,
                                         color: FlutterFlowTheme.of(context)
                                             .textColor,
                                         fontWeight: FontWeight.w500,
                                         useGoogleFonts: GoogleFonts.asMap()
                                             .containsKey(
                                                 FlutterFlowTheme.of(context)
-                                                    .bodyText1Family),
+                                                    .bodyMediumFamily),
                                       ),
                                 ),
                               ),
@@ -286,7 +285,7 @@ class _MYProfilePageWidgetState extends State<MYProfilePageWidget> {
                             FFLocalizations.of(context).getText(
                               'f1bvbey3' /* My Account */,
                             ),
-                            style: FlutterFlowTheme.of(context).bodyText1,
+                            style: FlutterFlowTheme.of(context).bodyMedium,
                           ),
                         ],
                       ),
@@ -339,7 +338,7 @@ class _MYProfilePageWidgetState extends State<MYProfilePageWidget> {
                                           '9aogde79' /* Home */,
                                         ),
                                         style: FlutterFlowTheme.of(context)
-                                            .bodyText1,
+                                            .bodyMedium,
                                       ),
                                       FlutterFlowIconButton(
                                         borderColor: Colors.transparent,
@@ -406,7 +405,8 @@ class _MYProfilePageWidgetState extends State<MYProfilePageWidget> {
                                   FFLocalizations.of(context).getText(
                                     'i61y9ibx' /* Edit Profile */,
                                   ),
-                                  style: FlutterFlowTheme.of(context).bodyText1,
+                                  style:
+                                      FlutterFlowTheme.of(context).bodyMedium,
                                 ),
                                 FlutterFlowIconButton(
                                   borderColor: Colors.transparent,
@@ -475,7 +475,7 @@ class _MYProfilePageWidgetState extends State<MYProfilePageWidget> {
                                       '03k0vw86' /* Change Password */,
                                     ),
                                     style:
-                                        FlutterFlowTheme.of(context).bodyText1,
+                                        FlutterFlowTheme.of(context).bodyMedium,
                                   ),
                                   FlutterFlowIconButton(
                                     borderColor: Colors.transparent,
@@ -545,7 +545,7 @@ class _MYProfilePageWidgetState extends State<MYProfilePageWidget> {
                                       'th57qqr0' /* Add bank account */,
                                     ),
                                     style:
-                                        FlutterFlowTheme.of(context).bodyText1,
+                                        FlutterFlowTheme.of(context).bodyMedium,
                                   ),
                                   FlutterFlowIconButton(
                                     borderColor: Colors.transparent,
@@ -614,7 +614,7 @@ class _MYProfilePageWidgetState extends State<MYProfilePageWidget> {
                                       '6w6wv95p' /* Notification Settings */,
                                     ),
                                     style:
-                                        FlutterFlowTheme.of(context).bodyText1,
+                                        FlutterFlowTheme.of(context).bodyMedium,
                                   ),
                                   FlutterFlowIconButton(
                                     borderColor: Colors.transparent,
@@ -683,7 +683,7 @@ class _MYProfilePageWidgetState extends State<MYProfilePageWidget> {
                                       'eojlfs66' /* Privacy Policy */,
                                     ),
                                     style:
-                                        FlutterFlowTheme.of(context).bodyText1,
+                                        FlutterFlowTheme.of(context).bodyMedium,
                                   ),
                                   FlutterFlowIconButton(
                                     borderColor: Colors.transparent,
@@ -744,7 +744,7 @@ class _MYProfilePageWidgetState extends State<MYProfilePageWidget> {
                                 FFLocalizations.of(context).getText(
                                   '6qbn3m1s' /* Privacy Policy */,
                                 ),
-                                style: FlutterFlowTheme.of(context).bodyText1,
+                                style: FlutterFlowTheme.of(context).bodyMedium,
                               ),
                               FlutterFlowIconButton(
                                 borderColor: Colors.transparent,
@@ -786,15 +786,16 @@ class _MYProfilePageWidgetState extends State<MYProfilePageWidget> {
                             EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                         iconPadding:
                             EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                        color: FlutterFlowTheme.of(context).secondaryColor,
+                        color: FlutterFlowTheme.of(context).secondary,
                         textStyle: FlutterFlowTheme.of(context)
-                            .subtitle2
+                            .titleSmall
                             .override(
                               fontFamily:
-                                  FlutterFlowTheme.of(context).subtitle2Family,
+                                  FlutterFlowTheme.of(context).titleSmallFamily,
                               color: Colors.white,
                               useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                  FlutterFlowTheme.of(context).subtitle2Family),
+                                  FlutterFlowTheme.of(context)
+                                      .titleSmallFamily),
                             ),
                         elevation: 2.0,
                         borderSide: BorderSide(
@@ -828,13 +829,14 @@ class _MYProfilePageWidgetState extends State<MYProfilePageWidget> {
                             EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                         color: Colors.black,
                         textStyle: FlutterFlowTheme.of(context)
-                            .subtitle2
+                            .titleSmall
                             .override(
                               fontFamily:
-                                  FlutterFlowTheme.of(context).subtitle2Family,
+                                  FlutterFlowTheme.of(context).titleSmallFamily,
                               color: FlutterFlowTheme.of(context).textColor,
                               useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                  FlutterFlowTheme.of(context).subtitle2Family),
+                                  FlutterFlowTheme.of(context)
+                                      .titleSmallFamily),
                             ),
                         elevation: 2.0,
                         borderSide: BorderSide(

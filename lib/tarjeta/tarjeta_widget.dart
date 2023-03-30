@@ -62,7 +62,7 @@ class _TarjetaWidgetState extends State<TarjetaWidget> {
                       image: DecorationImage(
                         fit: BoxFit.fitWidth,
                         image: Image.asset(
-                          'assets/images/INICIO_DE_SESION.png',
+                          'assets/images/cardimage.png',
                         ).image,
                       ),
                     ),
@@ -88,8 +88,9 @@ class _TarjetaWidgetState extends State<TarjetaWidget> {
                                     onTap: () async {
                                       logFirebaseEvent(
                                           'TARJETA_PAGE_Icon_shbpggz7_ON_TAP');
-                                      logFirebaseEvent('Icon_navigate_back');
-                                      context.safePop();
+                                      logFirebaseEvent('Icon_navigate_to');
+
+                                      context.pushNamed('thereismethod');
                                     },
                                     child: Icon(
                                       Icons.chevron_left_sharp,
@@ -121,11 +122,11 @@ class _TarjetaWidgetState extends State<TarjetaWidget> {
                                       children: [
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(0.0, 0.05),
+                                              AlignmentDirectional(0.0, 0.25),
                                           child: Padding(
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
-                                                    0.0, 12.0, 0.0, 0.0),
+                                                    0.0, 10.0, 0.0, 0.0),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.max,
                                               children: [
@@ -170,7 +171,7 @@ class _TarjetaWidgetState extends State<TarjetaWidget> {
                                                       style:
                                                           FlutterFlowTheme.of(
                                                                   context)
-                                                              .bodyText1,
+                                                              .bodyMedium,
                                                     ),
                                                   ),
                                                 ),
@@ -236,20 +237,20 @@ class _TarjetaWidgetState extends State<TarjetaWidget> {
                                         color: FlutterFlowTheme.of(context)
                                             .background,
                                         textStyle: FlutterFlowTheme.of(context)
-                                            .subtitle2
+                                            .titleSmall
                                             .override(
                                               fontFamily:
                                                   FlutterFlowTheme.of(context)
-                                                      .subtitle2Family,
+                                                      .titleSmallFamily,
                                               color:
                                                   FlutterFlowTheme.of(context)
                                                       .textColor,
-                                              useGoogleFonts:
-                                                  GoogleFonts.asMap()
-                                                      .containsKey(
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .subtitle2Family),
+                                              useGoogleFonts: GoogleFonts
+                                                      .asMap()
+                                                  .containsKey(
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .titleSmallFamily),
                                             ),
                                         elevation: 3.0,
                                         borderSide: BorderSide(

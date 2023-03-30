@@ -126,17 +126,17 @@ class _BudgetDetailsWidgetState extends State<BudgetDetailsWidget> {
                                   child: Text(
                                     budgetDetailsBudgetsRecord.budetName!,
                                     style: FlutterFlowTheme.of(context)
-                                        .title1
+                                        .displaySmall
                                         .override(
                                           fontFamily:
                                               FlutterFlowTheme.of(context)
-                                                  .title1Family,
+                                                  .displaySmallFamily,
                                           color: FlutterFlowTheme.of(context)
                                               .textColor,
                                           useGoogleFonts: GoogleFonts.asMap()
                                               .containsKey(
                                                   FlutterFlowTheme.of(context)
-                                                      .title1Family),
+                                                      .displaySmallFamily),
                                         ),
                                   ),
                                 ),
@@ -163,10 +163,10 @@ class _BudgetDetailsWidgetState extends State<BudgetDetailsWidget> {
                                     currency: '\$',
                                   ),
                                   style: FlutterFlowTheme.of(context)
-                                      .title1
+                                      .displaySmall
                                       .override(
                                         fontFamily: FlutterFlowTheme.of(context)
-                                            .title1Family,
+                                            .displaySmallFamily,
                                         color: FlutterFlowTheme.of(context)
                                             .textColor,
                                         fontSize: 36.0,
@@ -174,7 +174,7 @@ class _BudgetDetailsWidgetState extends State<BudgetDetailsWidget> {
                                         useGoogleFonts: GoogleFonts.asMap()
                                             .containsKey(
                                                 FlutterFlowTheme.of(context)
-                                                    .title1Family),
+                                                    .displaySmallFamily),
                                       ),
                                 ),
                               ),
@@ -186,15 +186,15 @@ class _BudgetDetailsWidgetState extends State<BudgetDetailsWidget> {
                                     'p0gf1lfy' /* Per Month */,
                                   ),
                                   style: FlutterFlowTheme.of(context)
-                                      .bodyText1
+                                      .bodyMedium
                                       .override(
                                         fontFamily: FlutterFlowTheme.of(context)
-                                            .bodyText1Family,
+                                            .bodyMediumFamily,
                                         color: Color(0xB3FFFFFF),
                                         useGoogleFonts: GoogleFonts.asMap()
                                             .containsKey(
                                                 FlutterFlowTheme.of(context)
-                                                    .bodyText1Family),
+                                                    .bodyMediumFamily),
                                       ),
                                 ),
                               ),
@@ -213,7 +213,7 @@ class _BudgetDetailsWidgetState extends State<BudgetDetailsWidget> {
                                   budgetDetailsBudgetsRecord.budgetTime,
                                   '4 Days Left',
                                 ),
-                                style: FlutterFlowTheme.of(context).subtitle2,
+                                style: FlutterFlowTheme.of(context).titleSmall,
                               ),
                               Row(
                                 mainAxisSize: MainAxisSize.max,
@@ -227,17 +227,17 @@ class _BudgetDetailsWidgetState extends State<BudgetDetailsWidget> {
                                       ),
                                       textAlign: TextAlign.end,
                                       style: FlutterFlowTheme.of(context)
-                                          .bodyText2
+                                          .bodySmall
                                           .override(
                                             fontFamily:
                                                 FlutterFlowTheme.of(context)
-                                                    .bodyText2Family,
+                                                    .bodySmallFamily,
                                             color: Color(0xB3FFFFFF),
                                             fontWeight: FontWeight.w300,
                                             useGoogleFonts: GoogleFonts.asMap()
                                                 .containsKey(
                                                     FlutterFlowTheme.of(context)
-                                                        .bodyText2Family),
+                                                        .bodySmallFamily),
                                           ),
                                     ),
                                   ),
@@ -254,17 +254,17 @@ class _BudgetDetailsWidgetState extends State<BudgetDetailsWidget> {
                                     ),
                                     textAlign: TextAlign.end,
                                     style: FlutterFlowTheme.of(context)
-                                        .title3
+                                        .headlineSmall
                                         .override(
                                           fontFamily:
                                               FlutterFlowTheme.of(context)
-                                                  .title3Family,
+                                                  .headlineSmallFamily,
                                           color: FlutterFlowTheme.of(context)
                                               .textColor,
                                           useGoogleFonts: GoogleFonts.asMap()
                                               .containsKey(
                                                   FlutterFlowTheme.of(context)
-                                                      .title3Family),
+                                                      .headlineSmallFamily),
                                         ),
                                   ),
                                 ],
@@ -279,7 +279,7 @@ class _BudgetDetailsWidgetState extends State<BudgetDetailsWidget> {
                 Container(
                   width: double.infinity,
                   decoration: BoxDecoration(
-                    color: FlutterFlowTheme.of(context).primaryColor,
+                    color: FlutterFlowTheme.of(context).primary,
                   ),
                 ),
                 Column(
@@ -299,7 +299,7 @@ class _BudgetDetailsWidgetState extends State<BudgetDetailsWidget> {
                                 FFLocalizations.of(context).getText(
                                   'ifi6fmsa' /* Transactions */,
                                 ),
-                                style: FlutterFlowTheme.of(context).bodyText1,
+                                style: FlutterFlowTheme.of(context).bodyMedium,
                               ),
                             ),
                           ),
@@ -447,7 +447,7 @@ class _BudgetDetailsWidgetState extends State<BudgetDetailsWidget> {
                                                         .transactionName!,
                                                     style: FlutterFlowTheme.of(
                                                             context)
-                                                        .title3,
+                                                        .headlineSmall,
                                                   ),
                                                 ),
                                                 Padding(
@@ -461,7 +461,7 @@ class _BudgetDetailsWidgetState extends State<BudgetDetailsWidget> {
                                                     ),
                                                     style: FlutterFlowTheme.of(
                                                             context)
-                                                        .bodyText1,
+                                                        .bodyMedium,
                                                   ),
                                                 ),
                                               ],
@@ -485,12 +485,12 @@ class _BudgetDetailsWidgetState extends State<BudgetDetailsWidget> {
                                                 textAlign: TextAlign.end,
                                                 style:
                                                     FlutterFlowTheme.of(context)
-                                                        .subtitle2
+                                                        .titleSmall
                                                         .override(
                                                           fontFamily:
                                                               FlutterFlowTheme.of(
                                                                       context)
-                                                                  .subtitle2Family,
+                                                                  .titleSmallFamily,
                                                           color:
                                                               Color(0xFFFF0026),
                                                           useGoogleFonts: GoogleFonts
@@ -498,7 +498,7 @@ class _BudgetDetailsWidgetState extends State<BudgetDetailsWidget> {
                                                               .containsKey(
                                                                   FlutterFlowTheme.of(
                                                                           context)
-                                                                      .subtitle2Family),
+                                                                      .titleSmallFamily),
                                                         ),
                                               ),
                                               Padding(
@@ -517,19 +517,19 @@ class _BudgetDetailsWidgetState extends State<BudgetDetailsWidget> {
                                                   textAlign: TextAlign.end,
                                                   style: FlutterFlowTheme.of(
                                                           context)
-                                                      .bodyText1
+                                                      .bodyMedium
                                                       .override(
                                                         fontFamily:
                                                             FlutterFlowTheme.of(
                                                                     context)
-                                                                .bodyText1Family,
+                                                                .bodyMediumFamily,
                                                         fontSize: 12.0,
                                                         useGoogleFonts: GoogleFonts
                                                                 .asMap()
                                                             .containsKey(
                                                                 FlutterFlowTheme.of(
                                                                         context)
-                                                                    .bodyText1Family),
+                                                                    .bodyMediumFamily),
                                                       ),
                                                 ),
                                               ),

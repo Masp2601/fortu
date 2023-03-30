@@ -88,7 +88,7 @@ class _RulesWidgetState extends State<RulesWidget>
                         image: DecorationImage(
                           fit: BoxFit.fitWidth,
                           image: Image.asset(
-                            'assets/images/INICIO_DE_SESION.png',
+                            'assets/images/rulesimage.png',
                           ).image,
                         ),
                       ),
@@ -348,20 +348,21 @@ class _RulesWidgetState extends State<RulesWidget>
                                                   textStyle:
                                                       FlutterFlowTheme.of(
                                                               context)
-                                                          .subtitle2
+                                                          .titleSmall
                                                           .override(
                                                             fontFamily:
                                                                 FlutterFlowTheme.of(
                                                                         context)
-                                                                    .subtitle2Family,
+                                                                    .titleSmallFamily,
                                                             color: Colors.white,
                                                             useGoogleFonts: GoogleFonts
                                                                     .asMap()
                                                                 .containsKey(
                                                                     FlutterFlowTheme.of(
                                                                             context)
-                                                                        .subtitle2Family),
+                                                                        .titleSmallFamily),
                                                           ),
+                                                  elevation: 2.0,
                                                   borderSide: BorderSide(
                                                     color: FlutterFlowTheme.of(
                                                             context)
@@ -434,20 +435,21 @@ class _RulesWidgetState extends State<RulesWidget>
                                               color: Color(0xFF471212),
                                               textStyle:
                                                   FlutterFlowTheme.of(context)
-                                                      .subtitle2
+                                                      .titleSmall
                                                       .override(
                                                         fontFamily:
                                                             FlutterFlowTheme.of(
                                                                     context)
-                                                                .subtitle2Family,
+                                                                .titleSmallFamily,
                                                         color: Colors.white,
                                                         useGoogleFonts: GoogleFonts
                                                                 .asMap()
                                                             .containsKey(
                                                                 FlutterFlowTheme.of(
                                                                         context)
-                                                                    .subtitle2Family),
+                                                                    .titleSmallFamily),
                                                       ),
+                                              elevation: 2.0,
                                               borderSide: BorderSide(
                                                 color:
                                                     FlutterFlowTheme.of(context)

@@ -76,7 +76,7 @@ class _RegistroWidgetState extends State<RegistroWidget> {
                       image: DecorationImage(
                         fit: BoxFit.fitWidth,
                         image: Image.asset(
-                          'assets/images/INICIO_DE_SESION.png',
+                          'assets/images/record.png',
                         ).image,
                       ),
                     ),
@@ -185,7 +185,7 @@ class _RegistroWidgetState extends State<RegistroWidget> {
                                                         style:
                                                             FlutterFlowTheme.of(
                                                                     context)
-                                                                .title3,
+                                                                .headlineSmall,
                                                       ),
                                                     ),
                                                   ),
@@ -238,7 +238,7 @@ class _RegistroWidgetState extends State<RegistroWidget> {
                                                   textStyle:
                                                       FlutterFlowTheme.of(
                                                               context)
-                                                          .bodyText1,
+                                                          .bodyMedium,
                                                   textHighlightStyle:
                                                       TextStyle(),
                                                   elevation: 4.0,
@@ -287,7 +287,7 @@ class _RegistroWidgetState extends State<RegistroWidget> {
                                                     hintStyle:
                                                         FlutterFlowTheme.of(
                                                                 context)
-                                                            .bodyText2,
+                                                            .bodySmall,
                                                     enabledBorder:
                                                         OutlineInputBorder(
                                                       borderSide: BorderSide(
@@ -340,7 +340,7 @@ class _RegistroWidgetState extends State<RegistroWidget> {
                                                   ),
                                                   style: FlutterFlowTheme.of(
                                                           context)
-                                                      .bodyText1,
+                                                      .bodyMedium,
                                                   textAlign: TextAlign.start,
                                                   keyboardType:
                                                       TextInputType.name,
@@ -374,7 +374,7 @@ class _RegistroWidgetState extends State<RegistroWidget> {
                                                 ),
                                                 labelStyle:
                                                     FlutterFlowTheme.of(context)
-                                                        .bodyText2,
+                                                        .bodySmall,
                                                 hintText:
                                                     FFLocalizations.of(context)
                                                         .getText(
@@ -382,7 +382,7 @@ class _RegistroWidgetState extends State<RegistroWidget> {
                                                 ),
                                                 hintStyle:
                                                     FlutterFlowTheme.of(context)
-                                                        .bodyText2,
+                                                        .bodySmall,
                                                 enabledBorder:
                                                     OutlineInputBorder(
                                                   borderSide: BorderSide(
@@ -431,7 +431,7 @@ class _RegistroWidgetState extends State<RegistroWidget> {
                                               ),
                                               style:
                                                   FlutterFlowTheme.of(context)
-                                                      .bodyText1,
+                                                      .bodyMedium,
                                               textAlign: TextAlign.start,
                                               keyboardType:
                                                   TextInputType.emailAddress,
@@ -457,7 +457,7 @@ class _RegistroWidgetState extends State<RegistroWidget> {
                                               ),
                                               hintStyle:
                                                   FlutterFlowTheme.of(context)
-                                                      .bodyText2,
+                                                      .bodySmall,
                                               enabledBorder: OutlineInputBorder(
                                                 borderSide: BorderSide(
                                                   color: Color(0xDAFF0F13),
@@ -495,7 +495,7 @@ class _RegistroWidgetState extends State<RegistroWidget> {
                                               fillColor: Color(0xFF262D34),
                                             ),
                                             style: FlutterFlowTheme.of(context)
-                                                .bodyText1,
+                                                .bodyMedium,
                                             textAlign: TextAlign.start,
                                             validator: _model
                                                 .telefonoControllerValidator
@@ -518,7 +518,7 @@ class _RegistroWidgetState extends State<RegistroWidget> {
                                               ),
                                               hintStyle:
                                                   FlutterFlowTheme.of(context)
-                                                      .bodyText2,
+                                                      .bodySmall,
                                               enabledBorder: OutlineInputBorder(
                                                 borderSide: BorderSide(
                                                   color: Color(0xDAFF0F13),
@@ -556,7 +556,7 @@ class _RegistroWidgetState extends State<RegistroWidget> {
                                               fillColor: Color(0xFF262D34),
                                             ),
                                             style: FlutterFlowTheme.of(context)
-                                                .bodyText1,
+                                                .bodyMedium,
                                             textAlign: TextAlign.start,
                                             validator: _model
                                                 .edadControllerValidator
@@ -579,7 +579,7 @@ class _RegistroWidgetState extends State<RegistroWidget> {
                                               ),
                                               hintStyle:
                                                   FlutterFlowTheme.of(context)
-                                                      .bodyText2,
+                                                      .bodySmall,
                                               enabledBorder: OutlineInputBorder(
                                                 borderSide: BorderSide(
                                                   color: Color(0xDAFF0F13),
@@ -617,7 +617,7 @@ class _RegistroWidgetState extends State<RegistroWidget> {
                                               fillColor: Color(0xFF262D34),
                                             ),
                                             style: FlutterFlowTheme.of(context)
-                                                .bodyText1,
+                                                .bodyMedium,
                                             textAlign: TextAlign.start,
                                             validator: _model
                                                 .sexoControllerValidator
@@ -646,7 +646,7 @@ class _RegistroWidgetState extends State<RegistroWidget> {
                                                 ),
                                                 labelStyle:
                                                     FlutterFlowTheme.of(context)
-                                                        .bodyText1,
+                                                        .bodyMedium,
                                                 hintText:
                                                     FFLocalizations.of(context)
                                                         .getText(
@@ -654,7 +654,7 @@ class _RegistroWidgetState extends State<RegistroWidget> {
                                                 ),
                                                 hintStyle:
                                                     FlutterFlowTheme.of(context)
-                                                        .bodyText2,
+                                                        .bodySmall,
                                                 enabledBorder:
                                                     OutlineInputBorder(
                                                   borderSide: BorderSide(
@@ -724,7 +724,7 @@ class _RegistroWidgetState extends State<RegistroWidget> {
                                               ),
                                               style:
                                                   FlutterFlowTheme.of(context)
-                                                      .bodyText1,
+                                                      .bodyMedium,
                                               textAlign: TextAlign.start,
                                               keyboardType:
                                                   TextInputType.visiblePassword,
@@ -784,7 +784,7 @@ class _RegistroWidgetState extends State<RegistroWidget> {
                                                   ),
                                                   style: FlutterFlowTheme.of(
                                                           context)
-                                                      .bodyText1,
+                                                      .bodyMedium,
                                                 ),
                                               ),
                                             ],
@@ -872,18 +872,18 @@ class _RegistroWidgetState extends State<RegistroWidget> {
                                                           textStyle:
                                                               FlutterFlowTheme.of(
                                                                       context)
-                                                                  .subtitle2
+                                                                  .titleSmall
                                                                   .override(
                                                                     fontFamily:
                                                                         FlutterFlowTheme.of(context)
-                                                                            .subtitle2Family,
+                                                                            .titleSmallFamily,
                                                                     color: FlutterFlowTheme.of(
                                                                             context)
                                                                         .textColor,
                                                                     useGoogleFonts: GoogleFonts
                                                                             .asMap()
                                                                         .containsKey(
-                                                                            FlutterFlowTheme.of(context).subtitle2Family),
+                                                                            FlutterFlowTheme.of(context).titleSmallFamily),
                                                                   ),
                                                           elevation: 3.0,
                                                           borderSide:
@@ -1042,17 +1042,17 @@ class _RegistroWidgetState extends State<RegistroWidget> {
                                       'lanj9wte' /*  */,
                                     ),
                                     style: FlutterFlowTheme.of(context)
-                                        .bodyText1
+                                        .bodyMedium
                                         .override(
                                           fontFamily:
                                               FlutterFlowTheme.of(context)
-                                                  .bodyText1Family,
+                                                  .bodyMediumFamily,
                                           color: FlutterFlowTheme.of(context)
                                               .grayLight,
                                           useGoogleFonts: GoogleFonts.asMap()
                                               .containsKey(
                                                   FlutterFlowTheme.of(context)
-                                                      .bodyText1Family),
+                                                      .bodyMediumFamily),
                                         ),
                                   ),
                                 ),

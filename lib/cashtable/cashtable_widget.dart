@@ -173,7 +173,7 @@ class _CashtableWidgetState extends State<CashtableWidget>
                                             '0mg72mu0' /* Hello World */,
                                           ),
                                           style: FlutterFlowTheme.of(context)
-                                              .bodyText1,
+                                              .bodyMedium,
                                         ),
                                       ),
                                     ),
@@ -192,18 +192,18 @@ class _CashtableWidgetState extends State<CashtableWidget>
                                           widget.users!,
                                           textAlign: TextAlign.start,
                                           style: FlutterFlowTheme.of(context)
-                                              .bodyText1
+                                              .bodyMedium
                                               .override(
                                                 fontFamily:
                                                     FlutterFlowTheme.of(context)
-                                                        .bodyText1Family,
+                                                        .bodyMediumFamily,
                                                 fontSize: 10.0,
                                                 useGoogleFonts: GoogleFonts
                                                         .asMap()
                                                     .containsKey(
                                                         FlutterFlowTheme.of(
                                                                 context)
-                                                            .bodyText1Family),
+                                                            .bodyMediumFamily),
                                               ),
                                         ),
                                       ),
@@ -223,19 +223,19 @@ class _CashtableWidgetState extends State<CashtableWidget>
                                             currentUserDocument!.location!
                                                 .toString(),
                                             style: FlutterFlowTheme.of(context)
-                                                .bodyText1
+                                                .bodyMedium
                                                 .override(
                                                   fontFamily:
                                                       FlutterFlowTheme.of(
                                                               context)
-                                                          .bodyText1Family,
+                                                          .bodyMediumFamily,
                                                   fontSize: 10.0,
                                                   useGoogleFonts: GoogleFonts
                                                           .asMap()
                                                       .containsKey(
                                                           FlutterFlowTheme.of(
                                                                   context)
-                                                              .bodyText1Family),
+                                                              .bodyMediumFamily),
                                                 ),
                                           ),
                                         ),
@@ -275,18 +275,18 @@ class _CashtableWidgetState extends State<CashtableWidget>
                                           widget.users!,
                                           textAlign: TextAlign.start,
                                           style: FlutterFlowTheme.of(context)
-                                              .bodyText1
+                                              .bodyMedium
                                               .override(
                                                 fontFamily:
                                                     FlutterFlowTheme.of(context)
-                                                        .bodyText1Family,
+                                                        .bodyMediumFamily,
                                                 fontSize: 10.0,
                                                 useGoogleFonts: GoogleFonts
                                                         .asMap()
                                                     .containsKey(
                                                         FlutterFlowTheme.of(
                                                                 context)
-                                                            .bodyText1Family),
+                                                            .bodyMediumFamily),
                                               ),
                                         ),
                                       ),
@@ -307,19 +307,19 @@ class _CashtableWidgetState extends State<CashtableWidget>
                                                 .toString(),
                                             textAlign: TextAlign.start,
                                             style: FlutterFlowTheme.of(context)
-                                                .bodyText1
+                                                .bodyMedium
                                                 .override(
                                                   fontFamily:
                                                       FlutterFlowTheme.of(
                                                               context)
-                                                          .bodyText1Family,
+                                                          .bodyMediumFamily,
                                                   fontSize: 10.0,
                                                   useGoogleFonts: GoogleFonts
                                                           .asMap()
                                                       .containsKey(
                                                           FlutterFlowTheme.of(
                                                                   context)
-                                                              .bodyText1Family),
+                                                              .bodyMediumFamily),
                                                 ),
                                           ),
                                         ),
@@ -378,18 +378,18 @@ class _CashtableWidgetState extends State<CashtableWidget>
                                         child: Text(
                                           widget.users!,
                                           style: FlutterFlowTheme.of(context)
-                                              .bodyText1
+                                              .bodyMedium
                                               .override(
                                                 fontFamily:
                                                     FlutterFlowTheme.of(context)
-                                                        .bodyText1Family,
+                                                        .bodyMediumFamily,
                                                 fontSize: 10.0,
                                                 useGoogleFonts: GoogleFonts
                                                         .asMap()
                                                     .containsKey(
                                                         FlutterFlowTheme.of(
                                                                 context)
-                                                            .bodyText1Family),
+                                                            .bodyMediumFamily),
                                               ),
                                         ),
                                       ),
@@ -409,19 +409,19 @@ class _CashtableWidgetState extends State<CashtableWidget>
                                             currentUserDocument!.location!
                                                 .toString(),
                                             style: FlutterFlowTheme.of(context)
-                                                .bodyText1
+                                                .bodyMedium
                                                 .override(
                                                   fontFamily:
                                                       FlutterFlowTheme.of(
                                                               context)
-                                                          .bodyText1Family,
+                                                          .bodyMediumFamily,
                                                   fontSize: 10.0,
                                                   useGoogleFonts: GoogleFonts
                                                           .asMap()
                                                       .containsKey(
                                                           FlutterFlowTheme.of(
                                                                   context)
-                                                              .bodyText1Family),
+                                                              .bodyMediumFamily),
                                                 ),
                                           ),
                                         ),
@@ -462,19 +462,19 @@ class _CashtableWidgetState extends State<CashtableWidget>
                                             currentUserDocument!.location!
                                                 .toString(),
                                             style: FlutterFlowTheme.of(context)
-                                                .bodyText1
+                                                .bodyMedium
                                                 .override(
                                                   fontFamily:
                                                       FlutterFlowTheme.of(
                                                               context)
-                                                          .bodyText1Family,
+                                                          .bodyMediumFamily,
                                                   fontSize: 10.0,
                                                   useGoogleFonts: GoogleFonts
                                                           .asMap()
                                                       .containsKey(
                                                           FlutterFlowTheme.of(
                                                                   context)
-                                                              .bodyText1Family),
+                                                              .bodyMediumFamily),
                                                 ),
                                           ),
                                         ),
@@ -493,18 +493,18 @@ class _CashtableWidgetState extends State<CashtableWidget>
                                         child: Text(
                                           widget.users!,
                                           style: FlutterFlowTheme.of(context)
-                                              .bodyText1
+                                              .bodyMedium
                                               .override(
                                                 fontFamily:
                                                     FlutterFlowTheme.of(context)
-                                                        .bodyText1Family,
+                                                        .bodyMediumFamily,
                                                 fontSize: 10.0,
                                                 useGoogleFonts: GoogleFonts
                                                         .asMap()
                                                     .containsKey(
                                                         FlutterFlowTheme.of(
                                                                 context)
-                                                            .bodyText1Family),
+                                                            .bodyMediumFamily),
                                               ),
                                         ),
                                       ),
@@ -544,7 +544,7 @@ class _CashtableWidgetState extends State<CashtableWidget>
                                               ),
                                               style:
                                                   FlutterFlowTheme.of(context)
-                                                      .bodyText1,
+                                                      .bodyMedium,
                                             ),
                                           ),
                                         ),
@@ -568,7 +568,7 @@ class _CashtableWidgetState extends State<CashtableWidget>
                                                 ),
                                                 style:
                                                     FlutterFlowTheme.of(context)
-                                                        .bodyText1,
+                                                        .bodyMedium,
                                               ),
                                             ),
                                           ),
@@ -615,7 +615,8 @@ class _CashtableWidgetState extends State<CashtableWidget>
                                   FFLocalizations.of(context).getText(
                                     '9sxg7i09' /* Hello World */,
                                   ),
-                                  style: FlutterFlowTheme.of(context).bodyText1,
+                                  style:
+                                      FlutterFlowTheme.of(context).bodyMedium,
                                 ),
                               ),
                             ),
@@ -655,7 +656,7 @@ class _CashtableWidgetState extends State<CashtableWidget>
                                               'name',
                                             ),
                                             style: FlutterFlowTheme.of(context)
-                                                .bodyText1,
+                                                .bodyMedium,
                                           ),
                                         ),
                                       ),
@@ -671,7 +672,7 @@ class _CashtableWidgetState extends State<CashtableWidget>
                                               'k1wsrbus' /* Hello World */,
                                             ),
                                             style: FlutterFlowTheme.of(context)
-                                                .bodyText1,
+                                                .bodyMedium,
                                           ),
                                         ),
                                       ),
@@ -724,12 +725,12 @@ class _CashtableWidgetState extends State<CashtableWidget>
                                               ),
                                               style:
                                                   FlutterFlowTheme.of(context)
-                                                      .bodyText1
+                                                      .bodyMedium
                                                       .override(
                                                         fontFamily:
                                                             FlutterFlowTheme.of(
                                                                     context)
-                                                                .bodyText1Family,
+                                                                .bodyMediumFamily,
                                                         color:
                                                             FlutterFlowTheme.of(
                                                                     context)
@@ -739,7 +740,7 @@ class _CashtableWidgetState extends State<CashtableWidget>
                                                             .containsKey(
                                                                 FlutterFlowTheme.of(
                                                                         context)
-                                                                    .bodyText1Family),
+                                                                    .bodyMediumFamily),
                                                       ),
                                             ),
                                           ),
@@ -759,12 +760,12 @@ class _CashtableWidgetState extends State<CashtableWidget>
                                               '',
                                               style:
                                                   FlutterFlowTheme.of(context)
-                                                      .bodyText1
+                                                      .bodyMedium
                                                       .override(
                                                         fontFamily:
                                                             FlutterFlowTheme.of(
                                                                     context)
-                                                                .bodyText1Family,
+                                                                .bodyMediumFamily,
                                                         color:
                                                             Color(0xDA5DFF0F),
                                                         useGoogleFonts: GoogleFonts
@@ -772,7 +773,7 @@ class _CashtableWidgetState extends State<CashtableWidget>
                                                             .containsKey(
                                                                 FlutterFlowTheme.of(
                                                                         context)
-                                                                    .bodyText1Family),
+                                                                    .bodyMediumFamily),
                                                       ),
                                             ),
                                           ),
@@ -826,16 +827,16 @@ class _CashtableWidgetState extends State<CashtableWidget>
                                   ),
                                   textAlign: TextAlign.center,
                                   style: FlutterFlowTheme.of(context)
-                                      .bodyText1
+                                      .bodyMedium
                                       .override(
                                         fontFamily: FlutterFlowTheme.of(context)
-                                            .bodyText1Family,
+                                            .bodyMediumFamily,
                                         color: FlutterFlowTheme.of(context)
                                             .textColor,
                                         useGoogleFonts: GoogleFonts.asMap()
                                             .containsKey(
                                                 FlutterFlowTheme.of(context)
-                                                    .bodyText1Family),
+                                                    .bodyMediumFamily),
                                       ),
                                 ),
                               ),
@@ -950,12 +951,12 @@ class _CashtableWidgetState extends State<CashtableWidget>
                                                     textAlign: TextAlign.center,
                                                     style: FlutterFlowTheme.of(
                                                             context)
-                                                        .bodyText1
+                                                        .bodyMedium
                                                         .override(
                                                           fontFamily:
                                                               FlutterFlowTheme.of(
                                                                       context)
-                                                                  .bodyText1Family,
+                                                                  .bodyMediumFamily,
                                                           color: FlutterFlowTheme
                                                                   .of(context)
                                                               .black600,
@@ -965,7 +966,7 @@ class _CashtableWidgetState extends State<CashtableWidget>
                                                               .containsKey(
                                                                   FlutterFlowTheme.of(
                                                                           context)
-                                                                      .bodyText1Family),
+                                                                      .bodyMediumFamily),
                                                         ),
                                                   ),
                                                 ),
@@ -1062,12 +1063,12 @@ class _CashtableWidgetState extends State<CashtableWidget>
                                                     ),
                                                     style: FlutterFlowTheme.of(
                                                             context)
-                                                        .bodyText1
+                                                        .bodyMedium
                                                         .override(
                                                           fontFamily:
                                                               FlutterFlowTheme.of(
                                                                       context)
-                                                                  .bodyText1Family,
+                                                                  .bodyMediumFamily,
                                                           color: FlutterFlowTheme
                                                                   .of(context)
                                                               .black600,
@@ -1076,7 +1077,7 @@ class _CashtableWidgetState extends State<CashtableWidget>
                                                               .containsKey(
                                                                   FlutterFlowTheme.of(
                                                                           context)
-                                                                      .bodyText1Family),
+                                                                      .bodyMediumFamily),
                                                         ),
                                                   ),
                                                 ),
@@ -1167,12 +1168,12 @@ class _CashtableWidgetState extends State<CashtableWidget>
                                                     textAlign: TextAlign.center,
                                                     style: FlutterFlowTheme.of(
                                                             context)
-                                                        .bodyText1
+                                                        .bodyMedium
                                                         .override(
                                                           fontFamily:
                                                               FlutterFlowTheme.of(
                                                                       context)
-                                                                  .bodyText1Family,
+                                                                  .bodyMediumFamily,
                                                           color: FlutterFlowTheme
                                                                   .of(context)
                                                               .black600,
@@ -1182,7 +1183,7 @@ class _CashtableWidgetState extends State<CashtableWidget>
                                                               .containsKey(
                                                                   FlutterFlowTheme.of(
                                                                           context)
-                                                                      .bodyText1Family),
+                                                                      .bodyMediumFamily),
                                                         ),
                                                   ),
                                                 ),
@@ -1273,12 +1274,12 @@ class _CashtableWidgetState extends State<CashtableWidget>
                                                     ),
                                                     style: FlutterFlowTheme.of(
                                                             context)
-                                                        .bodyText1
+                                                        .bodyMedium
                                                         .override(
                                                           fontFamily:
                                                               FlutterFlowTheme.of(
                                                                       context)
-                                                                  .bodyText1Family,
+                                                                  .bodyMediumFamily,
                                                           color: FlutterFlowTheme
                                                                   .of(context)
                                                               .black600,
@@ -1288,7 +1289,7 @@ class _CashtableWidgetState extends State<CashtableWidget>
                                                               .containsKey(
                                                                   FlutterFlowTheme.of(
                                                                           context)
-                                                                      .bodyText1Family),
+                                                                      .bodyMediumFamily),
                                                         ),
                                                   ),
                                                 ),
@@ -1389,12 +1390,12 @@ class _CashtableWidgetState extends State<CashtableWidget>
                                                     textAlign: TextAlign.center,
                                                     style: FlutterFlowTheme.of(
                                                             context)
-                                                        .bodyText1
+                                                        .bodyMedium
                                                         .override(
                                                           fontFamily:
                                                               FlutterFlowTheme.of(
                                                                       context)
-                                                                  .bodyText1Family,
+                                                                  .bodyMediumFamily,
                                                           color: FlutterFlowTheme
                                                                   .of(context)
                                                               .black600,
@@ -1404,7 +1405,7 @@ class _CashtableWidgetState extends State<CashtableWidget>
                                                               .containsKey(
                                                                   FlutterFlowTheme.of(
                                                                           context)
-                                                                      .bodyText1Family),
+                                                                      .bodyMediumFamily),
                                                         ),
                                                   ),
                                                 ),
@@ -1482,12 +1483,12 @@ class _CashtableWidgetState extends State<CashtableWidget>
                                                     ),
                                                     style: FlutterFlowTheme.of(
                                                             context)
-                                                        .bodyText1
+                                                        .bodyMedium
                                                         .override(
                                                           fontFamily:
                                                               FlutterFlowTheme.of(
                                                                       context)
-                                                                  .bodyText1Family,
+                                                                  .bodyMediumFamily,
                                                           color: FlutterFlowTheme
                                                                   .of(context)
                                                               .primaryText,
@@ -1496,7 +1497,7 @@ class _CashtableWidgetState extends State<CashtableWidget>
                                                               .containsKey(
                                                                   FlutterFlowTheme.of(
                                                                           context)
-                                                                      .bodyText1Family),
+                                                                      .bodyMediumFamily),
                                                         ),
                                                   ),
                                                 ),
@@ -1542,19 +1543,19 @@ class _CashtableWidgetState extends State<CashtableWidget>
                                                     textAlign: TextAlign.center,
                                                     style: FlutterFlowTheme.of(
                                                             context)
-                                                        .bodyText1
+                                                        .bodyMedium
                                                         .override(
                                                           fontFamily:
                                                               FlutterFlowTheme.of(
                                                                       context)
-                                                                  .bodyText1Family,
+                                                                  .bodyMediumFamily,
                                                           color: Colors.black,
                                                           useGoogleFonts: GoogleFonts
                                                                   .asMap()
                                                               .containsKey(
                                                                   FlutterFlowTheme.of(
                                                                           context)
-                                                                      .bodyText1Family),
+                                                                      .bodyMediumFamily),
                                                         ),
                                                   ),
                                                 ),
@@ -1654,19 +1655,19 @@ class _CashtableWidgetState extends State<CashtableWidget>
                                                     ),
                                                     style: FlutterFlowTheme.of(
                                                             context)
-                                                        .bodyText1
+                                                        .bodyMedium
                                                         .override(
                                                           fontFamily:
                                                               FlutterFlowTheme.of(
                                                                       context)
-                                                                  .bodyText1Family,
+                                                                  .bodyMediumFamily,
                                                           color: Colors.black,
                                                           useGoogleFonts: GoogleFonts
                                                                   .asMap()
                                                               .containsKey(
                                                                   FlutterFlowTheme.of(
                                                                           context)
-                                                                      .bodyText1Family),
+                                                                      .bodyMediumFamily),
                                                         ),
                                                   ),
                                                 ),
@@ -1759,12 +1760,12 @@ class _CashtableWidgetState extends State<CashtableWidget>
                                                   textAlign: TextAlign.center,
                                                   style: FlutterFlowTheme.of(
                                                           context)
-                                                      .bodyText1
+                                                      .bodyMedium
                                                       .override(
                                                         fontFamily:
                                                             FlutterFlowTheme.of(
                                                                     context)
-                                                                .bodyText1Family,
+                                                                .bodyMediumFamily,
                                                         color:
                                                             FlutterFlowTheme.of(
                                                                     context)
@@ -1774,7 +1775,7 @@ class _CashtableWidgetState extends State<CashtableWidget>
                                                             .containsKey(
                                                                 FlutterFlowTheme.of(
                                                                         context)
-                                                                    .bodyText1Family),
+                                                                    .bodyMediumFamily),
                                                       ),
                                                 ),
                                               ),

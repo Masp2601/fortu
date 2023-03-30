@@ -174,7 +174,7 @@ class _GoldtableWidgetState extends State<GoldtableWidget>
                                             'hb7irzgg' /* Hello World */,
                                           ),
                                           style: FlutterFlowTheme.of(context)
-                                              .bodyText1,
+                                              .bodyMedium,
                                         ),
                                       ),
                                     ),
@@ -195,18 +195,18 @@ class _GoldtableWidgetState extends State<GoldtableWidget>
                                           ),
                                           textAlign: TextAlign.start,
                                           style: FlutterFlowTheme.of(context)
-                                              .bodyText1
+                                              .bodyMedium
                                               .override(
                                                 fontFamily:
                                                     FlutterFlowTheme.of(context)
-                                                        .bodyText1Family,
+                                                        .bodyMediumFamily,
                                                 fontSize: 10.0,
                                                 useGoogleFonts: GoogleFonts
                                                         .asMap()
                                                     .containsKey(
                                                         FlutterFlowTheme.of(
                                                                 context)
-                                                            .bodyText1Family),
+                                                            .bodyMediumFamily),
                                               ),
                                         ),
                                       ),
@@ -226,18 +226,18 @@ class _GoldtableWidgetState extends State<GoldtableWidget>
                                             '1nx0wc3m' /* colombia */,
                                           ),
                                           style: FlutterFlowTheme.of(context)
-                                              .bodyText1
+                                              .bodyMedium
                                               .override(
                                                 fontFamily:
                                                     FlutterFlowTheme.of(context)
-                                                        .bodyText1Family,
+                                                        .bodyMediumFamily,
                                                 fontSize: 10.0,
                                                 useGoogleFonts: GoogleFonts
                                                         .asMap()
                                                     .containsKey(
                                                         FlutterFlowTheme.of(
                                                                 context)
-                                                            .bodyText1Family),
+                                                            .bodyMediumFamily),
                                               ),
                                         ),
                                       ),
@@ -278,18 +278,18 @@ class _GoldtableWidgetState extends State<GoldtableWidget>
                                           ),
                                           textAlign: TextAlign.start,
                                           style: FlutterFlowTheme.of(context)
-                                              .bodyText1
+                                              .bodyMedium
                                               .override(
                                                 fontFamily:
                                                     FlutterFlowTheme.of(context)
-                                                        .bodyText1Family,
+                                                        .bodyMediumFamily,
                                                 fontSize: 10.0,
                                                 useGoogleFonts: GoogleFonts
                                                         .asMap()
                                                     .containsKey(
                                                         FlutterFlowTheme.of(
                                                                 context)
-                                                            .bodyText1Family),
+                                                            .bodyMediumFamily),
                                               ),
                                         ),
                                       ),
@@ -310,18 +310,18 @@ class _GoldtableWidgetState extends State<GoldtableWidget>
                                           ),
                                           textAlign: TextAlign.start,
                                           style: FlutterFlowTheme.of(context)
-                                              .bodyText1
+                                              .bodyMedium
                                               .override(
                                                 fontFamily:
                                                     FlutterFlowTheme.of(context)
-                                                        .bodyText1Family,
+                                                        .bodyMediumFamily,
                                                 fontSize: 10.0,
                                                 useGoogleFonts: GoogleFonts
                                                         .asMap()
                                                     .containsKey(
                                                         FlutterFlowTheme.of(
                                                                 context)
-                                                            .bodyText1Family),
+                                                            .bodyMediumFamily),
                                               ),
                                         ),
                                       ),
@@ -381,18 +381,18 @@ class _GoldtableWidgetState extends State<GoldtableWidget>
                                             'bk7bilmh' /*  */,
                                           ),
                                           style: FlutterFlowTheme.of(context)
-                                              .bodyText1
+                                              .bodyMedium
                                               .override(
                                                 fontFamily:
                                                     FlutterFlowTheme.of(context)
-                                                        .bodyText1Family,
+                                                        .bodyMediumFamily,
                                                 fontSize: 10.0,
                                                 useGoogleFonts: GoogleFonts
                                                         .asMap()
                                                     .containsKey(
                                                         FlutterFlowTheme.of(
                                                                 context)
-                                                            .bodyText1Family),
+                                                            .bodyMediumFamily),
                                               ),
                                         ),
                                       ),
@@ -412,18 +412,18 @@ class _GoldtableWidgetState extends State<GoldtableWidget>
                                             '3rvtmz40' /* colombia */,
                                           ),
                                           style: FlutterFlowTheme.of(context)
-                                              .bodyText1
+                                              .bodyMedium
                                               .override(
                                                 fontFamily:
                                                     FlutterFlowTheme.of(context)
-                                                        .bodyText1Family,
+                                                        .bodyMediumFamily,
                                                 fontSize: 10.0,
                                                 useGoogleFonts: GoogleFonts
                                                         .asMap()
                                                     .containsKey(
                                                         FlutterFlowTheme.of(
                                                                 context)
-                                                            .bodyText1Family),
+                                                            .bodyMediumFamily),
                                               ),
                                         ),
                                       ),
@@ -463,18 +463,18 @@ class _GoldtableWidgetState extends State<GoldtableWidget>
                                             'jquo0zc2' /* colombia */,
                                           ),
                                           style: FlutterFlowTheme.of(context)
-                                              .bodyText1
+                                              .bodyMedium
                                               .override(
                                                 fontFamily:
                                                     FlutterFlowTheme.of(context)
-                                                        .bodyText1Family,
+                                                        .bodyMediumFamily,
                                                 fontSize: 10.0,
                                                 useGoogleFonts: GoogleFonts
                                                         .asMap()
                                                     .containsKey(
                                                         FlutterFlowTheme.of(
                                                                 context)
-                                                            .bodyText1Family),
+                                                            .bodyMediumFamily),
                                               ),
                                         ),
                                       ),
@@ -494,18 +494,18 @@ class _GoldtableWidgetState extends State<GoldtableWidget>
                                             'aflafzeb' /*  */,
                                           ),
                                           style: FlutterFlowTheme.of(context)
-                                              .bodyText1
+                                              .bodyMedium
                                               .override(
                                                 fontFamily:
                                                     FlutterFlowTheme.of(context)
-                                                        .bodyText1Family,
+                                                        .bodyMediumFamily,
                                                 fontSize: 10.0,
                                                 useGoogleFonts: GoogleFonts
                                                         .asMap()
                                                     .containsKey(
                                                         FlutterFlowTheme.of(
                                                                 context)
-                                                            .bodyText1Family),
+                                                            .bodyMediumFamily),
                                               ),
                                         ),
                                       ),
@@ -625,7 +625,7 @@ class _GoldtableWidgetState extends State<GoldtableWidget>
                                                         style:
                                                             FlutterFlowTheme.of(
                                                                     context)
-                                                                .bodyText1,
+                                                                .bodyMedium,
                                                       ),
                                                     ),
                                                   ),
@@ -651,7 +651,7 @@ class _GoldtableWidgetState extends State<GoldtableWidget>
                                                         style:
                                                             FlutterFlowTheme.of(
                                                                     context)
-                                                                .bodyText1,
+                                                                .bodyMedium,
                                                       ),
                                                     ),
                                                   ),
@@ -709,8 +709,8 @@ class _GoldtableWidgetState extends State<GoldtableWidget>
                                     width: 100.0,
                                     height: 100.0,
                                     decoration: BoxDecoration(
-                                      color: FlutterFlowTheme.of(context)
-                                          .tertiaryColor,
+                                      color:
+                                          FlutterFlowTheme.of(context).tertiary,
                                       borderRadius: BorderRadius.circular(12.0),
                                     ),
                                     child: Visibility(
@@ -724,7 +724,7 @@ class _GoldtableWidgetState extends State<GoldtableWidget>
                                         height: 100.0,
                                         decoration: BoxDecoration(
                                           color: FlutterFlowTheme.of(context)
-                                              .tertiaryColor,
+                                              .tertiary,
                                           borderRadius:
                                               BorderRadius.circular(12.0),
                                         ),
@@ -744,12 +744,12 @@ class _GoldtableWidgetState extends State<GoldtableWidget>
                                               ),
                                               style:
                                                   FlutterFlowTheme.of(context)
-                                                      .bodyText1
+                                                      .bodyMedium
                                                       .override(
                                                         fontFamily:
                                                             FlutterFlowTheme.of(
                                                                     context)
-                                                                .bodyText1Family,
+                                                                .bodyMediumFamily,
                                                         color:
                                                             FlutterFlowTheme.of(
                                                                     context)
@@ -759,7 +759,7 @@ class _GoldtableWidgetState extends State<GoldtableWidget>
                                                             .containsKey(
                                                                 FlutterFlowTheme.of(
                                                                         context)
-                                                                    .bodyText1Family),
+                                                                    .bodyMediumFamily),
                                                       ),
                                             ),
                                           ),
@@ -810,16 +810,16 @@ class _GoldtableWidgetState extends State<GoldtableWidget>
                                   ),
                                   textAlign: TextAlign.center,
                                   style: FlutterFlowTheme.of(context)
-                                      .bodyText1
+                                      .bodyMedium
                                       .override(
                                         fontFamily: FlutterFlowTheme.of(context)
-                                            .bodyText1Family,
+                                            .bodyMediumFamily,
                                         color: FlutterFlowTheme.of(context)
                                             .textColor,
                                         useGoogleFonts: GoogleFonts.asMap()
                                             .containsKey(
                                                 FlutterFlowTheme.of(context)
-                                                    .bodyText1Family),
+                                                    .bodyMediumFamily),
                                       ),
                                 ),
                               ),
@@ -934,12 +934,12 @@ class _GoldtableWidgetState extends State<GoldtableWidget>
                                                     textAlign: TextAlign.center,
                                                     style: FlutterFlowTheme.of(
                                                             context)
-                                                        .bodyText1
+                                                        .bodyMedium
                                                         .override(
                                                           fontFamily:
                                                               FlutterFlowTheme.of(
                                                                       context)
-                                                                  .bodyText1Family,
+                                                                  .bodyMediumFamily,
                                                           color: FlutterFlowTheme
                                                                   .of(context)
                                                               .black600,
@@ -949,7 +949,7 @@ class _GoldtableWidgetState extends State<GoldtableWidget>
                                                               .containsKey(
                                                                   FlutterFlowTheme.of(
                                                                           context)
-                                                                      .bodyText1Family),
+                                                                      .bodyMediumFamily),
                                                         ),
                                                   ),
                                                 ),
@@ -1046,12 +1046,12 @@ class _GoldtableWidgetState extends State<GoldtableWidget>
                                                     ),
                                                     style: FlutterFlowTheme.of(
                                                             context)
-                                                        .bodyText1
+                                                        .bodyMedium
                                                         .override(
                                                           fontFamily:
                                                               FlutterFlowTheme.of(
                                                                       context)
-                                                                  .bodyText1Family,
+                                                                  .bodyMediumFamily,
                                                           color: FlutterFlowTheme
                                                                   .of(context)
                                                               .black600,
@@ -1060,7 +1060,7 @@ class _GoldtableWidgetState extends State<GoldtableWidget>
                                                               .containsKey(
                                                                   FlutterFlowTheme.of(
                                                                           context)
-                                                                      .bodyText1Family),
+                                                                      .bodyMediumFamily),
                                                         ),
                                                   ),
                                                 ),
@@ -1151,12 +1151,12 @@ class _GoldtableWidgetState extends State<GoldtableWidget>
                                                     textAlign: TextAlign.center,
                                                     style: FlutterFlowTheme.of(
                                                             context)
-                                                        .bodyText1
+                                                        .bodyMedium
                                                         .override(
                                                           fontFamily:
                                                               FlutterFlowTheme.of(
                                                                       context)
-                                                                  .bodyText1Family,
+                                                                  .bodyMediumFamily,
                                                           color: FlutterFlowTheme
                                                                   .of(context)
                                                               .black600,
@@ -1166,7 +1166,7 @@ class _GoldtableWidgetState extends State<GoldtableWidget>
                                                               .containsKey(
                                                                   FlutterFlowTheme.of(
                                                                           context)
-                                                                      .bodyText1Family),
+                                                                      .bodyMediumFamily),
                                                         ),
                                                   ),
                                                 ),
@@ -1257,12 +1257,12 @@ class _GoldtableWidgetState extends State<GoldtableWidget>
                                                     ),
                                                     style: FlutterFlowTheme.of(
                                                             context)
-                                                        .bodyText1
+                                                        .bodyMedium
                                                         .override(
                                                           fontFamily:
                                                               FlutterFlowTheme.of(
                                                                       context)
-                                                                  .bodyText1Family,
+                                                                  .bodyMediumFamily,
                                                           color: FlutterFlowTheme
                                                                   .of(context)
                                                               .black600,
@@ -1272,7 +1272,7 @@ class _GoldtableWidgetState extends State<GoldtableWidget>
                                                               .containsKey(
                                                                   FlutterFlowTheme.of(
                                                                           context)
-                                                                      .bodyText1Family),
+                                                                      .bodyMediumFamily),
                                                         ),
                                                   ),
                                                 ),
@@ -1373,12 +1373,12 @@ class _GoldtableWidgetState extends State<GoldtableWidget>
                                                     textAlign: TextAlign.center,
                                                     style: FlutterFlowTheme.of(
                                                             context)
-                                                        .bodyText1
+                                                        .bodyMedium
                                                         .override(
                                                           fontFamily:
                                                               FlutterFlowTheme.of(
                                                                       context)
-                                                                  .bodyText1Family,
+                                                                  .bodyMediumFamily,
                                                           color: FlutterFlowTheme
                                                                   .of(context)
                                                               .black600,
@@ -1388,7 +1388,7 @@ class _GoldtableWidgetState extends State<GoldtableWidget>
                                                               .containsKey(
                                                                   FlutterFlowTheme.of(
                                                                           context)
-                                                                      .bodyText1Family),
+                                                                      .bodyMediumFamily),
                                                         ),
                                                   ),
                                                 ),
@@ -1466,12 +1466,12 @@ class _GoldtableWidgetState extends State<GoldtableWidget>
                                                     ),
                                                     style: FlutterFlowTheme.of(
                                                             context)
-                                                        .bodyText1
+                                                        .bodyMedium
                                                         .override(
                                                           fontFamily:
                                                               FlutterFlowTheme.of(
                                                                       context)
-                                                                  .bodyText1Family,
+                                                                  .bodyMediumFamily,
                                                           color: FlutterFlowTheme
                                                                   .of(context)
                                                               .primaryText,
@@ -1480,7 +1480,7 @@ class _GoldtableWidgetState extends State<GoldtableWidget>
                                                               .containsKey(
                                                                   FlutterFlowTheme.of(
                                                                           context)
-                                                                      .bodyText1Family),
+                                                                      .bodyMediumFamily),
                                                         ),
                                                   ),
                                                 ),
@@ -1527,12 +1527,12 @@ class _GoldtableWidgetState extends State<GoldtableWidget>
                                                     textAlign: TextAlign.center,
                                                     style: FlutterFlowTheme.of(
                                                             context)
-                                                        .bodyText1
+                                                        .bodyMedium
                                                         .override(
                                                           fontFamily:
                                                               FlutterFlowTheme.of(
                                                                       context)
-                                                                  .bodyText1Family,
+                                                                  .bodyMediumFamily,
                                                           color: FlutterFlowTheme
                                                                   .of(context)
                                                               .black600,
@@ -1541,7 +1541,7 @@ class _GoldtableWidgetState extends State<GoldtableWidget>
                                                               .containsKey(
                                                                   FlutterFlowTheme.of(
                                                                           context)
-                                                                      .bodyText1Family),
+                                                                      .bodyMediumFamily),
                                                         ),
                                                   ),
                                                 ),
@@ -1641,12 +1641,12 @@ class _GoldtableWidgetState extends State<GoldtableWidget>
                                                     ),
                                                     style: FlutterFlowTheme.of(
                                                             context)
-                                                        .bodyText1
+                                                        .bodyMedium
                                                         .override(
                                                           fontFamily:
                                                               FlutterFlowTheme.of(
                                                                       context)
-                                                                  .bodyText1Family,
+                                                                  .bodyMediumFamily,
                                                           color: FlutterFlowTheme
                                                                   .of(context)
                                                               .black600,
@@ -1655,7 +1655,7 @@ class _GoldtableWidgetState extends State<GoldtableWidget>
                                                               .containsKey(
                                                                   FlutterFlowTheme.of(
                                                                           context)
-                                                                      .bodyText1Family),
+                                                                      .bodyMediumFamily),
                                                         ),
                                                   ),
                                                 ),
@@ -1748,12 +1748,12 @@ class _GoldtableWidgetState extends State<GoldtableWidget>
                                                   textAlign: TextAlign.center,
                                                   style: FlutterFlowTheme.of(
                                                           context)
-                                                      .bodyText1
+                                                      .bodyMedium
                                                       .override(
                                                         fontFamily:
                                                             FlutterFlowTheme.of(
                                                                     context)
-                                                                .bodyText1Family,
+                                                                .bodyMediumFamily,
                                                         color:
                                                             FlutterFlowTheme.of(
                                                                     context)
@@ -1763,7 +1763,7 @@ class _GoldtableWidgetState extends State<GoldtableWidget>
                                                             .containsKey(
                                                                 FlutterFlowTheme.of(
                                                                         context)
-                                                                    .bodyText1Family),
+                                                                    .bodyMediumFamily),
                                                       ),
                                                 ),
                                               ),

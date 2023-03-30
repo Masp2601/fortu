@@ -59,7 +59,7 @@ class _PauseCardWidgetState extends State<PauseCardWidget> {
                   FFLocalizations.of(context).getText(
                     'dt7m486y' /* Pause Card */,
                   ),
-                  style: FlutterFlowTheme.of(context).title1,
+                  style: FlutterFlowTheme.of(context).displaySmall,
                 ),
               ],
             ),
@@ -73,7 +73,7 @@ class _PauseCardWidgetState extends State<PauseCardWidget> {
                       FFLocalizations.of(context).getText(
                         '6edae99k' /* Are you sure you want to pause... */,
                       ),
-                      style: FlutterFlowTheme.of(context).bodyText1,
+                      style: FlutterFlowTheme.of(context).bodyMedium,
                     ),
                   ),
                 ],
@@ -102,7 +102,8 @@ class _PauseCardWidgetState extends State<PauseCardWidget> {
                       iconPadding:
                           EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                       color: FlutterFlowTheme.of(context).background,
-                      textStyle: FlutterFlowTheme.of(context).bodyText2,
+                      textStyle: FlutterFlowTheme.of(context).bodySmall,
+                      elevation: 2.0,
                       borderSide: BorderSide(
                         color: Colors.transparent,
                         width: 1.0,
@@ -126,16 +127,17 @@ class _PauseCardWidgetState extends State<PauseCardWidget> {
                           EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                       iconPadding:
                           EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                      color: FlutterFlowTheme.of(context).primaryColor,
+                      color: FlutterFlowTheme.of(context).primary,
                       textStyle: FlutterFlowTheme.of(context)
-                          .subtitle2
+                          .titleSmall
                           .override(
                             fontFamily:
-                                FlutterFlowTheme.of(context).subtitle2Family,
+                                FlutterFlowTheme.of(context).titleSmallFamily,
                             color: Colors.white,
                             useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                FlutterFlowTheme.of(context).subtitle2Family),
+                                FlutterFlowTheme.of(context).titleSmallFamily),
                           ),
+                      elevation: 2.0,
                       borderSide: BorderSide(
                         color: Colors.transparent,
                         width: 1.0,

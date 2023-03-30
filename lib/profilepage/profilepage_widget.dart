@@ -130,11 +130,11 @@ class _ProfilepageWidgetState extends State<ProfilepageWidget>
                       FFLocalizations.of(context).getText(
                         'hhb6veym' /* Wallet Balance */,
                       ),
-                      style: FlutterFlowTheme.of(context).subtitle1,
+                      style: FlutterFlowTheme.of(context).titleMedium,
                     ),
                     Card(
                       clipBehavior: Clip.antiAliasWithSaveLayer,
-                      color: FlutterFlowTheme.of(context).primaryColor,
+                      color: FlutterFlowTheme.of(context).primary,
                       elevation: 2.0,
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(40.0),
@@ -168,12 +168,13 @@ class _ProfilepageWidgetState extends State<ProfilepageWidget>
                       FFLocalizations.of(context).getText(
                         'fgf8icmv' /* $23,000 */,
                       ),
-                      style: FlutterFlowTheme.of(context).title1.override(
+                      style: FlutterFlowTheme.of(context).displaySmall.override(
                             fontFamily: 'Lexend',
                             fontSize: 36.0,
                             fontWeight: FontWeight.w300,
                             useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                FlutterFlowTheme.of(context).title1Family),
+                                FlutterFlowTheme.of(context)
+                                    .displaySmallFamily),
                           ),
                     ),
                   ],
@@ -189,12 +190,12 @@ class _ProfilepageWidgetState extends State<ProfilepageWidget>
                       FFLocalizations.of(context).getText(
                         '2rrr446m' /* 3 currencies */,
                       ),
-                      style: FlutterFlowTheme.of(context).bodyText1.override(
+                      style: FlutterFlowTheme.of(context).bodyMedium.override(
                             fontFamily:
-                                FlutterFlowTheme.of(context).bodyText1Family,
-                            color: FlutterFlowTheme.of(context).tertiaryColor,
+                                FlutterFlowTheme.of(context).bodyMediumFamily,
+                            color: FlutterFlowTheme.of(context).tertiary,
                             useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                FlutterFlowTheme.of(context).bodyText1Family),
+                                FlutterFlowTheme.of(context).bodyMediumFamily),
                           ),
                     ),
                   ],
@@ -395,7 +396,7 @@ class _ProfilepageWidgetState extends State<ProfilepageWidget>
                     gradient: LinearGradient(
                       colors: [
                         FlutterFlowTheme.of(context).errorRed,
-                        FlutterFlowTheme.of(context).primaryColor
+                        FlutterFlowTheme.of(context).primary
                       ],
                       stops: [0.0, 1.0],
                       begin: AlignmentDirectional(1.0, -1.0),
@@ -414,7 +415,7 @@ class _ProfilepageWidgetState extends State<ProfilepageWidget>
                           FFLocalizations.of(context).getText(
                             'vewa5op5' /* Bitcoin */,
                           ),
-                          style: FlutterFlowTheme.of(context).title3,
+                          style: FlutterFlowTheme.of(context).headlineSmall,
                         ),
                         Row(
                           mainAxisSize: MainAxisSize.max,
@@ -427,7 +428,8 @@ class _ProfilepageWidgetState extends State<ProfilepageWidget>
                                 FFLocalizations.of(context).getText(
                                   '9oun2uok' /* $7,302 */,
                                 ),
-                                style: FlutterFlowTheme.of(context).title1,
+                                style:
+                                    FlutterFlowTheme.of(context).displaySmall,
                               ),
                             ),
                             Text(
@@ -435,15 +437,15 @@ class _ProfilepageWidgetState extends State<ProfilepageWidget>
                                 'yla7uncg' /* 32% of portfolio */,
                               ),
                               style: FlutterFlowTheme.of(context)
-                                  .bodyText1
+                                  .bodyMedium
                                   .override(
                                     fontFamily: FlutterFlowTheme.of(context)
-                                        .bodyText1Family,
+                                        .bodyMediumFamily,
                                     color: Color(0x7DEEEEEE),
                                     useGoogleFonts: GoogleFonts.asMap()
                                         .containsKey(
                                             FlutterFlowTheme.of(context)
-                                                .bodyText1Family),
+                                                .bodyMediumFamily),
                                   ),
                             ),
                           ],
@@ -467,16 +469,16 @@ class _ProfilepageWidgetState extends State<ProfilepageWidget>
                                     '7hsm7t9z' /*   */,
                                   ),
                                   style: FlutterFlowTheme.of(context)
-                                      .bodyText1
+                                      .bodyMedium
                                       .override(
                                         fontFamily: FlutterFlowTheme.of(context)
-                                            .bodyText1Family,
+                                            .bodyMediumFamily,
                                         color: FlutterFlowTheme.of(context)
-                                            .primaryColor,
+                                            .primary,
                                         useGoogleFonts: GoogleFonts.asMap()
                                             .containsKey(
                                                 FlutterFlowTheme.of(context)
-                                                    .bodyText1Family),
+                                                    .bodyMediumFamily),
                                       ),
                                 ),
                                 barRadius: Radius.circular(40.0),
@@ -499,7 +501,7 @@ class _ProfilepageWidgetState extends State<ProfilepageWidget>
                     gradient: LinearGradient(
                       colors: [
                         Color(0xFF4B39EF),
-                        FlutterFlowTheme.of(context).primaryColor
+                        FlutterFlowTheme.of(context).primary
                       ],
                       stops: [0.0, 1.0],
                       begin: AlignmentDirectional(1.0, -1.0),
@@ -518,7 +520,7 @@ class _ProfilepageWidgetState extends State<ProfilepageWidget>
                           FFLocalizations.of(context).getText(
                             'opob20j8' /* Solona */,
                           ),
-                          style: FlutterFlowTheme.of(context).title3,
+                          style: FlutterFlowTheme.of(context).headlineSmall,
                         ),
                         Row(
                           mainAxisSize: MainAxisSize.max,
@@ -531,7 +533,8 @@ class _ProfilepageWidgetState extends State<ProfilepageWidget>
                                 FFLocalizations.of(context).getText(
                                   'fi3cleyj' /* $7,302 */,
                                 ),
-                                style: FlutterFlowTheme.of(context).title1,
+                                style:
+                                    FlutterFlowTheme.of(context).displaySmall,
                               ),
                             ),
                             Text(
@@ -539,15 +542,15 @@ class _ProfilepageWidgetState extends State<ProfilepageWidget>
                                 '606emxw1' /* 40% of portfolio */,
                               ),
                               style: FlutterFlowTheme.of(context)
-                                  .bodyText1
+                                  .bodyMedium
                                   .override(
                                     fontFamily: FlutterFlowTheme.of(context)
-                                        .bodyText1Family,
+                                        .bodyMediumFamily,
                                     color: Color(0x7DEEEEEE),
                                     useGoogleFonts: GoogleFonts.asMap()
                                         .containsKey(
                                             FlutterFlowTheme.of(context)
-                                                .bodyText1Family),
+                                                .bodyMediumFamily),
                                   ),
                             ),
                           ],
@@ -571,16 +574,16 @@ class _ProfilepageWidgetState extends State<ProfilepageWidget>
                                     'qx0ykpbm' /*   */,
                                   ),
                                   style: FlutterFlowTheme.of(context)
-                                      .bodyText1
+                                      .bodyMedium
                                       .override(
                                         fontFamily: FlutterFlowTheme.of(context)
-                                            .bodyText1Family,
+                                            .bodyMediumFamily,
                                         color: FlutterFlowTheme.of(context)
-                                            .primaryColor,
+                                            .primary,
                                         useGoogleFonts: GoogleFonts.asMap()
                                             .containsKey(
                                                 FlutterFlowTheme.of(context)
-                                                    .bodyText1Family),
+                                                    .bodyMediumFamily),
                                       ),
                                 ),
                                 barRadius: Radius.circular(40.0),
@@ -602,7 +605,7 @@ class _ProfilepageWidgetState extends State<ProfilepageWidget>
                   decoration: BoxDecoration(
                     gradient: LinearGradient(
                       colors: [
-                        FlutterFlowTheme.of(context).tertiaryColor,
+                        FlutterFlowTheme.of(context).tertiary,
                         Color(0xFFEE8B60)
                       ],
                       stops: [0.0, 1.0],
@@ -622,7 +625,7 @@ class _ProfilepageWidgetState extends State<ProfilepageWidget>
                           FFLocalizations.of(context).getText(
                             'l2io5lul' /* Dogecoin */,
                           ),
-                          style: FlutterFlowTheme.of(context).title3,
+                          style: FlutterFlowTheme.of(context).headlineSmall,
                         ),
                         Row(
                           mainAxisSize: MainAxisSize.max,
@@ -635,7 +638,8 @@ class _ProfilepageWidgetState extends State<ProfilepageWidget>
                                 FFLocalizations.of(context).getText(
                                   'krsyyttw' /* $7,302 */,
                                 ),
-                                style: FlutterFlowTheme.of(context).title1,
+                                style:
+                                    FlutterFlowTheme.of(context).displaySmall,
                               ),
                             ),
                             Text(
@@ -643,15 +647,15 @@ class _ProfilepageWidgetState extends State<ProfilepageWidget>
                                 '4mvfe3pe' /* 40% of portfolio */,
                               ),
                               style: FlutterFlowTheme.of(context)
-                                  .bodyText1
+                                  .bodyMedium
                                   .override(
                                     fontFamily: FlutterFlowTheme.of(context)
-                                        .bodyText1Family,
+                                        .bodyMediumFamily,
                                     color: Color(0x7DEEEEEE),
                                     useGoogleFonts: GoogleFonts.asMap()
                                         .containsKey(
                                             FlutterFlowTheme.of(context)
-                                                .bodyText1Family),
+                                                .bodyMediumFamily),
                                   ),
                             ),
                           ],
@@ -675,16 +679,16 @@ class _ProfilepageWidgetState extends State<ProfilepageWidget>
                                     '6cm4jjje' /*   */,
                                   ),
                                   style: FlutterFlowTheme.of(context)
-                                      .bodyText1
+                                      .bodyMedium
                                       .override(
                                         fontFamily: FlutterFlowTheme.of(context)
-                                            .bodyText1Family,
+                                            .bodyMediumFamily,
                                         color: FlutterFlowTheme.of(context)
-                                            .primaryColor,
+                                            .primary,
                                         useGoogleFonts: GoogleFonts.asMap()
                                             .containsKey(
                                                 FlutterFlowTheme.of(context)
-                                                    .bodyText1Family),
+                                                    .bodyMediumFamily),
                                       ),
                                 ),
                                 barRadius: Radius.circular(40.0),

@@ -187,7 +187,7 @@ class _TransactionEDITWidgetState extends State<TransactionEDITWidget>
         final transactionEDITTransactionsRecord = snapshot.data!;
         return Scaffold(
           key: scaffoldKey,
-          backgroundColor: FlutterFlowTheme.of(context).tertiaryColor,
+          backgroundColor: FlutterFlowTheme.of(context).tertiary,
           body: Form(
             key: _model.formKey,
             autovalidateMode: AutovalidateMode.disabled,
@@ -233,7 +233,8 @@ class _TransactionEDITWidgetState extends State<TransactionEDITWidget>
                                   FFLocalizations.of(context).getText(
                                     's300dyxl' /* Edit Transaction */,
                                   ),
-                                  style: FlutterFlowTheme.of(context).title1,
+                                  style:
+                                      FlutterFlowTheme.of(context).displaySmall,
                                 ),
                                 Card(
                                   clipBehavior: Clip.antiAliasWithSaveLayer,
@@ -275,33 +276,33 @@ class _TransactionEDITWidgetState extends State<TransactionEDITWidget>
                                 obscureText: false,
                                 decoration: InputDecoration(
                                   labelStyle: FlutterFlowTheme.of(context)
-                                      .title1
+                                      .displaySmall
                                       .override(
                                         fontFamily: FlutterFlowTheme.of(context)
-                                            .title1Family,
+                                            .displaySmallFamily,
                                         color: FlutterFlowTheme.of(context)
                                             .grayLight,
                                         fontWeight: FontWeight.w300,
                                         useGoogleFonts: GoogleFonts.asMap()
                                             .containsKey(
                                                 FlutterFlowTheme.of(context)
-                                                    .title1Family),
+                                                    .displaySmallFamily),
                                       ),
                                   hintText: FFLocalizations.of(context).getText(
                                     '5xgwlwjj' /* Amount */,
                                   ),
                                   hintStyle: FlutterFlowTheme.of(context)
-                                      .title1
+                                      .displaySmall
                                       .override(
                                         fontFamily: FlutterFlowTheme.of(context)
-                                            .title1Family,
+                                            .displaySmallFamily,
                                         color: FlutterFlowTheme.of(context)
                                             .grayLight,
                                         fontWeight: FontWeight.w300,
                                         useGoogleFonts: GoogleFonts.asMap()
                                             .containsKey(
                                                 FlutterFlowTheme.of(context)
-                                                    .title1Family),
+                                                    .displaySmallFamily),
                                       ),
                                   enabledBorder: UnderlineInputBorder(
                                     borderSide: BorderSide(
@@ -342,7 +343,8 @@ class _TransactionEDITWidgetState extends State<TransactionEDITWidget>
                                     size: 32.0,
                                   ),
                                 ),
-                                style: FlutterFlowTheme.of(context).title1,
+                                style:
+                                    FlutterFlowTheme.of(context).displaySmall,
                                 textAlign: TextAlign.center,
                                 keyboardType: TextInputType.number,
                                 validator: _model.textController1Validator
@@ -366,7 +368,7 @@ class _TransactionEDITWidgetState extends State<TransactionEDITWidget>
                                     '720k2d98' /* Spent At */,
                                   ),
                                   labelStyle:
-                                      FlutterFlowTheme.of(context).bodyText2,
+                                      FlutterFlowTheme.of(context).bodySmall,
                                   enabledBorder: OutlineInputBorder(
                                     borderSide: BorderSide(
                                       color: FlutterFlowTheme.of(context)
@@ -400,7 +402,7 @@ class _TransactionEDITWidgetState extends State<TransactionEDITWidget>
                                       EdgeInsetsDirectional.fromSTEB(
                                           20.0, 24.0, 24.0, 24.0),
                                 ),
-                                style: FlutterFlowTheme.of(context).bodyText1,
+                                style: FlutterFlowTheme.of(context).bodyMedium,
                                 validator: _model.spentAtControllerValidator
                                     .asValidator(context),
                               ).animateOnPageLoad(animationsMap[
@@ -453,7 +455,7 @@ class _TransactionEDITWidgetState extends State<TransactionEDITWidget>
                                         MediaQuery.of(context).size.width * 0.9,
                                     height: 60.0,
                                     textStyle:
-                                        FlutterFlowTheme.of(context).bodyText1,
+                                        FlutterFlowTheme.of(context).bodyMedium,
                                     hintText:
                                         FFLocalizations.of(context).getText(
                                       'l3bqo3oh' /* Select Budget */,
@@ -492,12 +494,12 @@ class _TransactionEDITWidgetState extends State<TransactionEDITWidget>
                                 obscureText: false,
                                 decoration: InputDecoration(
                                   labelStyle:
-                                      FlutterFlowTheme.of(context).bodyText2,
+                                      FlutterFlowTheme.of(context).bodySmall,
                                   hintText: FFLocalizations.of(context).getText(
                                     '0lw03w43' /* Reason */,
                                   ),
                                   hintStyle:
-                                      FlutterFlowTheme.of(context).bodyText2,
+                                      FlutterFlowTheme.of(context).bodySmall,
                                   enabledBorder: OutlineInputBorder(
                                     borderSide: BorderSide(
                                       color: FlutterFlowTheme.of(context)
@@ -531,7 +533,7 @@ class _TransactionEDITWidgetState extends State<TransactionEDITWidget>
                                       EdgeInsetsDirectional.fromSTEB(
                                           20.0, 40.0, 24.0, 0.0),
                                 ),
-                                style: FlutterFlowTheme.of(context).bodyText1,
+                                style: FlutterFlowTheme.of(context).bodyMedium,
                                 textAlign: TextAlign.start,
                                 maxLines: 4,
                                 validator: _model.reasonControllerValidator
@@ -618,19 +620,18 @@ class _TransactionEDITWidgetState extends State<TransactionEDITWidget>
                                       0.0, 0.0, 0.0, 0.0),
                                   iconPadding: EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 0.0, 0.0),
-                                  color: FlutterFlowTheme.of(context)
-                                      .tertiaryColor,
+                                  color: FlutterFlowTheme.of(context).tertiary,
                                   textStyle: FlutterFlowTheme.of(context)
-                                      .title1
+                                      .displaySmall
                                       .override(
                                         fontFamily: FlutterFlowTheme.of(context)
-                                            .title1Family,
+                                            .displaySmallFamily,
                                         color: FlutterFlowTheme.of(context)
                                             .textColor,
                                         useGoogleFonts: GoogleFonts.asMap()
                                             .containsKey(
                                                 FlutterFlowTheme.of(context)
-                                                    .title1Family),
+                                                    .displaySmallFamily),
                                       ),
                                   elevation: 0.0,
                                   borderSide: BorderSide(
@@ -651,12 +652,12 @@ class _TransactionEDITWidgetState extends State<TransactionEDITWidget>
                   FFLocalizations.of(context).getText(
                     '4atjd0yh' /* Tap above to save your changes... */,
                   ),
-                  style: FlutterFlowTheme.of(context).bodyText1.override(
+                  style: FlutterFlowTheme.of(context).bodyMedium.override(
                         fontFamily:
-                            FlutterFlowTheme.of(context).bodyText1Family,
+                            FlutterFlowTheme.of(context).bodyMediumFamily,
                         color: Color(0x43000000),
                         useGoogleFonts: GoogleFonts.asMap().containsKey(
-                            FlutterFlowTheme.of(context).bodyText1Family),
+                            FlutterFlowTheme.of(context).bodyMediumFamily),
                       ),
                 ),
               ],
