@@ -155,7 +155,7 @@ class _FortunatableWidgetState extends State<FortunatableWidget>
                                         padding: EdgeInsetsDirectional.fromSTEB(
                                             25.0, 0.0, 0.0, 0.0),
                                         child: Image.asset(
-                                          'assets/images/Rectangle_281.png',
+                                          'assets/images/ficha.png',
                                           width: 170.0,
                                           height: 181.6,
                                           fit: BoxFit.fill,
@@ -175,7 +175,7 @@ class _FortunatableWidgetState extends State<FortunatableWidget>
                                             60.0, 10.0, 0.0, 10.0),
                                         child: Text(
                                           FFLocalizations.of(context).getText(
-                                            'dv5rd5yj' /* Hello World */,
+                                            'dv5rd5yj' /* players */,
                                           ),
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium,
@@ -262,6 +262,12 @@ class _FortunatableWidgetState extends State<FortunatableWidget>
                                           decoration: BoxDecoration(
                                             color: FlutterFlowTheme.of(context)
                                                 .textColor,
+                                            image: DecorationImage(
+                                              fit: BoxFit.cover,
+                                              image: Image.asset(
+                                                'assets/images/linetwo.png',
+                                              ).image,
+                                            ),
                                           ),
                                         ),
                                       ),
@@ -366,6 +372,12 @@ class _FortunatableWidgetState extends State<FortunatableWidget>
                                           decoration: BoxDecoration(
                                             color: FlutterFlowTheme.of(context)
                                                 .textColor,
+                                            image: DecorationImage(
+                                              fit: BoxFit.cover,
+                                              image: Image.asset(
+                                                'assets/images/linetwo.png',
+                                              ).image,
+                                            ),
                                           ),
                                         ),
                                       ),
@@ -448,6 +460,12 @@ class _FortunatableWidgetState extends State<FortunatableWidget>
                                           decoration: BoxDecoration(
                                             color: FlutterFlowTheme.of(context)
                                                 .textColor,
+                                            image: DecorationImage(
+                                              fit: BoxFit.cover,
+                                              image: Image.asset(
+                                                'assets/images/linetwo.png',
+                                              ).image,
+                                            ),
                                           ),
                                         ),
                                       ),
@@ -574,7 +592,7 @@ class _FortunatableWidgetState extends State<FortunatableWidget>
                                                                   FlutterFlowExpandedImageView(
                                                                 image:
                                                                     Image.asset(
-                                                                  'assets/images/Vector_(1).png',
+                                                                  'assets/images/rectangular.png',
                                                                   fit: BoxFit
                                                                       .contain,
                                                                 ),
@@ -592,7 +610,7 @@ class _FortunatableWidgetState extends State<FortunatableWidget>
                                                           transitionOnUserGestures:
                                                               true,
                                                           child: Image.asset(
-                                                            'assets/images/Vector_(1).png',
+                                                            'assets/images/rectangular.png',
                                                             width: 186.0,
                                                             height: 50.0,
                                                             fit: BoxFit.cover,
@@ -746,12 +764,12 @@ class _FortunatableWidgetState extends State<FortunatableWidget>
                                                 Align(
                                                   alignment:
                                                       AlignmentDirectional(
-                                                          0.0, 0.0),
+                                                          0.38, -0.03),
                                                   child: Padding(
                                                     padding:
                                                         EdgeInsetsDirectional
                                                             .fromSTEB(
-                                                                100.0,
+                                                                120.0,
                                                                 92.0,
                                                                 10.0,
                                                                 0.0),
@@ -799,7 +817,7 @@ class _FortunatableWidgetState extends State<FortunatableWidget>
                                                               .center,
                                                       children: [
                                                         Image.asset(
-                                                          'assets/images/Vector_44.png',
+                                                          'assets/images/lineone.png',
                                                           width: 100.0,
                                                           height: 4.0,
                                                           fit: BoxFit.cover,
@@ -818,7 +836,7 @@ class _FortunatableWidgetState extends State<FortunatableWidget>
                                                             .fromSTEB(55.0,
                                                                 55.0, 0.0, 0.0),
                                                     child: Image.asset(
-                                                      'assets/images/Vector_44.png',
+                                                      'assets/images/linetwo.png',
                                                       width: 100.0,
                                                       height: 4.0,
                                                       fit: BoxFit.cover,
@@ -870,10 +888,10 @@ class _FortunatableWidgetState extends State<FortunatableWidget>
                               alignment: AlignmentDirectional(-0.79, -0.85),
                               child: Padding(
                                 padding: EdgeInsetsDirectional.fromSTEB(
-                                    220.0, 0.0, 0.0, 0.0),
+                                    220.0, 10.0, 0.0, 0.0),
                                 child: Text(
                                   FFLocalizations.of(context).getText(
-                                    'z60xaif0' /* Hello World */,
+                                    'z60xaif0' /* online */,
                                   ),
                                   textAlign: TextAlign.center,
                                   style: FlutterFlowTheme.of(context)

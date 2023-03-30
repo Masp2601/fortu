@@ -1,8 +1,10 @@
+import '/flutter_flow/flutter_flow_expanded_image_view.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:page_transition/page_transition.dart';
 import 'package:provider/provider.dart';
 import 'ver_model.dart';
 export 'ver_model.dart';
@@ -329,7 +331,7 @@ class _VerWidgetState extends State<VerWidget> {
                                       ))
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(0.9, -0.03),
+                                              AlignmentDirectional(0.0, -0.03),
                                           child: InkWell(
                                             onTap: () async {
                                               logFirebaseEvent(
@@ -340,7 +342,7 @@ class _VerWidgetState extends State<VerWidget> {
                                               context.pushNamed('fortunatable');
                                             },
                                             child: Image.asset(
-                                              'assets/images/gradient.png',
+                                              'assets/images/golden.png',
                                               fit: BoxFit.cover,
                                             ),
                                           ),
@@ -474,14 +476,22 @@ class _VerWidgetState extends State<VerWidget> {
                                       ),
                                       Align(
                                         alignment:
-                                            AlignmentDirectional(0.8, 0.0),
+                                            AlignmentDirectional(0.9, 0.0),
+                                        child: Image.asset(
+                                          'assets/images/gradient.png',
+                                          fit: BoxFit.cover,
+                                        ),
+                                      ),
+                                      Align(
+                                        alignment:
+                                            AlignmentDirectional(0.85, 0.0),
                                         child: Padding(
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 2.0, 0.0, 0.0),
                                           child: Text(
                                             FFLocalizations.of(context).getText(
-                                              'sfgelok4' /* see the game */,
+                                              'bh46rcxl' /* see the game */,
                                             ),
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
@@ -830,11 +840,37 @@ class _VerWidgetState extends State<VerWidget> {
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
                               children: [
-                                Image.asset(
-                                  'assets/images/siempre.png',
-                                  width: 338.0,
-                                  height: 101.3,
-                                  fit: BoxFit.cover,
+                                InkWell(
+                                  onTap: () async {
+                                    logFirebaseEvent(
+                                        'VER_PAGE_Image_ottwoxvt_ON_TAP');
+                                    logFirebaseEvent('Image_expand_image');
+                                    await Navigator.push(
+                                      context,
+                                      PageTransition(
+                                        type: PageTransitionType.fade,
+                                        child: FlutterFlowExpandedImageView(
+                                          image: Image.asset(
+                                            'assets/images/siempre.png',
+                                            fit: BoxFit.contain,
+                                          ),
+                                          allowRotation: false,
+                                          tag: 'imageTag16',
+                                          useHeroAnimation: true,
+                                        ),
+                                      ),
+                                    );
+                                  },
+                                  child: Hero(
+                                    tag: 'imageTag16',
+                                    transitionOnUserGestures: true,
+                                    child: Image.asset(
+                                      'assets/images/siempre.png',
+                                      width: 338.0,
+                                      height: 101.3,
+                                      fit: BoxFit.cover,
+                                    ),
+                                  ),
                                 ),
                               ],
                             ),

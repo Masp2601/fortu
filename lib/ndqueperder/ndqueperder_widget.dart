@@ -196,7 +196,7 @@ class _NdqueperderWidgetState extends State<NdqueperderWidget> {
                               padding: EdgeInsetsDirectional.fromSTEB(
                                   320.0, 0.0, 0.0, 220.0),
                               child: Image.asset(
-                                'assets/images/Elige_el_valor.png',
+                                'assets/images/elige.png',
                                 fit: BoxFit.cover,
                               ),
                             ),

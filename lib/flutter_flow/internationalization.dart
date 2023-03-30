@@ -1413,10 +1413,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': 'Hello World',
       'es': '',
     },
-    'bnom62z7': {
-      'en': 'PLAY',
-      'es': 'JUGAR',
-    },
     '2r200ik8': {
       'en': 'Hello World',
       'es': '',
@@ -1425,29 +1421,9 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': 'Hello World',
       'es': '',
     },
-    'g5ck6tig': {
-      'en': 'PLAY',
-      'es': 'JUGAR',
-    },
-    '7ctyfhxa': {
-      'en': 'PLAY',
-      'es': 'JUGAR',
-    },
     '9jfa6nhu': {
       'en': '',
       'es': 'DOLAR AMERICANO',
-    },
-    '16lg4my2': {
-      'en': 'PlAY',
-      'es': 'JUGAR',
-    },
-    'j1vxo4n6': {
-      'en': 'PLAY',
-      'es': 'JUGAR',
-    },
-    '3b3dt1t7': {
-      'en': 'PLAY',
-      'es': 'JUGAR',
     },
   },
   // tarjeta
@@ -1695,8 +1671,8 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   // fortunatable
   {
     'dv5rd5yj': {
-      'en': 'Hello World',
-      'es': 'Hola Mundo',
+      'en': 'players',
+      'es': 'jugadores',
     },
     'j5bpofya': {
       'en': '',
@@ -1739,8 +1715,8 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'balance:',
     },
     'z60xaif0': {
-      'en': 'Hello World',
-      'es': 'Hola Mundo',
+      'en': 'online',
+      'es': 'en línea',
     },
     'qe1m12fq': {
       'en': ':(',
@@ -1917,7 +1893,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': 'see the game',
       'es': 'ver el juego',
     },
-    'sfgelok4': {
+    'bh46rcxl': {
       'en': 'see the game',
       'es': 'ver el juego',
     },

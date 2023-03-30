@@ -1,8 +1,10 @@
+import '/flutter_flow/flutter_flow_expanded_image_view.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:page_transition/page_transition.dart';
 import 'package:provider/provider.dart';
 import 'game_model.dart';
 export 'game_model.dart';
@@ -375,37 +377,6 @@ class _GameWidgetState extends State<GameWidget> {
                                           ),
                                         ),
                                         Align(
-                                          alignment: AlignmentDirectional(
-                                              -0.75, -0.05),
-                                          child: Padding(
-                                            padding:
-                                                EdgeInsetsDirectional.fromSTEB(
-                                                    0.0, 2.0, 0.0, 0.0),
-                                            child: Text(
-                                              FFLocalizations.of(context)
-                                                  .getText(
-                                                'bnom62z7' /* PLAY */,
-                                              ),
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyMedium
-                                                      .override(
-                                                        fontFamily:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .bodyMediumFamily,
-                                                        color: Colors.black,
-                                                        useGoogleFonts: GoogleFonts
-                                                                .asMap()
-                                                            .containsKey(
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .bodyMediumFamily),
-                                                      ),
-                                            ),
-                                          ),
-                                        ),
-                                        Align(
                                           alignment:
                                               AlignmentDirectional(0.0, -0.15),
                                           child: Padding(
@@ -469,64 +440,26 @@ class _GameWidgetState extends State<GameWidget> {
                                         ),
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(0.0, 0.0),
-                                          child: Padding(
-                                            padding:
-                                                EdgeInsetsDirectional.fromSTEB(
-                                                    0.0, 2.0, 0.0, 0.0),
-                                            child: Text(
-                                              FFLocalizations.of(context)
-                                                  .getText(
-                                                'g5ck6tig' /* PLAY */,
-                                              ),
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyMedium
-                                                      .override(
-                                                        fontFamily:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .bodyMediumFamily,
-                                                        color: Colors.black,
-                                                        useGoogleFonts: GoogleFonts
-                                                                .asMap()
-                                                            .containsKey(
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .bodyMediumFamily),
-                                                      ),
-                                            ),
+                                              AlignmentDirectional(-0.9, 0.0),
+                                          child: Image.asset(
+                                            'assets/images/verde.png',
+                                            fit: BoxFit.cover,
                                           ),
                                         ),
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(0.75, 0.0),
-                                          child: Padding(
-                                            padding:
-                                                EdgeInsetsDirectional.fromSTEB(
-                                                    0.0, 2.0, 0.0, 0.0),
-                                            child: Text(
-                                              FFLocalizations.of(context)
-                                                  .getText(
-                                                '7ctyfhxa' /* PLAY */,
-                                              ),
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyMedium
-                                                      .override(
-                                                        fontFamily:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .bodyMediumFamily,
-                                                        color: Colors.black,
-                                                        useGoogleFonts: GoogleFonts
-                                                                .asMap()
-                                                            .containsKey(
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .bodyMediumFamily),
-                                                      ),
-                                            ),
+                                              AlignmentDirectional(0.0, 0.0),
+                                          child: Image.asset(
+                                            'assets/images/golden.png',
+                                            fit: BoxFit.cover,
+                                          ),
+                                        ),
+                                        Align(
+                                          alignment:
+                                              AlignmentDirectional(1.0, 0.0),
+                                          child: Image.asset(
+                                            'assets/images/gradiente.png',
+                                            fit: BoxFit.cover,
                                           ),
                                         ),
                                       ],
@@ -754,80 +687,26 @@ class _GameWidgetState extends State<GameWidget> {
                                               ),
                                             Align(
                                               alignment: AlignmentDirectional(
-                                                  -0.75, 0.05),
-                                              child: Text(
-                                                FFLocalizations.of(context)
-                                                    .getText(
-                                                  '16lg4my2' /* PlAY */,
-                                                ),
-                                                style:
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyMedium
-                                                        .override(
-                                                          fontFamily:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .bodyMediumFamily,
-                                                          color: Colors.black,
-                                                          useGoogleFonts: GoogleFonts
-                                                                  .asMap()
-                                                              .containsKey(
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .bodyMediumFamily),
-                                                        ),
+                                                  -0.9, 0.0),
+                                              child: Image.asset(
+                                                'assets/images/verde.png',
+                                                fit: BoxFit.cover,
                                               ),
                                             ),
                                             Align(
                                               alignment: AlignmentDirectional(
                                                   0.0, 0.0),
-                                              child: Text(
-                                                FFLocalizations.of(context)
-                                                    .getText(
-                                                  'j1vxo4n6' /* PLAY */,
-                                                ),
-                                                style:
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyMedium
-                                                        .override(
-                                                          fontFamily:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .bodyMediumFamily,
-                                                          color: Colors.black,
-                                                          useGoogleFonts: GoogleFonts
-                                                                  .asMap()
-                                                              .containsKey(
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .bodyMediumFamily),
-                                                        ),
+                                              child: Image.asset(
+                                                'assets/images/golden.png',
+                                                fit: BoxFit.cover,
                                               ),
                                             ),
                                             Align(
                                               alignment: AlignmentDirectional(
-                                                  0.75, 0.0),
-                                              child: Text(
-                                                FFLocalizations.of(context)
-                                                    .getText(
-                                                  '3b3dt1t7' /* PLAY */,
-                                                ),
-                                                style:
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyMedium
-                                                        .override(
-                                                          fontFamily:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .bodyMediumFamily,
-                                                          color: Colors.black,
-                                                          useGoogleFonts: GoogleFonts
-                                                                  .asMap()
-                                                              .containsKey(
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .bodyMediumFamily),
-                                                        ),
+                                                  1.0, 0.0),
+                                              child: Image.asset(
+                                                'assets/images/gradient.png',
+                                                fit: BoxFit.cover,
                                               ),
                                             ),
                                           ],
@@ -858,11 +737,37 @@ class _GameWidgetState extends State<GameWidget> {
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
-                                  Image.asset(
-                                    'assets/images/save.png',
-                                    width: 338.0,
-                                    height: 101.3,
-                                    fit: BoxFit.cover,
+                                  InkWell(
+                                    onTap: () async {
+                                      logFirebaseEvent(
+                                          'GAME_PAGE_Image_hb98tey9_ON_TAP');
+                                      logFirebaseEvent('Image_expand_image');
+                                      await Navigator.push(
+                                        context,
+                                        PageTransition(
+                                          type: PageTransitionType.fade,
+                                          child: FlutterFlowExpandedImageView(
+                                            image: Image.asset(
+                                              'assets/images/save.png',
+                                              fit: BoxFit.contain,
+                                            ),
+                                            allowRotation: false,
+                                            tag: 'imageTag21',
+                                            useHeroAnimation: true,
+                                          ),
+                                        ),
+                                      );
+                                    },
+                                    child: Hero(
+                                      tag: 'imageTag21',
+                                      transitionOnUserGestures: true,
+                                      child: Image.asset(
+                                        'assets/images/save.png',
+                                        width: 338.0,
+                                        height: 101.3,
+                                        fit: BoxFit.cover,
+                                      ),
+                                    ),
                                   ),
                                 ],
                               ),
