@@ -298,7 +298,7 @@ class _ConectionWidgetState extends State<ConectionWidget> {
                                               EdgeInsetsDirectional.fromSTEB(
                                                   15.0, 1.0, 0.0, 10.0),
                                           child: Image.asset(
-                                            'assets/images/Rectangle_1.png',
+                                            'assets/images/rectangle.png',
                                             width: 360.0,
                                             height: 360.0,
                                             fit: BoxFit.cover,
