@@ -1525,16 +1525,12 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   // cashtable
   {
     '0mg72mu0': {
-      'en': 'Hello World',
-      'es': 'Hola Mundo',
+      'en': 'players',
+      'es': 'jugadores',
     },
     'xyjmuh5i': {
       'en': 'audience',
       'es': 'audiencia',
-    },
-    'tbhk356n': {
-      'en': '',
-      'es': '580',
     },
     '9sxg7i09': {
       'en': 'Hello World',

@@ -151,7 +151,7 @@ class _GoldtableWidgetState extends State<GoldtableWidget>
                                         padding: EdgeInsetsDirectional.fromSTEB(
                                             25.0, 0.0, 0.0, 0.0),
                                         child: Image.asset(
-                                          'assets/images/Rectangle_281.png',
+                                          'assets/images/ficha.png',
                                           width: 170.0,
                                           height: 181.6,
                                           fit: BoxFit.fill,
@@ -258,6 +258,12 @@ class _GoldtableWidgetState extends State<GoldtableWidget>
                                           decoration: BoxDecoration(
                                             color: FlutterFlowTheme.of(context)
                                                 .textColor,
+                                            image: DecorationImage(
+                                              fit: BoxFit.cover,
+                                              image: Image.asset(
+                                                'assets/images/lineone.png',
+                                              ).image,
+                                            ),
                                           ),
                                         ),
                                       ),
@@ -335,26 +341,6 @@ class _GoldtableWidgetState extends State<GoldtableWidget>
                                       alignment: AlignmentDirectional(0.0, 0.0),
                                       child: Padding(
                                         padding: EdgeInsetsDirectional.fromSTEB(
-                                            55.0, 60.0, 0.0, 15.0),
-                                        child: Container(
-                                          width: 100.0,
-                                          height: 1.0,
-                                          decoration: BoxDecoration(
-                                            color: FlutterFlowTheme.of(context)
-                                                .textColor,
-                                          ),
-                                        ),
-                                      ),
-                                    ),
-                                  if (responsiveVisibility(
-                                    context: context,
-                                    tablet: false,
-                                    desktop: false,
-                                  ))
-                                    Align(
-                                      alignment: AlignmentDirectional(0.0, 0.0),
-                                      child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
                                             55.0, 100.0, 0.0, 15.0),
                                         child: Container(
                                           width: 100.0,
@@ -362,6 +348,12 @@ class _GoldtableWidgetState extends State<GoldtableWidget>
                                           decoration: BoxDecoration(
                                             color: FlutterFlowTheme.of(context)
                                                 .textColor,
+                                            image: DecorationImage(
+                                              fit: BoxFit.cover,
+                                              image: Image.asset(
+                                                'assets/images/lineone.png',
+                                              ).image,
+                                            ),
                                           ),
                                         ),
                                       ),
@@ -570,7 +562,7 @@ class _GoldtableWidgetState extends State<GoldtableWidget>
                                                                   FlutterFlowExpandedImageView(
                                                                 image:
                                                                     Image.asset(
-                                                                  'assets/images/Vector_(1).png',
+                                                                  'assets/images/rectangular.png',
                                                                   fit: BoxFit
                                                                       .contain,
                                                                 ),
@@ -588,7 +580,7 @@ class _GoldtableWidgetState extends State<GoldtableWidget>
                                                           transitionOnUserGestures:
                                                               true,
                                                           child: Image.asset(
-                                                            'assets/images/Vector_(1).png',
+                                                            'assets/images/rectangular.png',
                                                             width: 186.3,
                                                             height: 50.4,
                                                             fit: BoxFit.cover,

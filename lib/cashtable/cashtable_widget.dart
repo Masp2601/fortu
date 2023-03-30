@@ -150,7 +150,7 @@ class _CashtableWidgetState extends State<CashtableWidget>
                                         padding: EdgeInsetsDirectional.fromSTEB(
                                             25.0, 0.0, 0.0, 0.0),
                                         child: Image.asset(
-                                          'assets/images/Rectangle_281.png',
+                                          'assets/images/ficha.png',
                                           width: 170.0,
                                           height: 181.6,
                                           fit: BoxFit.fill,
@@ -170,7 +170,7 @@ class _CashtableWidgetState extends State<CashtableWidget>
                                             60.0, 10.0, 0.0, 10.0),
                                         child: Text(
                                           FFLocalizations.of(context).getText(
-                                            '0mg72mu0' /* Hello World */,
+                                            '0mg72mu0' /* players */,
                                           ),
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium,
@@ -522,9 +522,9 @@ class _CashtableWidgetState extends State<CashtableWidget>
                                       children: [
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(0.0, 0.0),
+                                              AlignmentDirectional(-0.8, 0.0),
                                           child: Image.asset(
-                                            'assets/images/Vector_(1).png',
+                                            'assets/images/rectangular.png',
                                             width: 190.0,
                                             height: 290.0,
                                             fit: BoxFit.cover,
@@ -562,10 +562,7 @@ class _CashtableWidgetState extends State<CashtableWidget>
                                                   .fromSTEB(
                                                       95.0, 0.0, 0.0, 0.0),
                                               child: Text(
-                                                FFLocalizations.of(context)
-                                                    .getText(
-                                                  'tbhk356n' /*  */,
-                                                ),
+                                                widget.users!,
                                                 style:
                                                     FlutterFlowTheme.of(context)
                                                         .bodyMedium,

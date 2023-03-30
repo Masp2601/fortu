@@ -144,7 +144,7 @@ class _NotificationsSettingsWidgetState
                       style: FlutterFlowTheme.of(context).bodySmall,
                     ),
                     tileColor: FlutterFlowTheme.of(context).secondaryBackground,
-                    activeColor: FlutterFlowTheme.of(context).tertiary,
+                    activeColor: Color(0xFFFF0026),
                     activeTrackColor: FlutterFlowTheme.of(context).primary,
                     dense: false,
                     controlAffinity: ListTileControlAffinity.trailing,
@@ -170,7 +170,7 @@ class _NotificationsSettingsWidgetState
                     style: FlutterFlowTheme.of(context).bodySmall,
                   ),
                   tileColor: FlutterFlowTheme.of(context).secondaryBackground,
-                  activeColor: FlutterFlowTheme.of(context).tertiary,
+                  activeColor: Color(0xFFFF0026),
                   activeTrackColor: FlutterFlowTheme.of(context).primary,
                   dense: false,
                   controlAffinity: ListTileControlAffinity.trailing,
@@ -195,7 +195,7 @@ class _NotificationsSettingsWidgetState
                     style: FlutterFlowTheme.of(context).bodySmall,
                   ),
                   tileColor: FlutterFlowTheme.of(context).secondaryBackground,
-                  activeColor: FlutterFlowTheme.of(context).tertiary,
+                  activeColor: Color(0xFFFF0026),
                   activeTrackColor: FlutterFlowTheme.of(context).primary,
                   dense: false,
                   controlAffinity: ListTileControlAffinity.trailing,
@@ -221,7 +221,7 @@ class _NotificationsSettingsWidgetState
                           EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                       iconPadding:
                           EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                      color: FlutterFlowTheme.of(context).primary,
+                      color: Colors.black,
                       textStyle: FlutterFlowTheme.of(context)
                           .titleSmall
                           .override(
