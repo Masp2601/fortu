@@ -1520,10 +1520,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': '\$300.000',
       'es': '\$300.000',
     },
-    'c53p7cn3': {
-      'en': 'Front',
-      'es': 'Frente',
-    },
     'lez6dm27': {
       'en': 'Back',
       'es': 'Atrás',

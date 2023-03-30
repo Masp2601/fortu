@@ -127,7 +127,7 @@ class _GameWidgetState extends State<GameWidget> {
                                       context.pushNamed('ndqueperder');
                                     },
                                     child: Image.asset(
-                                      'assets/images/Asset_1-8.png',
+                                      'assets/images/lose.png',
                                       width: 335.1,
                                       height: 173.8,
                                       fit: BoxFit.cover,
@@ -859,7 +859,7 @@ class _GameWidgetState extends State<GameWidget> {
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
                                   Image.asset(
-                                    'assets/images/Group_34042.png',
+                                    'assets/images/save.png',
                                     width: 338.0,
                                     height: 101.3,
                                     fit: BoxFit.cover,
