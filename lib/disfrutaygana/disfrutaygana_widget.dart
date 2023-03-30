@@ -165,7 +165,7 @@ class _DisfrutayganaWidgetState extends State<DisfrutayganaWidget> {
                                     desktop: false,
                                   ))
                                     Image.asset(
-                                      'assets/images/Rectangle_277.png',
+                                      'assets/images/Rectanglered.png',
                                       width: 271.0,
                                       height: 78.6,
                                       fit: BoxFit.cover,

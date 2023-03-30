@@ -131,7 +131,7 @@ class _TarjetaWidgetState extends State<TarjetaWidget> {
                                               mainAxisSize: MainAxisSize.max,
                                               children: [
                                                 Image.asset(
-                                                  'assets/images/credit-card_(1)_1.png',
+                                                  'assets/images/creditcard.png',
                                                   fit: BoxFit.cover,
                                                 ),
                                                 Padding(

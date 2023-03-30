@@ -130,8 +130,8 @@ class _RulesWidgetState extends State<RulesWidget>
                                                 type: PageTransitionType.fade,
                                                 child:
                                                     FlutterFlowExpandedImageView(
-                                                  image: Image.asset(
-                                                    'assets/images/Group_33940_(1).png',
+                                                  image: Image.network(
+                                                    '',
                                                     fit: BoxFit.contain,
                                                   ),
                                                   allowRotation: false,
@@ -144,8 +144,8 @@ class _RulesWidgetState extends State<RulesWidget>
                                           child: Hero(
                                             tag: 'imageTag1',
                                             transitionOnUserGestures: true,
-                                            child: Image.asset(
-                                              'assets/images/Group_33940_(1).png',
+                                            child: Image.network(
+                                              '',
                                               fit: BoxFit.cover,
                                             ),
                                           ),

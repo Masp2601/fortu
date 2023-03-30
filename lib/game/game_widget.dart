@@ -103,7 +103,7 @@ class _GameWidgetState extends State<GameWidget> {
                                         alignment:
                                             AlignmentDirectional(0.0, 0.3),
                                         child: Image.asset(
-                                          'assets/images/Group_33940.png',
+                                          'assets/images/barra.png',
                                           fit: BoxFit.cover,
                                         ),
                                       ),
