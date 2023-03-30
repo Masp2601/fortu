@@ -371,7 +371,7 @@ class _RulesWidgetState extends State<RulesWidget>
                                                   ),
                                                   borderRadius:
                                                       BorderRadius.circular(
-                                                          20.0),
+                                                          15.0),
                                                 ),
                                               ).animateOnPageLoad(animationsMap[
                                                   'buttonOnPageLoadAnimation']!),
@@ -457,7 +457,7 @@ class _RulesWidgetState extends State<RulesWidget>
                                                 width: 1.0,
                                               ),
                                               borderRadius:
-                                                  BorderRadius.circular(20.0),
+                                                  BorderRadius.circular(15.0),
                                             ),
                                           ),
                                         ),

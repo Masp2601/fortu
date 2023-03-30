@@ -206,7 +206,7 @@ class _GameWidgetState extends State<GameWidget> {
                                                       .pushNamed('cashtable');
                                                 },
                                                 child: Image.asset(
-                                                  'assets/images/1-8.png',
+                                                  'assets/images/green.png',
                                                   width: 120.0,
                                                   height: 120.0,
                                                   fit: BoxFit.contain,
@@ -232,7 +232,7 @@ class _GameWidgetState extends State<GameWidget> {
                                                       .pushNamed('goldtable');
                                                 },
                                                 child: Image.asset(
-                                                  'assets/images/gold_1-8.png',
+                                                  'assets/images/gold.png',
                                                   width: 200.0,
                                                   height: 200.0,
                                                   fit: BoxFit.contain,
@@ -258,7 +258,7 @@ class _GameWidgetState extends State<GameWidget> {
                                                       'fortunatable');
                                                 },
                                                 child: Image.asset(
-                                                  'assets/images/red-8.png',
+                                                  'assets/images/red.png',
                                                   width: 200.0,
                                                   height: 200.0,
                                                   fit: BoxFit.contain,
@@ -587,8 +587,8 @@ class _GameWidgetState extends State<GameWidget> {
                                                       context.pushNamed(
                                                           'cashtable');
                                                     },
-                                                    child: Image.asset(
-                                                      'assets/images/1-8.png',
+                                                    child: Image.network(
+                                                      '',
                                                       width: 90.0,
                                                       height: 90.0,
                                                       fit: BoxFit.contain,
@@ -615,7 +615,7 @@ class _GameWidgetState extends State<GameWidget> {
                                                         .pushNamed('goldtable');
                                                   },
                                                   child: Image.asset(
-                                                    'assets/images/gold_1-8.png',
+                                                    'assets/images/dorado.png',
                                                     width: 200.0,
                                                     height: 200.0,
                                                     fit: BoxFit.contain,
@@ -641,7 +641,7 @@ class _GameWidgetState extends State<GameWidget> {
                                                         'fortunatable');
                                                   },
                                                   child: Image.asset(
-                                                    'assets/images/red-8.png',
+                                                    'assets/images/rojo.png',
                                                     width: 200.0,
                                                     height: 200.0,
                                                     fit: BoxFit.contain,

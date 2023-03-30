@@ -191,8 +191,8 @@ class _VerWidgetState extends State<VerWidget> {
 
                                                 context.pushNamed('cashtable');
                                               },
-                                              child: Image.asset(
-                                                'assets/images/1-8.png',
+                                              child: Image.network(
+                                                '',
                                                 width: 120.0,
                                                 height: 120.0,
                                                 fit: BoxFit.contain,
@@ -217,7 +217,7 @@ class _VerWidgetState extends State<VerWidget> {
                                                 context.pushNamed('goldtable');
                                               },
                                               child: Image.asset(
-                                                'assets/images/gold_1-8.png',
+                                                'assets/images/doradover.png',
                                                 width: 200.0,
                                                 height: 200.0,
                                                 fit: BoxFit.contain,
@@ -243,7 +243,7 @@ class _VerWidgetState extends State<VerWidget> {
                                                     .pushNamed('fortunatable');
                                               },
                                               child: Image.asset(
-                                                'assets/images/red-8.png',
+                                                'assets/images/rojover.png',
                                                 width: 200.0,
                                                 height: 200.0,
                                                 fit: BoxFit.contain,
@@ -559,8 +559,8 @@ class _VerWidgetState extends State<VerWidget> {
                                                     context
                                                         .pushNamed('cashtable');
                                                   },
-                                                  child: Image.asset(
-                                                    'assets/images/1-8.png',
+                                                  child: Image.network(
+                                                    '',
                                                     width: 90.0,
                                                     height: 90.0,
                                                     fit: BoxFit.contain,
@@ -587,7 +587,7 @@ class _VerWidgetState extends State<VerWidget> {
                                                       .pushNamed('goldtable');
                                                 },
                                                 child: Image.asset(
-                                                  'assets/images/gold_1-8.png',
+                                                  'assets/images/goldver.png',
                                                   width: 200.0,
                                                   height: 200.0,
                                                   fit: BoxFit.contain,
@@ -613,7 +613,7 @@ class _VerWidgetState extends State<VerWidget> {
                                                       'fortunatable');
                                                 },
                                                 child: Image.asset(
-                                                  'assets/images/red-8.png',
+                                                  'assets/images/redview.png',
                                                   width: 200.0,
                                                   height: 200.0,
                                                   fit: BoxFit.contain,
