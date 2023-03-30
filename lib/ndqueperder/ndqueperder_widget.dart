@@ -53,7 +53,6 @@ class _NdqueperderWidgetState extends State<NdqueperderWidget> {
         child: Visibility(
           visible: responsiveVisibility(
             context: context,
-            tablet: false,
             desktop: false,
           ),
           child: Container(
@@ -71,7 +70,6 @@ class _NdqueperderWidgetState extends State<NdqueperderWidget> {
             child: Visibility(
               visible: responsiveVisibility(
                 context: context,
-                tablet: false,
                 desktop: false,
               ),
               child: Padding(
@@ -81,20 +79,19 @@ class _NdqueperderWidgetState extends State<NdqueperderWidget> {
                   children: [
                     if (responsiveVisibility(
                       context: context,
-                      tablet: false,
                       desktop: false,
                     ))
                       Stack(
                         children: [
                           if (responsiveVisibility(
                             context: context,
-                            tablet: false,
+                            phone: false,
                             desktop: false,
                           ))
                             Align(
                               alignment: AlignmentDirectional(0.08, 0.03),
                               child: Image.asset(
-                                'assets/images/Vector_(15).png',
+                                'assets/images/redtable.png',
                                 width: 700.0,
                                 fit: BoxFit.fill,
                               ),
@@ -143,15 +140,14 @@ class _NdqueperderWidgetState extends State<NdqueperderWidget> {
                                             context.pushNamed('fortunatable');
                                           },
                                           child: Image.asset(
-                                            'assets/images/Group_1885_3.png',
-                                            width: 100.0,
-                                            height: 100.0,
+                                            'assets/images/greenplay.png',
                                             fit: BoxFit.cover,
                                           ),
                                         ),
                                       ),
                                     if (responsiveVisibility(
                                       context: context,
+                                      tablet: false,
                                       desktop: false,
                                     ))
                                       Padding(
@@ -167,27 +163,29 @@ class _NdqueperderWidgetState extends State<NdqueperderWidget> {
                                             context.pushNamed('goldtable');
                                           },
                                           child: Image.asset(
-                                            'assets/images/Layer_3.png',
-                                            width: 100.0,
+                                            'assets/images/goldplay.png',
                                             fit: BoxFit.cover,
                                           ),
                                         ),
                                       ),
-                                    InkWell(
-                                      onTap: () async {
-                                        logFirebaseEvent(
-                                            'NDQUEPERDER_PAGE_Image_dizh3auq_ON_TAP');
-                                        logFirebaseEvent('Image_navigate_to');
+                                    if (responsiveVisibility(
+                                      context: context,
+                                      tablet: false,
+                                      desktop: false,
+                                    ))
+                                      InkWell(
+                                        onTap: () async {
+                                          logFirebaseEvent(
+                                              'NDQUEPERDER_PAGE_Image_dizh3auq_ON_TAP');
+                                          logFirebaseEvent('Image_navigate_to');
 
-                                        context.pushNamed('cashtable');
-                                      },
-                                      child: Image.asset(
-                                        'assets/images/Group_33957.png',
-                                        width: 100.0,
-                                        height: 100.0,
-                                        fit: BoxFit.cover,
+                                          context.pushNamed('cashtable');
+                                        },
+                                        child: Image.asset(
+                                          'assets/images/fortuplay.png',
+                                          fit: BoxFit.cover,
+                                        ),
                                       ),
-                                    ),
                                   ],
                                 ),
                               ),
@@ -200,17 +198,6 @@ class _NdqueperderWidgetState extends State<NdqueperderWidget> {
                               child: Image.asset(
                                 'assets/images/Elige_el_valor.png',
                                 fit: BoxFit.cover,
-                              ),
-                            ),
-                          ),
-                          Align(
-                            alignment: AlignmentDirectional(0.03, 0.67),
-                            child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
-                                  325.0, 0.0, 0.0, 50.0),
-                              child: Row(
-                                mainAxisSize: MainAxisSize.max,
-                                children: [],
                               ),
                             ),
                           ),

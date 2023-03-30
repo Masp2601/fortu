@@ -944,12 +944,6 @@ class _FortunatableWidgetState extends State<FortunatableWidget>
                                                   color: FlutterFlowTheme.of(
                                                           context)
                                                       .platinum,
-                                                  image: DecorationImage(
-                                                    fit: BoxFit.cover,
-                                                    image: Image.asset(
-                                                      'assets/images/Group_1885_3.png',
-                                                    ).image,
-                                                  ),
                                                   boxShadow: [
                                                     BoxShadow(
                                                       blurRadius: 4.0,
@@ -1055,12 +1049,6 @@ class _FortunatableWidgetState extends State<FortunatableWidget>
                                                   color: FlutterFlowTheme.of(
                                                           context)
                                                       .platinum,
-                                                  image: DecorationImage(
-                                                    fit: BoxFit.cover,
-                                                    image: Image.asset(
-                                                      'assets/images/Group_1885_3.png',
-                                                    ).image,
-                                                  ),
                                                   boxShadow: [
                                                     BoxShadow(
                                                       blurRadius: 4.0,
@@ -1166,12 +1154,6 @@ class _FortunatableWidgetState extends State<FortunatableWidget>
                                                     color: FlutterFlowTheme.of(
                                                             context)
                                                         .platinum,
-                                                    image: DecorationImage(
-                                                      fit: BoxFit.cover,
-                                                      image: Image.asset(
-                                                        'assets/images/Group_1885_3.png',
-                                                      ).image,
-                                                    ),
                                                     boxShadow: [
                                                       BoxShadow(
                                                         blurRadius: 4.0,
@@ -1269,12 +1251,6 @@ class _FortunatableWidgetState extends State<FortunatableWidget>
                                                   color: FlutterFlowTheme.of(
                                                           context)
                                                       .platinum,
-                                                  image: DecorationImage(
-                                                    fit: BoxFit.cover,
-                                                    image: Image.asset(
-                                                      'assets/images/Group_1885_3.png',
-                                                    ).image,
-                                                  ),
                                                   boxShadow: [
                                                     BoxShadow(
                                                       blurRadius: 4.0,
@@ -1392,12 +1368,6 @@ class _FortunatableWidgetState extends State<FortunatableWidget>
                                                 color:
                                                     FlutterFlowTheme.of(context)
                                                         .textColor,
-                                                image: DecorationImage(
-                                                  fit: BoxFit.cover,
-                                                  image: Image.asset(
-                                                    'assets/images/Group_1885_3.png',
-                                                  ).image,
-                                                ),
                                                 shape: BoxShape.circle,
                                               ),
                                             ),
@@ -1507,12 +1477,6 @@ class _FortunatableWidgetState extends State<FortunatableWidget>
                                                 color:
                                                     FlutterFlowTheme.of(context)
                                                         .textColor,
-                                                image: DecorationImage(
-                                                  fit: BoxFit.cover,
-                                                  image: Image.asset(
-                                                    'assets/images/Group_1885_3.png',
-                                                  ).image,
-                                                ),
                                                 shape: BoxShape.circle,
                                               ),
                                             ),
@@ -1623,12 +1587,6 @@ class _FortunatableWidgetState extends State<FortunatableWidget>
                                                 color:
                                                     FlutterFlowTheme.of(context)
                                                         .textColor,
-                                                image: DecorationImage(
-                                                  fit: BoxFit.cover,
-                                                  image: Image.asset(
-                                                    'assets/images/Group_1885_3.png',
-                                                  ).image,
-                                                ),
                                                 shape: BoxShape.circle,
                                               ),
                                             ),
@@ -1737,12 +1695,6 @@ class _FortunatableWidgetState extends State<FortunatableWidget>
                                                 color:
                                                     FlutterFlowTheme.of(context)
                                                         .textColor,
-                                                image: DecorationImage(
-                                                  fit: BoxFit.cover,
-                                                  image: Image.asset(
-                                                    'assets/images/Group_1885_3.png',
-                                                  ).image,
-                                                ),
                                                 shape: BoxShape.circle,
                                               ),
                                             ),
