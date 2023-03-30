@@ -191,8 +191,8 @@ class _VerWidgetState extends State<VerWidget> {
 
                                                 context.pushNamed('cashtable');
                                               },
-                                              child: Image.network(
-                                                '',
+                                              child: Image.asset(
+                                                'assets/images/greenview.png',
                                                 width: 120.0,
                                                 height: 120.0,
                                                 fit: BoxFit.contain,
@@ -559,8 +559,8 @@ class _VerWidgetState extends State<VerWidget> {
                                                     context
                                                         .pushNamed('cashtable');
                                                   },
-                                                  child: Image.network(
-                                                    '',
+                                                  child: Image.asset(
+                                                    'assets/images/verdedolar.png',
                                                     width: 90.0,
                                                     height: 90.0,
                                                     fit: BoxFit.contain,

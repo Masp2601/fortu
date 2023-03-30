@@ -587,8 +587,8 @@ class _GameWidgetState extends State<GameWidget> {
                                                       context.pushNamed(
                                                           'cashtable');
                                                     },
-                                                    child: Image.network(
-                                                      '',
+                                                    child: Image.asset(
+                                                      'assets/images/greendolar.png',
                                                       width: 90.0,
                                                       height: 90.0,
                                                       fit: BoxFit.contain,
