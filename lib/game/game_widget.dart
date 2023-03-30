@@ -303,8 +303,8 @@ class _GameWidgetState extends State<GameWidget> {
                                                   context
                                                       .pushNamed('cashtable');
                                                 },
-                                                child: Image.asset(
-                                                  'assets/images/Vector_(16).png',
+                                                child: Image.network(
+                                                  '',
                                                   fit: BoxFit.cover,
                                                 ),
                                               ),
@@ -332,8 +332,8 @@ class _GameWidgetState extends State<GameWidget> {
                                                   context
                                                       .pushNamed('goldtable');
                                                 },
-                                                child: Image.asset(
-                                                  'assets/images/Vector_(17).png',
+                                                child: Image.network(
+                                                  '',
                                                   fit: BoxFit.cover,
                                                 ),
                                               ),
@@ -357,8 +357,8 @@ class _GameWidgetState extends State<GameWidget> {
                                                 context
                                                     .pushNamed('fortunatable');
                                               },
-                                              child: Image.asset(
-                                                'assets/images/Vector_(18).png',
+                                              child: Image.network(
+                                                '',
                                                 fit: BoxFit.cover,
                                               ),
                                             ),
@@ -692,8 +692,8 @@ class _GameWidgetState extends State<GameWidget> {
                                                       context.pushNamed(
                                                           'cashtable');
                                                     },
-                                                    child: Image.asset(
-                                                      'assets/images/Vector_(16).png',
+                                                    child: Image.network(
+                                                      '',
                                                       fit: BoxFit.cover,
                                                     ),
                                                   ),
@@ -721,8 +721,8 @@ class _GameWidgetState extends State<GameWidget> {
                                                       context.pushNamed(
                                                           'goldtable');
                                                     },
-                                                    child: Image.asset(
-                                                      'assets/images/Vector_(17).png',
+                                                    child: Image.network(
+                                                      '',
                                                       fit: BoxFit.cover,
                                                     ),
                                                   ),
@@ -746,8 +746,8 @@ class _GameWidgetState extends State<GameWidget> {
                                                     context.pushNamed(
                                                         'fortunatable');
                                                   },
-                                                  child: Image.asset(
-                                                    'assets/images/Vector_(18).png',
+                                                  child: Image.network(
+                                                    '',
                                                     fit: BoxFit.cover,
                                                   ),
                                                 ),

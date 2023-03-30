@@ -1699,10 +1699,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': '\$300.000',
       'es': '\$300.000',
     },
-    's6ivnvmv': {
-      'en': 'Front',
-      'es': 'Frente',
-    },
     'b5ygnocs': {
       'en': 'Back',
       'es': 'Atrás',
@@ -1765,10 +1761,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     '6b6m1596': {
       'en': '\$300.000',
       'es': '\$300.000',
-    },
-    'bxcsba3o': {
-      'en': 'Front',
-      'es': 'Frente',
     },
     'qdf7rwjq': {
       'en': 'Back',

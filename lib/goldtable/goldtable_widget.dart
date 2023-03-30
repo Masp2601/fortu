@@ -788,7 +788,7 @@ class _GoldtableWidgetState extends State<GoldtableWidget>
                             Align(
                               alignment: AlignmentDirectional(0.08, 0.03),
                               child: Image.asset(
-                                'assets/images/Group.png',
+                                'assets/images/table.png',
                                 width: 553.1,
                                 height: 321.7,
                                 fit: BoxFit.cover,
@@ -1448,43 +1448,6 @@ class _GoldtableWidgetState extends State<GoldtableWidget>
                                                 ),
                                                 shape: BoxShape.circle,
                                               ),
-                                              child: Visibility(
-                                                visible: responsiveVisibility(
-                                                  context: context,
-                                                  phone: false,
-                                                  tablet: false,
-                                                  desktop: false,
-                                                ),
-                                                child: Align(
-                                                  alignment:
-                                                      AlignmentDirectional(
-                                                          0.0, 0.0),
-                                                  child: Text(
-                                                    FFLocalizations.of(context)
-                                                        .getText(
-                                                      's6ivnvmv' /* Front */,
-                                                    ),
-                                                    style: FlutterFlowTheme.of(
-                                                            context)
-                                                        .bodyMedium
-                                                        .override(
-                                                          fontFamily:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .bodyMediumFamily,
-                                                          color: FlutterFlowTheme
-                                                                  .of(context)
-                                                              .primaryText,
-                                                          useGoogleFonts: GoogleFonts
-                                                                  .asMap()
-                                                              .containsKey(
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .bodyMediumFamily),
-                                                        ),
-                                                  ),
-                                                ),
-                                              ),
                                             ),
                                           ),
                                         ),
@@ -1781,7 +1744,7 @@ class _GoldtableWidgetState extends State<GoldtableWidget>
                               padding: EdgeInsetsDirectional.fromSTEB(
                                   180.0, 250.0, 0.0, 0.0),
                               child: Image.asset(
-                                'assets/images/Group_33944.png',
+                                'assets/images/fortunat.png',
                                 width: 205.0,
                                 height: 20.0,
                                 fit: BoxFit.cover,

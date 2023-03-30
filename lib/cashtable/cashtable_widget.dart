@@ -804,7 +804,7 @@ class _CashtableWidgetState extends State<CashtableWidget>
                                 padding: EdgeInsetsDirectional.fromSTEB(
                                     0.0, 10.0, 0.0, 0.0),
                                 child: Image.asset(
-                                  'assets/images/Group.png',
+                                  'assets/images/table.png',
                                   width: 551.9,
                                   height: 320.0,
                                   fit: BoxFit.cover,
@@ -1465,43 +1465,6 @@ class _CashtableWidgetState extends State<CashtableWidget>
                                                 ),
                                                 shape: BoxShape.circle,
                                               ),
-                                              child: Visibility(
-                                                visible: responsiveVisibility(
-                                                  context: context,
-                                                  phone: false,
-                                                  tablet: false,
-                                                  desktop: false,
-                                                ),
-                                                child: Align(
-                                                  alignment:
-                                                      AlignmentDirectional(
-                                                          0.0, 0.0),
-                                                  child: Text(
-                                                    FFLocalizations.of(context)
-                                                        .getText(
-                                                      'bxcsba3o' /* Front */,
-                                                    ),
-                                                    style: FlutterFlowTheme.of(
-                                                            context)
-                                                        .bodyMedium
-                                                        .override(
-                                                          fontFamily:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .bodyMediumFamily,
-                                                          color: FlutterFlowTheme
-                                                                  .of(context)
-                                                              .primaryText,
-                                                          useGoogleFonts: GoogleFonts
-                                                                  .asMap()
-                                                              .containsKey(
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .bodyMediumFamily),
-                                                        ),
-                                                  ),
-                                                ),
-                                              ),
                                             ),
                                           ),
                                         ),
@@ -1793,7 +1756,7 @@ class _CashtableWidgetState extends State<CashtableWidget>
                               padding: EdgeInsetsDirectional.fromSTEB(
                                   180.0, 200.0, 0.0, 0.0),
                               child: Image.asset(
-                                'assets/images/Group_33944.png',
+                                'assets/images/fortunat.png',
                                 width: 190.0,
                                 height: 20.0,
                                 fit: BoxFit.cover,

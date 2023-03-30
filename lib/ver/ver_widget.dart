@@ -315,8 +315,8 @@ class _VerWidgetState extends State<VerWidget> {
 
                                                 context.pushNamed('goldtable');
                                               },
-                                              child: Image.asset(
-                                                'assets/images/Vector_(17).png',
+                                              child: Image.network(
+                                                '',
                                                 fit: BoxFit.cover,
                                               ),
                                             ),
