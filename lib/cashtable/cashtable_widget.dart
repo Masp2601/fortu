@@ -637,7 +637,7 @@ class _CashtableWidgetState extends State<CashtableWidget>
                                           alignment:
                                               AlignmentDirectional(0.32, -0.04),
                                           child: Image.asset(
-                                            'assets/images/Group_(2).png',
+                                            'assets/images/balanceuser.png',
                                             width: 195.0,
                                             height: 100.0,
                                             fit: BoxFit.cover,

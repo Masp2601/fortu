@@ -1450,89 +1450,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'JUGAR',
     },
   },
-  // fortunatable
-  {
-    'dv5rd5yj': {
-      'en': 'Hello World',
-      'es': 'Hola Mundo',
-    },
-    'j5bpofya': {
-      'en': '',
-      'es': 'SUTANO',
-    },
-    'w1k7gl91': {
-      'en': 'colombia',
-      'es': 'Colombia',
-    },
-    '7v0xe64x': {
-      'en': '',
-      'es': 'SUTANO',
-    },
-    'ige7uenb': {
-      'en': '',
-      'es': 'Colombia',
-    },
-    's3j4ov79': {
-      'en': '',
-      'es': 'SUTANO',
-    },
-    'ib0zckt1': {
-      'en': 'colombia',
-      'es': 'Colombia',
-    },
-    '628uycfx': {
-      'en': 'colombia',
-      'es': 'Colombia',
-    },
-    'rxilo493': {
-      'en': '',
-      'es': 'SUTANO',
-    },
-    'ypinla2q': {
-      'en': 'VIEWER:',
-      'es': 'ESPECTADOR:',
-    },
-    '3k4njebv': {
-      'en': 'balance:',
-      'es': 'balance:',
-    },
-    'z60xaif0': {
-      'en': 'Hello World',
-      'es': 'Hola Mundo',
-    },
-    'qe1m12fq': {
-      'en': ':(',
-      'es': ':(',
-    },
-    's22gd02p': {
-      'en': '\$200.00',
-      'es': '\$200.00',
-    },
-    'wy0hgvsf': {
-      'en': '\$50.000',
-      'es': '\$50.000',
-    },
-    'zmhy5h8a': {
-      'en': '',
-      'es': ':(',
-    },
-    'w8ejuj26': {
-      'en': '\$300.000',
-      'es': '\$300.000',
-    },
-    'lez6dm27': {
-      'en': 'Back',
-      'es': 'Atrás',
-    },
-    'htkigowh': {
-      'en': '\$400.000',
-      'es': '\$400.000',
-    },
-    'nge2hif4': {
-      'en': '\$350.000',
-      'es': '\$350.000',
-    },
-  },
   // tarjeta
   {
     '3ct23b6x': {
@@ -1544,23 +1461,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'CONTINUAR',
     },
     'syodo1ca': {
-      'en': 'Home',
-      'es': 'Hogar',
-    },
-  },
-  // politicas
-  {
-    '71rav1bl': {
-      'en': '',
-      'es': 'política de privacidad',
-    },
-    'kpbp64hc': {
-      'en':
-          'The fortunators app is owned by fortunators, which is a data controller of\nYour personal information.\n\nWe have adopted this privacy policy, which determines how we process data\ninformation collected by fortunators, which also provides the reasons why\nthat we must collect certain personal data about you. therefore you must read\nthis privacy policy before using the masamia website.\nWe take care of your personal data and we are committed to guaranteeing your\nconfidentiality and security.\n\nPersonal information we collect:\nWhen you visit comparandoo, we automatically collect certain information\nabout your device, including information about your web browser, IP address, zone\ntime and some of the cookies installed on your device. Also, as\nAs you navigate through the site, we collect information about individual web pages or\nthe products you view, what websites or search terms referred you to the site, and\nhow you interact with it. we refer to this information collected\nautomatically as \"device information\". In addition, we may collect\nthe personal data you provide to us (including, among others, first name, last name,\naddress, payment information, etc.) during registration to comply with the\nagreement.\n\nWhy do we process your data?\nour highest priority is the security of customer data and as such,\nwe may process only the minimum user data, only to the extent that it is\nabsolutely necessary to maintain the website. the information collected\nis automatically used only to identify possible instances of abuse and\nestablish statistical information on the use of the website. this information\nThe statistics are not aggregated in such a way as to identify any particular user.\nof the system. you can visit the site without telling us who you are or revealing any\ninformation by which someone can identify you as a specific person. without\nHowever, if you wish to use some of the features of the website or wish to receive\nour newsletter or provide other details by completing a form,\nYou can provide us with personal data, such as your email, name,\nlast name, city of residence, organization and telephone number. you can choose\ndo not provide your personal data, but you may not be able to take advantage of\nsome of the functions of the website. for example, you will not be able to receive our newsletter\nor contact us directly from the website. users who are not sure\nwhose data is required, you can contact us through\nfrom fortunetorsapp@gmail.com.\nYour rights:\nif you are a European resident, you have the following rights related to your data\nstaff:\n*The right to be informed.\n*The right of access.\n*The right to rectification.\n*The right to delete.\n*The right to restrict processing.\n*The right to data portability.\n*The right of opposition.\n*Rights in relation to automated decision-making and the preparation of\nprofiles.\n\nIf you wish to exercise this right, please contact us through the information\ncontact below.\nAlso, if you are a European resident, we highlight that we are processing your\ninformation to fulfill contracts we may have with you (for\nexample, if you place an order through the site), or otherwise to track\nour legitimate business interests listed above. also have\nPlease note that your information may be transferred outside of Europe, including to Canada and\nUSA\nLinks to other websites:\nOur site may contain links to other websites that are not owned by us.\n\nowned or controlled by us. keep in mind that we are not\nresponsible for such websites or the privacy practices of third parties. tea\nWe recommend that you be aware when you leave our website and read the\nprivacy statements of each site that may collect personal information.\n\nSecurity of the information:\nWe secure the information you provide on computer servers in a\ncontrolled and secure environment, protected from unauthorized access, use or disclosure.\n\nwe maintain reasonable administrative, technical and physical security measures\nto protect against unauthorized access, use, modification and disclosure\nof personal data under its control and custody. however, it cannot be guaranteed\ndata transmission over the Internet or wireless networks.\n\nLegal disclosure:\nWe will disclose any information we collect, use or receive if we do.\n\nrequired or permitted by law, such as to comply with a subpoena or legal process\nsimilar, and when we believe in good faith that disclosure is necessary to protect\nour rights, protect your safety or the safety of others, investigate the\nfraud or respond to a government request.\nContact information:\nif you want to contact us',
-      'es':
-          'La aplicación fortunators es propiedad de fortunators, que es un controlador de datos de\nTu información personal.\n\nHemos adoptado esta política de privacidad, que determina cómo procesamos los datos.\ninformación recopilada por fortunators, que también proporciona las razones por las cuales\nque debemos recopilar ciertos datos personales sobre usted. por lo tanto debes leer\nesta política de privacidad antes de utilizar el sitio web de masamia.\nCuidamos sus datos personales y nos comprometemos a garantizar su\nconfidencialidad y seguridad.\n\nInformación personal que recopilamos:\nCuando visitas comparandoo, recopilamos automáticamente cierta información\nsobre su dispositivo, incluida información sobre su navegador web, dirección IP, zona\ntiempo y algunas de las cookies instaladas en su dispositivo. Tambien como\nA medida que navega por el sitio, recopilamos información sobre páginas web individuales o\nlos productos que ve, qué sitios web o términos de búsqueda lo refirieron al sitio, y\ncómo interactúas con él. nos referimos a esta información recopilada\nautomáticamente como \"información del dispositivo\". Además, podemos recopilar\nlos datos personales que nos proporciona (incluyendo, entre otros, nombre, apellido,\ndirección, información de pago, etc.) durante el registro para cumplir con los\nacuerdo.\n\n¿Por qué tratamos sus datos?\nnuestra máxima prioridad es la seguridad de los datos de los clientes y, como tal,\npodemos procesar solo los datos mínimos del usuario, solo en la medida en que sea\nabsolutamente necesario para mantener el sitio web. la información recopilada\nse usa automáticamente solo para identificar posibles instancias de abuso y\nestablecer información estadística sobre el uso del sitio web. esta informacion\nLas estadísticas no se agregan de tal manera que identifiquen a ningún usuario en particular.\ndel sistema. puede visitar el sitio sin decirnos quién es ni revelar ningún\ninformación por la cual alguien puede identificarlo como una persona específica. sin\nSin embargo, si desea utilizar algunas de las funciones del sitio web o desea recibir\nnuestro boletín o proporcionar otros detalles completando un formulario,\nPuede proporcionarnos datos personales, como su correo electrónico, nombre,\napellido, ciudad de residencia, organización y número de teléfono. tu puedes elegir\nno proporcione sus datos personales, pero es posible que no pueda aprovechar\nalgunas de las funciones del sitio web. por ejemplo, no podrá recibir nuestro boletín\no contáctenos directamente desde el sitio web. usuarios que no están seguros\ncuyos datos son requeridos, puede contactarnos a través de\nde fortunetorsapp@gmail.com.\nTus derechos:\nsi es residente europeo, tiene los siguientes derechos relacionados con sus datos\npersonal:\n*El derecho a ser informado.\n*El derecho de acceso.\n*El derecho a la rectificación.\n*El derecho a borrar.\n*El derecho a restringir el procesamiento.\n*El derecho a la portabilidad de los datos.\n*El derecho de oposición.\n*Derechos en relación con la toma de decisiones automatizada y la elaboración de\nperfiles.\n\nSi desea ejercer este derecho, póngase en contacto con nosotros a través de la información\ncontacto a continuación.\nAdemás, si eres residente europeo, destacamos que estamos tramitando tu\ninformación para cumplir con los contratos que podamos tener con usted (por\nejemplo, si realiza un pedido a través del sitio), o de otra manera para rastrear\nnuestros intereses comerciales legítimos enumerados anteriormente. también tienen\nTenga en cuenta que su información puede transferirse fuera de Europa, incluso a Canadá y\nEE.UU\nEnlaces a otros sitios web:\nNuestro sitio puede contener enlaces a otros sitios web que no son de nuestra propiedad.\n\nde nuestra propiedad o controlados por nosotros. ten en cuenta que no somos\nresponsable de dichos sitios web o de las prácticas de privacidad de terceros. té\nLe recomendamos que esté atento cuando abandone nuestro sitio web y lea el\ndeclaraciones de privacidad de cada sitio que pueda recopilar información personal.\n\nSeguridad de la información:\nAseguramos la información que usted proporciona en servidores informáticos en un\nambiente controlado y seguro, protegido del acceso, uso o divulgación no autorizados.\n\nmantenemos medidas de seguridad administrativas, técnicas y físicas razonables\npara proteger contra el acceso, uso, modificación y divulgación no autorizados\nde datos personales bajo su control y custodia. sin embargo, no se puede garantizar\ntransmisión de datos a través de Internet o redes inalámbricas.\n\nDivulgación jurídica:\nDivulgaremos cualquier información que recopilemos, usemos o recibamos si lo hacemos.\n\nrequerido o permitido por la ley, como para cumplir con una citación o proceso legal\nsimilar, y cuando creemos de buena fe que la divulgación es necesaria para proteger\nnuestros derechos, proteger su seguridad o la seguridad de otros, investigar la\nfraude o responder a una solicitud del gobierno.\nInformación del contacto:\nsi quieres contactar con nosotros',
-    },
-    'axnbobyp': {
       'en': 'Home',
       'es': 'Hogar',
     },
@@ -1627,6 +1527,86 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     'osi1idri': {
       'en': 'Home',
       'es': 'Hogar',
+    },
+  },
+  // politicas
+  {
+    '71rav1bl': {
+      'en': '',
+      'es': 'política de privacidad',
+    },
+    'kpbp64hc': {
+      'en':
+          'The fortunators app is owned by fortunators, which is a data controller of\nYour personal information.\n\nWe have adopted this privacy policy, which determines how we process data\ninformation collected by fortunators, which also provides the reasons why\nthat we must collect certain personal data about you. therefore you must read\nthis privacy policy before using the masamia website.\nWe take care of your personal data and we are committed to guaranteeing your\nconfidentiality and security.\n\nPersonal information we collect:\nWhen you visit comparandoo, we automatically collect certain information\nabout your device, including information about your web browser, IP address, zone\ntime and some of the cookies installed on your device. Also, as\nAs you navigate through the site, we collect information about individual web pages or\nthe products you view, what websites or search terms referred you to the site, and\nhow you interact with it. we refer to this information collected\nautomatically as \"device information\". In addition, we may collect\nthe personal data you provide to us (including, among others, first name, last name,\naddress, payment information, etc.) during registration to comply with the\nagreement.\n\nWhy do we process your data?\nour highest priority is the security of customer data and as such,\nwe may process only the minimum user data, only to the extent that it is\nabsolutely necessary to maintain the website. the information collected\nis automatically used only to identify possible instances of abuse and\nestablish statistical information on the use of the website. this information\nThe statistics are not aggregated in such a way as to identify any particular user.\nof the system. you can visit the site without telling us who you are or revealing any\ninformation by which someone can identify you as a specific person. without\nHowever, if you wish to use some of the features of the website or wish to receive\nour newsletter or provide other details by completing a form,\nYou can provide us with personal data, such as your email, name,\nlast name, city of residence, organization and telephone number. you can choose\ndo not provide your personal data, but you may not be able to take advantage of\nsome of the functions of the website. for example, you will not be able to receive our newsletter\nor contact us directly from the website. users who are not sure\nwhose data is required, you can contact us through\nfrom fortunetorsapp@gmail.com.\nYour rights:\nif you are a European resident, you have the following rights related to your data\nstaff:\n*The right to be informed.\n*The right of access.\n*The right to rectification.\n*The right to delete.\n*The right to restrict processing.\n*The right to data portability.\n*The right of opposition.\n*Rights in relation to automated decision-making and the preparation of\nprofiles.\n\nIf you wish to exercise this right, please contact us through the information\ncontact below.\nAlso, if you are a European resident, we highlight that we are processing your\ninformation to fulfill contracts we may have with you (for\nexample, if you place an order through the site), or otherwise to track\nour legitimate business interests listed above. also have\nPlease note that your information may be transferred outside of Europe, including to Canada and\nUSA\nLinks to other websites:\nOur site may contain links to other websites that are not owned by us.\n\nowned or controlled by us. keep in mind that we are not\nresponsible for such websites or the privacy practices of third parties. tea\nWe recommend that you be aware when you leave our website and read the\nprivacy statements of each site that may collect personal information.\n\nSecurity of the information:\nWe secure the information you provide on computer servers in a\ncontrolled and secure environment, protected from unauthorized access, use or disclosure.\n\nwe maintain reasonable administrative, technical and physical security measures\nto protect against unauthorized access, use, modification and disclosure\nof personal data under its control and custody. however, it cannot be guaranteed\ndata transmission over the Internet or wireless networks.\n\nLegal disclosure:\nWe will disclose any information we collect, use or receive if we do.\n\nrequired or permitted by law, such as to comply with a subpoena or legal process\nsimilar, and when we believe in good faith that disclosure is necessary to protect\nour rights, protect your safety or the safety of others, investigate the\nfraud or respond to a government request.\nContact information:\nif you want to contact us',
+      'es':
+          'La aplicación fortunators es propiedad de fortunators, que es un controlador de datos de\nTu información personal.\n\nHemos adoptado esta política de privacidad, que determina cómo procesamos los datos.\ninformación recopilada por fortunators, que también proporciona las razones por las cuales\nque debemos recopilar ciertos datos personales sobre usted. por lo tanto debes leer\nesta política de privacidad antes de utilizar el sitio web de masamia.\nCuidamos sus datos personales y nos comprometemos a garantizar su\nconfidencialidad y seguridad.\n\nInformación personal que recopilamos:\nCuando visitas comparandoo, recopilamos automáticamente cierta información\nsobre su dispositivo, incluida información sobre su navegador web, dirección IP, zona\ntiempo y algunas de las cookies instaladas en su dispositivo. Tambien como\nA medida que navega por el sitio, recopilamos información sobre páginas web individuales o\nlos productos que ve, qué sitios web o términos de búsqueda lo refirieron al sitio, y\ncómo interactúas con él. nos referimos a esta información recopilada\nautomáticamente como \"información del dispositivo\". Además, podemos recopilar\nlos datos personales que nos proporciona (incluyendo, entre otros, nombre, apellido,\ndirección, información de pago, etc.) durante el registro para cumplir con los\nacuerdo.\n\n¿Por qué tratamos sus datos?\nnuestra máxima prioridad es la seguridad de los datos de los clientes y, como tal,\npodemos procesar solo los datos mínimos del usuario, solo en la medida en que sea\nabsolutamente necesario para mantener el sitio web. la información recopilada\nse usa automáticamente solo para identificar posibles instancias de abuso y\nestablecer información estadística sobre el uso del sitio web. esta informacion\nLas estadísticas no se agregan de tal manera que identifiquen a ningún usuario en particular.\ndel sistema. puede visitar el sitio sin decirnos quién es ni revelar ningún\ninformación por la cual alguien puede identificarlo como una persona específica. sin\nSin embargo, si desea utilizar algunas de las funciones del sitio web o desea recibir\nnuestro boletín o proporcionar otros detalles completando un formulario,\nPuede proporcionarnos datos personales, como su correo electrónico, nombre,\napellido, ciudad de residencia, organización y número de teléfono. tu puedes elegir\nno proporcione sus datos personales, pero es posible que no pueda aprovechar\nalgunas de las funciones del sitio web. por ejemplo, no podrá recibir nuestro boletín\no contáctenos directamente desde el sitio web. usuarios que no están seguros\ncuyos datos son requeridos, puede contactarnos a través de\nde fortunetorsapp@gmail.com.\nTus derechos:\nsi es residente europeo, tiene los siguientes derechos relacionados con sus datos\npersonal:\n*El derecho a ser informado.\n*El derecho de acceso.\n*El derecho a la rectificación.\n*El derecho a borrar.\n*El derecho a restringir el procesamiento.\n*El derecho a la portabilidad de los datos.\n*El derecho de oposición.\n*Derechos en relación con la toma de decisiones automatizada y la elaboración de\nperfiles.\n\nSi desea ejercer este derecho, póngase en contacto con nosotros a través de la información\ncontacto a continuación.\nAdemás, si eres residente europeo, destacamos que estamos tramitando tu\ninformación para cumplir con los contratos que podamos tener con usted (por\nejemplo, si realiza un pedido a través del sitio), o de otra manera para rastrear\nnuestros intereses comerciales legítimos enumerados anteriormente. también tienen\nTenga en cuenta que su información puede transferirse fuera de Europa, incluso a Canadá y\nEE.UU\nEnlaces a otros sitios web:\nNuestro sitio puede contener enlaces a otros sitios web que no son de nuestra propiedad.\n\nde nuestra propiedad o controlados por nosotros. ten en cuenta que no somos\nresponsable de dichos sitios web o de las prácticas de privacidad de terceros. té\nLe recomendamos que esté atento cuando abandone nuestro sitio web y lea el\ndeclaraciones de privacidad de cada sitio que pueda recopilar información personal.\n\nSeguridad de la información:\nAseguramos la información que usted proporciona en servidores informáticos en un\nambiente controlado y seguro, protegido del acceso, uso o divulgación no autorizados.\n\nmantenemos medidas de seguridad administrativas, técnicas y físicas razonables\npara proteger contra el acceso, uso, modificación y divulgación no autorizados\nde datos personales bajo su control y custodia. sin embargo, no se puede garantizar\ntransmisión de datos a través de Internet o redes inalámbricas.\n\nDivulgación jurídica:\nDivulgaremos cualquier información que recopilemos, usemos o recibamos si lo hacemos.\n\nrequerido o permitido por la ley, como para cumplir con una citación o proceso legal\nsimilar, y cuando creemos de buena fe que la divulgación es necesaria para proteger\nnuestros derechos, proteger su seguridad o la seguridad de otros, investigar la\nfraude o responder a una solicitud del gobierno.\nInformación del contacto:\nsi quieres contactar con nosotros',
+    },
+    'axnbobyp': {
+      'en': 'Home',
+      'es': 'Hogar',
+    },
+  },
+  // cashtable
+  {
+    '0mg72mu0': {
+      'en': 'Hello World',
+      'es': 'Hola Mundo',
+    },
+    'xyjmuh5i': {
+      'en': 'audience',
+      'es': 'audiencia',
+    },
+    'tbhk356n': {
+      'en': '',
+      'es': '580',
+    },
+    '9sxg7i09': {
+      'en': 'Hello World',
+      'es': 'Hola Mundo',
+    },
+    'k1wsrbus': {
+      'en': 'Hello World',
+      'es': 'Hola Mundo',
+    },
+    '8gfipbps': {
+      'en': '',
+      'es': 'saldo:',
+    },
+    'oh8ab2mn': {
+      'en': 'Hello World',
+      'es': 'Hola Mundo',
+    },
+    'lm8z6s2r': {
+      'en': '',
+      'es': ':(',
+    },
+    'u4t41w86': {
+      'en': '\$200.00',
+      'es': '\$200.00',
+    },
+    '2tnlm0ml': {
+      'en': '\$50.000',
+      'es': '\$50.000',
+    },
+    'bnhsy2go': {
+      'en': '',
+      'es': ':(',
+    },
+    '6b6m1596': {
+      'en': '\$300.000',
+      'es': '\$300.000',
+    },
+    'qdf7rwjq': {
+      'en': 'Back',
+      'es': 'Atrás',
+    },
+    'kyae5jvy': {
+      'en': '\$400.000',
+      'es': '\$400.000',
+    },
+    '5n3cm1lv': {
+      'en': '\$350.000',
+      'es': '\$350.000',
     },
   },
   // goldtable
@@ -1712,65 +1692,85 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': '\$350.000',
     },
   },
-  // cashtable
+  // fortunatable
   {
-    '0mg72mu0': {
+    'dv5rd5yj': {
       'en': 'Hello World',
       'es': 'Hola Mundo',
     },
-    'xyjmuh5i': {
-      'en': 'audience',
-      'es': 'audiencia',
-    },
-    'tbhk356n': {
+    'j5bpofya': {
       'en': '',
-      'es': '580',
+      'es': 'SUTANO',
     },
-    '9sxg7i09': {
-      'en': 'Hello World',
-      'es': 'Hola Mundo',
+    'w1k7gl91': {
+      'en': 'colombia',
+      'es': 'Colombia',
     },
-    'k1wsrbus': {
-      'en': 'Hello World',
-      'es': 'Hola Mundo',
-    },
-    '8gfipbps': {
+    '7v0xe64x': {
       'en': '',
-      'es': 'saldo:',
+      'es': 'SUTANO',
     },
-    'oh8ab2mn': {
+    'ige7uenb': {
+      'en': '',
+      'es': 'Colombia',
+    },
+    's3j4ov79': {
+      'en': '',
+      'es': 'SUTANO',
+    },
+    'ib0zckt1': {
+      'en': 'colombia',
+      'es': 'Colombia',
+    },
+    '628uycfx': {
+      'en': 'colombia',
+      'es': 'Colombia',
+    },
+    'rxilo493': {
+      'en': '',
+      'es': 'SUTANO',
+    },
+    'ypinla2q': {
+      'en': 'VIEWER:',
+      'es': 'ESPECTADOR:',
+    },
+    '3k4njebv': {
+      'en': 'balance:',
+      'es': 'balance:',
+    },
+    'z60xaif0': {
       'en': 'Hello World',
       'es': 'Hola Mundo',
     },
-    'lm8z6s2r': {
-      'en': '',
+    'qe1m12fq': {
+      'en': ':(',
       'es': ':(',
     },
-    'u4t41w86': {
+    's22gd02p': {
       'en': '\$200.00',
       'es': '\$200.00',
     },
-    '2tnlm0ml': {
+    'wy0hgvsf': {
       'en': '\$50.000',
       'es': '\$50.000',
     },
-    'bnhsy2go': {
+    'zmhy5h8a': {
       'en': '',
       'es': ':(',
     },
-    '6b6m1596': {
+    'w8ejuj26': {
       'en': '\$300.000',
       'es': '\$300.000',
     },
-    'qdf7rwjq': {
+    'lez6dm27': {
       'en': 'Back',
       'es': 'Atrás',
     },
-    'kyae5jvy': {
+    'htkigowh': {
       'en': '\$400.000',
       'es': '\$400.000',
     },
-    '5n3cm1lv': {
+    'nge2hif4': {
       'en': '\$350.000',
       'es': '\$350.000',
     },

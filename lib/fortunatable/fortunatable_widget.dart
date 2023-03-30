@@ -696,7 +696,7 @@ class _FortunatableWidgetState extends State<FortunatableWidget>
                                                             .fromSTEB(12.0,
                                                                 65.0, 5.0, 0.0),
                                                     child: Image.asset(
-                                                      'assets/images/Group_(2).png',
+                                                      'assets/images/balanceuser.png',
                                                       width: 185.1,
                                                       height: 121.8,
                                                       fit: BoxFit.cover,

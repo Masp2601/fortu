@@ -240,25 +240,10 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               builder: (context, params) => GameWidget(),
             ),
             FFRoute(
-              name: 'fortunatable',
-              path: 'fortunatable',
-              requireAuth: true,
-              builder: (context, params) => FortunatableWidget(
-                users: params.getParam('users', ParamType.String),
-                saldo: params.getParam('saldo', ParamType.String),
-              ),
-            ),
-            FFRoute(
               name: 'tarjeta',
               path: 'tarjeta',
               requireAuth: true,
               builder: (context, params) => TarjetaWidget(),
-            ),
-            FFRoute(
-              name: 'politicas',
-              path: 'politicas',
-              requireAuth: true,
-              builder: (context, params) => PoliticasWidget(),
             ),
             FFRoute(
               name: 'thankspay',
@@ -273,6 +258,20 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               builder: (context, params) => PaysaveWidget(),
             ),
             FFRoute(
+              name: 'politicas',
+              path: 'politicas',
+              requireAuth: true,
+              builder: (context, params) => PoliticasWidget(),
+            ),
+            FFRoute(
+              name: 'cashtable',
+              path: 'cashtable',
+              requireAuth: true,
+              builder: (context, params) => CashtableWidget(
+                users: params.getParam('users', ParamType.String),
+              ),
+            ),
+            FFRoute(
               name: 'goldtable',
               path: 'goldtable',
               requireAuth: true,
@@ -281,11 +280,12 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               ),
             ),
             FFRoute(
-              name: 'cashtable',
-              path: 'cashtable',
+              name: 'fortunatable',
+              path: 'fortunatable',
               requireAuth: true,
-              builder: (context, params) => CashtableWidget(
+              builder: (context, params) => FortunatableWidget(
                 users: params.getParam('users', ParamType.String),
+                saldo: params.getParam('saldo', ParamType.String),
               ),
             ),
             FFRoute(
