@@ -56,8 +56,8 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   if (Theme.of(context).brightness == Brightness.dark)
-                    Image.asset(
-                      'assets/images/finWallet_logo_landscape.png',
+                    Image.network(
+                      '',
                       width: 170.0,
                       height: 60.0,
                       fit: BoxFit.fitWidth,

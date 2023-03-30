@@ -112,7 +112,7 @@ class _ConectionWidgetState extends State<ConectionWidget> {
                                             alignment: AlignmentDirectional(
                                                 0.0, -0.55),
                                             child: Image.asset(
-                                              'assets/images/JUEGA_PARA_GANAR_!!.png',
+                                              'assets/images/playwin.png',
                                               width: 180.0,
                                               height: 140.0,
                                               fit: BoxFit.cover,
