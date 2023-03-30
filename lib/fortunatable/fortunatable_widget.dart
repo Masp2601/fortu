@@ -110,7 +110,7 @@ class _FortunatableWidgetState extends State<FortunatableWidget>
               image: DecorationImage(
                 fit: BoxFit.cover,
                 image: Image.asset(
-                  'assets/images/black-painted-wall-textured-background_4_(1).png',
+                  'assets/images/fortuimage.png',
                 ).image,
               ),
             ),

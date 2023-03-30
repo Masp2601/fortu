@@ -100,14 +100,19 @@ class _PrivacyPolicyWidgetState extends State<PrivacyPolicyWidget> {
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     children: [
-                      Expanded(
-                        child: Text(
-                          FFLocalizations.of(context).getText(
-                            'fvsfg5on' /* How we use your data */,
+                      if (responsiveVisibility(
+                        context: context,
+                        tabletLandscape: false,
+                        desktop: false,
+                      ))
+                        Expanded(
+                          child: Text(
+                            FFLocalizations.of(context).getText(
+                              'fvsfg5on' /* How we use your data */,
+                            ),
+                            style: FlutterFlowTheme.of(context).displaySmall,
                           ),
-                          style: FlutterFlowTheme.of(context).displaySmall,
                         ),
-                      ),
                     ],
                   ),
                 ),

@@ -61,19 +61,24 @@ class _DisfrutayganaWidgetState extends State<DisfrutayganaWidget> {
                       child: Stack(
                         alignment: AlignmentDirectional(-0.75, 0.55),
                         children: [
-                          Align(
-                            alignment: AlignmentDirectional(0.0, 0.0),
-                            child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
-                                  0.0, 15.0, 0.0, 0.0),
-                              child: Image.asset(
-                                'assets/images/disfrutaimage.png',
-                                width: 380.9,
-                                height: 2200.0,
-                                fit: BoxFit.cover,
+                          if (responsiveVisibility(
+                            context: context,
+                            tabletLandscape: false,
+                            desktop: false,
+                          ))
+                            Align(
+                              alignment: AlignmentDirectional(0.0, 0.0),
+                              child: Padding(
+                                padding: EdgeInsetsDirectional.fromSTEB(
+                                    0.0, 15.0, 0.0, 0.0),
+                                child: Image.asset(
+                                  'assets/images/disfrutaimage.png',
+                                  width: 380.9,
+                                  height: 2200.0,
+                                  fit: BoxFit.cover,
+                                ),
                               ),
                             ),
-                          ),
                           Align(
                             alignment: AlignmentDirectional(0.8, -0.82),
                             child: Padding(
@@ -83,53 +88,68 @@ class _DisfrutayganaWidgetState extends State<DisfrutayganaWidget> {
                                 mainAxisSize: MainAxisSize.max,
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
-                                  Image.asset(
-                                    'assets/images/navbar.png',
-                                    fit: BoxFit.cover,
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ),
-                          Align(
-                            alignment: AlignmentDirectional(0.7, -0.65),
-                            child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
-                                  75.0, 140.0, 0.0, 0.0),
-                              child: Row(
-                                mainAxisSize: MainAxisSize.max,
-                                mainAxisAlignment: MainAxisAlignment.end,
-                                children: [
-                                  Image.asset(
-                                    'assets/images/cuadro.png',
-                                    fit: BoxFit.cover,
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ),
-                          Align(
-                            alignment: AlignmentDirectional(0.0, -0.48),
-                            child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
-                                  15.0, 0.0, 0.0, 0.0),
-                              child: Row(
-                                mainAxisSize: MainAxisSize.max,
-                                children: [
-                                  Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
-                                        94.0, 175.0, 0.0, 0.0),
-                                    child: Image.asset(
-                                      'assets/images/play.png',
-                                      width: 265.6,
-                                      height: 547.0,
+                                  if (responsiveVisibility(
+                                    context: context,
+                                    tabletLandscape: false,
+                                    desktop: false,
+                                  ))
+                                    Image.asset(
+                                      'assets/images/navbar.png',
                                       fit: BoxFit.cover,
                                     ),
-                                  ),
                                 ],
                               ),
                             ),
                           ),
+                          if (responsiveVisibility(
+                            context: context,
+                            tabletLandscape: false,
+                            desktop: false,
+                          ))
+                            Align(
+                              alignment: AlignmentDirectional(0.7, -0.65),
+                              child: Padding(
+                                padding: EdgeInsetsDirectional.fromSTEB(
+                                    75.0, 140.0, 0.0, 0.0),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  mainAxisAlignment: MainAxisAlignment.end,
+                                  children: [
+                                    Image.asset(
+                                      'assets/images/cuadro.png',
+                                      fit: BoxFit.cover,
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                          if (responsiveVisibility(
+                            context: context,
+                            tabletLandscape: false,
+                            desktop: false,
+                          ))
+                            Align(
+                              alignment: AlignmentDirectional(0.0, -0.48),
+                              child: Padding(
+                                padding: EdgeInsetsDirectional.fromSTEB(
+                                    15.0, 0.0, 0.0, 0.0),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  children: [
+                                    Padding(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          94.0, 175.0, 0.0, 0.0),
+                                      child: Image.asset(
+                                        'assets/images/play.png',
+                                        width: 265.6,
+                                        height: 547.0,
+                                        fit: BoxFit.cover,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
                           Align(
                             alignment: AlignmentDirectional(0.0, 0.84),
                             child: Padding(
@@ -162,54 +182,63 @@ class _DisfrutayganaWidgetState extends State<DisfrutayganaWidget> {
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
-                                  Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
-                                        150.0, 0.0, 0.0, 0.0),
-                                    child: FFButtonWidget(
-                                      onPressed: () async {
-                                        logFirebaseEvent(
-                                            'DISFRUTAYGANA_PAGE_NEXT_BTN_ON_TAP');
-                                        logFirebaseEvent('Button_navigate_to');
+                                  if (responsiveVisibility(
+                                    context: context,
+                                    tabletLandscape: false,
+                                    desktop: false,
+                                  ))
+                                    Padding(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          150.0, 0.0, 0.0, 0.0),
+                                      child: FFButtonWidget(
+                                        onPressed: () async {
+                                          logFirebaseEvent(
+                                              'DISFRUTAYGANA_PAGE_NEXT_BTN_ON_TAP');
+                                          logFirebaseEvent(
+                                              'Button_navigate_to');
 
-                                        context.pushNamed('game');
-                                      },
-                                      text: FFLocalizations.of(context).getText(
-                                        'w9k2ung3' /* next */,
-                                      ),
-                                      options: FFButtonOptions(
-                                        width: 130.0,
-                                        height: 40.0,
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            0.0, 0.0, 0.0, 0.0),
-                                        iconPadding:
-                                            EdgeInsetsDirectional.fromSTEB(
-                                                0.0, 0.0, 0.0, 0.0),
-                                        color: Color(0xFFFF0026),
-                                        textStyle: FlutterFlowTheme.of(context)
-                                            .titleSmall
-                                            .override(
-                                              fontFamily:
-                                                  FlutterFlowTheme.of(context)
-                                                      .titleSmallFamily,
-                                              color: Colors.white,
-                                              useGoogleFonts: GoogleFonts
-                                                      .asMap()
-                                                  .containsKey(
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .titleSmallFamily),
-                                            ),
-                                        elevation: 2.0,
-                                        borderSide: BorderSide(
-                                          color: FlutterFlowTheme.of(context)
-                                              .textColor,
-                                          width: 1.0,
+                                          context.pushNamed('game');
+                                        },
+                                        text:
+                                            FFLocalizations.of(context).getText(
+                                          'w9k2ung3' /* next */,
                                         ),
-                                        borderRadius:
-                                            BorderRadius.circular(40.0),
+                                        options: FFButtonOptions(
+                                          width: 130.0,
+                                          height: 40.0,
+                                          padding:
+                                              EdgeInsetsDirectional.fromSTEB(
+                                                  0.0, 0.0, 0.0, 0.0),
+                                          iconPadding:
+                                              EdgeInsetsDirectional.fromSTEB(
+                                                  0.0, 0.0, 0.0, 0.0),
+                                          color: Color(0xFFFF0026),
+                                          textStyle: FlutterFlowTheme.of(
+                                                  context)
+                                              .titleSmall
+                                              .override(
+                                                fontFamily:
+                                                    FlutterFlowTheme.of(context)
+                                                        .titleSmallFamily,
+                                                color: Colors.white,
+                                                useGoogleFonts: GoogleFonts
+                                                        .asMap()
+                                                    .containsKey(
+                                                        FlutterFlowTheme.of(
+                                                                context)
+                                                            .titleSmallFamily),
+                                              ),
+                                          elevation: 2.0,
+                                          borderSide: BorderSide(
+                                            color: FlutterFlowTheme.of(context)
+                                                .textColor,
+                                            width: 1.0,
+                                          ),
+                                          borderRadius:
+                                              BorderRadius.circular(40.0),
+                                        ),
                                       ),
                                     ),
-                                  ),
                                 ],
                               ),
                             ),
@@ -222,34 +251,41 @@ class _DisfrutayganaWidgetState extends State<DisfrutayganaWidget> {
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
-                                  InkWell(
-                                    onTap: () async {
-                                      logFirebaseEvent(
-                                          'DISFRUTAYGANA_PAGE_Text_6sm10rxm_ON_TAP');
-                                      logFirebaseEvent('Text_navigate_to');
+                                  if (responsiveVisibility(
+                                    context: context,
+                                    tabletLandscape: false,
+                                    desktop: false,
+                                  ))
+                                    InkWell(
+                                      onTap: () async {
+                                        logFirebaseEvent(
+                                            'DISFRUTAYGANA_PAGE_Text_6sm10rxm_ON_TAP');
+                                        logFirebaseEvent('Text_navigate_to');
 
-                                      context.pushNamed('rules');
-                                    },
-                                    child: Text(
-                                      FFLocalizations.of(context).getText(
-                                        'vfzvz63d' /* enjoy and win */,
+                                        context.pushNamed('rules');
+                                      },
+                                      child: Text(
+                                        FFLocalizations.of(context).getText(
+                                          'vfzvz63d' /* enjoy and win */,
+                                        ),
+                                        style: FlutterFlowTheme.of(context)
+                                            .headlineMedium
+                                            .override(
+                                              fontFamily:
+                                                  FlutterFlowTheme.of(context)
+                                                      .headlineMediumFamily,
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .textColor,
+                                              fontSize: 25.0,
+                                              useGoogleFonts: GoogleFonts
+                                                      .asMap()
+                                                  .containsKey(FlutterFlowTheme
+                                                          .of(context)
+                                                      .headlineMediumFamily),
+                                            ),
                                       ),
-                                      style: FlutterFlowTheme.of(context)
-                                          .headlineMedium
-                                          .override(
-                                            fontFamily:
-                                                FlutterFlowTheme.of(context)
-                                                    .headlineMediumFamily,
-                                            color: FlutterFlowTheme.of(context)
-                                                .textColor,
-                                            fontSize: 25.0,
-                                            useGoogleFonts: GoogleFonts.asMap()
-                                                .containsKey(
-                                                    FlutterFlowTheme.of(context)
-                                                        .headlineMediumFamily),
-                                          ),
                                     ),
-                                  ),
                                 ],
                               ),
                             ),

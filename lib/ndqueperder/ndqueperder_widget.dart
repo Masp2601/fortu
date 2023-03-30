@@ -64,7 +64,7 @@ class _NdqueperderWidgetState extends State<NdqueperderWidget> {
               image: DecorationImage(
                 fit: BoxFit.cover,
                 image: Image.asset(
-                  'assets/images/black-painted-wall-textured-background_4_(1).png',
+                  'assets/images/ndimage.png',
                 ).image,
               ),
             ),

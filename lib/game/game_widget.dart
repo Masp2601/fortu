@@ -45,500 +45,144 @@ class _GameWidgetState extends State<GameWidget> {
       backgroundColor: Color(0xFF14181B),
       body: GestureDetector(
         onTap: () => FocusScope.of(context).requestFocus(_unfocusNode),
-        child: Padding(
-          padding: EdgeInsetsDirectional.fromSTEB(0.0, 40.0, 0.0, 0.0),
-          child: Container(
-            width: MediaQuery.of(context).size.width * 1.0,
-            height: MediaQuery.of(context).size.height * 1.0,
-            decoration: BoxDecoration(
-              color: Color(0xFF14181B),
-              image: DecorationImage(
-                fit: BoxFit.cover,
-                image: Image.asset(
-                  'assets/images/game.png',
-                ).image,
+        child: Visibility(
+          visible: responsiveVisibility(
+            context: context,
+            tabletLandscape: false,
+            desktop: false,
+          ),
+          child: Padding(
+            padding: EdgeInsetsDirectional.fromSTEB(0.0, 40.0, 0.0, 0.0),
+            child: Container(
+              width: MediaQuery.of(context).size.width * 1.0,
+              height: MediaQuery.of(context).size.height * 1.0,
+              decoration: BoxDecoration(
+                color: Color(0xFF14181B),
+                image: DecorationImage(
+                  fit: BoxFit.cover,
+                  image: Image.asset(
+                    'assets/images/game.png',
+                  ).image,
+                ),
               ),
-            ),
-            child: Visibility(
-              visible: responsiveVisibility(
-                context: context,
-                tabletLandscape: false,
-                desktop: false,
-              ),
-              child: Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 40.0, 0.0, 0.0),
-                child: Container(
-                  width: 100.0,
-                  height: 100.0,
-                  decoration: BoxDecoration(),
-                  child: Visibility(
-                    visible: responsiveVisibility(
-                      context: context,
-                      tabletLandscape: false,
-                      desktop: false,
-                    ),
-                    child: Padding(
-                      padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 40.0, 0.0, 0.0),
-                      child: Column(
-                        mainAxisSize: MainAxisSize.max,
-                        children: [
-                          Align(
-                            alignment: AlignmentDirectional(0.0, -0.35),
-                            child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
-                                  0.0, 0.0, 0.0, 20.0),
-                              child: Row(
-                                mainAxisSize: MainAxisSize.max,
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
-                                  Expanded(
-                                    child: Align(
-                                      alignment: AlignmentDirectional(0.0, 0.3),
-                                      child: Image.asset(
-                                        'assets/images/Group_33940.png',
-                                        fit: BoxFit.cover,
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ),
-                          Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
-                                15.0, 0.0, 15.0, 0.0),
-                            child: Row(
-                              mainAxisSize: MainAxisSize.max,
-                              children: [
-                                InkWell(
-                                  onTap: () async {
-                                    logFirebaseEvent(
-                                        'GAME_PAGE_Image_9l6p4dby_ON_TAP');
-                                    logFirebaseEvent('Image_navigate_to');
-
-                                    context.pushNamed('ndqueperder');
-                                  },
-                                  child: Image.asset(
-                                    'assets/images/Asset_1-8.png',
-                                    width: 335.1,
-                                    height: 173.8,
-                                    fit: BoxFit.cover,
-                                  ),
-                                ),
-                                if (responsiveVisibility(
-                                  context: context,
-                                  tabletLandscape: false,
-                                  desktop: false,
-                                ))
-                                  Expanded(
-                                    child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                          0.0, 0.0, 50.0, 0.0),
-                                      child: Row(
-                                        mainAxisSize: MainAxisSize.max,
-                                        children: [],
-                                      ),
-                                    ),
-                                  ),
-                              ],
-                            ),
-                          ),
-                          if (responsiveVisibility(
-                            context: context,
-                            tabletLandscape: false,
-                            desktop: false,
-                          ))
+              child: Visibility(
+                visible: responsiveVisibility(
+                  context: context,
+                  tabletLandscape: false,
+                  desktop: false,
+                ),
+                child: Padding(
+                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 40.0, 0.0, 0.0),
+                  child: Container(
+                    width: 100.0,
+                    height: 100.0,
+                    decoration: BoxDecoration(),
+                    child: Visibility(
+                      visible: responsiveVisibility(
+                        context: context,
+                        tabletLandscape: false,
+                        desktop: false,
+                      ),
+                      child: Padding(
+                        padding:
+                            EdgeInsetsDirectional.fromSTEB(0.0, 40.0, 0.0, 0.0),
+                        child: Column(
+                          mainAxisSize: MainAxisSize.max,
+                          children: [
                             Align(
-                              alignment: AlignmentDirectional(-0.6, -1.5),
+                              alignment: AlignmentDirectional(0.0, -0.35),
                               child: Padding(
                                 padding: EdgeInsetsDirectional.fromSTEB(
-                                    10.0, 20.0, 10.0, 10.0),
+                                    0.0, 0.0, 0.0, 20.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
-                                    Text(
-                                      FFLocalizations.of(context).getText(
-                                        '68vn95yr' /* PESOS COLOMBIANOS */,
+                                    Expanded(
+                                      child: Align(
+                                        alignment:
+                                            AlignmentDirectional(0.0, 0.3),
+                                        child: Image.asset(
+                                          'assets/images/Group_33940.png',
+                                          fit: BoxFit.cover,
+                                        ),
                                       ),
-                                      style: FlutterFlowTheme.of(context)
-                                          .bodyMedium,
                                     ),
                                   ],
                                 ),
                               ),
                             ),
-                          Expanded(
-                            child: Padding(
+                            Padding(
                               padding: EdgeInsetsDirectional.fromSTEB(
-                                  10.0, 0.0, 10.0, 0.0),
+                                  15.0, 0.0, 15.0, 0.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
-                                mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
-                                  Expanded(
-                                    child: Stack(
-                                      children: [
-                                        if (responsiveVisibility(
-                                          context: context,
-                                          tabletLandscape: false,
-                                          desktop: false,
-                                        ))
-                                          Align(
-                                            alignment: AlignmentDirectional(
-                                                -1.0, 0.04),
-                                            child: InkWell(
-                                              onTap: () async {
-                                                logFirebaseEvent(
-                                                    'GAME_PAGE_Image_g0pgq9a1_ON_TAP');
-                                                logFirebaseEvent(
-                                                    'Image_navigate_to');
+                                  InkWell(
+                                    onTap: () async {
+                                      logFirebaseEvent(
+                                          'GAME_PAGE_Image_9l6p4dby_ON_TAP');
+                                      logFirebaseEvent('Image_navigate_to');
 
-                                                context.pushNamed('cashtable');
-                                              },
-                                              child: Image.asset(
-                                                'assets/images/1-8.png',
-                                                width: 120.0,
-                                                height: 120.0,
-                                                fit: BoxFit.contain,
-                                              ),
-                                            ),
-                                          ),
-                                        if (responsiveVisibility(
-                                          context: context,
-                                          tabletLandscape: false,
-                                          desktop: false,
-                                        ))
-                                          Align(
-                                            alignment: AlignmentDirectional(
-                                                -0.05, -0.03),
-                                            child: InkWell(
-                                              onTap: () async {
-                                                logFirebaseEvent(
-                                                    'GAME_PAGE_Image_v56vpzjv_ON_TAP');
-                                                logFirebaseEvent(
-                                                    'Image_navigate_to');
-
-                                                context.pushNamed('goldtable');
-                                              },
-                                              child: Image.asset(
-                                                'assets/images/gold_1-8.png',
-                                                width: 200.0,
-                                                height: 200.0,
-                                                fit: BoxFit.contain,
-                                              ),
-                                            ),
-                                          ),
-                                        if (responsiveVisibility(
-                                          context: context,
-                                          tabletLandscape: false,
-                                          desktop: false,
-                                        ))
-                                          Align(
-                                            alignment: AlignmentDirectional(
-                                                1.5, -0.03),
-                                            child: InkWell(
-                                              onTap: () async {
-                                                logFirebaseEvent(
-                                                    'GAME_PAGE_Image_fejsz47e_ON_TAP');
-                                                logFirebaseEvent(
-                                                    'Image_navigate_to');
-
-                                                context
-                                                    .pushNamed('fortunatable');
-                                              },
-                                              child: Image.asset(
-                                                'assets/images/red-8.png',
-                                                width: 200.0,
-                                                height: 200.0,
-                                                fit: BoxFit.contain,
-                                              ),
-                                            ),
-                                          ),
-                                      ],
+                                      context.pushNamed('ndqueperder');
+                                    },
+                                    child: Image.asset(
+                                      'assets/images/Asset_1-8.png',
+                                      width: 335.1,
+                                      height: 173.8,
+                                      fit: BoxFit.cover,
                                     ),
                                   ),
+                                  if (responsiveVisibility(
+                                    context: context,
+                                    tabletLandscape: false,
+                                    desktop: false,
+                                  ))
+                                    Expanded(
+                                      child: Padding(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                            0.0, 0.0, 50.0, 0.0),
+                                        child: Row(
+                                          mainAxisSize: MainAxisSize.max,
+                                          children: [],
+                                        ),
+                                      ),
+                                    ),
                                 ],
                               ),
                             ),
-                          ),
-                          Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
-                                10.0, 10.0, 10.0, 0.0),
-                            child: Row(
-                              mainAxisSize: MainAxisSize.max,
-                              children: [
-                                Expanded(
-                                  child: Stack(
+                            if (responsiveVisibility(
+                              context: context,
+                              tabletLandscape: false,
+                              desktop: false,
+                            ))
+                              Align(
+                                alignment: AlignmentDirectional(-0.6, -1.5),
+                                child: Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      10.0, 20.0, 10.0, 10.0),
+                                  child: Row(
+                                    mainAxisSize: MainAxisSize.max,
+                                    mainAxisAlignment: MainAxisAlignment.center,
                                     children: [
-                                      if (responsiveVisibility(
-                                        context: context,
-                                        tabletLandscape: false,
-                                        desktop: false,
-                                      ))
-                                        Align(
-                                          alignment:
-                                              AlignmentDirectional(-1.0, 0.04),
-                                          child: Padding(
-                                            padding:
-                                                EdgeInsetsDirectional.fromSTEB(
-                                                    10.0, 0.0, 20.0, 0.0),
-                                            child: InkWell(
-                                              onTap: () async {
-                                                logFirebaseEvent(
-                                                    'GAME_PAGE_Image_e1a2ewpp_ON_TAP');
-                                                logFirebaseEvent(
-                                                    'Image_navigate_to');
-
-                                                context.pushNamed('cashtable');
-                                              },
-                                              child: Image.asset(
-                                                'assets/images/Vector_(16).png',
-                                                fit: BoxFit.cover,
-                                              ),
-                                            ),
-                                          ),
+                                      Text(
+                                        FFLocalizations.of(context).getText(
+                                          '68vn95yr' /* PESOS COLOMBIANOS */,
                                         ),
-                                      if (responsiveVisibility(
-                                        context: context,
-                                        tabletLandscape: false,
-                                        desktop: false,
-                                      ))
-                                        Align(
-                                          alignment: AlignmentDirectional(
-                                              -0.05, -0.03),
-                                          child: Padding(
-                                            padding:
-                                                EdgeInsetsDirectional.fromSTEB(
-                                                    25.0, 0.0, 10.0, 0.0),
-                                            child: InkWell(
-                                              onTap: () async {
-                                                logFirebaseEvent(
-                                                    'GAME_PAGE_Image_wdqbelev_ON_TAP');
-                                                logFirebaseEvent(
-                                                    'Image_navigate_to');
-
-                                                context.pushNamed('goldtable');
-                                              },
-                                              child: Image.asset(
-                                                'assets/images/Vector_(17).png',
-                                                fit: BoxFit.cover,
-                                              ),
-                                            ),
-                                          ),
-                                        ),
-                                      if (responsiveVisibility(
-                                        context: context,
-                                        tabletLandscape: false,
-                                        desktop: false,
-                                      ))
-                                        Align(
-                                          alignment:
-                                              AlignmentDirectional(0.9, -0.03),
-                                          child: InkWell(
-                                            onTap: () async {
-                                              logFirebaseEvent(
-                                                  'GAME_PAGE_Image_spj6s5ps_ON_TAP');
-                                              logFirebaseEvent(
-                                                  'Image_navigate_to');
-
-                                              context.pushNamed('fortunatable');
-                                            },
-                                            child: Image.asset(
-                                              'assets/images/Vector_(18).png',
-                                              fit: BoxFit.cover,
-                                            ),
-                                          ),
-                                        ),
-                                      Align(
-                                        alignment:
-                                            AlignmentDirectional(0.0, -0.7),
-                                        child: Text(
-                                          FFLocalizations.of(context).getText(
-                                            '1u2sbzcx' /* Hello World */,
-                                          ),
-                                          style: FlutterFlowTheme.of(context)
-                                              .bodyMedium,
-                                        ),
-                                      ),
-                                      Align(
-                                        alignment:
-                                            AlignmentDirectional(-0.75, -0.05),
-                                        child: Padding(
-                                          padding:
-                                              EdgeInsetsDirectional.fromSTEB(
-                                                  0.0, 2.0, 0.0, 0.0),
-                                          child: Text(
-                                            FFLocalizations.of(context).getText(
-                                              'bnom62z7' /* PLAY */,
-                                            ),
-                                            style: FlutterFlowTheme.of(context)
-                                                .bodyMedium
-                                                .override(
-                                                  fontFamily:
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .bodyMediumFamily,
-                                                  color: Colors.black,
-                                                  useGoogleFonts: GoogleFonts
-                                                          .asMap()
-                                                      .containsKey(
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .bodyMediumFamily),
-                                                ),
-                                          ),
-                                        ),
-                                      ),
-                                      Align(
-                                        alignment:
-                                            AlignmentDirectional(0.0, -0.15),
-                                        child: Padding(
-                                          padding:
-                                              EdgeInsetsDirectional.fromSTEB(
-                                                  0.0, 2.0, 0.0, 0.0),
-                                          child: Text(
-                                            FFLocalizations.of(context).getText(
-                                              '2r200ik8' /* Hello World */,
-                                            ),
-                                            style: FlutterFlowTheme.of(context)
-                                                .bodyMedium
-                                                .override(
-                                                  fontFamily:
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .bodyMediumFamily,
-                                                  color: Colors.black,
-                                                  useGoogleFonts: GoogleFonts
-                                                          .asMap()
-                                                      .containsKey(
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .bodyMediumFamily),
-                                                ),
-                                          ),
-                                        ),
-                                      ),
-                                      Align(
-                                        alignment:
-                                            AlignmentDirectional(0.85, 0.0),
-                                        child: Padding(
-                                          padding:
-                                              EdgeInsetsDirectional.fromSTEB(
-                                                  0.0, 2.0, 0.0, 0.0),
-                                          child: Text(
-                                            FFLocalizations.of(context).getText(
-                                              'lb858kc6' /* Hello World */,
-                                            ),
-                                            style: FlutterFlowTheme.of(context)
-                                                .bodyMedium
-                                                .override(
-                                                  fontFamily:
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .bodyMediumFamily,
-                                                  color: Colors.black,
-                                                  useGoogleFonts: GoogleFonts
-                                                          .asMap()
-                                                      .containsKey(
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .bodyMediumFamily),
-                                                ),
-                                          ),
-                                        ),
-                                      ),
-                                      Align(
-                                        alignment:
-                                            AlignmentDirectional(0.0, 0.0),
-                                        child: Padding(
-                                          padding:
-                                              EdgeInsetsDirectional.fromSTEB(
-                                                  0.0, 2.0, 0.0, 0.0),
-                                          child: Text(
-                                            FFLocalizations.of(context).getText(
-                                              'g5ck6tig' /* PLAY */,
-                                            ),
-                                            style: FlutterFlowTheme.of(context)
-                                                .bodyMedium
-                                                .override(
-                                                  fontFamily:
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .bodyMediumFamily,
-                                                  color: Colors.black,
-                                                  useGoogleFonts: GoogleFonts
-                                                          .asMap()
-                                                      .containsKey(
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .bodyMediumFamily),
-                                                ),
-                                          ),
-                                        ),
-                                      ),
-                                      Align(
-                                        alignment:
-                                            AlignmentDirectional(0.75, 0.0),
-                                        child: Padding(
-                                          padding:
-                                              EdgeInsetsDirectional.fromSTEB(
-                                                  0.0, 2.0, 0.0, 0.0),
-                                          child: Text(
-                                            FFLocalizations.of(context).getText(
-                                              '7ctyfhxa' /* PLAY */,
-                                            ),
-                                            style: FlutterFlowTheme.of(context)
-                                                .bodyMedium
-                                                .override(
-                                                  fontFamily:
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .bodyMediumFamily,
-                                                  color: Colors.black,
-                                                  useGoogleFonts: GoogleFonts
-                                                          .asMap()
-                                                      .containsKey(
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .bodyMediumFamily),
-                                                ),
-                                          ),
-                                        ),
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyMedium,
                                       ),
                                     ],
                                   ),
                                 ),
-                              ],
-                            ),
-                          ),
-                          Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
-                                10.0, 10.0, 10.0, 0.0),
-                            child: Row(
-                              mainAxisSize: MainAxisSize.max,
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Text(
-                                  FFLocalizations.of(context).getText(
-                                    '9jfa6nhu' /*  */,
-                                  ),
-                                  textAlign: TextAlign.center,
-                                  style:
-                                      FlutterFlowTheme.of(context).bodyMedium,
-                                ),
-                              ],
-                            ),
-                          ),
-                          Expanded(
-                            child: Align(
-                              alignment: AlignmentDirectional(0.0, 0.05),
+                              ),
+                            Expanded(
                               child: Padding(
                                 padding: EdgeInsetsDirectional.fromSTEB(
-                                    10.0, 10.0, 10.0, 0.0),
+                                    10.0, 0.0, 10.0, 0.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
+                                  mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
                                     Expanded(
                                       child: Stack(
@@ -550,27 +194,22 @@ class _GameWidgetState extends State<GameWidget> {
                                           ))
                                             Align(
                                               alignment: AlignmentDirectional(
-                                                  -1.0, -0.05),
-                                              child: Padding(
-                                                padding: EdgeInsetsDirectional
-                                                    .fromSTEB(
-                                                        10.0, 0.0, 20.0, 0.0),
-                                                child: InkWell(
-                                                  onTap: () async {
-                                                    logFirebaseEvent(
-                                                        'GAME_PAGE_Image_fub5mkvj_ON_TAP');
-                                                    logFirebaseEvent(
-                                                        'Image_navigate_to');
+                                                  -1.0, 0.04),
+                                              child: InkWell(
+                                                onTap: () async {
+                                                  logFirebaseEvent(
+                                                      'GAME_PAGE_Image_g0pgq9a1_ON_TAP');
+                                                  logFirebaseEvent(
+                                                      'Image_navigate_to');
 
-                                                    context
-                                                        .pushNamed('cashtable');
-                                                  },
-                                                  child: Image.asset(
-                                                    'assets/images/1-8.png',
-                                                    width: 90.0,
-                                                    height: 90.0,
-                                                    fit: BoxFit.contain,
-                                                  ),
+                                                  context
+                                                      .pushNamed('cashtable');
+                                                },
+                                                child: Image.asset(
+                                                  'assets/images/1-8.png',
+                                                  width: 120.0,
+                                                  height: 120.0,
+                                                  fit: BoxFit.contain,
                                                 ),
                                               ),
                                             ),
@@ -585,7 +224,7 @@ class _GameWidgetState extends State<GameWidget> {
                                               child: InkWell(
                                                 onTap: () async {
                                                   logFirebaseEvent(
-                                                      'GAME_PAGE_Image_vdee6b7g_ON_TAP');
+                                                      'GAME_PAGE_Image_v56vpzjv_ON_TAP');
                                                   logFirebaseEvent(
                                                       'Image_navigate_to');
 
@@ -611,7 +250,7 @@ class _GameWidgetState extends State<GameWidget> {
                                               child: InkWell(
                                                 onTap: () async {
                                                   logFirebaseEvent(
-                                                      'GAME_PAGE_Image_nvukq2q1_ON_TAP');
+                                                      'GAME_PAGE_Image_fejsz47e_ON_TAP');
                                                   logFirebaseEvent(
                                                       'Image_navigate_to');
 
@@ -633,66 +272,342 @@ class _GameWidgetState extends State<GameWidget> {
                                 ),
                               ),
                             ),
-                          ),
-                          Expanded(
-                            child: Align(
-                              alignment: AlignmentDirectional(0.0, -15.0),
-                              child: Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
-                                    10.0, 0.0, 10.0, 0.0),
-                                child: Row(
-                                  mainAxisSize: MainAxisSize.max,
-                                  mainAxisAlignment:
-                                      MainAxisAlignment.spaceEvenly,
-                                  children: [
-                                    Expanded(
-                                      child: Stack(
-                                        children: [
-                                          if (responsiveVisibility(
-                                            context: context,
-                                            tabletLandscape: false,
-                                            desktop: false,
-                                          ))
-                                            Align(
-                                              alignment: AlignmentDirectional(
-                                                  -1.0, 0.04),
-                                              child: Padding(
-                                                padding: EdgeInsetsDirectional
-                                                    .fromSTEB(
-                                                        10.0, 0.0, 20.0, 0.0),
-                                                child: InkWell(
-                                                  onTap: () async {
-                                                    logFirebaseEvent(
-                                                        'GAME_PAGE_Image_4d2wn6hf_ON_TAP');
-                                                    logFirebaseEvent(
-                                                        'Image_navigate_to');
+                            Padding(
+                              padding: EdgeInsetsDirectional.fromSTEB(
+                                  10.0, 10.0, 10.0, 0.0),
+                              child: Row(
+                                mainAxisSize: MainAxisSize.max,
+                                children: [
+                                  Expanded(
+                                    child: Stack(
+                                      children: [
+                                        if (responsiveVisibility(
+                                          context: context,
+                                          tabletLandscape: false,
+                                          desktop: false,
+                                        ))
+                                          Align(
+                                            alignment: AlignmentDirectional(
+                                                -1.0, 0.04),
+                                            child: Padding(
+                                              padding: EdgeInsetsDirectional
+                                                  .fromSTEB(
+                                                      10.0, 0.0, 20.0, 0.0),
+                                              child: InkWell(
+                                                onTap: () async {
+                                                  logFirebaseEvent(
+                                                      'GAME_PAGE_Image_e1a2ewpp_ON_TAP');
+                                                  logFirebaseEvent(
+                                                      'Image_navigate_to');
 
-                                                    context
-                                                        .pushNamed('cashtable');
-                                                  },
-                                                  child: Image.asset(
-                                                    'assets/images/Vector_(16).png',
-                                                    fit: BoxFit.cover,
-                                                  ),
+                                                  context
+                                                      .pushNamed('cashtable');
+                                                },
+                                                child: Image.asset(
+                                                  'assets/images/Vector_(16).png',
+                                                  fit: BoxFit.cover,
                                                 ),
                                               ),
                                             ),
-                                          if (responsiveVisibility(
-                                            context: context,
-                                            tabletLandscape: false,
-                                            desktop: false,
-                                          ))
-                                            Align(
-                                              alignment: AlignmentDirectional(
-                                                  -0.05, -0.03),
-                                              child: Padding(
-                                                padding: EdgeInsetsDirectional
-                                                    .fromSTEB(
-                                                        25.0, 0.0, 10.0, 0.0),
+                                          ),
+                                        if (responsiveVisibility(
+                                          context: context,
+                                          tabletLandscape: false,
+                                          desktop: false,
+                                        ))
+                                          Align(
+                                            alignment: AlignmentDirectional(
+                                                -0.05, -0.03),
+                                            child: Padding(
+                                              padding: EdgeInsetsDirectional
+                                                  .fromSTEB(
+                                                      25.0, 0.0, 10.0, 0.0),
+                                              child: InkWell(
+                                                onTap: () async {
+                                                  logFirebaseEvent(
+                                                      'GAME_PAGE_Image_wdqbelev_ON_TAP');
+                                                  logFirebaseEvent(
+                                                      'Image_navigate_to');
+
+                                                  context
+                                                      .pushNamed('goldtable');
+                                                },
+                                                child: Image.asset(
+                                                  'assets/images/Vector_(17).png',
+                                                  fit: BoxFit.cover,
+                                                ),
+                                              ),
+                                            ),
+                                          ),
+                                        if (responsiveVisibility(
+                                          context: context,
+                                          tabletLandscape: false,
+                                          desktop: false,
+                                        ))
+                                          Align(
+                                            alignment: AlignmentDirectional(
+                                                0.9, -0.03),
+                                            child: InkWell(
+                                              onTap: () async {
+                                                logFirebaseEvent(
+                                                    'GAME_PAGE_Image_spj6s5ps_ON_TAP');
+                                                logFirebaseEvent(
+                                                    'Image_navigate_to');
+
+                                                context
+                                                    .pushNamed('fortunatable');
+                                              },
+                                              child: Image.asset(
+                                                'assets/images/Vector_(18).png',
+                                                fit: BoxFit.cover,
+                                              ),
+                                            ),
+                                          ),
+                                        Align(
+                                          alignment:
+                                              AlignmentDirectional(0.0, -0.7),
+                                          child: Text(
+                                            FFLocalizations.of(context).getText(
+                                              '1u2sbzcx' /* Hello World */,
+                                            ),
+                                            style: FlutterFlowTheme.of(context)
+                                                .bodyMedium,
+                                          ),
+                                        ),
+                                        Align(
+                                          alignment: AlignmentDirectional(
+                                              -0.75, -0.05),
+                                          child: Padding(
+                                            padding:
+                                                EdgeInsetsDirectional.fromSTEB(
+                                                    0.0, 2.0, 0.0, 0.0),
+                                            child: Text(
+                                              FFLocalizations.of(context)
+                                                  .getText(
+                                                'bnom62z7' /* PLAY */,
+                                              ),
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyMedium
+                                                      .override(
+                                                        fontFamily:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyMediumFamily,
+                                                        color: Colors.black,
+                                                        useGoogleFonts: GoogleFonts
+                                                                .asMap()
+                                                            .containsKey(
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMediumFamily),
+                                                      ),
+                                            ),
+                                          ),
+                                        ),
+                                        Align(
+                                          alignment:
+                                              AlignmentDirectional(0.0, -0.15),
+                                          child: Padding(
+                                            padding:
+                                                EdgeInsetsDirectional.fromSTEB(
+                                                    0.0, 2.0, 0.0, 0.0),
+                                            child: Text(
+                                              FFLocalizations.of(context)
+                                                  .getText(
+                                                '2r200ik8' /* Hello World */,
+                                              ),
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyMedium
+                                                      .override(
+                                                        fontFamily:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyMediumFamily,
+                                                        color: Colors.black,
+                                                        useGoogleFonts: GoogleFonts
+                                                                .asMap()
+                                                            .containsKey(
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMediumFamily),
+                                                      ),
+                                            ),
+                                          ),
+                                        ),
+                                        Align(
+                                          alignment:
+                                              AlignmentDirectional(0.85, 0.0),
+                                          child: Padding(
+                                            padding:
+                                                EdgeInsetsDirectional.fromSTEB(
+                                                    0.0, 2.0, 0.0, 0.0),
+                                            child: Text(
+                                              FFLocalizations.of(context)
+                                                  .getText(
+                                                'lb858kc6' /* Hello World */,
+                                              ),
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyMedium
+                                                      .override(
+                                                        fontFamily:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyMediumFamily,
+                                                        color: Colors.black,
+                                                        useGoogleFonts: GoogleFonts
+                                                                .asMap()
+                                                            .containsKey(
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMediumFamily),
+                                                      ),
+                                            ),
+                                          ),
+                                        ),
+                                        Align(
+                                          alignment:
+                                              AlignmentDirectional(0.0, 0.0),
+                                          child: Padding(
+                                            padding:
+                                                EdgeInsetsDirectional.fromSTEB(
+                                                    0.0, 2.0, 0.0, 0.0),
+                                            child: Text(
+                                              FFLocalizations.of(context)
+                                                  .getText(
+                                                'g5ck6tig' /* PLAY */,
+                                              ),
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyMedium
+                                                      .override(
+                                                        fontFamily:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyMediumFamily,
+                                                        color: Colors.black,
+                                                        useGoogleFonts: GoogleFonts
+                                                                .asMap()
+                                                            .containsKey(
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMediumFamily),
+                                                      ),
+                                            ),
+                                          ),
+                                        ),
+                                        Align(
+                                          alignment:
+                                              AlignmentDirectional(0.75, 0.0),
+                                          child: Padding(
+                                            padding:
+                                                EdgeInsetsDirectional.fromSTEB(
+                                                    0.0, 2.0, 0.0, 0.0),
+                                            child: Text(
+                                              FFLocalizations.of(context)
+                                                  .getText(
+                                                '7ctyfhxa' /* PLAY */,
+                                              ),
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyMedium
+                                                      .override(
+                                                        fontFamily:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyMediumFamily,
+                                                        color: Colors.black,
+                                                        useGoogleFonts: GoogleFonts
+                                                                .asMap()
+                                                            .containsKey(
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMediumFamily),
+                                                      ),
+                                            ),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Padding(
+                              padding: EdgeInsetsDirectional.fromSTEB(
+                                  10.0, 10.0, 10.0, 0.0),
+                              child: Row(
+                                mainAxisSize: MainAxisSize.max,
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Text(
+                                    FFLocalizations.of(context).getText(
+                                      '9jfa6nhu' /*  */,
+                                    ),
+                                    textAlign: TextAlign.center,
+                                    style:
+                                        FlutterFlowTheme.of(context).bodyMedium,
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Expanded(
+                              child: Align(
+                                alignment: AlignmentDirectional(0.0, 0.05),
+                                child: Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      10.0, 10.0, 10.0, 0.0),
+                                  child: Row(
+                                    mainAxisSize: MainAxisSize.max,
+                                    children: [
+                                      Expanded(
+                                        child: Stack(
+                                          children: [
+                                            if (responsiveVisibility(
+                                              context: context,
+                                              tabletLandscape: false,
+                                              desktop: false,
+                                            ))
+                                              Align(
+                                                alignment: AlignmentDirectional(
+                                                    -1.0, -0.05),
+                                                child: Padding(
+                                                  padding: EdgeInsetsDirectional
+                                                      .fromSTEB(
+                                                          10.0, 0.0, 20.0, 0.0),
+                                                  child: InkWell(
+                                                    onTap: () async {
+                                                      logFirebaseEvent(
+                                                          'GAME_PAGE_Image_fub5mkvj_ON_TAP');
+                                                      logFirebaseEvent(
+                                                          'Image_navigate_to');
+
+                                                      context.pushNamed(
+                                                          'cashtable');
+                                                    },
+                                                    child: Image.asset(
+                                                      'assets/images/1-8.png',
+                                                      width: 90.0,
+                                                      height: 90.0,
+                                                      fit: BoxFit.contain,
+                                                    ),
+                                                  ),
+                                                ),
+                                              ),
+                                            if (responsiveVisibility(
+                                              context: context,
+                                              tabletLandscape: false,
+                                              desktop: false,
+                                            ))
+                                              Align(
+                                                alignment: AlignmentDirectional(
+                                                    -0.05, -0.03),
                                                 child: InkWell(
                                                   onTap: () async {
                                                     logFirebaseEvent(
-                                                        'GAME_PAGE_Image_l3xgu6ui_ON_TAP');
+                                                        'GAME_PAGE_Image_vdee6b7g_ON_TAP');
                                                     logFirebaseEvent(
                                                         'Image_navigate_to');
 
@@ -700,152 +615,260 @@ class _GameWidgetState extends State<GameWidget> {
                                                         .pushNamed('goldtable');
                                                   },
                                                   child: Image.asset(
-                                                    'assets/images/Vector_(17).png',
+                                                    'assets/images/gold_1-8.png',
+                                                    width: 200.0,
+                                                    height: 200.0,
+                                                    fit: BoxFit.contain,
+                                                  ),
+                                                ),
+                                              ),
+                                            if (responsiveVisibility(
+                                              context: context,
+                                              tabletLandscape: false,
+                                              desktop: false,
+                                            ))
+                                              Align(
+                                                alignment: AlignmentDirectional(
+                                                    1.5, -0.03),
+                                                child: InkWell(
+                                                  onTap: () async {
+                                                    logFirebaseEvent(
+                                                        'GAME_PAGE_Image_nvukq2q1_ON_TAP');
+                                                    logFirebaseEvent(
+                                                        'Image_navigate_to');
+
+                                                    context.pushNamed(
+                                                        'fortunatable');
+                                                  },
+                                                  child: Image.asset(
+                                                    'assets/images/red-8.png',
+                                                    width: 200.0,
+                                                    height: 200.0,
+                                                    fit: BoxFit.contain,
+                                                  ),
+                                                ),
+                                              ),
+                                          ],
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ),
+                            ),
+                            Expanded(
+                              child: Align(
+                                alignment: AlignmentDirectional(0.0, -15.0),
+                                child: Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      10.0, 0.0, 10.0, 0.0),
+                                  child: Row(
+                                    mainAxisSize: MainAxisSize.max,
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceEvenly,
+                                    children: [
+                                      Expanded(
+                                        child: Stack(
+                                          children: [
+                                            if (responsiveVisibility(
+                                              context: context,
+                                              tabletLandscape: false,
+                                              desktop: false,
+                                            ))
+                                              Align(
+                                                alignment: AlignmentDirectional(
+                                                    -1.0, 0.04),
+                                                child: Padding(
+                                                  padding: EdgeInsetsDirectional
+                                                      .fromSTEB(
+                                                          10.0, 0.0, 20.0, 0.0),
+                                                  child: InkWell(
+                                                    onTap: () async {
+                                                      logFirebaseEvent(
+                                                          'GAME_PAGE_Image_4d2wn6hf_ON_TAP');
+                                                      logFirebaseEvent(
+                                                          'Image_navigate_to');
+
+                                                      context.pushNamed(
+                                                          'cashtable');
+                                                    },
+                                                    child: Image.asset(
+                                                      'assets/images/Vector_(16).png',
+                                                      fit: BoxFit.cover,
+                                                    ),
+                                                  ),
+                                                ),
+                                              ),
+                                            if (responsiveVisibility(
+                                              context: context,
+                                              tabletLandscape: false,
+                                              desktop: false,
+                                            ))
+                                              Align(
+                                                alignment: AlignmentDirectional(
+                                                    -0.05, -0.03),
+                                                child: Padding(
+                                                  padding: EdgeInsetsDirectional
+                                                      .fromSTEB(
+                                                          25.0, 0.0, 10.0, 0.0),
+                                                  child: InkWell(
+                                                    onTap: () async {
+                                                      logFirebaseEvent(
+                                                          'GAME_PAGE_Image_l3xgu6ui_ON_TAP');
+                                                      logFirebaseEvent(
+                                                          'Image_navigate_to');
+
+                                                      context.pushNamed(
+                                                          'goldtable');
+                                                    },
+                                                    child: Image.asset(
+                                                      'assets/images/Vector_(17).png',
+                                                      fit: BoxFit.cover,
+                                                    ),
+                                                  ),
+                                                ),
+                                              ),
+                                            if (responsiveVisibility(
+                                              context: context,
+                                              tabletLandscape: false,
+                                              desktop: false,
+                                            ))
+                                              Align(
+                                                alignment: AlignmentDirectional(
+                                                    0.9, -0.03),
+                                                child: InkWell(
+                                                  onTap: () async {
+                                                    logFirebaseEvent(
+                                                        'GAME_PAGE_Image_we1l5unu_ON_TAP');
+                                                    logFirebaseEvent(
+                                                        'Image_navigate_to');
+
+                                                    context.pushNamed(
+                                                        'fortunatable');
+                                                  },
+                                                  child: Image.asset(
+                                                    'assets/images/Vector_(18).png',
                                                     fit: BoxFit.cover,
                                                   ),
                                                 ),
                                               ),
-                                            ),
-                                          if (responsiveVisibility(
-                                            context: context,
-                                            tabletLandscape: false,
-                                            desktop: false,
-                                          ))
                                             Align(
                                               alignment: AlignmentDirectional(
-                                                  0.9, -0.03),
-                                              child: InkWell(
-                                                onTap: () async {
-                                                  logFirebaseEvent(
-                                                      'GAME_PAGE_Image_we1l5unu_ON_TAP');
-                                                  logFirebaseEvent(
-                                                      'Image_navigate_to');
-
-                                                  context.pushNamed(
-                                                      'fortunatable');
-                                                },
-                                                child: Image.asset(
-                                                  'assets/images/Vector_(18).png',
-                                                  fit: BoxFit.cover,
+                                                  -0.75, 0.05),
+                                              child: Text(
+                                                FFLocalizations.of(context)
+                                                    .getText(
+                                                  '16lg4my2' /* PlAY */,
                                                 ),
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyMedium
+                                                        .override(
+                                                          fontFamily:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .bodyMediumFamily,
+                                                          color: Colors.black,
+                                                          useGoogleFonts: GoogleFonts
+                                                                  .asMap()
+                                                              .containsKey(
+                                                                  FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMediumFamily),
+                                                        ),
                                               ),
                                             ),
-                                          Align(
-                                            alignment: AlignmentDirectional(
-                                                -0.75, 0.05),
-                                            child: Text(
-                                              FFLocalizations.of(context)
-                                                  .getText(
-                                                '16lg4my2' /* PlAY */,
+                                            Align(
+                                              alignment: AlignmentDirectional(
+                                                  0.0, 0.0),
+                                              child: Text(
+                                                FFLocalizations.of(context)
+                                                    .getText(
+                                                  'j1vxo4n6' /* PLAY */,
+                                                ),
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyMedium
+                                                        .override(
+                                                          fontFamily:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .bodyMediumFamily,
+                                                          color: Colors.black,
+                                                          useGoogleFonts: GoogleFonts
+                                                                  .asMap()
+                                                              .containsKey(
+                                                                  FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMediumFamily),
+                                                        ),
                                               ),
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyMedium
-                                                      .override(
-                                                        fontFamily:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .bodyMediumFamily,
-                                                        color: Colors.black,
-                                                        useGoogleFonts: GoogleFonts
-                                                                .asMap()
-                                                            .containsKey(
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .bodyMediumFamily),
-                                                      ),
                                             ),
-                                          ),
-                                          Align(
-                                            alignment:
-                                                AlignmentDirectional(0.0, 0.0),
-                                            child: Text(
-                                              FFLocalizations.of(context)
-                                                  .getText(
-                                                'j1vxo4n6' /* PLAY */,
+                                            Align(
+                                              alignment: AlignmentDirectional(
+                                                  0.75, 0.0),
+                                              child: Text(
+                                                FFLocalizations.of(context)
+                                                    .getText(
+                                                  '3b3dt1t7' /* PLAY */,
+                                                ),
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyMedium
+                                                        .override(
+                                                          fontFamily:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .bodyMediumFamily,
+                                                          color: Colors.black,
+                                                          useGoogleFonts: GoogleFonts
+                                                                  .asMap()
+                                                              .containsKey(
+                                                                  FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMediumFamily),
+                                                        ),
                                               ),
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyMedium
-                                                      .override(
-                                                        fontFamily:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .bodyMediumFamily,
-                                                        color: Colors.black,
-                                                        useGoogleFonts: GoogleFonts
-                                                                .asMap()
-                                                            .containsKey(
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .bodyMediumFamily),
-                                                      ),
                                             ),
-                                          ),
-                                          Align(
-                                            alignment:
-                                                AlignmentDirectional(0.75, 0.0),
-                                            child: Text(
-                                              FFLocalizations.of(context)
-                                                  .getText(
-                                                '3b3dt1t7' /* PLAY */,
-                                              ),
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyMedium
-                                                      .override(
-                                                        fontFamily:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .bodyMediumFamily,
-                                                        color: Colors.black,
-                                                        useGoogleFonts: GoogleFonts
-                                                                .asMap()
-                                                            .containsKey(
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .bodyMediumFamily),
-                                                      ),
-                                            ),
-                                          ),
-                                        ],
+                                          ],
+                                        ),
                                       ),
-                                    ),
-                                  ],
+                                    ],
+                                  ),
                                 ),
                               ),
                             ),
-                          ),
-                          Expanded(
-                            child: Align(
-                              alignment: AlignmentDirectional(0.0, 10.0),
-                              child: Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
-                                    10.0, 0.0, 10.0, 0.0),
-                                child: Row(
-                                  mainAxisSize: MainAxisSize.max,
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [],
+                            Expanded(
+                              child: Align(
+                                alignment: AlignmentDirectional(0.0, 10.0),
+                                child: Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      10.0, 0.0, 10.0, 0.0),
+                                  child: Row(
+                                    mainAxisSize: MainAxisSize.max,
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [],
+                                  ),
                                 ),
                               ),
                             ),
-                          ),
-                          Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
-                                20.0, 0.0, 20.0, 20.0),
-                            child: Row(
-                              mainAxisSize: MainAxisSize.max,
-                              children: [
-                                Image.asset(
-                                  'assets/images/Group_34042.png',
-                                  width: 338.0,
-                                  height: 101.3,
-                                  fit: BoxFit.cover,
-                                ),
-                              ],
+                            Padding(
+                              padding: EdgeInsetsDirectional.fromSTEB(
+                                  20.0, 0.0, 20.0, 20.0),
+                              child: Row(
+                                mainAxisSize: MainAxisSize.max,
+                                children: [
+                                  Image.asset(
+                                    'assets/images/Group_34042.png',
+                                    width: 338.0,
+                                    height: 101.3,
+                                    fit: BoxFit.cover,
+                                  ),
+                                ],
+                              ),
                             ),
-                          ),
-                        ],
+                          ],
+                        ),
                       ),
                     ),
                   ),
