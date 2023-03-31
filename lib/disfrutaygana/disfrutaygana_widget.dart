@@ -138,10 +138,10 @@ class _DisfrutayganaWidgetState extends State<DisfrutayganaWidget> {
                                   children: [
                                     Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
-                                          94.0, 175.0, 0.0, 0.0),
+                                          94.0, 170.0, 0.0, 0.0),
                                       child: Image.asset(
                                         'assets/images/play.png',
-                                        width: 265.6,
+                                        width: 281.6,
                                         height: 547.0,
                                         fit: BoxFit.cover,
                                       ),

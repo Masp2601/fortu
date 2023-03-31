@@ -43,35 +43,42 @@ class _PrivacyPolicyWidgetState extends State<PrivacyPolicyWidget> {
 
     return Scaffold(
       key: scaffoldKey,
-      backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+      backgroundColor: Colors.black,
       appBar: responsiveVisibility(
         context: context,
         desktop: false,
       )
-          ? AppBar(
-              backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
-              automaticallyImplyLeading: false,
-              leading: InkWell(
-                onTap: () async {
-                  logFirebaseEvent('PRIVACY_POLICY_PAGE_Icon_izm7ntna_ON_TAP');
-                  logFirebaseEvent('Icon_navigate_back');
-                  context.pop();
-                },
-                child: Icon(
-                  Icons.chevron_left_rounded,
-                  color: FlutterFlowTheme.of(context).grayLight,
-                  size: 32.0,
+          ? PreferredSize(
+              preferredSize: Size.fromHeight(45.0),
+              child: AppBar(
+                backgroundColor: Colors.black,
+                automaticallyImplyLeading: false,
+                leading: InkWell(
+                  onTap: () async {
+                    logFirebaseEvent(
+                        'PRIVACY_POLICY_PAGE_Icon_izm7ntna_ON_TAP');
+                    logFirebaseEvent('Icon_navigate_back');
+                    context.pop();
+                  },
+                  child: Icon(
+                    Icons.chevron_left_rounded,
+                    color: FlutterFlowTheme.of(context).grayLight,
+                    size: 32.0,
+                  ),
                 ),
-              ),
-              title: Text(
-                FFLocalizations.of(context).getText(
-                  'alczfiiy' /* Privacy Policy */,
+                actions: [],
+                flexibleSpace: FlexibleSpaceBar(
+                  title: Text(
+                    FFLocalizations.of(context).getText(
+                      'alczfiiy' /* Privacy Policy */,
+                    ),
+                    style: FlutterFlowTheme.of(context).headlineSmall,
+                  ),
+                  centerTitle: true,
+                  expandedTitleScale: 1.0,
                 ),
-                style: FlutterFlowTheme.of(context).headlineSmall,
+                elevation: 1.0,
               ),
-              actions: [],
-              centerTitle: false,
-              elevation: 0.0,
             )
           : null,
       body: StreamBuilder<UsersRecord>(
