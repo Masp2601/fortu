@@ -54,7 +54,7 @@ class _ThereismethodWidgetState extends State<ThereismethodWidget> {
                 desktop: false,
               ))
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 40.0, 0.0, 0.0),
+                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 29.0, 0.0, 0.0),
                   child: Container(
                     width: MediaQuery.of(context).size.width * 1.0,
                     height: MediaQuery.of(context).size.height * 1.0,

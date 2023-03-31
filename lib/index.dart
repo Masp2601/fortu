@@ -45,7 +45,7 @@ export '/rules/rules_widget.dart' show RulesWidget;
 export '/disfrutaygana/disfrutaygana_widget.dart' show DisfrutayganaWidget;
 export '/ver/ver_widget.dart' show VerWidget;
 export '/change_password/change_password_widget.dart' show ChangePasswordWidget;
+export '/thereismethod/thereismethod_widget.dart' show ThereismethodWidget;
 export '/corona/corona_widget.dart' show CoronaWidget;
 export '/espejo/espejo_widget.dart' show EspejoWidget;
 export '/mundomagico/mundomagico_widget.dart' show MundomagicoWidget;
-export '/thereismethod/thereismethod_widget.dart' show ThereismethodWidget;

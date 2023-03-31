@@ -1941,27 +1941,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'Hogar',
     },
   },
-  // corona
-  {
-    'o0qqo8w4': {
-      'en': 'Home',
-      'es': '',
-    },
-  },
-  // espejo
-  {
-    'psgwu7m4': {
-      'en': 'Home',
-      'es': '',
-    },
-  },
-  // mundomagico
-  {
-    'flrll7m1': {
-      'en': 'Home',
-      'es': '',
-    },
-  },
   // thereismethod
   {
     '14rgm5u8': {
@@ -1969,6 +1948,43 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'Agregar',
     },
     'w1w93746': {
+      'en': 'Home',
+      'es': 'Hogar',
+    },
+  },
+  // corona
+  {
+    'lb5w235t': {
+      'en': 'Hello World',
+      'es': 'puntuaciòn:',
+    },
+    '49cz8drl': {
+      'en': '',
+      'es': '',
+    },
+    'dd8xix6z': {
+      'en': 'Hello World',
+      'es': '\$567.000',
+    },
+    'coyixldo': {
+      'en': 'balance:',
+      'es': 'saldo:',
+    },
+    'zqfwewo2': {
+      'en': 'Home',
+      'es': 'Hogar',
+    },
+  },
+  // espejo
+  {
+    '9ndjbrmv': {
+      'en': 'Home',
+      'es': 'Hogar',
+    },
+  },
+  // mundomagico
+  {
+    'jzr7c74c': {
       'en': 'Home',
       'es': 'Hogar',
     },

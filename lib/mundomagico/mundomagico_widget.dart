@@ -18,7 +18,6 @@ class _MundomagicoWidgetState extends State<MundomagicoWidget> {
   late MundomagicoModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
-  final _unfocusNode = FocusNode();
 
   @override
   void initState() {
@@ -32,7 +31,6 @@ class _MundomagicoWidgetState extends State<MundomagicoWidget> {
   void dispose() {
     _model.dispose();
 
-    _unfocusNode.dispose();
     super.dispose();
   }
 
@@ -43,14 +41,47 @@ class _MundomagicoWidgetState extends State<MundomagicoWidget> {
     return Scaffold(
       key: scaffoldKey,
       backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
-      body: SafeArea(
-        child: GestureDetector(
-          onTap: () => FocusScope.of(context).requestFocus(_unfocusNode),
-          child: Column(
-            mainAxisSize: MainAxisSize.max,
-            children: [],
+      body: Column(
+        mainAxisSize: MainAxisSize.max,
+        children: [
+          Padding(
+            padding: EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
+            child: Container(
+              width: 398.1,
+              height: 574.8,
+              decoration: BoxDecoration(
+                color: FlutterFlowTheme.of(context).secondaryBackground,
+                image: DecorationImage(
+                  fit: BoxFit.cover,
+                  image: Image.asset(
+                    'assets/images/ecenario.png',
+                  ).image,
+                ),
+              ),
+              child: Padding(
+                padding:
+                    EdgeInsetsDirectional.fromSTEB(105.0, 190.0, 100.0, 80.0),
+                child: Row(
+                  mainAxisSize: MainAxisSize.max,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [],
+                ),
+              ),
+            ),
           ),
-        ),
+          Expanded(
+            child: Align(
+              alignment: AlignmentDirectional(0.0, -0.1),
+              child: Container(
+                width: 404.8,
+                height: 241.9,
+                decoration: BoxDecoration(
+                  color: Color(0xFF010101),
+                ),
+              ),
+            ),
+          ),
+        ],
       ),
     );
   }

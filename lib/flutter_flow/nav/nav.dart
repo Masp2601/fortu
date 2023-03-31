@@ -333,6 +333,12 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               builder: (context, params) => ChangePasswordWidget(),
             ),
             FFRoute(
+              name: 'thereismethod',
+              path: 'thereismethod',
+              requireAuth: true,
+              builder: (context, params) => ThereismethodWidget(),
+            ),
+            FFRoute(
               name: 'corona',
               path: 'corona',
               requireAuth: true,
@@ -349,12 +355,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               path: 'mundomagico',
               requireAuth: true,
               builder: (context, params) => MundomagicoWidget(),
-            ),
-            FFRoute(
-              name: 'thereismethod',
-              path: 'thereismethod',
-              requireAuth: true,
-              builder: (context, params) => ThereismethodWidget(),
             )
           ].map((r) => r.toRoute(appStateNotifier)).toList(),
         ),

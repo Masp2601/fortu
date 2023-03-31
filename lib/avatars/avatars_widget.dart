@@ -158,9 +158,18 @@ class _AvatarsWidgetState extends State<AvatarsWidget> {
                                           ),
                                         ),
                                       ),
-                                      Image.asset(
-                                        'assets/images/mundocristal.png',
-                                        fit: BoxFit.cover,
+                                      InkWell(
+                                        onTap: () async {
+                                          logFirebaseEvent(
+                                              'AVATARS_PAGE_Image_s8txghud_ON_TAP');
+                                          logFirebaseEvent('Image_navigate_to');
+
+                                          context.pushNamed('mundomagico');
+                                        },
+                                        child: Image.asset(
+                                          'assets/images/mundocristal.png',
+                                          fit: BoxFit.cover,
+                                        ),
                                       ),
                                     ],
                                   ),
