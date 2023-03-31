@@ -249,6 +249,7 @@ class MobileTypography extends Typography {
         color: theme.primaryText,
         fontWeight: FontWeight.normal,
         fontSize: 57.0,
+        fontStyle: FontStyle.normal,
       );
   String get displayMediumFamily => 'Poppins';
   TextStyle get displayMedium => GoogleFonts.getFont(
