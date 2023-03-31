@@ -872,7 +872,7 @@ class _GoldtableWidgetState extends State<GoldtableWidget>
                                                   image: DecorationImage(
                                                     fit: BoxFit.cover,
                                                     image: Image.asset(
-                                                      'assets/images/Layer_3.png',
+                                                      'assets/images/golt.png',
                                                     ).image,
                                                   ),
                                                   boxShadow: [
@@ -983,7 +983,7 @@ class _GoldtableWidgetState extends State<GoldtableWidget>
                                                   image: DecorationImage(
                                                     fit: BoxFit.cover,
                                                     image: Image.asset(
-                                                      'assets/images/Layer_3.png',
+                                                      'assets/images/golt.png',
                                                     ).image,
                                                   ),
                                                   boxShadow: [
@@ -1094,7 +1094,7 @@ class _GoldtableWidgetState extends State<GoldtableWidget>
                                                     image: DecorationImage(
                                                       fit: BoxFit.cover,
                                                       image: Image.asset(
-                                                        'assets/images/Layer_3.png',
+                                                        'assets/images/golt.png',
                                                       ).image,
                                                     ),
                                                     boxShadow: [
@@ -1197,7 +1197,7 @@ class _GoldtableWidgetState extends State<GoldtableWidget>
                                                   image: DecorationImage(
                                                     fit: BoxFit.cover,
                                                     image: Image.asset(
-                                                      'assets/images/Layer_3.png',
+                                                      'assets/images/golt.png',
                                                     ).image,
                                                   ),
                                                   boxShadow: [
@@ -1320,7 +1320,7 @@ class _GoldtableWidgetState extends State<GoldtableWidget>
                                                 image: DecorationImage(
                                                   fit: BoxFit.cover,
                                                   image: Image.asset(
-                                                    'assets/images/Layer_3.png',
+                                                    'assets/images/golt.png',
                                                   ).image,
                                                 ),
                                                 shape: BoxShape.circle,
@@ -1435,7 +1435,7 @@ class _GoldtableWidgetState extends State<GoldtableWidget>
                                                 image: DecorationImage(
                                                   fit: BoxFit.cover,
                                                   image: Image.asset(
-                                                    'assets/images/Layer_3.png',
+                                                    'assets/images/golt.png',
                                                   ).image,
                                                 ),
                                                 shape: BoxShape.circle,
@@ -1551,7 +1551,7 @@ class _GoldtableWidgetState extends State<GoldtableWidget>
                                                 image: DecorationImage(
                                                   fit: BoxFit.cover,
                                                   image: Image.asset(
-                                                    'assets/images/Layer_3.png',
+                                                    'assets/images/golt.png',
                                                   ).image,
                                                 ),
                                                 shape: BoxShape.circle,
@@ -1665,7 +1665,7 @@ class _GoldtableWidgetState extends State<GoldtableWidget>
                                                 image: DecorationImage(
                                                   fit: BoxFit.cover,
                                                   image: Image.asset(
-                                                    'assets/images/Layer_3.png',
+                                                    'assets/images/golt.png',
                                                   ).image,
                                                 ),
                                                 shape: BoxShape.circle,

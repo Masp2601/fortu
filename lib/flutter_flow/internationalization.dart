@@ -1536,17 +1536,13 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': 'Hello World',
       'es': 'Hola Mundo',
     },
-    'k1wsrbus': {
-      'en': 'Hello World',
-      'es': 'Hola Mundo',
-    },
     '8gfipbps': {
       'en': '',
       'es': 'saldo:',
     },
     'oh8ab2mn': {
-      'en': 'Hello World',
-      'es': 'Hola Mundo',
+      'en': 'on line',
+      'es': 'en línea',
     },
     'lm8z6s2r': {
       'en': '',
@@ -1804,6 +1800,10 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': 'Pants',
       'es': '',
     },
+    '5o313mzy': {
+      'en': 'Pants',
+      'es': '',
+    },
     'nlbq302b': {
       'en': 'Shorts Sporty',
       'es': '',
@@ -1825,6 +1825,10 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': '',
     },
     'tq546c7o': {
+      'en': 'Shorts Sporty',
+      'es': '',
+    },
+    'c8k6ilvj': {
       'en': 'Shorts Sporty',
       'es': '',
     },

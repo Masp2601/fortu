@@ -659,22 +659,6 @@ class _CashtableWidgetState extends State<CashtableWidget>
                                       ),
                                       Align(
                                         alignment:
-                                            AlignmentDirectional(-0.93, -0.37),
-                                        child: Padding(
-                                          padding:
-                                              EdgeInsetsDirectional.fromSTEB(
-                                                  50.0, 60.0, 0.0, 0.0),
-                                          child: Text(
-                                            FFLocalizations.of(context).getText(
-                                              'k1wsrbus' /* Hello World */,
-                                            ),
-                                            style: FlutterFlowTheme.of(context)
-                                                .bodyMedium,
-                                          ),
-                                        ),
-                                      ),
-                                      Align(
-                                        alignment:
                                             AlignmentDirectional(0.0, 0.0),
                                         child: Padding(
                                           padding:
@@ -714,7 +698,7 @@ class _CashtableWidgetState extends State<CashtableWidget>
                                           child: Padding(
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
-                                                    40.0, 50.0, 0.0, 0.0),
+                                                    30.0, 50.0, 0.0, 0.0),
                                             child: Text(
                                               FFLocalizations.of(context)
                                                   .getText(
@@ -752,7 +736,7 @@ class _CashtableWidgetState extends State<CashtableWidget>
                                           child: Padding(
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
-                                                    80.0, 50.0, 0.0, 0.0),
+                                                    70.0, 50.0, 0.0, 0.0),
                                             child: Text(
                                               '',
                                               style:
@@ -817,10 +801,10 @@ class _CashtableWidgetState extends State<CashtableWidget>
                               alignment: AlignmentDirectional(-0.79, -0.85),
                               child: Padding(
                                 padding: EdgeInsetsDirectional.fromSTEB(
-                                    220.0, 0.0, 0.0, 0.0),
+                                    220.0, 10.0, 0.0, 0.0),
                                 child: Text(
                                   FFLocalizations.of(context).getText(
-                                    'oh8ab2mn' /* Hello World */,
+                                    'oh8ab2mn' /* on line */,
                                   ),
                                   textAlign: TextAlign.center,
                                   style: FlutterFlowTheme.of(context)
@@ -894,7 +878,7 @@ class _CashtableWidgetState extends State<CashtableWidget>
                                                   image: DecorationImage(
                                                     fit: BoxFit.cover,
                                                     image: Image.asset(
-                                                      'assets/images/Group_33957.png',
+                                                      'assets/images/money.png',
                                                     ).image,
                                                   ),
                                                   boxShadow: [
@@ -1005,7 +989,7 @@ class _CashtableWidgetState extends State<CashtableWidget>
                                                   image: DecorationImage(
                                                     fit: BoxFit.cover,
                                                     image: Image.asset(
-                                                      'assets/images/Group_33957.png',
+                                                      'assets/images/money.png',
                                                     ).image,
                                                   ),
                                                   boxShadow: [
@@ -1116,7 +1100,7 @@ class _CashtableWidgetState extends State<CashtableWidget>
                                                     image: DecorationImage(
                                                       fit: BoxFit.cover,
                                                       image: Image.asset(
-                                                        'assets/images/Group_33957.png',
+                                                        'assets/images/money.png',
                                                       ).image,
                                                     ),
                                                     boxShadow: [
@@ -1219,7 +1203,7 @@ class _CashtableWidgetState extends State<CashtableWidget>
                                                   image: DecorationImage(
                                                     fit: BoxFit.cover,
                                                     image: Image.asset(
-                                                      'assets/images/Group_33957.png',
+                                                      'assets/images/money.png',
                                                     ).image,
                                                   ),
                                                   boxShadow: [
@@ -1342,7 +1326,7 @@ class _CashtableWidgetState extends State<CashtableWidget>
                                                 image: DecorationImage(
                                                   fit: BoxFit.cover,
                                                   image: Image.asset(
-                                                    'assets/images/Group_33957.png',
+                                                    'assets/images/money.png',
                                                   ).image,
                                                 ),
                                                 shape: BoxShape.circle,
@@ -1457,7 +1441,7 @@ class _CashtableWidgetState extends State<CashtableWidget>
                                                 image: DecorationImage(
                                                   fit: BoxFit.cover,
                                                   image: Image.asset(
-                                                    'assets/images/Group_33957.png',
+                                                    'assets/images/money.png',
                                                   ).image,
                                                 ),
                                                 shape: BoxShape.circle,
@@ -1570,7 +1554,7 @@ class _CashtableWidgetState extends State<CashtableWidget>
                                                 image: DecorationImage(
                                                   fit: BoxFit.cover,
                                                   image: Image.asset(
-                                                    'assets/images/Group_33957.png',
+                                                    'assets/images/money.png',
                                                   ).image,
                                                 ),
                                                 shape: BoxShape.circle,
@@ -1682,7 +1666,7 @@ class _CashtableWidgetState extends State<CashtableWidget>
                                                 image: DecorationImage(
                                                   fit: BoxFit.cover,
                                                   image: Image.asset(
-                                                    'assets/images/Group_33957.png',
+                                                    'assets/images/money.png',
                                                   ).image,
                                                 ),
                                                 shape: BoxShape.circle,

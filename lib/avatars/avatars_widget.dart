@@ -136,14 +136,6 @@ class _AvatarsWidgetState extends State<AvatarsWidget> {
                                           ),
                                         ),
                                       ),
-                                      Expanded(
-                                        child: Image.asset(
-                                          'assets/images/Vector_58.png',
-                                          width: 1.0,
-                                          height: 100.0,
-                                          fit: BoxFit.cover,
-                                        ),
-                                      ),
                                       Padding(
                                         padding: EdgeInsetsDirectional.fromSTEB(
                                             45.0, 0.0, 90.0, 0.0),
@@ -166,54 +158,18 @@ class _AvatarsWidgetState extends State<AvatarsWidget> {
                                           ),
                                         ),
                                       ),
-                                      Expanded(
-                                        child: Image.asset(
-                                          'assets/images/Vector_58.png',
-                                          width: 1.0,
-                                          height: 100.0,
-                                          fit: BoxFit.cover,
-                                        ),
-                                      ),
-                                      Align(
-                                        alignment:
-                                            AlignmentDirectional(0.35, 0.0),
-                                        child: Padding(
-                                          padding:
-                                              EdgeInsetsDirectional.fromSTEB(
-                                                  20.0, 0.0, 0.0, 0.0),
-                                          child: InkWell(
-                                            onTap: () async {
-                                              logFirebaseEvent(
-                                                  'AVATARS_PAGE_Image_6y488xm2_ON_TAP');
-                                              logFirebaseEvent(
-                                                  'Image_navigate_to');
-
-                                              context.pushNamed('mundomagico');
-                                            },
-                                            child: ClipRRect(
-                                              borderRadius:
-                                                  BorderRadius.circular(8.0),
-                                              child: Image.asset(
-                                                'assets/images/mundocristal.png',
-                                                fit: BoxFit.cover,
-                                              ),
-                                            ),
-                                          ),
-                                        ),
+                                      Image.asset(
+                                        'assets/images/mundocristal.png',
+                                        fit: BoxFit.cover,
                                       ),
                                     ],
                                   ),
                                 ),
-                                Row(
-                                  mainAxisSize: MainAxisSize.max,
-                                  children: [
-                                    Image.asset(
-                                      'assets/images/Vector_58.png',
-                                      width: 356.0,
-                                      height: 5.0,
-                                      fit: BoxFit.cover,
-                                    ),
-                                  ],
+                                Image.asset(
+                                  'assets/images/linered.png',
+                                  width: 355.6,
+                                  height: 5.0,
+                                  fit: BoxFit.cover,
                                 ),
                                 Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
@@ -228,7 +184,7 @@ class _AvatarsWidgetState extends State<AvatarsWidget> {
                                 ),
                                 Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
-                                      8.0, 8.0, 12.0, 8.0),
+                                      8.0, 0.0, 12.0, 8.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
                                     crossAxisAlignment:
@@ -287,13 +243,78 @@ class _AvatarsWidgetState extends State<AvatarsWidget> {
                                     mainAxisSize: MainAxisSize.max,
                                     children: [
                                       Image.asset(
-                                        'assets/images/Vector_58.png',
+                                        'assets/images/linered.png',
                                         width: 355.6,
                                         height: 5.0,
                                         fit: BoxFit.cover,
                                       ),
                                     ],
                                   ),
+                                ),
+                                Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      8.0, 0.0, 12.0, 8.0),
+                                  child: Row(
+                                    mainAxisSize: MainAxisSize.max,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.center,
+                                    children: [
+                                      Padding(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                            0.0, 0.0, 35.0, 0.0),
+                                        child: ClipRRect(
+                                          borderRadius:
+                                              BorderRadius.circular(8.0),
+                                          child: Image.asset(
+                                            'assets/images/brujula.png',
+                                            fit: BoxFit.cover,
+                                          ),
+                                        ),
+                                      ),
+                                      Padding(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                            16.0, 0.0, 0.0, 0.0),
+                                        child: Text(
+                                          FFLocalizations.of(context).getText(
+                                            '7aobuso7' /* Pants */,
+                                          ),
+                                          style: FlutterFlowTheme.of(context)
+                                              .titleMedium,
+                                        ),
+                                      ),
+                                      Padding(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                            40.0, 0.0, 80.0, 0.0),
+                                        child: ClipRRect(
+                                          borderRadius:
+                                              BorderRadius.circular(8.0),
+                                          child: Image.asset(
+                                            'assets/images/espejo.png',
+                                            height: 70.0,
+                                            fit: BoxFit.cover,
+                                          ),
+                                        ),
+                                      ),
+                                      Padding(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                            30.0, 0.0, 0.0, 0.0),
+                                        child: ClipRRect(
+                                          borderRadius:
+                                              BorderRadius.circular(8.0),
+                                          child: Image.asset(
+                                            'assets/images/magia.png',
+                                            fit: BoxFit.cover,
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                                Image.asset(
+                                  'assets/images/linered.png',
+                                  width: 355.6,
+                                  height: 5.0,
+                                  fit: BoxFit.cover,
                                 ),
                                 Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
@@ -320,7 +341,7 @@ class _AvatarsWidgetState extends State<AvatarsWidget> {
                                             16.0, 0.0, 0.0, 0.0),
                                         child: Text(
                                           FFLocalizations.of(context).getText(
-                                            '7aobuso7' /* Pants */,
+                                            '5o313mzy' /* Pants */,
                                           ),
                                           style: FlutterFlowTheme.of(context)
                                               .titleMedium,
@@ -361,7 +382,7 @@ class _AvatarsWidgetState extends State<AvatarsWidget> {
                                     mainAxisSize: MainAxisSize.max,
                                     children: [
                                       Image.asset(
-                                        'assets/images/Vector_58.png',
+                                        'assets/images/linered.png',
                                         width: 355.6,
                                         height: 5.0,
                                         fit: BoxFit.cover,
@@ -434,11 +455,95 @@ class _AvatarsWidgetState extends State<AvatarsWidget> {
                                   ),
                                 ),
                                 Image.asset(
-                                  'assets/images/Vector_58.png',
+                                  'assets/images/linered.png',
                                   width: 355.6,
                                   height: 5.0,
                                   fit: BoxFit.cover,
                                 ),
+                                Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      8.0, 8.0, 12.0, 8.0),
+                                  child: Row(
+                                    mainAxisSize: MainAxisSize.max,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.center,
+                                    children: [
+                                      if (responsiveVisibility(
+                                        context: context,
+                                        tabletLandscape: false,
+                                        desktop: false,
+                                      ))
+                                        Padding(
+                                          padding:
+                                              EdgeInsetsDirectional.fromSTEB(
+                                                  0.0, 0.0, 35.0, 0.0),
+                                          child: ClipRRect(
+                                            borderRadius:
+                                                BorderRadius.circular(8.0),
+                                            child: Image.asset(
+                                              'assets/images/tierra.png',
+                                              fit: BoxFit.cover,
+                                            ),
+                                          ),
+                                        ),
+                                      Padding(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                            16.0, 0.0, 0.0, 0.0),
+                                        child: Text(
+                                          FFLocalizations.of(context).getText(
+                                            'lp49i4sb' /* Shorts Sporty */,
+                                          ),
+                                          style: FlutterFlowTheme.of(context)
+                                              .titleMedium,
+                                        ),
+                                      ),
+                                      Padding(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                            30.0, 0.0, 80.0, 0.0),
+                                        child: ClipRRect(
+                                          borderRadius:
+                                              BorderRadius.circular(8.0),
+                                          child: Image.asset(
+                                            'assets/images/cristal.png',
+                                            fit: BoxFit.cover,
+                                          ),
+                                        ),
+                                      ),
+                                      Padding(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                            10.0, 0.0, 0.0, 0.0),
+                                        child: ClipRRect(
+                                          borderRadius:
+                                              BorderRadius.circular(8.0),
+                                          child: Image.asset(
+                                            'assets/images/cash.png',
+                                            fit: BoxFit.cover,
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                                if (responsiveVisibility(
+                                  context: context,
+                                  tabletLandscape: false,
+                                  desktop: false,
+                                ))
+                                  Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        15.0, 0.0, 15.0, 0.0),
+                                    child: Row(
+                                      mainAxisSize: MainAxisSize.max,
+                                      children: [
+                                        Image.asset(
+                                          'assets/images/linered.png',
+                                          width: 355.6,
+                                          height: 5.0,
+                                          fit: BoxFit.cover,
+                                        ),
+                                      ],
+                                    ),
+                                  ),
                                 Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       8.0, 8.0, 12.0, 8.0),
@@ -470,90 +575,6 @@ class _AvatarsWidgetState extends State<AvatarsWidget> {
                                             16.0, 0.0, 0.0, 0.0),
                                         child: Text(
                                           FFLocalizations.of(context).getText(
-                                            'lp49i4sb' /* Shorts Sporty */,
-                                          ),
-                                          style: FlutterFlowTheme.of(context)
-                                              .titleMedium,
-                                        ),
-                                      ),
-                                      Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            30.0, 0.0, 80.0, 0.0),
-                                        child: ClipRRect(
-                                          borderRadius:
-                                              BorderRadius.circular(8.0),
-                                          child: Image.asset(
-                                            'assets/images/jupiter.png',
-                                            fit: BoxFit.cover,
-                                          ),
-                                        ),
-                                      ),
-                                      Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            25.0, 0.0, 0.0, 0.0),
-                                        child: ClipRRect(
-                                          borderRadius:
-                                              BorderRadius.circular(8.0),
-                                          child: Image.asset(
-                                            'assets/images/start.png',
-                                            fit: BoxFit.cover,
-                                          ),
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                                if (responsiveVisibility(
-                                  context: context,
-                                  tabletLandscape: false,
-                                  desktop: false,
-                                ))
-                                  Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
-                                        15.0, 0.0, 15.0, 0.0),
-                                    child: Row(
-                                      mainAxisSize: MainAxisSize.max,
-                                      children: [
-                                        Image.asset(
-                                          'assets/images/Vector_58.png',
-                                          width: 355.6,
-                                          height: 5.0,
-                                          fit: BoxFit.cover,
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
-                                      8.0, 8.0, 12.0, 8.0),
-                                  child: Row(
-                                    mainAxisSize: MainAxisSize.max,
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.center,
-                                    children: [
-                                      if (responsiveVisibility(
-                                        context: context,
-                                        tabletLandscape: false,
-                                        desktop: false,
-                                      ))
-                                        Padding(
-                                          padding:
-                                              EdgeInsetsDirectional.fromSTEB(
-                                                  0.0, 0.0, 35.0, 0.0),
-                                          child: ClipRRect(
-                                            borderRadius:
-                                                BorderRadius.circular(8.0),
-                                            child: Image.asset(
-                                              'assets/images/gold.png',
-                                              fit: BoxFit.cover,
-                                            ),
-                                          ),
-                                        ),
-                                      Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            16.0, 0.0, 0.0, 0.0),
-                                        child: Text(
-                                          FFLocalizations.of(context).getText(
                                             'gsvbttps' /* Shorts Sporty */,
                                           ),
                                           style: FlutterFlowTheme.of(context)
@@ -567,7 +588,7 @@ class _AvatarsWidgetState extends State<AvatarsWidget> {
                                           borderRadius:
                                               BorderRadius.circular(8.0),
                                           child: Image.asset(
-                                            'assets/images/oraculo.png',
+                                            'assets/images/jupiter.png',
                                             fit: BoxFit.cover,
                                           ),
                                         ),
@@ -579,7 +600,7 @@ class _AvatarsWidgetState extends State<AvatarsWidget> {
                                           borderRadius:
                                               BorderRadius.circular(8.0),
                                           child: Image.asset(
-                                            'assets/images/clock.png',
+                                            'assets/images/start.png',
                                             fit: BoxFit.cover,
                                           ),
                                         ),
@@ -594,7 +615,7 @@ class _AvatarsWidgetState extends State<AvatarsWidget> {
                                     mainAxisSize: MainAxisSize.max,
                                     children: [
                                       Image.asset(
-                                        'assets/images/Vector_58.png',
+                                        'assets/images/linered.png',
                                         width: 355.6,
                                         height: 5.0,
                                         fit: BoxFit.cover,
@@ -623,7 +644,7 @@ class _AvatarsWidgetState extends State<AvatarsWidget> {
                                             borderRadius:
                                                 BorderRadius.circular(8.0),
                                             child: Image.asset(
-                                              'assets/images/gift.png',
+                                              'assets/images/reliquia.png',
                                               fit: BoxFit.cover,
                                             ),
                                           ),
@@ -646,7 +667,7 @@ class _AvatarsWidgetState extends State<AvatarsWidget> {
                                           borderRadius:
                                               BorderRadius.circular(8.0),
                                           child: Image.asset(
-                                            'assets/images/magnet.png',
+                                            'assets/images/oraculo.png',
                                             fit: BoxFit.cover,
                                           ),
                                         ),
@@ -658,7 +679,7 @@ class _AvatarsWidgetState extends State<AvatarsWidget> {
                                           borderRadius:
                                               BorderRadius.circular(8.0),
                                           child: Image.asset(
-                                            'assets/images/bomb.png',
+                                            'assets/images/clock.png',
                                             fit: BoxFit.cover,
                                           ),
                                         ),
@@ -673,7 +694,7 @@ class _AvatarsWidgetState extends State<AvatarsWidget> {
                                     mainAxisSize: MainAxisSize.max,
                                     children: [
                                       Image.asset(
-                                        'assets/images/Vector_58.png',
+                                        'assets/images/linered.png',
                                         width: 355.6,
                                         height: 5.0,
                                         fit: BoxFit.cover,
@@ -708,7 +729,7 @@ class _AvatarsWidgetState extends State<AvatarsWidget> {
                                           ),
                                         ),
                                       Image.asset(
-                                        'assets/images/bandera.png',
+                                        'assets/images/gift.png',
                                         fit: BoxFit.cover,
                                       ),
                                       Padding(
@@ -729,19 +750,19 @@ class _AvatarsWidgetState extends State<AvatarsWidget> {
                                           borderRadius:
                                               BorderRadius.circular(8.0),
                                           child: Image.asset(
-                                            'assets/images/heart.png',
+                                            'assets/images/magnet.png',
                                             fit: BoxFit.cover,
                                           ),
                                         ),
                                       ),
                                       Padding(
                                         padding: EdgeInsetsDirectional.fromSTEB(
-                                            20.0, 0.0, 0.0, 0.0),
+                                            10.0, 0.0, 0.0, 0.0),
                                         child: ClipRRect(
                                           borderRadius:
                                               BorderRadius.circular(8.0),
                                           child: Image.asset(
-                                            'assets/images/energy.png',
+                                            'assets/images/bomb.png',
                                             fit: BoxFit.cover,
                                           ),
                                         ),
@@ -756,13 +777,79 @@ class _AvatarsWidgetState extends State<AvatarsWidget> {
                                     mainAxisSize: MainAxisSize.max,
                                     children: [
                                       Image.asset(
-                                        'assets/images/Vector_58.png',
+                                        'assets/images/linered.png',
                                         width: 355.6,
                                         height: 5.0,
                                         fit: BoxFit.cover,
                                       ),
                                     ],
                                   ),
+                                ),
+                                Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      8.0, 8.0, 12.0, 8.0),
+                                  child: Row(
+                                    mainAxisSize: MainAxisSize.max,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.center,
+                                    children: [
+                                      if (responsiveVisibility(
+                                        context: context,
+                                        tabletLandscape: false,
+                                        desktop: false,
+                                      ))
+                                        Padding(
+                                          padding:
+                                              EdgeInsetsDirectional.fromSTEB(
+                                                  0.0, 0.0, 35.0, 0.0),
+                                          child: ClipRRect(
+                                            borderRadius:
+                                                BorderRadius.circular(8.0),
+                                            child: Image.asset(
+                                              'assets/images/bandera.png',
+                                              fit: BoxFit.cover,
+                                            ),
+                                          ),
+                                        ),
+                                      Padding(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                            16.0, 0.0, 0.0, 0.0),
+                                        child: Text(
+                                          FFLocalizations.of(context).getText(
+                                            'tq546c7o' /* Shorts Sporty */,
+                                          ),
+                                          style: FlutterFlowTheme.of(context)
+                                              .titleMedium,
+                                        ),
+                                      ),
+                                      Padding(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                            30.0, 0.0, 90.0, 0.0),
+                                        child: ClipRRect(
+                                          borderRadius:
+                                              BorderRadius.circular(8.0),
+                                          child: Image.asset(
+                                            'assets/images/heart.png',
+                                            fit: BoxFit.cover,
+                                          ),
+                                        ),
+                                      ),
+                                      Padding(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                            20.0, 0.0, 0.0, 0.0),
+                                        child: Image.asset(
+                                          'assets/images/energy.png',
+                                          fit: BoxFit.cover,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                                Image.asset(
+                                  'assets/images/linered.png',
+                                  width: 355.6,
+                                  height: 5.0,
+                                  fit: BoxFit.cover,
                                 ),
                                 Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
@@ -795,7 +882,7 @@ class _AvatarsWidgetState extends State<AvatarsWidget> {
                                             16.0, 0.0, 0.0, 0.0),
                                         child: Text(
                                           FFLocalizations.of(context).getText(
-                                            'tq546c7o' /* Shorts Sporty */,
+                                            'c8k6ilvj' /* Shorts Sporty */,
                                           ),
                                           style: FlutterFlowTheme.of(context)
                                               .titleMedium,
