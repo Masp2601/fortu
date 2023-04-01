@@ -1862,10 +1862,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': 'next',
       'es': 'siguiente',
     },
-    'vfzvz63d': {
-      'en': 'enjoy and win',
-      'es': 'DISFRUTA Y GANA',
-    },
   },
   // ver
   {

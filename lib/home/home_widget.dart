@@ -186,7 +186,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                     onChanged: (val) => setState(
                                         () => _model.dropDownValue = val),
                                     width: 350.0,
-                                    height: 50.0,
+                                    height: 30.0,
                                     searchHintTextStyle: FlutterFlowTheme.of(
                                             context)
                                         .bodyMedium

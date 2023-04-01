@@ -100,7 +100,7 @@ class _CoronaWidgetState extends State<CoronaWidget> {
                             children: [
                               Expanded(
                                 child: Align(
-                                  alignment: AlignmentDirectional(80.0, 0.4),
+                                  alignment: AlignmentDirectional(95.0, 0.4),
                                   child: Text(
                                     FFLocalizations.of(context).getText(
                                       'lb5w235t' /* Hello World */,
