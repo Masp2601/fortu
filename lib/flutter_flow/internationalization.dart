@@ -1399,8 +1399,8 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'registrarse',
     },
     '6ogcxgtm': {
-      'en': 'Log in',
-      'es': 'iniciar seccion',
+      'en': 'get into',
+      'es': 'ingresar',
     },
   },
   // game

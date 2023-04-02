@@ -5,7 +5,6 @@ import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:flutter_html/flutter_html.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
@@ -113,264 +112,256 @@ class _ConectionWidgetState extends State<ConectionWidget>
                       ),
                       child: Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 70.0, 0.0, 0.0),
+                            EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                         child: Column(
                           mainAxisSize: MainAxisSize.max,
                           children: [
-                            if (responsiveVisibility(
-                              context: context,
-                              tabletLandscape: false,
-                              desktop: false,
-                            ))
-                              Expanded(
-                                child: Align(
-                                  alignment: AlignmentDirectional(0.0, 0.3),
-                                  child: Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
-                                        20.0, 0.0, 160.0, 10.0),
-                                    child: Row(
-                                      mainAxisSize: MainAxisSize.max,
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.center,
-                                      children: [
-                                        Expanded(
-                                          child: Align(
-                                            alignment: AlignmentDirectional(
-                                                0.0, -0.55),
-                                            child: Image.asset(
-                                              'assets/images/playwin.png',
-                                              width: 180.0,
-                                              height: 140.0,
-                                              fit: BoxFit.cover,
-                                            ),
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
+                            Expanded(
+                              child: Align(
+                                alignment: AlignmentDirectional(-0.75, -2.0),
+                                child: Image.asset(
+                                  'assets/images/playwin.png',
+                                  fit: BoxFit.cover,
                                 ),
                               ),
-                            Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
-                                  20.0, 0.0, 20.0, 0.0),
-                              child: Row(
-                                mainAxisSize: MainAxisSize.max,
-                                children: [
-                                  if (responsiveVisibility(
-                                    context: context,
-                                    tabletLandscape: false,
-                                    desktop: false,
-                                  ))
-                                    Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                          0.0, 0.0, 25.0, 0.0),
-                                      child: FFButtonWidget(
-                                        onPressed: () async {
-                                          logFirebaseEvent(
-                                              'CONECTION_PAGE_TO_REGISTER_BTN_ON_TAP');
-                                          logFirebaseEvent(
-                                              'Button_navigate_to');
-
-                                          context.pushNamed('registro');
-                                        },
-                                        text:
-                                            FFLocalizations.of(context).getText(
-                                          '1ank8eo7' /* to register */,
-                                        ),
-                                        options: FFButtonOptions(
-                                          width: 130.0,
-                                          height: 40.0,
-                                          padding:
-                                              EdgeInsetsDirectional.fromSTEB(
-                                                  0.0, 0.0, 0.0, 0.0),
-                                          iconPadding:
-                                              EdgeInsetsDirectional.fromSTEB(
-                                                  0.0, 0.0, 0.0, 0.0),
-                                          color: Color(0xFF1D1D1D),
-                                          textStyle: FlutterFlowTheme.of(
-                                                  context)
-                                              .titleSmall
-                                              .override(
-                                                fontFamily:
-                                                    FlutterFlowTheme.of(context)
-                                                        .titleSmallFamily,
-                                                color: Colors.white,
-                                                useGoogleFonts: GoogleFonts
-                                                        .asMap()
-                                                    .containsKey(
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .titleSmallFamily),
-                                              ),
-                                          elevation: 2.0,
-                                          borderSide: BorderSide(
-                                            color: Color(0xFFFF0000),
-                                            width: 1.0,
-                                          ),
-                                          borderRadius:
-                                              BorderRadius.circular(50.0),
-                                        ),
-                                      ),
-                                    ),
-                                  if (responsiveVisibility(
-                                    context: context,
-                                    tabletLandscape: false,
-                                    desktop: false,
-                                  ))
-                                    Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                          25.0, 0.0, 0.0, 0.0),
-                                      child: FFButtonWidget(
-                                        onPressed: () async {
-                                          logFirebaseEvent(
-                                              'CONECTION_PAGE_LOG_IN_BTN_ON_TAP');
-                                          logFirebaseEvent(
-                                              'Button_navigate_to');
-
-                                          context.pushNamed('login');
-                                        },
-                                        text:
-                                            FFLocalizations.of(context).getText(
-                                          '6ogcxgtm' /* Log in */,
-                                        ),
-                                        options: FFButtonOptions(
-                                          width: 130.0,
-                                          height: 40.0,
-                                          padding:
-                                              EdgeInsetsDirectional.fromSTEB(
-                                                  0.0, 0.0, 0.0, 0.0),
-                                          iconPadding:
-                                              EdgeInsetsDirectional.fromSTEB(
-                                                  0.0, 0.0, 0.0, 0.0),
-                                          color: Color(0xFF1D1D1D),
-                                          textStyle: FlutterFlowTheme.of(
-                                                  context)
-                                              .titleSmall
-                                              .override(
-                                                fontFamily:
-                                                    FlutterFlowTheme.of(context)
-                                                        .titleSmallFamily,
-                                                color: Colors.white,
-                                                useGoogleFonts: GoogleFonts
-                                                        .asMap()
-                                                    .containsKey(
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .titleSmallFamily),
-                                              ),
-                                          elevation: 2.0,
-                                          borderSide: BorderSide(
-                                            color: Color(0xFFFF0000),
-                                            width: 1.0,
-                                          ),
-                                          borderRadius:
-                                              BorderRadius.circular(50.0),
-                                        ),
-                                      ),
-                                    ),
-                                ],
-                              ),
                             ),
-                            Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
-                                  0.0, 10.0, 0.0, 10.0),
-                              child: Row(
-                                mainAxisSize: MainAxisSize.max,
-                                children: [
-                                  if (responsiveVisibility(
-                                    context: context,
-                                    tabletLandscape: false,
-                                    desktop: false,
-                                  ))
-                                    Expanded(
-                                      child: Align(
-                                        alignment:
-                                            AlignmentDirectional(0.3, 0.0),
-                                        child: Padding(
-                                          padding:
-                                              EdgeInsetsDirectional.fromSTEB(
-                                                  15.0, 0.0, 75.0, 0.0),
-                                          child: Html(
-                                            data:
-                                                ' <p style=\"-color:white\">Somos una app de juegos de\n entretenimiento donde combinamos la recreación con la oportunidad de ganar \npremios en dinero.</p>',
-                                          ),
-                                        ),
-                                      ),
-                                    ),
-                                ],
-                              ),
-                            ),
-                            Stack(
-                              children: [
-                                if (responsiveVisibility(
-                                  context: context,
-                                  tabletLandscape: false,
-                                  desktop: false,
-                                ))
-                                  Align(
-                                    alignment:
-                                        AlignmentDirectional(-12.04, -0.04),
-                                    child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                          17.0, 1.0, 0.0, 10.0),
+                            Align(
+                              alignment: AlignmentDirectional(0.0, 0.05),
+                              child: Padding(
+                                padding: EdgeInsetsDirectional.fromSTEB(
+                                    30.0, 0.0, 0.0, 0.0),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  children: [
+                                    Align(
+                                      alignment:
+                                          AlignmentDirectional(-0.15, -0.1),
                                       child: Image.asset(
-                                        'assets/images/rectangle.png',
+                                        'assets/images/somos.png',
                                         fit: BoxFit.cover,
                                       ),
                                     ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                            Expanded(
+                              child: Align(
+                                alignment: AlignmentDirectional(0.0, -0.7),
+                                child: Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      20.0, 0.0, 20.0, 10.0),
+                                  child: Row(
+                                    mainAxisSize: MainAxisSize.max,
+                                    children: [
+                                      if (responsiveVisibility(
+                                        context: context,
+                                        tabletLandscape: false,
+                                        desktop: false,
+                                      ))
+                                        Padding(
+                                          padding:
+                                              EdgeInsetsDirectional.fromSTEB(
+                                                  0.0, 0.0, 25.0, 0.0),
+                                          child: FFButtonWidget(
+                                            onPressed: () async {
+                                              logFirebaseEvent(
+                                                  'CONECTION_PAGE_TO_REGISTER_BTN_ON_TAP');
+                                              logFirebaseEvent(
+                                                  'Button_navigate_to');
+
+                                              context.pushNamed('registro');
+                                            },
+                                            text: FFLocalizations.of(context)
+                                                .getText(
+                                              '1ank8eo7' /* to register */,
+                                            ),
+                                            options: FFButtonOptions(
+                                              width: 130.0,
+                                              height: 40.0,
+                                              padding: EdgeInsetsDirectional
+                                                  .fromSTEB(0.0, 0.0, 0.0, 0.0),
+                                              iconPadding: EdgeInsetsDirectional
+                                                  .fromSTEB(0.0, 0.0, 0.0, 0.0),
+                                              color: Color(0xFF1D1D1D),
+                                              textStyle:
+                                                  FlutterFlowTheme.of(context)
+                                                      .titleSmall
+                                                      .override(
+                                                        fontFamily:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .titleSmallFamily,
+                                                        color: Colors.white,
+                                                        useGoogleFonts: GoogleFonts
+                                                                .asMap()
+                                                            .containsKey(
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .titleSmallFamily),
+                                                      ),
+                                              elevation: 2.0,
+                                              borderSide: BorderSide(
+                                                color: Color(0xFFFF0000),
+                                                width: 1.0,
+                                              ),
+                                              borderRadius:
+                                                  BorderRadius.circular(50.0),
+                                            ),
+                                          ),
+                                        ),
+                                      if (responsiveVisibility(
+                                        context: context,
+                                        tabletLandscape: false,
+                                        desktop: false,
+                                      ))
+                                        Padding(
+                                          padding:
+                                              EdgeInsetsDirectional.fromSTEB(
+                                                  25.0, 0.0, 0.0, 0.0),
+                                          child: FFButtonWidget(
+                                            onPressed: () async {
+                                              logFirebaseEvent(
+                                                  'CONECTION_PAGE_GET_INTO_BTN_ON_TAP');
+                                              logFirebaseEvent(
+                                                  'Button_navigate_to');
+
+                                              context.pushNamed('login');
+                                            },
+                                            text: FFLocalizations.of(context)
+                                                .getText(
+                                              '6ogcxgtm' /* get into */,
+                                            ),
+                                            options: FFButtonOptions(
+                                              width: 130.0,
+                                              height: 40.0,
+                                              padding: EdgeInsetsDirectional
+                                                  .fromSTEB(0.0, 0.0, 0.0, 0.0),
+                                              iconPadding: EdgeInsetsDirectional
+                                                  .fromSTEB(0.0, 0.0, 0.0, 0.0),
+                                              color: Color(0xFF1D1D1D),
+                                              textStyle:
+                                                  FlutterFlowTheme.of(context)
+                                                      .titleSmall
+                                                      .override(
+                                                        fontFamily:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .titleSmallFamily,
+                                                        color: Colors.white,
+                                                        useGoogleFonts: GoogleFonts
+                                                                .asMap()
+                                                            .containsKey(
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .titleSmallFamily),
+                                                      ),
+                                              elevation: 2.0,
+                                              borderSide: BorderSide(
+                                                color: Color(0xFFFF0000),
+                                                width: 1.0,
+                                              ),
+                                              borderRadius:
+                                                  BorderRadius.circular(50.0),
+                                            ),
+                                          ),
+                                        ),
+                                    ],
                                   ),
-                                if (responsiveVisibility(
-                                  context: context,
-                                  tabletLandscape: false,
-                                  desktop: false,
-                                ))
+                                ),
+                              ),
+                            ),
+                            Align(
+                              alignment: AlignmentDirectional(0.0, -0.05),
+                              child: Stack(
+                                children: [
+                                  if (responsiveVisibility(
+                                    context: context,
+                                    tabletLandscape: false,
+                                    desktop: false,
+                                  ))
+                                    Align(
+                                      alignment:
+                                          AlignmentDirectional(-12.04, -0.04),
+                                      child: Padding(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                            17.0, 1.0, 0.0, 10.0),
+                                        child: Image.asset(
+                                          'assets/images/rectangle.png',
+                                          fit: BoxFit.cover,
+                                        ),
+                                      ),
+                                    ),
+                                  if (responsiveVisibility(
+                                    context: context,
+                                    tabletLandscape: false,
+                                    desktop: false,
+                                  ))
+                                    Align(
+                                      alignment:
+                                          AlignmentDirectional(0.0, -0.02),
+                                      child: Padding(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                            210.0, 20.0, 0.0, 0.0),
+                                        child: Row(
+                                          mainAxisSize: MainAxisSize.max,
+                                          children: [
+                                            Image.asset(
+                                              'assets/images/fort.png',
+                                              fit: BoxFit.cover,
+                                            ).animateOnActionTrigger(
+                                              animationsMap[
+                                                  'imageOnActionTriggerAnimation']!,
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
                                   Align(
-                                    alignment: AlignmentDirectional(0.0, -0.02),
+                                    alignment: AlignmentDirectional(0.0, 0.0),
                                     child: Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
-                                          210.0, 20.0, 0.0, 0.0),
+                                          50.0, 25.0, 190.0, 0.0),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
                                         children: [
                                           Image.asset(
-                                            'assets/images/fort.png',
+                                            'assets/images/mejores.png',
                                             fit: BoxFit.cover,
-                                          ).animateOnActionTrigger(
-                                            animationsMap[
-                                                'imageOnActionTriggerAnimation']!,
                                           ),
                                         ],
                                       ),
                                     ),
                                   ),
-                                Align(
-                                  alignment: AlignmentDirectional(0.0, 0.0),
-                                  child: Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
-                                        50.0, 25.0, 190.0, 0.0),
-                                    child: Row(
-                                      mainAxisSize: MainAxisSize.max,
-                                      children: [
-                                        Image.asset(
-                                          'assets/images/mejores.png',
-                                          fit: BoxFit.cover,
-                                        ),
-                                      ],
+                                  Align(
+                                    alignment: AlignmentDirectional(0.0, 0.0),
+                                    child: Padding(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          50.0, 60.0, 200.0, 0.0),
+                                      child: Row(
+                                        mainAxisSize: MainAxisSize.max,
+                                        children: [
+                                          Image.asset(
+                                            'assets/images/Sutano.png',
+                                            fit: BoxFit.cover,
+                                          ),
+                                          Expanded(
+                                            child: Align(
+                                              alignment: AlignmentDirectional(
+                                                  1.0, 0.0),
+                                              child: Image.asset(
+                                                'assets/images/cuarenta.png',
+                                                width: 20.0,
+                                                fit: BoxFit.cover,
+                                              ),
+                                            ),
+                                          ),
+                                        ],
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Align(
-                                  alignment: AlignmentDirectional(0.0, 0.0),
-                                  child: Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
-                                        24.0, 60.0, 180.0, 0.0),
-                                    child: Row(
-                                      mainAxisSize: MainAxisSize.max,
-                                      children: [],
-                                    ),
-                                  ),
-                                ),
-                              ],
+                                ],
+                              ),
                             ),
                           ],
                         ),
