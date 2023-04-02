@@ -116,20 +116,21 @@ class _ConectionWidgetState extends State<ConectionWidget>
                         child: Column(
                           mainAxisSize: MainAxisSize.max,
                           children: [
-                            Expanded(
-                              child: Align(
-                                alignment: AlignmentDirectional(-0.75, -2.0),
-                                child: Image.asset(
-                                  'assets/images/playwin.png',
-                                  fit: BoxFit.cover,
-                                ),
+                            // cambios
+                            Align(
+                              alignment: AlignmentDirectional(-0.75, -2.0),
+                              child: Image.asset(
+                                'assets/images/playwin.png',
+                                width: 250.0,
+                                height: 200.0,
+                                fit: BoxFit.cover,
                               ),
                             ),
                             Align(
                               alignment: AlignmentDirectional(0.0, 0.05),
                               child: Padding(
                                 padding: EdgeInsetsDirectional.fromSTEB(
-                                    30.0, 0.0, 0.0, 0.0),
+                                    30.0, 0.0, 0.0, 5.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
                                   children: [
@@ -150,7 +151,7 @@ class _ConectionWidgetState extends State<ConectionWidget>
                                 alignment: AlignmentDirectional(0.0, -0.7),
                                 child: Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
-                                      20.0, 0.0, 20.0, 10.0),
+                                      20.0, 0.0, 20.0, 0.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
                                     children: [
@@ -275,6 +276,7 @@ class _ConectionWidgetState extends State<ConectionWidget>
                               alignment: AlignmentDirectional(0.0, -0.05),
                               child: Stack(
                                 children: [
+                                  // imagen
                                   if (responsiveVisibility(
                                     context: context,
                                     tabletLandscape: false,
@@ -285,7 +287,7 @@ class _ConectionWidgetState extends State<ConectionWidget>
                                           AlignmentDirectional(-12.04, -0.04),
                                       child: Padding(
                                         padding: EdgeInsetsDirectional.fromSTEB(
-                                            17.0, 1.0, 0.0, 10.0),
+                                            17.0, 0.0, 0.0, 60.0),
                                         child: Image.asset(
                                           'assets/images/rectangle.png',
                                           fit: BoxFit.cover,
