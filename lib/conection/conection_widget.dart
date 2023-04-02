@@ -1,7 +1,10 @@
+import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/scheduler.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_html/flutter_html.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -16,11 +19,28 @@ class ConectionWidget extends StatefulWidget {
   _ConectionWidgetState createState() => _ConectionWidgetState();
 }
 
-class _ConectionWidgetState extends State<ConectionWidget> {
+class _ConectionWidgetState extends State<ConectionWidget>
+    with TickerProviderStateMixin {
   late ConectionModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
   final _unfocusNode = FocusNode();
+
+  final animationsMap = {
+    'imageOnActionTriggerAnimation': AnimationInfo(
+      trigger: AnimationTrigger.onActionTrigger,
+      applyInitialState: true,
+      effects: [
+        MoveEffect(
+          curve: Curves.easeInOut,
+          delay: 430.ms,
+          duration: 600.ms,
+          begin: Offset(0.0, 0.0),
+          end: Offset(0.0, -38.0),
+        ),
+      ],
+    ),
+  };
 
   @override
   void initState() {
@@ -28,6 +48,12 @@ class _ConectionWidgetState extends State<ConectionWidget> {
     _model = createModel(context, () => ConectionModel());
 
     logFirebaseEvent('screen_view', parameters: {'screen_name': 'conection'});
+    setupAnimations(
+      animationsMap.values.where((anim) =>
+          anim.trigger == AnimationTrigger.onActionTrigger ||
+          !anim.applyInitialState),
+      this,
+    );
   }
 
   @override
@@ -274,40 +300,78 @@ class _ConectionWidgetState extends State<ConectionWidget> {
                                 ],
                               ),
                             ),
-                            if (responsiveVisibility(
-                              context: context,
-                              tabletLandscape: false,
-                              desktop: false,
-                            ))
-                              Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
-                                    15.0, 0.0, 0.0, 0.0),
-                                child: Row(
-                                  mainAxisSize: MainAxisSize.max,
-                                  children: [
-                                    if (responsiveVisibility(
-                                      context: context,
-                                      tabletLandscape: false,
-                                      desktop: false,
-                                    ))
-                                      Align(
-                                        alignment:
-                                            AlignmentDirectional(-0.8, 0.35),
-                                        child: Padding(
-                                          padding:
-                                              EdgeInsetsDirectional.fromSTEB(
-                                                  15.0, 1.0, 0.0, 10.0),
-                                          child: Image.asset(
-                                            'assets/images/rectangle.png',
-                                            width: 360.0,
-                                            height: 360.0,
-                                            fit: BoxFit.cover,
-                                          ),
-                                        ),
+                            Stack(
+                              children: [
+                                if (responsiveVisibility(
+                                  context: context,
+                                  tabletLandscape: false,
+                                  desktop: false,
+                                ))
+                                  Align(
+                                    alignment:
+                                        AlignmentDirectional(-12.04, -0.04),
+                                    child: Padding(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          17.0, 1.0, 0.0, 10.0),
+                                      child: Image.asset(
+                                        'assets/images/rectangle.png',
+                                        fit: BoxFit.cover,
                                       ),
-                                  ],
+                                    ),
+                                  ),
+                                if (responsiveVisibility(
+                                  context: context,
+                                  tabletLandscape: false,
+                                  desktop: false,
+                                ))
+                                  Align(
+                                    alignment: AlignmentDirectional(0.0, -0.02),
+                                    child: Padding(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          210.0, 20.0, 0.0, 0.0),
+                                      child: Row(
+                                        mainAxisSize: MainAxisSize.max,
+                                        children: [
+                                          Image.asset(
+                                            'assets/images/fort.png',
+                                            fit: BoxFit.cover,
+                                          ).animateOnActionTrigger(
+                                            animationsMap[
+                                                'imageOnActionTriggerAnimation']!,
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ),
+                                Align(
+                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                  child: Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        50.0, 25.0, 190.0, 0.0),
+                                    child: Row(
+                                      mainAxisSize: MainAxisSize.max,
+                                      children: [
+                                        Image.asset(
+                                          'assets/images/mejores.png',
+                                          fit: BoxFit.cover,
+                                        ),
+                                      ],
+                                    ),
+                                  ),
                                 ),
-                              ),
+                                Align(
+                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                  child: Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        24.0, 60.0, 180.0, 0.0),
+                                    child: Row(
+                                      mainAxisSize: MainAxisSize.max,
+                                      children: [],
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
                           ],
                         ),
                       ),
