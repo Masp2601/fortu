@@ -339,34 +339,7 @@ class _ConectionWidgetState extends State<ConectionWidget>
                                     alignment: AlignmentDirectional(0.0, -0.78),
                                     child: Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
-                                          50.0, 60.0, 200.0, 0.0),
-                                      child: Row(
-                                        mainAxisSize: MainAxisSize.max,
-                                        children: [
-                                          Image.asset(
-                                            'assets/images/Sutano.png',
-                                            fit: BoxFit.cover,
-                                          ),
-                                          Expanded(
-                                            child: Align(
-                                              alignment: AlignmentDirectional(
-                                                  1.0, 0.0),
-                                              child: Image.asset(
-                                                'assets/images/cuarenta.png',
-                                                width: 20.0,
-                                                fit: BoxFit.cover,
-                                              ),
-                                            ),
-                                          ),
-                                        ],
-                                      ),
-                                    ),
-                                  ),
-                                  Align(
-                                    alignment: AlignmentDirectional(0.0, -0.61),
-                                    child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                          50.0, 60.0, 200.0, 0.0),
+                                          50.0, 80.0, 200.0, 0.0),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
                                         children: [
@@ -393,7 +366,7 @@ class _ConectionWidgetState extends State<ConectionWidget>
                                     alignment: AlignmentDirectional(0.0, -0.45),
                                     child: Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
-                                          50.0, 60.0, 200.0, 0.0),
+                                          50.0, 260.0, 200.0, 0.0),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
                                         children: [
@@ -406,7 +379,7 @@ class _ConectionWidgetState extends State<ConectionWidget>
                                               alignment: AlignmentDirectional(
                                                   1.0, 0.0),
                                               child: Image.asset(
-                                                'assets/images/cuarenta.png',
+                                                'assets/images/catorce.png',
                                                 width: 20.0,
                                                 fit: BoxFit.cover,
                                               ),
@@ -420,7 +393,7 @@ class _ConectionWidgetState extends State<ConectionWidget>
                                     alignment: AlignmentDirectional(0.0, -0.4),
                                     child: Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
-                                          50.0, 80.0, 200.0, 0.0),
+                                          50.0, 95.0, 200.0, 0.0),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
                                         children: [
@@ -438,7 +411,7 @@ class _ConectionWidgetState extends State<ConectionWidget>
                                     alignment: AlignmentDirectional(0.0, 0.0),
                                     child: Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
-                                          50.0, 75.0, 200.0, 0.0),
+                                          50.0, 90.0, 200.0, 0.0),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
                                         children: [
@@ -459,7 +432,7 @@ class _ConectionWidgetState extends State<ConectionWidget>
                                     alignment: AlignmentDirectional(0.0, -0.3),
                                     child: Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
-                                          50.0, 120.0, 200.0, 0.0),
+                                          50.0, 160.0, 200.0, 0.0),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
                                         children: [
@@ -474,37 +447,10 @@ class _ConectionWidgetState extends State<ConectionWidget>
                                     ),
                                   ),
                                   Align(
-                                    alignment: AlignmentDirectional(0.0, -1.0),
-                                    child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                          50.0, 60.0, 200.0, 0.0),
-                                      child: Row(
-                                        mainAxisSize: MainAxisSize.max,
-                                        children: [
-                                          Image.asset(
-                                            'assets/images/Sutano.png',
-                                            fit: BoxFit.cover,
-                                          ),
-                                          Expanded(
-                                            child: Align(
-                                              alignment: AlignmentDirectional(
-                                                  1.0, 0.0),
-                                              child: Image.asset(
-                                                'assets/images/cuarenta.png',
-                                                width: 20.0,
-                                                fit: BoxFit.cover,
-                                              ),
-                                            ),
-                                          ),
-                                        ],
-                                      ),
-                                    ),
-                                  ),
-                                  Align(
                                     alignment: AlignmentDirectional(0.0, 0.0),
                                     child: Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
-                                          50.0, 100.0, 200.0, 0.0),
+                                          50.0, 140.0, 200.0, 0.0),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
                                         children: [
@@ -530,7 +476,7 @@ class _ConectionWidgetState extends State<ConectionWidget>
                                         AlignmentDirectional(-0.52, -1.01),
                                     child: Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
-                                          50.0, 120.0, 190.0, 0.0),
+                                          50.0, 160.0, 190.0, 0.0),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
                                         children: [
@@ -546,10 +492,93 @@ class _ConectionWidgetState extends State<ConectionWidget>
                                     alignment: AlignmentDirectional(0.0, 0.0),
                                     child: Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
-                                          50.0, 140.0, 190.0, 0.0),
+                                          50.0, 190.0, 190.0, 0.0),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
-                                        children: [],
+                                        children: [
+                                          Padding(
+                                            padding:
+                                                EdgeInsetsDirectional.fromSTEB(
+                                                    0.0, 0.0, 80.0, 0.0),
+                                            child: Image.asset(
+                                              'assets/images/Sutano.png',
+                                              fit: BoxFit.cover,
+                                            ),
+                                          ),
+                                          Image.asset(
+                                            'assets/images/treintaycuatro.png',
+                                            fit: BoxFit.cover,
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ),
+                                  Align(
+                                    alignment: AlignmentDirectional(0.0, 0.0),
+                                    child: Padding(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          50.0, 215.0, 190.0, 0.0),
+                                      child: Row(
+                                        mainAxisSize: MainAxisSize.max,
+                                        children: [
+                                          Image.asset(
+                                            'assets/images/black.png',
+                                            fit: BoxFit.cover,
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ),
+                                  Align(
+                                    alignment: AlignmentDirectional(0.0, -0.45),
+                                    child: Padding(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          50.0, 210.0, 190.0, 0.0),
+                                      child: Row(
+                                        mainAxisSize: MainAxisSize.max,
+                                        children: [
+                                          Padding(
+                                            padding:
+                                                EdgeInsetsDirectional.fromSTEB(
+                                                    0.0, 5.0, 0.0, 0.0),
+                                            child: Image.asset(
+                                              'assets/images/trenitcuatro.png',
+                                              fit: BoxFit.cover,
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ),
+                                  Align(
+                                    alignment: AlignmentDirectional(0.0, 0.0),
+                                    child: Padding(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          50.0, 280.0, 190.0, 0.0),
+                                      child: Row(
+                                        mainAxisSize: MainAxisSize.max,
+                                        children: [
+                                          Image.asset(
+                                            'assets/images/black.png',
+                                            fit: BoxFit.cover,
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ),
+                                  Align(
+                                    alignment: AlignmentDirectional(0.0, 0.0),
+                                    child: Padding(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          50.0, 280.0, 190.0, 0.0),
+                                      child: Row(
+                                        mainAxisSize: MainAxisSize.max,
+                                        children: [
+                                          Image.asset(
+                                            'assets/images/torce.png',
+                                            fit: BoxFit.cover,
+                                          ),
+                                        ],
                                       ),
                                     ),
                                   ),
