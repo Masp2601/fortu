@@ -740,6 +740,7 @@ class _RegistroWidgetState extends State<RegistroWidget> {
                                           child: Row(
                                             mainAxisSize: MainAxisSize.max,
                                             children: [
+                                              // cambios chekbox
                                               Theme(
                                                 data: ThemeData(
                                                   checkboxTheme:
@@ -757,7 +758,7 @@ class _RegistroWidgetState extends State<RegistroWidget> {
                                                 child: Checkbox(
                                                   value: _model
                                                           .checkboxpoliticaValue ??=
-                                                      true,
+                                                      false,
                                                   onChanged: (newValue) async {
                                                     setState(() => _model
                                                             .checkboxpoliticaValue =
