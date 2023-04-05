@@ -1863,53 +1863,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'siguiente',
     },
   },
-  // ver
-  {
-    '6xchui9a': {
-      'en': 'PESOS COLOMBIANOS',
-      'es': 'PESOS COLOMBIANOS',
-    },
-    '0e19z3cd': {
-      'en': 'Hello World',
-      'es': '',
-    },
-    'pbfipvxk': {
-      'en': 'see the game',
-      'es': 'ver el juego',
-    },
-    'cd4qqpav': {
-      'en': 'Hello World',
-      'es': '',
-    },
-    '9qlb378l': {
-      'en': 'Hello World',
-      'es': '',
-    },
-    '4jisut42': {
-      'en': 'see the game',
-      'es': 'ver el juego',
-    },
-    'bh46rcxl': {
-      'en': 'see the game',
-      'es': 'ver el juego',
-    },
-    '13jix10g': {
-      'en': '',
-      'es': 'DOLAR AMERICANO',
-    },
-    '4140ipnz': {
-      'en': 'see the game',
-      'es': 'ver el juego',
-    },
-    'bgklmz5n': {
-      'en': 'see the game',
-      'es': 'ver el juego',
-    },
-    'a9961fi3': {
-      'en': 'see the game',
-      'es': 'ver el juego',
-    },
-  },
   // changePassword
   {
     'dhr24bcn': {
@@ -1983,6 +1936,20 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     'jzr7c74c': {
       'en': 'Home',
       'es': 'Hogar',
+    },
+  },
+  // ciencop
+  {
+    'zjk2lkdy': {
+      'en': 'online',
+      'es': 'en línea',
+    },
+  },
+  // docientoscop
+  {
+    'nm7xd8qy': {
+      'en': 'online',
+      'es': 'en línea',
     },
   },
   // bookAppointment

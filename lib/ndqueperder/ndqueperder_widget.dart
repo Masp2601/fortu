@@ -137,7 +137,7 @@ class _NdqueperderWidgetState extends State<NdqueperderWidget> {
                                             logFirebaseEvent(
                                                 'Image_navigate_to');
 
-                                            context.pushNamed('fortunatable');
+                                            context.pushNamed('ciencop');
                                           },
                                           child: Image.asset(
                                             'assets/images/greenplay.png',
@@ -160,7 +160,7 @@ class _NdqueperderWidgetState extends State<NdqueperderWidget> {
                                             logFirebaseEvent(
                                                 'Image_navigate_to');
 
-                                            context.pushNamed('goldtable');
+                                            context.pushNamed('docientoscop');
                                           },
                                           child: Image.asset(
                                             'assets/images/goldplay.png',

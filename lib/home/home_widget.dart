@@ -246,12 +246,8 @@ class _HomeWidgetState extends State<HomeWidget> {
                               children: [
                                 // aqui solamente la persona que le de click puede ver unicamente no jugar puese ser espectador.
                                 FFButtonWidget(
-                                  onPressed: () async {
-                                    logFirebaseEvent(
-                                        'HOME_PAGE_WATCH_GAME_BTN_ON_TAP');
-                                    logFirebaseEvent('Button_navigate_to');
-
-                                    context.pushNamed('ver');
+                                  onPressed: () {
+                                    print('Button pressed ...');
                                   },
                                   text: FFLocalizations.of(context).getText(
                                     'vrn7x940' /* watch game */,

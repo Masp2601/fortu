@@ -64,7 +64,18 @@ class _MundomagicoWidgetState extends State<MundomagicoWidget> {
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.center,
-                  children: [],
+                  children: [
+                    Padding(
+                      padding:
+                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 80.0),
+                      child: Image.asset(
+                        'assets/images/mundocristal.png',
+                        width: 163.8,
+                        height: 198.0,
+                        fit: BoxFit.cover,
+                      ),
+                    ),
+                  ],
                 ),
               ),
             ),

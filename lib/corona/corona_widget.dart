@@ -68,7 +68,7 @@ class _CoronaWidgetState extends State<CoronaWidget> {
                   children: [
                     Expanded(
                       child: Image.asset(
-                        'assets/images/Group.png',
+                        'assets/images/coron.png',
                         fit: BoxFit.contain,
                       ),
                     ),

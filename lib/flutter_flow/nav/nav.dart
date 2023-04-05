@@ -321,12 +321,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               builder: (context, params) => DisfrutayganaWidget(),
             ),
             FFRoute(
-              name: 'ver',
-              path: 'ver',
-              requireAuth: true,
-              builder: (context, params) => VerWidget(),
-            ),
-            FFRoute(
               name: 'changePassword',
               path: 'changePassword',
               requireAuth: true,
@@ -355,6 +349,24 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               path: 'mundomagico',
               requireAuth: true,
               builder: (context, params) => MundomagicoWidget(),
+            ),
+            FFRoute(
+              name: 'ciencop',
+              path: 'ciencop',
+              requireAuth: true,
+              builder: (context, params) => CiencopWidget(
+                users: params.getParam('users', ParamType.String),
+                saldo: params.getParam('saldo', ParamType.String),
+              ),
+            ),
+            FFRoute(
+              name: 'docientoscop',
+              path: 'docientoscop',
+              requireAuth: true,
+              builder: (context, params) => DocientoscopWidget(
+                users: params.getParam('users', ParamType.String),
+                saldo: params.getParam('saldo', ParamType.String),
+              ),
             )
           ].map((r) => r.toRoute(appStateNotifier)).toList(),
         ),

@@ -466,20 +466,9 @@ class _RulesWidgetState extends State<RulesWidget>
                                   ),
                                 ),
                               ),
-                              Row(
-                                mainAxisSize: MainAxisSize.max,
-                                children: [
-                                  Image.asset(
-                                    'assets/images/Vector_(20).png',
-                                    width: 344.0,
-                                    height: 100.0,
-                                    fit: BoxFit.cover,
-                                  ),
-                                ],
-                              ),
                               Expanded(
                                 child: Align(
-                                  alignment: AlignmentDirectional(0.0, -3.0),
+                                  alignment: AlignmentDirectional(0.0, -1.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
                                     mainAxisAlignment: MainAxisAlignment.center,
@@ -487,9 +476,25 @@ class _RulesWidgetState extends State<RulesWidget>
                                         CrossAxisAlignment.center,
                                     children: [
                                       Image.asset(
-                                        'assets/images/Vector_(20).png',
-                                        width: 370.3,
-                                        height: 100.0,
+                                        'assets/images/linerojo.png',
+                                        width: 400.0,
+                                        fit: BoxFit.cover,
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ),
+                              Expanded(
+                                child: Align(
+                                  alignment: AlignmentDirectional(0.0, -6.0),
+                                  child: Row(
+                                    mainAxisSize: MainAxisSize.max,
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.center,
+                                    children: [
+                                      Image.asset(
+                                        'assets/images/linesombr.png',
                                         fit: BoxFit.cover,
                                       ),
                                     ],

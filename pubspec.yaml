@@ -37,6 +37,7 @@ dependencies:
   cloud_functions_web: 4.3.14
   dropdown_button2: 2.0.0
   easy_debounce: 2.0.1
+  equatable: 2.0.3
   file_picker: 4.5.1
   firebase_analytics: 10.0.7
   firebase_analytics_platform_interface: 3.3.15
