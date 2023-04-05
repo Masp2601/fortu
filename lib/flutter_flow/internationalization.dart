@@ -1901,20 +1901,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'Hogar',
     },
   },
-  // espejo
-  {
-    '9ndjbrmv': {
-      'en': 'Home',
-      'es': 'Hogar',
-    },
-  },
-  // mundomagico
-  {
-    'jzr7c74c': {
-      'en': 'Home',
-      'es': 'Hogar',
-    },
-  },
   // ciencop
   {
     'zjk2lkdy': {
@@ -1997,6 +1983,186 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'volver home',
     },
     'p7d18vo6': {
+      'en': 'Home',
+      'es': 'Hogar',
+    },
+  },
+  // mundomagico
+  {
+    '714rztwk': {
+      'en': 'Description',
+      'es': 'Descripción',
+    },
+    'des76lh4': {
+      'en': 'balance',
+      'es': 'Saldo',
+    },
+    '20wewmx0': {
+      'en': 'Hello World',
+      'es': '\$567.000',
+    },
+    'gz3mi70w': {
+      'en': 'Hello World',
+      'es':
+          'lknlknpnknlkniknpñn´lknlknlkn\njkvbkñjvñbkjbñkjbujbijf6asuy\nlkasjcpdsivhnd odfihoihgnrt lk',
+    },
+    'giir9ao7': {
+      'en': 'punctuation',
+      'es': 'puntuación',
+    },
+    'tcmfq37f': {
+      'en': 'payment method',
+      'es': 'método de pago',
+    },
+    '1697r9gd': {
+      'en': 'return home',
+      'es': 'volver home',
+    },
+    'qknilgaz': {
+      'en': 'Home',
+      'es': 'Hogar',
+    },
+  },
+  // espejo
+  {
+    'ur003iri': {
+      'en': 'Description',
+      'es': 'Descripción',
+    },
+    'nldgdlh3': {
+      'en': 'balance',
+      'es': 'Saldo',
+    },
+    'dgtnmc7o': {
+      'en': 'Hello World',
+      'es': '\$567.000',
+    },
+    '4wxeln8q': {
+      'en': 'Hello World',
+      'es':
+          'lknlknpnknlkniknpñn´lknlknlkn\njkvbkñjvñbkjbñkjbujbijf6asuy\nlkasjcpdsivhnd odfihoihgnrt lk',
+    },
+    'gg2vnte8': {
+      'en': 'punctuation',
+      'es': 'puntuación',
+    },
+    'rgj1kzre': {
+      'en': 'payment method',
+      'es': 'método de pago',
+    },
+    'k69k7dzj': {
+      'en': 'return home',
+      'es': 'volver home',
+    },
+    'yhhxx2h1': {
+      'en': 'Home',
+      'es': 'Hogar',
+    },
+  },
+  // cristals
+  {
+    'pzr8rret': {
+      'en': 'Description',
+      'es': 'Descripción',
+    },
+    '5qh67dak': {
+      'en': 'balance',
+      'es': 'Saldo',
+    },
+    '0oyywmhm': {
+      'en': 'Hello World',
+      'es': '\$567.000',
+    },
+    '9arou1pu': {
+      'en': 'Hello World',
+      'es':
+          'lknlknpnknlkniknpñn´lknlknlkn\njkvbkñjvñbkjbñkjbujbijf6asuy\nlkasjcpdsivhnd odfihoihgnrt lk',
+    },
+    'ovfoeglp': {
+      'en': 'punctuation',
+      'es': 'puntuación',
+    },
+    '7z50euc8': {
+      'en': 'payment method',
+      'es': 'método de pago',
+    },
+    'ek0x6wwd': {
+      'en': 'return home',
+      'es': 'volver home',
+    },
+    '3oc1rhs5': {
+      'en': 'Home',
+      'es': 'Hogar',
+    },
+  },
+  // rocamagica
+  {
+    'ibwwufdf': {
+      'en': 'Description',
+      'es': 'Descripción',
+    },
+    'jh6y2j55': {
+      'en': 'balance',
+      'es': 'Saldo',
+    },
+    'c4het48f': {
+      'en': 'Hello World',
+      'es': '\$567.000',
+    },
+    'b5jstery': {
+      'en': 'Hello World',
+      'es':
+          'lknlknpnknlkniknpñn´lknlknlkn\njkvbkñjvñbkjbñkjbujbijf6asuy\nlkasjcpdsivhnd odfihoihgnrt lk',
+    },
+    'dg53oem0': {
+      'en': 'punctuation',
+      'es': 'puntuación',
+    },
+    'xq3uw9cj': {
+      'en': 'payment method',
+      'es': 'método de pago',
+    },
+    'c7pxnbsh': {
+      'en': 'return home',
+      'es': 'volver home',
+    },
+    'e2ozjhi8': {
+      'en': 'Home',
+      'es': 'Hogar',
+    },
+  },
+  // nave
+  {
+    'oyozs3xc': {
+      'en': 'Description',
+      'es': 'Descripción',
+    },
+    'j8t650sl': {
+      'en': 'balance',
+      'es': 'Saldo',
+    },
+    'lz24xlmj': {
+      'en': 'Hello World',
+      'es': '\$567.000',
+    },
+    'wotqbz9m': {
+      'en': 'Hello World',
+      'es':
+          'lknlknpnknlkniknpñn´lknlknlkn\njkvbkñjvñbkjbñkjbujbijf6asuy\nlkasjcpdsivhnd odfihoihgnrt lk',
+    },
+    'oefif6so': {
+      'en': 'punctuation',
+      'es': 'puntuación',
+    },
+    'j2sbxksb': {
+      'en': 'payment method',
+      'es': 'método de pago',
+    },
+    'yhs74g0k': {
+      'en': 'return home',
+      'es': 'volver home',
+    },
+    '45z6ykzu': {
       'en': 'Home',
       'es': 'Hogar',
     },

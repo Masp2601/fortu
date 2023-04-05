@@ -9,19 +9,19 @@ import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
-import 'espejo_model.dart';
-export 'espejo_model.dart';
+import 'rocamagica_model.dart';
+export 'rocamagica_model.dart';
 
-class EspejoWidget extends StatefulWidget {
-  const EspejoWidget({Key? key}) : super(key: key);
+class RocamagicaWidget extends StatefulWidget {
+  const RocamagicaWidget({Key? key}) : super(key: key);
 
   @override
-  _EspejoWidgetState createState() => _EspejoWidgetState();
+  _RocamagicaWidgetState createState() => _RocamagicaWidgetState();
 }
 
-class _EspejoWidgetState extends State<EspejoWidget>
+class _RocamagicaWidgetState extends State<RocamagicaWidget>
     with TickerProviderStateMixin {
-  late EspejoModel _model;
+  late RocamagicaModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
@@ -44,9 +44,9 @@ class _EspejoWidgetState extends State<EspejoWidget>
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => EspejoModel());
+    _model = createModel(context, () => RocamagicaModel());
 
-    logFirebaseEvent('screen_view', parameters: {'screen_name': 'espejo'});
+    logFirebaseEvent('screen_view', parameters: {'screen_name': 'rocamagica'});
   }
 
   @override
@@ -98,7 +98,7 @@ class _EspejoWidgetState extends State<EspejoWidget>
                               padding: EdgeInsetsDirectional.fromSTEB(
                                   0.0, 0.0, 0.0, 140.0),
                               child: Image.asset(
-                                'assets/images/espej.png',
+                                'assets/images/rocamagica.png',
                                 width: 120.0,
                                 fit: BoxFit.cover,
                               ),
@@ -175,7 +175,7 @@ class _EspejoWidgetState extends State<EspejoWidget>
                                         20.0, 0.0, 0.0, 0.0),
                                     child: Text(
                                       FFLocalizations.of(context).getText(
-                                        'ur003iri' /* Description */,
+                                        'ibwwufdf' /* Description */,
                                       ),
                                       textAlign: TextAlign.start,
                                       style: FlutterFlowTheme.of(context)
@@ -204,7 +204,7 @@ class _EspejoWidgetState extends State<EspejoWidget>
                                   alignment: AlignmentDirectional(1.5, 2.0),
                                   child: Text(
                                     FFLocalizations.of(context).getText(
-                                      'nldgdlh3' /* balance */,
+                                      'jh6y2j55' /* balance */,
                                     ),
                                     textAlign: TextAlign.center,
                                     style:
@@ -222,7 +222,7 @@ class _EspejoWidgetState extends State<EspejoWidget>
                                   alignment: AlignmentDirectional(0.5, 2.2),
                                   child: Text(
                                     FFLocalizations.of(context).getText(
-                                      'dgtnmc7o' /* Hello World */,
+                                      'c4het48f' /* Hello World */,
                                     ),
                                     textAlign: TextAlign.end,
                                     style: FlutterFlowTheme.of(context)
@@ -257,7 +257,7 @@ class _EspejoWidgetState extends State<EspejoWidget>
                               0.0, 0.0, 150.0, 0.0),
                           child: Text(
                             FFLocalizations.of(context).getText(
-                              '4wxeln8q' /* Hello World */,
+                              'b5jstery' /* Hello World */,
                             ),
                             textAlign: TextAlign.start,
                             style: FlutterFlowTheme.of(context).bodyMedium,
@@ -274,7 +274,7 @@ class _EspejoWidgetState extends State<EspejoWidget>
                           alignment: AlignmentDirectional(0.6, -8.5),
                           child: Text(
                             FFLocalizations.of(context).getText(
-                              'gg2vnte8' /* punctuation */,
+                              'dg53oem0' /* punctuation */,
                             ),
                             textAlign: TextAlign.center,
                             style: FlutterFlowTheme.of(context).titleSmall,
@@ -337,7 +337,7 @@ class _EspejoWidgetState extends State<EspejoWidget>
                                           40.0, 15.0, 0.0, 0.0),
                                       child: Text(
                                         FFLocalizations.of(context).getText(
-                                          'rgj1kzre' /* payment method */,
+                                          'xq3uw9cj' /* payment method */,
                                         ),
                                         style: FlutterFlowTheme.of(context)
                                             .bodyMedium,
@@ -351,7 +351,7 @@ class _EspejoWidgetState extends State<EspejoWidget>
                                           220.0, 15.0, 0.0, 0.0),
                                       child: Text(
                                         FFLocalizations.of(context).getText(
-                                          'k69k7dzj' /* return home */,
+                                          'c7pxnbsh' /* return home */,
                                         ),
                                         style: FlutterFlowTheme.of(context)
                                             .bodyMedium,

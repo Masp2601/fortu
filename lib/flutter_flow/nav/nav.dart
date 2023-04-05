@@ -333,18 +333,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               builder: (context, params) => ThereismethodWidget(),
             ),
             FFRoute(
-              name: 'espejo',
-              path: 'espejo',
-              requireAuth: true,
-              builder: (context, params) => EspejoWidget(),
-            ),
-            FFRoute(
-              name: 'mundomagico',
-              path: 'mundomagico',
-              requireAuth: true,
-              builder: (context, params) => MundomagicoWidget(),
-            ),
-            FFRoute(
               name: 'ciencop',
               path: 'ciencop',
               requireAuth: true,
@@ -373,6 +361,36 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               path: 'corona',
               requireAuth: true,
               builder: (context, params) => CoronaWidget(),
+            ),
+            FFRoute(
+              name: 'mundomagico',
+              path: 'mundomagico',
+              requireAuth: true,
+              builder: (context, params) => MundomagicoWidget(),
+            ),
+            FFRoute(
+              name: 'espejo',
+              path: 'espejo',
+              requireAuth: true,
+              builder: (context, params) => EspejoWidget(),
+            ),
+            FFRoute(
+              name: 'cristals',
+              path: 'cristals',
+              requireAuth: true,
+              builder: (context, params) => CristalsWidget(),
+            ),
+            FFRoute(
+              name: 'rocamagica',
+              path: 'rocamagica',
+              requireAuth: true,
+              builder: (context, params) => RocamagicaWidget(),
+            ),
+            FFRoute(
+              name: 'nave',
+              path: 'nave',
+              requireAuth: true,
+              builder: (context, params) => NaveWidget(),
             )
           ].map((r) => r.toRoute(appStateNotifier)).toList(),
         ),
