@@ -333,12 +333,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               builder: (context, params) => ThereismethodWidget(),
             ),
             FFRoute(
-              name: 'corona',
-              path: 'corona',
-              requireAuth: true,
-              builder: (context, params) => CoronaWidget(),
-            ),
-            FFRoute(
               name: 'espejo',
               path: 'espejo',
               requireAuth: true,
@@ -373,6 +367,12 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               path: 'cashavatar',
               requireAuth: true,
               builder: (context, params) => CashavatarWidget(),
+            ),
+            FFRoute(
+              name: 'corona',
+              path: 'corona',
+              requireAuth: true,
+              builder: (context, params) => CoronaWidget(),
             )
           ].map((r) => r.toRoute(appStateNotifier)).toList(),
         ),

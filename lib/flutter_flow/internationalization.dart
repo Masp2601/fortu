@@ -1901,29 +1901,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'Hogar',
     },
   },
-  // corona
-  {
-    'lb5w235t': {
-      'en': 'Hello World',
-      'es': 'puntuaciòn:',
-    },
-    '49cz8drl': {
-      'en': '',
-      'es': '',
-    },
-    'dd8xix6z': {
-      'en': 'Hello World',
-      'es': '\$567.000',
-    },
-    'coyixldo': {
-      'en': 'balance:',
-      'es': 'saldo:',
-    },
-    'zqfwewo2': {
-      'en': 'Home',
-      'es': 'Hogar',
-    },
-  },
   // espejo
   {
     '9ndjbrmv': {
@@ -1984,6 +1961,42 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'volver home',
     },
     'bo2rzcq4': {
+      'en': 'Home',
+      'es': 'Hogar',
+    },
+  },
+  // corona
+  {
+    'aavhv3k2': {
+      'en': 'Description',
+      'es': 'Descripción',
+    },
+    '20glzvey': {
+      'en': 'balance',
+      'es': 'Saldo',
+    },
+    'j8kewuvy': {
+      'en': 'Hello World',
+      'es': '\$567.000',
+    },
+    '81ggc51a': {
+      'en': 'Hello World',
+      'es':
+          'lknlknpnknlkniknpñn´lknlknlkn\njkvbkñjvñbkjbñkjbujbijf6asuy\nlkasjcpdsivhnd odfihoihgnrt lk',
+    },
+    'z1zdj4jn': {
+      'en': 'punctuation',
+      'es': 'puntuación',
+    },
+    'qv2pzsgt': {
+      'en': 'payment method',
+      'es': 'método de pago',
+    },
+    'kp0bowfs': {
+      'en': 'return home',
+      'es': 'volver home',
+    },
+    'msyp59fq': {
       'en': 'Home',
       'es': 'Hogar',
     },

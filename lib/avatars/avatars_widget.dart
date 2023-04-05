@@ -129,9 +129,7 @@ class _AvatarsWidgetState extends State<AvatarsWidget> {
                                             context.pushNamed('corona');
                                           },
                                           child: Image.asset(
-                                            'assets/images/corona.png',
-                                            width: 80.1,
-                                            height: 91.1,
+                                            'assets/images/rey.png',
                                             fit: BoxFit.cover,
                                           ),
                                         ),
@@ -521,12 +519,22 @@ class _AvatarsWidgetState extends State<AvatarsWidget> {
                                       Padding(
                                         padding: EdgeInsetsDirectional.fromSTEB(
                                             10.0, 0.0, 0.0, 0.0),
-                                        child: ClipRRect(
-                                          borderRadius:
-                                              BorderRadius.circular(8.0),
-                                          child: Image.asset(
-                                            'assets/images/cash.png',
-                                            fit: BoxFit.cover,
+                                        child: InkWell(
+                                          onTap: () async {
+                                            logFirebaseEvent(
+                                                'AVATARS_PAGE_Image_n02jkl36_ON_TAP');
+                                            logFirebaseEvent(
+                                                'Image_navigate_to');
+
+                                            context.pushNamed('cashavatar');
+                                          },
+                                          child: ClipRRect(
+                                            borderRadius:
+                                                BorderRadius.circular(8.0),
+                                            child: Image.asset(
+                                              'assets/images/dinero.png',
+                                              fit: BoxFit.cover,
+                                            ),
                                           ),
                                         ),
                                       ),
