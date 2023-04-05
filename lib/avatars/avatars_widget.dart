@@ -298,12 +298,22 @@ class _AvatarsWidgetState extends State<AvatarsWidget> {
                                       Padding(
                                         padding: EdgeInsetsDirectional.fromSTEB(
                                             0.0, 0.0, 35.0, 0.0),
-                                        child: ClipRRect(
-                                          borderRadius:
-                                              BorderRadius.circular(8.0),
-                                          child: Image.asset(
-                                            'assets/images/brujula.png',
-                                            fit: BoxFit.cover,
+                                        child: InkWell(
+                                          onTap: () async {
+                                            logFirebaseEvent(
+                                                'AVATARS_PAGE_Image_oq7c7bn2_ON_TAP');
+                                            logFirebaseEvent(
+                                                'Image_navigate_to');
+
+                                            context.pushNamed('brujula');
+                                          },
+                                          child: ClipRRect(
+                                            borderRadius:
+                                                BorderRadius.circular(8.0),
+                                            child: Image.asset(
+                                              'assets/images/brujula.png',
+                                              fit: BoxFit.cover,
+                                            ),
                                           ),
                                         ),
                                       ),
@@ -321,25 +331,45 @@ class _AvatarsWidgetState extends State<AvatarsWidget> {
                                       Padding(
                                         padding: EdgeInsetsDirectional.fromSTEB(
                                             40.0, 0.0, 80.0, 0.0),
-                                        child: ClipRRect(
-                                          borderRadius:
-                                              BorderRadius.circular(8.0),
-                                          child: Image.asset(
-                                            'assets/images/espejo.png',
-                                            height: 70.0,
-                                            fit: BoxFit.cover,
+                                        child: InkWell(
+                                          onTap: () async {
+                                            logFirebaseEvent(
+                                                'AVATARS_PAGE_Image_8ok4bu32_ON_TAP');
+                                            logFirebaseEvent(
+                                                'Image_navigate_to');
+
+                                            context.pushNamed('espejomagico');
+                                          },
+                                          child: ClipRRect(
+                                            borderRadius:
+                                                BorderRadius.circular(8.0),
+                                            child: Image.asset(
+                                              'assets/images/espejo.png',
+                                              height: 70.0,
+                                              fit: BoxFit.cover,
+                                            ),
                                           ),
                                         ),
                                       ),
                                       Padding(
                                         padding: EdgeInsetsDirectional.fromSTEB(
                                             30.0, 0.0, 0.0, 0.0),
-                                        child: ClipRRect(
-                                          borderRadius:
-                                              BorderRadius.circular(8.0),
-                                          child: Image.asset(
-                                            'assets/images/magia.png',
-                                            fit: BoxFit.cover,
+                                        child: InkWell(
+                                          onTap: () async {
+                                            logFirebaseEvent(
+                                                'AVATARS_PAGE_Image_yzzambov_ON_TAP');
+                                            logFirebaseEvent(
+                                                'Image_navigate_to');
+
+                                            context.pushNamed('magia');
+                                          },
+                                          child: ClipRRect(
+                                            borderRadius:
+                                                BorderRadius.circular(8.0),
+                                            child: Image.asset(
+                                              'assets/images/magia.png',
+                                              fit: BoxFit.cover,
+                                            ),
                                           ),
                                         ),
                                       ),
@@ -363,12 +393,22 @@ class _AvatarsWidgetState extends State<AvatarsWidget> {
                                       Padding(
                                         padding: EdgeInsetsDirectional.fromSTEB(
                                             0.0, 0.0, 35.0, 0.0),
-                                        child: ClipRRect(
-                                          borderRadius:
-                                              BorderRadius.circular(8.0),
-                                          child: Image.asset(
-                                            'assets/images/libro.png',
-                                            fit: BoxFit.cover,
+                                        child: InkWell(
+                                          onTap: () async {
+                                            logFirebaseEvent(
+                                                'AVATARS_PAGE_Image_x90gp8qu_ON_TAP');
+                                            logFirebaseEvent(
+                                                'Image_navigate_to');
+
+                                            context.pushNamed('libro');
+                                          },
+                                          child: ClipRRect(
+                                            borderRadius:
+                                                BorderRadius.circular(8.0),
+                                            child: Image.asset(
+                                              'assets/images/libro.png',
+                                              fit: BoxFit.cover,
+                                            ),
                                           ),
                                         ),
                                       ),
@@ -386,13 +426,23 @@ class _AvatarsWidgetState extends State<AvatarsWidget> {
                                       Padding(
                                         padding: EdgeInsetsDirectional.fromSTEB(
                                             40.0, 0.0, 80.0, 0.0),
-                                        child: ClipRRect(
-                                          borderRadius:
-                                              BorderRadius.circular(8.0),
-                                          child: Image.asset(
-                                            'assets/images/hielo.png',
-                                            height: 70.0,
-                                            fit: BoxFit.cover,
+                                        child: InkWell(
+                                          onTap: () async {
+                                            logFirebaseEvent(
+                                                'AVATARS_PAGE_Image_zdrnyo6k_ON_TAP');
+                                            logFirebaseEvent(
+                                                'Image_navigate_to');
+
+                                            context.pushNamed('hielo');
+                                          },
+                                          child: ClipRRect(
+                                            borderRadius:
+                                                BorderRadius.circular(8.0),
+                                            child: Image.asset(
+                                              'assets/images/hielo.png',
+                                              height: 70.0,
+                                              fit: BoxFit.cover,
+                                            ),
                                           ),
                                         ),
                                       ),
@@ -443,12 +493,22 @@ class _AvatarsWidgetState extends State<AvatarsWidget> {
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 0.0, 35.0, 0.0),
-                                          child: ClipRRect(
-                                            borderRadius:
-                                                BorderRadius.circular(8.0),
-                                            child: Image.asset(
-                                              'assets/images/tierra.png',
-                                              fit: BoxFit.cover,
+                                          child: InkWell(
+                                            onTap: () async {
+                                              logFirebaseEvent(
+                                                  'AVATARS_PAGE_Image_p60e07a1_ON_TAP');
+                                              logFirebaseEvent(
+                                                  'Image_navigate_to');
+
+                                              context.pushNamed('obni');
+                                            },
+                                            child: ClipRRect(
+                                              borderRadius:
+                                                  BorderRadius.circular(8.0),
+                                              child: Image.asset(
+                                                'assets/images/obni.png',
+                                                fit: BoxFit.cover,
+                                              ),
                                             ),
                                           ),
                                         ),
@@ -466,24 +526,44 @@ class _AvatarsWidgetState extends State<AvatarsWidget> {
                                       Padding(
                                         padding: EdgeInsetsDirectional.fromSTEB(
                                             30.0, 0.0, 80.0, 0.0),
-                                        child: ClipRRect(
-                                          borderRadius:
-                                              BorderRadius.circular(8.0),
-                                          child: Image.asset(
-                                            'assets/images/planet.png',
-                                            fit: BoxFit.cover,
+                                        child: InkWell(
+                                          onTap: () async {
+                                            logFirebaseEvent(
+                                                'AVATARS_PAGE_Image_xecak58i_ON_TAP');
+                                            logFirebaseEvent(
+                                                'Image_navigate_to');
+
+                                            context.pushNamed('planet');
+                                          },
+                                          child: ClipRRect(
+                                            borderRadius:
+                                                BorderRadius.circular(8.0),
+                                            child: Image.asset(
+                                              'assets/images/planet.png',
+                                              fit: BoxFit.cover,
+                                            ),
                                           ),
                                         ),
                                       ),
                                       Padding(
                                         padding: EdgeInsetsDirectional.fromSTEB(
                                             20.0, 0.0, 5.0, 0.0),
-                                        child: ClipRRect(
-                                          borderRadius:
-                                              BorderRadius.circular(8.0),
-                                          child: Image.asset(
-                                            'assets/images/planeta.png',
-                                            fit: BoxFit.cover,
+                                        child: InkWell(
+                                          onTap: () async {
+                                            logFirebaseEvent(
+                                                'AVATARS_PAGE_Image_64owrqms_ON_TAP');
+                                            logFirebaseEvent(
+                                                'Image_navigate_to');
+
+                                            context.pushNamed('planeta');
+                                          },
+                                          child: ClipRRect(
+                                            borderRadius:
+                                                BorderRadius.circular(8.0),
+                                            child: Image.asset(
+                                              'assets/images/planeta.png',
+                                              fit: BoxFit.cover,
+                                            ),
                                           ),
                                         ),
                                       ),

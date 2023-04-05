@@ -2167,6 +2167,294 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'Hogar',
     },
   },
+  // brujula
+  {
+    'ds056msg': {
+      'en': 'Description',
+      'es': 'Descripción',
+    },
+    '35su627o': {
+      'en': 'balance',
+      'es': 'Saldo',
+    },
+    'br7pibkf': {
+      'en': 'Hello World',
+      'es': '\$567.000',
+    },
+    'pzkysvqp': {
+      'en': 'Hello World',
+      'es':
+          'lknlknpnknlkniknpñn´lknlknlkn\njkvbkñjvñbkjbñkjbujbijf6asuy\nlkasjcpdsivhnd odfihoihgnrt lk',
+    },
+    'll5rngww': {
+      'en': 'punctuation',
+      'es': 'puntuación',
+    },
+    '5pqfgukd': {
+      'en': 'payment method',
+      'es': 'método de pago',
+    },
+    'pqm7o5ux': {
+      'en': 'return home',
+      'es': 'volver home',
+    },
+    'ee4ez5j6': {
+      'en': 'Home',
+      'es': 'Hogar',
+    },
+  },
+  // espejomagico
+  {
+    'rttqtu8x': {
+      'en': 'Description',
+      'es': 'Descripción',
+    },
+    'kyijp0a5': {
+      'en': 'balance',
+      'es': 'Saldo',
+    },
+    '773k21j5': {
+      'en': 'Hello World',
+      'es': '\$567.000',
+    },
+    'mob3pxts': {
+      'en': 'Hello World',
+      'es':
+          'lknlknpnknlkniknpñn´lknlknlkn\njkvbkñjvñbkjbñkjbujbijf6asuy\nlkasjcpdsivhnd odfihoihgnrt lk',
+    },
+    '3f02xc9b': {
+      'en': 'punctuation',
+      'es': 'puntuación',
+    },
+    'uttg6yst': {
+      'en': 'payment method',
+      'es': 'método de pago',
+    },
+    '216cqjzn': {
+      'en': 'return home',
+      'es': 'volver home',
+    },
+    '74j6h1pd': {
+      'en': 'Home',
+      'es': 'Hogar',
+    },
+  },
+  // magia
+  {
+    'gcbdkq4i': {
+      'en': 'Description',
+      'es': 'Descripción',
+    },
+    'gyxalwa8': {
+      'en': 'balance',
+      'es': 'Saldo',
+    },
+    'riy6zsuv': {
+      'en': 'Hello World',
+      'es': '\$567.000',
+    },
+    '5oi0ojxg': {
+      'en': 'Hello World',
+      'es':
+          'lknlknpnknlkniknpñn´lknlknlkn\njkvbkñjvñbkjbñkjbujbijf6asuy\nlkasjcpdsivhnd odfihoihgnrt lk',
+    },
+    'ro3th60b': {
+      'en': 'punctuation',
+      'es': 'puntuación',
+    },
+    'w0u7lc8o': {
+      'en': 'payment method',
+      'es': 'método de pago',
+    },
+    'ojq08hox': {
+      'en': 'return home',
+      'es': 'volver home',
+    },
+    'l60xln01': {
+      'en': 'Home',
+      'es': 'Hogar',
+    },
+  },
+  // libro
+  {
+    '8h7fnoo7': {
+      'en': 'Description',
+      'es': 'Descripción',
+    },
+    'trs1f4qr': {
+      'en': 'balance',
+      'es': 'Saldo',
+    },
+    'auffn12e': {
+      'en': 'Hello World',
+      'es': '\$567.000',
+    },
+    'omqj3f24': {
+      'en': 'Hello World',
+      'es':
+          'lknlknpnknlkniknpñn´lknlknlkn\njkvbkñjvñbkjbñkjbujbijf6asuy\nlkasjcpdsivhnd odfihoihgnrt lk',
+    },
+    'hhw32082': {
+      'en': 'punctuation',
+      'es': 'puntuación',
+    },
+    'vwrhwz2y': {
+      'en': 'payment method',
+      'es': 'método de pago',
+    },
+    'lf2irv8c': {
+      'en': 'return home',
+      'es': 'volver home',
+    },
+    'dg3059qj': {
+      'en': 'Home',
+      'es': 'Hogar',
+    },
+  },
+  // hielo
+  {
+    '3pcxdnhf': {
+      'en': 'Description',
+      'es': 'Descripción',
+    },
+    'nloak4pg': {
+      'en': 'balance',
+      'es': 'Saldo',
+    },
+    '0cy1i5x6': {
+      'en': 'Hello World',
+      'es': '\$567.000',
+    },
+    'ugvgl1o5': {
+      'en': 'Hello World',
+      'es':
+          'lknlknpnknlkniknpñn´lknlknlkn\njkvbkñjvñbkjbñkjbujbijf6asuy\nlkasjcpdsivhnd odfihoihgnrt lk',
+    },
+    'xhmpdtjh': {
+      'en': 'punctuation',
+      'es': 'puntuación',
+    },
+    'wrwz4fjr': {
+      'en': 'payment method',
+      'es': 'método de pago',
+    },
+    '25i4ga4y': {
+      'en': 'return home',
+      'es': 'volver home',
+    },
+    'onwsov3b': {
+      'en': 'Home',
+      'es': 'Hogar',
+    },
+  },
+  // obni
+  {
+    'wu1sx4ez': {
+      'en': 'Description',
+      'es': 'Descripción',
+    },
+    'umolsecn': {
+      'en': 'balance',
+      'es': 'Saldo',
+    },
+    'qvheqzjk': {
+      'en': 'Hello World',
+      'es': '\$567.000',
+    },
+    '41xtuxg1': {
+      'en': 'Hello World',
+      'es':
+          'lknlknpnknlkniknpñn´lknlknlkn\njkvbkñjvñbkjbñkjbujbijf6asuy\nlkasjcpdsivhnd odfihoihgnrt lk',
+    },
+    'dgt4murw': {
+      'en': 'punctuation',
+      'es': 'puntuación',
+    },
+    'bod1o05u': {
+      'en': 'payment method',
+      'es': 'método de pago',
+    },
+    '2xzk8nsb': {
+      'en': 'return home',
+      'es': 'volver home',
+    },
+    'c6ztx76f': {
+      'en': 'Home',
+      'es': 'Hogar',
+    },
+  },
+  // planet
+  {
+    '7bhthiaz': {
+      'en': 'Description',
+      'es': 'Descripción',
+    },
+    'mo4910h1': {
+      'en': 'balance',
+      'es': 'Saldo',
+    },
+    '5gpkgmqs': {
+      'en': 'Hello World',
+      'es': '\$567.000',
+    },
+    'odlrccow': {
+      'en': 'Hello World',
+      'es':
+          'lknlknpnknlkniknpñn´lknlknlkn\njkvbkñjvñbkjbñkjbujbijf6asuy\nlkasjcpdsivhnd odfihoihgnrt lk',
+    },
+    's6qiuee2': {
+      'en': 'punctuation',
+      'es': 'puntuación',
+    },
+    't5s38o2a': {
+      'en': 'payment method',
+      'es': 'método de pago',
+    },
+    'inaaty3p': {
+      'en': 'return home',
+      'es': 'volver home',
+    },
+    'vsm1nxzt': {
+      'en': 'Home',
+      'es': 'Hogar',
+    },
+  },
+  // planeta
+  {
+    'vp58er1k': {
+      'en': 'Description',
+      'es': 'Descripción',
+    },
+    'm15lbgf0': {
+      'en': 'balance',
+      'es': 'Saldo',
+    },
+    'agmvfm9f': {
+      'en': 'Hello World',
+      'es': '\$567.000',
+    },
+    'a8bgnkbb': {
+      'en': 'Hello World',
+      'es':
+          'lknlknpnknlkniknpñn´lknlknlkn\njkvbkñjvñbkjbñkjbujbijf6asuy\nlkasjcpdsivhnd odfihoihgnrt lk',
+    },
+    'bnz5hl2r': {
+      'en': 'punctuation',
+      'es': 'puntuación',
+    },
+    'dkj12pdf': {
+      'en': 'payment method',
+      'es': 'método de pago',
+    },
+    '4liv297l': {
+      'en': 'return home',
+      'es': 'volver home',
+    },
+    '1u2rvmy7': {
+      'en': 'Home',
+      'es': 'Hogar',
+    },
+  },
   // bookAppointment
   {
     'sfzj3riz': {
