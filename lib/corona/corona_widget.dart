@@ -98,7 +98,7 @@ class _CoronaWidgetState extends State<CoronaWidget>
                               padding: EdgeInsetsDirectional.fromSTEB(
                                   0.0, 0.0, 0.0, 140.0),
                               child: Image.asset(
-                                'assets/images/coron.png',
+                                'assets/images/cashgreen.png',
                                 width: 1500.0,
                                 fit: BoxFit.cover,
                               ),
@@ -135,6 +135,17 @@ class _CoronaWidgetState extends State<CoronaWidget>
                                 ),
                               ),
                             ),
+                          Align(
+                            alignment: AlignmentDirectional(0.0, 0.0),
+                            child: Padding(
+                              padding: EdgeInsetsDirectional.fromSTEB(
+                                  0.0, 0.0, 0.0, 150.0),
+                              child: Image.asset(
+                                'assets/images/coron.png',
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                          ),
                         ],
                       ),
                     ),
@@ -175,7 +186,7 @@ class _CoronaWidgetState extends State<CoronaWidget>
                                         20.0, 0.0, 0.0, 0.0),
                                     child: Text(
                                       FFLocalizations.of(context).getText(
-                                        'aavhv3k2' /* Description */,
+                                        'hj3b7isf' /* Description */,
                                       ),
                                       textAlign: TextAlign.start,
                                       style: FlutterFlowTheme.of(context)
@@ -204,7 +215,7 @@ class _CoronaWidgetState extends State<CoronaWidget>
                                   alignment: AlignmentDirectional(1.5, 2.0),
                                   child: Text(
                                     FFLocalizations.of(context).getText(
-                                      '20glzvey' /* balance */,
+                                      't67gvq4y' /* balance */,
                                     ),
                                     textAlign: TextAlign.center,
                                     style:
@@ -222,7 +233,7 @@ class _CoronaWidgetState extends State<CoronaWidget>
                                   alignment: AlignmentDirectional(0.5, 2.2),
                                   child: Text(
                                     FFLocalizations.of(context).getText(
-                                      'j8kewuvy' /* Hello World */,
+                                      'clk3mfa8' /* Hello World */,
                                     ),
                                     textAlign: TextAlign.end,
                                     style: FlutterFlowTheme.of(context)
@@ -257,7 +268,7 @@ class _CoronaWidgetState extends State<CoronaWidget>
                               0.0, 0.0, 150.0, 0.0),
                           child: Text(
                             FFLocalizations.of(context).getText(
-                              '81ggc51a' /* Hello World */,
+                              'pa03hn9w' /* Hello World */,
                             ),
                             textAlign: TextAlign.start,
                             style: FlutterFlowTheme.of(context).bodyMedium,
@@ -274,7 +285,7 @@ class _CoronaWidgetState extends State<CoronaWidget>
                           alignment: AlignmentDirectional(0.6, -8.5),
                           child: Text(
                             FFLocalizations.of(context).getText(
-                              'z1zdj4jn' /* punctuation */,
+                              'dnm7rwj7' /* punctuation */,
                             ),
                             textAlign: TextAlign.center,
                             style: FlutterFlowTheme.of(context).titleSmall,
@@ -337,7 +348,7 @@ class _CoronaWidgetState extends State<CoronaWidget>
                                           40.0, 15.0, 0.0, 0.0),
                                       child: Text(
                                         FFLocalizations.of(context).getText(
-                                          'qv2pzsgt' /* payment method */,
+                                          'sfpqfrw5' /* payment method */,
                                         ),
                                         style: FlutterFlowTheme.of(context)
                                             .bodyMedium,
@@ -351,7 +362,7 @@ class _CoronaWidgetState extends State<CoronaWidget>
                                           220.0, 15.0, 0.0, 0.0),
                                       child: Text(
                                         FFLocalizations.of(context).getText(
-                                          'kp0bowfs' /* return home */,
+                                          'hkrzq1mf' /* return home */,
                                         ),
                                         style: FlutterFlowTheme.of(context)
                                             .bodyMedium,

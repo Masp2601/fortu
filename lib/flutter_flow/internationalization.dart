@@ -1967,36 +1967,36 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   },
   // corona
   {
-    'aavhv3k2': {
+    'hj3b7isf': {
       'en': 'Description',
       'es': 'Descripción',
     },
-    '20glzvey': {
+    't67gvq4y': {
       'en': 'balance',
       'es': 'Saldo',
     },
-    'j8kewuvy': {
+    'clk3mfa8': {
       'en': 'Hello World',
       'es': '\$567.000',
     },
-    '81ggc51a': {
+    'pa03hn9w': {
       'en': 'Hello World',
       'es':
           'lknlknpnknlkniknpñn´lknlknlkn\njkvbkñjvñbkjbñkjbujbijf6asuy\nlkasjcpdsivhnd odfihoihgnrt lk',
     },
-    'z1zdj4jn': {
+    'dnm7rwj7': {
       'en': 'punctuation',
       'es': 'puntuación',
     },
-    'qv2pzsgt': {
+    'sfpqfrw5': {
       'en': 'payment method',
       'es': 'método de pago',
     },
-    'kp0bowfs': {
+    'hkrzq1mf': {
       'en': 'return home',
       'es': 'volver home',
     },
-    'msyp59fq': {
+    'p7d18vo6': {
       'en': 'Home',
       'es': 'Hogar',
     },
