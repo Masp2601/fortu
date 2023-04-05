@@ -2455,6 +2455,78 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'Hogar',
     },
   },
+  // tierraavatar
+  {
+    'w782j1qx': {
+      'en': 'Description',
+      'es': 'Descripción',
+    },
+    'svewvn12': {
+      'en': 'balance',
+      'es': 'Saldo',
+    },
+    '1gnoyst0': {
+      'en': 'Hello World',
+      'es': '\$567.000',
+    },
+    'kgh19hjm': {
+      'en': 'Hello World',
+      'es':
+          'lknlknpnknlkniknpñn´lknlknlkn\njkvbkñjvñbkjbñkjbujbijf6asuy\nlkasjcpdsivhnd odfihoihgnrt lk',
+    },
+    'qfy7ujbp': {
+      'en': 'punctuation',
+      'es': 'puntuación',
+    },
+    'mjdts4iq': {
+      'en': 'payment method',
+      'es': 'método de pago',
+    },
+    'brh8g7kj': {
+      'en': 'return home',
+      'es': 'volver home',
+    },
+    'hcm87sa8': {
+      'en': 'Home',
+      'es': 'Hogar',
+    },
+  },
+  // cristal
+  {
+    'o93x7wk1': {
+      'en': 'Description',
+      'es': 'Descripción',
+    },
+    'sjdqyq9e': {
+      'en': 'balance',
+      'es': 'Saldo',
+    },
+    'whtu7ear': {
+      'en': 'Hello World',
+      'es': '\$567.000',
+    },
+    '6co0v7a1': {
+      'en': 'Hello World',
+      'es':
+          'lknlknpnknlkniknpñn´lknlknlkn\njkvbkñjvñbkjbñkjbujbijf6asuy\nlkasjcpdsivhnd odfihoihgnrt lk',
+    },
+    'x8i12sf9': {
+      'en': 'punctuation',
+      'es': 'puntuación',
+    },
+    'jnrj8z8l': {
+      'en': 'payment method',
+      'es': 'método de pago',
+    },
+    '1rmck2vw': {
+      'en': 'return home',
+      'es': 'volver home',
+    },
+    'a475sjdt': {
+      'en': 'Home',
+      'es': 'Hogar',
+    },
+  },
   // bookAppointment
   {
     'sfzj3riz': {

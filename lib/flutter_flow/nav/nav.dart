@@ -439,6 +439,18 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               path: 'planeta',
               requireAuth: true,
               builder: (context, params) => PlanetaWidget(),
+            ),
+            FFRoute(
+              name: 'tierraavatar',
+              path: 'tierraavatar',
+              requireAuth: true,
+              builder: (context, params) => TierraavatarWidget(),
+            ),
+            FFRoute(
+              name: 'cristal',
+              path: 'cristal',
+              requireAuth: true,
+              builder: (context, params) => CristalWidget(),
             )
           ].map((r) => r.toRoute(appStateNotifier)).toList(),
         ),

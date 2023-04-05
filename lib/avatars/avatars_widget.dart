@@ -593,12 +593,22 @@ class _AvatarsWidgetState extends State<AvatarsWidget> {
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 0.0, 35.0, 0.0),
-                                          child: ClipRRect(
-                                            borderRadius:
-                                                BorderRadius.circular(8.0),
-                                            child: Image.asset(
-                                              'assets/images/tierra.png',
-                                              fit: BoxFit.cover,
+                                          child: InkWell(
+                                            onTap: () async {
+                                              logFirebaseEvent(
+                                                  'AVATARS_PAGE_Image_3q8x2vjb_ON_TAP');
+                                              logFirebaseEvent(
+                                                  'Image_navigate_to');
+
+                                              context.pushNamed('tierraavatar');
+                                            },
+                                            child: ClipRRect(
+                                              borderRadius:
+                                                  BorderRadius.circular(8.0),
+                                              child: Image.asset(
+                                                'assets/images/tierra.png',
+                                                fit: BoxFit.cover,
+                                              ),
                                             ),
                                           ),
                                         ),
@@ -616,12 +626,22 @@ class _AvatarsWidgetState extends State<AvatarsWidget> {
                                       Padding(
                                         padding: EdgeInsetsDirectional.fromSTEB(
                                             30.0, 0.0, 80.0, 0.0),
-                                        child: ClipRRect(
-                                          borderRadius:
-                                              BorderRadius.circular(8.0),
-                                          child: Image.asset(
-                                            'assets/images/cristal.png',
-                                            fit: BoxFit.cover,
+                                        child: InkWell(
+                                          onTap: () async {
+                                            logFirebaseEvent(
+                                                'AVATARS_PAGE_Image_5crfvyr4_ON_TAP');
+                                            logFirebaseEvent(
+                                                'Image_navigate_to');
+
+                                            context.pushNamed('cristal');
+                                          },
+                                          child: ClipRRect(
+                                            borderRadius:
+                                                BorderRadius.circular(8.0),
+                                            child: Image.asset(
+                                              'assets/images/cristal.png',
+                                              fit: BoxFit.cover,
+                                            ),
                                           ),
                                         ),
                                       ),
