@@ -64,3 +64,4 @@ export '/planet/planet_widget.dart' show PlanetWidget;
 export '/planeta/planeta_widget.dart' show PlanetaWidget;
 export '/tierraavatar/tierraavatar_widget.dart' show TierraavatarWidget;
 export '/cristal/cristal_widget.dart' show CristalWidget;
+export '/jarron/jarron_widget.dart' show JarronWidget;

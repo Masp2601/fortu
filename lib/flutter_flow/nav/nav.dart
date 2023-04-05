@@ -451,6 +451,12 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               path: 'cristal',
               requireAuth: true,
               builder: (context, params) => CristalWidget(),
+            ),
+            FFRoute(
+              name: 'jarron',
+              path: 'jarron',
+              requireAuth: true,
+              builder: (context, params) => JarronWidget(),
             )
           ].map((r) => r.toRoute(appStateNotifier)).toList(),
         ),
