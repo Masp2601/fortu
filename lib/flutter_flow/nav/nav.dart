@@ -367,6 +367,12 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
                 users: params.getParam('users', ParamType.String),
                 saldo: params.getParam('saldo', ParamType.String),
               ),
+            ),
+            FFRoute(
+              name: 'cashavatar',
+              path: 'cashavatar',
+              requireAuth: true,
+              builder: (context, params) => CashavatarWidget(),
             )
           ].map((r) => r.toRoute(appStateNotifier)).toList(),
         ),

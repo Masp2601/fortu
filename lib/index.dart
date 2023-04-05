@@ -50,3 +50,4 @@ export '/espejo/espejo_widget.dart' show EspejoWidget;
 export '/mundomagico/mundomagico_widget.dart' show MundomagicoWidget;
 export '/ciencop/ciencop_widget.dart' show CiencopWidget;
 export '/docientoscop/docientoscop_widget.dart' show DocientoscopWidget;
+export '/cashavatar/cashavatar_widget.dart' show CashavatarWidget;

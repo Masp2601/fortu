@@ -58,25 +58,34 @@ class _MundomagicoWidgetState extends State<MundomagicoWidget> {
                   ).image,
                 ),
               ),
-              child: Padding(
-                padding:
-                    EdgeInsetsDirectional.fromSTEB(105.0, 190.0, 100.0, 80.0),
-                child: Row(
-                  mainAxisSize: MainAxisSize.max,
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Padding(
-                      padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 80.0),
-                      child: Image.asset(
-                        'assets/images/mundocristal.png',
-                        width: 163.8,
-                        height: 198.0,
-                        fit: BoxFit.cover,
-                      ),
+              child: Row(
+                mainAxisSize: MainAxisSize.max,
+                children: [
+                  Padding(
+                    padding: EdgeInsetsDirectional.fromSTEB(
+                        105.0, 190.0, 100.0, 100.0),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.max,
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(
+                              0.0, 0.0, 0.0, 80.0),
+                          child: Image.asset(
+                            'assets/images/mundocristal.png',
+                            width: 163.8,
+                            height: 198.0,
+                            fit: BoxFit.cover,
+                          ),
+                        ),
+                      ],
                     ),
-                  ],
-                ),
+                  ),
+                  Row(
+                    mainAxisSize: MainAxisSize.max,
+                    children: [],
+                  ),
+                ],
               ),
             ),
           ),

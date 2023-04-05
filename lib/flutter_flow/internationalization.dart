@@ -1952,6 +1952,42 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'en línea',
     },
   },
+  // cashavatar
+  {
+    'qzwn8tyw': {
+      'en': 'Description',
+      'es': 'Descripción',
+    },
+    'ghizkjw7': {
+      'en': 'balance',
+      'es': 'Saldo',
+    },
+    'pzz2lncu': {
+      'en': 'Hello World',
+      'es': '\$567.000',
+    },
+    'ow6rsww7': {
+      'en': 'Hello World',
+      'es':
+          'lknlknpnknlkniknpñn´lknlknlkn\njkvbkñjvñbkjbñkjbujbijf6asuy\nlkasjcpdsivhnd odfihoihgnrt lk',
+    },
+    'uw5ioc3e': {
+      'en': 'punctuation',
+      'es': 'puntuación',
+    },
+    '7bg80v5b': {
+      'en': 'payment method',
+      'es': 'método de pago',
+    },
+    'sg4a91i9': {
+      'en': 'return home',
+      'es': 'volver home',
+    },
+    'bo2rzcq4': {
+      'en': 'Home',
+      'es': 'Hogar',
+    },
+  },
   // bookAppointment
   {
     'sfzj3riz': {
