@@ -98,7 +98,7 @@ class _CoronaWidgetState extends State<CoronaWidget>
                               padding: EdgeInsetsDirectional.fromSTEB(
                                   0.0, 0.0, 0.0, 140.0),
                               child: Image.asset(
-                                'assets/images/cashgreen.png',
+                                'assets/images/coron.png',
                                 width: 1500.0,
                                 fit: BoxFit.cover,
                               ),
@@ -135,17 +135,6 @@ class _CoronaWidgetState extends State<CoronaWidget>
                                 ),
                               ),
                             ),
-                          Align(
-                            alignment: AlignmentDirectional(0.0, 0.0),
-                            child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
-                                  0.0, 0.0, 0.0, 150.0),
-                              child: Image.asset(
-                                'assets/images/coron.png',
-                                fit: BoxFit.cover,
-                              ),
-                            ),
-                          ),
                         ],
                       ),
                     ),
