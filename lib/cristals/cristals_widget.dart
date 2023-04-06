@@ -98,8 +98,7 @@ class _CristalsWidgetState extends State<CristalsWidget>
                               padding: EdgeInsetsDirectional.fromSTEB(
                                   0.0, 0.0, 0.0, 140.0),
                               child: Image.asset(
-                                'assets/images/crist.png',
-                                width: 120.0,
+                                'assets/images/cristalss.png',
                                 fit: BoxFit.cover,
                               ),
                             ),
@@ -113,7 +112,7 @@ class _CristalsWidgetState extends State<CristalsWidget>
                               alignment: AlignmentDirectional(0.0, 0.0),
                               child: Padding(
                                 padding: EdgeInsetsDirectional.fromSTEB(
-                                    0.0, 40.0, 0.0, 0.0),
+                                    0.0, 50.0, 0.0, 0.0),
                                 child: AuthUserStreamWidget(
                                   builder: (context) => Text(
                                     currentUserDisplayName,

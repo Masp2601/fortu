@@ -449,12 +449,22 @@ class _AvatarsWidgetState extends State<AvatarsWidget> {
                                       Padding(
                                         padding: EdgeInsetsDirectional.fromSTEB(
                                             30.0, 0.0, 0.0, 0.0),
-                                        child: ClipRRect(
-                                          borderRadius:
-                                              BorderRadius.circular(8.0),
-                                          child: Image.asset(
-                                            'assets/images/magica.png',
-                                            fit: BoxFit.cover,
+                                        child: InkWell(
+                                          onTap: () async {
+                                            logFirebaseEvent(
+                                                'AVATARS_PAGE_Image_cvezqmml_ON_TAP');
+                                            logFirebaseEvent(
+                                                'Image_navigate_to');
+
+                                            context.pushNamed('magica');
+                                          },
+                                          child: ClipRRect(
+                                            borderRadius:
+                                                BorderRadius.circular(8.0),
+                                            child: Image.asset(
+                                              'assets/images/magica.png',
+                                              fit: BoxFit.cover,
+                                            ),
                                           ),
                                         ),
                                       ),

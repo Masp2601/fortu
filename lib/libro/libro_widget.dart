@@ -98,8 +98,7 @@ class _LibroWidgetState extends State<LibroWidget>
                               padding: EdgeInsetsDirectional.fromSTEB(
                                   0.0, 0.0, 0.0, 140.0),
                               child: Image.asset(
-                                'assets/images/libro.png',
-                                width: 100.0,
+                                'assets/images/book.png',
                                 fit: BoxFit.cover,
                               ),
                             ),

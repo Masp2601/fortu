@@ -97,8 +97,7 @@ class _NaveWidgetState extends State<NaveWidget> with TickerProviderStateMixin {
                               padding: EdgeInsetsDirectional.fromSTEB(
                                   0.0, 0.0, 0.0, 140.0),
                               child: Image.asset(
-                                'assets/images/nave.png',
-                                width: 120.0,
+                                'assets/images/nav.png',
                                 fit: BoxFit.cover,
                               ),
                             ),
@@ -112,7 +111,7 @@ class _NaveWidgetState extends State<NaveWidget> with TickerProviderStateMixin {
                               alignment: AlignmentDirectional(0.0, 0.0),
                               child: Padding(
                                 padding: EdgeInsetsDirectional.fromSTEB(
-                                    0.0, 40.0, 0.0, 0.0),
+                                    0.0, 50.0, 0.0, 0.0),
                                 child: AuthUserStreamWidget(
                                   builder: (context) => Text(
                                     currentUserDisplayName,

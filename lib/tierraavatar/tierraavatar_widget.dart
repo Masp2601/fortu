@@ -99,8 +99,7 @@ class _TierraavatarWidgetState extends State<TierraavatarWidget>
                               padding: EdgeInsetsDirectional.fromSTEB(
                                   0.0, 0.0, 0.0, 140.0),
                               child: Image.asset(
-                                'assets/images/tierra.png',
-                                width: 100.0,
+                                'assets/images/wagrow.png',
                                 fit: BoxFit.cover,
                               ),
                             ),
@@ -114,7 +113,7 @@ class _TierraavatarWidgetState extends State<TierraavatarWidget>
                               alignment: AlignmentDirectional(0.0, 0.0),
                               child: Padding(
                                 padding: EdgeInsetsDirectional.fromSTEB(
-                                    0.0, 40.0, 0.0, 0.0),
+                                    0.0, 50.0, 0.0, 0.0),
                                 child: AuthUserStreamWidget(
                                   builder: (context) => Text(
                                     currentUserDisplayName,

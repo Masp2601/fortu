@@ -98,8 +98,7 @@ class _MagiaWidgetState extends State<MagiaWidget>
                               padding: EdgeInsetsDirectional.fromSTEB(
                                   0.0, 0.0, 0.0, 150.0),
                               child: Image.asset(
-                                'assets/images/magia.png',
-                                width: 100.0,
+                                'assets/images/magic.png',
                                 fit: BoxFit.cover,
                               ),
                             ),

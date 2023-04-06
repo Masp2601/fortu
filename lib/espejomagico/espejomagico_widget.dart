@@ -99,8 +99,7 @@ class _EspejomagicoWidgetState extends State<EspejomagicoWidget>
                               padding: EdgeInsetsDirectional.fromSTEB(
                                   0.0, 0.0, 0.0, 140.0),
                               child: Image.asset(
-                                'assets/images/espejo.png',
-                                width: 100.0,
+                                'assets/images/windowmagic.png',
                                 fit: BoxFit.cover,
                               ),
                             ),

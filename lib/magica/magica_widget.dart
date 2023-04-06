@@ -9,18 +9,19 @@ import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
-import 'obni_model.dart';
-export 'obni_model.dart';
+import 'magica_model.dart';
+export 'magica_model.dart';
 
-class ObniWidget extends StatefulWidget {
-  const ObniWidget({Key? key}) : super(key: key);
+class MagicaWidget extends StatefulWidget {
+  const MagicaWidget({Key? key}) : super(key: key);
 
   @override
-  _ObniWidgetState createState() => _ObniWidgetState();
+  _MagicaWidgetState createState() => _MagicaWidgetState();
 }
 
-class _ObniWidgetState extends State<ObniWidget> with TickerProviderStateMixin {
-  late ObniModel _model;
+class _MagicaWidgetState extends State<MagicaWidget>
+    with TickerProviderStateMixin {
+  late MagicaModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
@@ -43,9 +44,9 @@ class _ObniWidgetState extends State<ObniWidget> with TickerProviderStateMixin {
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => ObniModel());
+    _model = createModel(context, () => MagicaModel());
 
-    logFirebaseEvent('screen_view', parameters: {'screen_name': 'obni'});
+    logFirebaseEvent('screen_view', parameters: {'screen_name': 'magica'});
   }
 
   @override
@@ -97,7 +98,7 @@ class _ObniWidgetState extends State<ObniWidget> with TickerProviderStateMixin {
                               padding: EdgeInsetsDirectional.fromSTEB(
                                   0.0, 0.0, 0.0, 140.0),
                               child: Image.asset(
-                                'assets/images/curios.png',
+                                'assets/images/magica.png',
                                 fit: BoxFit.cover,
                               ),
                             ),
@@ -173,7 +174,7 @@ class _ObniWidgetState extends State<ObniWidget> with TickerProviderStateMixin {
                                         20.0, 0.0, 0.0, 0.0),
                                     child: Text(
                                       FFLocalizations.of(context).getText(
-                                        'wu1sx4ez' /* Description */,
+                                        'r05mjzn2' /* Description */,
                                       ),
                                       textAlign: TextAlign.start,
                                       style: FlutterFlowTheme.of(context)
@@ -202,7 +203,7 @@ class _ObniWidgetState extends State<ObniWidget> with TickerProviderStateMixin {
                                   alignment: AlignmentDirectional(1.5, 2.0),
                                   child: Text(
                                     FFLocalizations.of(context).getText(
-                                      'umolsecn' /* balance */,
+                                      'dqncwhkz' /* balance */,
                                     ),
                                     textAlign: TextAlign.center,
                                     style:
@@ -220,7 +221,7 @@ class _ObniWidgetState extends State<ObniWidget> with TickerProviderStateMixin {
                                   alignment: AlignmentDirectional(0.5, 2.2),
                                   child: Text(
                                     FFLocalizations.of(context).getText(
-                                      'qvheqzjk' /* Hello World */,
+                                      'nqrflwzp' /* Hello World */,
                                     ),
                                     textAlign: TextAlign.end,
                                     style: FlutterFlowTheme.of(context)
@@ -255,7 +256,7 @@ class _ObniWidgetState extends State<ObniWidget> with TickerProviderStateMixin {
                               0.0, 0.0, 150.0, 0.0),
                           child: Text(
                             FFLocalizations.of(context).getText(
-                              '41xtuxg1' /* Hello World */,
+                              '1t4x9f84' /* Hello World */,
                             ),
                             textAlign: TextAlign.start,
                             style: FlutterFlowTheme.of(context).bodyMedium,
@@ -272,7 +273,7 @@ class _ObniWidgetState extends State<ObniWidget> with TickerProviderStateMixin {
                           alignment: AlignmentDirectional(0.6, -8.5),
                           child: Text(
                             FFLocalizations.of(context).getText(
-                              'dgt4murw' /* punctuation */,
+                              'uqhe06xa' /* punctuation */,
                             ),
                             textAlign: TextAlign.center,
                             style: FlutterFlowTheme.of(context).titleSmall,
@@ -335,7 +336,7 @@ class _ObniWidgetState extends State<ObniWidget> with TickerProviderStateMixin {
                                           40.0, 15.0, 0.0, 0.0),
                                       child: Text(
                                         FFLocalizations.of(context).getText(
-                                          'bod1o05u' /* payment method */,
+                                          'n1nzc1ko' /* payment method */,
                                         ),
                                         style: FlutterFlowTheme.of(context)
                                             .bodyMedium,
@@ -349,7 +350,7 @@ class _ObniWidgetState extends State<ObniWidget> with TickerProviderStateMixin {
                                           220.0, 15.0, 0.0, 0.0),
                                       child: Text(
                                         FFLocalizations.of(context).getText(
-                                          '2xzk8nsb' /* return home */,
+                                          'ycyhusj0' /* return home */,
                                         ),
                                         style: FlutterFlowTheme.of(context)
                                             .bodyMedium,

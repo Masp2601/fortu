@@ -98,8 +98,7 @@ class _RocamagicaWidgetState extends State<RocamagicaWidget>
                               padding: EdgeInsetsDirectional.fromSTEB(
                                   0.0, 0.0, 0.0, 140.0),
                               child: Image.asset(
-                                'assets/images/rocamagica.png',
-                                width: 120.0,
+                                'assets/images/roc.png',
                                 fit: BoxFit.cover,
                               ),
                             ),
@@ -113,7 +112,7 @@ class _RocamagicaWidgetState extends State<RocamagicaWidget>
                               alignment: AlignmentDirectional(0.0, 0.0),
                               child: Padding(
                                 padding: EdgeInsetsDirectional.fromSTEB(
-                                    0.0, 40.0, 0.0, 0.0),
+                                    0.0, 50.0, 0.0, 0.0),
                                 child: AuthUserStreamWidget(
                                   builder: (context) => Text(
                                     currentUserDisplayName,

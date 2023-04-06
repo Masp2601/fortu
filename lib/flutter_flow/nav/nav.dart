@@ -457,6 +457,12 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               path: 'jarron',
               requireAuth: true,
               builder: (context, params) => JarronWidget(),
+            ),
+            FFRoute(
+              name: 'magica',
+              path: 'magica',
+              requireAuth: true,
+              builder: (context, params) => MagicaWidget(),
             )
           ].map((r) => r.toRoute(appStateNotifier)).toList(),
         ),

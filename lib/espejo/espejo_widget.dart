@@ -98,8 +98,7 @@ class _EspejoWidgetState extends State<EspejoWidget>
                               padding: EdgeInsetsDirectional.fromSTEB(
                                   0.0, 0.0, 0.0, 140.0),
                               child: Image.asset(
-                                'assets/images/espej.png',
-                                width: 120.0,
+                                'assets/images/esp.png',
                                 fit: BoxFit.cover,
                               ),
                             ),

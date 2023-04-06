@@ -98,8 +98,7 @@ class _BrujulaWidgetState extends State<BrujulaWidget>
                               padding: EdgeInsetsDirectional.fromSTEB(
                                   0.0, 0.0, 0.0, 140.0),
                               child: Image.asset(
-                                'assets/images/brujula.png',
-                                width: 100.0,
+                                'assets/images/bru.png',
                                 fit: BoxFit.cover,
                               ),
                             ),
@@ -113,7 +112,7 @@ class _BrujulaWidgetState extends State<BrujulaWidget>
                               alignment: AlignmentDirectional(0.0, 0.0),
                               child: Padding(
                                 padding: EdgeInsetsDirectional.fromSTEB(
-                                    0.0, 40.0, 0.0, 0.0),
+                                    0.0, 50.0, 0.0, 0.0),
                                 child: AuthUserStreamWidget(
                                   builder: (context) => Text(
                                     currentUserDisplayName,

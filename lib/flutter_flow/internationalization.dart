@@ -2563,6 +2563,42 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'Hogar',
     },
   },
+  // magica
+  {
+    'r05mjzn2': {
+      'en': 'Description',
+      'es': 'Descripción',
+    },
+    'dqncwhkz': {
+      'en': 'balance',
+      'es': 'Saldo',
+    },
+    'nqrflwzp': {
+      'en': 'Hello World',
+      'es': '\$567.000',
+    },
+    '1t4x9f84': {
+      'en': 'Hello World',
+      'es':
+          'lknlknpnknlkniknpñn´lknlknlkn\njkvbkñjvñbkjbñkjbujbijf6asuy\nlkasjcpdsivhnd odfihoihgnrt lk',
+    },
+    'uqhe06xa': {
+      'en': 'punctuation',
+      'es': 'puntuación',
+    },
+    'n1nzc1ko': {
+      'en': 'payment method',
+      'es': 'método de pago',
+    },
+    'ycyhusj0': {
+      'en': 'return home',
+      'es': 'volver home',
+    },
+    'eipss0db': {
+      'en': 'Home',
+      'es': 'Hogar',
+    },
+  },
   // bookAppointment
   {
     'sfzj3riz': {
