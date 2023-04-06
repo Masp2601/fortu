@@ -66,3 +66,8 @@ export '/tierraavatar/tierraavatar_widget.dart' show TierraavatarWidget;
 export '/cristal/cristal_widget.dart' show CristalWidget;
 export '/jarron/jarron_widget.dart' show JarronWidget;
 export '/magica/magica_widget.dart' show MagicaWidget;
+export '/saturno/saturno_widget.dart' show SaturnoWidget;
+export '/start/start_widget.dart' show StartWidget;
+export '/relic/relic_widget.dart' show RelicWidget;
+export '/oracle/oracle_widget.dart' show OracleWidget;
+export '/clock/clock_widget.dart' show ClockWidget;

@@ -463,6 +463,36 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               path: 'magica',
               requireAuth: true,
               builder: (context, params) => MagicaWidget(),
+            ),
+            FFRoute(
+              name: 'saturno',
+              path: 'saturno',
+              requireAuth: true,
+              builder: (context, params) => SaturnoWidget(),
+            ),
+            FFRoute(
+              name: 'start',
+              path: 'start',
+              requireAuth: true,
+              builder: (context, params) => StartWidget(),
+            ),
+            FFRoute(
+              name: 'relic',
+              path: 'relic',
+              requireAuth: true,
+              builder: (context, params) => RelicWidget(),
+            ),
+            FFRoute(
+              name: 'oracle',
+              path: 'oracle',
+              requireAuth: true,
+              builder: (context, params) => OracleWidget(),
+            ),
+            FFRoute(
+              name: 'clock',
+              path: 'clock',
+              requireAuth: true,
+              builder: (context, params) => ClockWidget(),
             )
           ].map((r) => r.toRoute(appStateNotifier)).toList(),
         ),

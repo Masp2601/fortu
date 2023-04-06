@@ -9,19 +9,19 @@ import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
-import 'jarron_model.dart';
-export 'jarron_model.dart';
+import 'relic_model.dart';
+export 'relic_model.dart';
 
-class JarronWidget extends StatefulWidget {
-  const JarronWidget({Key? key}) : super(key: key);
+class RelicWidget extends StatefulWidget {
+  const RelicWidget({Key? key}) : super(key: key);
 
   @override
-  _JarronWidgetState createState() => _JarronWidgetState();
+  _RelicWidgetState createState() => _RelicWidgetState();
 }
 
-class _JarronWidgetState extends State<JarronWidget>
+class _RelicWidgetState extends State<RelicWidget>
     with TickerProviderStateMixin {
-  late JarronModel _model;
+  late RelicModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
@@ -44,9 +44,9 @@ class _JarronWidgetState extends State<JarronWidget>
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => JarronModel());
+    _model = createModel(context, () => RelicModel());
 
-    logFirebaseEvent('screen_view', parameters: {'screen_name': 'jarron'});
+    logFirebaseEvent('screen_view', parameters: {'screen_name': 'relic'});
   }
 
   @override
@@ -98,7 +98,7 @@ class _JarronWidgetState extends State<JarronWidget>
                               padding: EdgeInsetsDirectional.fromSTEB(
                                   0.0, 0.0, 0.0, 140.0),
                               child: Image.asset(
-                                'assets/images/vase.png',
+                                'assets/images/relic.png',
                                 fit: BoxFit.cover,
                               ),
                             ),
@@ -174,7 +174,7 @@ class _JarronWidgetState extends State<JarronWidget>
                                         20.0, 0.0, 0.0, 0.0),
                                     child: Text(
                                       FFLocalizations.of(context).getText(
-                                        '0vr8cu9r' /* Description */,
+                                        '3jwwmawi' /* Description */,
                                       ),
                                       textAlign: TextAlign.start,
                                       style: FlutterFlowTheme.of(context)
@@ -203,7 +203,7 @@ class _JarronWidgetState extends State<JarronWidget>
                                   alignment: AlignmentDirectional(1.5, 2.0),
                                   child: Text(
                                     FFLocalizations.of(context).getText(
-                                      '53lo2fvs' /* balance */,
+                                      '94kkgkmq' /* balance */,
                                     ),
                                     textAlign: TextAlign.center,
                                     style:
@@ -221,7 +221,7 @@ class _JarronWidgetState extends State<JarronWidget>
                                   alignment: AlignmentDirectional(0.5, 2.2),
                                   child: Text(
                                     FFLocalizations.of(context).getText(
-                                      'i62515hm' /* Hello World */,
+                                      '592tgpe5' /* Hello World */,
                                     ),
                                     textAlign: TextAlign.end,
                                     style: FlutterFlowTheme.of(context)
@@ -256,7 +256,7 @@ class _JarronWidgetState extends State<JarronWidget>
                               0.0, 0.0, 150.0, 0.0),
                           child: Text(
                             FFLocalizations.of(context).getText(
-                              'pjrbtj3d' /* Hello World */,
+                              'bw9h25wk' /* Hello World */,
                             ),
                             textAlign: TextAlign.start,
                             style: FlutterFlowTheme.of(context).bodyMedium,
@@ -273,7 +273,7 @@ class _JarronWidgetState extends State<JarronWidget>
                           alignment: AlignmentDirectional(0.6, -8.5),
                           child: Text(
                             FFLocalizations.of(context).getText(
-                              '1hy0xefo' /* punctuation */,
+                              'afefxrs8' /* punctuation */,
                             ),
                             textAlign: TextAlign.center,
                             style: FlutterFlowTheme.of(context).titleSmall,
@@ -336,7 +336,7 @@ class _JarronWidgetState extends State<JarronWidget>
                                           40.0, 15.0, 0.0, 0.0),
                                       child: Text(
                                         FFLocalizations.of(context).getText(
-                                          'y20julw8' /* payment method */,
+                                          'zaecw1ql' /* payment method */,
                                         ),
                                         style: FlutterFlowTheme.of(context)
                                             .bodyMedium,
@@ -350,7 +350,7 @@ class _JarronWidgetState extends State<JarronWidget>
                                           220.0, 15.0, 0.0, 0.0),
                                       child: Text(
                                         FFLocalizations.of(context).getText(
-                                          'ghjgonfd' /* return home */,
+                                          'v4k5g3u8' /* return home */,
                                         ),
                                         style: FlutterFlowTheme.of(context)
                                             .bodyMedium,
