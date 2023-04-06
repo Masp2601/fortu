@@ -947,9 +947,19 @@ class _AvatarsWidgetState extends State<AvatarsWidget> {
                                       Align(
                                         alignment:
                                             AlignmentDirectional(-0.85, 0.0),
-                                        child: Image.asset(
-                                          'assets/images/gift.png',
-                                          fit: BoxFit.cover,
+                                        child: InkWell(
+                                          onTap: () async {
+                                            logFirebaseEvent(
+                                                'AVATARS_PAGE_Image_7v01naj0_ON_TAP');
+                                            logFirebaseEvent(
+                                                'Image_navigate_to');
+
+                                            context.pushNamed('gift');
+                                          },
+                                          child: Image.asset(
+                                            'assets/images/gift.png',
+                                            fit: BoxFit.cover,
+                                          ),
                                         ),
                                       ),
                                       Padding(
@@ -989,7 +999,7 @@ class _AvatarsWidgetState extends State<AvatarsWidget> {
                                         borderRadius:
                                             BorderRadius.circular(8.0),
                                         child: Image.asset(
-                                          'assets/images/bomb.png',
+                                          'assets/images/bomba.png',
                                           fit: BoxFit.cover,
                                         ),
                                       ),
@@ -1124,12 +1134,22 @@ class _AvatarsWidgetState extends State<AvatarsWidget> {
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 0.0, 35.0, 0.0),
-                                          child: ClipRRect(
-                                            borderRadius:
-                                                BorderRadius.circular(8.0),
-                                            child: Image.asset(
-                                              'assets/images/cuchillo.png',
-                                              fit: BoxFit.cover,
+                                          child: InkWell(
+                                            onTap: () async {
+                                              logFirebaseEvent(
+                                                  'AVATARS_PAGE_Image_mas8gtex_ON_TAP');
+                                              logFirebaseEvent(
+                                                  'Image_navigate_to');
+
+                                              context.pushNamed('spadachin');
+                                            },
+                                            child: ClipRRect(
+                                              borderRadius:
+                                                  BorderRadius.circular(8.0),
+                                              child: Image.asset(
+                                                'assets/images/cuchillo.png',
+                                                fit: BoxFit.cover,
+                                              ),
                                             ),
                                           ),
                                         ),
@@ -1147,12 +1167,22 @@ class _AvatarsWidgetState extends State<AvatarsWidget> {
                                       Padding(
                                         padding: EdgeInsetsDirectional.fromSTEB(
                                             30.0, 0.0, 90.0, 0.0),
-                                        child: ClipRRect(
-                                          borderRadius:
-                                              BorderRadius.circular(8.0),
-                                          child: Image.asset(
-                                            'assets/images/sheet.png',
-                                            fit: BoxFit.cover,
+                                        child: InkWell(
+                                          onTap: () async {
+                                            logFirebaseEvent(
+                                                'AVATARS_PAGE_Image_p89m8dps_ON_TAP');
+                                            logFirebaseEvent(
+                                                'Image_navigate_to');
+
+                                            context.pushNamed('sheet');
+                                          },
+                                          child: ClipRRect(
+                                            borderRadius:
+                                                BorderRadius.circular(8.0),
+                                            child: Image.asset(
+                                              'assets/images/sheet.png',
+                                              fit: BoxFit.cover,
+                                            ),
                                           ),
                                         ),
                                       ),
@@ -1161,12 +1191,22 @@ class _AvatarsWidgetState extends State<AvatarsWidget> {
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
                                                   20.0, 0.0, 0.0, 0.0),
-                                          child: ClipRRect(
-                                            borderRadius:
-                                                BorderRadius.circular(8.0),
-                                            child: Image.asset(
-                                              'assets/images/espada.png',
-                                              fit: BoxFit.cover,
+                                          child: InkWell(
+                                            onTap: () async {
+                                              logFirebaseEvent(
+                                                  'AVATARS_PAGE_Image_26o6zvf0_ON_TAP');
+                                              logFirebaseEvent(
+                                                  'Image_navigate_to');
+
+                                              context.pushNamed('espada');
+                                            },
+                                            child: ClipRRect(
+                                              borderRadius:
+                                                  BorderRadius.circular(8.0),
+                                              child: Image.asset(
+                                                'assets/images/espada.png',
+                                                fit: BoxFit.cover,
+                                              ),
                                             ),
                                           ),
                                         ),

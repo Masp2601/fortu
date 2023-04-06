@@ -523,6 +523,30 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               path: 'energy',
               requireAuth: true,
               builder: (context, params) => EnergyWidget(),
+            ),
+            FFRoute(
+              name: 'gift',
+              path: 'gift',
+              requireAuth: true,
+              builder: (context, params) => GiftWidget(),
+            ),
+            FFRoute(
+              name: 'espada',
+              path: 'espada',
+              requireAuth: true,
+              builder: (context, params) => EspadaWidget(),
+            ),
+            FFRoute(
+              name: 'sheet',
+              path: 'sheet',
+              requireAuth: true,
+              builder: (context, params) => SheetWidget(),
+            ),
+            FFRoute(
+              name: 'spadachin',
+              path: 'spadachin',
+              requireAuth: true,
+              builder: (context, params) => SpadachinWidget(),
             )
           ].map((r) => r.toRoute(appStateNotifier)).toList(),
         ),

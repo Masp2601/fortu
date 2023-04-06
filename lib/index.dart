@@ -76,3 +76,7 @@ export '/bomb/bomb_widget.dart' show BombWidget;
 export '/flag/flag_widget.dart' show FlagWidget;
 export '/heart/heart_widget.dart' show HeartWidget;
 export '/energy/energy_widget.dart' show EnergyWidget;
+export '/gift/gift_widget.dart' show GiftWidget;
+export '/espada/espada_widget.dart' show EspadaWidget;
+export '/sheet/sheet_widget.dart' show SheetWidget;
+export '/spadachin/spadachin_widget.dart' show SpadachinWidget;
