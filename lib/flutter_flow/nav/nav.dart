@@ -493,6 +493,36 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               path: 'clock',
               requireAuth: true,
               builder: (context, params) => ClockWidget(),
+            ),
+            FFRoute(
+              name: 'magnet',
+              path: 'magnet',
+              requireAuth: true,
+              builder: (context, params) => MagnetWidget(),
+            ),
+            FFRoute(
+              name: 'bomb',
+              path: 'bomb',
+              requireAuth: true,
+              builder: (context, params) => BombWidget(),
+            ),
+            FFRoute(
+              name: 'flag',
+              path: 'flag',
+              requireAuth: true,
+              builder: (context, params) => FlagWidget(),
+            ),
+            FFRoute(
+              name: 'heart',
+              path: 'heart',
+              requireAuth: true,
+              builder: (context, params) => HeartWidget(),
+            ),
+            FFRoute(
+              name: 'energy',
+              path: 'energy',
+              requireAuth: true,
+              builder: (context, params) => EnergyWidget(),
             )
           ].map((r) => r.toRoute(appStateNotifier)).toList(),
         ),

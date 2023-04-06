@@ -71,3 +71,8 @@ export '/start/start_widget.dart' show StartWidget;
 export '/relic/relic_widget.dart' show RelicWidget;
 export '/oracle/oracle_widget.dart' show OracleWidget;
 export '/clock/clock_widget.dart' show ClockWidget;
+export '/magnet/magnet_widget.dart' show MagnetWidget;
+export '/bomb/bomb_widget.dart' show BombWidget;
+export '/flag/flag_widget.dart' show FlagWidget;
+export '/heart/heart_widget.dart' show HeartWidget;
+export '/energy/energy_widget.dart' show EnergyWidget;
