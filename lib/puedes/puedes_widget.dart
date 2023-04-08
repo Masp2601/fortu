@@ -190,7 +190,7 @@ class _PuedesWidgetState extends State<PuedesWidget> {
                                               EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 0.0, 0.0, 0.0),
                                           color: FlutterFlowTheme.of(context)
-                                              .primary,
+                                              .black600,
                                           textStyle: FlutterFlowTheme.of(
                                                   context)
                                               .titleSmall
@@ -207,7 +207,7 @@ class _PuedesWidgetState extends State<PuedesWidget> {
                                                             .titleSmallFamily),
                                               ),
                                           borderSide: BorderSide(
-                                            color: Colors.transparent,
+                                            color: Color(0xFF8C0404),
                                             width: 1.0,
                                           ),
                                           borderRadius:
@@ -233,8 +233,7 @@ class _PuedesWidgetState extends State<PuedesWidget> {
                                         iconPadding:
                                             EdgeInsetsDirectional.fromSTEB(
                                                 0.0, 0.0, 0.0, 0.0),
-                                        color: FlutterFlowTheme.of(context)
-                                            .primary,
+                                        color: Color(0xFF090F13),
                                         textStyle: FlutterFlowTheme.of(context)
                                             .titleSmall
                                             .override(
@@ -250,7 +249,7 @@ class _PuedesWidgetState extends State<PuedesWidget> {
                                                           .titleSmallFamily),
                                             ),
                                         borderSide: BorderSide(
-                                          color: Colors.transparent,
+                                          color: Color(0xFF8C0404),
                                           width: 1.0,
                                         ),
                                         borderRadius:
@@ -273,8 +272,7 @@ class _PuedesWidgetState extends State<PuedesWidget> {
                                       iconPadding:
                                           EdgeInsetsDirectional.fromSTEB(
                                               0.0, 0.0, 0.0, 0.0),
-                                      color:
-                                          FlutterFlowTheme.of(context).primary,
+                                      color: Color(0xFF090F13),
                                       textStyle: FlutterFlowTheme.of(context)
                                           .titleSmall
                                           .override(
@@ -288,7 +286,7 @@ class _PuedesWidgetState extends State<PuedesWidget> {
                                                         .titleSmallFamily),
                                           ),
                                       borderSide: BorderSide(
-                                        color: Colors.transparent,
+                                        color: Color(0xFF8C0404),
                                         width: 1.0,
                                       ),
                                       borderRadius: BorderRadius.circular(8.0),
