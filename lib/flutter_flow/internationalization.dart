@@ -3103,6 +3103,21 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'Hogar',
     },
   },
+  // puedes
+  {
+    '5se6c3r0': {
+      'en': 'choose it',
+      'es': 'elíge sala',
+    },
+    '0enaayu7': {
+      'en': 'plsy sgsin',
+      'es': 'volver a jugar',
+    },
+    '812pvli6': {
+      'en': 'watch game',
+      'es': 'ver juego',
+    },
+  },
   // bookAppointment
   {
     'sfzj3riz': {

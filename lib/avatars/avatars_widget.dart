@@ -41,44 +41,44 @@ class _AvatarsWidgetState extends State<AvatarsWidget> {
   Widget build(BuildContext context) {
     context.watch<FFAppState>();
 
-    return Scaffold(
-      key: scaffoldKey,
-      backgroundColor: Colors.black,
-      appBar: responsiveVisibility(
-        context: context,
-        desktop: false,
-      )
-          ? AppBar(
-              backgroundColor: Colors.black,
-              automaticallyImplyLeading: false,
-              leading: FlutterFlowIconButton(
-                borderColor: Colors.transparent,
-                borderRadius: 30.0,
-                borderWidth: 1.0,
-                buttonSize: 60.0,
-                icon: Icon(
-                  Icons.arrow_back_rounded,
-                  color: FlutterFlowTheme.of(context).primaryText,
-                  size: 30.0,
+    return GestureDetector(
+      onTap: () => FocusScope.of(context).requestFocus(_unfocusNode),
+      child: Scaffold(
+        key: scaffoldKey,
+        backgroundColor: Colors.black,
+        appBar: responsiveVisibility(
+          context: context,
+          desktop: false,
+        )
+            ? AppBar(
+                backgroundColor: Colors.black,
+                automaticallyImplyLeading: false,
+                leading: FlutterFlowIconButton(
+                  borderColor: Colors.transparent,
+                  borderRadius: 30.0,
+                  borderWidth: 1.0,
+                  buttonSize: 60.0,
+                  icon: Icon(
+                    Icons.arrow_back_rounded,
+                    color: FlutterFlowTheme.of(context).primaryText,
+                    size: 30.0,
+                  ),
+                  onPressed: () {
+                    print('IconButton pressed ...');
+                  },
                 ),
-                onPressed: () {
-                  print('IconButton pressed ...');
-                },
-              ),
-              title: Text(
-                FFLocalizations.of(context).getText(
-                  'mv7r7z2a' /* Categories */,
+                title: Text(
+                  FFLocalizations.of(context).getText(
+                    'mv7r7z2a' /* Categories */,
+                  ),
+                  style: FlutterFlowTheme.of(context).titleMedium,
                 ),
-                style: FlutterFlowTheme.of(context).titleMedium,
-              ),
-              actions: [],
-              centerTitle: false,
-              elevation: 0.0,
-            )
-          : null,
-      body: GestureDetector(
-        onTap: () => FocusScope.of(context).requestFocus(_unfocusNode),
-        child: Column(
+                actions: [],
+                centerTitle: false,
+                elevation: 0.0,
+              )
+            : null,
+        body: Column(
           mainAxisSize: MainAxisSize.max,
           children: [
             Expanded(

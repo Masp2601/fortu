@@ -59,7 +59,13 @@ class _PauseCardWidgetState extends State<PauseCardWidget> {
                   FFLocalizations.of(context).getText(
                     'dt7m486y' /* Pause Card */,
                   ),
-                  style: FlutterFlowTheme.of(context).displaySmall,
+                  style: FlutterFlowTheme.of(context).displaySmall.override(
+                        fontFamily:
+                            FlutterFlowTheme.of(context).displaySmallFamily,
+                        fontSize: 20.0,
+                        useGoogleFonts: GoogleFonts.asMap().containsKey(
+                            FlutterFlowTheme.of(context).displaySmallFamily),
+                      ),
                 ),
               ],
             ),

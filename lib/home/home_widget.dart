@@ -99,9 +99,10 @@ class _HomeWidgetState extends State<HomeWidget> {
                                           backgroundColor: Color(0xFFFF0026),
                                           enableDrag: false,
                                           context: context,
-                                          builder: (context) {
+                                          builder: (bottomSheetContext) {
                                             return Padding(
-                                              padding: MediaQuery.of(context)
+                                              padding: MediaQuery.of(
+                                                      bottomSheetContext)
                                                   .viewInsets,
                                               child: ModalacountWidget(),
                                             );

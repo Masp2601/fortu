@@ -289,18 +289,18 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               ),
             ),
             FFRoute(
+              name: 'home',
+              path: 'home',
+              requireAuth: true,
+              builder: (context, params) => HomeWidget(),
+            ),
+            FFRoute(
               name: 'ndqueperder',
               path: 'ndqueperder',
               requireAuth: true,
               builder: (context, params) => NdqueperderWidget(
                 users: params.getParam('users', ParamType.String),
               ),
-            ),
-            FFRoute(
-              name: 'home',
-              path: 'home',
-              requireAuth: true,
-              builder: (context, params) => HomeWidget(),
             ),
             FFRoute(
               name: 'avatars',
@@ -547,6 +547,14 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               path: 'spadachin',
               requireAuth: true,
               builder: (context, params) => SpadachinWidget(),
+            ),
+            FFRoute(
+              name: 'puedes',
+              path: 'puedes',
+              requireAuth: true,
+              builder: (context, params) => PuedesWidget(
+                users: params.getParam('users', ParamType.String),
+              ),
             )
           ].map((r) => r.toRoute(appStateNotifier)).toList(),
         ),

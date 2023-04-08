@@ -364,6 +364,27 @@ class _CoronaWidgetState extends State<CoronaWidget>
                           ),
                         ),
                       ),
+                    Expanded(
+                      child: Align(
+                        alignment: AlignmentDirectional(0.0, -0.35),
+                        child: Row(
+                          mainAxisSize: MainAxisSize.max,
+                          children: [
+                            Padding(
+                              padding: EdgeInsetsDirectional.fromSTEB(
+                                  20.0, 0.0, 0.0, 0.0),
+                              child: Switch(
+                                value: _model.switchValue ??= true,
+                                onChanged: (newValue) async {
+                                  setState(
+                                      () => _model.switchValue = newValue!);
+                                },
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
                   ],
                 ),
               ),

@@ -15,6 +15,8 @@ class CoronaModel extends FlutterFlowModel {
 
   // State field(s) for RatingBar widget.
   double? ratingBarValue;
+  // State field(s) for Switch widget.
+  bool? switchValue;
 
   /// Initialization and disposal methods.
 
