@@ -60,15 +60,24 @@ class _HomeWidgetState extends State<HomeWidget> {
                     Stack(
                       children: [
                         // phone 14 pro max
-                        Align(
-                          alignment: AlignmentDirectional(0.0, 0.0),
-                          child: Image.asset(
-                            'assets/images/inicia.png',
-                            width: 424.3,
-                            height: 2200.0,
-                            fit: BoxFit.fill,
+                        if (responsiveVisibility(
+                          context: context,
+                          tabletLandscape: false,
+                          desktop: false,
+                        ))
+                          Align(
+                            alignment: AlignmentDirectional(0.0, 0.0),
+                            child: Padding(
+                              padding: EdgeInsetsDirectional.fromSTEB(
+                                  0.0, 18.0, 0.0, 0.0),
+                              child: Image.asset(
+                                'assets/images/inicia.png',
+                                width: 424.3,
+                                height: 2200.0,
+                                fit: BoxFit.fill,
+                              ),
+                            ),
                           ),
-                        ),
                         Align(
                           alignment: AlignmentDirectional(0.8, -0.82),
                           child: Padding(
