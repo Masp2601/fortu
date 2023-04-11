@@ -72,7 +72,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                   0.0, 18.0, 0.0, 0.0),
                               child: Image.asset(
                                 'assets/images/inicia.png',
-                                width: 424.3,
+                                width: 372.8,
                                 height: 2200.0,
                                 fit: BoxFit.fill,
                               ),
@@ -167,7 +167,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                           alignment: AlignmentDirectional(0.0, 0.6),
                           child: Padding(
                             padding: EdgeInsetsDirectional.fromSTEB(
-                                15.0, 60.0, 0.0, 0.0),
+                                5.0, 60.0, 5.0, 0.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
                               children: [
@@ -289,7 +289,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                 ),
                                 Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
-                                      90.0, 0.0, 0.0, 0.0),
+                                      60.0, 0.0, 0.0, 0.0),
                                   child: FFButtonWidget(
                                     onPressed: () async {
                                       logFirebaseEvent(

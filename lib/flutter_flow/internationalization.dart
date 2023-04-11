@@ -1755,7 +1755,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     'czhwmirp': {
       'en': 'cop',
-      'es': '\$100.000 cop',
+      'es': 'cop',
     },
     '2avbb0nv': {
       'en': '\$Dolar',
