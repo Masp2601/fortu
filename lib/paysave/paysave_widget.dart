@@ -615,8 +615,7 @@ class _PaysaveWidgetState extends State<PaysaveWidget> {
                                                                   0.0,
                                                                   0.0),
                                                       child: FaIcon(
-                                                        FontAwesomeIcons
-                                                            .ccPaypal,
+                                                        FontAwesomeIcons.paypal,
                                                         color:
                                                             FlutterFlowTheme.of(
                                                                     context)
@@ -738,8 +737,7 @@ class _PaysaveWidgetState extends State<PaysaveWidget> {
                                                                   0.0,
                                                                   0.0),
                                                       child: FaIcon(
-                                                        FontAwesomeIcons
-                                                            .ccApplePay,
+                                                        FontAwesomeIcons.pager,
                                                         color:
                                                             FlutterFlowTheme.of(
                                                                     context)
@@ -867,7 +865,7 @@ class _PaysaveWidgetState extends State<PaysaveWidget> {
                                                                   0.0),
                                                       child: FaIcon(
                                                         FontAwesomeIcons
-                                                            .ccApplePay,
+                                                            .applePay,
                                                         color:
                                                             FlutterFlowTheme.of(
                                                                     context)

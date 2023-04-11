@@ -656,6 +656,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                                         FlutterFlowTheme.of(
                                                                 context)
                                                             .bodyMediumFamily),
+                                                lineHeight: 4.0,
                                               ),
                                         ),
                                       ),

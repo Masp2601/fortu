@@ -191,15 +191,18 @@ class _MYCardWidgetState extends State<MYCardWidget>
         desktop: false,
       )
           ? PreferredSize(
-              preferredSize: Size.fromHeight(60.0),
+              preferredSize: Size.fromHeight(90.0),
               child: AppBar(
                 backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
                 automaticallyImplyLeading: false,
-                title: Text(
-                  FFLocalizations.of(context).getText(
-                    'xn2so8km' /* My Card */,
+                title: Padding(
+                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                  child: Text(
+                    FFLocalizations.of(context).getText(
+                      'xn2so8km' /* My Card */,
+                    ),
+                    style: FlutterFlowTheme.of(context).displaySmall,
                   ),
-                  style: FlutterFlowTheme.of(context).displaySmall,
                 ),
                 actions: [],
                 centerTitle: false,
@@ -659,10 +662,10 @@ class _MYCardWidgetState extends State<MYCardWidget>
                                   backgroundColor: Color(0x00000000),
                                   barrierColor: Color(0x00000000),
                                   context: context,
-                                  builder: (context) {
+                                  builder: (bottomSheetContext) {
                                     return Padding(
-                                      padding:
-                                          MediaQuery.of(context).viewInsets,
+                                      padding: MediaQuery.of(bottomSheetContext)
+                                          .viewInsets,
                                       child: Container(
                                         height: 220.0,
                                         child: PauseCardWidget(),

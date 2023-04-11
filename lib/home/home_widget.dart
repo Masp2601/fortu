@@ -59,19 +59,25 @@ class _HomeWidgetState extends State<HomeWidget> {
                   children: [
                     Stack(
                       children: [
-                        Align(
-                          alignment: AlignmentDirectional(0.0, 0.0),
-                          child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
-                                0.0, 18.0, 0.0, 0.0),
-                            child: Image.asset(
-                              'assets/images/inicia.png',
-                              width: 380.9,
-                              height: 2200.0,
-                              fit: BoxFit.fill,
+                        // phone 14 pro max
+                        if (responsiveVisibility(
+                          context: context,
+                          tabletLandscape: false,
+                          desktop: false,
+                        ))
+                          Align(
+                            alignment: AlignmentDirectional(0.0, 0.0),
+                            child: Padding(
+                              padding: EdgeInsetsDirectional.fromSTEB(
+                                  0.0, 18.0, 0.0, 0.0),
+                              child: Image.asset(
+                                'assets/images/inicia.png',
+                                width: 372.8,
+                                height: 2200.0,
+                                fit: BoxFit.fill,
+                              ),
                             ),
                           ),
-                        ),
                         Align(
                           alignment: AlignmentDirectional(0.8, -0.82),
                           child: Padding(
@@ -99,9 +105,10 @@ class _HomeWidgetState extends State<HomeWidget> {
                                           backgroundColor: Color(0xFFFF0026),
                                           enableDrag: false,
                                           context: context,
-                                          builder: (context) {
+                                          builder: (bottomSheetContext) {
                                             return Padding(
-                                              padding: MediaQuery.of(context)
+                                              padding: MediaQuery.of(
+                                                      bottomSheetContext)
                                                   .viewInsets,
                                               child: ModalacountWidget(),
                                             );
@@ -160,7 +167,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                           alignment: AlignmentDirectional(0.0, 0.6),
                           child: Padding(
                             padding: EdgeInsetsDirectional.fromSTEB(
-                                15.0, 60.0, 0.0, 0.0),
+                                5.0, 60.0, 5.0, 0.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
                               children: [
@@ -186,7 +193,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                     onChanged: (val) => setState(
                                         () => _model.dropDownValue = val),
                                     width: 350.0,
-                                    height: 50.0,
+                                    height: 30.0,
                                     searchHintTextStyle: FlutterFlowTheme.of(
                                             context)
                                         .bodyMedium
@@ -246,12 +253,8 @@ class _HomeWidgetState extends State<HomeWidget> {
                               children: [
                                 // aqui solamente la persona que le de click puede ver unicamente no jugar puese ser espectador.
                                 FFButtonWidget(
-                                  onPressed: () async {
-                                    logFirebaseEvent(
-                                        'HOME_PAGE_WATCH_GAME_BTN_ON_TAP');
-                                    logFirebaseEvent('Button_navigate_to');
-
-                                    context.pushNamed('ver');
+                                  onPressed: () {
+                                    print('Button pressed ...');
                                   },
                                   text: FFLocalizations.of(context).getText(
                                     'vrn7x940' /* watch game */,
@@ -286,7 +289,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                 ),
                                 Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
-                                      90.0, 0.0, 0.0, 0.0),
+                                      60.0, 0.0, 0.0, 0.0),
                                   child: FFButtonWidget(
                                     onPressed: () async {
                                       logFirebaseEvent(
