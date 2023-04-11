@@ -207,6 +207,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                     autofocus: true,
                                     obscureText: false,
                                     decoration: InputDecoration(
+                                      isDense: true,
                                       hintText:
                                           FFLocalizations.of(context).getText(
                                         '5wh9zxn0' /*  */,
@@ -217,8 +218,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                             fontFamily:
                                                 FlutterFlowTheme.of(context)
                                                     .bodySmallFamily,
-                                            color: FlutterFlowTheme.of(context)
-                                                .textColor,
+                                            color: Color(0xFF666666),
                                             useGoogleFonts: GoogleFonts.asMap()
                                                 .containsKey(
                                                     FlutterFlowTheme.of(context)
@@ -232,7 +232,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                           width: 1.0,
                                         ),
                                         borderRadius:
-                                            BorderRadius.circular(50.0),
+                                            BorderRadius.circular(20.0),
                                       ),
                                       focusedBorder: OutlineInputBorder(
                                         borderSide: BorderSide(
@@ -240,7 +240,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                           width: 1.0,
                                         ),
                                         borderRadius:
-                                            BorderRadius.circular(50.0),
+                                            BorderRadius.circular(20.0),
                                       ),
                                       errorBorder: OutlineInputBorder(
                                         borderSide: BorderSide(
@@ -248,7 +248,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                           width: 1.0,
                                         ),
                                         borderRadius:
-                                            BorderRadius.circular(50.0),
+                                            BorderRadius.circular(20.0),
                                       ),
                                       focusedErrorBorder: OutlineInputBorder(
                                         borderSide: BorderSide(
@@ -256,10 +256,10 @@ class _LoginWidgetState extends State<LoginWidget> {
                                           width: 1.0,
                                         ),
                                         borderRadius:
-                                            BorderRadius.circular(50.0),
+                                            BorderRadius.circular(20.0),
                                       ),
                                       filled: true,
-                                      fillColor: Color(0xFF1D1D1D),
+                                      fillColor: Color(0xFF202020),
                                       suffixIcon: _model
                                               .nombreController!.text.isNotEmpty
                                           ? InkWell(
@@ -276,8 +276,18 @@ class _LoginWidgetState extends State<LoginWidget> {
                                             )
                                           : null,
                                     ),
-                                    style:
-                                        FlutterFlowTheme.of(context).bodyMedium,
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyMedium
+                                        .override(
+                                          fontFamily:
+                                              FlutterFlowTheme.of(context)
+                                                  .bodyMediumFamily,
+                                          color: Color(0xFF666666),
+                                          useGoogleFonts: GoogleFonts.asMap()
+                                              .containsKey(
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyMediumFamily),
+                                        ),
                                     textAlign: TextAlign.center,
                                     validator: _model.nombreControllerValidator
                                         .asValidator(context),
@@ -389,6 +399,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                           obscureText:
                                               !_model.passwordloginVisibility,
                                           decoration: InputDecoration(
+                                            isDense: true,
                                             hintText:
                                                 FFLocalizations.of(context)
                                                     .getText(
@@ -402,10 +413,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                                           FlutterFlowTheme.of(
                                                                   context)
                                                               .bodySmallFamily,
-                                                      color:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .textColor,
+                                                      color: Color(0xFF666666),
                                                       useGoogleFonts: GoogleFonts
                                                               .asMap()
                                                           .containsKey(
@@ -422,7 +430,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                                 width: 1.0,
                                               ),
                                               borderRadius:
-                                                  BorderRadius.circular(50.0),
+                                                  BorderRadius.circular(20.0),
                                             ),
                                             focusedBorder: OutlineInputBorder(
                                               borderSide: BorderSide(
@@ -430,7 +438,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                                 width: 1.0,
                                               ),
                                               borderRadius:
-                                                  BorderRadius.circular(50.0),
+                                                  BorderRadius.circular(20.0),
                                             ),
                                             errorBorder: OutlineInputBorder(
                                               borderSide: BorderSide(
@@ -438,7 +446,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                                 width: 1.0,
                                               ),
                                               borderRadius:
-                                                  BorderRadius.circular(50.0),
+                                                  BorderRadius.circular(20.0),
                                             ),
                                             focusedErrorBorder:
                                                 OutlineInputBorder(
@@ -447,10 +455,10 @@ class _LoginWidgetState extends State<LoginWidget> {
                                                 width: 1.0,
                                               ),
                                               borderRadius:
-                                                  BorderRadius.circular(50.0),
+                                                  BorderRadius.circular(20.0),
                                             ),
                                             filled: true,
-                                            fillColor: Color(0xFF1D1D1D),
+                                            fillColor: Color(0xFF202020),
                                             suffixIcon: InkWell(
                                               onTap: () => setState(
                                                 () => _model
@@ -476,7 +484,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                                 fontFamily:
                                                     FlutterFlowTheme.of(context)
                                                         .bodyMediumFamily,
-                                                color: Colors.white,
+                                                color: Color(0xFF666666),
                                                 letterSpacing: 1.0,
                                                 useGoogleFonts: GoogleFonts
                                                         .asMap()
@@ -595,7 +603,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                         color: Color(0xDAFF0F13),
                                         width: 1.0,
                                       ),
-                                      borderRadius: BorderRadius.circular(50.0),
+                                      borderRadius: BorderRadius.circular(20.0),
                                     ),
                                   ),
                                 ),
