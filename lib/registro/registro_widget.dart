@@ -68,7 +68,7 @@ class _RegistroWidgetState extends State<RegistroWidget> {
                 desktop: false,
               ))
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 2.0, 0.0, 0.0),
+                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
                   child: Container(
                     width: MediaQuery.of(context).size.width * 1.0,
                     height: MediaQuery.of(context).size.height * 1.0,
@@ -119,7 +119,7 @@ class _RegistroWidgetState extends State<RegistroWidget> {
                                   alignment: AlignmentDirectional(0.0, 0.0),
                                   child: Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
-                                        120.0, 20.0, 140.0, 10.0),
+                                        110.0, 20.0, 140.0, 10.0),
                                     child: Image.asset(
                                       'assets/images/logo.png',
                                       width: 90.0,

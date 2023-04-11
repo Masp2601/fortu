@@ -134,9 +134,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                   Align(
                                     alignment: AlignmentDirectional(-0.4, 0.0),
                                     child: Image.asset(
-                                      'assets/images/login.png',
-                                      width: 110.0,
-                                      height: 110.0,
+                                      'assets/images/user.png',
                                       fit: BoxFit.cover,
                                     ),
                                   ),
@@ -479,12 +477,14 @@ class _LoginWidgetState extends State<LoginWidget> {
                                                     FlutterFlowTheme.of(context)
                                                         .bodyMediumFamily,
                                                 color: Colors.white,
+                                                letterSpacing: 1.0,
                                                 useGoogleFonts: GoogleFonts
                                                         .asMap()
                                                     .containsKey(
                                                         FlutterFlowTheme.of(
                                                                 context)
                                                             .bodyMediumFamily),
+                                                lineHeight: 4.0,
                                               ),
                                           textAlign: TextAlign.center,
                                           keyboardType:
