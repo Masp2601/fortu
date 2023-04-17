@@ -448,7 +448,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                                 EasyDebounce.debounce(
                                               '_model.passwordloginController',
                                               Duration(milliseconds: 2000),
-                                              () => setState(() {}),
+                                              () {},
                                             ),
                                             onFieldSubmitted: (_) async {
                                               logFirebaseEvent(
