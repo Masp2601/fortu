@@ -152,7 +152,7 @@ class _GameWidgetState extends State<GameWidget> {
                                   tabletLandscape: false,
                                   desktop: false,
                                 ))
-                                  /*Align(
+                                  Align(
                                     alignment: AlignmentDirectional(-0.6, -1.5),
                                     child: Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
@@ -178,7 +178,7 @@ class _GameWidgetState extends State<GameWidget> {
                                         ),
                                       ),
                                     ),
-                                  ),*/
+                                  ),
                                   Row(
                                     mainAxisSize: MainAxisSize.max,
                                     mainAxisAlignment: MainAxisAlignment.center,
@@ -197,7 +197,7 @@ class _GameWidgetState extends State<GameWidget> {
                                       ),
                                     ],
                                   ),
-                              Padding(
+                              /*Padding(
                                 padding: EdgeInsetsDirectional.fromSTEB(
                                     10, 0, 10, 0),
                                 child: Row(
@@ -210,7 +210,7 @@ class _GameWidgetState extends State<GameWidget> {
                                     ),
                                   ],
                                 ),
-                              ),
+                              ),*/
                               Padding(
                                 padding: EdgeInsetsDirectional.fromSTEB(
                                     20, 0, 20, 20),
