@@ -321,6 +321,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.0.1"
+  equatable:
+    dependency: "direct main"
+    description:
+      name: equatable
+      sha256: c6094fd1efad3046334a9c40bee022147e55c25401ccd89b94e373e3edadd375
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.0.3"
   fake_async:
     dependency: transitive
     description:
@@ -583,14 +591,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "3.2.0"
-  flutter_html:
-    dependency: "direct main"
-    description:
-      name: flutter_html
-      sha256: "5717c89f126c24e310ef36770a7f4446cba81cb27abd0ce8292d098f45682efc"
-      url: "https://pub.dev"
-    source: hosted
-    version: "3.0.0-alpha.5"
   flutter_launcher_icons:
     dependency: "direct dev"
     description:
@@ -612,6 +612,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.0.9"
+  flutter_rating_bar:
+    dependency: "direct main"
+    description:
+      name: flutter_rating_bar
+      sha256: d2af03469eac832c591a1eba47c91ecc871fe5708e69967073c043b2d775ed93
+      url: "https://pub.dev"
+    source: hosted
+    version: "4.0.1"
   flutter_spinkit:
     dependency: "direct main"
     description:
@@ -918,14 +926,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.0.0"
-  numerus:
-    dependency: transitive
-    description:
-      name: numerus
-      sha256: "0087ef729d63b96cb347a9c44b9c592f21cecb3605b415bbd18710aef80ce5cb"
-      url: "https://pub.dev"
-    source: hosted
-    version: "1.1.1"
   octo_image:
     dependency: transitive
     description:
@@ -1082,10 +1082,10 @@ packages:
     dependency: "direct main"
     description:
       name: provider
-      sha256: "109bee81b76e9f175d70572e8d8160b224d7fda6152062423a4134d50fcdfbaa"
+      sha256: e1e7413d70444ea3096815a60fe5da1b11bda8a9dc4769252cc82c53536f8bcc
       url: "https://pub.dev"
     source: hosted
-    version: "6.0.0"
+    version: "6.0.4"
   pub_semver:
     dependency: transitive
     description:
@@ -1515,30 +1515,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.3.0"
-  webview_flutter_android:
-    dependency: "direct overridden"
-    description:
-      name: webview_flutter_android
-      sha256: f463704e765eb3480d3e0f79bf0fbc41cb1746c2301c510643a2d049b82fed09
-      url: "https://pub.dev"
-    source: hosted
-    version: "2.10.3"
-  webview_flutter_platform_interface:
-    dependency: "direct overridden"
-    description:
-      name: webview_flutter_platform_interface
-      sha256: "812165e4e34ca677bdfbfa58c01e33b27fd03ab5fa75b70832d4b7d4ca1fa8cf"
-      url: "https://pub.dev"
-    source: hosted
-    version: "1.9.5"
-  webview_flutter_wkwebview:
-    dependency: "direct overridden"
-    description:
-      name: webview_flutter_wkwebview
-      sha256: a5364369c758892aa487cbf59ea41d9edd10f9d9baf06a94e80f1bd1b4c7bbc0
-      url: "https://pub.dev"
-    source: hosted
-    version: "2.9.5"
   win32:
     dependency: transitive
     description:

@@ -83,7 +83,7 @@ class _LoginWidgetState extends State<LoginWidget> {
       if (firebaseUser != null) {
         currentFirebaseUser = firebaseUser;
         Fluttertoast.showToast(msg: "Inicio sesion exitoso...");
-        context.goNamedAuth('MY_Card', mounted);
+        context.goNamedAuth('home', mounted);
       } else {
         Navigator.pop(context);
         Fluttertoast.showToast(msg: "Un error ocurrio al loguearse...");
@@ -154,8 +154,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                           desktop: false,
                         ),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
-                              0.0, 70.0, 0.0, 0.0),
+                          padding: EdgeInsetsDirectional.all(0.5),
                           child: Column(
                             mainAxisSize: MainAxisSize.max,
                             children: [
@@ -188,8 +187,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
-                                    0.0, 16.0, 0.0, 20.0),
+                                padding: EdgeInsetsDirectional.all(0.5),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
                                   mainAxisAlignment: MainAxisAlignment.center,
@@ -198,7 +196,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                       alignment:
                                           AlignmentDirectional(-0.4, 0.0),
                                       child: Image.asset(
-                                        'assets/images/login.png',
+                                        'assets/images/logiin.png',
                                         width: 110.0,
                                         height: 110.0,
                                         fit: BoxFit.cover,
@@ -208,8 +206,24 @@ class _LoginWidgetState extends State<LoginWidget> {
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
-                                    50.0, 15.0, 50.0, 30.0),
+                                padding: EdgeInsetsDirectional.all(0.1),
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    Align(
+                                      child: Image.asset(
+                                        'assets/images/user.png',
+                                        fit: BoxFit.cover,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              SizedBox(
+                                height: 25,
+                              ),
+                              Padding(
+                                padding: EdgeInsetsDirectional.all(0.1),
                                 child: Autocomplete<String>(
                                   initialValue: TextEditingValue(),
                                   optionsBuilder: (textEditingValue) {
@@ -275,7 +289,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                       decoration: InputDecoration(
                                         hintText:
                                             FFLocalizations.of(context).getText(
-                                          '5wh9zxn0' /*  */,
+                                          '5wh9zxn0' /* Correo Electronico */,
                                         ),
                                         hintStyle: FlutterFlowTheme.of(context)
                                             .bodySmall
@@ -355,6 +369,9 @@ class _LoginWidgetState extends State<LoginWidget> {
                                   },
                                 ),
                               ),
+                              SizedBox(
+                                height: 55,
+                              ),
                               if (responsiveVisibility(
                                 context: context,
                                 tabletLandscape: false,
@@ -364,8 +381,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                   child: Align(
                                     alignment: AlignmentDirectional(0.1, -5.0),
                                     child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                          50.0, 20.0, 50.0, 10.0),
+                                      padding: EdgeInsetsDirectional.all(0.1),
                                       child: Autocomplete<String>(
                                         initialValue: TextEditingValue(),
                                         optionsBuilder: (textEditingValue) {
@@ -623,11 +639,10 @@ class _LoginWidgetState extends State<LoginWidget> {
                               ),
                               Expanded(
                                 child: Align(
-                                  alignment: AlignmentDirectional(0.0, -1.0),
+                                  alignment: AlignmentDirectional(0.0, 9.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
-                                    mainAxisAlignment:
-                                        MainAxisAlignment.spaceEvenly,
+                                    mainAxisAlignment: MainAxisAlignment.center,
                                     children: [
                                       InkWell(
                                         onTap: () async {
@@ -635,7 +650,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                               'LOGIN_PAGE_Text_x5l55ulg_ON_TAP');
                                           logFirebaseEvent('Text_navigate_to');
 
-                                          context.pushNamed('forgotPassword');
+                                          context.pushNamed('');
                                         },
                                         child: Text(
                                           FFLocalizations.of(context).getText(
@@ -673,13 +688,52 @@ class _LoginWidgetState extends State<LoginWidget> {
                                   child: Align(
                                     alignment: AlignmentDirectional(0.0, -10.0),
                                     child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                          30.0, 10.0, 30.0, 15.0),
+                                      padding: EdgeInsetsDirectional.all(2),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
                                         mainAxisAlignment:
-                                            MainAxisAlignment.spaceEvenly,
+                                            MainAxisAlignment.center,
                                         children: [
+                                          Container(
+                                            width: 50.0,
+                                            height: 50.0,
+                                            decoration: BoxDecoration(
+                                              color: Color(0xFF090F13),
+                                              boxShadow: [
+                                                BoxShadow(
+                                                  blurRadius: 5.0,
+                                                  color: Color(0x3314181B),
+                                                  offset: Offset(0.0, 2.0),
+                                                )
+                                              ],
+                                              shape: BoxShape.circle,
+                                            ),
+                                            alignment:
+                                                AlignmentDirectional(0.0, 0.0),
+                                            child: InkWell(
+                                              onTap: () async {
+                                                logFirebaseEvent(
+                                                    'LOGIN_PAGE_Icon_unz9qien_ON_TAP');
+                                                logFirebaseEvent('Icon_auth');
+                                                GoRouter.of(context)
+                                                    .prepareAuthEvent();
+                                                final user =
+                                                    await signInWithFacebook(
+                                                        context);
+                                                if (user == null) {
+                                                  return;
+                                                }
+
+                                                context.goNamedAuth(
+                                                    'home', mounted);
+                                              },
+                                              child: FaIcon(
+                                                FontAwesomeIcons.facebookF,
+                                                color: Color(0xFF5600FF),
+                                                size: 24.0,
+                                              ),
+                                            ),
+                                          ),
                                           Container(
                                             width: 50.0,
                                             height: 50.0,
@@ -727,7 +781,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                               ),
                                             ),
                                           ),
-                                          Container(
+                                          /*Container(
                                             width: 50.0,
                                             height: 50.0,
                                             decoration: BoxDecoration(
@@ -766,47 +820,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                                 size: 24.0,
                                               ),
                                             ),
-                                          ),
-                                          Container(
-                                            width: 50.0,
-                                            height: 50.0,
-                                            decoration: BoxDecoration(
-                                              color: Color(0xFF090F13),
-                                              boxShadow: [
-                                                BoxShadow(
-                                                  blurRadius: 5.0,
-                                                  color: Color(0x3314181B),
-                                                  offset: Offset(0.0, 2.0),
-                                                )
-                                              ],
-                                              shape: BoxShape.circle,
-                                            ),
-                                            alignment:
-                                                AlignmentDirectional(0.0, 0.0),
-                                            child: InkWell(
-                                              onTap: () async {
-                                                logFirebaseEvent(
-                                                    'LOGIN_PAGE_Icon_unz9qien_ON_TAP');
-                                                logFirebaseEvent('Icon_auth');
-                                                GoRouter.of(context)
-                                                    .prepareAuthEvent();
-                                                final user =
-                                                    await signInWithFacebook(
-                                                        context);
-                                                if (user == null) {
-                                                  return;
-                                                }
-
-                                                context.goNamedAuth(
-                                                    'home', mounted);
-                                              },
-                                              child: FaIcon(
-                                                FontAwesomeIcons.facebookF,
-                                                color: Color(0xFF5600FF),
-                                                size: 24.0,
-                                              ),
-                                            ),
-                                          ),
+                                          ),*/
                                         ],
                                       ),
                                     ),
@@ -817,35 +831,28 @@ class _LoginWidgetState extends State<LoginWidget> {
                                 tabletLandscape: false,
                                 desktop: false,
                               ))
-                                Expanded(
-                                  child: Align(
-                                    alignment: AlignmentDirectional(0.0, -1.0),
-                                    child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                          0.0, 35.0, 0.0, 0.0),
-                                      child: Text(
-                                        FFLocalizations.of(context).getText(
-                                          '17di344m' /*  */,
-                                        ),
-                                        textAlign: TextAlign.center,
-                                        style: FlutterFlowTheme.of(context)
-                                            .bodyMedium
-                                            .override(
-                                              fontFamily:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyMediumFamily,
-                                              color: Color(0xDA5DFF0F),
-                                              useGoogleFonts: GoogleFonts
-                                                      .asMap()
-                                                  .containsKey(
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .bodyMediumFamily),
-                                            ),
+                                TextButton(
+                                    onPressed: () {
+                                      context.pushNamed('registro');
+                                    },
+                                    child: Text(
+                                      FFLocalizations.of(context).getText(
+                                        '17di344m' /*  */,
                                       ),
-                                    ),
-                                  ),
-                                ),
+                                      textAlign: TextAlign.center,
+                                      style: FlutterFlowTheme.of(context)
+                                          .bodyMedium
+                                          .override(
+                                            fontFamily:
+                                                FlutterFlowTheme.of(context)
+                                                    .bodyMediumFamily,
+                                            color: Color(0xDA5DFF0F),
+                                            useGoogleFonts: GoogleFonts.asMap()
+                                                .containsKey(
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyMediumFamily),
+                                          ),
+                                    )),
                               Expanded(
                                 child: Align(
                                   alignment: AlignmentDirectional(0.0, -7.0),

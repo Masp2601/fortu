@@ -65,20 +65,16 @@ class _HomeWidgetState extends State<HomeWidget> {
                           tabletLandscape: false,
                           desktop: false,
                         ))
-                          Align(
-                            alignment: AlignmentDirectional(0.0, 0.0),
+                          Expanded(
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
-                                  0.0, 18.0, 0.0, 0.0),
+                              padding: EdgeInsetsDirectional.all(0.0),
                               child: Image.asset(
                                 'assets/images/inicia.png',
-                                width: 372.8,
-                                height: 2200.0,
-                                fit: BoxFit.fill,
+                                fit: BoxFit.cover,
                               ),
                             ),
                           ),
-                        Align(
+                        /*Align(
                           alignment: AlignmentDirectional(0.8, -0.82),
                           child: Padding(
                             padding: EdgeInsetsDirectional.fromSTEB(
@@ -124,7 +120,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                               ],
                             ),
                           ),
-                        ),
+                        ),*/
                         Align(
                           alignment: AlignmentDirectional(0.0, 0.3),
                           child: Padding(

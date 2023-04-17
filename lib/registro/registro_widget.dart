@@ -880,8 +880,7 @@ class _RegistroWidgetState extends State<RegistroWidget> {
                                               .doc(user.uid)
                                               .update(usersCreateData);
 
-                                          context.goNamedAuth(
-                                              'MY_Card', mounted);
+                                          context.goNamedAuth('home', mounted);
                                         },
                                         text:
                                             FFLocalizations.of(context).getText(

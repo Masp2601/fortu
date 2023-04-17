@@ -1356,8 +1356,8 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   // login
   {
     '5wh9zxn0': {
-      'en': '',
-      'es': 'Nombre',
+      'en': 'Email',
+      'es': 'Correo Electronico',
     },
     'oakxbonb': {
       'en': '',
@@ -1368,24 +1368,24 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'Opción 1',
     },
     'gi4qqqw5': {
-      'en': '',
-      'es': 'contraseña',
+      'en': 'Password',
+      'es': 'Contraseña',
     },
     'k759gv50': {
       'en': 'Option 1',
       'es': 'Opción 1',
     },
     'phf58iv3': {
-      'en': 'login',
-      'es': 'acceso',
+      'en': 'Sign In',
+      'es': 'CONTINUAR',
     },
     'flgq72qa': {
-      'en': 'Forgot Password',
-      'es': 'Has olvidado tu contraseña',
+      'en': '',
+      'es': 'No tengo Cuenta',
     },
     '17di344m': {
       'en': '',
-      'es': 'Inicia seccion aqui',
+      'es': 'Registrarte',
     },
     'f2bt9z1q': {
       'en': '',
