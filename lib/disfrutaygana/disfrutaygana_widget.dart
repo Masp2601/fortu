@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
+
 import 'disfrutaygana_model.dart';
 export 'disfrutaygana_model.dart';
 
@@ -49,9 +50,9 @@ class _DisfrutayganaWidgetState extends State<DisfrutayganaWidget> {
         children: [
           Expanded(
             child: Align(
-              alignment: AlignmentDirectional(0.0, -0.8),
+              alignment: AlignmentDirectional(0, -0.8),
               child: Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
+                padding: EdgeInsetsDirectional.fromSTEB(0, 20, 0, 0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.end,
@@ -67,14 +68,14 @@ class _DisfrutayganaWidgetState extends State<DisfrutayganaWidget> {
                             desktop: false,
                           ))
                             Align(
-                              alignment: AlignmentDirectional(0.0, 0.0),
+                              alignment: AlignmentDirectional(0, 0),
                               child: Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
-                                    0.0, 15.0, 0.0, 0.0),
+                                padding:
+                                    EdgeInsetsDirectional.fromSTEB(0, 15, 0, 0),
                                 child: Image.asset(
                                   'assets/images/disfrutaimage.png',
                                   width: 380.9,
-                                  height: 2200.0,
+                                  height: 2200,
                                   fit: BoxFit.cover,
                                 ),
                               ),
@@ -82,8 +83,8 @@ class _DisfrutayganaWidgetState extends State<DisfrutayganaWidget> {
                           Align(
                             alignment: AlignmentDirectional(0.8, -0.82),
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
-                                  15.0, 0.0, 0.0, 0.0),
+                              padding:
+                                  EdgeInsetsDirectional.fromSTEB(15, 0, 0, 0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
                                 mainAxisAlignment: MainAxisAlignment.center,
@@ -94,8 +95,7 @@ class _DisfrutayganaWidgetState extends State<DisfrutayganaWidget> {
                                     desktop: false,
                                   ))
                                     Align(
-                                      alignment:
-                                          AlignmentDirectional(0.0, -0.9),
+                                      alignment: AlignmentDirectional(0, -0.9),
                                       child: Image.asset(
                                         'assets/images/navbar.png',
                                         fit: BoxFit.cover,
@@ -114,17 +114,17 @@ class _DisfrutayganaWidgetState extends State<DisfrutayganaWidget> {
                               alignment: AlignmentDirectional(0.7, -0.65),
                               child: Padding(
                                 padding: EdgeInsetsDirectional.fromSTEB(
-                                    10.0, 140.0, 0.0, 20.0),
+                                    10, 140, 0, 20),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
                                   mainAxisAlignment: MainAxisAlignment.end,
                                   children: [
                                     Align(
                                       alignment:
-                                          AlignmentDirectional(-0.75, -80.0),
+                                          AlignmentDirectional(-0.75, -80),
                                       child: Image.asset(
                                         'assets/images/cuadro.png',
-                                        width: 380.0,
+                                        width: 380,
                                         fit: BoxFit.cover,
                                       ),
                                     ),
@@ -138,16 +138,16 @@ class _DisfrutayganaWidgetState extends State<DisfrutayganaWidget> {
                             desktop: false,
                           ))
                             Align(
-                              alignment: AlignmentDirectional(0.0, -0.6),
+                              alignment: AlignmentDirectional(0, -0.6),
                               child: Padding(
                                 padding: EdgeInsetsDirectional.fromSTEB(
-                                    47.0, 145.0, 0.0, 0.0),
+                                    47, 145, 0, 0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
                                   children: [
                                     Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
-                                          0.0, 14.0, 0.0, 0.0),
+                                          0, 14, 0, 0),
                                       child: Image.asset(
                                         'assets/images/play.png',
                                         width: 340.1,
@@ -160,10 +160,10 @@ class _DisfrutayganaWidgetState extends State<DisfrutayganaWidget> {
                               ),
                             ),
                           Align(
-                            alignment: AlignmentDirectional(0.0, 0.84),
+                            alignment: AlignmentDirectional(0, 0.84),
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
-                                  47.0, 60.0, 0.0, 0.0),
+                              padding:
+                                  EdgeInsetsDirectional.fromSTEB(47, 60, 0, 0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
@@ -176,7 +176,7 @@ class _DisfrutayganaWidgetState extends State<DisfrutayganaWidget> {
                                       duration: Duration(milliseconds: 100),
                                       curve: Curves.easeInOut,
                                       width: 340.7,
-                                      height: 100.0,
+                                      height: 100,
                                       decoration: BoxDecoration(
                                         color: Color(0xFFFF0000),
                                       ),
@@ -186,10 +186,10 @@ class _DisfrutayganaWidgetState extends State<DisfrutayganaWidget> {
                             ),
                           ),
                           Align(
-                            alignment: AlignmentDirectional(0.0, 0.9),
+                            alignment: AlignmentDirectional(0, 0.9),
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
-                                  15.0, 300.0, 0.0, 0.0),
+                              padding:
+                                  EdgeInsetsDirectional.fromSTEB(15, 300, 0, 0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
@@ -200,7 +200,7 @@ class _DisfrutayganaWidgetState extends State<DisfrutayganaWidget> {
                                   ))
                                     Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
-                                          130.0, 0.0, 0.0, 0.0),
+                                          130, 0, 0, 0),
                                       child: FFButtonWidget(
                                         onPressed: () async {
                                           logFirebaseEvent(
@@ -215,14 +215,14 @@ class _DisfrutayganaWidgetState extends State<DisfrutayganaWidget> {
                                           'w9k2ung3' /* next */,
                                         ),
                                         options: FFButtonOptions(
-                                          width: 130.0,
-                                          height: 40.0,
+                                          width: 130,
+                                          height: 40,
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
-                                                  0.0, 0.0, 0.0, 0.0),
+                                                  0, 0, 0, 0),
                                           iconPadding:
                                               EdgeInsetsDirectional.fromSTEB(
-                                                  0.0, 0.0, 0.0, 0.0),
+                                                  0, 0, 0, 0),
                                           color: Color(0xFFFF0000),
                                           textStyle: FlutterFlowTheme.of(
                                                   context)
@@ -239,14 +239,14 @@ class _DisfrutayganaWidgetState extends State<DisfrutayganaWidget> {
                                                                 context)
                                                             .titleSmallFamily),
                                               ),
-                                          elevation: 2.0,
+                                          elevation: 2,
                                           borderSide: BorderSide(
                                             color: FlutterFlowTheme.of(context)
                                                 .textColor,
-                                            width: 2.0,
+                                            width: 2,
                                           ),
                                           borderRadius:
-                                              BorderRadius.circular(40.0),
+                                              BorderRadius.circular(40),
                                         ),
                                       ),
                                     ),
@@ -255,10 +255,10 @@ class _DisfrutayganaWidgetState extends State<DisfrutayganaWidget> {
                             ),
                           ),
                           Align(
-                            alignment: AlignmentDirectional(0.0, -0.2),
+                            alignment: AlignmentDirectional(0, -0.2),
                             child: Padding(
                               padding: EdgeInsetsDirectional.fromSTEB(
-                                  80.0, 670.0, 40.0, 10.0),
+                                  80, 670, 40, 10),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
