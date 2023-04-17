@@ -130,7 +130,7 @@ class _GameWidgetState extends State<GameWidget> {
                                 tabletLandscape: false,
                                 desktop: false,
                               ))
-                                /*Expanded(
+                                Expanded(
                                   child: Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
                                         20, 0, 20, 0),
@@ -146,7 +146,7 @@ class _GameWidgetState extends State<GameWidget> {
                                       ],
                                     ),
                                   ),
-                                ),*/
+                                ),
                                 if (responsiveVisibility(
                                   context: context,
                                   tabletLandscape: false,
