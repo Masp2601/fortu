@@ -20,6 +20,8 @@ abstract class UsersRecord implements Built<UsersRecord, UsersRecordBuilder> {
 
   int? get age;
 
+  int? get saldo;
+
   LatLng? get location;
 
   @BuiltValueField(wireName: 'phone_number')
@@ -42,6 +44,7 @@ abstract class UsersRecord implements Built<UsersRecord, UsersRecordBuilder> {
     ..email = ''
     ..password = ''
     ..uid = ''
+    ..saldo = 0
     ..age = 0
     ..phoneNumber = ''
     ..userTitle = ''
@@ -71,6 +74,7 @@ abstract class UsersRecord implements Built<UsersRecord, UsersRecordBuilder> {
 Map<String, dynamic> createUsersRecordData({
   String? displayName,
   String? email,
+  int? saldo,
   String? password,
   String? uid,
   int? age,
@@ -85,6 +89,7 @@ Map<String, dynamic> createUsersRecordData({
     UsersRecord(
       (u) => u
         ..displayName = displayName
+        ..saldo = saldo
         ..email = email
         ..password = password
         ..uid = uid

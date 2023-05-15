@@ -847,7 +847,7 @@ class _RegistroWidgetState extends State<RegistroWidget> {
                               ))
                                 Expanded(
                                   child: Align(
-                                    alignment: AlignmentDirectional(0.05, -5.0),
+                                    alignment: AlignmentDirectional(0.05, 4.0),
                                     child: Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           0.0, 8.0, 0.0, 8.0),
@@ -875,6 +875,7 @@ class _RegistroWidgetState extends State<RegistroWidget> {
                                                 .emailAdressController.text,
                                             password:
                                                 _model.passwordController.text,
+                                            saldo: 0,
                                           );
                                           await UsersRecord.collection
                                               .doc(user.uid)
@@ -928,18 +929,16 @@ class _RegistroWidgetState extends State<RegistroWidget> {
                                 ),
                               Expanded(
                                 child: Align(
-                                  alignment: AlignmentDirectional(0.05, -0.1),
+                                  alignment: AlignmentDirectional(0.10, 0.0),
                                   child: Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
-                                        50.0, 4.0, 50.0, 5.0),
+                                        0.0, 0.0, 00.0, 0.0),
                                     child: Row(
                                       mainAxisSize: MainAxisSize.max,
                                       mainAxisAlignment:
-                                          MainAxisAlignment.spaceEvenly,
+                                          MainAxisAlignment.center,
                                       children: [
                                         Container(
-                                          width: 50.0,
-                                          height: 50.0,
                                           decoration: BoxDecoration(
                                             color: Color(0xFF090F13),
                                             boxShadow: [
@@ -954,30 +953,60 @@ class _RegistroWidgetState extends State<RegistroWidget> {
                                           alignment:
                                               AlignmentDirectional(0.0, 0.0),
                                           child: InkWell(
-                                            onTap: () async {
-                                              logFirebaseEvent(
-                                                  'REGISTRO_PAGE_Icon_bg4uzugj_ON_TAP');
-                                              logFirebaseEvent('Icon_auth');
-                                              GoRouter.of(context)
-                                                  .prepareAuthEvent();
-                                              final user =
-                                                  await signInWithGoogle(
-                                                      context);
-                                              if (user == null) {
-                                                return;
-                                              }
+                                              onTap: () async {
+                                                logFirebaseEvent(
+                                                    'REGISTRO_PAGE_Icon_ezp4nu8w_ON_TAP');
+                                                logFirebaseEvent('Icon_auth');
+                                                GoRouter.of(context)
+                                                    .prepareAuthEvent();
+                                                final user =
+                                                    await signInWithFacebook(
+                                                        context);
+                                                if (user == null) {
+                                                  return;
+                                                }
 
-                                              context.goNamedAuth(
-                                                  'MY_Card', mounted);
-                                            },
-                                            child: FaIcon(
-                                              FontAwesomeIcons.google,
-                                              color: Color(0xFFF7B529),
-                                              size: 24.0,
-                                            ),
-                                          ),
+                                                context.goNamedAuth(
+                                                    'home', mounted);
+                                              },
+                                              child: Image.asset(
+                                                  'assets/images/Facebook.png')),
                                         ),
                                         Container(
+                                          decoration: BoxDecoration(
+                                            color: Color(0xFF090F13),
+                                            boxShadow: [
+                                              BoxShadow(
+                                                blurRadius: 5.0,
+                                                color: Color(0x3314181B),
+                                                offset: Offset(0.0, 2.0),
+                                              )
+                                            ],
+                                            shape: BoxShape.circle,
+                                          ),
+                                          alignment:
+                                              AlignmentDirectional(0.0, 0.0),
+                                          child: InkWell(
+                                              onTap: () async {
+                                                logFirebaseEvent(
+                                                    'REGISTRO_PAGE_Icon_bg4uzugj_ON_TAP');
+                                                logFirebaseEvent('Icon_auth');
+                                                GoRouter.of(context)
+                                                    .prepareAuthEvent();
+                                                final user =
+                                                    await signInWithGoogle(
+                                                        context);
+                                                if (user == null) {
+                                                  return;
+                                                }
+
+                                                context.goNamedAuth(
+                                                    'home', mounted);
+                                              },
+                                              child: Image.asset(
+                                                  'assets/images/Google.png')),
+                                        ),
+                                        /*Container(
                                           width: 50.0,
                                           height: 50.0,
                                           decoration: BoxDecoration(
@@ -998,47 +1027,7 @@ class _RegistroWidgetState extends State<RegistroWidget> {
                                             color: Colors.white,
                                             size: 24.0,
                                           ),
-                                        ),
-                                        Container(
-                                          width: 50.0,
-                                          height: 50.0,
-                                          decoration: BoxDecoration(
-                                            color: Color(0xFF090F13),
-                                            boxShadow: [
-                                              BoxShadow(
-                                                blurRadius: 5.0,
-                                                color: Color(0x3314181B),
-                                                offset: Offset(0.0, 2.0),
-                                              )
-                                            ],
-                                            shape: BoxShape.circle,
-                                          ),
-                                          alignment:
-                                              AlignmentDirectional(0.0, 0.0),
-                                          child: InkWell(
-                                            onTap: () async {
-                                              logFirebaseEvent(
-                                                  'REGISTRO_PAGE_Icon_ezp4nu8w_ON_TAP');
-                                              logFirebaseEvent('Icon_auth');
-                                              GoRouter.of(context)
-                                                  .prepareAuthEvent();
-                                              final user =
-                                                  await signInWithFacebook(
-                                                      context);
-                                              if (user == null) {
-                                                return;
-                                              }
-
-                                              context.goNamedAuth(
-                                                  'MY_Card', mounted);
-                                            },
-                                            child: FaIcon(
-                                              FontAwesomeIcons.facebookF,
-                                              color: Color(0xFF5600FF),
-                                              size: 24.0,
-                                            ),
-                                          ),
-                                        ),
+                                        ),*/
                                       ],
                                     ),
                                   ),

@@ -121,7 +121,7 @@ class _LoginWidgetState extends State<LoginWidget> {
               desktop: false,
             ),
             child: Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(0.0, 40.0, 0.0, 0.0),
+              padding: EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
               child: Container(
                 width: MediaQuery.of(context).size.width * 1.0,
                 height: MediaQuery.of(context).size.height * 1.0,
@@ -142,7 +142,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                   ),
                   child: Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 40.0, 0.0, 0.0),
+                        EdgeInsetsDirectional.fromSTEB(0.0, 50.0, 0.0, 40.0),
                     child: Container(
                       width: 100.0,
                       height: 100.0,
@@ -220,7 +220,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                 ),
                               ),
                               SizedBox(
-                                height: 25,
+                                height: 35,
                               ),
                               Padding(
                                 padding: EdgeInsetsDirectional.all(0.1),
@@ -361,7 +361,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                       ),
                                       style: FlutterFlowTheme.of(context)
                                           .bodyMedium,
-                                      textAlign: TextAlign.center,
+                                      textAlign: TextAlign.left,
                                       validator: _model
                                           .nombreControllerValidator
                                           .asValidator(context),
@@ -370,7 +370,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                 ),
                               ),
                               SizedBox(
-                                height: 55,
+                                height: 50,
                               ),
                               if (responsiveVisibility(
                                 context: context,
@@ -379,7 +379,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                               ))
                                 Expanded(
                                   child: Align(
-                                    alignment: AlignmentDirectional(0.1, -5.0),
+                                    alignment: AlignmentDirectional(0.1, -6.0),
                                     child: Padding(
                                       padding: EdgeInsetsDirectional.all(0.1),
                                       child: Autocomplete<String>(
@@ -576,7 +576,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                                                   context)
                                                               .bodyMediumFamily),
                                                 ),
-                                            textAlign: TextAlign.center,
+                                            textAlign: TextAlign.left,
                                             keyboardType:
                                                 TextInputType.visiblePassword,
                                             validator: _model
@@ -590,10 +590,10 @@ class _LoginWidgetState extends State<LoginWidget> {
                                 ),
                               Expanded(
                                 child: Align(
-                                  alignment: AlignmentDirectional(0.05, -2.0),
+                                  alignment: AlignmentDirectional(0.0, 0.0),
                                   child: Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
-                                        0.0, 15.0, 0.0, 0.0),
+                                        0.0, 5.0, 0.0, 0.0),
                                     child: FFButtonWidget(
                                       onPressed: () {
                                         validateForm();
@@ -639,7 +639,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                               ),
                               Expanded(
                                 child: Align(
-                                  alignment: AlignmentDirectional(0.0, 9.0),
+                                  alignment: AlignmentDirectional(0.0, 16.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
                                     mainAxisAlignment: MainAxisAlignment.center,
@@ -679,38 +679,22 @@ class _LoginWidgetState extends State<LoginWidget> {
                                   ),
                                 ),
                               ),
-                              if (responsiveVisibility(
-                                context: context,
-                                tabletLandscape: false,
-                                desktop: false,
-                              ))
-                                Expanded(
-                                  child: Align(
-                                    alignment: AlignmentDirectional(0.0, -10.0),
-                                    child: Padding(
-                                      padding: EdgeInsetsDirectional.all(2),
-                                      child: Row(
-                                        mainAxisSize: MainAxisSize.max,
-                                        mainAxisAlignment:
-                                            MainAxisAlignment.center,
-                                        children: [
-                                          Container(
-                                            width: 50.0,
-                                            height: 50.0,
-                                            decoration: BoxDecoration(
-                                              color: Color(0xFF090F13),
-                                              boxShadow: [
-                                                BoxShadow(
-                                                  blurRadius: 5.0,
-                                                  color: Color(0x3314181B),
-                                                  offset: Offset(0.0, 2.0),
-                                                )
-                                              ],
-                                              shape: BoxShape.circle,
-                                            ),
-                                            alignment:
-                                                AlignmentDirectional(0.0, 0.0),
-                                            child: InkWell(
+                              Expanded(
+                                child: Align(
+                                  alignment: AlignmentDirectional(0.0, -4.0),
+                                  child: Padding(
+                                    padding: EdgeInsetsDirectional.all(0),
+                                    child: Row(
+                                      mainAxisSize: MainAxisSize.max,
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.center,
+                                      children: [
+                                        Container(
+                                          width: 30,
+                                          height: 30,
+                                          alignment:
+                                              AlignmentDirectional(0.0, 0.0),
+                                          child: InkWell(
                                               onTap: () async {
                                                 logFirebaseEvent(
                                                     'LOGIN_PAGE_Icon_unz9qien_ON_TAP');
@@ -727,61 +711,45 @@ class _LoginWidgetState extends State<LoginWidget> {
                                                 context.goNamedAuth(
                                                     'home', mounted);
                                               },
-                                              child: FaIcon(
-                                                FontAwesomeIcons.facebookF,
-                                                color: Color(0xFF5600FF),
-                                                size: 24.0,
-                                              ),
+                                              child: Image.asset(
+                                                'assets/images/Facebook.png',
+                                                fit: BoxFit.cover,
+                                              )),
+                                        ),
+                                        Container(
+                                          width: 30.0,
+                                          height: 30.0,
+                                          alignment:
+                                              AlignmentDirectional(0.0, 0.0),
+                                          child: Visibility(
+                                            visible: responsiveVisibility(
+                                              context: context,
+                                              tabletLandscape: false,
+                                              desktop: false,
                                             ),
-                                          ),
-                                          Container(
-                                            width: 50.0,
-                                            height: 50.0,
-                                            decoration: BoxDecoration(
-                                              color: Color(0xFF090F13),
-                                              boxShadow: [
-                                                BoxShadow(
-                                                  blurRadius: 5.0,
-                                                  color: Color(0x3314181B),
-                                                  offset: Offset(0.0, 2.0),
-                                                )
-                                              ],
-                                              shape: BoxShape.circle,
-                                            ),
-                                            alignment:
-                                                AlignmentDirectional(0.0, 0.0),
-                                            child: Visibility(
-                                              visible: responsiveVisibility(
-                                                context: context,
-                                                tabletLandscape: false,
-                                                desktop: false,
-                                              ),
-                                              child: InkWell(
-                                                onTap: () async {
-                                                  logFirebaseEvent(
-                                                      'LOGIN_PAGE_Icon_b54mmp0p_ON_TAP');
-                                                  logFirebaseEvent('Icon_auth');
-                                                  GoRouter.of(context)
-                                                      .prepareAuthEvent();
-                                                  final user =
-                                                      await signInWithGoogle(
-                                                          context);
-                                                  if (user == null) {
-                                                    return;
-                                                  }
+                                            child: InkWell(
+                                              onTap: () async {
+                                                logFirebaseEvent(
+                                                    'LOGIN_PAGE_Icon_b54mmp0p_ON_TAP');
+                                                logFirebaseEvent('Icon_auth');
+                                                GoRouter.of(context)
+                                                    .prepareAuthEvent();
+                                                final user =
+                                                    await signInWithGoogle(
+                                                        context);
+                                                if (user == null) {
+                                                  return;
+                                                }
 
-                                                  context.goNamedAuth(
-                                                      'home', mounted);
-                                                },
-                                                child: FaIcon(
-                                                  FontAwesomeIcons.google,
-                                                  color: Color(0xFFF7B529),
-                                                  size: 24.0,
-                                                ),
-                                              ),
+                                                context.goNamedAuth(
+                                                    'home', mounted);
+                                              },
+                                              child: Image.asset(
+                                                  'assets/images/Google.png'),
                                             ),
                                           ),
-                                          /*Container(
+                                        ),
+                                        /*Container(
                                             width: 50.0,
                                             height: 50.0,
                                             decoration: BoxDecoration(
@@ -821,41 +789,36 @@ class _LoginWidgetState extends State<LoginWidget> {
                                               ),
                                             ),
                                           ),*/
-                                        ],
-                                      ),
+                                      ],
                                     ),
                                   ),
                                 ),
-                              if (responsiveVisibility(
-                                context: context,
-                                tabletLandscape: false,
-                                desktop: false,
-                              ))
-                                TextButton(
-                                    onPressed: () {
-                                      context.pushNamed('registro');
-                                    },
-                                    child: Text(
-                                      FFLocalizations.of(context).getText(
-                                        '17di344m' /*  */,
-                                      ),
-                                      textAlign: TextAlign.center,
-                                      style: FlutterFlowTheme.of(context)
-                                          .bodyMedium
-                                          .override(
-                                            fontFamily:
-                                                FlutterFlowTheme.of(context)
-                                                    .bodyMediumFamily,
-                                            color: Color(0xDA5DFF0F),
-                                            useGoogleFonts: GoogleFonts.asMap()
-                                                .containsKey(
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyMediumFamily),
-                                          ),
-                                    )),
+                              ),
+                              TextButton(
+                                  onPressed: () {
+                                    context.pushNamed('registro');
+                                  },
+                                  child: Text(
+                                    FFLocalizations.of(context).getText(
+                                      '17di344m' /*  */,
+                                    ),
+                                    textAlign: TextAlign.center,
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyMedium
+                                        .override(
+                                          fontFamily:
+                                              FlutterFlowTheme.of(context)
+                                                  .bodyMediumFamily,
+                                          color: Color(0xDA5DFF0F),
+                                          useGoogleFonts: GoogleFonts.asMap()
+                                              .containsKey(
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyMediumFamily),
+                                        ),
+                                  )),
                               Expanded(
                                 child: Align(
-                                  alignment: AlignmentDirectional(0.0, -7.0),
+                                  alignment: AlignmentDirectional(0.0, 0.0),
                                   child: Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
                                         0.0, 15.0, 0.0, 0.0),

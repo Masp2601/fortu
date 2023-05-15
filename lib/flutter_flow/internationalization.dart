@@ -1746,20 +1746,22 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   // home
   {
     'qubx0dxj': {
-      'en': 'unknown\n printer took a galley of type and scrambled ',
-      'es': 'desconocido\n impresora tomó una galera de tipos y codificada',
+      'en':
+          'The player must\n upload the money that will be available in his\n money bag through the payment platform. ',
+      'es':
+          'El jugador deberá\n subir por la plataforma de pago el dinero que tendrá\n disponible en su bolsa de dinero.',
     },
     'bnjc4lcd': {
       'en': 'I want to bet on:',
       'es': 'Quiero apostar por:',
     },
     'czhwmirp': {
-      'en': 'cop',
-      'es': 'cop',
+      'en': 'COP\$',
+      'es': 'COP\$',
     },
     '2avbb0nv': {
-      'en': '\$Dolar',
-      'es': '\$dólar',
+      'en': 'USD\$',
+      'es': 'USD\$',
     },
     '41xtfaf0': {
       'en': 'I want to bet on:',
@@ -1770,8 +1772,8 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'Quiero apostar por:',
     },
     'vrn7x940': {
-      'en': 'watch game',
-      'es': 'ver juego',
+      'en': 'Youtube',
+      'es': 'Youtube',
     },
     'm5u9p8tw': {
       'en': 'play',
@@ -1779,7 +1781,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     'nyqsxeqs': {
       'en': 'Read Game Rules',
-      'es': 'Leer las reglas del juego',
+      'es': 'Leer reglas del juego',
     },
   },
   // avatars

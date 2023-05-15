@@ -8,19 +8,17 @@ export '/create_budget_begin/create_budget_begin_widget.dart'
     show CreateBudgetBeginWidget;
 export '/m_y_card/m_y_card_widget.dart' show MYCardWidget;
 export '/m_y_budgets/m_y_budgets_widget.dart' show MYBudgetsWidget;
-export '/payment_details/payment_details_widget.dart' show PaymentDetailsWidget;
+
 export '/m_y_profile_page/m_y_profile_page_widget.dart'
     show MYProfilePageWidget;
 export '/budget_details/budget_details_widget.dart' show BudgetDetailsWidget;
 export '/transfer_complete/transfer_complete_widget.dart'
     show TransferCompleteWidget;
-export '/transfer_funds/transfer_funds_widget.dart' show TransferFundsWidget;
+
 export '/request_funds/request_funds_widget.dart' show RequestFundsWidget;
-export '/transaction_a_d_d/transaction_a_d_d_widget.dart'
-    show TransactionADDWidget;
+
 export '/create_budget/create_budget_widget.dart' show CreateBudgetWidget;
-export '/transaction_e_d_i_t/transaction_e_d_i_t_widget.dart'
-    show TransactionEDITWidget;
+
 export '/notifications_settings/notifications_settings_widget.dart'
     show NotificationsSettingsWidget;
 export '/privacy_policy/privacy_policy_widget.dart' show PrivacyPolicyWidget;
@@ -31,20 +29,18 @@ export '/profilepage/profilepage_widget.dart' show ProfilepageWidget;
 export '/login/login_widget.dart' show LoginWidget;
 export '/conection/conection_widget.dart' show ConectionWidget;
 export '/game/game_widget.dart' show GameWidget;
-export '/tarjeta/tarjeta_widget.dart' show TarjetaWidget;
+
 export '/thankspay/thankspay_widget.dart' show ThankspayWidget;
 export '/paysave/paysave_widget.dart' show PaysaveWidget;
 export '/politicas/politicas_widget.dart' show PoliticasWidget;
-export '/cashtable/cashtable_widget.dart' show CashtableWidget;
 export '/goldtable/goldtable_widget.dart' show GoldtableWidget;
 export '/fortunatable/fortunatable_widget.dart' show FortunatableWidget;
 export '/home/home_widget.dart' show HomeWidget;
 export '/ndqueperder/ndqueperder_widget.dart' show NdqueperderWidget;
 export '/avatars/avatars_widget.dart' show AvatarsWidget;
-export '/rules/rules_widget.dart' show RulesWidget;
 export '/disfrutaygana/disfrutaygana_widget.dart' show DisfrutayganaWidget;
 export '/change_password/change_password_widget.dart' show ChangePasswordWidget;
-export '/thereismethod/thereismethod_widget.dart' show ThereismethodWidget;
+
 export '/ciencop/ciencop_widget.dart' show CiencopWidget;
 export '/docientoscop/docientoscop_widget.dart' show DocientoscopWidget;
 export '/cashavatar/cashavatar_widget.dart' show CashavatarWidget;
@@ -78,6 +74,4 @@ export '/heart/heart_widget.dart' show HeartWidget;
 export '/energy/energy_widget.dart' show EnergyWidget;
 export '/gift/gift_widget.dart' show GiftWidget;
 export '/espada/espada_widget.dart' show EspadaWidget;
-export '/sheet/sheet_widget.dart' show SheetWidget;
-export '/spadachin/spadachin_widget.dart' show SpadachinWidget;
 export '/puedes/puedes_widget.dart' show PuedesWidget;

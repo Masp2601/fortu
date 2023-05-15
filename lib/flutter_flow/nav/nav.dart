@@ -70,18 +70,18 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
       errorBuilder: (context, _) =>
-          appStateNotifier.loggedIn ? HomeWidget() : LoginWidget(),
+          appStateNotifier.loggedIn ? HomeWidget() : ConectionWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
           builder: (context, _) =>
-              appStateNotifier.loggedIn ? HomeWidget() : LoginWidget(),
+              appStateNotifier.loggedIn ? HomeWidget() : ConectionWidget(),
           routes: [
             FFRoute(
               name: 'registro',
               path: 'registro',
-              builder: (context, params) => RegistroWidget(),
+              builder: (context, params) => RegistroWidget(), //ya
             ),
             FFRoute(
               name: 'completeProfile',
@@ -120,23 +120,12 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               builder: (context, params) => MYBudgetsWidget(),
             ),
             FFRoute(
-              name: 'paymentDetails',
-              path: 'paymentDetails',
-              requireAuth: true,
-              builder: (context, params) => PaymentDetailsWidget(
-                transactionDetails: params.getParam('transactionDetails',
-                    ParamType.DocumentReference, false, ['transactions']),
-                userSpent: params.getParam(
-                    'userSpent', ParamType.DocumentReference, false, ['users']),
-              ),
-            ),
-            FFRoute(
               name: 'MY_profilePage',
               path: 'mYProfilePage',
               requireAuth: true,
               builder: (context, params) => MYProfilePageWidget(
                 userProfile: params.getParam('userProfile',
-                    ParamType.DocumentReference, false, ['users']),
+                    ParamType.DocumentReference, false, ['users']), //ya
               ),
             ),
             FFRoute(
@@ -152,13 +141,8 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               name: 'transferComplete',
               path: 'transferComplete',
               requireAuth: true,
-              builder: (context, params) => TransferCompleteWidget(),
-            ),
-            FFRoute(
-              name: 'transferFunds',
-              path: 'transferFunds',
-              requireAuth: true,
-              builder: (context, params) => TransferFundsWidget(),
+              builder: (context, params) =>
+                  TransferCompleteWidget(), //ya tranfiere fondos
             ),
             FFRoute(
               name: 'requestFunds',
@@ -167,25 +151,10 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               builder: (context, params) => RequestFundsWidget(),
             ),
             FFRoute(
-              name: 'transaction_ADD',
-              path: 'transactionADD',
-              requireAuth: true,
-              builder: (context, params) => TransactionADDWidget(),
-            ),
-            FFRoute(
               name: 'createBudget',
               path: 'createBudget',
               requireAuth: true,
               builder: (context, params) => CreateBudgetWidget(),
-            ),
-            FFRoute(
-              name: 'transaction_EDIT',
-              path: 'transactionEDIT',
-              requireAuth: true,
-              builder: (context, params) => TransactionEDITWidget(
-                transactionDetails: params.getParam('transactionDetails',
-                    ParamType.DocumentReference, false, ['transactions']),
-              ),
             ),
             FFRoute(
               name: 'notificationsSettings',
@@ -226,12 +195,12 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
             FFRoute(
               name: 'login',
               path: 'login',
-              builder: (context, params) => LoginWidget(),
+              builder: (context, params) => LoginWidget(), //ya
             ),
             FFRoute(
               name: 'conection',
               path: 'conection',
-              builder: (context, params) => ConectionWidget(),
+              builder: (context, params) => ConectionWidget(), //ya
             ),
             FFRoute(
               name: 'game',
@@ -240,36 +209,22 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               builder: (context, params) => GameWidget(),
             ),
             FFRoute(
-              name: 'tarjeta',
-              path: 'tarjeta',
-              requireAuth: true,
-              builder: (context, params) => TarjetaWidget(),
-            ),
-            FFRoute(
               name: 'thankspay',
               path: 'thankspay',
               requireAuth: true,
-              builder: (context, params) => ThankspayWidget(),
+              builder: (context, params) => ThankspayWidget(), //pago confirmado
             ),
             FFRoute(
               name: 'paysave',
               path: 'paysave',
               requireAuth: true,
-              builder: (context, params) => PaysaveWidget(),
+              builder: (context, params) => PaysaveWidget(), //agregar tarjeta
             ),
             FFRoute(
               name: 'politicas',
               path: 'politicas',
               requireAuth: true,
               builder: (context, params) => PoliticasWidget(),
-            ),
-            FFRoute(
-              name: 'cashtable',
-              path: 'cashtable',
-              requireAuth: true,
-              builder: (context, params) => CashtableWidget(
-                users: params.getParam('users', ParamType.String),
-              ),
             ),
             FFRoute(
               name: 'goldtable',
@@ -292,7 +247,7 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               name: 'home',
               path: 'home',
               requireAuth: true,
-              builder: (context, params) => HomeWidget(),
+              builder: (context, params) => HomeWidget(), //ya
             ),
             FFRoute(
               name: 'ndqueperder',
@@ -309,12 +264,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               builder: (context, params) => AvatarsWidget(),
             ),
             FFRoute(
-              name: 'rules',
-              path: 'rules',
-              requireAuth: true,
-              builder: (context, params) => RulesWidget(),
-            ),
-            FFRoute(
               name: 'disfrutaygana',
               path: 'disfrutaygana',
               requireAuth: true,
@@ -325,12 +274,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               path: 'changePassword',
               requireAuth: true,
               builder: (context, params) => ChangePasswordWidget(),
-            ),
-            FFRoute(
-              name: 'thereismethod',
-              path: 'thereismethod',
-              requireAuth: true,
-              builder: (context, params) => ThereismethodWidget(),
             ),
             FFRoute(
               name: 'ciencop',
@@ -537,18 +480,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               builder: (context, params) => EspadaWidget(),
             ),
             FFRoute(
-              name: 'sheet',
-              path: 'sheet',
-              requireAuth: true,
-              builder: (context, params) => SheetWidget(),
-            ),
-            FFRoute(
-              name: 'spadachin',
-              path: 'spadachin',
-              requireAuth: true,
-              builder: (context, params) => SpadachinWidget(),
-            ),
-            FFRoute(
               name: 'puedes',
               path: 'puedes',
               requireAuth: true,
@@ -725,7 +656,7 @@ class FFRoute {
 
           if (requireAuth && !appStateNotifier.loggedIn) {
             appStateNotifier.setRedirectLocationIfUnset(state.location);
-            return '/login';
+            return '/conection';
           }
           return null;
         },

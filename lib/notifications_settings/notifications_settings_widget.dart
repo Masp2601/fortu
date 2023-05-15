@@ -129,7 +129,7 @@ class _NotificationsSettingsWidgetState
                   child: SwitchListTile.adaptive(
                     value: _model.switchListTileValue1 ??= true,
                     onChanged: (newValue) async {
-                      setState(() => _model.switchListTileValue1 = newValue!);
+                      setState(() => _model.switchListTileValue1 = newValue);
                     },
                     title: Text(
                       FFLocalizations.of(context).getText(
@@ -155,7 +155,7 @@ class _NotificationsSettingsWidgetState
                 SwitchListTile.adaptive(
                   value: _model.switchListTileValue2 ??= true,
                   onChanged: (newValue) async {
-                    setState(() => _model.switchListTileValue2 = newValue!);
+                    setState(() => _model.switchListTileValue2 = newValue);
                   },
                   title: Text(
                     FFLocalizations.of(context).getText(
@@ -180,7 +180,7 @@ class _NotificationsSettingsWidgetState
                 SwitchListTile.adaptive(
                   value: _model.switchListTileValue3 ??= true,
                   onChanged: (newValue) async {
-                    setState(() => _model.switchListTileValue3 = newValue!);
+                    setState(() => _model.switchListTileValue3 = newValue);
                   },
                   title: Text(
                     FFLocalizations.of(context).getText(

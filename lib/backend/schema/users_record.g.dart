@@ -175,6 +175,8 @@ class _$UsersRecord extends UsersRecord {
   @override
   final int? age;
   @override
+  final int? saldo;
+  @override
   final LatLng? location;
   @override
   final String? phoneNumber;
@@ -196,6 +198,7 @@ class _$UsersRecord extends UsersRecord {
       this.password,
       this.uid,
       this.age,
+      this.saldo,
       this.location,
       this.phoneNumber,
       this.createdTime,
@@ -220,6 +223,7 @@ class _$UsersRecord extends UsersRecord {
         password == other.password &&
         uid == other.uid &&
         age == other.age &&
+        saldo == other.saldo &&
         location == other.location &&
         phoneNumber == other.phoneNumber &&
         createdTime == other.createdTime &&
@@ -236,6 +240,7 @@ class _$UsersRecord extends UsersRecord {
     _$hash = $jc(_$hash, password.hashCode);
     _$hash = $jc(_$hash, uid.hashCode);
     _$hash = $jc(_$hash, age.hashCode);
+    _$hash = $jc(_$hash, saldo.hashCode);
     _$hash = $jc(_$hash, location.hashCode);
     _$hash = $jc(_$hash, phoneNumber.hashCode);
     _$hash = $jc(_$hash, createdTime.hashCode);
@@ -254,6 +259,7 @@ class _$UsersRecord extends UsersRecord {
           ..add('password', password)
           ..add('uid', uid)
           ..add('age', age)
+          ..add('saldo', saldo)
           ..add('location', location)
           ..add('phoneNumber', phoneNumber)
           ..add('createdTime', createdTime)
@@ -286,6 +292,10 @@ class UsersRecordBuilder implements Builder<UsersRecord, UsersRecordBuilder> {
   int? _age;
   int? get age => _$this._age;
   set age(int? age) => _$this._age = age;
+
+  int? _saldo;
+  int? get saldo => _$this._saldo;
+  set saldo(int? saldo) => _$this._saldo = saldo;
 
   LatLng? _location;
   LatLng? get location => _$this._location;
@@ -323,6 +333,7 @@ class UsersRecordBuilder implements Builder<UsersRecord, UsersRecordBuilder> {
       _password = $v.password;
       _uid = $v.uid;
       _age = $v.age;
+      _saldo = $v.saldo;
       _location = $v.location;
       _phoneNumber = $v.phoneNumber;
       _createdTime = $v.createdTime;
@@ -356,6 +367,7 @@ class UsersRecordBuilder implements Builder<UsersRecord, UsersRecordBuilder> {
             password: password,
             uid: uid,
             age: age,
+            saldo: saldo,
             location: location,
             phoneNumber: phoneNumber,
             createdTime: createdTime,
